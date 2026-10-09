@@ -13,7 +13,7 @@ test('Alcoholfabet entra directament sense codi ni avatars i conserva el so i le
     await page.goto('/');
     await expect(page.getByRole('heading', { name: 'Alcoholfabet', exact: true })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Jugar en persona', exact: true })).toBeVisible();
-    await expect(page).toHaveTitle('Alcoholfabet · Preguntes, torns i brindis');
+    await expect(page).toHaveTitle('Alcoholfabet');
     await expect(page.locator('input,.player-avatar,.home-characters')).toHaveCount(0);
     await page.getByRole('button', { name: 'Llegir les normes', exact: true }).click();
     await expect(page.getByRole('dialog')).toBeVisible();

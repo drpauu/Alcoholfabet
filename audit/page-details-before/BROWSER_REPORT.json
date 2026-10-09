@@ -1,0 +1,30 @@
+{
+  "status": "BASELINE_CAPTURED",
+  "captures": [
+    {
+      "width": 390,
+      "height": 844,
+      "screenshot": "audit/page-details-before/screenshots/question-390x844.png",
+      "title": "Alcoholfabet · Preguntes, torns i brindis",
+      "dividerMarks": 1
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "screenshot": "audit/page-details-before/screenshots/question-1024x768.png",
+      "title": "Alcoholfabet · Preguntes, torns i brindis",
+      "dividerMarks": 1
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "screenshot": "audit/page-details-before/screenshots/question-1440x900.png",
+      "title": "Alcoholfabet · Preguntes, torns i brindis",
+      "dividerMarks": 1
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "authSessionsCreated": 0,
+  "gamesCreated": 0
+}

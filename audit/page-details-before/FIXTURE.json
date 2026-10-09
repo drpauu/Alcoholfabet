@@ -1,0 +1,140 @@
+{
+  "game": {
+    "id": "local-page-details",
+    "coupleId": "local",
+    "inviteCode": null,
+    "mode": "IN_PERSON",
+    "status": "ACTIVE",
+    "phase": "QUESTION",
+    "currentTurn": "PAU",
+    "startingPlayer": "PAU",
+    "targetMinutes": 20,
+    "finishPosition": 17,
+    "currentTargetCell": 5,
+    "respondingPlayer": "PAU",
+    "tpClaimant": null,
+    "pauPosition": 4,
+    "teclaPosition": 3,
+    "turnNumber": 9,
+    "stateVersion": 2,
+    "winner": null
+  },
+  "viewer": {
+    "role": "IN_PERSON_CONTROLLER",
+    "userId": "local"
+  },
+  "board": [
+    {
+      "position": 1,
+      "type": "PERSONAL",
+      "modifier": "NONE"
+    },
+    {
+      "position": 2,
+      "type": "CROSSED",
+      "modifier": "NONE"
+    },
+    {
+      "position": 3,
+      "type": "TP",
+      "modifier": "NONE"
+    },
+    {
+      "position": 4,
+      "type": "PERSONAL",
+      "modifier": "NONE"
+    },
+    {
+      "position": 5,
+      "type": "CROSSED",
+      "modifier": "PLUS_ONE"
+    },
+    {
+      "position": 6,
+      "type": "PERSONAL",
+      "modifier": "NONE"
+    },
+    {
+      "position": 7,
+      "type": "CROSSED",
+      "modifier": "NONE"
+    },
+    {
+      "position": 8,
+      "type": "TP",
+      "modifier": "NONE"
+    },
+    {
+      "position": 9,
+      "type": "PERSONAL",
+      "modifier": "NONE"
+    },
+    {
+      "position": 10,
+      "type": "CROSSED",
+      "modifier": "NONE"
+    },
+    {
+      "position": 11,
+      "type": "PERSONAL",
+      "modifier": "PLUS_ONE"
+    },
+    {
+      "position": 12,
+      "type": "CROSSED",
+      "modifier": "NONE"
+    },
+    {
+      "position": 13,
+      "type": "TP",
+      "modifier": "NONE"
+    },
+    {
+      "position": 14,
+      "type": "PERSONAL",
+      "modifier": "NONE"
+    },
+    {
+      "position": 15,
+      "type": "CROSSED",
+      "modifier": "NONE"
+    },
+    {
+      "position": 16,
+      "type": "PERSONAL",
+      "modifier": "NONE"
+    },
+    {
+      "position": 17,
+      "type": "CROSSED",
+      "modifier": "NONE"
+    }
+  ],
+  "question": {
+    "id": "local-question",
+    "pool": "PAU_TECLA",
+    "topic": "Música",
+    "questionCa": "Quin instrument té tecles blanques i negres?"
+  },
+  "capabilities": {
+    "canSeeAnswer": false,
+    "canJudge": false,
+    "canBeginTurn": false,
+    "canReveal": true,
+    "canClaim": false,
+    "canNextTurn": false,
+    "canStart": false,
+    "canAbandon": true
+  },
+  "members": [
+    {
+      "role": "IN_PERSON_CONTROLLER"
+    }
+  ],
+  "lastEvent": null,
+  "scoreboard": {
+    "pauWins": 0,
+    "teclaWins": 0,
+    "completedGames": 0
+  }
+}

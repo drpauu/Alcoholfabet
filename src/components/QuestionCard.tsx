@@ -26,7 +26,7 @@ export function QuestionCard({ category, pool, question, answer, answerVisible =
       <div className="question-card-inner art-surface" data-material="paper" data-motion="questionCardInner">
         <ArtBadge className={`card-category card-category--${categoryKind}`} tone={categoryKind === 'crossed' ? 'neutral' : categoryKind}
           icon={phase === 'TURN_INTRO' ? 'turn' : categoryKind === 'tp' ? 'tp' : categoryKind === 'crossed' ? 'crossed' : 'personal'}>{category}</ArtBadge>
-        <div className="card-divider" aria-hidden="true"><i /></div>
+        <div className="card-divider" aria-hidden="true" />
         <div className="question-copy"><h2>{question}</h2></div>
         <div className={`answer-space${drinkResult || (answer && answerVisible) ? ' has-content' : ''}`}>
           {drinkResult ? <DrinkNotice player={drinkPlayer} double={drinkDouble} /> : answer && answerVisible ? <div className="answer-panel"><span>{copy.correctAnswer}</span><strong>{answer}</strong></div> : null}

@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scope": "Real local App with a question-view fixture and connection hook supplied by browser routing; no Auth or DB writes.",
+  "captures": [
+    {
+      "width": 390,
+      "height": 844,
+      "screenshot": "acceptance/page-details/screenshots/question-390x844.png",
+      "title": "Alcoholfabet",
+      "geometry": {
+        "lineHeight": 1,
+        "lineWidth": 310,
+        "children": 0,
+        "before": "none",
+        "after": "none",
+        "background": "rgba(127, 87, 47, 0.25)",
+        "bodyWidth": 390,
+        "bodyHeight": 844
+      },
+      "failures": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "screenshot": "acceptance/page-details/screenshots/question-1024x768.png",
+      "title": "Alcoholfabet",
+      "geometry": {
+        "lineHeight": 1,
+        "lineWidth": 343.84375,
+        "children": 0,
+        "before": "none",
+        "after": "none",
+        "background": "rgba(127, 87, 47, 0.25)",
+        "bodyWidth": 1024,
+        "bodyHeight": 768
+      },
+      "failures": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "screenshot": "acceptance/page-details/screenshots/question-1440x900.png",
+      "title": "Alcoholfabet",
+      "geometry": {
+        "lineHeight": 1,
+        "lineWidth": 453.703125,
+        "children": 0,
+        "before": "none",
+        "after": "none",
+        "background": "rgba(127, 87, 47, 0.25)",
+        "bodyWidth": 1440,
+        "bodyHeight": 900
+      },
+      "failures": []
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "authSessionsCreated": 0,
+  "gamesCreated": 0
+}
