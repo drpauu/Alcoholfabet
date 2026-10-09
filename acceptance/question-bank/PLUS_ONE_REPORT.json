@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "IN_PERSON:correct-two-cells-one-question-no-chain-idempotent",
+    "IN_PERSON:incorrect-or-unknown-no-move-double-drink-pass-turn-no-score",
+    "TP:bonus-belongs-to-confirmed-claimant-one-question",
+    "META:bonus-finishes-atomically-result-counted-once",
+    "ONLINE:correct-two-cells-one-question-no-chain-idempotent",
+    "ONLINE:incorrect-or-unknown-no-move-double-drink-pass-turn-no-score"
+  ],
+  "status": "PASS",
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "fixturesRolledBack": true,
+  "authSessionsCreated": 0,
+  "existingRowsUnchanged": true
+}

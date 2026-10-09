@@ -1,0 +1,32 @@
+{
+  "scope": "question-bank",
+  "generatedAt": "2026-10-09T19:03:52.678Z",
+  "sources": [
+    "QA_MANIFEST.json",
+    "../../audit/question-bank-before/REPORT.json"
+  ],
+  "sourceHashes": {
+    "QA_MANIFEST.json": "24aba0352e2365e4f5d5be06b3df89bb8c829cfdd5d42c7542818b9dea963677",
+    "../../audit/question-bank-before/REPORT.json": "c545d46090c0cc21ace89ed0bfc155ef3f6af812eb8c0a432a44f0fee57b7fce"
+  },
+  "cleanupSqlSha256": "d23b3e741154f54698575e488c5ac0e45ff57d4529291ae4a4307b3a3100af96",
+  "preflightSqlSha256": "5682479874448f6d97319e2487c3678b7d170d77aa965bca5c3cf6dd1d607794",
+  "userIds": [
+    "1924d013-2905-4981-9f35-128db0fd8649",
+    "1a00dd3b-4748-4dca-ad7e-8c4e158c9d56",
+    "55a982b3-d8da-4330-b28b-cbebf9e724b2",
+    "767d8792-5e58-4a7f-b4d5-b71959fc5b55",
+    "86d71644-1624-4cfa-b3a9-0078d39905d5",
+    "92c85667-2da1-4bd7-b13a-26bfbcdcfc57",
+    "b7979dac-e5be-4aac-9835-9d51ee01d59a",
+    "ef074503-462b-40ee-80b5-a39bafae499b"
+  ],
+  "gameIds": [
+    "4d632ca2-21c9-49a2-95f8-63a59bac584f",
+    "68e835b1-5a33-4f36-9cd2-16dee106af8b",
+    "a2dac3ec-ac8b-4748-8f98-25877a0a7c75",
+    "f8821b24-833d-4348-a000-de5e18e95057"
+  ],
+  "noSecrets": true,
+  "executed": true
+}

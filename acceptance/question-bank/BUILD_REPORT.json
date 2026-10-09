@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "noCanonicalAnswer": true,
+    "noBankFile": true,
+    "noBankSelector": true,
+    "bundleUnchanged": true,
+    "noPrivatePhotos": true
+  },
+  "bundles": [
+    {
+      "file": "dist/assets/index-C1pFU578.js",
+      "bytes": 606567,
+      "sha256": "4ebbb9e51b9fe8bc0c41a63145f3ff724c8002d623049e03dee5834bc95844e2"
+    }
+  ],
+  "typecheck": "PASS",
+  "unitTests": 34,
+  "build": "PASS"
+}

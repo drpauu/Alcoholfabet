@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "tests": 2,
+  "elapsedMinutes": 3.6,
+  "games": [
+    {
+      "id": "4d632ca2-21c9-49a2-95f8-63a59bac584f",
+      "pools": [
+        "TP",
+        "PAU_TECLA",
+        "TECLA",
+        "PAU",
+        "TECLA_PAU"
+      ],
+      "status": "FINISHED",
+      "results": 1,
+      "questions": 30,
+      "uniqueFacts": 30,
+      "uniqueSemanticKeys": 30
+    },
+    {
+      "id": "68e835b1-5a33-4f36-9cd2-16dee106af8b",
+      "pools": [
+        "TP",
+        "PAU_TECLA",
+        "TECLA",
+        "PAU",
+        "TECLA_PAU"
+      ],
+      "status": "FINISHED",
+      "results": 1,
+      "questions": 30,
+      "uniqueFacts": 30,
+      "uniqueSemanticKeys": 30
+    }
+  ],
+  "scope": "Real App and Supabase: META, one result, five pools each, no repeated IDs/facts/semantic keys; reload, reconnect, racing TP, correct/incorrect and bonus."
+}

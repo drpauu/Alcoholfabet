@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T19:01:51.142Z",
+  "checks": [
+    "question refresh and App reload preserve ID and state version",
+    "T&P concurrent: one claimant and one state change",
+    "both users denied raw questions, descriptive history and admin import; no bank prefetch"
+  ],
+  "pools": {
+    "PAU": {
+      "questionId": "PAU-1063",
+      "respondingPlayer": "PAU",
+      "judge": "TECLA",
+      "respondentJson": "PASS",
+      "respondentDom": "PASS",
+      "judgeAnswer": "PASS"
+    },
+    "TECLA": {
+      "questionId": "TECLA-1206",
+      "respondingPlayer": "TECLA",
+      "judge": "PAU",
+      "respondentJson": "PASS",
+      "respondentDom": "PASS",
+      "judgeAnswer": "PASS"
+    },
+    "PAU_TECLA": {
+      "questionId": "PAU_TECLA-0348",
+      "respondingPlayer": "PAU",
+      "judge": "TECLA",
+      "respondentJson": "PASS",
+      "respondentDom": "PASS",
+      "judgeAnswer": "PASS"
+    },
+    "TECLA_PAU": {
+      "questionId": "TECLA_PAU-0500",
+      "respondingPlayer": "TECLA",
+      "judge": "PAU",
+      "respondentJson": "PASS",
+      "respondentDom": "PASS",
+      "judgeAnswer": "PASS"
+    },
+    "TP": {
+      "questionId": "TP-0168",
+      "respondingPlayer": "PAU",
+      "judge": "TECLA",
+      "respondentJson": "PASS",
+      "respondentDom": "PASS",
+      "judgeAnswer": "PASS"
+    }
+  },
+  "captures": [
+    {
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/question-bank/screenshots/respondent-390x844.png",
+      "geometry": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "question": {
+          "x": 40,
+          "y": 432.875,
+          "width": 310,
+          "height": 322.125,
+          "top": 432.875,
+          "right": 350,
+          "bottom": 755,
+          "left": 40
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/question-bank/screenshots/respondent-1024x768.png",
+      "geometry": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "question": {
+          "x": 634.15625,
+          "y": 272.5,
+          "width": 343.84375,
+          "height": 324,
+          "top": 272.5,
+          "right": 978,
+          "bottom": 596.5,
+          "left": 634.15625
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/question-bank/screenshots/respondent-1440x900.png",
+      "geometry": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "question": {
+          "x": 922.296875,
+          "y": 329,
+          "width": 453.703125,
+          "height": 360,
+          "top": 329,
+          "right": 1376,
+          "bottom": 689,
+          "left": 922.296875
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Real canonical bank, two anonymous users, verified roles, safe RPCs, private Realtime and real App DOM; no mocks",
+  "qaUserIds": [
+    "1a00dd3b-4748-4dca-ad7e-8c4e158c9d56",
+    "767d8792-5e58-4a7f-b4d5-b71959fc5b55",
+    "92c85667-2da1-4bd7-b13a-26bfbcdcfc57",
+    "b7979dac-e5be-4aac-9835-9d51ee01d59a",
+    "55a982b3-d8da-4330-b28b-cbebf9e724b2",
+    "1924d013-2905-4981-9f35-128db0fd8649",
+    "86d71644-1624-4cfa-b3a9-0078d39905d5"
+  ],
+  "qaGameIds": [
+    "4d632ca2-21c9-49a2-95f8-63a59bac584f",
+    "68e835b1-5a33-4f36-9cd2-16dee106af8b",
+    "a2dac3ec-ac8b-4748-8f98-25877a0a7c75",
+    "f8821b24-833d-4348-a000-de5e18e95057"
+  ],
+  "traceAndVideoDisabled": true
+}

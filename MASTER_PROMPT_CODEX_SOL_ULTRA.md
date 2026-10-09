@@ -432,3 +432,9 @@ Per instrucció posterior de l’usuari, les animacions principals duren un 50% 
 ## Identitat en línia — revisió posterior
 
 La instrucció posterior de l’usuari introdueix dos codis privats, un per a cada jugador, exclusivament per a partides en línia. El menú i el mode presencial conserven l’entrada pública. Els valors dels codis es configuren fora del repositori; els hashes i la vinculació entre sessió i rol romanen al servidor. En crear o entrar en una partida en línia, el servidor exigeix el rol identificat. El rol es conserva en recarregar. L’entrada recupera una sessió local invàlida i ofereix un error explicatiu i un botó per tornar-ho a provar si falla la connexió.
+
+## Banc canònic — revisió posterior de 9 d’octubre de 2026
+
+La instrucció posterior de l’usuari substitueix el banc inicial de 130 preguntes per les 5.000 files del paquet canònic. Les 130 originals i el seu historial es conserven, però el selector fa servir la versió canònica activada. Una pregunta i un `fact_id` no es poden repetir dins de la mateixa partida, tampoc quan canvia la pila. Les formulacions inverses de la mateixa relació capital–país comparteixen una clau semàntica addicional. El selector evita els fets de les 10 últimes partides per a PAU, TECLA i TP, i de les 5 últimes per a les piles creuades. Només si no queda cap candidat nou es recupera el fet menys recent de partides anteriors; mai s’afluixen les exclusions dins de la partida, de resposta consecutiva o de tercer subtema consecutiu. L’esgotament real retorna un error estable.
+
+Les files dubtoses queden DRAFT i inactives, sense eliminar ni canviar els textos originals. El banc i els identificadors descriptius de l’historial són exclusius del servidor; qui respon només rep la vista segura. Consulteu `QUESTION_BANK_IMPORT_REPORT.md` i `data/question-bank/REVIEW.md` per als recomptes i les proves executades.

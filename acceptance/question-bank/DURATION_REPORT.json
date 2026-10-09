@@ -1,0 +1,46 @@
+{
+  "checks": [
+    "all51-supported-minutes-and5-persisted-presets",
+    "balanced-pools-plus-one-and-immutable-board",
+    "new-game10-to60-validation-private-helpers-legacy-constraint",
+    "50-cell-game-to-meta-no-repeat-approved-only-idempotent-result",
+    "pool-exhaustion-is-atomic-no-repeat-and-abandon-no-result",
+    "historical180-minute-idempotency-replay-preserved"
+  ],
+  "status": "PASS",
+  "fixtures": {
+    "userId": "a094540e-ea24-4124-a789-888b6b4ede4b",
+    "gameIds": [
+      "9992d938-5172-4116-8749-e8cb8a14643b",
+      "b4240159-6655-434b-acee-ea85537fe5b3",
+      "ce5686a3-72aa-4a37-8433-997d2d480d8c",
+      "ba07f3e5-5672-4512-91d1-466e68726283",
+      "7fc0542a-cc7b-48a8-99eb-5a36e1081212",
+      "66a891d3-6edc-4fe9-9cbc-05ac0a48ee6a"
+    ],
+    "rolledBack": true
+  },
+  "noSecrets": true,
+  "preservedRows": {
+    "cells": {
+      "hash": "9872782eba7896ced18f40f597073eb4",
+      "count": 449
+    },
+    "games": {
+      "hash": "ea532dd42e6b2bd17481ab65b933e328",
+      "count": 32
+    },
+    "users": {
+      "hash": "969c92248257f317165d770f4a1d3b1d",
+      "count": 23
+    },
+    "results": {
+      "hash": "a05e76e382566bc46b42b394d74f0298",
+      "count": 8
+    }
+  },
+  "completedTurns": 87,
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "authSessionsCreated": 0
+}

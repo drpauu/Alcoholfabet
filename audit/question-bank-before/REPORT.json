@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "height": 844,
+      "title": "Alcoholfabet",
+      "status": "PASS"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "title": "Alcoholfabet",
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "title": "Alcoholfabet",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "qaUserIds": [
+    "ef074503-462b-40ee-80b5-a39bafae499b"
+  ],
+  "qaGameIds": [],
+  "scope": "Real Auth and access RPC; no game created."
+}

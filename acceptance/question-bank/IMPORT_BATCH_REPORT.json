@@ -1,0 +1,256 @@
+{
+  "firstImport": [
+    {
+      "batch": 1,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 2,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 3,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 4,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 5,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 6,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 7,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 8,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 9,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 10,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 11,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 12,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 13,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 14,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 15,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 16,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 17,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 18,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 19,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 20,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 21,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 22,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 23,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 24,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 25,
+      "rowsChanged": 200,
+      "rowsReceived": 200
+    }
+  ],
+  "repeatImport": [
+    {
+      "batch": 1,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 2,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 3,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 4,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 5,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 6,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 7,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 8,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 9,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 10,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 11,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 12,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 13,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 14,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 15,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 16,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 17,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 18,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 19,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 20,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 21,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 22,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 23,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 24,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "batch": 25,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    }
+  ]
+}

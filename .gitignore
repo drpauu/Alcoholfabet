@@ -10,3 +10,5 @@ test-results-*/
 *.log
 __pycache__/
 *.pyc
+# The canonical JSONL is kept separately; do not commit the original archive.
+/tecla_pau_5000_questions_pack.zip

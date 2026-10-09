@@ -1,0 +1,95 @@
+{
+  "scope": "question-bank",
+  "status": "COMPLETE",
+  "noSecrets": true,
+  "projectRef": "lhgyopkwstuyxolwfucq",
+  "completedAt": "2026-10-09T19:04:12.076856+00:00",
+  "deletedGames": 4,
+  "deletedUsers": 8,
+  "questionCount": 5130,
+  "requestedGames": 4,
+  "requestedUsers": 8,
+  "couplePreserved": true,
+  "legacyScoreboard": {
+    "pauWins": 1,
+    "teclaWins": 1,
+    "completedGames": 2
+  },
+  "publicScoreboard": {
+    "pauWins": 2,
+    "teclaWins": 2,
+    "completedGames": 4
+  },
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "questionsPreserved": true,
+  "accessHashPreserved": true,
+  "deletedMatchResults": 2,
+  "preservedOtherGames": 30,
+  "preservedOtherUsers": 19,
+  "unlistedRowsUnchanged": true,
+  "relatedTableVerification": {
+    "auth.sessions": {
+      "status": "PASS",
+      "preservedRows": 19,
+      "remainingQaRows": 0
+    },
+    "auth.identities": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "public.game_cells": {
+      "status": "PASS",
+      "preservedRows": 415,
+      "remainingQaRows": 0
+    },
+    "public.game_events": {
+      "status": "PASS",
+      "preservedRows": 717,
+      "remainingQaRows": 0
+    },
+    "auth.refresh_tokens": {
+      "status": "PASS",
+      "preservedRows": 32,
+      "remainingQaRows": 0
+    },
+    "public.game_members": {
+      "status": "PASS",
+      "preservedRows": 31,
+      "remainingQaRows": 0
+    },
+    "public.couple_admins": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "private.access_attempts": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "public.authorized_devices": {
+      "status": "PASS",
+      "preservedRows": 2,
+      "remainingQaRows": 0
+    },
+    "public.game_question_usage": {
+      "status": "PASS",
+      "preservedRows": 164,
+      "remainingQaRows": 0
+    },
+    "private.online_player_attempts": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "private.online_player_identities": {
+      "status": "PASS",
+      "preservedRows": 3,
+      "remainingQaRows": 0
+    }
+  },
+  "preservedOtherMatchResults": 6,
+  "remainingQaAuthorizedDevices": 0
+}

@@ -1,0 +1,65 @@
+{
+  "canonicalSha256": "77ec50045385d329676759da468f69804f89dfb7a468fe52462b1e49eb7d21da",
+  "reviewedSha256": "90bf0b7085959157fdb631c486e86010d1f1daeef2fb9057d51d0bd1b68e77be",
+  "read": 5000,
+  "approved": 4596,
+  "draft": 404,
+  "facts": 1529,
+  "selectionFacts": 1475,
+  "pools": {
+    "PAU": {
+      "imported": 1300,
+      "active": 1279,
+      "draft": 21
+    },
+    "TECLA": {
+      "imported": 1300,
+      "active": 1079,
+      "draft": 221
+    },
+    "TECLA_PAU": {
+      "imported": 750,
+      "active": 739,
+      "draft": 11
+    },
+    "PAU_TECLA": {
+      "imported": 750,
+      "active": 611,
+      "draft": 139
+    },
+    "TP": {
+      "imported": 900,
+      "active": 888,
+      "draft": 12
+    }
+  },
+  "topics": {
+    "Informàtica UPC": 1150,
+    "Geografia": 858,
+    "Geografia i geopolítica": 42,
+    "Ciència": 500,
+    "Enginyeria Biomèdica UB": 1150,
+    "Sitges": 600,
+    "Música": 300,
+    "Atletisme": 100,
+    "Cultura general": 300
+  },
+  "issuesByReason": {
+    "AMBIGUITY: manca especificar serialitzabilitat per conflictes.": 8,
+    "AMBIGUITY: manca distingir dependències multivaluades amb determinant superclau.": 5,
+    "LANGUAGE: el nom de l’estat en català necessita revisió («Lao»).": 3,
+    "TEMPORAL: codi ISO de moneda retirat o substituït; no activar sense revisió.": 6,
+    "FACTUAL: UYI és una unitat indexada, no la moneda principal (UYU).": 1,
+    "AMBIGUITY: capital i seu del govern diferents o capitals múltiples; falta precisar la funció.": 4,
+    "AMBIGUITY: cal especificar el codi genètic estàndard; hi ha codis alternatius.": 9,
+    "AMBIGUITY: «més gran» no precisa alçària, volum o superfície del volcà.": 3,
+    "TERMINOLOGY: anglicisme sense terme català ni context d’ondulació.": 22,
+    "AMBIGUITY: diverses finestres redueixen els lòbuls laterals respecte de la rectangular.": 11,
+    "SOURCE_PENDING: pàgina oficial detallada inaccessible o fet encara no confirmat en la font consultada.": 324,
+    "TEMPORAL: «més recent» i el recorregut històric no tenen una data de referència en la pregunta.": 12,
+    "AMBIGUITY: una lligadura d’expressió indica articulació, no qualsevol línia de fraseig.": 3,
+    "FACTUAL: +76 no és el prefix internacional del Kazakhstan; cal distingir +7 de la numeració nacional.": 1,
+    "AMBIGUITY: cal precisar el castell i l’estructura de reforç habitual.": 2,
+    "AMBIGUITY: el delta inclou el Baix Ebre i el Montsià; no hi ha una comarca única inequívoca.": 2
+  }
+}

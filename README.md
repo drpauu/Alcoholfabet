@@ -72,3 +72,20 @@ Les animacions principals s’han alentit un 50%, amb el so sincronitzat. S’ha
 La migració `0013_online_player_identity.sql` afegeix dos codis privats que assignen el rol exclusivament en línia, amb validació al servidor. El client recupera les sessions locals invàlides i mostra el motiu de l’error d’entrada amb un botó per tornar-ho a provar. Les proves amb dos dispositius, les captures i la neteja de QA són a [acceptance/online-identity/](acceptance/online-identity/README.md).
 
 La fusta del tauler utilitza vetes vectorials i una ombra separada, amb la vora inferior nítida. La regla del +1 s’ha verificat amb RPCs reals: un encert avança dues caselles amb una sola pregunta; un error o una resposta desconeguda no avança, passa el torn i indica beure doble. Informes: [acceptance/plus-board/](acceptance/plus-board/README.md).
+
+## Banc de 5.000 preguntes i no repetició
+
+El banc canònic està importat al projecte Supabase existent: 5.000 files, de les quals 4.596 són actives i 404 són DRAFT per incidències o verificació pendent. Les 130 originals es conserven amb els seus IDs i resultats. El joc tria al servidor una sola pregunta i no descarrega el banc al navegador.
+
+No es repeteix cap `fact_id` dins d’una partida, encara que tingui altres formulacions o aparegui en una altra pila. Les relacions capital–país també es bloquegen en sentit invers. El selector evita els fets de les últimes 10 partides (5 per a les piles creuades), la mateixa resposta consecutiva i un tercer subtema consecutiu. Quan no queda cap fet nou respecte de l’historial recent, escull el menys recent; les exclusions dins de la partida continuen sent obligatòries.
+
+```sh
+python3 scripts/validate_question_pack.py data/question-bank/questions_5000.jsonl
+python3 scripts/audit_question_bank.py data/question-bank/questions_5000.jsonl
+node --test tests/question-bank/importer.test.mjs
+python3 tests/question-bank/audit_test.py
+```
+
+L’importador utilitzat és `scripts/import_questions_supabase.mjs`. Amb `--emit-sql DIRECTORI_PRIVAT` genera 25 lots de 200 files per executar mitjançant MCP, seguits de la finalització. Sense aquest argument utilitza `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY` exclusivament a l’entorn administratiu del procés. Les funcions administratives rebutgen els clients normals. No poseu aquesta clau a `.env.local`, a cap variable `VITE_` ni a Git. La reimportació no crea duplicats i una importació incompleta no activa el banc.
+
+Migracions i verificació: [QUESTION_BANK_IMPORT_REPORT.md](QUESTION_BANK_IMPORT_REPORT.md). Les incidències per fila són a `question_review_issues.csv`; els textos canònics i de revisió estan protegits a `data/question-bank/` i queden fora del desplegament. `.vercelignore` també exclou el ZIP original i les evidències de QA.

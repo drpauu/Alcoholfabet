@@ -1,0 +1,10 @@
+# Raw banks, source photos and backups are never deployment assets.
+tecla_pau_5000_questions_pack.zip
+data/question-bank/
+data/questions_approved.*
+data/questions_draft_to_review.json
+assets/reference/people/
+assets/production/avatars/
+audit/
+acceptance/
+question_review_issues.csv

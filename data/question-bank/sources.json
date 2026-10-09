@@ -1,0 +1,62 @@
+{
+  "UPC_FIB": {
+    "title": "Grau en Enginyeria Informàtica — pla d'estudis i assignatures (FIB-UPC)",
+    "url": "https://www.fib.upc.edu/ca/graus/grau-en-enginyeria-informatica/pla-destudis",
+    "type": "official_curriculum"
+  },
+  "UPC_FIB_SUBJECTS": {
+    "title": "Assignatures del Grau en Enginyeria Informàtica (FIB-UPC)",
+    "url": "https://www.fib.upc.edu/es/grados/grado-en-ingenieria-informatica/plan-de-estudios/asignaturas",
+    "type": "official_curriculum"
+  },
+  "UB_BIOMED": {
+    "title": "Grau en Enginyeria Biomèdica — relació d'assignatures (UB)",
+    "url": "https://www.ub.edu/portal/web/medicina-ciencias-salud/grados/-/ensenyaments/detall/6178758/27",
+    "type": "official_curriculum"
+  },
+  "SITGES_FM": {
+    "title": "Seguici Popular de la Festa Major de Sitges",
+    "url": "https://www.sitgesfestamajor.cat/sobre-la-festa/el-seguici-popular/",
+    "type": "official_local"
+  },
+  "WORLD_ATHLETICS": {
+    "title": "Competition and Technical Rules — World Athletics 2026",
+    "url": "https://worldathletics.org/download/download?filename=e7faf2e8-0385-4686-bbd0-acdb5d958e8f.pdf&urlslug=Competition+and+Technical+Rules+%E2%80%93+2026+Edition",
+    "type": "official_rules"
+  },
+  "REST_COUNTRIES": {
+    "title": "REST Countries / countryinfo structured country data",
+    "url": "https://restcountries.com/",
+    "type": "structured_reference"
+  },
+  "UN_M49": {
+    "title": "UN Statistics M49 geographic regions",
+    "url": "https://unstats.un.org/unsd/methodology/m49/",
+    "type": "official_reference"
+  },
+  "IUPAC": {
+    "title": "IUPAC Periodic Table of the Elements",
+    "url": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+    "type": "official_reference"
+  },
+  "NCBI": {
+    "title": "NCBI Bookshelf biomedical reference",
+    "url": "https://www.ncbi.nlm.nih.gov/books/",
+    "type": "primary_reference_hub"
+  },
+  "NASA": {
+    "title": "NASA Solar System Exploration",
+    "url": "https://science.nasa.gov/solar-system/",
+    "type": "official_reference"
+  },
+  "OPEN_MUSIC_THEORY": {
+    "title": "Open Music Theory",
+    "url": "https://viva.pressbooks.pub/openmusictheory/",
+    "type": "open_educational_reference"
+  },
+  "GENERAL_REFERENCE": {
+    "title": "Stable general-knowledge reference set",
+    "url": "https://www.britannica.com/",
+    "type": "general_reference"
+  }
+}

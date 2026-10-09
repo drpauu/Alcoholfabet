@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tecla&Pau question",
+  "type": "object",
+  "required": [
+    "id",
+    "pool",
+    "topic",
+    "subtopic",
+    "difficulty",
+    "question_ca",
+    "answer_ca",
+    "fact_id",
+    "source_url",
+    "review_status",
+    "active"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(PAU|TECLA|TECLA_PAU|PAU_TECLA|TP)-[0-9]{4}$"
+    },
+    "pool": {
+      "enum": [
+        "PAU",
+        "TECLA",
+        "TECLA_PAU",
+        "PAU_TECLA",
+        "TP"
+      ]
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtopic": {
+      "type": "string",
+      "minLength": 1
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7
+    },
+    "question_ca": {
+      "type": "string",
+      "minLength": 8
+    },
+    "answer_ca": {
+      "type": "string",
+      "minLength": 1
+    },
+    "accepted_answers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "answer_word_count": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "fact_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "variant_no": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_key": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "review_status": {
+      "enum": [
+        "APPROVED",
+        "DRAFT",
+        "ARCHIVED"
+      ]
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": true
+}

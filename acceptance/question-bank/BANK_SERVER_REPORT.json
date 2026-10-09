@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "5000 package + 130 legacy; exact five pools, unique external IDs, answers 1–5 words, difficulty 1–7",
+    "RLS and default-deny bank; administrative import and selector inaccessible to clients",
+    "150 real-bank selections in all five pools: no IDs, facts, inverse capital relation, answer or subtopic repeats",
+    "database rejects another variant even when question_id differs",
+    "last 10 games for personal/TP; last 5 for crossed; facts excluded across pools and abandoned games included",
+    "controlled fallback selects the oldest last occurrence, never current-match facts",
+    "true exhaustion returns QUESTION_POOL_EMPTY, with no repetition fallback",
+    "same-answer exclusion remains hard during exhaustion",
+    "inverse formulations with different fact IDs are rejected by a second unique semantic constraint",
+    "third consecutive identical subtopic is blocked and DRAFT candidates never rescue exhaustion",
+    "mapped legacy concept excluded while the original historical usage snapshot is preserved"
+  ],
+  "status": "PASS",
+  "legacyRows": 130,
+  "packageRows": 5000,
+  "fixturesRolledBack": true,
+  "selectionLatencyMs": {
+    "max": 36.785,
+    "min": 1.819,
+    "p95": 28.79475,
+    "mean": 14.3531266666667,
+    "calls": 150
+  }
+}

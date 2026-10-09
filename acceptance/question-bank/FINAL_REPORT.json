@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "canonicalRead": 5000,
+  "approved": 4596,
+  "draft": 404,
+  "legacyPreserved": 130,
+  "unitTests": 34,
+  "importerTests": 6,
+  "auditTests": 4,
+  "backendGroups": 11,
+  "completedGames": 2,
+  "onlinePoolsChecked": [
+    "PAU",
+    "TECLA",
+    "PAU_TECLA",
+    "TECLA_PAU",
+    "TP"
+  ],
+  "responsiveSizes": [
+    [
+      390,
+      844
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "selectionLatencyMs": {
+    "max": 36.785,
+    "min": 1.819,
+    "p95": 28.79475,
+    "mean": 14.3531266666667,
+    "calls": 150
+  },
+  "cleanup": {
+    "users": 8,
+    "games": 4,
+    "results": 2,
+    "remaining": 0,
+    "otherRowsUnchanged": true
+  },
+  "remainingEditorialReview": 404,
+  "deploymentPerformed": false
+}
