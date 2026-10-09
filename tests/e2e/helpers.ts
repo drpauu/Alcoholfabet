@@ -93,6 +93,12 @@ export async function createGame(page: Page, online: boolean, minutes = 45) {
   await page.getByRole('button', { name: 'Continuar', exact: true }).click();
   await page.getByRole('button', { name: 'Pau en Pau' }).click();
   await expect(page.locator('[data-game-id]')).toBeVisible();
+  if (!online) await waitForQuestion(page);
+}
+
+export async function waitForQuestion(page: Page) {
+  await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /QUESTION|TP_OPEN|TP_CLAIMED/);
+  await expect(page.locator('.question-card')).toHaveAttribute('aria-busy', 'false');
 }
 
 export async function currentView(page: Page): Promise<GameView> {

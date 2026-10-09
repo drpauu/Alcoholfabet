@@ -288,7 +288,7 @@ try {
       await click(page, '60 minuts'); await click(page, 'Continuar'); await screenshot(page, 'starter', size); await click(page, 'Pau en Pau');
       await expect(page.locator('[data-game-id]')).toBeVisible();
       let state = await view(page); await settled(page);
-      await screenshot(page, 'turn-intro', size);
+      await screenshot(page, 'question-ready', size);
       await click(page, 'Sortir'); await expect(page.locator('dialog[open]')).toBeVisible();
       await screenshot(page, 'abandon-confirmation', size); await click(page, 'Continuar jugant');
       if (size[0] === 390 || size[0] === 1024) {
@@ -300,7 +300,7 @@ try {
       }
       let sawIncorrect = false, sawCorrect = false, sawQuestion = false, sawAnswer = false, sawTP = false, sawPlus = false;
       for (let turn = 0; turn < 45; turn += 1) {
-        await action(page, 'Començar el torn'); state = await view(page); await settled(page);
+        await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /QUESTION|TP_OPEN|TP_CLAIMED/); state = await view(page); await settled(page);
         if (state.game.phase === 'TP_OPEN') {
           if (!sawTP) { await screenshot(page, 'tp', size); sawTP = true; }
           await action(page, 'En Pau respon!'); state = await view(page); await settled(page);
@@ -359,7 +359,7 @@ try {
     // Additional master-prompt sizes use a real, long server-selected question.
     let representative;
     for (let attempt = 0; attempt < 12; attempt += 1) {
-      await action(page, 'Començar el torn'); await settled(page); representative = await view(page);
+      await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /QUESTION|TP_OPEN|TP_CLAIMED/); await settled(page); representative = await view(page);
       if ((representative.question?.questionCa.length ?? 0) >= 75 || attempt === 11) break;
       await action(page, 'Mostra la resposta'); await settled(page); await action(page, 'Incorrecte'); await settled(page);
       await action(page, 'Següent torn'); await settled(page);
@@ -389,7 +389,7 @@ try {
       await screenshot(page, 'online-lobby', size);
       // Supplement main-game TP snapshot with real online question protection.
       await action(page, 'Començar la partida'); await settled(page); await settled(other);
-      await action(page, 'Començar el torn'); await settled(page); await settled(other);
+      await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /QUESTION|TP_OPEN|TP_CLAIMED/); await settled(page); await settled(other);
       const respondent = await view(page), judge = await view(other);
       expect(respondent.question).not.toHaveProperty('answerCa'); expect(judge.question?.answerCa).toBeTruthy();
       await expect(page.locator('.answer-panel')).toHaveCount(0);

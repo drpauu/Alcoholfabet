@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { expect, test } from '@playwright/test';
 import type { Browser, Page } from '@playwright/test';
-import { createGame, currentView, projectUrl, trackQaContext } from './helpers';
+import { createGame, currentView, projectUrl, trackQaContext, waitForQuestion } from './helpers';
 
 const noVideoMode = process.env.TECLA_MOTION_NO_VIDEO === '1';
 let noVideoSignupAttempts = 0;
@@ -123,9 +123,9 @@ test('motion normal: gir al punt mig, recorregut continu i dues arribades +1', a
   for (let turn = 0; turn < 100; turn += 1) {
     let view = await syncedView(page);
     if (view.game.status === 'FINISHED') throw new Error('MOTION_QA_EXPECTED_ACTIVE_GAME');
-    if (view.capabilities.canNextTurn) { await page.getByRole('button', { name: 'Següent torn', exact: true }).click(); await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /READY|TURN_INTRO/); }
+    if (view.capabilities.canNextTurn) { await page.getByRole('button', { name: 'Següent torn', exact: true }).click(); await waitForQuestion(page); }
     view = await syncedView(page);
-    if (view.capabilities.canBeginTurn) { await page.getByRole('button', { name: 'Començar el torn', exact: true }).click(); await expect(page.locator('[data-phase]')).not.toHaveAttribute('data-phase', /READY|TURN_INTRO/); }
+    await waitForQuestion(page);
     view = await syncedView(page);
     if (view.game.phase === 'TP_OPEN') { await page.getByRole('button', { name: 'En Pau respon!', exact: true }).click(); await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', 'TP_CLAIMED'); }
     view = await syncedView(page);
@@ -167,9 +167,7 @@ test('motion normal: gir al punt mig, recorregut continu i dues arribades +1', a
   }
   expect(bonus).toBe(true);
   await page.getByRole('button', { name: 'Següent torn', exact: true }).click();
-  await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /READY|TURN_INTRO/);
-  await page.getByRole('button', { name: 'Començar el torn', exact: true }).click();
-  await expect(page.locator('[data-phase]')).not.toHaveAttribute('data-phase', /READY|TURN_INTRO/);
+  await waitForQuestion(page);
   const snapshot = await syncedView(page);
   writeFileSync(`acceptance/art-redesign/${noVideoMode ? 'MOTION_NO_VIDEO_FRAMES' : 'MOTION_BROWSER_QA'}.json`, JSON.stringify({ date: new Date().toISOString(), gameId: snapshot.game.id, errors, evidence, videoRecording: !noVideoMode, screenshotRecording: !noVideoMode, existingSessionOnly: noVideoMode, newAuthAttempts: noVideoMode ? noVideoSignupAttempts : null, isolatedRecorder: true, nativeRafTimestamps: true }, null, 2));
   expect(errors).toEqual([]);
@@ -195,9 +193,9 @@ test('motion normal: META, corona, marcador i accions finals en seqüència', as
   for (let turn = 0; turn < 100; turn += 1) {
     let view = await syncedView(page);
     if (view.game.status === 'FINISHED') break;
-    if (view.capabilities.canNextTurn) { await page.getByRole('button', { name: 'Següent torn', exact: true }).click(); await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /READY|TURN_INTRO/); }
+    if (view.capabilities.canNextTurn) { await page.getByRole('button', { name: 'Següent torn', exact: true }).click(); await waitForQuestion(page); }
     view = await syncedView(page);
-    if (view.capabilities.canBeginTurn) { await page.getByRole('button', { name: 'Començar el torn', exact: true }).click(); await expect(page.locator('[data-phase]')).not.toHaveAttribute('data-phase', /READY|TURN_INTRO/); }
+    await waitForQuestion(page);
     view = await syncedView(page);
     if (view.game.phase === 'TP_OPEN') { await page.getByRole('button', { name: 'En Pau respon!', exact: true }).click(); await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', 'TP_CLAIMED'); }
     if (await page.getByRole('button', { name: 'Mostra la resposta', exact: true }).count()) await page.getByRole('button', { name: 'Mostra la resposta', exact: true }).click();

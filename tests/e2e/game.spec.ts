@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { identifyOnline, clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced } from './helpers';
+import { identifyOnline, clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced, waitForQuestion } from './helpers';
 
 test('partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic', async ({ browser }) => {
   const context = await makeContext(browser, 0);
@@ -14,7 +14,7 @@ test('partida presencial: accés, resposta oculta, error, +1, Meta i marcador ú
   let bonus = false;
   let completed = false;
   for (let turn = 0; turn < 50; turn++) {
-    await clickAction(page,'Començar el torn');
+    await waitForQuestion(page);
     let view = await currentView(page);
     if (view.game.phase === 'TP_OPEN') {
       await clickAction(page,view.game.currentTurn === 'PAU' ? 'En Pau respon!' : 'La Tecla respon!');
@@ -75,7 +75,7 @@ test('online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió
   for (let turn = 0; turn < 50; turn++) {
     let view = await currentView(pau);
     const active = view.game.currentTurn === 'PAU' ? pau : tecla;
-    await clickAction(active,'Començar el torn');
+    await waitForQuestion(active);
     await waitSynced(pau,tecla);
     view = await currentView(pau);
     if (view.game.phase === 'TP_OPEN') {
@@ -178,7 +178,7 @@ test('online: abandonar durant la pregunta recupera tots dos dispositius sense r
   writeFileSync('acceptance/art-redesign/LOBBY_1366_REPORT.json', JSON.stringify({ status: 'PASS', completedAt: new Date().toISOString(), gameId: lobby.game.id, existingE2EFixture: true, noExtraGameOrAuth: true, noGameMutationsDuringCapture: true, width: 1366, height: 768, layout: lobbyLayout, noSecrets: true }, null, 2));
   await pau.setViewportSize({ width: 1440, height: 900 });
   await clickAction(pau, 'Començar la partida'); await waitSynced(pau, tecla);
-  await clickAction(pau, 'Començar el torn'); await waitSynced(pau, tecla);
+  await waitForQuestion(pau); await waitSynced(pau, tecla);
   const before = await currentView(pau);
   expect(before.question).not.toBeNull(); expect(before.question).not.toHaveProperty('answerCa');
   expect((await currentView(tecla)).question?.answerCa).toBeTruthy();

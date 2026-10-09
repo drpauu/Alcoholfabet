@@ -8,6 +8,7 @@ export function useGameChannel(gameId: string | null, userId: string | null, rol
   const [presentRoles, setPresentRoles] = useState<string[]>([]);
   const refreshRef = useRef(refresh);
   const versionRef = useRef(stateVersion);
+  const connectedGameRef = useRef<string | null>(null);
   refreshRef.current = refresh;
   versionRef.current = stateVersion;
 
@@ -58,7 +59,10 @@ export function useGameChannel(gameId: string | null, userId: string | null, rol
           try {
             await channel?.track({ userId, role, onlineAt: new Date().toISOString() });
             await sync();
-            if (!disposed && ticket === generation) setConnection('connected');
+            if (!disposed && ticket === generation) {
+              connectedGameRef.current = gameId;
+              setConnection('connected');
+            }
           } catch { schedule(); }
         } else if (['CHANNEL_ERROR', 'TIMED_OUT', 'CLOSED'].includes(status)) schedule();
       });
@@ -90,5 +94,8 @@ export function useGameChannel(gameId: string | null, userId: string | null, rol
       if (channel) void client.removeChannel(channel);
     };
   }, [gameId, userId, role]);
-  return { connection, presentRoles };
+  const currentConnection = gameId && connectedGameRef.current !== gameId
+    ? connection === 'reconnecting' ? 'reconnecting' : 'connecting'
+    : connection;
+  return { connection: currentConnection, presentRoles };
 }

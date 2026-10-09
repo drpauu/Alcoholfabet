@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { identifyOnline, clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced } from './helpers';
+import { identifyOnline, clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced, waitForQuestion } from './helpers';
 
 const directory = process.env.TECLA_PAU_CAPTURE_DIRECTORY || 'acceptance/alcoholfabet';
 const sizes = [[360, 800], [390, 844], [430, 932], [1024, 768], [1440, 900]] as const;
@@ -51,7 +51,7 @@ test('presencial: got ple, noms i doble, tauler llarg i abandonar torna directam
     let sawPau = false, sawTecla = false, sawDouble = false;
     const used = new Set<string>();
     for (let turn = 0; turn < 60 && !(sawPau && sawTecla && sawDouble); turn++) {
-      await clickAction(page, 'Començar el torn');
+      await waitForQuestion(page);
       let view = await currentView(page);
       if (view.game.phase === 'TP_OPEN') { await clickAction(page, view.game.currentTurn === 'PAU' ? 'En Pau respon!' : 'La Tecla respon!'); view = await currentView(page); }
       expect(used.has(view.question!.id)).toBe(false); used.add(view.question!.id);
@@ -157,7 +157,7 @@ test('online: qui reclama T&P veu el seu avís de beure i abandonar torna tots d
     for (let turn = 0; turn < 30 && !testedClaimant; turn++) {
       let view = await currentView(pau);
       const active = view.game.currentTurn === 'PAU' ? pau : tecla;
-      await clickAction(active, 'Començar el torn'); await waitSynced(pau, tecla); view = await currentView(pau);
+      await waitForQuestion(active); await waitSynced(pau, tecla); view = await currentView(pau);
       const tp = view.game.phase === 'TP_OPEN';
       if (tp) {
         expect(view.question).not.toHaveProperty('answerCa'); expect((await currentView(tecla)).question).not.toHaveProperty('answerCa');

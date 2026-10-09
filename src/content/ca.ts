@@ -42,7 +42,7 @@ export const ca = {
   close: 'Tancar',
   exit: 'Sortir',
   showRules: 'Llegir les normes',
-  questionReady: 'La següent casella us espera.',
+  questionLoading: 'Preparant la pregunta…',
   turnLabel: 'Torn',
   boardLabel: 'Tauler de joc',
   personalLabel: 'Personal',

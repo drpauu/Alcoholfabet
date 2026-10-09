@@ -93,9 +93,9 @@ Ordre visual:
 ### TURN_INTRO
 
 - Tauler gran.
-- Casella objectiu fa pols suau.
-- Targeta encara no ha entrat.
-- Botó `Començar el torn`.
+- Estat transitori mentre el servidor prepara la pregunta.
+- El dispositiu autoritzat inicia el torn automàticament, sense botó ni pantalla de confirmació.
+- Després de `Següent torn`, s’obre directament la pregunta següent.
 
 ### QUESTION
 

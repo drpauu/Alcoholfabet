@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T21:54:15.269Z",
+  "scope": "Real App, useGameSession, useGameChannel, GameRepository, motion; isolated RPC and Realtime transport fixtures",
+  "cases": [
+    {
+      "name": "in-person: automatic start, next turn, double drink, reload, three viewports",
+      "status": "PASS",
+      "beginIntents": 2
+    },
+    {
+      "name": "online: lobby, automatic PAU/TECLA turns, safe answers, open confirmation pauses start",
+      "status": "PASS",
+      "beginIntents": 2
+    },
+    {
+      "name": "T&P: automatic question preserves claim",
+      "status": "PASS"
+    },
+    {
+      "name": "RPC failure: no loop, dismissing the error retries",
+      "status": "PASS"
+    },
+    {
+      "name": "reconnect: begin only after connection is restored",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "blockedRequests": [],
+  "authCreated": 0,
+  "gamesCreated": 0,
+  "scoreChanges": 0
+}

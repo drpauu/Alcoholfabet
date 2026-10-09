@@ -1,0 +1,23 @@
+{
+  "status": "BASELINE_CAPTURED",
+  "captures": [
+    {
+      "width": 390,
+      "height": 844,
+      "manualBeginTurn": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "manualBeginTurn": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "manualBeginTurn": true
+    }
+  ],
+  "errors": [],
+  "authCreated": 0,
+  "gamesCreated": 0
+}

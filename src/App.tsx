@@ -61,6 +61,12 @@ export default function App() {
   const wasDisconnected = useRef(false);
 
   useEffect(() => {
+    if (!view || session.loading || !session.access?.authorized || session.error || locked || wasDisconnected.current || leave || rules) return;
+    if (view.game.status !== 'ACTIVE' || !['READY', 'TURN_INTRO'].includes(view.game.phase) || !view.capabilities.canBeginTurn) return;
+    void session.run((repo) => repo.action(view, { type: 'BEGIN_TURN' }));
+  }, [view, locked, leave, rules, session.loading, session.access?.authorized, session.error, session.run]);
+
+  useEffect(() => {
     if (invitePending && invite && session.access?.authorized && !view && step === 'HOME') {
       setInvitePending(false);
       setMode('ONLINE'); setJoining(true);
@@ -186,10 +192,9 @@ export default function App() {
             <ArtButtonSecondary icon="home" className="secondary-button" onClick={goHome}>{ca.goHome}</ArtButtonSecondary>
           </div>
         </ArtCard></div> : abandoned ? <ArtPanel><h2>{ca.abandoned}</h2><p>{ca.noPoint}</p><ArtButtonPrimary icon="home" className="primary-button" onClick={goHome}>{ca.goHome}</ArtButtonPrimary></ArtPanel> :
-          <QuestionCard category={categoryFor(view)} pool={view.question?.pool} question={view.question?.questionCa ?? ca.questionReady}
+          <QuestionCard category={categoryFor(view)} pool={view.question?.pool} question={view.question?.questionCa ?? ca.questionLoading}
             answer={view.question?.answerCa} answerVisible={motion.answerVisible} phase={game.phase} busy={locked} drinkDouble={drinkDouble} drinkPlayer={drinkPlayer}>
             {game.phase === 'TP_CLAIMED' && <p className="claim-label" data-motion="claimLabel">{responding === 'PAU' ? ca.pauAnswers : ca.teclaAnswers}</p>}
-            {view.capabilities.canBeginTurn && <ArtButtonPrimary className="primary-button" disabled={locked} onClick={() => act({type:'BEGIN_TURN'})}>{ca.startTurn}</ArtButtonPrimary>}
             {game.phase === 'TP_OPEN' && <div className="claim-controls">
               {game.mode === 'IN_PERSON' ? (['PAU','TECLA'] as const).map((player) => <ArtButtonTP key={player} player={player} data-motion="claimButton" className={player==='PAU'?'blue-button':'pink-button'} disabled={locked || !view.capabilities.canClaim} onClick={() => act({type:'CLAIM_TP',claimant:player})}>{session.pending ? ca.checking : player==='PAU' ? ca.claimPau : ca.claimTecla}</ArtButtonTP>) :
                 <ArtButtonTP player={view.viewer.role as PlayerRole} data-motion="claimButton" className={view.viewer.role==='PAU'?'blue-button':'pink-button'} disabled={locked || !view.capabilities.canClaim} onClick={() => act({type:'CLAIM_TP',claimant:view.viewer.role as PlayerRole})}>{session.pending ? ca.checking : ca.iAnswer}</ArtButtonTP>}
