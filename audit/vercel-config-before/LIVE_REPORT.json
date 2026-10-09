@@ -1,0 +1,30 @@
+{
+  "status": "CONFIRMED_CONFIG_MISSING",
+  "url": "https://www.alcoholfabet.cat/",
+  "captures": [
+    {
+      "width": 390,
+      "height": 844,
+      "path": "audit/vercel-config-before/screenshots/missing-config-390x844.png",
+      "setupMissing": true,
+      "homeVisible": false
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "path": "audit/vercel-config-before/screenshots/missing-config-1024x768.png",
+      "setupMissing": true,
+      "homeVisible": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "path": "audit/vercel-config-before/screenshots/missing-config-1440x900.png",
+      "setupMissing": true,
+      "homeVisible": false
+    }
+  ],
+  "supabaseApiRequests": [],
+  "errors": [],
+  "authSessionsCreated": 0
+}

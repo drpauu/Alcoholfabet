@@ -15,6 +15,12 @@ Obre http://127.0.0.1:5173. En aquest entorn ja hi ha `.env.local` configurat; n
 
 Anonymous Sign-Ins està activat i verificat al projecte remot. Les proves finals de partida han utilitzat dispositius anònims nous i el backend real, sense simular el servidor.
 
+## Desplegar a Vercel
+
+Al projecte de Vercel, obre **Settings → Environment Variables** i configura `VITE_SUPABASE_URL=https://lhgyopkwstuyxolwfucq.supabase.co` i `VITE_SUPABASE_PUBLISHABLE_KEY` amb la mateixa clau pública de `.env.local`. Selecciona **Production** i, si utilitzes desplegaments de prova, **Preview**. Desa els canvis i torna a desplegar des de **Deployments → Redeploy**: Vite incorpora els valors durant la compilació, no després. `.env.local` queda fora de Git i no es transfereix automàticament a Vercel.
+
+Configuració del build: framework **Vite**, comanda `npm run build`, directori de sortida `dist`. La compilació ara falla amb els noms de les variables absents per evitar publicar una app sense connexió. La clau ha de ser pública; no hi introdueixis una service role key ni els codis dels jugadors. El missatge «Cal configurar la connexió al joc.» indica que el frontend publicat s’ha compilat sense la configuració de connexió necessària.
+
 ## Jugar
 
 En persona, escolliu durada i qui comença, responeu parlant i premeu `Mostra la resposta` abans de jutjar. En línia, el codi privat identifica en Pau o la Tecla al servidor; després compartiu el codi de sala i comenceu quan tots dos siguin connectats. El rol es conserva en recarregar i es pot canviar des de la preparació de la trobada. El respondent no rep la resposta al JSON. T&P es reclama atòmicament al servidor. Només arribar formalment a Meta afegeix una victòria.
