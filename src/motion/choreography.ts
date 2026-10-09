@@ -16,22 +16,24 @@ export interface MotionStep {
   pattern?: number[]; playStepSound?: boolean;
   fromPosition?: number; toPosition?: number;
 }
-export interface MotionSequence { totalMs: number; steps: MotionStep[] }
+export interface MotionSequence { totalMs: number; reducedTotalMs?: number; steps: MotionStep[] }
 
 // The source JSON is the timing authority; the adapter adds confirmed movement endpoints.
-const choreography = rawChoreography as unknown as Record<string, { totalMs?: number; steps?: MotionStep[]; request?: MotionStep[]; won?: MotionStep[]; lost?: MotionStep[] }>;
+const choreography = rawChoreography as unknown as Record<string, { totalMs?: number; reducedTotalMs?: number; steps?: MotionStep[]; request?: MotionStep[]; won?: MotionStep[]; lost?: MotionStep[] }>;
 
 export function sequenceFor(effect: ConfirmedGameEffect): MotionSequence {
   if (effect.type === 'TP_CLAIM') {
     const steps = choreography.TP_CLAIM[effect.variant] ?? [];
-    return { totalMs: effect.variant === 'won' ? 300 : 180, steps: steps.map((step) => ({ ...step })) };
+    return { totalMs: stepsEnd(steps), steps: steps.map((step) => ({ ...step })) };
   }
   const source = choreography[effect.type];
   const steps = (source.steps ?? []).map((step) => ({ ...step }));
   if (effect.type === 'CORRECT_AND_MOVE') {
     const feedback = steps.filter((step) => step.action !== 'moveAlongBoard');
+    const movement = steps.find((step) => step.action === 'moveAlongBoard');
+    const feedbackMs = movement?.atMs ?? 0;
     if (effect.plusOne && effect.to - effect.from >= 2) {
-      const plusSteps = (choreography.PLUS_ONE.steps ?? []).map((step) => ({ ...step, atMs: step.atMs + 360 }));
+      const plusSteps = (choreography.PLUS_ONE.steps ?? []).map((step) => ({ ...step, atMs: step.atMs + feedbackMs }));
       let current = effect.from;
       for (const step of plusSteps) {
         if (step.action === 'moveOneCell') {
@@ -41,13 +43,13 @@ export function sequenceFor(effect: ConfirmedGameEffect): MotionSequence {
           step.playStepSound = true;
         }
       }
-      return { totalMs: 1700, steps: [...feedback, ...plusSteps] };
+      return { totalMs: Math.max(stepsEnd(feedback), stepsEnd(plusSteps)), steps: [...feedback, ...plusSteps] };
     }
     for (const step of steps) if (step.action === 'moveAlongBoard') {
       step.fromPosition = effect.from;
       step.toPosition = effect.to;
     }
-    return { totalMs: 360 + Math.max(0, effect.to - effect.from) * 420, steps };
+    return { totalMs: Math.max(stepsEnd(feedback), feedbackMs + Math.max(0, effect.to - effect.from) * (movement?.durationPerCellMs ?? 0)), steps };
   }
   if (effect.type === 'INCORRECT_AND_DRINK') {
     for (const step of steps) if (step.action === 'playDynamic') {
@@ -55,7 +57,7 @@ export function sequenceFor(effect: ConfirmedGameEffect): MotionSequence {
       step.cue = step.cueByDrinkCount?.[String(effect.drinkCount)];
     }
   }
-  return { totalMs: source.totalMs ?? 300, steps };
+  return { totalMs: source.totalMs ?? 300, reducedTotalMs: source.reducedTotalMs, steps };
 }
 
 export function connectionSequence(connected: boolean): MotionSequence {
@@ -64,24 +66,32 @@ export function connectionSequence(connected: boolean): MotionSequence {
 }
 
 export function claimRequestSequence(): MotionSequence {
-  return { totalMs: 90, steps: choreography.TP_CLAIM.request ?? [] };
+  const steps = choreography.TP_CLAIM.request ?? [];
+  return { totalMs: stepsEnd(steps), steps };
+}
+
+function stepsEnd(steps: MotionStep[]): number {
+  return Math.max(0, ...steps.map((step) => step.atMs + (step.durationMs ?? step.durationPerCellMs ?? 0)));
 }
 
 /** Keeps every semantic cue, while replacing trajectories, shake and particles. */
 export function reduceSequence(sequence: MotionSequence): MotionSequence {
-  const ratio = Math.min(1, 180 / Math.max(sequence.totalMs, 1));
+  const totalMs = Math.min(sequence.reducedTotalMs ?? 180, sequence.totalMs);
+  const ratio = Math.min(1, totalMs / Math.max(sequence.totalMs, 1));
   const steps = sequence.steps.flatMap((step): MotionStep[] => {
-    if (step.action === 'emit') return [];
+    if (['emit', 'toastGlass', 'liquidSway', 'sweepGlass', 'ripple'].includes(step.action)) return [];
+    if (step.target === 'drinkClink') return [];
     const reduced = { ...step, atMs: Math.round(step.atMs * ratio), durationMs: step.durationMs ? Math.min(100, Math.round(step.durationMs * ratio)) : undefined };
     if (step.action === 'set' && (step.props?.rotateY !== undefined || step.props?.x !== undefined)) return [];
     if (step.target === 'gameCamera') return [];
+    if (step.action === 'enter' || step.action === 'exit') return [{ ...reduced, from: { opacity: step.action === 'enter' ? 0 : 1 }, to: { opacity: step.action === 'enter' ? 1 : 0 } }];
     if (['moveAlongBoard', 'moveOneCell', 'landAtFinish'].includes(step.action)) return [{ ...reduced, action: 'reducedMove', durationMs: 100 }];
     if (['keyframes', 'animate', 'pulse', 'dropAndBounce', 'raiseGlass'].includes(step.action)) {
       return [{ ...reduced, action: 'reducedFeedback', to: { opacity: 1 }, durationMs: 100 }];
     }
     return [reduced];
   });
-  return { totalMs: Math.min(180, sequence.totalMs), steps };
+  return { totalMs, steps };
 }
 
 export function easing(name = 'enter'): string {

@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "anonymous-entry-and-in-person-create-without-code; online-roles-verified",
+    "outsider-cannot-resume-read-act-or-subscribe-to-other-or-legacy-game",
+    "public-online-join-private-answer-and-member-only-realtime",
+    "rls-and-server-only-write-privileges-preserved"
+  ],
+  "status": "PASS",
+  "noSecrets": true,
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "fixturesRolledBack": true,
+  "authSessionsCreated": 0,
+  "existingRowsUnchanged": true
+}

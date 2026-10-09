@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced } from './helpers';
+import { identifyOnline, clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced } from './helpers';
 
 test('partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic', async ({ browser }) => {
   const context = await makeContext(browser, 0);
@@ -60,8 +60,8 @@ test('online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió
   await createGame(pau, true, 20);
   const lobby = await currentView(pau);
   await tecla.getByRole('button', {name:'Jugar en línia',exact:true}).click();
+  await identifyOnline(tecla, 'TECLA');
   await tecla.getByRole('button', {name:'Unir-se a una partida',exact:true}).click();
-  await tecla.getByRole('button', {name:'Soc la Tecla'}).click();
   await tecla.getByLabel('Codi de la partida',{exact:true}).fill(lobby.game.inviteCode ?? '');
   await tecla.getByRole('button', {name:'Unir-se a una partida',exact:true}).click();
   await clickAction(pau,'Començar la partida');
@@ -157,8 +157,8 @@ test('online: abandonar durant la pregunta recupera tots dos dispositius sense r
   await enter(pau); await enter(tecla); await createGame(pau, true, 30);
   const lobby = await currentView(pau);
   await tecla.getByRole('button', { name: 'Jugar en línia', exact: true }).click();
+  await identifyOnline(tecla, 'TECLA');
   await tecla.getByRole('button', { name: 'Unir-se a una partida', exact: true }).click();
-  await tecla.getByRole('button', { name: /Soc la Tecla$/ }).click();
   await tecla.getByLabel('Codi de la partida', { exact: true }).fill(lobby.game.inviteCode ?? '');
   await tecla.getByRole('button', { name: 'Unir-se a una partida', exact: true }).click();
   await pau.setViewportSize({ width: 1366, height: 768 });

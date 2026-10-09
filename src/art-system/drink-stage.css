@@ -1,0 +1,59 @@
+/* The JSON choreography owns every animation. This layer only sets the stage. */
+.drink-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 85;
+  display: grid;
+  place-items: center;
+  padding: max(24px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+  pointer-events: none;
+  isolation: isolate;
+  opacity: 0;
+}
+.drink-stage__scrim { position: absolute; inset: 0; background: rgb(27 21 16 / 78%); }
+.drink-stage__content { position: relative; width: min(430px, 100%); text-align: center; }
+.drink-stage__art { position: relative; height: 340px; display: grid; place-items: center; }
+.drink-stage__halo { position: absolute; inset: -18px -30px 0; background: radial-gradient(ellipse, rgb(186 123 49 / 21%), transparent 65%); }
+.drink-stage__glasses { position: relative; display: flex; align-items: flex-end; justify-content: center; height: 100%; padding-bottom: 18px; }
+.drink-stage__glass { position: relative; flex: 0 0 auto; width: 242px; height: 319px; transform-origin: 50% 85%; will-change: transform; }
+.drink-stage__glass svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.drink-stage[data-drink-count='2'] .drink-stage__glass { width: 218px; height: 287px; }
+.drink-stage[data-drink-count='2'] .drink-stage__glass + .drink-stage__glass { margin-left: -46px; }
+.drink-stage__liquid { transform-box: view-box; transform-origin: 110px 112px; }
+.drink-stage__sheen { opacity: 0; }
+.drink-stage__coaster, .drink-stage__ripple { position: absolute; bottom: 20px; left: 50%; width: 236px; height: 49px; margin-left: -118px; border-radius: 50%; }
+.drink-stage__coaster { border: 1px solid rgb(240 210 155 / 20%); background: radial-gradient(ellipse, #9b713e33, #d0ac7110); box-shadow: 0 8px 24px #130e0966; }
+.drink-stage__ripple { border: 1.5px solid #e2b974; opacity: 0; }
+.drink-stage__sparkles { position: absolute; inset: 0; }
+.drink-stage__sparkles .tp-motion-particle { position: absolute; width: 7px; height: 7px; border-radius: 50%; border: 1px solid #ffe8b4; }
+.drink-stage__sparkles .tp-motion-particle:nth-child(3n) { width: 10px; height: 10px; border: 0; clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%); }
+.drink-stage__clink { position: absolute; top: 2px; left: 50%; width: 100px; height: 80px; margin-left: -50px; opacity: 0; }
+.drink-stage__caption { position: relative; display: flex; flex-direction: column; align-items: center; margin: 6px auto 0; color: #fff0d4; text-shadow: 0 2px 8px #140e08; }
+.drink-stage__player { font-size: 47px; line-height: 1.15; font-weight: 800; letter-spacing: -.8px; }
+.drink-stage__caption--pau .drink-stage__player { color: #b8d9e9; }
+.drink-stage__caption--tecla .drink-stage__player { color: #f1c3cb; }
+.drink-stage__caption > strong { margin-top: 4px; font-size: 28px; line-height: 1.25; font-weight: 700; }
+.drink-stage__double { display: inline-flex; align-items: center; gap: 12px; margin-top: 14px; padding: 7px 15px; border: 1px solid #d6ae6f; border-radius: 7px; color: #fff0cf; background: #664420; font-size: 20px; font-weight: 800; box-shadow: 0 3px 12px #1b100b44; }
+.drink-stage__double > span { padding-left: 12px; border-left: 1px solid #d6ae6f88; color: #ffdb92; }
+@media (max-width: 767px) {
+  .drink-stage__content { max-width: 350px; }
+  .drink-stage__art { height: 290px; }
+  .drink-stage__glass { width: 213px; height: 281px; }
+  .drink-stage[data-drink-count='2'] .drink-stage__glass { width: 188px; height: 248px; }
+  .drink-stage[data-drink-count='2'] .drink-stage__glass + .drink-stage__glass { margin-left: -65px; }
+  .drink-stage__player { font-size: 39px; }
+  .drink-stage__caption > strong { font-size: 25px; }
+  .drink-stage__double { font-size: 18px; }
+  .drink-stage__clink { top: 5px; }
+}
+@media (max-height: 600px) {
+  .drink-stage__art { height: 210px; }
+  .drink-stage__glass, .drink-stage[data-drink-count='2'] .drink-stage__glass { width: 150px; height: 198px; }
+  .drink-stage__player { font-size: 32px; }
+  .drink-stage__caption > strong { font-size: 21px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .drink-stage { opacity: 1; }
+  .drink-stage__glass { will-change: auto; }
+  .drink-stage__sparkles, .drink-stage__clink, .drink-stage__ripple { display: none; }
+}

@@ -53,6 +53,7 @@ img { display: block; max-width: 100%; }
 .form-field input[type='number']::-webkit-inner-spin-button,
 .form-field input[type='number']::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 .setup-hint { font-size: 14px; color: var(--art-ink-muted); line-height: 1.5; }
+.online-identity-help { margin-top: 12px; color: var(--art-ink-muted); line-height: 1.5; }
 .back-button { display: flex; padding: 0 6px 10px; min-height: 48px; margin: -9px 0 9px; text-decoration: none; justify-content: flex-start; }
 .setup-screen form > .primary-button, .setup-screen article > .primary-button, .setup-screen .art-panel > .art-button--primary { width: 100%; margin-top: 24px; }
 .home-screen { flex: 1; position: relative; display: flex; flex-direction: column; align-items: center; min-height: 0; }

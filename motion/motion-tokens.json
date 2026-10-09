@@ -1,23 +1,43 @@
 {
   "durationsMs": {
-    "press": 90,
-    "cardEnter": 240,
-    "cardFlip": 280,
-    "correctFeedback": 360,
-    "incorrectFeedback": 330,
-    "pawnStep": 420,
-    "plusOnePause": 160,
-    "plusOnePulse": 340,
-    "overlayIn": 220,
-    "overlayOut": 300,
-    "reconnectSuccess": 620,
-    "victory": 2300
+    "press": 135,
+    "cardEnter": 360,
+    "cardFlip": 420,
+    "correctFeedback": 540,
+    "incorrectFeedback": 495,
+    "pawnStep": 630,
+    "plusOnePause": 240,
+    "plusOnePulse": 510,
+    "overlayIn": 330,
+    "overlayOut": 450,
+    "reconnectSuccess": 930,
+    "victory": 3450
   },
   "easing": {
-    "enter": [0.22, 1, 0.36, 1],
-    "exit": [0.4, 0, 1, 1],
-    "springSoft": [0.2, 0.9, 0.3, 1.15],
-    "pawn": [0.45, 0, 0.2, 1]
+    "enter": [
+      0.22,
+      1,
+      0.36,
+      1
+    ],
+    "exit": [
+      0.4,
+      0,
+      1,
+      1
+    ],
+    "springSoft": [
+      0.2,
+      0.9,
+      0.3,
+      1.15
+    ],
+    "pawn": [
+      0.45,
+      0,
+      0.2,
+      1
+    ]
   },
   "distancesPx": {
     "cardEnterY": 24,

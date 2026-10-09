@@ -1,0 +1,1610 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T15:55:05.580Z",
+  "scope": "Chromium executes production Scene, Board, QuestionCard, DrinkCelebration, useGameMotion, effects, choreography, DOM runner, event orchestrator and Web Audio manager. Typed safe-view fixtures only; no live Supabase calls.",
+  "cases": [
+    {
+      "status": "PASS",
+      "player": "PAU",
+      "double": false,
+      "reduced": false,
+      "width": 360,
+      "height": 800,
+      "screenshot": "screenshots/drink-pau-single-360x800.png",
+      "geometry": {
+        "width": 360,
+        "height": 800,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800,
+          "top": 0,
+          "right": 360,
+          "bottom": 800,
+          "left": 0
+        },
+        "content": {
+          "x": 20,
+          "y": 211.953125,
+          "width": 320,
+          "height": 376.09375,
+          "top": 211.953125,
+          "right": 340,
+          "bottom": 588.046875,
+          "left": 20
+        },
+        "glass": {
+          "x": 60.783348083496094,
+          "y": 182.51177978515625,
+          "width": 229.04000854492188,
+          "height": 294.6294860839844,
+          "top": 182.51177978515625,
+          "right": 289.82335662841797,
+          "bottom": 477.1412658691406,
+          "left": 60.783348083496094
+        },
+        "caption": {
+          "x": 20,
+          "y": 507.953125,
+          "width": 320,
+          "height": 80.09375,
+          "top": 507.953125,
+          "right": 340,
+          "bottom": 588.046875,
+          "left": 20
+        },
+        "board": {
+          "x": 16.990032196044922,
+          "y": 128.6933135986328,
+          "width": 326.49468994140625,
+          "height": 169.5784149169922,
+          "top": 128.6933135986328,
+          "right": 343.4847221374512,
+          "bottom": 298.271728515625,
+          "left": 16.990032196044922
+        },
+        "player": "PAU",
+        "count": "1",
+        "text": "En Pauha de beure",
+        "svgGlasses": 1,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 180,
+        "y": 400
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 268.3999999985099,
+          "enabled": true
+        },
+        {
+          "cue": "DRINK",
+          "at": 828.7999999970198,
+          "enabled": true
+        }
+      ],
+      "frames": 136,
+      "distinctGlassTransforms": 77,
+      "distinctLiquidTransforms": 67,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "PAU",
+      "double": false,
+      "reduced": false,
+      "width": 390,
+      "height": 844,
+      "screenshot": "screenshots/drink-pau-single-390x844.png",
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "content": {
+          "x": 20,
+          "y": 233.953125,
+          "width": 350,
+          "height": 376.09375,
+          "top": 233.953125,
+          "right": 370,
+          "bottom": 610.046875,
+          "left": 20
+        },
+        "glass": {
+          "x": 75.80915832519531,
+          "y": 204.53955078125,
+          "width": 229.0086212158203,
+          "height": 294.6042785644531,
+          "top": 204.53955078125,
+          "right": 304.8177795410156,
+          "bottom": 499.1438293457031,
+          "left": 75.80915832519531
+        },
+        "caption": {
+          "x": 20,
+          "y": 529.953125,
+          "width": 350,
+          "height": 80.09375,
+          "top": 529.953125,
+          "right": 370,
+          "bottom": 610.046875,
+          "left": 20
+        },
+        "board": {
+          "x": 16.97595977783203,
+          "y": 128.7122344970703,
+          "width": 356.5775451660156,
+          "height": 185.14939880371094,
+          "top": 128.7122344970703,
+          "right": 373.55350494384766,
+          "bottom": 313.86163330078125,
+          "left": 16.97595977783203
+        },
+        "player": "PAU",
+        "count": "1",
+        "text": "En Pauha de beure",
+        "svgGlasses": 1,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 195,
+        "y": 422
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 260.70000000298023,
+          "enabled": true
+        },
+        {
+          "cue": "DRINK",
+          "at": 819.4000000022352,
+          "enabled": true
+        }
+      ],
+      "frames": 136,
+      "distinctGlassTransforms": 78,
+      "distinctLiquidTransforms": 69,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "PAU",
+      "double": false,
+      "reduced": false,
+      "width": 430,
+      "height": 932,
+      "screenshot": "screenshots/drink-pau-single-430x932.png",
+      "geometry": {
+        "width": 430,
+        "height": 932,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932,
+          "top": 0,
+          "right": 430,
+          "bottom": 932,
+          "left": 0
+        },
+        "content": {
+          "x": 40,
+          "y": 277.953125,
+          "width": 350,
+          "height": 376.09375,
+          "top": 277.953125,
+          "right": 390,
+          "bottom": 654.046875,
+          "left": 40
+        },
+        "glass": {
+          "x": 100.37188720703125,
+          "y": 253.4766387939453,
+          "width": 223.445556640625,
+          "height": 290.1214599609375,
+          "top": 253.4766387939453,
+          "right": 323.81744384765625,
+          "bottom": 543.5980987548828,
+          "left": 100.37188720703125
+        },
+        "caption": {
+          "x": 40,
+          "y": 573.953125,
+          "width": 350,
+          "height": 80.09375,
+          "top": 573.953125,
+          "right": 390,
+          "bottom": 654.046875,
+          "left": 40
+        },
+        "board": {
+          "x": 16.936187744140625,
+          "y": 128.7496795654297,
+          "width": 396.7153625488281,
+          "height": 205.8899688720703,
+          "top": 128.7496795654297,
+          "right": 413.65155029296875,
+          "bottom": 334.6396484375,
+          "left": 16.936187744140625
+        },
+        "player": "PAU",
+        "count": "1",
+        "text": "En Pauha de beure",
+        "svgGlasses": 1,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 215,
+        "y": 466
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 344.5999999977648,
+          "enabled": true
+        },
+        {
+          "cue": "DRINK",
+          "at": 885.5999999977648,
+          "enabled": true
+        }
+      ],
+      "frames": 131,
+      "distinctGlassTransforms": 77,
+      "distinctLiquidTransforms": 68,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "PAU",
+      "double": false,
+      "reduced": false,
+      "width": 1024,
+      "height": 768,
+      "screenshot": "screenshots/drink-pau-single-1024x768.png",
+      "geometry": {
+        "width": 1024,
+        "height": 768,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 768,
+          "top": 0,
+          "right": 1024,
+          "bottom": 768,
+          "left": 0
+        },
+        "content": {
+          "x": 297,
+          "y": 164.46875,
+          "width": 430,
+          "height": 439.046875,
+          "top": 164.46875,
+          "right": 727,
+          "bottom": 603.515625,
+          "left": 297
+        },
+        "glass": {
+          "x": 381.75262451171875,
+          "y": 142.21914672851562,
+          "width": 253.88348388671875,
+          "height": 329.379638671875,
+          "top": 142.21914672851562,
+          "right": 635.6361083984375,
+          "bottom": 471.5987854003906,
+          "left": 381.75262451171875
+        },
+        "caption": {
+          "x": 297,
+          "y": 510.46875,
+          "width": 430,
+          "height": 93.046875,
+          "top": 510.46875,
+          "right": 727,
+          "bottom": 603.515625,
+          "left": 297
+        },
+        "board": {
+          "x": 20.3388671875,
+          "y": 270.5657043457031,
+          "width": 573.0350341796875,
+          "height": 291.8440856933594,
+          "top": 270.5657043457031,
+          "right": 593.3739013671875,
+          "bottom": 562.4097900390625,
+          "left": 20.3388671875
+        },
+        "player": "PAU",
+        "count": "1",
+        "text": "En Pauha de beure",
+        "svgGlasses": 1,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 512,
+        "y": 383.9921875
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 335.1000000014901,
+          "enabled": true
+        },
+        {
+          "cue": "DRINK",
+          "at": 897.4000000022352,
+          "enabled": true
+        }
+      ],
+      "frames": 121,
+      "distinctGlassTransforms": 58,
+      "distinctLiquidTransforms": 52,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "PAU",
+      "double": false,
+      "reduced": false,
+      "width": 1440,
+      "height": 900,
+      "screenshot": "screenshots/drink-pau-single-1440x900.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "content": {
+          "x": 505,
+          "y": 230.46875,
+          "width": 430,
+          "height": 439.046875,
+          "top": 230.46875,
+          "right": 935,
+          "bottom": 669.515625,
+          "left": 505
+        },
+        "glass": {
+          "x": 591.10009765625,
+          "y": 194.33230590820312,
+          "width": 276.91021728515625,
+          "height": 349.7416687011719,
+          "top": 194.33230590820312,
+          "right": 868.0103149414062,
+          "bottom": 544.073974609375,
+          "left": 591.10009765625
+        },
+        "caption": {
+          "x": 505,
+          "y": 576.46875,
+          "width": 430,
+          "height": 93.046875,
+          "top": 576.46875,
+          "right": 935,
+          "bottom": 669.515625,
+          "left": 505
+        },
+        "board": {
+          "x": 27.86257553100586,
+          "y": 281.33660888671875,
+          "width": 838.7282104492188,
+          "height": 422.97955322265625,
+          "top": 281.33660888671875,
+          "right": 866.5907859802246,
+          "bottom": 704.316162109375,
+          "left": 27.86257553100586
+        },
+        "player": "PAU",
+        "count": "1",
+        "text": "En Pauha de beure",
+        "svgGlasses": 1,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 720,
+        "y": 449.9921875
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 265.70000000298023,
+          "enabled": true
+        },
+        {
+          "cue": "DRINK",
+          "at": 835.7000000029802,
+          "enabled": true
+        }
+      ],
+      "frames": 92,
+      "distinctGlassTransforms": 52,
+      "distinctLiquidTransforms": 44,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "TECLA",
+      "double": true,
+      "reduced": false,
+      "width": 360,
+      "height": 800,
+      "screenshot": "screenshots/drink-tecla-double-360x800.png",
+      "geometry": {
+        "width": 360,
+        "height": 800,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800,
+          "top": 0,
+          "right": 360,
+          "bottom": 800,
+          "left": 0
+        },
+        "content": {
+          "x": 20,
+          "y": 184.953125,
+          "width": 320,
+          "height": 430.09375,
+          "top": 184.953125,
+          "right": 340,
+          "bottom": 615.046875,
+          "left": 20
+        },
+        "glass": {
+          "x": 16.49758529663086,
+          "y": 194.38294982910156,
+          "width": 195.59083557128906,
+          "height": 254.1963348388672,
+          "top": 194.38294982910156,
+          "right": 212.08842086791992,
+          "bottom": 448.57928466796875,
+          "left": 16.49758529663086
+        },
+        "caption": {
+          "x": 20,
+          "y": 480.953125,
+          "width": 320,
+          "height": 134.09375,
+          "top": 480.953125,
+          "right": 340,
+          "bottom": 615.046875,
+          "left": 20
+        },
+        "board": {
+          "x": 16.990032196044922,
+          "y": 128.6933135986328,
+          "width": 326.49468994140625,
+          "height": 169.5784149169922,
+          "top": 128.6933135986328,
+          "right": 343.4847221374512,
+          "bottom": 298.271728515625,
+          "left": 16.990032196044922
+        },
+        "player": "TECLA",
+        "count": "2",
+        "text": "La Teclaha de beureBeu doble ×2",
+        "svgGlasses": 2,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 180,
+        "y": 400
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 283,
+          "enabled": true
+        },
+        {
+          "cue": "DOUBLE_DRINK",
+          "at": 845.5,
+          "enabled": true
+        }
+      ],
+      "frames": 157,
+      "distinctGlassTransforms": 76,
+      "distinctLiquidTransforms": 68,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "TECLA",
+      "double": true,
+      "reduced": false,
+      "width": 390,
+      "height": 844,
+      "screenshot": "screenshots/drink-tecla-double-390x844.png",
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "content": {
+          "x": 20,
+          "y": 206.953125,
+          "width": 350,
+          "height": 430.09375,
+          "top": 206.953125,
+          "right": 370,
+          "bottom": 637.046875,
+          "left": 20
+        },
+        "glass": {
+          "x": 25.494035720825195,
+          "y": 212.5843048095703,
+          "width": 202.0035858154297,
+          "height": 259.10321044921875,
+          "top": 212.5843048095703,
+          "right": 227.49762153625488,
+          "bottom": 471.68751525878906,
+          "left": 25.494035720825195
+        },
+        "caption": {
+          "x": 20,
+          "y": 502.953125,
+          "width": 350,
+          "height": 134.09375,
+          "top": 502.953125,
+          "right": 370,
+          "bottom": 637.046875,
+          "left": 20
+        },
+        "board": {
+          "x": 16.97595977783203,
+          "y": 128.7122344970703,
+          "width": 356.5775451660156,
+          "height": 185.14939880371094,
+          "top": 128.7122344970703,
+          "right": 373.55350494384766,
+          "bottom": 313.86163330078125,
+          "left": 16.97595977783203
+        },
+        "player": "TECLA",
+        "count": "2",
+        "text": "La Teclaha de beureBeu doble ×2",
+        "svgGlasses": 2,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 195,
+        "y": 422
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 284.69999999925494,
+          "enabled": true
+        },
+        {
+          "cue": "DOUBLE_DRINK",
+          "at": 828.0999999977648,
+          "enabled": true
+        }
+      ],
+      "frames": 98,
+      "distinctGlassTransforms": 49,
+      "distinctLiquidTransforms": 43,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "TECLA",
+      "double": true,
+      "reduced": false,
+      "width": 430,
+      "height": 932,
+      "screenshot": "screenshots/drink-tecla-double-430x932.png",
+      "geometry": {
+        "width": 430,
+        "height": 932,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932,
+          "top": 0,
+          "right": 430,
+          "bottom": 932,
+          "left": 0
+        },
+        "content": {
+          "x": 40,
+          "y": 250.953125,
+          "width": 350,
+          "height": 430.09375,
+          "top": 250.953125,
+          "right": 390,
+          "bottom": 681.046875,
+          "left": 40
+        },
+        "glass": {
+          "x": 57.80192565917969,
+          "y": 264.0019226074219,
+          "width": 199.8396759033203,
+          "height": 256.8503723144531,
+          "top": 264.0019226074219,
+          "right": 257.6416015625,
+          "bottom": 520.852294921875,
+          "left": 57.80192565917969
+        },
+        "caption": {
+          "x": 40,
+          "y": 546.953125,
+          "width": 350,
+          "height": 134.09375,
+          "top": 546.953125,
+          "right": 390,
+          "bottom": 681.046875,
+          "left": 40
+        },
+        "board": {
+          "x": 16.936187744140625,
+          "y": 128.7496795654297,
+          "width": 396.7153625488281,
+          "height": 205.8899688720703,
+          "top": 128.7496795654297,
+          "right": 413.65155029296875,
+          "bottom": 334.6396484375,
+          "left": 16.936187744140625
+        },
+        "player": "TECLA",
+        "count": "2",
+        "text": "La Teclaha de beureBeu doble ×2",
+        "svgGlasses": 2,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 215,
+        "y": 466
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 309.70000000298023,
+          "enabled": true
+        },
+        {
+          "cue": "DOUBLE_DRINK",
+          "at": 832,
+          "enabled": true
+        }
+      ],
+      "frames": 124,
+      "distinctGlassTransforms": 71,
+      "distinctLiquidTransforms": 65,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "TECLA",
+      "double": true,
+      "reduced": false,
+      "width": 1024,
+      "height": 768,
+      "screenshot": "screenshots/drink-tecla-double-1024x768.png",
+      "geometry": {
+        "width": 1024,
+        "height": 768,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 768,
+          "top": 0,
+          "right": 1024,
+          "bottom": 768,
+          "left": 0
+        },
+        "content": {
+          "x": 297,
+          "y": 135.96875,
+          "width": 430,
+          "height": 496.046875,
+          "top": 135.96875,
+          "right": 727,
+          "bottom": 632.015625,
+          "left": 297
+        },
+        "glass": {
+          "x": 301.2236328125,
+          "y": 151.68521118164062,
+          "width": 234.14892578125,
+          "height": 299.8275451660156,
+          "top": 151.68521118164062,
+          "right": 535.37255859375,
+          "bottom": 451.51275634765625,
+          "left": 301.2236328125
+        },
+        "caption": {
+          "x": 297,
+          "y": 481.96875,
+          "width": 430,
+          "height": 150.046875,
+          "top": 481.96875,
+          "right": 727,
+          "bottom": 632.015625,
+          "left": 297
+        },
+        "board": {
+          "x": 20.3388671875,
+          "y": 270.5657043457031,
+          "width": 573.0350341796875,
+          "height": 291.8440856933594,
+          "top": 270.5657043457031,
+          "right": 593.3739013671875,
+          "bottom": 562.4097900390625,
+          "left": 20.3388671875
+        },
+        "player": "TECLA",
+        "count": "2",
+        "text": "La Teclaha de beureBeu doble ×2",
+        "svgGlasses": 2,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 512,
+        "y": 383.9921875
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 283.4000000022352,
+          "enabled": true
+        },
+        {
+          "cue": "DOUBLE_DRINK",
+          "at": 837.7000000029802,
+          "enabled": true
+        }
+      ],
+      "frames": 103,
+      "distinctGlassTransforms": 47,
+      "distinctLiquidTransforms": 42,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "TECLA",
+      "double": true,
+      "reduced": false,
+      "width": 1440,
+      "height": 900,
+      "screenshot": "screenshots/drink-tecla-double-1440x900.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "content": {
+          "x": 505,
+          "y": 201.96875,
+          "width": 430,
+          "height": 496.046875,
+          "top": 201.96875,
+          "right": 935,
+          "bottom": 698.015625,
+          "left": 505
+        },
+        "glass": {
+          "x": 516.9303588867188,
+          "y": 212.1424102783203,
+          "width": 229.30108642578125,
+          "height": 297.327392578125,
+          "top": 212.1424102783203,
+          "right": 746.2314453125,
+          "bottom": 509.4698028564453,
+          "left": 516.9303588867188
+        },
+        "caption": {
+          "x": 505,
+          "y": 547.96875,
+          "width": 430,
+          "height": 150.046875,
+          "top": 547.96875,
+          "right": 935,
+          "bottom": 698.015625,
+          "left": 505
+        },
+        "board": {
+          "x": 27.86257553100586,
+          "y": 281.33660888671875,
+          "width": 838.7282104492188,
+          "height": 422.97955322265625,
+          "top": 281.33660888671875,
+          "right": 866.5907859802246,
+          "bottom": 704.316162109375,
+          "left": 27.86257553100586
+        },
+        "player": "TECLA",
+        "count": "2",
+        "text": "La Teclaha de beureBeu doble ×2",
+        "svgGlasses": 2,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 720,
+        "y": 449.9921875
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 318.5,
+          "enabled": true
+        },
+        {
+          "cue": "DOUBLE_DRINK",
+          "at": 841.0999999977648,
+          "enabled": true
+        }
+      ],
+      "frames": 87,
+      "distinctGlassTransforms": 45,
+      "distinctLiquidTransforms": 41,
+      "maximumParticles": 10,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "PAU",
+      "double": true,
+      "reduced": true,
+      "width": 390,
+      "height": 844,
+      "screenshot": "screenshots/drink-pau-double-390x844-reduced.png",
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "content": {
+          "x": 20,
+          "y": 206.953125,
+          "width": 350,
+          "height": 430.09375,
+          "top": 206.953125,
+          "right": 370,
+          "bottom": 637.046875,
+          "left": 20
+        },
+        "glass": {
+          "x": 39.5,
+          "y": 230.953125,
+          "width": 188,
+          "height": 248,
+          "top": 230.953125,
+          "right": 227.5,
+          "bottom": 478.953125,
+          "left": 39.5
+        },
+        "caption": {
+          "x": 20,
+          "y": 502.953125,
+          "width": 350,
+          "height": 134.09375,
+          "top": 502.953125,
+          "right": 370,
+          "bottom": 637.046875,
+          "left": 20
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 356,
+          "height": 183.875,
+          "top": 129,
+          "right": 373,
+          "bottom": 312.875,
+          "left": 17
+        },
+        "player": "PAU",
+        "count": "2",
+        "text": "En Pauha de beureBeu doble ×2",
+        "svgGlasses": 2,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 195,
+        "y": 422
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 249.39999999850988,
+          "enabled": true
+        },
+        {
+          "cue": "DOUBLE_DRINK",
+          "at": 442,
+          "enabled": true
+        }
+      ],
+      "frames": 80,
+      "distinctGlassTransforms": 1,
+      "distinctLiquidTransforms": 1,
+      "maximumParticles": 0,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "PAU",
+      "double": true,
+      "reduced": true,
+      "width": 1024,
+      "height": 768,
+      "screenshot": "screenshots/drink-pau-double-1024x768-reduced.png",
+      "geometry": {
+        "width": 1024,
+        "height": 768,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 768,
+          "top": 0,
+          "right": 1024,
+          "bottom": 768,
+          "left": 0
+        },
+        "content": {
+          "x": 297,
+          "y": 135.96875,
+          "width": 430,
+          "height": 496.046875,
+          "top": 135.96875,
+          "right": 727,
+          "bottom": 632.015625,
+          "left": 297
+        },
+        "glass": {
+          "x": 317,
+          "y": 170.96875,
+          "width": 218,
+          "height": 287,
+          "top": 170.96875,
+          "right": 535,
+          "bottom": 457.96875,
+          "left": 317
+        },
+        "caption": {
+          "x": 297,
+          "y": 481.96875,
+          "width": 430,
+          "height": 150.046875,
+          "top": 481.96875,
+          "right": 727,
+          "bottom": 632.015625,
+          "left": 297
+        },
+        "board": {
+          "x": 22,
+          "y": 266.265625,
+          "width": 568.15625,
+          "height": 293.46875,
+          "top": 266.265625,
+          "right": 590.15625,
+          "bottom": 559.734375,
+          "left": 22
+        },
+        "player": "PAU",
+        "count": "2",
+        "text": "En Pauha de beureBeu doble ×2",
+        "svgGlasses": 2,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 512,
+        "y": 383.9921875
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 252.69999999925494,
+          "enabled": true
+        },
+        {
+          "cue": "DOUBLE_DRINK",
+          "at": 433.3999999985099,
+          "enabled": true
+        }
+      ],
+      "frames": 53,
+      "distinctGlassTransforms": 1,
+      "distinctLiquidTransforms": 1,
+      "maximumParticles": 0,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "PAU",
+      "double": true,
+      "reduced": true,
+      "width": 1440,
+      "height": 900,
+      "screenshot": "screenshots/drink-pau-double-1440x900-reduced.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "content": {
+          "x": 505,
+          "y": 201.96875,
+          "width": 430,
+          "height": 496.046875,
+          "top": 201.96875,
+          "right": 935,
+          "bottom": 698.015625,
+          "left": 505
+        },
+        "glass": {
+          "x": 525,
+          "y": 236.96875,
+          "width": 218,
+          "height": 287,
+          "top": 236.96875,
+          "right": 743,
+          "bottom": 523.96875,
+          "left": 525
+        },
+        "caption": {
+          "x": 505,
+          "y": 547.96875,
+          "width": 430,
+          "height": 150.046875,
+          "top": 547.96875,
+          "right": 935,
+          "bottom": 698.015625,
+          "left": 505
+        },
+        "board": {
+          "x": 32,
+          "y": 272.078125,
+          "width": 828.296875,
+          "height": 427.828125,
+          "top": 272.078125,
+          "right": 860.296875,
+          "bottom": 699.90625,
+          "left": 32
+        },
+        "player": "PAU",
+        "count": "2",
+        "text": "En Pauha de beureBeu doble ×2",
+        "svgGlasses": 2,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 720,
+        "y": 449.9921875
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 228.5,
+          "enabled": true
+        },
+        {
+          "cue": "DOUBLE_DRINK",
+          "at": 436.69999999925494,
+          "enabled": true
+        }
+      ],
+      "frames": 53,
+      "distinctGlassTransforms": 1,
+      "distinctLiquidTransforms": 1,
+      "maximumParticles": 0,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "TECLA",
+      "double": false,
+      "reduced": true,
+      "width": 390,
+      "height": 844,
+      "screenshot": "screenshots/drink-tecla-single-390x844-reduced.png",
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "content": {
+          "x": 20,
+          "y": 233.953125,
+          "width": 350,
+          "height": 376.09375,
+          "top": 233.953125,
+          "right": 370,
+          "bottom": 610.046875,
+          "left": 20
+        },
+        "glass": {
+          "x": 88.5,
+          "y": 233.953125,
+          "width": 213,
+          "height": 281,
+          "top": 233.953125,
+          "right": 301.5,
+          "bottom": 514.953125,
+          "left": 88.5
+        },
+        "caption": {
+          "x": 20,
+          "y": 529.953125,
+          "width": 350,
+          "height": 80.09375,
+          "top": 529.953125,
+          "right": 370,
+          "bottom": 610.046875,
+          "left": 20
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 356,
+          "height": 183.875,
+          "top": 129,
+          "right": 373,
+          "bottom": 312.875,
+          "left": 17
+        },
+        "player": "TECLA",
+        "count": "1",
+        "text": "La Teclaha de beure",
+        "svgGlasses": 1,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 195,
+        "y": 422
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 261.9000000022352,
+          "enabled": true
+        },
+        {
+          "cue": "DRINK",
+          "at": 443.1000000014901,
+          "enabled": true
+        }
+      ],
+      "frames": 83,
+      "distinctGlassTransforms": 1,
+      "distinctLiquidTransforms": 1,
+      "maximumParticles": 0,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "TECLA",
+      "double": false,
+      "reduced": true,
+      "width": 1024,
+      "height": 768,
+      "screenshot": "screenshots/drink-tecla-single-1024x768-reduced.png",
+      "geometry": {
+        "width": 1024,
+        "height": 768,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 768,
+          "top": 0,
+          "right": 1024,
+          "bottom": 768,
+          "left": 0
+        },
+        "content": {
+          "x": 297,
+          "y": 164.46875,
+          "width": 430,
+          "height": 439.046875,
+          "top": 164.46875,
+          "right": 727,
+          "bottom": 603.515625,
+          "left": 297
+        },
+        "glass": {
+          "x": 391,
+          "y": 167.46875,
+          "width": 242,
+          "height": 319,
+          "top": 167.46875,
+          "right": 633,
+          "bottom": 486.46875,
+          "left": 391
+        },
+        "caption": {
+          "x": 297,
+          "y": 510.46875,
+          "width": 430,
+          "height": 93.046875,
+          "top": 510.46875,
+          "right": 727,
+          "bottom": 603.515625,
+          "left": 297
+        },
+        "board": {
+          "x": 22,
+          "y": 266.265625,
+          "width": 568.15625,
+          "height": 293.46875,
+          "top": 266.265625,
+          "right": 590.15625,
+          "bottom": 559.734375,
+          "left": 22
+        },
+        "player": "TECLA",
+        "count": "1",
+        "text": "La Teclaha de beure",
+        "svgGlasses": 1,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 512,
+        "y": 383.9921875
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 252.19999999925494,
+          "enabled": true
+        },
+        {
+          "cue": "DRINK",
+          "at": 444.69999999925494,
+          "enabled": true
+        }
+      ],
+      "frames": 50,
+      "distinctGlassTransforms": 1,
+      "distinctLiquidTransforms": 1,
+      "maximumParticles": 0,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    },
+    {
+      "status": "PASS",
+      "player": "TECLA",
+      "double": false,
+      "reduced": true,
+      "width": 1440,
+      "height": 900,
+      "screenshot": "screenshots/drink-tecla-single-1440x900-reduced.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "stage": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "content": {
+          "x": 505,
+          "y": 230.46875,
+          "width": 430,
+          "height": 439.046875,
+          "top": 230.46875,
+          "right": 935,
+          "bottom": 669.515625,
+          "left": 505
+        },
+        "glass": {
+          "x": 599,
+          "y": 233.46875,
+          "width": 242,
+          "height": 319,
+          "top": 233.46875,
+          "right": 841,
+          "bottom": 552.46875,
+          "left": 599
+        },
+        "caption": {
+          "x": 505,
+          "y": 576.46875,
+          "width": 430,
+          "height": 93.046875,
+          "top": 576.46875,
+          "right": 935,
+          "bottom": 669.515625,
+          "left": 505
+        },
+        "board": {
+          "x": 32,
+          "y": 272.078125,
+          "width": 828.296875,
+          "height": 427.828125,
+          "top": 272.078125,
+          "right": 860.296875,
+          "bottom": 699.90625,
+          "left": 32
+        },
+        "player": "TECLA",
+        "count": "1",
+        "text": "La Teclaha de beure",
+        "svgGlasses": 1,
+        "bitmapGlasses": 0,
+        "opacity": "1",
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "nextDisabled": true
+      },
+      "center": {
+        "x": 720,
+        "y": 449.9921875
+      },
+      "mounts": 1,
+      "cues": [
+        {
+          "cue": "INCORRECT",
+          "at": 250.89999999850988,
+          "enabled": true
+        },
+        {
+          "cue": "DRINK",
+          "at": 428,
+          "enabled": true
+        }
+      ],
+      "frames": 57,
+      "distinctGlassTransforms": 1,
+      "distinctLiquidTransforms": 1,
+      "maximumParticles": 0,
+      "remainingStages": 0,
+      "remainingParticles": 0,
+      "failures": []
+    }
+  ],
+  "lifecycle": [
+    {
+      "action": "Desconnecta",
+      "mounts": 1,
+      "stages": 0,
+      "particles": 0,
+      "animations": 0,
+      "status": "PASS"
+    },
+    {
+      "action": "Menú",
+      "mounts": 1,
+      "stages": 0,
+      "particles": 0,
+      "animations": 0,
+      "status": "PASS"
+    },
+    {
+      "action": "Hydrate and reload confirmed RESULT",
+      "mounts": 0,
+      "cues": 0,
+      "stages": 0,
+      "notice": "×2La Tecla ha de beureBeu doble",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "blockedApiRequests": [],
+  "requestedAudioFiles": [
+    "/assets/production/sounds/turn_start.wav",
+    "/assets/production/sounds/card_slide.wav",
+    "/assets/production/sounds/card_flip.wav",
+    "/assets/production/sounds/correct.wav",
+    "/assets/production/sounds/incorrect.wav",
+    "/assets/production/sounds/pawn_step.wav",
+    "/assets/production/sounds/plus_one.wav",
+    "/assets/production/sounds/drink.wav",
+    "/assets/production/sounds/double_drink.wav",
+    "/assets/production/sounds/victory.wav"
+  ],
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0,
+  "temporaryHarnessRemoved": true,
+  "hashes": [
+    {
+      "path": "src/components/DrinkCelebration.tsx",
+      "sha256": "501d0808cea3455e509e6afce8f86e2e8f642d7423fcaf64aab16184e9bfa514"
+    },
+    {
+      "path": "src/art-system/drink-stage.css",
+      "sha256": "6d1c54bdbed70b5fb36ee93f24f050ad84f238d9d68a629e080ef5a410d7e33a"
+    },
+    {
+      "path": "src/motion/useGameMotion.ts",
+      "sha256": "a0f37ee52843768573609b410599a4a1da4f8d07465520ab1d854be7bc15e848"
+    },
+    {
+      "path": "src/motion/dom-runner.ts",
+      "sha256": "d744c68149217d86450f15ef310fea17c6b48b3bfe6d5fe74b65c4fe018205cc"
+    },
+    {
+      "path": "motion/event-choreography.json",
+      "sha256": "07c70a40c5950867bcff04ff2f4b9ba499cf989bdf5ae00c991b5b0db92b3e57"
+    }
+  ],
+  "visualInspectionPending": false,
+  "visualReview": "acceptance/drink-stage/VISUAL_REVIEW.md"
+}

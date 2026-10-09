@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, type RefObject } from 'react';
 import type { PlayerRole } from '../domain/game/game-types';
 import type { GameView } from '../services/game-contract';
+import type { DrinkPresentation } from '../components/DrinkCelebration';
 import { GameAudioManager } from './audio';
 import { claimRequestSequence, connectionSequence, reduceSequence, sequenceFor } from './choreography';
 import { runSequence } from './dom-runner';
@@ -21,6 +22,7 @@ export function useGameMotion(view: GameView | null, options: GameMotionOptions 
   const [crownVisible, setCrownVisible] = useState(() => view?.game.status === 'FINISHED');
   const [scoreVisible, setScoreVisible] = useState(() => view?.game.status === 'FINISHED');
   const [reconnectVisible, setReconnectVisible] = useState(false);
+  const [drinkPresentation, setDrinkPresentation] = useState<DrinkPresentation | null>(null);
   const [reduced, setReduced] = useState(() => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [audio] = useState(() => new GameAudioManager());
   const [soundEnabled, setSoundEnabled] = useState(audio.enabled);
@@ -45,9 +47,10 @@ export function useGameMotion(view: GameView | null, options: GameMotionOptions 
   useLayoutEffect(() => {
     const before = previous.current;
     previous.current = view;
-    if (!view) { orchestrator.cancel(); setBusy(false); setAnswerVisible(false); setFinalActionsVisible(false); setVictoryVisible(false); setVictoryCardVisible(false); setCrownVisible(false); setScoreVisible(false); return; }
+    if (!view) { orchestrator.cancel(); setDrinkPresentation(null); setBusy(false); setAnswerVisible(false); setFinalActionsVisible(false); setVictoryVisible(false); setVictoryCardVisible(false); setCrownVisible(false); setScoreVisible(false); return; }
     if (!before || before.game.id !== view.game.id || disconnected.current) {
       orchestrator.hydrate(view.game.id, view.game.stateVersion);
+      setDrinkPresentation(null);
       setBusy(false);
       setAnswerVisible(initialAnswer(view));
       setFinalActionsVisible(view.game.status === 'FINISHED');
@@ -69,6 +72,13 @@ export function useGameMotion(view: GameView | null, options: GameMotionOptions 
     activeRuns.current += 1;
     for (const effect of effects) {
       void orchestrator.enqueue(effect, async (confirmed, signal) => {
+        const key = `${confirmed.gameId}:${confirmed.stateVersion}:${confirmed.id}:${confirmed.type}`;
+        if (confirmed.type === 'INCORRECT_AND_DRINK') {
+          setDrinkPresentation({ key, player: confirmed.player, drinkCount: confirmed.drinkCount });
+          // The portal must be mounted before the shared timeline queries its targets.
+          await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+          if (signal.aborted) return;
+        }
         if (confirmed.type === 'VICTORY') {
           setVictoryVisible(true);
           // Let React mount the crown and winner targets before starting the JSON timeline.
@@ -76,15 +86,17 @@ export function useGameMotion(view: GameView | null, options: GameMotionOptions 
           if (signal.aborted) return;
         }
         const sequence = sequenceFor(confirmed);
-        await runSequence(reducedRef.current ? reduceSequence(sequence) : sequence, {
+        try { await runSequence(reducedRef.current ? reduceSequence(sequence) : sequence, {
           root: root(), audio, reduced: reducedRef.current, signal, effect: confirmed,
-          key: `${confirmed.gameId}:${confirmed.stateVersion}:${confirmed.id}:${confirmed.type}`,
+          key,
           onAnswerMidpoint: () => { if (!signal.aborted && current.current?.capabilities.canSeeAnswer) setAnswerVisible(true); },
           onFinalActions: () => { if (!signal.aborted) setFinalActionsVisible(true); },
           onWinnerCard: () => { if (!signal.aborted) setVictoryCardVisible(true); },
           onCrown: () => { if (!signal.aborted) setCrownVisible(true); },
           onScore: () => { if (!signal.aborted) setScoreVisible(true); },
-        });
+        }); } finally {
+          if (confirmed.type === 'INCORRECT_AND_DRINK') setDrinkPresentation((active) => active?.key === key ? null : active);
+        }
       }).catch(() => undefined);
     }
     void orchestrator.settled().then(() => {
@@ -99,6 +111,7 @@ export function useGameMotion(view: GameView | null, options: GameMotionOptions 
   const disconnect = useCallback(() => {
     disconnected.current = true;
     setReconnectVisible(false);
+    setDrinkPresentation(null);
     orchestrator.cancel(); audio.stop(); auxiliary.current.abort(); auxiliary.current = new AbortController();
     const sequence = connectionSequence(false);
     void runSequence(reducedRef.current ? reduceSequence(sequence) : sequence, { root: root(), audio, reduced: reducedRef.current, signal: auxiliary.current.signal, key: 'disconnect' });
@@ -123,5 +136,5 @@ export function useGameMotion(view: GameView | null, options: GameMotionOptions 
     void runSequence(reducedRef.current ? reduceSequence(sequence) : sequence, { root: root(), audio, reduced: reducedRef.current, signal: auxiliary.current.signal, key: 'claim-request' });
   }, [root, audio]);
 
-  return { busy, answerVisible, finalActionsVisible, victoryVisible, victoryCardVisible, crownVisible, scoreVisible, reconnectVisible, soundEnabled, unlockAudio, toggleSound, disconnect, reconnect, claimPending, reducedMotion: reduced };
+  return { busy, answerVisible, finalActionsVisible, victoryVisible, victoryCardVisible, crownVisible, scoreVisible, reconnectVisible, drinkPresentation, soundEnabled, unlockAudio, toggleSound, disconnect, reconnect, claimPending, reducedMotion: reduced };
 }

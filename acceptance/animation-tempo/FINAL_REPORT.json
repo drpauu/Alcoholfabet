@@ -1,0 +1,648 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T16:05:19.136112+00:00",
+  "durationIncreasePercent": 50,
+  "choreographyTimingsCompared": 120,
+  "timingComparison": [
+    {
+      "path": ".QUESTION_ENTER.totalMs",
+      "before": 240,
+      "after": 360
+    },
+    {
+      "path": ".QUESTION_ENTER.steps[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".QUESTION_ENTER.steps[1].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".QUESTION_ENTER.steps[1].durationMs",
+      "before": 240,
+      "after": 360
+    },
+    {
+      "path": ".QUESTION_ENTER.steps[2].atMs",
+      "before": 35,
+      "after": 52
+    },
+    {
+      "path": ".ANSWER_REVEAL.totalMs",
+      "before": 280,
+      "after": 420
+    },
+    {
+      "path": ".ANSWER_REVEAL.steps[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".ANSWER_REVEAL.steps[0].durationMs",
+      "before": 140,
+      "after": 210
+    },
+    {
+      "path": ".ANSWER_REVEAL.steps[1].atMs",
+      "before": 140,
+      "after": 210
+    },
+    {
+      "path": ".ANSWER_REVEAL.steps[2].atMs",
+      "before": 140,
+      "after": 210
+    },
+    {
+      "path": ".ANSWER_REVEAL.steps[3].atMs",
+      "before": 140,
+      "after": 210
+    },
+    {
+      "path": ".ANSWER_REVEAL.steps[4].atMs",
+      "before": 140,
+      "after": 210
+    },
+    {
+      "path": ".ANSWER_REVEAL.steps[4].durationMs",
+      "before": 140,
+      "after": 210
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[1].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[1].durationMs",
+      "before": 180,
+      "after": 270
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[2].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[2].durationMs",
+      "before": 360,
+      "after": 540
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[3].atMs",
+      "before": 20,
+      "after": 30
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[3].durationMs",
+      "before": 260,
+      "after": 390
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[4].atMs",
+      "before": 40,
+      "after": 60
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[5].atMs",
+      "before": 70,
+      "after": 105
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[5].durationMs",
+      "before": 300,
+      "after": 450
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[6].atMs",
+      "before": 360,
+      "after": 540
+    },
+    {
+      "path": ".CORRECT_AND_MOVE.steps[6].durationPerCellMs",
+      "before": 420,
+      "after": 630
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.totalMs",
+      "before": 2400,
+      "after": 3600
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[1].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[1].durationMs",
+      "before": 330,
+      "after": 495
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[2].atMs",
+      "before": 20,
+      "after": 30
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[2].durationMs",
+      "before": 320,
+      "after": 480
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[3].atMs",
+      "before": 35,
+      "after": 52
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[3].durationMs",
+      "before": 240,
+      "after": 360
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[4].atMs",
+      "before": 50,
+      "after": 75
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[5].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[5].durationMs",
+      "before": 240,
+      "after": 360
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[6].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[6].durationMs",
+      "before": 560,
+      "after": 840
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[7].atMs",
+      "before": 160,
+      "after": 240
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[7].durationMs",
+      "before": 380,
+      "after": 570
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[8].atMs",
+      "before": 180,
+      "after": 270
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[8].durationMs",
+      "before": 240,
+      "after": 360
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[9].atMs",
+      "before": 210,
+      "after": 315
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[9].durationMs",
+      "before": 1360,
+      "after": 2040
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[10].atMs",
+      "before": 210,
+      "after": 315
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[10].durationMs",
+      "before": 1360,
+      "after": 2040
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[11].atMs",
+      "before": 330,
+      "after": 495
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[11].durationMs",
+      "before": 1200,
+      "after": 1800
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[12].atMs",
+      "before": 330,
+      "after": 495
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[12].durationMs",
+      "before": 1200,
+      "after": 1800
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[13].atMs",
+      "before": 620,
+      "after": 930
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[14].atMs",
+      "before": 620,
+      "after": 930
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[15].atMs",
+      "before": 620,
+      "after": 930
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[15].durationMs",
+      "before": 380,
+      "after": 570
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[16].atMs",
+      "before": 620,
+      "after": 930
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[16].durationMs",
+      "before": 840,
+      "after": 1260
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[17].atMs",
+      "before": 630,
+      "after": 945
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[17].durationMs",
+      "before": 900,
+      "after": 1350
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[18].atMs",
+      "before": 690,
+      "after": 1035
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[18].durationMs",
+      "before": 740,
+      "after": 1110
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[19].atMs",
+      "before": 900,
+      "after": 1350
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[19].durationMs",
+      "before": 680,
+      "after": 1020
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[20].atMs",
+      "before": 2100,
+      "after": 3150
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[20].durationMs",
+      "before": 280,
+      "after": 420
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[21].atMs",
+      "before": 2100,
+      "after": 3150
+    },
+    {
+      "path": ".INCORRECT_AND_DRINK.steps[21].durationMs",
+      "before": 300,
+      "after": 450
+    },
+    {
+      "path": ".PLUS_ONE.steps[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".PLUS_ONE.steps[0].durationMs",
+      "before": 420,
+      "after": 630
+    },
+    {
+      "path": ".PLUS_ONE.steps[1].atMs",
+      "before": 420,
+      "after": 630
+    },
+    {
+      "path": ".PLUS_ONE.steps[1].durationMs",
+      "before": 160,
+      "after": 240
+    },
+    {
+      "path": ".PLUS_ONE.steps[2].atMs",
+      "before": 580,
+      "after": 870
+    },
+    {
+      "path": ".PLUS_ONE.steps[2].durationMs",
+      "before": 340,
+      "after": 510
+    },
+    {
+      "path": ".PLUS_ONE.steps[3].atMs",
+      "before": 600,
+      "after": 900
+    },
+    {
+      "path": ".PLUS_ONE.steps[3].durationMs",
+      "before": 260,
+      "after": 390
+    },
+    {
+      "path": ".PLUS_ONE.steps[4].atMs",
+      "before": 610,
+      "after": 915
+    },
+    {
+      "path": ".PLUS_ONE.steps[5].atMs",
+      "before": 920,
+      "after": 1380
+    },
+    {
+      "path": ".PLUS_ONE.steps[5].durationMs",
+      "before": 420,
+      "after": 630
+    },
+    {
+      "path": ".TP_CLAIM.request[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".TP_CLAIM.request[0].durationMs",
+      "before": 90,
+      "after": 135
+    },
+    {
+      "path": ".TP_CLAIM.request[1].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".TP_CLAIM.request[2].atMs",
+      "before": 90,
+      "after": 135
+    },
+    {
+      "path": ".TP_CLAIM.won[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".TP_CLAIM.won[0].durationMs",
+      "before": 300,
+      "after": 450
+    },
+    {
+      "path": ".TP_CLAIM.won[1].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".TP_CLAIM.won[2].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".TP_CLAIM.won[2].durationMs",
+      "before": 220,
+      "after": 330
+    },
+    {
+      "path": ".TP_CLAIM.lost[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".TP_CLAIM.lost[0].durationMs",
+      "before": 180,
+      "after": 270
+    },
+    {
+      "path": ".TP_CLAIM.lost[1].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".DISCONNECT.totalMs",
+      "before": 220,
+      "after": 330
+    },
+    {
+      "path": ".DISCONNECT.steps[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".DISCONNECT.steps[0].durationMs",
+      "before": 220,
+      "after": 330
+    },
+    {
+      "path": ".DISCONNECT.steps[1].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".DISCONNECT.steps[1].durationMs",
+      "before": 220,
+      "after": 330
+    },
+    {
+      "path": ".DISCONNECT.steps[2].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".RECONNECT.totalMs",
+      "before": 620,
+      "after": 930
+    },
+    {
+      "path": ".RECONNECT.steps[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".RECONNECT.steps[0].durationMs",
+      "before": 240,
+      "after": 360
+    },
+    {
+      "path": ".RECONNECT.steps[1].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".RECONNECT.steps[2].atMs",
+      "before": 280,
+      "after": 420
+    },
+    {
+      "path": ".RECONNECT.steps[2].durationMs",
+      "before": 300,
+      "after": 450
+    },
+    {
+      "path": ".RECONNECT.steps[3].atMs",
+      "before": 280,
+      "after": 420
+    },
+    {
+      "path": ".RECONNECT.steps[3].durationMs",
+      "before": 300,
+      "after": 450
+    },
+    {
+      "path": ".RECONNECT.steps[4].atMs",
+      "before": 600,
+      "after": 900
+    },
+    {
+      "path": ".VICTORY.totalMs",
+      "before": 2300,
+      "after": 3450
+    },
+    {
+      "path": ".VICTORY.steps[0].atMs",
+      "before": 0,
+      "after": 0
+    },
+    {
+      "path": ".VICTORY.steps[0].durationMs",
+      "before": 420,
+      "after": 630
+    },
+    {
+      "path": ".VICTORY.steps[1].atMs",
+      "before": 360,
+      "after": 540
+    },
+    {
+      "path": ".VICTORY.steps[1].durationMs",
+      "before": 500,
+      "after": 750
+    },
+    {
+      "path": ".VICTORY.steps[2].atMs",
+      "before": 520,
+      "after": 780
+    },
+    {
+      "path": ".VICTORY.steps[2].durationMs",
+      "before": 520,
+      "after": 780
+    },
+    {
+      "path": ".VICTORY.steps[3].atMs",
+      "before": 600,
+      "after": 900
+    },
+    {
+      "path": ".VICTORY.steps[3].durationMs",
+      "before": 1000,
+      "after": 1500
+    },
+    {
+      "path": ".VICTORY.steps[4].atMs",
+      "before": 620,
+      "after": 930
+    },
+    {
+      "path": ".VICTORY.steps[5].atMs",
+      "before": 920,
+      "after": 1380
+    },
+    {
+      "path": ".VICTORY.steps[5].durationMs",
+      "before": 420,
+      "after": 630
+    },
+    {
+      "path": ".VICTORY.steps[6].atMs",
+      "before": 1420,
+      "after": 2130
+    },
+    {
+      "path": ".VICTORY.steps[6].durationMs",
+      "before": 420,
+      "after": 630
+    },
+    {
+      "path": ".VICTORY.steps[7].atMs",
+      "before": 1900,
+      "after": 2850
+    },
+    {
+      "path": ".VICTORY.steps[7].durationMs",
+      "before": 300,
+      "after": 450
+    }
+  ],
+  "typecheck": "PASS",
+  "unitTests": 31,
+  "unitFiles": 7,
+  "productionBuild": "PASS",
+  "setupBrowserCases": 6,
+  "drinkBrowserCases": 16,
+  "lifecycleCases": 3,
+  "normalDrinkVisibleDurationMs": {
+    "minimum": 3615,
+    "maximum": 3682
+  },
+  "removedPhraseAbsentFromProductionSourceAndBuild": true,
+  "backup": "/home/pau/Documents/alcoholfabet-animation-tempo-before-20261009.tar.gz",
+  "backupMode": "0600",
+  "migrationsApplied": [],
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0,
+  "manualActionsRequired": [],
+  "sourceHashes": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "458ba16259474790f7dff4999e858b39898211b13021a53a1ed65c4fcb16a59c"
+    },
+    {
+      "path": "src/content/ca.ts",
+      "sha256": "d88e096c8672011299c816189dadaf8ff296dff044397593d928ffcece8a6a2d"
+    },
+    {
+      "path": "src/motion/choreography.ts",
+      "sha256": "15f3c479ef6f016a5a68ca5140db26062b96e6c23867c06171da887f4854de82"
+    },
+    {
+      "path": "motion/event-choreography.json",
+      "sha256": "54093a0cca803f14f2fbd830fb7af6ef179b65f55d6d7da4474e42366ea62430"
+    },
+    {
+      "path": "motion/motion-tokens.json",
+      "sha256": "543ec8ebc55f201533ff9a401f77c2713ecc6e8e89956b47e07f9122b0accf8f"
+    }
+  ]
+}

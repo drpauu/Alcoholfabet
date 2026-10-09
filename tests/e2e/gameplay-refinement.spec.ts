@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced } from './helpers';
+import { identifyOnline, clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced } from './helpers';
 
 const directory = process.env.TECLA_PAU_CAPTURE_DIRECTORY || 'acceptance/alcoholfabet';
 const sizes = [[360, 800], [390, 844], [430, 932], [1024, 768], [1440, 900]] as const;
@@ -104,7 +104,7 @@ test('durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions
   try {
     await enter(page);
     await page.getByRole('button', { name: 'Jugar en persona', exact: true }).click();
-    await expect(page.locator('.setup-hint')).toContainText('torns de 30 segons');
+    await expect(page.locator('.setup-hint')).toHaveCount(0);
     await page.getByRole('button', { name: 'Personalitzada', exact: true }).click();
     const input = page.getByLabel('Durada en minuts (10–60)', { exact: true });
     await input.fill('61'); await expect(page.getByRole('button', { name: 'Continuar', exact: true })).toBeDisabled();
@@ -148,8 +148,8 @@ test('online: qui reclama T&P veu el seu avís de beure i abandonar torna tots d
     await enter(pau); await enter(tecla); await createGame(pau, true, 20);
     const lobby = await currentView(pau);
     await tecla.getByRole('button', { name: 'Jugar en línia', exact: true }).click();
+  await identifyOnline(tecla, 'TECLA');
     await tecla.getByRole('button', { name: 'Unir-se a una partida', exact: true }).click();
-    await tecla.getByRole('button', { name: /Soc la Tecla$/ }).click();
     await tecla.getByLabel('Codi de la partida', { exact: true }).fill(lobby.game.inviteCode!);
     await tecla.getByRole('button', { name: 'Unir-se a una partida', exact: true }).click();
     await clickAction(pau, 'Començar la partida'); await waitSynced(pau, tecla);

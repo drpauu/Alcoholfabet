@@ -11,13 +11,13 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Obre http://127.0.0.1:5173. En aquest entorn ja hi ha `.env.local` configurat; no està inclòs al control de versions. L’entrada és directa i no demana cap codi privat.
+Obre http://127.0.0.1:5173. En aquest entorn ja hi ha `.env.local` configurat; no està inclòs al control de versions. El menú i el mode presencial són públics. Només el mode en línia demana el codi privat del jugador.
 
 Anonymous Sign-Ins està activat i verificat al projecte remot. Les proves finals de partida han utilitzat dispositius anònims nous i el backend real, sense simular el servidor.
 
 ## Jugar
 
-En persona, escolliu durada i qui comença, responeu parlant i premeu `Mostra la resposta` abans de jutjar. En línia, cada dispositiu escull el seu rol; compartiu el codi curt i comenceu quan tots dos siguin connectats. El respondent no rep la resposta al JSON. T&P es reclama atòmicament al servidor. Només arribar formalment a Meta afegeix una victòria.
+En persona, escolliu durada i qui comença, responeu parlant i premeu `Mostra la resposta` abans de jutjar. En línia, el codi privat identifica en Pau o la Tecla al servidor; després compartiu el codi de sala i comenceu quan tots dos siguin connectats. El rol es conserva en recarregar i es pot canviar des de la preparació de la trobada. El respondent no rep la resposta al JSON. T&P es reclama atòmicament al servidor. Només arribar formalment a Meta afegeix una victòria.
 
 ## Verificar
 
@@ -30,7 +30,7 @@ npm run test:e2e
 
 Playwright necessita Chromium. La configuració utilitza el navegador instal·lat en aquest entorn; en un altre equip, instal·la'l amb `npx playwright install chromium` i defineix `PLAYWRIGHT_CHROMIUM_EXECUTABLE` amb el seu camí, o elimina l'override `executablePath` de la configuració.
 
-Les proves E2E fan escriptures reals al projecte Supabase configurat. Necessiten accés anònim activat; no requereixen codi privat. Si està desactivat, s'utilitza explícitament el fixture protegit `/tmp/tecla-pau-qa-users.json`; mai forma part del build. Executeu les suites de backend, E2E i motion successivament perquè comparteixen marcador.
+Les proves E2E fan escriptures reals al projecte Supabase configurat. Necessiten accés anònim activat. Les proves en línia llegeixen els dos codis des de `~/.config/tecla-pau/online-player-codes.json`, amb permisos `0600` i claus `PAU` i `TECLA`; `TECLA_ONLINE_CODES_FILE` permet canviar-ne el camí. Aquest fitxer queda fora del repositori i del build. Les traces estan desactivades per evitar registrar credencials. Executeu les suites de backend, E2E i motion successivament perquè comparteixen marcador.
 
 ## Fitxers
 
@@ -58,3 +58,9 @@ La revisió de llegibilitat i avisos de beure, el retorn directe al menú en aba
 Entrada pública amb Anonymous Auth, nom Alcoholfabet i cap avatar al paquet públic. Els noms Pau i Tecla i els colors blau i rosa identifiquen les peces. La pregunta i el tauler tenen prioritat visual; els resultats incorrectes mostren un brindis amb got, nom, bombolles i so, o dos gots per beure doble. S’han retirat els dos textos d’ajuda demanats.
 
 La migració `0012_alcoholfabet_public_access.sql` crea el context públic separat; conserva íntegres les partides i el marcador privat històrics. El codi de sala en línia continua servint per unir els dos dispositius. Informes de la revisió: `acceptance/alcoholfabet/`; documentació: `docs/ALCOHOLFABET.md`.
+
+El brindis actual apareix gran al centre durant 3,6 segons, amb got vectorial, líquid i reflexos animats; dos gots brinden quan toca beure doble. Verificació local sense escriptures a Supabase: `node scripts/verify-drink-stage.mjs` (Vite ha d’estar actiu al port 5173). Captures, vídeo i comprovacions de cancel·lació, recàrrega i moviment reduït: `acceptance/drink-stage/`.
+
+Les animacions principals s’han alentit un 50%, amb el so sincronitzat. S’ha retirat la frase d’estimació de la pantalla de durada. Proves d’aquesta revisió: `acceptance/animation-tempo/`; el brindis es verifica amb `node scripts/verify-drink-stage.mjs --output-dir=acceptance/animation-tempo/drink`.
+
+La migració `0013_online_player_identity.sql` afegeix dos codis privats que assignen el rol exclusivament en línia, amb validació al servidor. El client recupera les sessions locals invàlides i mostra el motiu de l’error d’entrada amb un botó per tornar-ho a provar. Les proves amb dos dispositius, les captures i la neteja de QA són a [acceptance/online-identity/](acceptance/online-identity/README.md).

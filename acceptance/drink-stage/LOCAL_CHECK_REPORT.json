@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T15:57:43.621735+00:00",
+  "command": "npm run check",
+  "typecheck": "PASS",
+  "unitTests": 31,
+  "unitFiles": 7,
+  "productionBuild": "PASS",
+  "browserCases": 16,
+  "browserLifecycleCases": 3,
+  "initialCaptures": 6,
+  "backup": "/home/pau/Documents/alcoholfabet-drink-stage-before-20261009.tar.gz",
+  "backupMode": "0600",
+  "migrationsApplied": [],
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0,
+  "manualActionsRequired": []
+}

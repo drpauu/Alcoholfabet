@@ -1,0 +1,35 @@
+{
+  "responses": [
+    {
+      "path": "/auth/v1/signup",
+      "status": 200,
+      "code": null,
+      "message": null,
+      "authorized": null
+    },
+    {
+      "path": "/rest/v1/rpc/get_access_context",
+      "status": 200,
+      "code": null,
+      "message": null,
+      "authorized": true
+    },
+    {
+      "path": "/rest/v1/rpc/get_access_context",
+      "status": 200,
+      "code": null,
+      "message": null,
+      "authorized": true
+    }
+  ],
+  "errors": [],
+  "captures": [
+    "audit/online-identity-before/screenshots/boot-390x844.png",
+    "audit/online-identity-before/screenshots/boot-1024x768.png",
+    "audit/online-identity-before/screenshots/boot-1440x900.png"
+  ],
+  "visibleText": "Alcoholfabet\n\nEL JOC DE TAULA I DE BEURE\n\nAlcoholfabet\n\nPreguntes, torns i brindis.\n\nAlcoholfabet\n1\n2\n3\n4\n5\n+1\n6\n7\n8\n9\nSortida\nMeta\nPau\n0—0\nTecla\nJugar en persona\nJugar en línia\nNormes",
+  "userIds": [
+    "94bec68f-2b76-47a3-92a3-2488f8b07de3"
+  ]
+}

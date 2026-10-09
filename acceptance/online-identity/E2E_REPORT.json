@@ -1,0 +1,205 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T16:18:18.853Z",
+  "scope": "Real production App, Anonymous Auth, server-verified identities, authoritative RPCs and private Realtime in separate Chromium contexts.",
+  "cases": [
+    {
+      "name": "server rejects online creation without identity",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid code, verified Pau role, reload and forged role rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "two real devices, verified roles, private Realtime, answer privacy, result, reload and abandon",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh in-person game needs no private code",
+      "status": "PASS"
+    },
+    {
+      "name": "cached invalid session recovers to the playable menu",
+      "status": "PASS"
+    }
+  ],
+  "captures": [
+    {
+      "name": "online-code-empty",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/online-identity/screenshots/online-code-empty-390x844.png",
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "passwordFields": [
+          {
+            "empty": true,
+            "bounds": {
+              "x": 41,
+              "y": 475.625,
+              "width": 308,
+              "height": 56,
+              "top": 475.625,
+              "right": 349,
+              "bottom": 531.625,
+              "left": 41
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "online-code-empty",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/online-identity/screenshots/online-code-empty-1024x768.png",
+      "geometry": {
+        "width": 1024,
+        "height": 768,
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "passwordFields": [
+          {
+            "empty": true,
+            "bounds": {
+              "x": 278,
+              "y": 448.15625,
+              "width": 468,
+              "height": 56,
+              "top": 448.15625,
+              "right": 746,
+              "bottom": 504.15625,
+              "left": 278
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "online-code-empty",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/online-identity/screenshots/online-code-empty-1440x900.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "passwordFields": [
+          {
+            "empty": true,
+            "bounds": {
+              "x": 490,
+              "y": 520.609375,
+              "width": 460,
+              "height": 56,
+              "top": 520.609375,
+              "right": 950,
+              "bottom": 576.609375,
+              "left": 490
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "identified-pau",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/online-identity/screenshots/identified-pau-390x844.png",
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "passwordFields": []
+      }
+    },
+    {
+      "name": "identified-pau",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/online-identity/screenshots/identified-pau-1024x768.png",
+      "geometry": {
+        "width": 1024,
+        "height": 768,
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "passwordFields": []
+      }
+    },
+    {
+      "name": "identified-pau",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/online-identity/screenshots/identified-pau-1440x900.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "passwordFields": []
+      }
+    },
+    {
+      "name": "online-restored",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/online-identity/screenshots/online-restored-390x844.png",
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "passwordFields": []
+      }
+    },
+    {
+      "name": "online-restored",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/online-identity/screenshots/online-restored-1024x768.png",
+      "geometry": {
+        "width": 1024,
+        "height": 768,
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "passwordFields": []
+      }
+    },
+    {
+      "name": "online-restored",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/online-identity/screenshots/online-restored-1440x900.png",
+      "geometry": {
+        "width": 1440,
+        "height": 900,
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "passwordFields": []
+      }
+    }
+  ],
+  "errors": [],
+  "qaUserIds": [
+    "94bec68f-2b76-47a3-92a3-2488f8b07de3",
+    "9b3c0666-af39-4fb1-bb83-5f4c5b007781",
+    "4489e84e-b4b6-4300-ab2a-344bfbad1e43",
+    "190e4385-6e80-4c73-8820-3c85876ee339",
+    "83422d2d-f5f9-4c1a-9f7f-cda8bda62bbe",
+    "8e99affa-3299-4f57-87f4-bce719ececfd"
+  ],
+  "qaGameIds": [
+    "1ba0205e-24e5-4d34-85cd-a529d7abf0b5",
+    "9f1cd7af-0517-489d-ada6-cfc3809dd5c1"
+  ],
+  "traceAndVideoDisabled": true,
+  "noSecretsInArtifacts": true,
+  "cleanupPending": false,
+  "cleanupReport": "acceptance/online-identity/QA_CLEANUP_REPORT.json"
+}

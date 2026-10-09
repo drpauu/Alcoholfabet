@@ -1,5 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
+import { homedir } from 'node:os';
+import type { PlayerRole } from '../../src/domain/game/game-types';
 import { expect } from '@playwright/test';
 import type { Browser, BrowserContext, Page } from '@playwright/test';
 import type { GameView } from '../../src/services/game-contract';
@@ -64,11 +66,27 @@ export async function enter(page: Page) {
   await expect(page.getByRole('button', { name: 'Jugar en persona', exact: true })).toBeVisible();
 }
 
+export async function identifyOnline(page: Page, role: PlayerRole) {
+  const field = page.getByLabel('Codi privat', { exact: true });
+  if (!await field.isVisible()) return;
+  const path = process.env.TECLA_ONLINE_CODES_FILE ?? `${homedir()}/.config/tecla-pau/online-player-codes.json`;
+  const codes = JSON.parse(readFileSync(path, 'utf8')) as Record<PlayerRole, string>;
+  // Inject the private value without including it in Playwright's fill call log.
+  await page.evaluate(({ value }) => {
+    const input = document.querySelector<HTMLInputElement>('input[type="password"]');
+    if (!input) throw new Error('ONLINE_IDENTITY_INPUT_MISSING');
+    Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')?.set?.call(input, value);
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  }, { value: codes[role] });
+  await page.getByRole('button', { name: 'Entrar', exact: true }).click();
+  await expect(field).toHaveCount(0);
+}
+
 export async function createGame(page: Page, online: boolean, minutes = 45) {
   await page.getByRole('button', { name: online ? 'Jugar en línia' : 'Jugar en persona', exact: true }).click();
   if (online) {
+    await identifyOnline(page, 'PAU');
     await page.getByRole('button', { name: 'Crear una partida', exact: true }).click();
-    await page.getByRole('button', { name: 'Soc en Pau' }).click();
   }
   await expect(page.getByRole('heading', { name: 'Quant de temps voleu que duri la partida?' })).toBeVisible();
   await page.getByRole('button', { name: `${minutes} minuts` }).click();

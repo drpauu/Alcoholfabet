@@ -249,7 +249,8 @@ La publishable key es llegeix de variables d'entorn.
 Implementa:
 
 - Anonymous Auth.
-- Entrada pública sense codi privat, mitjançant Anonymous Auth.
+- Menú i mode presencial públics sense codi privat, mitjançant Anonymous Auth.
+- Identificació amb dos codis privats només en línia; el servidor assigna i exigeix el rol PAU o TECLA en crear i unir-se a una partida.
 - Espai públic `alcoholfabet` separat de les partides privades històriques.
 - Membres de partida validats al servidor.
 - RLS a totes les taules exposades.
@@ -422,4 +423,12 @@ No afirmis res que no hagis verificat.
 
 ## Revisió aprovada de producte — 9 d’octubre de 2026
 
-La instrucció posterior de l’usuari substitueix les referències històriques a accés privat, avatars i nom Pau & Tecla: Alcoholfabet té entrada pública, cap avatar i protagonisme del tauler i les preguntes. Beure mostra un got amb el nom, i una coreografia de brindis de 1.080 ms definida al JSON; amb moviment reduït conserva un avís estàtic i el so activat. El codi de la sala en línia només connecta els dos dispositius. Els textos d’ajuda «Respon en veu alta! L’altra persona valida la resposta.» i «No s’encadenen bonificacions.» no es mostren. La regla de no encadenar +1 es conserva al servidor.
+La instrucció posterior de l’usuari substitueix les referències històriques a accés privat, avatars i nom Pau & Tecla: Alcoholfabet té entrada pública, cap avatar i protagonisme del tauler i les preguntes. Beure mostra un got amb el nom, i una coreografia de brindis central de 3.600 ms definida al JSON, amb got vectorial gran, líquid i reflexos animats (900 ms estàtics amb moviment reduït); amb moviment reduït conserva un avís estàtic i el so activat. El codi de la sala en línia només connecta els dos dispositius. Els textos d’ajuda «Respon en veu alta! L’altra persona valida la resposta.» i «No s’encadenen bonificacions.» no es mostren. La regla de no encadenar +1 es conserva al servidor.
+
+## Ritme i textos de durada — revisió posterior
+
+Per instrucció posterior de l’usuari, les animacions principals duren un 50% més i els sons segueixen els mateixos moments visuals. La frase d’estimació de torns s’ha retirat de la pantalla de durada. La lògica de càlcul de la durada de les partides es conserva.
+
+## Identitat en línia — revisió posterior
+
+La instrucció posterior de l’usuari introdueix dos codis privats, un per a cada jugador, exclusivament per a partides en línia. El menú i el mode presencial conserven l’entrada pública. Els valors dels codis es configuren fora del repositori; els hashes i la vinculació entre sessió i rol romanen al servidor. En crear o entrar en una partida en línia, el servidor exigeix el rol identificat. El rol es conserva en recarregar. L’entrada recupera una sessió local invàlida i ofereix un error explicatiu i un botó per tornar-ho a provar si falla la connexió.

@@ -123,18 +123,26 @@ export function Board({ cells, positions, activePlayer, targetPosition, finishPo
           <linearGradient id={`${id}-edge`} x1="0" y1="0" x2="0" y2="1"><stop stopColor="#a77140" /><stop offset=".62" stopColor="#744629" /><stop offset="1" stopColor="#573821" /></linearGradient>
           <linearGradient id={`${id}-inset`} x1="1" y1="0" x2="0" y2="1"><stop stopColor="#dbc294" /><stop offset=".48" stopColor="#c8a16d" /><stop offset="1" stopColor="#b48553" /></linearGradient>
           <linearGradient id={`${id}-brass`} x1="1" y1="0" x2="0" y2="1"><stop stopColor="#e0c58e" /><stop offset=".42" stopColor="#c19a56" /><stop offset="1" stopColor="#98723e" /></linearGradient>
-          <pattern id={`${id}-grain`} width="247" height="79" patternUnits="userSpaceOnUse"><g fill="none" stroke="#6e452c" strokeWidth="1"><path d="M-10 9C34 17 61 0 114 8S204 18 262 8M-8 24C48 16 80 35 143 23S215 21 259 27M-8 47C42 50 59 35 97 39S157 51 259 43M-8 64C54 55 103 72 162 62S221 55 262 65" /><path d="M4 34C57 27 117 42 236 35M13 72C67 66 113 77 207 70" strokeOpacity=".48" /></g><g fill="none" stroke="#efd0a0" strokeWidth="1.3" opacity=".55"><path d="M-8 18C65 7 132 29 260 16M-8 54C76 44 140 60 260 51" /></g></pattern>
+          <pattern id={`${id}-grain`} width="1210" height="132" patternUnits="userSpaceOnUse">
+            <g fill="none" stroke="#785032" strokeWidth="1.35" strokeLinecap="round" opacity=".5">
+              <path d="M-20 16C126 4 186 31 332 19S543 7 686 19 919 33 1240 14M-20 43C129 57 219 31 378 44S646 56 802 43 1066 29 1240 45M-20 78C132 63 284 86 437 75S692 64 862 80 1096 87 1240 72M-20 115C171 129 293 98 478 111S740 122 905 109 1111 99 1240 116" />
+              <path d="M36 28C175 21 235 39 396 28M511 31C676 20 783 40 1038 29M-20 62C213 48 388 67 622 59S985 53 1240 64M79 96C240 86 377 105 531 95M695 96C883 106 1005 85 1182 97" strokeWidth=".85" opacity=".5" />
+            </g>
+            <g fill="none" stroke="#f2d6a7" strokeWidth="1.5" opacity=".5">
+              <path d="M-20 21C126 9 186 36 332 24S543 12 686 24 919 38 1240 19M-20 83C132 68 284 91 437 80S692 69 862 85 1096 92 1240 77" />
+            </g>
+          </pattern>
           <pattern id={`${id}-clay-speckle`} width="37" height="31" patternUnits="userSpaceOnUse"><g fill="#684d3d" opacity=".18"><circle cx="7" cy="9" r=".7" /><circle cx="24" cy="21" r=".9" /><circle cx="31" cy="5" r=".45" /></g><path d="m13 15 4-1m-1 12 3 .3" stroke="#f9edd4" strokeWidth="1" opacity=".35" /></pattern>
           <clipPath id={`${id}-face-clip`}><path d={slabShape} /></clipPath>
           {(['PERSONAL', 'CROSSED', 'TP'] as const).map(type => <linearGradient key={type} id={`${id}-tile-${type}`} x1="1" y1="0" x2="0" y2="1"><stop stopColor={tileColors[type][0]} /><stop offset=".53" stopColor={tileColors[type][1]} /><stop offset="1" stopColor={tileColors[type][2]} /></linearGradient>)}
         </defs>
-        <g className="board-slab" filter={`url(#${id}-contact)`}>
+        <g className="board-slab">
+          <path className="board-contact-shadow" d={slabShape} transform="translate(-2 15)" fill="#573821" filter={`url(#${id}-contact)`} />
           <path d={slabShape} transform="translate(-2 15)" fill={`url(#${id}-edge)`} stroke="#513422" strokeWidth="3" />
           <path d={slabShape} fill={`url(#${id}-wood)`} stroke="#795033" strokeWidth="3" />
           <path d={slabShape} transform="translate(14 10) scale(.976 .963)" fill="none" stroke="#f0d4a5" strokeWidth="2.7" opacity=".75" />
           <path d={insetShape} fill={`url(#${id}-inset)`} stroke="#8c613c" strokeWidth="2.2" />
           <path d={insetShape} transform="translate(5 4) scale(.992 .984)" fill="none" stroke="#f2d9ab" strokeWidth="2" opacity=".75" />
-          <g className="board-painted-grain" clipPath={`url(#${id}-face-clip)`} opacity=".28" aria-hidden="true"><svg x="0" y="0" width="1210" height="625" viewBox="350 495 1000 340" preserveAspectRatio="none"><image href="/assets/production/backgrounds/sitges_scene_desktop_ai.webp" width="1672" height="941" /></svg></g>
           <g clipPath={`url(#${id}-face-clip)`} className="board-grain">
             <path d={slabShape} fill={`url(#${id}-grain)`} opacity=".63" />
             <g fill="none" stroke="#865633" opacity=".4"><path d="M191 258c35-15 63-11 88 3s69 18 120 9M205 260c12-14 46-16 63-3s2 29-28 24-36-13-35-21Z" /><path d="M215 262c8-7 32-8 41 0s-3 14-19 12-27-7-22-12Z" /><path d="M242 253c73-19 160 1 205 5M192 285c79 1 132 10 207 0M809 442c68-8 91 13 161 7M838 451c-13-14 18-23 36-12s2 27-18 19-18-7-18-7Z" /></g>

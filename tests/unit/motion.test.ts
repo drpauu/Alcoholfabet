@@ -44,11 +44,11 @@ describe('confirmed visual effects', () => {
 
   it('uses exact card midpoint and distinct +1 landings from the choreography', () => {
     const reveal = sequenceFor({ ...identity, type: 'ANSWER_REVEAL' });
-    expect(reveal.steps.find((step) => step.action === 'swapContent')?.atMs).toBe(140);
+    expect(reveal.steps.find((step) => step.action === 'swapContent')?.atMs).toBe(210);
     const plus = sequenceFor({ ...identity, type: 'CORRECT_AND_MOVE', player: 'PAU', from: 2, to: 4, plusOne: true });
-    expect(plus.steps.filter((step) => step.action === 'moveOneCell').map((step) => [step.atMs, step.fromPosition, step.toPosition])).toEqual([[360, 2, 3], [1280, 3, 4]]);
-    expect(plus.steps.find((step) => step.cue === 'PLUS_ONE')?.atMs).toBe(970);
-    expect(plus.totalMs).toBe(1700);
+    expect(plus.steps.filter((step) => step.action === 'moveOneCell').map((step) => [step.atMs, step.fromPosition, step.toPosition])).toEqual([[540, 2, 3], [1920, 3, 4]]);
+    expect(plus.steps.find((step) => step.cue === 'PLUS_ONE')?.atMs).toBe(1455);
+    expect(plus.totalMs).toBe(2550);
   });
 
   it('keeps semantic reduced-motion feedback and drops flying particles', () => {
@@ -62,16 +62,29 @@ describe('confirmed visual effects', () => {
 
   it('orchestrates the drink toast and preserves the right sound with reduced motion', () => {
     for (const drinkCount of [1, 2] as const) {
-      const sequence = sequenceFor({ ...identity, type: 'INCORRECT_AND_DRINK', drinkCount });
-      expect(sequence.totalMs).toBe(1080);
-      expect(sequence.steps.find(step => step.target === 'drinkGlass')?.action).toBe('raiseGlass');
-      expect(sequence.steps.find(step => step.target === 'drinkBubbles')?.count).toBe(6);
-      expect(sequence.steps.find(step => step.action === 'play' && step.atMs === 220)?.cue).toBe(drinkCount === 2 ? 'DOUBLE_DRINK' : 'DRINK');
+      const sequence = sequenceFor({ ...identity, type: 'INCORRECT_AND_DRINK', player: 'PAU', drinkCount });
+      expect(sequence.totalMs).toBe(3600);
+      expect(sequence.steps.find(step => step.target === 'drinkHeroFirst')?.action).toBe('toastGlass');
+      expect(sequence.steps.find(step => step.target === 'drinkSparkles')?.count).toBeLessThanOrEqual(10);
+      const clink = sequence.steps.find(step => step.target === 'drinkClink');
+      expect(sequence.steps.find(step => step.action === 'play' && step.atMs === clink?.atMs)?.cue).toBe(drinkCount === 2 ? 'DOUBLE_DRINK' : 'DRINK');
       const reduced = reduceSequence(sequence);
-      expect(reduced.totalMs).toBe(180);
-      expect(reduced.steps.some(step => ['raiseGlass', 'emit', 'pulse', 'keyframes'].includes(step.action))).toBe(false);
+      expect(reduced.totalMs).toBe(900);
+      expect(reduced.steps.some(step => ['toastGlass', 'liquidSway', 'sweepGlass', 'ripple', 'emit', 'pulse', 'keyframes'].includes(step.action))).toBe(false);
+      expect(reduced.steps.filter(step => step.action === 'enter').every(step => step.to?.scale === undefined && step.to?.y === undefined)).toBe(true);
       expect(reduced.steps.some(step => step.cue === (drinkCount === 2 ? 'DOUBLE_DRINK' : 'DRINK'))).toBe(true);
     }
+  });
+
+  it('names the confirmed T&P respondent, even when the next turn belongs to the other player', () => {
+    const before = view(7); before.game.phase = 'TP_CLAIMED'; before.game.tpClaimant = 'PAU';
+    const after = view(8); after.game.phase = 'RESULT'; after.game.currentTurn = 'TECLA';
+    after.lastEvent = { id: 'drink-8', type: 'JUDGE_INCORRECT', stateVersion: 8, createdAt: '', payload: { correct: false, respondingPlayer: 'PAU', drinkCount: 2 } };
+    expect(effectsBetween(before, after)).toEqual([{ gameId: 'game-1', stateVersion: 8, id: 'drink-8', type: 'INCORRECT_AND_DRINK', player: 'PAU', drinkCount: 2 }]);
+    after.lastEvent.payload.respondingPlayer = 'UNKNOWN';
+    expect(effectsBetween(before, after)).toEqual([]);
+    after.lastEvent.payload.respondingPlayer = 'PAU'; after.lastEvent.stateVersion = 6;
+    expect(effectsBetween(before, after)).toEqual([]);
   });
 });
 

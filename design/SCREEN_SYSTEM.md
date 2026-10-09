@@ -130,3 +130,7 @@ Ordre visual:
 ## Revisió Alcoholfabet
 
 Entrada sense codi privat; sense avatars a inici, seleccions, partida ni victòria. La pregunta utilitza 23–33 px i pes 800, el tauler té amplada completa en mòbil i la capçalera es compacta. El got i el nom del respondent dominen el resultat incorrecte. Un +1 incorrecte mostra dos gots i «Beu doble». Les partides en línia continuen requerint la invitació de la sala per unir els dos membres.
+
+## Brindis central aprovat
+
+Quan l’esdeveniment confirmat indica beure, una composició temporal ocupa el centre exacte del viewport. Got vectorial de 281–319 px d’alçada, nom gran i penalització doble quan correspon. Fons enfosquit de manera temporal perquè el got i el text destaquin. El tauler i la targeta mantenen la seva geometria; en acabar es recupera la vista de la partida. `src/components/DrinkCelebration.tsx` defineix el dibuix per capes i `motion/event-choreography.json` en defineix els temps.

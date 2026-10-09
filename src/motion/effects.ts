@@ -5,7 +5,7 @@ interface EffectIdentity { gameId: string; stateVersion: number; id: string }
 export type ConfirmedGameEffect = EffectIdentity & (
   | { type: 'QUESTION_ENTER' | 'ANSWER_REVEAL' }
   | { type: 'CORRECT_AND_MOVE'; player: PlayerRole; from: number; to: number; plusOne: boolean; fromOffsetX?: number }
-  | { type: 'INCORRECT_AND_DRINK'; drinkCount: 1 | 2 }
+  | { type: 'INCORRECT_AND_DRINK'; player: PlayerRole; drinkCount: 1 | 2 }
   | { type: 'TP_CLAIM'; variant: 'won' | 'lost'; claimant: PlayerRole }
   | { type: 'VICTORY'; winner: PlayerRole }
 );
@@ -33,8 +33,8 @@ export function effectsBetween(previous: GameView | null, next: GameView): Confi
     const to = finiteNumber(payload.to) ? payload.to : respondent === 'PAU' ? next.game.pauPosition : next.game.teclaPosition;
     const samePosition = previous.game.pauPosition === previous.game.teclaPosition;
     effects.push({ ...identity, type: 'CORRECT_AND_MOVE', player: respondent, from, to, plusOne: payload.plusOne === true || to - from === 2, fromOffsetX: samePosition ? respondent === 'PAU' ? -18 : 18 : 0 });
-  } else if (newlyJudged && payload.correct === false) {
-    effects.push({ ...identity, type: 'INCORRECT_AND_DRINK', drinkCount: payload.drinkCount === 2 ? 2 : 1 });
+  } else if (newlyJudged && payload.correct === false && respondent) {
+    effects.push({ ...identity, type: 'INCORRECT_AND_DRINK', player: respondent, drinkCount: payload.drinkCount === 2 ? 2 : 1 });
   }
   if (next.game.status === 'FINISHED' && previous.game.status !== 'FINISHED' && next.game.winner) effects.push({ ...identity, type: 'VICTORY', winner: next.game.winner });
   return effects;

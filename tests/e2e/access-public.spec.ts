@@ -23,7 +23,7 @@ test('Alcoholfabet entra directament sense codi ni avatars i conserva el so i le
     await page.reload();
     await expect(page.getByRole('button', { name: 'So desactivat', exact: true })).toBeVisible();
     await page.goto('/?partida=ABCDEF');
-    await expect(page.getByRole('heading', { name: 'Qui ets?', exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'El teu codi privat', exact: true })).toBeVisible();
     expect(privateAccessRequests).toEqual([]); expect(avatarRequests).toEqual([]);
     const unauthenticated = await context.request.post(`${projectUrl}/rest/v1/rpc/get_game_view`, {
       headers: { apikey: publishable }, data: { p_game_id: '00000000-0000-0000-0000-000000000000' },

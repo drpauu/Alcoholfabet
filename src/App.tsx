@@ -5,6 +5,7 @@ import { Board } from './components/Board';
 import { QuestionCard } from './components/QuestionCard';
 import { PlayerBadge } from './components/PlayerBadge';
 import { HomeTable } from './components/HomeTable';
+import { DrinkCelebration } from './components/DrinkCelebration';
 import { ArtButtonPrimary, ArtButtonSecondary, ArtButtonQuiet, ArtButtonCorrect, ArtButtonIncorrect, ArtButtonTP, ArtPanel, ArtCard, ArtModal, ArtToast, ArtLoader, ArtIcon, ArtIconButton } from './components/art';
 import { ca } from './content/ca';
 import { useGameSession } from './hooks/useGameSession';
@@ -14,7 +15,7 @@ import type { GameAction, GameMode, PlayerRole } from './domain/game/game-types'
 import { DURATION_PRESETS } from './domain/game/duration-config';
 import type { GameView, Scoreboard } from './services/game-contract';
 
-type SetupStep = 'HOME' | 'ONLINE' | 'ROLE' | 'JOIN' | 'DURATION' | 'STARTER';
+type SetupStep = 'HOME' | 'ONLINE' | 'ONLINE_IDENTITY' | 'JOIN' | 'DURATION' | 'STARTER';
 const emptyScore: Scoreboard = { pauWins: 0, teclaWins: 0, completedGames: 0 };
 
 function Score({ score }: { score: Scoreboard }) {
@@ -40,6 +41,7 @@ export default function App() {
   const [step, setStep] = useState<SetupStep>('HOME');
   const [mode, setMode] = useState<GameMode>('IN_PERSON');
   const [role, setRole] = useState<PlayerRole>('PAU');
+  const [identityCode, setIdentityCode] = useState('');
   const [joining, setJoining] = useState(false);
   const [minutes, setMinutes] = useState(30);
   const [custom, setCustom] = useState(false);
@@ -61,9 +63,11 @@ export default function App() {
   useEffect(() => {
     if (invitePending && invite && session.access?.authorized && !view && step === 'HOME') {
       setInvitePending(false);
-      setMode('ONLINE'); setJoining(true); setStep('ROLE');
+      setMode('ONLINE'); setJoining(true);
+      if (session.access.onlineRole) { setRole(session.access.onlineRole); setStep('JOIN'); }
+      else setStep('ONLINE_IDENTITY');
     }
-  }, [invite, invitePending, session.access?.authorized, view, step]);
+  }, [invite, invitePending, session.access?.authorized, session.access?.onlineRole, view, step]);
 
   useEffect(() => {
     if (disconnected) {
@@ -85,8 +89,15 @@ export default function App() {
     motion.unlockAudio();
     setMode(nextMode);
     setJoining(false);
-    setStep(nextMode === 'ONLINE' ? 'ONLINE' : 'DURATION');
+    setIdentityCode('');
+    if (nextMode === 'ONLINE' && session.access?.onlineRole) { setRole(session.access.onlineRole); setStep('ONLINE'); }
+    else setStep(nextMode === 'ONLINE' ? 'ONLINE_IDENTITY' : 'DURATION');
     session.clearError();
+  };
+  const identify = async (event: FormEvent) => {
+    event.preventDefault();
+    const identified = await session.identifyOnlinePlayer(identityCode);
+    if (identified) { setRole(identified); setIdentityCode(''); setStep(joining ? 'JOIN' : 'ONLINE'); }
   };
   const create = async (starter: PlayerRole | 'RANDOM') => {
     const success = await session.run((repo) => repo.createGame({ mode, targetMinutes: minutes,
@@ -129,7 +140,7 @@ export default function App() {
   } else if (!session.access?.authorized) {
     content = <section className="setup-screen">
       <ArtPanel>
-        <h1>{ca.appTitle}</h1><p>{ca.connectionNeeded}</p>
+        <h1>{ca.appTitle}</h1><p role="status">{session.error ?? ca.connectionNeeded}</p>
         <ArtButtonPrimary icon="reconnect" onClick={() => void session.boot()}>{ca.connectionRetry}</ArtButtonPrimary>
       </ArtPanel>
     </section>;
@@ -208,11 +219,11 @@ export default function App() {
     </section>;
   } else {
     content = <section className="setup-screen"><ArtPanel>
-      <ArtButtonQuiet icon="back" className="text-button back-button" disabled={session.pending} onClick={() => setStep(step==='STARTER'?'DURATION':step==='JOIN'?'ROLE':'HOME')}>{ca.back}</ArtButtonQuiet>
-      {step === 'ONLINE' && <><p className="eyebrow">{ca.online}</p><h1>{ca.chooseOnline}</h1><div className="setup-options"><ArtButtonSecondary icon="online" className="option-button" onClick={() => {setJoining(false);setStep('ROLE');}}>{ca.createGame}</ArtButtonSecondary><ArtButtonSecondary icon="person" className="option-button" onClick={() => {setJoining(true);setStep('ROLE');}}>{ca.joinGame}</ArtButtonSecondary></div></>}
-      {step === 'ROLE' && <><h1>{ca.chooseRole}</h1><div className="setup-options">{(['PAU','TECLA'] as const).map((player) => <ArtButtonSecondary player={player} className="option-button" key={player} onClick={() => {setRole(player);setStep(joining?'JOIN':'DURATION');}}><PlayerBadge player={player} /><span>{player==='PAU'?ca.iAmPau:ca.iAmTecla}</span></ArtButtonSecondary>)}</div></>}
+      <ArtButtonQuiet icon="back" className="text-button back-button" disabled={session.pending} onClick={() => { session.clearError(); setStep(step==='STARTER'?'DURATION':step==='JOIN'||(step==='DURATION'&&mode==='ONLINE')?'ONLINE':'HOME'); }}>{ca.back}</ArtButtonQuiet>
+      {step === 'ONLINE' && <><p className="eyebrow">{ca.online}</p><h1>{ca.chooseOnline}</h1><p className="online-identity-help">{ca.identifiedAs} {role==='PAU'?ca.pauWithArticle:ca.teclaWithArticle}.</p><div className="setup-options"><ArtButtonSecondary icon="online" className="option-button" onClick={() => {setJoining(false);setStep('DURATION');}}>{ca.createGame}</ArtButtonSecondary><ArtButtonSecondary icon="person" className="option-button" onClick={() => {setJoining(true);setStep('JOIN');}}>{ca.joinGame}</ArtButtonSecondary></div><ArtButtonQuiet className="text-button" onClick={() => { setJoining(false); setIdentityCode(''); session.clearError(); setStep('ONLINE_IDENTITY'); }}>{ca.changePlayer}</ArtButtonQuiet></>}
+      {step === 'ONLINE_IDENTITY' && <form onSubmit={identify}><p className="eyebrow">{ca.online}</p><h1>{ca.onlineIdentityTitle}</h1><p className="online-identity-help">{ca.onlineIdentityHelp}</p><label className="form-field">{ca.onlineIdentityCode}<input type="password" autoComplete="current-password" autoCapitalize="none" spellCheck={false} value={identityCode} onChange={(event) => setIdentityCode(event.target.value)} minLength={6} maxLength={128} required /></label><ArtButtonPrimary type="submit" className="primary-button" loading={session.pending} disabled={identityCode.trim().length<6||session.pending}>{session.pending?ca.checking:ca.onlineIdentitySubmit}</ArtButtonPrimary></form>}
       {step === 'JOIN' && <form onSubmit={join}><h1>{ca.joinGame}</h1><label className="form-field">{ca.gameCode}<input autoComplete="off" value={invite} onChange={(event) => setInvite(event.target.value.toUpperCase())} minLength={6} maxLength={12} required /></label><ArtButtonPrimary type="submit" className="primary-button" loading={session.pending} disabled={invite.length<6}>{session.pending?ca.sending:ca.joinGame}</ArtButtonPrimary></form>}
-      {step === 'DURATION' && <><p className="eyebrow">{mode==='IN_PERSON'?ca.inPerson:ca.online}</p><h1>{ca.durationQuestion}</h1><div className="setup-options duration-options">{DURATION_PRESETS.map((duration) => <ArtButtonSecondary className={`option-button ${!custom&&minutes===duration?'is-selected':''}`} aria-pressed={!custom&&minutes===duration} key={duration} onClick={() => {setMinutes(duration);setCustom(false);}}><strong>{duration}</strong><span>{ca.minutes}</span></ArtButtonSecondary>)}<ArtButtonSecondary className={`option-button ${custom?'is-selected':''}`} aria-pressed={custom} onClick={() => setCustom(true)}>{ca.custom}</ArtButtonSecondary></div>{custom&&<label className="form-field">{ca.customMinutes}<input type="number" value={minutes} min={10} max={60} step={1} onChange={(event) => setMinutes(Number(event.target.value))} /></label>}<p className="setup-hint">{ca.durationHelp}</p><ArtButtonPrimary className="primary-button" disabled={!Number.isInteger(minutes)||minutes<10||minutes>60} onClick={() => setStep('STARTER')}>{ca.next}</ArtButtonPrimary></>}
+      {step === 'DURATION' && <><p className="eyebrow">{mode==='IN_PERSON'?ca.inPerson:ca.online}</p><h1>{ca.durationQuestion}</h1><div className="setup-options duration-options">{DURATION_PRESETS.map((duration) => <ArtButtonSecondary className={`option-button ${!custom&&minutes===duration?'is-selected':''}`} aria-pressed={!custom&&minutes===duration} key={duration} onClick={() => {setMinutes(duration);setCustom(false);}}><strong>{duration}</strong><span>{ca.minutes}</span></ArtButtonSecondary>)}<ArtButtonSecondary className={`option-button ${custom?'is-selected':''}`} aria-pressed={custom} onClick={() => setCustom(true)}>{ca.custom}</ArtButtonSecondary></div>{custom&&<label className="form-field">{ca.customMinutes}<input type="number" value={minutes} min={10} max={60} step={1} onChange={(event) => setMinutes(Number(event.target.value))} /></label>}<ArtButtonPrimary className="primary-button" disabled={!Number.isInteger(minutes)||minutes<10||minutes>60} onClick={() => setStep('STARTER')}>{ca.next}</ArtButtonPrimary></>}
       {step === 'STARTER' && <><h1>{ca.whoStarts}</h1><div className="setup-options starter-options">{(['PAU','TECLA'] as const).map((player) => <ArtButtonSecondary player={player} className="option-button" key={player} disabled={session.pending} onClick={() => void create(player)}><PlayerBadge player={player} /><span>{player==='PAU'?ca.pauWithArticle:ca.teclaWithArticle}</span></ArtButtonSecondary>)}<ArtButtonSecondary icon="turn" className="option-button" loading={session.pending} onClick={() => void create('RANDOM')}>{session.pending?ca.sending:ca.random}</ArtButtonSecondary></div></>}
     </ArtPanel></section>;
   }
@@ -224,7 +235,8 @@ export default function App() {
       {view&&view.capabilities.canAbandon&&<ArtIconButton className="icon-button" icon="home" onClick={() => setLeave(true)} aria-label={ca.exit} />}
     </div></div>
     {content}
-    {session.error&&<ArtToast className="error-message" tone="incorrect" onDismiss={session.clearError}>{session.error}</ArtToast>}
+    <DrinkCelebration presentation={motion.drinkPresentation} />
+    {session.error&&session.access?.authorized&&<ArtToast className="error-message" tone="incorrect" onDismiss={session.clearError}>{session.error}</ArtToast>}
     {rules&&<ArtModal open={rules} title={ca.rules} onClose={() => setRules(false)}><div className="rules-copy">{[ca.ruleGoal,ca.ruleTalk,ca.ruleCategories,ca.ruleCorrect,ca.ruleBonus,ca.ruleTP,ca.ruleScore].map((line)=><p key={line}>{line}</p>)}</div><ArtButtonPrimary className="primary-button" onClick={() => setRules(false)}>{ca.close}</ArtButtonPrimary></ArtModal>}
     {leave&&<ArtModal open={leave} title={ca.leaveQuestion} onClose={() => setLeave(false)}><p>{ca.leaveWarning}</p><div className="panel-actions"><ArtButtonSecondary className="secondary-button" disabled={session.pending} onClick={() => setLeave(false)}>{ca.keepPlaying}</ArtButtonSecondary><ArtButtonIncorrect className="danger-button" loading={session.pending} disabled={locked} onClick={() => void abandon()}>{ca.abandonGame}</ArtButtonIncorrect></div></ArtModal>}
     <div className={`connection-overlay ${disconnected||motion.reconnectVisible?'is-visible':''}`} data-motion="disconnectOverlay" aria-hidden={!disconnected&&!motion.reconnectVisible}>

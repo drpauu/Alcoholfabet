@@ -1,6 +1,6 @@
 {
   "QUESTION_ENTER": {
-    "totalMs": 240,
+    "totalMs": 360,
     "steps": [
       {
         "atMs": 0,
@@ -25,11 +25,11 @@
           "opacity": 1,
           "shadow": "card"
         },
-        "durationMs": 240,
+        "durationMs": 360,
         "easing": "enter"
       },
       {
-        "atMs": 35,
+        "atMs": 52,
         "target": "audio",
         "action": "play",
         "cue": "QUESTION_ENTER"
@@ -37,7 +37,7 @@
     ]
   },
   "ANSWER_REVEAL": {
-    "totalMs": 280,
+    "totalMs": 420,
     "steps": [
       {
         "atMs": 0,
@@ -46,23 +46,23 @@
         "to": {
           "rotateY": 90
         },
-        "durationMs": 140,
+        "durationMs": 210,
         "easing": "exit"
       },
       {
-        "atMs": 140,
+        "atMs": 210,
         "target": "questionCard",
         "action": "swapContent",
         "value": "answer"
       },
       {
-        "atMs": 140,
+        "atMs": 210,
         "target": "audio",
         "action": "play",
         "cue": "ANSWER_REVEAL"
       },
       {
-        "atMs": 140,
+        "atMs": 210,
         "target": "questionCardInner",
         "action": "set",
         "props": {
@@ -70,19 +70,19 @@
         }
       },
       {
-        "atMs": 140,
+        "atMs": 210,
         "target": "questionCardInner",
         "action": "animate",
         "to": {
           "rotateY": 0
         },
-        "durationMs": 140,
+        "durationMs": 210,
         "easing": "enter"
       }
     ]
   },
   "CORRECT_AND_MOVE": {
-    "totalMsFormula": "360 + pawnSteps * 420",
+    "totalMsFormula": "540 + pawnSteps * 630",
     "steps": [
       {
         "atMs": 0,
@@ -96,45 +96,46 @@
         "to": {
           "y": -4
         },
-        "durationMs": 180,
+        "durationMs": 270,
         "easing": "springSoft"
       },
       {
         "atMs": 0,
         "target": "correctHalo",
         "action": "burst",
-        "durationMs": 360
+        "durationMs": 540
       },
       {
-        "atMs": 20,
+        "atMs": 30,
         "target": "correctCheck",
         "action": "draw",
-        "durationMs": 260
+        "durationMs": 390
       },
       {
-        "atMs": 40,
+        "atMs": 60,
         "target": "audio",
         "action": "play",
         "cue": "CORRECT"
       },
       {
-        "atMs": 70,
+        "atMs": 105,
         "target": "correctParticles",
         "action": "emit",
         "count": 3,
-        "durationMs": 300
+        "durationMs": 450
       },
       {
-        "atMs": 360,
+        "atMs": 540,
         "target": "pawn",
         "action": "moveAlongBoard",
-        "durationPerCellMs": 420,
+        "durationPerCellMs": 630,
         "playStepSound": true
       }
     ]
   },
   "INCORRECT_AND_DRINK": {
-    "totalMs": 1080,
+    "totalMs": 3600,
+    "reducedTotalMs": 900,
     "steps": [
       {
         "atMs": 0,
@@ -155,33 +156,45 @@
             0
           ]
         },
-        "durationMs": 330
+        "durationMs": 495
       },
       {
-        "atMs": 20,
+        "atMs": 30,
         "target": "errorHalo",
         "action": "burst",
-        "durationMs": 320
+        "durationMs": 480
       },
       {
-        "atMs": 35,
+        "atMs": 52,
         "target": "errorCross",
         "action": "draw",
-        "durationMs": 240
+        "durationMs": 360
       },
       {
-        "atMs": 50,
+        "atMs": 75,
         "target": "audio",
         "action": "play",
         "cue": "INCORRECT"
       },
       {
-        "atMs": 180,
-        "target": "drinkNotice",
+        "atMs": 0,
+        "target": "drinkStage",
         "action": "enter",
         "from": {
-          "y": 12,
-          "scale": 0.94,
+          "opacity": 0
+        },
+        "to": {
+          "opacity": 1
+        },
+        "durationMs": 360
+      },
+      {
+        "atMs": 0,
+        "target": "drinkStageContent",
+        "action": "enter",
+        "from": {
+          "y": 30,
+          "scale": 0.9,
           "opacity": 0
         },
         "to": {
@@ -189,16 +202,62 @@
           "scale": 1,
           "opacity": 1
         },
-        "durationMs": 300
+        "durationMs": 840
       },
       {
-        "atMs": 210,
-        "target": "drinkGlass",
-        "action": "raiseGlass",
-        "durationMs": 720
+        "atMs": 240,
+        "target": "drinkCaption",
+        "action": "enter",
+        "from": {
+          "y": 12,
+          "opacity": 0
+        },
+        "to": {
+          "y": 0,
+          "opacity": 1
+        },
+        "durationMs": 570
       },
       {
-        "atMs": 220,
+        "atMs": 270,
+        "target": "drinkNotice",
+        "action": "enter",
+        "from": {
+          "y": 8,
+          "opacity": 0
+        },
+        "to": {
+          "y": 0,
+          "opacity": 1
+        },
+        "durationMs": 360
+      },
+      {
+        "atMs": 315,
+        "target": "drinkHeroFirst",
+        "action": "toastGlass",
+        "durationMs": 2040
+      },
+      {
+        "atMs": 315,
+        "target": "drinkHeroSecond",
+        "action": "toastGlass",
+        "durationMs": 2040
+      },
+      {
+        "atMs": 495,
+        "target": "drinkLiquidFirst",
+        "action": "liquidSway",
+        "durationMs": 1800
+      },
+      {
+        "atMs": 495,
+        "target": "drinkLiquidSecond",
+        "action": "liquidSway",
+        "durationMs": 1800
+      },
+      {
+        "atMs": 930,
         "target": "audio",
         "action": "playDynamic",
         "cueByDrinkCount": {
@@ -207,7 +266,7 @@
         }
       },
       {
-        "atMs": 260,
+        "atMs": 930,
         "target": "haptics",
         "action": "vibrate",
         "pattern": [
@@ -217,48 +276,72 @@
         ]
       },
       {
-        "atMs": 270,
-        "target": "drinkSecondGlass",
-        "action": "raiseGlass",
-        "durationMs": 720
+        "atMs": 930,
+        "target": "drinkClink",
+        "action": "burst",
+        "durationMs": 570
       },
       {
-        "atMs": 310,
-        "target": "drinkBubbles",
+        "atMs": 930,
+        "target": "drinkSparkles",
         "action": "emit",
-        "count": 6,
-        "durationMs": 600
+        "count": 10,
+        "durationMs": 1260
       },
       {
-        "atMs": 480,
-        "target": "drinkNotice",
-        "action": "pulse",
-        "scale": [
-          1,
-          1.035,
-          1
-        ],
-        "durationMs": 360
+        "atMs": 945,
+        "target": "drinkRipple",
+        "action": "ripple",
+        "durationMs": 1350
+      },
+      {
+        "atMs": 1035,
+        "target": "drinkSheenFirst",
+        "action": "sweepGlass",
+        "durationMs": 1110
+      },
+      {
+        "atMs": 1350,
+        "target": "drinkSheenSecond",
+        "action": "sweepGlass",
+        "durationMs": 1020
+      },
+      {
+        "atMs": 3150,
+        "target": "drinkStageContent",
+        "action": "exit",
+        "to": {
+          "y": -12,
+          "scale": 0.97,
+          "opacity": 0
+        },
+        "durationMs": 420
+      },
+      {
+        "atMs": 3150,
+        "target": "drinkStage",
+        "action": "exit",
+        "durationMs": 450
       }
     ]
   },
   "PLUS_ONE": {
-    "totalMsFormula": "420 + 160 + 340 + 420",
+    "totalMsFormula": "630 + 240 + 510 + 630",
     "steps": [
       {
         "atMs": 0,
         "target": "pawn",
         "action": "moveOneCell",
-        "durationMs": 420
+        "durationMs": 630
       },
       {
-        "atMs": 420,
+        "atMs": 630,
         "target": "sequence",
         "action": "pause",
-        "durationMs": 160
+        "durationMs": 240
       },
       {
-        "atMs": 580,
+        "atMs": 870,
         "target": "targetCell",
         "action": "pulse",
         "scale": [
@@ -266,25 +349,25 @@
           1.06,
           1
         ],
-        "durationMs": 340
+        "durationMs": 510
       },
       {
-        "atMs": 600,
+        "atMs": 900,
         "target": "plusOneBadge",
         "action": "enter",
-        "durationMs": 260
+        "durationMs": 390
       },
       {
-        "atMs": 610,
+        "atMs": 915,
         "target": "audio",
         "action": "play",
         "cue": "PLUS_ONE"
       },
       {
-        "atMs": 920,
+        "atMs": 1380,
         "target": "pawn",
         "action": "moveOneCell",
-        "durationMs": 420
+        "durationMs": 630
       }
     ]
   },
@@ -297,7 +380,7 @@
         "to": {
           "scale": 0.98
         },
-        "durationMs": 90
+        "durationMs": 135
       },
       {
         "atMs": 0,
@@ -308,7 +391,7 @@
         ]
       },
       {
-        "atMs": 90,
+        "atMs": 135,
         "target": "claimButton",
         "action": "pending",
         "label": "Comprovant…"
@@ -319,7 +402,7 @@
         "atMs": 0,
         "target": "claimantRing",
         "action": "draw",
-        "durationMs": 300
+        "durationMs": 450
       },
       {
         "atMs": 0,
@@ -330,7 +413,7 @@
         "atMs": 0,
         "target": "otherClaimButton",
         "action": "desaturate",
-        "durationMs": 220
+        "durationMs": 330
       }
     ],
     "lost": [
@@ -338,7 +421,7 @@
         "atMs": 0,
         "target": "claimButton",
         "action": "restore",
-        "durationMs": 180
+        "durationMs": 270
       },
       {
         "atMs": 0,
@@ -349,7 +432,7 @@
     ]
   },
   "DISCONNECT": {
-    "totalMs": 220,
+    "totalMs": 330,
     "steps": [
       {
         "atMs": 0,
@@ -359,13 +442,13 @@
           "blurPx": 4,
           "saturation": 0.78
         },
-        "durationMs": 220
+        "durationMs": 330
       },
       {
         "atMs": 0,
         "target": "disconnectOverlay",
         "action": "enter",
-        "durationMs": 220
+        "durationMs": 330
       },
       {
         "atMs": 0,
@@ -375,13 +458,13 @@
     ]
   },
   "RECONNECT": {
-    "totalMs": 620,
+    "totalMs": 930,
     "steps": [
       {
         "atMs": 0,
         "target": "reconnectCheck",
         "action": "draw",
-        "durationMs": 240
+        "durationMs": 360
       },
       {
         "atMs": 0,
@@ -390,83 +473,83 @@
         "text": "T'has tornat a connectar"
       },
       {
-        "atMs": 280,
+        "atMs": 420,
         "target": "disconnectOverlay",
         "action": "exit",
-        "durationMs": 300
+        "durationMs": 450
       },
       {
-        "atMs": 280,
+        "atMs": 420,
         "target": "gameScene",
         "action": "animate",
         "to": {
           "blurPx": 0,
           "saturation": 1
         },
-        "durationMs": 300
+        "durationMs": 450
       },
       {
-        "atMs": 600,
+        "atMs": 900,
         "target": "gameActions",
         "action": "enableAfterViewSync"
       }
     ]
   },
   "VICTORY": {
-    "totalMs": 2300,
+    "totalMs": 3450,
     "steps": [
       {
         "atMs": 0,
         "target": "winnerPawn",
         "action": "landAtFinish",
-        "durationMs": 420
+        "durationMs": 630
       },
       {
-        "atMs": 360,
+        "atMs": 540,
         "target": "gameCamera",
         "action": "animate",
         "to": {
           "scale": 0.97
         },
-        "durationMs": 500,
+        "durationMs": 750,
         "easing": "enter"
       },
       {
-        "atMs": 520,
+        "atMs": 780,
         "target": "crown",
         "action": "dropAndBounce",
-        "durationMs": 520
+        "durationMs": 780
       },
       {
-        "atMs": 600,
+        "atMs": 900,
         "target": "confetti",
         "action": "emit",
         "count": 16,
-        "durationMs": 1000
+        "durationMs": 1500
       },
       {
-        "atMs": 620,
+        "atMs": 930,
         "target": "audio",
         "action": "play",
         "cue": "VICTORY"
       },
       {
-        "atMs": 920,
+        "atMs": 1380,
         "target": "winnerCard",
         "action": "enter",
-        "durationMs": 420
+        "durationMs": 630
       },
       {
-        "atMs": 1420,
+        "atMs": 2130,
         "target": "scoreTransition",
         "action": "animate",
-        "durationMs": 420
+        "durationMs": 630
       },
       {
-        "atMs": 1900,
+        "atMs": 2850,
         "target": "finalActions",
         "action": "enter",
-        "durationMs": 300
+        "durationMs": 450
       }
     ]
   }

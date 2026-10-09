@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T16:00:46.303Z",
+  "baseline": true,
+  "scope": "Real production App and setup flow; session hook replaced in browser routing with a local authorized access fixture. No Auth, DB or RPC writes.",
+  "captures": [
+    {
+      "mode": "IN_PERSON",
+      "width": 390,
+      "height": 844,
+      "screenshot": "screenshots/duration-in_person-390x844.png",
+      "status": "PASS",
+      "failures": [],
+      "hintCount": 1,
+      "bodyWidth": 390,
+      "bodyHeight": 844,
+      "options": [
+        "20\nminuts",
+        "30\nminuts",
+        "45\nminuts",
+        "60\nminuts",
+        "Personalitzada"
+      ],
+      "continueAndBack": "PASS"
+    },
+    {
+      "mode": "IN_PERSON",
+      "width": 1024,
+      "height": 768,
+      "screenshot": "screenshots/duration-in_person-1024x768.png",
+      "status": "PASS",
+      "failures": [],
+      "hintCount": 1,
+      "bodyWidth": 1024,
+      "bodyHeight": 768,
+      "options": [
+        "20\nminuts",
+        "30\nminuts",
+        "45\nminuts",
+        "60\nminuts",
+        "Personalitzada"
+      ],
+      "continueAndBack": "PASS"
+    },
+    {
+      "mode": "IN_PERSON",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "screenshots/duration-in_person-1440x900.png",
+      "status": "PASS",
+      "failures": [],
+      "hintCount": 1,
+      "bodyWidth": 1440,
+      "bodyHeight": 900,
+      "options": [
+        "20\nminuts",
+        "30\nminuts",
+        "45\nminuts",
+        "60\nminuts",
+        "Personalitzada"
+      ],
+      "continueAndBack": "PASS"
+    }
+  ],
+  "errors": [],
+  "blockedApiRequests": [],
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0
+}

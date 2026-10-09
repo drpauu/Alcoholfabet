@@ -25,7 +25,8 @@
 
 ## Supabase
 
-- Entrada pública amb Anonymous Auth, sense codi privat.
+- Menú i mode presencial públics amb Anonymous Auth, sense codi privat.
+- En línia, dos codis privats assignen PAU o TECLA al servidor; no permetis escollir o falsificar el rol des del client ni incloguis els codis al build.
 - Conserva el context privat històric; les noves partides utilitzen `alcoholfabet`.
 - Project ref: `lhgyopkwstuyxolwfucq`.
 - Utilitza MCP de Supabase quan sigui disponible.

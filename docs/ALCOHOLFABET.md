@@ -8,11 +8,13 @@ S’han retirat de la UI «Respon en veu alta! L’altra persona valida la respo
 
 ## Beure
 
-Un error confirmat conserva un avís amb el got i «En Pau ha de beure» o «La Tecla ha de beure». Beure doble mostra dos gots, ×2 i «Beu doble». `INCORRECT_AND_DRINK`, definida a `motion/event-choreography.json`, dura 1.080 ms: entrada física de l’avís, got que puja i s’inclina, segon got desfasat si correspon, sis bombolles, pols del paper i so sincronitzat a 220 ms. S’executa una vegada per esdeveniment confirmat. Amb moviment reduït no hi ha trajectòries ni bombolles; el nom, els gots i el control de so es mantenen.
+Un error confirmat fa aparèixer un got vectorial gran al centre de la pantalla, amb «En Pau» o «La Tecla» i «ha de beure». El vidre inclou glaçons, reflexos i beguda d’ambre en moviment. Beure doble mostra dos gots que brinden entre ells, ×2 i «Beu doble». La coreografia `INCORRECT_AND_DRINK`, definida a `motion/event-choreography.json`, dura 3.600 ms; l’elevació, el líquid, els reflexos, deu partícules, la sortida i el so del brindis a 930 ms es coordinen des del mateix runner.
+
+S’executa una vegada per esdeveniment confirmat. La capa desapareix en acabar i també si es cancel·la, s’abandona la partida o es perd la connexió. La targeta conserva l’avís amb el nom i la penalització. El nom prové del respondent confirmat, també en T&P. Amb moviment reduït es presenta el got estàtic durant 900 ms, sense trajectòries ni partícules; el control de so es respecta.
 
 ## Entrada pública i partides
 
-La migració `0012_alcoholfabet_public_access.sql` crea el context públic `alcoholfabet`. Una sessió d’Anonymous Auth pot entrar i crear directament, sense autoritzar un dispositiu amb el codi antic. Per unir dos dispositius es conserva el codi o enllaç de la sala en línia.
+La migració `0012_alcoholfabet_public_access.sql` crea el context públic `alcoholfabet`. Una sessió d’Anonymous Auth pot entrar al menú i crear una partida presencial sense codi. La revisió posterior `0013_online_player_identity.sql` afegeix dos codis privats exclusivament per a partides en línia: cada codi identifica un dels jugadors al servidor. La creació i la incorporació exigeixen el rol identificat. Per unir els dos dispositius es conserva també el codi o enllaç de sala.
 
 El context privat anterior `pau-tecla` conserva les dades, el marcador i els seus permisos. Obrir l’entrada no autoritza una sessió nova a llegir ni canviar una partida aliena o privada. RLS, la pertinença a la partida, les accions RPC autoritatives, la resposta filtrada per rol i els canals Realtime privats continuen vigents. El marcador públic és propi del nou context; només canvia amb META.
 
@@ -27,3 +29,9 @@ Els informes són a `acceptance/alcoholfabet/`. `ALCOHOLFABET_E2E_REPORT.json` d
 `VISUAL_REPORT.json` conté 30 captures de components reals en 360×800, 390×844, 430×932, 1024×768 i 1440×900. `DRINK_MOTION_REPORT.json` executa la coreografia, el runner i l’orquestrador reals, amb i sense moviment reduït: una execució, sis bombolles en motion normal i zero partícules residuals. En aquest harness es registren els cues sonors; les proves funcionals utilitzen el gestor d’àudio de l’app.
 
 La còpia privada anterior està a `/home/pau/Documents/alcoholfabet-before-20261009.tar.gz` (0600). Els fitxers d’avatar han sortit de `public/` i el component s’ha retirat. Les fonts històriques queden fora del paquet públic i el servidor de desenvolupament les bloqueja.
+
+La revisió posterior del brindis central es verifica a `acceptance/drink-stage/BROWSER_REPORT.json`, amb la versió anterior conservada a `audit/drink-stage-before/`. Els informes anteriors d’Alcoholfabet descriuen l’estat verificat abans d’aquesta revisió.
+
+La revisió de ritme allarga les animacions principals un 50% i elimina la frase d’estimació de la pantalla de durada. Els informes actuals d’aquesta revisió són a `acceptance/animation-tempo/`; els anteriors es conserven com a historial.
+
+La identificació en línia i la recuperació de sessions es documenten a `acceptance/online-identity/`. S’han executat cinc comprovacions de navegador amb Supabase real, dues suites SQL transaccionals, 34 proves unitàries i nou captures als tres formats requerits. Les fixtures QA s’han eliminat amb una neteja limitada als identificadors registrats.

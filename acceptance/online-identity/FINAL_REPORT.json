@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "recordedAt": "2026-10-09T16:30:31.609772+00:00",
+  "scope": "Online identity and local entry recovery; frontend served locally, backend migration applied remotely",
+  "localChecks": {
+    "typeScript": "PASS",
+    "unitTests": 34,
+    "unitFiles": 7,
+    "productionBuild": "PASS",
+    "buildAfterFinalEntryErrorPresentation": "PASS",
+    "existingBundleSizeWarning": true,
+    "gitDiffWhitespace": "PASS"
+  },
+  "realBrowserCases": 5,
+  "browserErrors": [],
+  "captures": 9,
+  "viewportSizes": [
+    "390x844",
+    "1024x768",
+    "1440x900"
+  ],
+  "backendReports": [
+    "SERVER_REPORT.json",
+    "PUBLIC_ACCESS_REPORT.json"
+  ],
+  "migration": {
+    "name": "online_player_identity",
+    "version": "20261009161414",
+    "configuredPlayerCodes": 2
+  },
+  "cleanup": {
+    "status": "PASS",
+    "deletedQaGames": 2,
+    "deletedQaUsers": 6,
+    "remainingQaGames": 0,
+    "remainingQaUsers": 0,
+    "privateCodesPreserved": true,
+    "remainingQaIdentities": 0,
+    "unlistedDataUnchanged": true
+  },
+  "securityReport": "BUILD_SECURITY_REPORT.json",
+  "frontendExternalDeployment": false,
+  "originalEntryFailureReproducedWithFreshSession": false
+}

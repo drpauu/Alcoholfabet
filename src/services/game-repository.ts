@@ -20,6 +20,7 @@ const viewSchema = z.object({
 
 export type AccessContext = {
   authorized: boolean;
+  onlineRole?: PlayerRole;
   coupleId?: string;
   activeGameId?: string | null;
   scoreboard?: { pauWins: number; teclaWins: number; completedGames: number };
@@ -48,8 +49,19 @@ export class GameRepository {
 
   private async initializeSession(): Promise<string> {
     const { data: { session }, error } = await this.client.auth.getSession();
-    if (error) throw new Error(error.message);
-    if (session) return session.user.id;
+    if (error && !invalidSession(error)) throw error;
+    let reset = Boolean(error);
+    if (session && !reset) {
+      // Cached credentials can outlive their server session. Verify before restoring a game.
+      const result = await this.client.auth.getUser();
+      if (result.data.user) return result.data.user.id;
+      if (result.error && !invalidSession(result.error)) throw result.error;
+      reset = true;
+    }
+    if (reset) {
+      const result = await this.client.auth.signOut({ scope: 'local' });
+      if (result.error && !invalidSession(result.error)) throw result.error;
+    }
     const result = await this.client.auth.signInAnonymously();
     if (result.error) {
       if (/anonymous.*disabled/i.test(result.error.message)) throw new Error('ANONYMOUS_DISABLED');
@@ -63,6 +75,16 @@ export class GameRepository {
     const { data, error } = await this.client.rpc('get_access_context');
     if (error) throw new Error(error.message);
     return data as AccessContext;
+  }
+
+  async identifyOnlinePlayer(code: string): Promise<PlayerRole> {
+    const { data, error } = await this.client.rpc('identify_online_player', { p_code: code });
+    if (error) throw new Error(error.message);
+    const result = z.object({ identified: z.boolean(), role: role.optional(), error: z.string().optional() }).safeParse(data);
+    if (!result.success) throw new Error('RESPONSE_INVALID');
+    if (!result.data.identified) throw new Error(result.data.error ?? 'INVALID_CODE');
+    if (!result.data.role) throw new Error('RESPONSE_INVALID');
+    return result.data.role;
   }
 
   async getGameView(gameId: string): Promise<GameView> {
@@ -107,4 +129,8 @@ export class GameRepository {
     if (error) throw new Error(error.message);
     return readView(data);
   }
+}
+
+function invalidSession(error: { status?: number; code?: string; message: string }): boolean {
+  return error.status === 401 || error.status === 403 || /refresh_token_not_found|refresh_token_already_used|session_not_found|user_not_found|bad_jwt/.test(error.code ?? '');
 }

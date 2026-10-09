@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "public-in-person-no-code; verified-pau-role; forged-role-and-active-switch-rejected",
+    "verified-tecla-join; missing-identity-and-forged-role-rejected",
+    "ten-invalid-attempt-limit; no-score-created",
+    "private-codes-identities-attempts; RLS; no-client-bypass-or-anon-RPC"
+  ],
+  "status": "PASS",
+  "fixturesRolledBack": true,
+  "privateCodesRestored": true
+}

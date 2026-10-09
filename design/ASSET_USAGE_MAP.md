@@ -48,3 +48,7 @@ El tauler ha de continuar sent interactiu. No utilitzis la imatge de referència
 5. Decoració perifèrica només si no està integrada al fons.
 6. Targeta HTML.
 7. Efectes temporals en una capa pointer-events:none.
+
+## Got del brindis central
+
+`src/components/DrinkCelebration.tsx` dibuixa el got en SVG per poder animar el vidre, la beguda i els reflexos per separat sense perdre nitidesa. L’avís persistent de la targeta conserva `assets/production/effects/drink-filled.svg`. Tots dos utilitzen la paleta d’ambre, crema i pigments del joc; els temps es defineixen al JSON de coreografia.

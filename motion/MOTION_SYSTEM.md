@@ -32,13 +32,13 @@ Cada animació ha de reforçar una acció del joc. No hi ha motion ornamental pe
 
 ## Durades base
 
-- Microfeedback: 90-180 ms.
-- Targeta: 220-300 ms.
-- Feedback de resposta: 300-420 ms.
-- Pas de fitxa: 380-460 ms per casella.
-- +1 complet: 900-1.250 ms.
-- Victòria: 1.800-2.600 ms.
-- Reconnexió: 450-700 ms.
+- Microfeedback: 135-270 ms.
+- Targeta: 330-450 ms.
+- Feedback de resposta: 450-630 ms.
+- Pas de fitxa: 570-690 ms per casella.
+- +1 complet: 2.550 ms amb feedback.
+- Victòria: 2.700-3.900 ms.
+- Reconnexió: 675-1.050 ms.
 
 ## Regla Realtime
 
@@ -80,7 +80,7 @@ Revelació:
 - Halo verd fins a 18 px, baixa a 0.
 - Check SVG es dibuixa amb stroke-dashoffset.
 - 3 partícules, màxim 24 px de recorregut.
-- So `correct` al 40 ms.
+- So `correct` al 60 ms.
 - Després inicia el moviment de peça.
 
 ## Incorrecte
@@ -89,9 +89,9 @@ Revelació:
 - Targeta: -4, +4, -2, +2, 0 px.
 - Halo vermell curt.
 - Creu SVG es dibuixa.
-- Got entra 14 px des de baix i s'atura.
-- So `incorrect` al 50 ms.
-- `drink` o `double_drink` a 220 ms.
+- El brindis entra al centre del viewport: got vectorial gran, líquid, reflexos i nom.
+- So `incorrect` al 75 ms.
+- `drink` o `double_drink` a 930 ms, coordinat amb el brindis.
 - No moguis tota la pantalla.
 
 ## Moviment de fitxa
@@ -106,7 +106,7 @@ Revelació:
 ## +1
 
 1. Moviment normal a la casella.
-2. Pausa 120-180 ms.
+2. Pausa 180-270 ms.
 3. Casella fa pols d'escala 1 → 1.06 → 1.
 4. Apareix badge `+1!`.
 5. So `plus_one`.
@@ -163,7 +163,7 @@ Reconnexió:
 6. Melodia `victory`.
 7. Entra targeta de guanyador.
 8. Després apareix el marcador actualitzat.
-9. Botons finals després de 1.8-2.2 s.
+9. Botons finals després de 2.85-3.3 s.
 
 ## Reduced motion
 
@@ -178,4 +178,12 @@ Mantén sons només si l'usuari els té activats.
 
 ## Brindis d’Alcoholfabet
 
-`INCORRECT_AND_DRINK` dura 1.080 ms segons `event-choreography.json`: l’avís entra, el got puja i s’inclina, sis bombolles d’ambre surten i el paper fa un pols curt. En beure doble entra un segon got 60 ms després. El so `DRINK`/`DOUBLE_DRINK` continua a 220 ms. No hi ha animació contínua ni canvis de negoci; una vista recuperada o una versió duplicada no repeteix el brindis. Amb moviment reduït es retiren bombolles i trajectòries, es conserva el nom i es respecta el control de so.
+`INCORRECT_AND_DRINK` dura 3.600 ms segons `event-choreography.json`. Una capa temporal, muntada amb un portal fora de la càmera del tauler, centra la composició al viewport. El got és un SVG amb capes de vidre, beguda, glaçons, condensació i reflexos. L’entrada, l’elevació, la inclinació, l’oscil·lació del líquid, el reflex que travessa el vidre, deu partícules i l’ona del brindis comparteixen la mateixa línia de temps. En beure doble dos gots brindaran simètricament. El so `DRINK`/`DOUBLE_DRINK` i la vibració es disparen a 930 ms; la sortida comença a 3.150 ms.
+
+El nom és el de `respondingPlayer` de l’esdeveniment confirmat, també en T&P quan el torn següent pertany a l’altre jugador. Els controls esperen que acabi el brindis; el tauler no canvia de mida o posició. L’avís accessible a la targeta conserva el nom i la penalització després de la sortida. El portal és només visual i no duplica l’anunci del lector de pantalla.
+
+Una vista recuperada o una versió duplicada no repeteix la seqüència. Abandonar, canviar de partida o desconnectar cancel·la el brindis i neteja animacions i partícules. Amb moviment reduït, el JSON reserva 900 ms per llegir el got estàtic i el nom: només fades curts, cap inclinació, cap oscil·lació ni partícules, i so segons la preferència persistent de l’usuari.
+
+## Ritme més pausat aprovat
+
+Les animacions principals duren un 50% més que la revisió anterior. El JSON conserva la sincronització d’entrades, pauses, sortides i cues d’àudio: targeta 360 ms, gir 420 ms amb canvi de cara a 210 ms, encert 540 ms i pas de peça 630 ms, +1 complet 2.550 ms, brindis 3.600 ms i victòria 3.450 ms. El compositor calcula els totals de moviment i T&P des dels passos del JSON. El moviment reduït conserva les seves durades breus, amb el brindis estàtic de 900 ms.

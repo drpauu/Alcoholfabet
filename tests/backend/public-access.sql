@@ -38,9 +38,10 @@ begin
     v_view:=public.create_game('IN_PERSON',20,'PAU','IN_PERSON_CONTROLLER',gen_random_uuid());
     v_local:=(v_view->'game'->>'id')::uuid;
     if (v_view->'game'->>'coupleId')::uuid<>v_public then raise exception 'NEW_GAME_NOT_PUBLIC'; end if;
+    insert into private.online_player_identities(user_id,player_role) values(v_a,'PAU'),(v_b,'TECLA');
     v_view:=public.create_game('ONLINE',20,'PAU','PAU',gen_random_uuid());
     v_online:=(v_view->'game'->>'id')::uuid; v_code:=v_view->'game'->>'inviteCode';
-    v_checks:=array_append(v_checks,'anonymous-entry-and-create-without-private-code-or-device');
+    v_checks:=array_append(v_checks,'anonymous-entry-and-in-person-create-without-code; online-roles-verified');
 
     perform set_config('request.jwt.claim.sub',v_outsider::text,true);
     perform set_config('request.jwt.claims',jsonb_build_object('sub',v_outsider,'role','authenticated')::text,true);

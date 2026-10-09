@@ -154,18 +154,20 @@ export async function runSequence(sequence: MotionSequence, options: RunOptions)
         await animate(path, [{ strokeDashoffset: length }, { strokeDashoffset: 0 }], duration);
       }));
     } else if (step.action === 'emit') {
-      const drinking = step.target === 'drinkBubbles';
-      const count = Math.min(step.count ?? 3, step.target === 'confetti' ? 18 : drinking ? 6 : 3);
+      const hero = step.target === 'drinkSparkles';
+      const drinking = step.target === 'drinkBubbles' || hero;
+      const count = Math.min(step.count ?? 3, step.target === 'confetti' ? 18 : hero ? 10 : drinking ? 6 : 3);
       const colors = drinking ? ['#b78035', '#dfb55c', '#f2d28d'] : ['var(--art-pau, #426c82)', 'var(--art-tecla, #ac6570)', 'var(--art-ochre, #b68b43)', 'var(--art-olive, #727958)', 'var(--art-tp, #84708c)'];
       await Promise.all(Array.from({ length: count }, async (_, particleIndex) => {
         const particle = document.createElement('span');
         particle.className = step.target === 'confetti' ? 'tp-motion-confetti' : 'tp-motion-particle';
         particle.style.backgroundColor = colors[particleIndex % colors.length];
         particle.style.left = step.target === 'confetti' ? `${20 + particleIndex * 59 / count}%` : '50%';
-        particle.style.top = step.target === 'confetti' ? `${12 + (particleIndex % 4) * 5}%` : '38%';
+        particle.style.top = step.target === 'confetti' ? `${12 + (particleIndex % 4) * 5}%` : hero ? '27%' : '38%';
         element.append(particle); generated.add(particle);
-        const dx = step.target === 'confetti' ? (particleIndex % 2 ? 1 : -1) * (35 + particleIndex * 9) : drinking ? (particleIndex % 2 ? 1 : -1) * (12 + particleIndex * 4) : [-20, 18, 5][particleIndex];
-        const dy = step.target === 'confetti' ? 150 + (particleIndex % 5) * 25 : drinking ? -18 - particleIndex * 4 : [-12, -17, -23][particleIndex];
+        const angle = particleIndex / count * Math.PI * 2;
+        const dx = step.target === 'confetti' ? (particleIndex % 2 ? 1 : -1) * (35 + particleIndex * 9) : hero ? Math.cos(angle) * (90 + particleIndex % 3 * 22) : drinking ? (particleIndex % 2 ? 1 : -1) * (12 + particleIndex * 4) : [-20, 18, 5][particleIndex];
+        const dy = step.target === 'confetti' ? 150 + (particleIndex % 5) * 25 : hero ? Math.sin(angle) * 62 - 24 : drinking ? -18 - particleIndex * 4 : [-12, -17, -23][particleIndex];
         await animate(particle, [{ opacity: 0, transform: 'translate(0,0) rotate(0)' }, { opacity: 1, offset: .15 }, { opacity: 0, transform: `translate(${dx}px, ${dy}px) rotate(${step.target === 'confetti' ? 180 + particleIndex * 21 : 90}deg)` }], duration);
       }));
     } else if (step.action === 'moveAlongBoard' || step.action === 'moveOneCell') {
@@ -203,6 +205,36 @@ export async function runSequence(sequence: MotionSequence, options: RunOptions)
       await animate(element, [{ filter: 'drop-shadow(-2px 8px 7px rgb(72 43 24 / .15))' }, { filter: 'drop-shadow(-1px 3px 3px rgb(72 43 24 / .3))' }], duration);
     } else if (step.action === 'pulse') {
       await animate(element, (step.scale ?? [1, 1.06, 1]).map((scale) => ({ transform: `scale(${scale})` })), duration);
+    } else if (step.action === 'toastGlass') {
+      const double = options.effect?.type === 'INCORRECT_AND_DRINK' && options.effect.drinkCount === 2;
+      const side = step.target === 'drinkHeroSecond' ? -1 : 1;
+      const pose = (x: number, y: number, rotation: number, scale = 1, opacity = 1): Keyframe => frame({ x, y, rotateZ: rotation, scale, opacity });
+      await animate(element, double ? [
+        pose(-side * 22, 38, -side * 15, .9, 0),
+        { ...pose(side * 10, -23, side * 10, 1.025), offset: .32 },
+        { ...pose(-side * 4, -16, -side * 7, 1.01), offset: .48 },
+        { ...pose(0, -7, side * 3), offset: .68 },
+        { ...pose(0, 0, -side), offset: .84 },
+        pose(0, 0, 0),
+      ] : [
+        pose(0, 38, -12, .9, 0),
+        { ...pose(0, -18, 8, 1.04), offset: .28 },
+        { ...pose(0, -27, -5, 1.02), offset: .46 },
+        { ...pose(0, -10, 2), offset: .67 },
+        { ...pose(0, 0, -1), offset: .84 },
+        pose(0, 0, 0),
+      ], duration, 'pawn');
+    } else if (step.action === 'liquidSway') {
+      const side = step.target === 'drinkLiquidSecond' ? -1 : 1;
+      await animate(element, [0, -side * 6, side * 4, -side * 2, 0].map((rotation) => ({ transform: `rotate(${rotation}deg)` })), duration, 'pawn');
+    } else if (step.action === 'sweepGlass') {
+      await animate(element, [
+        { transform: 'translateX(0)', opacity: 0 },
+        { opacity: .65, offset: .3 },
+        { transform: 'translateX(230px)', opacity: 0 },
+      ], duration, 'pawn');
+    } else if (step.action === 'ripple') {
+      await animate(element, [{ transform: 'scale(.65)', opacity: 0 }, { opacity: .5, offset: .18 }, { transform: 'scale(1.55)', opacity: 0 }], duration, 'enter');
     } else if (step.action === 'raiseGlass') {
       const second = step.target === 'drinkSecondGlass';
       await animate(element, [
@@ -216,7 +248,7 @@ export async function runSequence(sequence: MotionSequence, options: RunOptions)
     } else if (step.action === 'enter') {
       await animate(element, [frame(step.from ?? { y: 18, opacity: 0 }), frame(step.to ?? { y: 0, opacity: 1 })], duration);
     } else if (step.action === 'exit') {
-      await animate(element, [{ opacity: 1 }, { opacity: 0 }], duration);
+      await animate(element, [frame(step.from ?? { opacity: 1 }), frame(step.to ?? { opacity: 0 })], duration, step.easing ?? 'exit');
     } else if (step.action === 'reducedFeedback') {
       await animate(element, [{ opacity: .6 }, { opacity: 1 }], duration);
     } else if (step.action === 'desaturate') {

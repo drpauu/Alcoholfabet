@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "filesScanned": 1431,
+  "onlineCodesOrHashesInRepository": [],
+  "protectedCodeFileMode": "0o600",
+  "backupMode": "0o600",
+  "secretApiKeysInPublicPackage": [],
+  "serviceRoleTokensInPublicPackage": [],
+  "sdkPrefixCheckReviewed": "@supabase/supabase-js/src/lib/fetch.ts:31 contains the literal key prefix; no credential value detected"
+}

@@ -1,6 +1,10 @@
 # Alcoholfabet — estat vigent
 
-La migració 0012, aplicada el 9 d’octubre de 2026, habilita l’entrada pública sense codi privat amb Anonymous Auth. Les noves partides es creen al context `alcoholfabet`. La pertinença a la partida, RLS, el filtratge de respostes i els canals Realtime privats continuen vigents. Les partides privades històriques conserven les seves dades i permisos; l’Edge Function i la configuració del codi antic només corresponen a aquell context. No cal cap acció manual per entrar al joc actual. La resta d’aquest document conserva l’històric d’implementació.
+La migració 0012, aplicada el 9 d’octubre de 2026, habilita el menú i el mode presencial públics amb Anonymous Auth. Les noves partides es creen al context `alcoholfabet`. La migració 0013 (`online_player_identity`, versió remota `20261009161414`) afegeix dos codis privats només per identificar el jugador en línia. La pertinença a la partida, RLS, el filtratge de respostes i els canals Realtime privats continuen vigents. Les partides privades històriques conserven les seves dades i permisos; l’Edge Function i la configuració del codi antic només corresponen a aquell context. La resta d’aquest document conserva l’històric d’implementació.
+
+`identify_online_player(p_code)` vincula la sessió autenticada amb `PAU` o `TECLA`, amb un límit de deu intents fallits en quinze minuts. `get_access_context()` retorna únicament el rol verificat. Les funcions públiques `create_game()` i `join_game_by_code()` exigeixen aquest rol abans de delegar al motor privat; els clients no poden cridar directament les funcions internes. El mode presencial no exigeix identitat en línia. El canvi de jugador es rebutja mentre hi hagi una partida en línia activa amb un altre rol.
+
+Els dos codis sol·licitats estan configurats com a hashes SHA-256 a `private.online_player_codes`. La identitat i els intents també es desen en taules privades amb RLS i sense permisos de client. El fitxer local de proves `~/.config/tecla-pau/online-player-codes.json` té permisos `0600` i queda fora del repositori. No cal cap acció manual al Dashboard per aquesta revisió. Vegeu [l’informe actual](../acceptance/online-identity/README.md).
 
 # Supabase — Tecla&Pau
 

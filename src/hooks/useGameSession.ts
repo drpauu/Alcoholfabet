@@ -2,6 +2,7 @@ import { useCallback, useEffect, useReducer, useRef } from 'react';
 import type { GameView } from '../services/game-contract';
 import { GameRepository } from '../services/game-repository';
 import type { AccessContext } from '../services/game-repository';
+import type { PlayerRole } from '../domain/game/game-types';
 import { supabase } from '../services/supabase';
 import { errorInCatalan, ca } from '../content/ca';
 
@@ -16,7 +17,9 @@ type State = {
   error: string | null;
 };
 type Change =
+  | { type: 'BOOT' }
   | { type: 'READY'; access: AccessContext; userId: string }
+  | { type: 'ONLINE_IDENTITY'; role: PlayerRole }
   | { type: 'VIEW'; view: GameView }
   | { type: 'ERROR'; error: string }
   | { type: 'PENDING'; pending: boolean }
@@ -26,7 +29,9 @@ type Change =
 
 function reducer(state: State, change: Change): State {
   switch (change.type) {
+    case 'BOOT': return { ...state, loading: true, error: null };
     case 'READY': return { ...state, access: change.access, userId: change.userId, loading: false, error: null };
+    case 'ONLINE_IDENTITY': return { ...state, access: state.access ? { ...state.access, onlineRole: change.role } : state.access };
     case 'VIEW': {
       if (state.view?.game.id === change.view.game.id && state.view.game.stateVersion > change.view.game.stateVersion) return state;
       return { ...state, view: change.view.game.status === 'ABANDONED' ? null : change.view, error: null,
@@ -49,6 +54,7 @@ export function useGameSession() {
   viewRef.current = state.view;
   const pendingRef = useRef(false);
   const bootGeneration = useRef(0);
+  const booting = useRef(false);
   const acceptView = useCallback((view: GameView) => {
     if (viewRef.current?.game.id === view.game.id && viewRef.current.game.stateVersion > view.game.stateVersion) return;
     if (view.game.status === 'ABANDONED') {
@@ -65,7 +71,9 @@ export function useGameSession() {
   }, []);
   const boot = useCallback(async () => {
     const ticket = ++bootGeneration.current;
-    if (!repository) { dispatch({ type: 'ERROR', error: ca.setupMissing }); return; }
+    booting.current = true;
+    dispatch({ type: 'BOOT' });
+    if (!repository) { booting.current = false; dispatch({ type: 'ERROR', error: ca.setupMissing }); return; }
     try {
       const userId = await repository.authenticate();
       let access = await repository.access();
@@ -79,16 +87,19 @@ export function useGameSession() {
           access = { ...access, scoreboard: view.scoreboard,
             activeGameId: ['ACTIVE', 'LOBBY'].includes(view.game.status) ? view.game.id : null };
         }
-        catch { localStorage.removeItem('tp-active-game'); localStorage.removeItem('tp-current-game'); }
+        catch { localStorage.removeItem('tp-active-game'); localStorage.removeItem('tp-current-game'); dispatch({ type: 'HOME' }); }
       }
       if (ticket === bootGeneration.current) dispatch({ type: 'READY', access, userId });
     } catch (error) { if (ticket === bootGeneration.current) dispatch({ type: 'ERROR', error: errorInCatalan(error) }); }
+    finally { if (ticket === bootGeneration.current) booting.current = false; }
   }, [acceptView]);
 
   useEffect(() => {
     void boot();
     const listener = supabase?.auth.onAuthStateChange((event) => {
       if (event === 'SIGNED_OUT') {
+        // Automatic recovery clears invalid local credentials inside the active boot.
+        if (booting.current) return;
         bootGeneration.current += 1;
         viewRef.current = null;
         localStorage.removeItem('tp-active-game');
@@ -135,8 +146,27 @@ export function useGameSession() {
     }
   }, [acceptView, refresh]);
 
+  const identifyOnlinePlayer = useCallback(async (code: string): Promise<PlayerRole | null> => {
+    if (!repository || pendingRef.current) return null;
+    const ticket = bootGeneration.current;
+    pendingRef.current = true;
+    dispatch({ type: 'PENDING', pending: true });
+    try {
+      const role = await repository.identifyOnlinePlayer(code);
+      if (ticket !== bootGeneration.current) return null;
+      dispatch({ type: 'ONLINE_IDENTITY', role });
+      return role;
+    } catch (error) {
+      if (ticket === bootGeneration.current) dispatch({ type: 'ERROR', error: errorInCatalan(error) });
+      return null;
+    } finally {
+      pendingRef.current = false;
+      dispatch({ type: 'PENDING', pending: false });
+    }
+  }, []);
+
   return {
-    ...state, run, acceptView, refresh, boot,
+    ...state, run, acceptView, refresh, boot, identifyOnlinePlayer,
     goHome: () => { bootGeneration.current += 1; viewRef.current = null; localStorage.removeItem('tp-current-game'); dispatch({ type: 'HOME' }); },
     clearError: () => dispatch({type:'CLEAR_ERROR'}),
   };

@@ -10,8 +10,13 @@ export const ca = {
   back: 'Enrere',
   chooseRole: 'Qui ets?',
   chooseOnline: 'Preparem la trobada',
+  onlineIdentityTitle: 'El teu codi privat',
+  onlineIdentityHelp: 'Identifica’t per jugar en línia.',
+  onlineIdentityCode: 'Codi privat',
+  onlineIdentitySubmit: 'Entrar',
+  changePlayer: 'Canviar de jugador',
+  identifiedAs: 'Jugues com a',
   customMinutes: 'Durada en minuts (10–60)',
-  durationHelp: 'Estimació amb torns de 30 segons. Jugueu al vostre ritme.',
   waitingPlayer: 'Escolta la resposta i decideix.',
   waitingStart: 'Espereu que tots dos sigueu aquí.',
   claimPau: 'En Pau respon!',
@@ -30,7 +35,7 @@ export const ca = {
   ruleGoal: 'Guanya qui arriba primer a Meta.',
   ruleTalk: 'Responeu sempre en veu alta. L’altra persona fa de jutge.',
   ruleCorrect: 'Si encertes, avances una casella. Si falles, no avances, perds el torn i beus.',
-  ruleBonus: 'A +1, un encert avança una casella extra; un error vol dir beure doble.',
+  ruleBonus: 'A +1, si encertes avances fins a la casella i una casella més, sense cap altra pregunta. Si falles o no ho saps, no avances, perds el torn i beus doble.',
   ruleTP: 'A T&P, respon qui reclama primer. En línia ho confirma el servidor.',
   ruleScore: 'Només les partides que arriben a Meta compten al marcador.',
   ruleCategories: 'Personal tracta dels vostres àmbits; Creuada, dels de l’altra persona.',
@@ -51,6 +56,10 @@ export const errorMessages: Record<string, string> = {
   invalid_code: 'El codi no és correcte.',
   RATE_LIMITED: 'Massa intents. Espereu una estona abans de tornar-hi.',
   ACCESS_RATE_LIMITED: 'Massa intents. Espereu una estona abans de tornar-hi.',
+  ONLINE_IDENTITY_REQUIRED: 'Introdueix el teu codi privat per jugar en línia.',
+  ONLINE_ROLE_MISMATCH: 'Aquest codi correspon a l’altre jugador.',
+  ONLINE_IDENTITY_IN_USE: 'Surt de la partida abans de canviar de jugador.',
+  ONLINE_CODES_NOT_CONFIGURED: 'Cal configurar els codis per jugar en línia.',
   PUBLIC_GAME_NOT_CONFIGURED: 'Cal configurar la connexió al joc.',
   ANONYMOUS_DISABLED: 'Cal activar l’accés anònim al servidor del joc.',
   NOT_AUTHENTICATED: 'Cal tornar a entrar al joc.',
@@ -78,5 +87,7 @@ export function errorInCatalan(error: unknown): string {
   const message = error instanceof Error ? error.message :
     error && typeof error === 'object' && 'message' in error && typeof error.message === 'string' ? error.message : '';
   const code = Object.keys(errorMessages).find((candidate) => message.includes(candidate));
+  if (!code && error && typeof error === 'object' && 'status' in error && error.status === 429) return errorMessages.RATE_LIMITED;
+  if (!code && /failed to fetch|network|fetch failed|offline/i.test(message)) return ca.connectionNeeded;
   return code ? errorMessages[code] : 'No hem pogut connectar amb el joc. Torna-ho a provar.';
 }
