@@ -1,0 +1,17 @@
+/* Pigment and fibrous paper replace saturated digital squares. Timing remains
+   exclusively in motion/event-choreography.json and the central DOM runner. */
+.tp-motion-confetti { border-radius: 1px 3px 1px 2px; clip-path: polygon(6% 3%, 88% 0, 100% 81%, 92% 100%, 0 92%); box-shadow: -.5px 1px 1px rgb(63 38 23 / 20%), inset 0 .5px 0 rgb(255 244 212 / 70%); background-image: var(--art-texture-paper); background-size: 84px 84px; opacity: 0; }
+.tp-motion-particle { border-radius: 52% 35% 47% 31%; width: 5px; height: 6px; clip-path: polygon(47% 0, 88% 23%, 100% 72%, 44% 100%, 0 55%); box-shadow: -.5px 1px 1px rgb(71 45 24 / 18%); }
+.art-loader { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: var(--art-ink-muted); text-align: center; font-weight: 800; }
+.art-loader__disc { position: relative; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 48% 52% 50% 46%; border: 1px solid var(--art-border); background: var(--art-paper-light) var(--art-texture-ceramic) center / 90px; box-shadow: var(--art-shadow-contact), inset 0 1px 0 rgb(255 242 205 / 72%); animation: none; }
+.art-loader__grains { position: absolute; bottom: -7px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 4px; padding: 3px 5px; background: var(--art-paper); border-radius: 8px; box-shadow: var(--art-shadow-contact); }
+.art-loader__grains i, .art-button__loading i { display: block; width: 4px; height: 4px; border-radius: 47% 40% 52% 38%; background: var(--art-olive); animation: art-pigment-wait 1100ms ease-in-out infinite; }
+.art-loader__grains i:nth-child(2), .art-button__loading i:nth-child(2) { animation-delay: 160ms; background: var(--art-ochre); }
+.art-loader__grains i:nth-child(3), .art-button__loading i:nth-child(3) { animation-delay: 320ms; background: var(--art-error); }
+.art-loader__label { font-size: 14px; line-height: 1.4; }
+.art-loader--compact { flex-direction: row; gap: 12px; }
+.art-loader--compact .art-loader__disc { width: 40px; height: 40px; }
+.art-loader--compact .art-loader__disc .art-icon { width: 26px; height: 26px; }
+.art-loader--compact .art-loader__grains { display: none; }
+@keyframes art-pigment-wait { 0%, 80%, 100% { opacity: .4; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-1px); } }
+@media (prefers-reduced-motion: reduce) { .art-loader__grains i, .art-button__loading i { animation: none; opacity: .85; } }

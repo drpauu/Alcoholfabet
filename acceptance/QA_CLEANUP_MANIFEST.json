@@ -1,0 +1,431 @@
+{
+  "games": [
+    {
+      "mode": "ONLINE",
+      "gameId": "7b6c08c0-4741-4b9f-971b-386c7657a998",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "37c979a0-aa00-492b-8715-f3ca05e413d4",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "c505fad9-ac46-4927-a91c-877618e66102",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "c5a22ca4-d568-453d-84f7-99ea8fd4d70e",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "2e659bfa-aa42-4282-b3ed-bdbb7551278e",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "9760614a-8838-42c8-803b-8034c3480441",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "d8e50c18-fd35-4fe6-b1bd-fd1f486c36a3",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "cd39a957-24ab-4eb6-a3d8-4528ad8d76bd",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "ONLINE",
+      "gameId": "8b8c12c8-91f3-44f6-beb6-378e9f819070",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "1f1acce1-477e-401c-8c5b-83e63dc9fcd6",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "5abacb14-90aa-472d-bd34-cc9979378017",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "cc046695-cd1c-403b-aa8c-d279a30df24f",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "8f86962c-84e8-40f7-99c7-247a7a2a9a2a",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "0d48f1c2-2dbb-4066-9327-df23cd8863cb",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "0fce58ba-6ae0-4875-9e88-7c1b0742f1a1",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "3a576040-767c-4154-af45-372dc62c5300",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "ONLINE",
+      "gameId": "ee9f47cd-9b5e-4d71-a486-436a398a6e67",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "ONLINE",
+      "gameId": "c3813f72-0cab-47cb-b4de-383554f48f67",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "a29c89a6-6490-43a0-8298-ed0241fe87fa",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "ONLINE",
+      "gameId": "aebb5b15-8195-4c75-9ec8-5e0e5b37b6fb",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "ONLINE",
+      "gameId": "171290d3-93a7-48a4-b260-31d8de9af724",
+      "status": "ABANDONED",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "e5b25d16-11c8-425c-a362-e08747ca8e49",
+      "status": "ACTIVE",
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "2c95b058-ec2e-4ad5-8b62-aa98ff268bba",
+      "status": "ACTIVE",
+      "userId": "ca873f92-3079-4cd5-9b51-b73b9a9d477b"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "df27c3ce-17cb-4341-83e1-812c7af92e32",
+      "status": "FINISHED",
+      "userId": "8ce2c44b-bc41-4fbd-940d-c0f9b715de29"
+    },
+    {
+      "mode": "ONLINE",
+      "gameId": "3f313c70-1cb8-495e-98c2-c2fb9f861e44",
+      "status": "FINISHED",
+      "userId": "b0625f9b-c330-4957-9660-770a85a58f61"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "41a5e930-d365-47c0-9c3d-50baa4848970",
+      "status": "ABANDONED",
+      "userId": "05c2a3e6-3ed3-4cb8-90ad-9546d7bc8496"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "60fda820-5a33-4694-ada2-aedc80005f74",
+      "status": "ACTIVE",
+      "userId": "7935f0e6-1145-4f3a-9f1a-cbac44733f91"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "059b297e-89e5-448f-8005-b3a7c8ab8efa",
+      "status": "ACTIVE",
+      "userId": "c437b26b-23c7-4ff3-8e38-b551a8c84e5a"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "130e2168-7496-433f-9530-a885c2e20cd8",
+      "status": "ACTIVE",
+      "userId": "c75dc1df-030d-41f0-83f5-120a9a627432"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "14e7697d-a6fd-4999-8d61-b0daa4256594",
+      "status": "ACTIVE",
+      "userId": "f67c4d8a-dc2d-4969-95fb-799ffa88e618"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "30906114-65fc-423d-a710-25b78d257f4b",
+      "status": "ACTIVE",
+      "userId": "5e4feeea-3dc4-4337-948f-417e99bd328d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "3963d92f-d0ea-4d06-9dd3-e00b86be3d8f",
+      "status": "FINISHED",
+      "userId": "766e8e3b-1b21-49eb-969f-f3e834b430bf"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "6f15a87d-8c57-4713-962d-6efb68ccf640",
+      "status": "ABANDONED",
+      "userId": "1a81e92f-e6b2-4941-b187-373f2c3640a6"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "d19cd501-ae9a-4dc2-b1f4-cf4b9905aacf",
+      "status": "ABANDONED",
+      "userId": "a0d0c9f4-f7bb-4585-98d5-72a3dd2e9dfe"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "bf3b611f-8201-4f7f-84ab-bef143ccdfaa",
+      "status": "FINISHED",
+      "userId": "68467619-7d38-43dd-a650-c30ca04e218b"
+    },
+    {
+      "mode": "ONLINE",
+      "gameId": "95ecc07a-92d6-4bb0-9f66-e177999ca609",
+      "status": "FINISHED",
+      "userId": "8ef90938-596d-4247-ac43-83a3c4f7973d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "857e52f9-4e7a-4571-abf2-447f77a0eed2",
+      "status": "ABANDONED",
+      "userId": "4613ab2f-8a65-4eb5-abae-6c12bc76f93d"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "44419b23-64af-46fc-9e23-872d90182e79",
+      "status": "ABANDONED",
+      "userId": "18daea1e-98fb-4393-86bd-ffadc726c01f"
+    },
+    {
+      "mode": "IN_PERSON",
+      "gameId": "ea96af43-7903-463d-9d6f-0d75064f7434",
+      "status": "FINISHED",
+      "userId": "24618b64-9e05-403e-8b5d-55607a5f2daa"
+    }
+  ],
+  "users": [
+    {
+      "userId": "e18ce774-567b-48fa-aa7f-09c3cf2c4cc7",
+      "createdAt": "2026-10-09T10:37:24.827933+00:00",
+      "isAnonymous": false
+    },
+    {
+      "userId": "a39ef06c-bbb2-4579-bbbc-ed78876cea2d",
+      "createdAt": "2026-10-09T10:37:24.827933+00:00",
+      "isAnonymous": false
+    },
+    {
+      "userId": "ca873f92-3079-4cd5-9b51-b73b9a9d477b",
+      "createdAt": "2026-10-09T10:37:24.827933+00:00",
+      "isAnonymous": false
+    },
+    {
+      "userId": "8ce2c44b-bc41-4fbd-940d-c0f9b715de29",
+      "createdAt": "2026-10-09T10:46:13.356173+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "b0625f9b-c330-4957-9660-770a85a58f61",
+      "createdAt": "2026-10-09T10:46:44.645657+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "1ee12845-932f-43fe-bd17-dd398344f535",
+      "createdAt": "2026-10-09T10:46:47.783411+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "05c2a3e6-3ed3-4cb8-90ad-9546d7bc8496",
+      "createdAt": "2026-10-09T10:47:32.587023+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "7935f0e6-1145-4f3a-9f1a-cbac44733f91",
+      "createdAt": "2026-10-09T10:48:54.841083+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "0b6a7049-6d3b-4299-bd1f-bc11437f3556",
+      "createdAt": "2026-10-09T10:49:14.954927+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "c437b26b-23c7-4ff3-8e38-b551a8c84e5a",
+      "createdAt": "2026-10-09T10:49:42.570839+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "c75dc1df-030d-41f0-83f5-120a9a627432",
+      "createdAt": "2026-10-09T10:50:23.035343+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "f67c4d8a-dc2d-4969-95fb-799ffa88e618",
+      "createdAt": "2026-10-09T10:55:29.757152+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "5e4feeea-3dc4-4337-948f-417e99bd328d",
+      "createdAt": "2026-10-09T10:56:05.620064+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "766e8e3b-1b21-49eb-969f-f3e834b430bf",
+      "createdAt": "2026-10-09T10:56:31.601847+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "1a81e92f-e6b2-4941-b187-373f2c3640a6",
+      "createdAt": "2026-10-09T10:59:56.54055+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "a0d0c9f4-f7bb-4585-98d5-72a3dd2e9dfe",
+      "createdAt": "2026-10-09T11:02:56.172461+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "52d7cf07-5f4e-40dd-adc3-45f520fcfb10",
+      "createdAt": "2026-10-09T11:04:49.310903+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "68467619-7d38-43dd-a650-c30ca04e218b",
+      "createdAt": "2026-10-09T11:04:59.007333+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "8ef90938-596d-4247-ac43-83a3c4f7973d",
+      "createdAt": "2026-10-09T11:05:32.271888+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "eaf56ba1-31eb-49da-a272-502d668ccba7",
+      "createdAt": "2026-10-09T11:05:35.749357+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "4613ab2f-8a65-4eb5-abae-6c12bc76f93d",
+      "createdAt": "2026-10-09T11:06:25.794286+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "18daea1e-98fb-4393-86bd-ffadc726c01f",
+      "createdAt": "2026-10-09T11:06:32.425988+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "24618b64-9e05-403e-8b5d-55607a5f2daa",
+      "createdAt": "2026-10-09T11:07:10.566977+00:00",
+      "isAnonymous": true
+    },
+    {
+      "userId": "404fc39f-faca-416e-b505-c6b8c28bbd32",
+      "createdAt": "2026-10-09T11:07:15.369315+00:00",
+      "isAnonymous": true
+    }
+  ],
+  "status": "COMPLETE",
+  "gameIds": [
+    "059b297e-89e5-448f-8005-b3a7c8ab8efa",
+    "0d48f1c2-2dbb-4066-9327-df23cd8863cb",
+    "0fce58ba-6ae0-4875-9e88-7c1b0742f1a1",
+    "130e2168-7496-433f-9530-a885c2e20cd8",
+    "14e7697d-a6fd-4999-8d61-b0daa4256594",
+    "171290d3-93a7-48a4-b260-31d8de9af724",
+    "1f1acce1-477e-401c-8c5b-83e63dc9fcd6",
+    "2c95b058-ec2e-4ad5-8b62-aa98ff268bba",
+    "2e659bfa-aa42-4282-b3ed-bdbb7551278e",
+    "30906114-65fc-423d-a710-25b78d257f4b",
+    "37c979a0-aa00-492b-8715-f3ca05e413d4",
+    "3963d92f-d0ea-4d06-9dd3-e00b86be3d8f",
+    "3a576040-767c-4154-af45-372dc62c5300",
+    "3f313c70-1cb8-495e-98c2-c2fb9f861e44",
+    "41a5e930-d365-47c0-9c3d-50baa4848970",
+    "44419b23-64af-46fc-9e23-872d90182e79",
+    "5abacb14-90aa-472d-bd34-cc9979378017",
+    "60fda820-5a33-4694-ada2-aedc80005f74",
+    "6f15a87d-8c57-4713-962d-6efb68ccf640",
+    "7b6c08c0-4741-4b9f-971b-386c7657a998",
+    "857e52f9-4e7a-4571-abf2-447f77a0eed2",
+    "8b8c12c8-91f3-44f6-beb6-378e9f819070",
+    "8f86962c-84e8-40f7-99c7-247a7a2a9a2a",
+    "95ecc07a-92d6-4bb0-9f66-e177999ca609",
+    "9760614a-8838-42c8-803b-8034c3480441",
+    "a29c89a6-6490-43a0-8298-ed0241fe87fa",
+    "aebb5b15-8195-4c75-9ec8-5e0e5b37b6fb",
+    "bf3b611f-8201-4f7f-84ab-bef143ccdfaa",
+    "c3813f72-0cab-47cb-b4de-383554f48f67",
+    "c505fad9-ac46-4927-a91c-877618e66102",
+    "c5a22ca4-d568-453d-84f7-99ea8fd4d70e",
+    "cc046695-cd1c-403b-aa8c-d279a30df24f",
+    "cd39a957-24ab-4eb6-a3d8-4528ad8d76bd",
+    "d19cd501-ae9a-4dc2-b1f4-cf4b9905aacf",
+    "d8e50c18-fd35-4fe6-b1bd-fd1f486c36a3",
+    "df27c3ce-17cb-4341-83e1-812c7af92e32",
+    "e5b25d16-11c8-425c-a362-e08747ca8e49",
+    "ea96af43-7903-463d-9d6f-0d75064f7434",
+    "ee9f47cd-9b5e-4d71-a486-436a398a6e67"
+  ],
+  "userIds": [
+    "05c2a3e6-3ed3-4cb8-90ad-9546d7bc8496",
+    "0b6a7049-6d3b-4299-bd1f-bc11437f3556",
+    "18daea1e-98fb-4393-86bd-ffadc726c01f",
+    "1a81e92f-e6b2-4941-b187-373f2c3640a6",
+    "1ee12845-932f-43fe-bd17-dd398344f535",
+    "24618b64-9e05-403e-8b5d-55607a5f2daa",
+    "404fc39f-faca-416e-b505-c6b8c28bbd32",
+    "4613ab2f-8a65-4eb5-abae-6c12bc76f93d",
+    "52d7cf07-5f4e-40dd-adc3-45f520fcfb10",
+    "5e4feeea-3dc4-4337-948f-417e99bd328d",
+    "68467619-7d38-43dd-a650-c30ca04e218b",
+    "766e8e3b-1b21-49eb-969f-f3e834b430bf",
+    "7935f0e6-1145-4f3a-9f1a-cbac44733f91",
+    "8ce2c44b-bc41-4fbd-940d-c0f9b715de29",
+    "8ef90938-596d-4247-ac43-83a3c4f7973d",
+    "a0d0c9f4-f7bb-4585-98d5-72a3dd2e9dfe",
+    "a39ef06c-bbb2-4579-bbbc-ed78876cea2d",
+    "b0625f9b-c330-4957-9660-770a85a58f61",
+    "c437b26b-23c7-4ff3-8e38-b551a8c84e5a",
+    "c75dc1df-030d-41f0-83f5-120a9a627432",
+    "ca873f92-3079-4cd5-9b51-b73b9a9d477b",
+    "e18ce774-567b-48fa-aa7f-09c3cf2c4cc7",
+    "eaf56ba1-31eb-49da-a272-502d668ccba7",
+    "f67c4d8a-dc2d-4969-95fb-799ffa88e618"
+  ],
+  "selection": "Explicit previous QA snapshot + final QA_E2E_MANIFEST + QA_GAMES_MOTION + anonymous HeadlessChrome QA sessions + their created games.",
+  "capturedAt": "2026-10-09T11:13:02.057367+00:00",
+  "completedAt": "2026-10-09T11:13:58.887729+00:00"
+}

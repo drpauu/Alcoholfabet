@@ -1,0 +1,24 @@
+digraph realtime {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.3, nodesep=0.5, ranksep=0.4, fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", fillcolor="#FFF7EA", color="#6A3F27", fontcolor="#17324D", fontname="DejaVu Sans"];
+  edge [color="#95603F", fontname="DejaVu Sans", fontcolor="#17324D", arrowsize=0.75];
+  pau [label="Client Pau"];
+  tecla [label="Client Tecla"];
+  rpc [label="RPC segura"];
+  db [label="PostgreSQL"];
+  rt [label="Realtime privat"];
+  view [label="get_game_view"];
+
+  tecla -> rpc [label="JUDGE_CORRECT\nversion + idempotency"];
+  rpc -> db [label="lock + validar + persistir"];
+  db -> rpc [label="nova state_version"];
+  rpc -> rt [label="GAME_UPDATED (sense resposta)"];
+  rt -> pau [label="avís"];
+  rt -> tecla [label="avís"];
+  pau -> view [label="refetch"];
+  tecla -> view [label="refetch"];
+  view -> db [label="vista per sessió"];
+  db -> view;
+  view -> pau [label="pregunta sense resposta"];
+  view -> tecla [label="vista autoritzada"];
+}

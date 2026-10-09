@@ -1,0 +1,9 @@
+{
+  "status": "RESOLVED",
+  "capturedAt": "2026-10-09T13:14:45.106Z",
+  "captures": 89,
+  "error": "expect(received).toBeLessThanOrEqual(expected)\n\nExpected: <= 768\nReceived:    831",
+  "noSecrets": true,
+  "resolvedAt": "2026-10-09T13:20:29.452Z",
+  "finalEvidence": "VISUAL_CAPTURE_REPORT.json"
+}

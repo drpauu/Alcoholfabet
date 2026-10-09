@@ -1,0 +1,26 @@
+digraph state_machine {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.25, nodesep=0.35, ranksep=0.45, fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", fillcolor="#FFF7EA", color="#6A3F27", fontcolor="#17324D", fontname="DejaVu Sans", penwidth=1.5];
+  edge [color="#95603F", fontname="DejaVu Sans", fontcolor="#17324D", arrowsize=0.7];
+  LOBBY -> READY -> TURN_INTRO;
+  TURN_INTRO -> QUESTION [label="normal"];
+  TURN_INTRO -> TP_OPEN [label="T&P"];
+  QUESTION -> ANSWER_REVEALED [label="presencial"];
+  QUESTION -> JUDGING [label="online"];
+  TP_OPEN -> TP_CLAIMED [label="CLAIM_TP"];
+  TP_CLAIMED -> ANSWER_REVEALED [label="presencial"];
+  TP_CLAIMED -> JUDGING [label="online"];
+  ANSWER_REVEALED -> JUDGING;
+  JUDGING -> RESULT;
+  RESULT -> MOVING [label="avança"];
+  RESULT -> BETWEEN_TURNS [label="no avança"];
+  MOVING -> BETWEEN_TURNS;
+  BETWEEN_TURNS -> TURN_INTRO [label="NEXT_TURN"];
+  MOVING -> FINISHED [label="META"];
+  RESULT -> FINISHED [label="META"];
+  LOBBY [fillcolor="#E7DFF2"];
+  TP_OPEN [fillcolor="#E7DFF2"];
+  TP_CLAIMED [fillcolor="#E7DFF2"];
+  MOVING [fillcolor="#DDEBE4"];
+  FINISHED [fillcolor="#F4D98C"];
+}

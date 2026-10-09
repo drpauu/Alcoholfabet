@@ -1,0 +1,13 @@
+{
+  "viewports": [
+    {"name":"mobile-small","width":360,"height":800,"orientation":"portrait"},
+    {"name":"mobile-standard","width":390,"height":844,"orientation":"portrait"},
+    {"name":"mobile-large","width":430,"height":932,"orientation":"portrait"},
+    {"name":"ipad-portrait-gate","width":768,"height":1024,"orientation":"portrait"},
+    {"name":"ipad-landscape","width":1024,"height":768,"orientation":"landscape"},
+    {"name":"laptop","width":1366,"height":768,"orientation":"landscape"},
+    {"name":"desktop","width":1440,"height":900,"orientation":"landscape"}
+  ],
+  "screens": ["home","duration","online-lobby","turn-intro","question-respondent","question-judge","tp-open","correct","incorrect","plus-one","disconnect","victory"],
+  "referenceRoot": "assets/reference/screens"
+}

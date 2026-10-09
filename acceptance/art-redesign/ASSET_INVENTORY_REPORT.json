@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "svgCount": 35,
+  "iconCount": 27,
+  "allSvgParse": true,
+  "productionAndPublicMatch": true,
+  "rawButtonsOnlyInBase": true,
+  "rawDialogsOnlyInBase": true,
+  "avatarsUnchanged": true,
+  "originalPhotosInPublic": false,
+  "materialTokens": "src/art-system/tokens.css",
+  "scope": "Native SVG and source inventory; visual verification is separate",
+  "avatarFilesComparedWithBackup": 10,
+  "privatePhotoCheck": "SHA256 comparison of original files against every public asset"
+}

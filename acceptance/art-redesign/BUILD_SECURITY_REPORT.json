@@ -1,0 +1,25 @@
+{
+  "createdAt": "2026-10-09T13:44:08.024599+00:00",
+  "build": "dist",
+  "status": "PASS",
+  "rawQuestionsInBuild": false,
+  "approvedQuestionsScanned": 130,
+  "originalPeopleInBuild": false,
+  "privateCodeInBuild": false,
+  "secretApiKeyInBuild": false,
+  "serviceRoleJwtInBuild": false,
+  "assets": [
+    {
+      "path": "dist/assets/index-BNObSpEa.css",
+      "sha256": "deb75c3dbff001e41afe8b11938db78af35079bc6d8e4806acee3952690fa75e",
+      "bytes": 40841
+    },
+    {
+      "path": "dist/assets/index-DKPt5zKC.js",
+      "sha256": "cfd55ff3e0f7def9c6eaa7d00438e576c77cbbface8815008e6e931f4e7a7b12",
+      "bytes": 591908
+    }
+  ],
+  "environmentMode": "0o600",
+  "privateCodeFileMode": "0o600"
+}

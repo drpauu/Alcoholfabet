@@ -1,0 +1,11 @@
+digraph responsive {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.3, nodesep=0.5, fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", color="#6A3F27", fontcolor="#17324D", fontname="DejaVu Sans", penwidth=1.5];
+  mobile [label="MÒBIL VERTICAL\nTauler 35-45%\nTargeta inferior\nControls fixos\nSense scroll", fillcolor="#F6E7D3"];
+  tablet [label="IPAD HORITZONTAL\nTauler 60-65%\nTargeta 35-40%\nPerspectiva", fillcolor="#FFF7EA"];
+  desktop [label="ORDINADOR\nTauler sempre visible\nTargeta lateral\nAmplada màxima", fillcolor="#E9F3EC"];
+  rotate1 [label="Mòbil horitzontal\nGira el dispositiu", fillcolor="#F7DEDF"];
+  rotate2 [label="iPad vertical\nGira l'iPad", fillcolor="#F7DEDF"];
+  mobile -> rotate1 [style=dashed];
+  tablet -> rotate2 [style=dashed];
+}

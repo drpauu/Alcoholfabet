@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "verifiedAt": "2026-10-09T13:10:32.086Z",
+  "backend": "real Supabase and existing QA Auth session",
+  "restoredOnlyOwnedGameId": true,
+  "noGameMutations": true,
+  "newAuthAttempts": 0,
+  "result": {
+    "gameId": "2ad751d4-5421-40fb-b4fe-a54376ebe366",
+    "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+    "status": "ABANDONED",
+    "phase": "QUESTION",
+    "stateVersion": 4,
+    "question": null,
+    "capabilities": {
+      "canClaim": false,
+      "canJudge": false,
+      "canStart": false,
+      "canReveal": false,
+      "canAbandon": false,
+      "canNextTurn": false,
+      "canBeginTurn": false,
+      "canSeeAnswer": false
+    }
+  },
+  "noSecrets": true,
+  "sqlVerification": {
+    "migration": "0010_game_view_boolean_answer_capability.sql",
+    "migrationRegistered": true,
+    "answerCapabilityCoalesced": true,
+    "securityDefiner": true,
+    "anonymousExecute": false,
+    "authenticatedExecute": true,
+    "rowSecurityAllExposed": true,
+    "verificationMethod": "Supabase MCP read-only SQL after deployed migration",
+    "onlyAnswerCapabilitySerializationChanged": true
+  }
+}

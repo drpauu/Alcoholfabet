@@ -1,0 +1,34 @@
+{
+  "durationsMs": {
+    "press": 90,
+    "cardEnter": 240,
+    "cardFlip": 280,
+    "correctFeedback": 360,
+    "incorrectFeedback": 330,
+    "pawnStep": 420,
+    "plusOnePause": 160,
+    "plusOnePulse": 340,
+    "overlayIn": 220,
+    "overlayOut": 300,
+    "reconnectSuccess": 620,
+    "victory": 2300
+  },
+  "easing": {
+    "enter": [0.22, 1, 0.36, 1],
+    "exit": [0.4, 0, 1, 1],
+    "springSoft": [0.2, 0.9, 0.3, 1.15],
+    "pawn": [0.45, 0, 0.2, 1]
+  },
+  "distancesPx": {
+    "cardEnterY": 24,
+    "cardEnterX": 8,
+    "correctLift": 4,
+    "pawnLift": 7,
+    "disconnectBlur": 4
+  },
+  "scales": {
+    "press": 0.98,
+    "plusOnePeak": 1.06,
+    "victoryCamera": 0.97
+  }
+}

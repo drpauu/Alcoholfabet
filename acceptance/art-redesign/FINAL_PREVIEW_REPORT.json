@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T13:34:18.128Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "backend": "real Supabase",
+  "existingSessionOnly": true,
+  "newAuthAttempts": 0,
+  "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+  "authorized": true,
+  "gameId": "4bfc3f80-5e17-4bc1-9dff-979a3806c494",
+  "captures": [
+    {
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/preview-390x844.png",
+      "layout": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "width": 48,
+            "height": 48,
+            "top": 12,
+            "bottom": 60,
+            "artButton": true
+          },
+          {
+            "label": "So activat",
+            "width": 48,
+            "height": 48,
+            "top": 12,
+            "bottom": 60,
+            "artButton": true
+          },
+          {
+            "label": "Anar a l’inici",
+            "width": 170.703125,
+            "height": 54,
+            "top": 747,
+            "bottom": 801,
+            "artButton": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/preview-1024x768.png",
+      "layout": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "bottom": 70,
+            "artButton": true
+          },
+          {
+            "label": "So activat",
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "bottom": 70,
+            "artButton": true
+          },
+          {
+            "label": "Anar a l’inici",
+            "width": 170.703125,
+            "height": 54,
+            "top": 633,
+            "bottom": 687,
+            "artButton": true
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/preview-1440x900.png",
+      "layout": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "bottom": 70,
+            "artButton": true
+          },
+          {
+            "label": "So activat",
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "bottom": 70,
+            "artButton": true
+          },
+          {
+            "label": "Anar a l’inici",
+            "width": 170.703125,
+            "height": 54,
+            "top": 749,
+            "bottom": 803,
+            "artButton": true
+          }
+        ]
+      }
+    }
+  ],
+  "buildAssets": [
+    {
+      "path": "/assets/index-DKPt5zKC.js",
+      "sha256": "cfd55ff3e0f7def9c6eaa7d00438e576c77cbbface8815008e6e931f4e7a7b12",
+      "bytes": 591908,
+      "servedMatchesDist": true
+    },
+    {
+      "path": "/assets/index-BNObSpEa.css",
+      "sha256": "deb75c3dbff001e41afe8b11938db78af35079bc6d8e4806acee3952690fa75e",
+      "bytes": 40841,
+      "servedMatchesDist": true
+    }
+  ],
+  "servedBuildMatchesFinalDist": true,
+  "errors": [],
+  "noSecrets": true
+}

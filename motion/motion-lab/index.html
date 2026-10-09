@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tecla&Pau — Motion Lab</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="lab-shell">
+    <header class="lab-header">
+      <div>
+        <p class="eyebrow">TECLA&PAU</p>
+        <h1>Motion Lab</h1>
+        <p>Referència executable dels efectes aprovats.</p>
+      </div>
+      <button id="soundToggle" class="sound-toggle" type="button" aria-pressed="true">So: activat</button>
+    </header>
+
+    <section class="scene" id="scene" aria-label="Escena de joc">
+      <div class="skyline" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="sea"></div>
+        <div class="church"><span></span><span></span></div>
+        <div class="houses"></div>
+      </div>
+      <div class="table-surface">
+        <svg class="board" viewBox="0 0 1000 420" role="img" aria-label="Tauler de prova">
+          <path id="routePath" d="M105 320 C210 210 330 340 425 240 S615 130 710 230 S840 285 910 110" fill="none" stroke="#d9b88f" stroke-width="82" stroke-linecap="round" />
+          <path d="M105 320 C210 210 330 340 425 240 S615 130 710 230 S840 285 910 110" fill="none" stroke="#fff0d5" stroke-width="68" stroke-linecap="round" stroke-dasharray="54 14" />
+          <g class="cell-markers" fill="#8b76a8">
+            <circle cx="105" cy="320" r="8" /><circle cx="230" cy="250" r="8" /><circle cx="360" cy="295" r="8" />
+            <circle cx="480" cy="205" r="8" /><circle cx="610" cy="165" r="8" /><circle cx="735" cy="235" r="8" />
+            <circle cx="840" cy="230" r="8" /><circle cx="910" cy="110" r="8" />
+          </g>
+        </svg>
+        <div class="pawn pawn-pau" id="pawn" aria-label="Peça d'en Pau"><span></span></div>
+        <div class="plus-badge" id="plusBadge">+1!</div>
+
+        <article class="question-card" id="card">
+          <div class="card-inner" id="cardInner">
+            <div class="card-face card-front">
+              <p class="category">Personal · Pau</p>
+              <h2>Quin tipus de variable només pot tenir dos valors?</h2>
+              <p class="voice-hint">Respon en veu alta</p>
+            </div>
+            <div class="card-face card-back">
+              <p class="answer-label">Resposta correcta</p>
+              <h2>Booleana</h2>
+            </div>
+          </div>
+          <div class="feedback-layer" id="feedbackLayer">
+            <div class="halo" id="halo"></div>
+            <div class="result-icon" id="resultIcon"></div>
+            <div class="particles" id="particles"></div>
+            <img class="drink-glass" id="drinkGlass" src="../../assets/production/textures/glass.svg" alt="" />
+          </div>
+        </article>
+
+        <div class="disconnect-overlay" id="disconnectOverlay">
+          <div class="disconnect-card">
+            <div class="wifi-cross">⌁</div>
+            <h2 id="disconnectTitle">S'ha perdut la connexió</h2>
+            <p id="disconnectText">S'està reconnectant…</p>
+            <div class="spinner"></div>
+          </div>
+        </div>
+
+        <div class="victory-layer" id="victoryLayer">
+          <img src="../../assets/production/effects/crown.svg" class="crown" alt="" />
+          <div class="confetti-host" id="confettiHost"></div>
+          <div class="winner-card">
+            <strong>Ha guanyat en Pau!</strong>
+            <span>Pau 4 — 2 Tecla</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Controls de demostració">
+      <button type="button" data-action="question">Entrada de pregunta</button>
+      <button type="button" data-action="flip">Mostra resposta</button>
+      <button type="button" data-action="correct">Correcte</button>
+      <button type="button" data-action="incorrect">Incorrecte</button>
+      <button type="button" data-action="move">Mou la peça</button>
+      <button type="button" data-action="plus">Casella +1</button>
+      <button type="button" data-action="disconnect">Desconnexió</button>
+      <button type="button" data-action="reconnect">Reconnexió</button>
+      <button type="button" data-action="victory">Victòria</button>
+      <button type="button" data-action="reset" class="secondary">Reinicia</button>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

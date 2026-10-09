@@ -1,0 +1,13 @@
+Treballa sobre el repositori actual i utilitza el paquet de especificació Tecla&Pau que hi ha a l'arrel.
+
+Llegeix primer `MASTER_PROMPT_CODEX_SOL_ULTRA.md` i després tots els fitxers que aquest document marca com a obligatoris. No em tornis només un pla: inspecciona l'aplicació actual, executa-la, fes una còpia de seguretat o commit, conserva la lògica que funcioni, i implementa i corregeix tota l'aplicació fins que compleixi la matriu d'acceptació.
+
+La prioritat d'aquesta intervenció és convertir el disseny actual —que no és prou bo— en una experiència visualment fidel als mockups: joc de taula mediterrani, Sitges recognoscible, avatars aprovats, profunditat, targetes físiques, peces amb moviment, animacions coreografiades i sons sincronitzats. No acceptis una UI SaaS genèrica ni simples fades de botons.
+
+Utilitza el Supabase connectat amb project_ref `lhgyopkwstuyxolwfucq`. Fes servir el MCP de Supabase quan estigui disponible, aplica migracions de manera segura, mantén RLS, protegeix la resposta correcta al servidor i implementa el mode online real amb Broadcast, Presence, reconexió i accions idempotents. No exposis cap secret i no utilitzis la contrasenya al codi.
+
+Executa browser testing i compara captures a 390x844, 1024x768 i 1440x900 amb les referències visuals. Itera fins que la puntuació de `acceptance/FINAL_ACCEPTANCE_MATRIX.csv` sigui completa o fins que hi hagi un bloqueig extern real. Quan trobis un bloqueig extern, continua totes les tasques independents.
+
+No regeneris avatars diferents. No utilitzis la imatge composta com un únic fons. No deixis pantalles simulades. No afirmis que una migració o prova ha passat si no l'has executat i verificat.
+
+Comença ara.

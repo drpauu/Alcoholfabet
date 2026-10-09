@@ -1,0 +1,9 @@
+project_id = "tecla-pau"
+
+[auth]
+site_url = "http://localhost:5173"
+enable_anonymous_sign_ins = true
+
+[functions.verify-couple-access]
+# The handler validates every bearer token with Supabase Auth itself.
+verify_jwt = false

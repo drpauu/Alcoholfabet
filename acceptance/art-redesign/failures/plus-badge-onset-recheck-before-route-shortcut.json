@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-09T13:29:15.519Z",
+  "completedAt": "2026-10-09T13:29:53.811Z",
+  "command": "npx playwright test tests/e2e/motion.spec.ts --grep motion normal: gir al punt mig --trace off --reporter=json",
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 0,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 36479.384,
+  "tests": [
+    {
+      "name": "motion normal: gir al punt mig, recorregut continu i dues arribades +1",
+      "file": "motion.spec.ts",
+      "status": "passed",
+      "durationMs": 34992,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true,
+  "reason": "Isolate each requestAnimationFrame recorder and use its native frame timestamp; replace measurements affected by callback reuse.",
+  "noMetaInThisRecheck": true
+}

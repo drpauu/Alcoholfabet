@@ -1,0 +1,12 @@
+{
+  "TURN_START": {"file": "turn_start.wav", "offsetMs": 0, "volume": 0.45},
+  "QUESTION_ENTER": {"file": "card_slide.wav", "offsetMs": 35, "volume": 0.38},
+  "ANSWER_REVEAL": {"file": "card_flip.wav", "offsetMs": 140, "volume": 0.42},
+  "CORRECT": {"file": "correct.wav", "offsetMs": 40, "volume": 0.52},
+  "INCORRECT": {"file": "incorrect.wav", "offsetMs": 50, "volume": 0.46},
+  "PAWN_STEP": {"file": "pawn_step.wav", "offsetMs": 330, "volume": 0.42},
+  "PLUS_ONE": {"file": "plus_one.wav", "offsetMs": 100, "volume": 0.48},
+  "DRINK": {"file": "drink.wav", "offsetMs": 220, "volume": 0.45},
+  "DOUBLE_DRINK": {"file": "double_drink.wav", "offsetMs": 220, "volume": 0.45},
+  "VICTORY": {"file": "victory.wav", "offsetMs": 260, "volume": 0.55}
+}

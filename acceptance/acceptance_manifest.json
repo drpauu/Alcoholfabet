@@ -1,0 +1,534 @@
+{
+  "total": 88,
+  "requiredP0": 82,
+  "items": [
+    {
+      "category": "PRODUCT",
+      "id": "P001",
+      "criterion": "Els únics jugadors són en Pau i la Tecla",
+      "priority": "P0"
+    },
+    {
+      "category": "PRODUCT",
+      "id": "P002",
+      "criterion": "No hi ha inputs de resposta ni reconeixement de veu",
+      "priority": "P0"
+    },
+    {
+      "category": "PRODUCT",
+      "id": "P003",
+      "criterion": "Mode presencial complet de principi a fi",
+      "priority": "P0"
+    },
+    {
+      "category": "PRODUCT",
+      "id": "P004",
+      "criterion": "Mode online complet amb dos dispositius",
+      "priority": "P0"
+    },
+    {
+      "category": "LANG",
+      "id": "L001",
+      "criterion": "Tota la UI visible és en català correcte",
+      "priority": "P0"
+    },
+    {
+      "category": "LANG",
+      "id": "L002",
+      "criterion": "Text exacte Quant de temps voleu que duri la partida?",
+      "priority": "P0"
+    },
+    {
+      "category": "LANG",
+      "id": "L003",
+      "criterion": "S’utilitzen en Pau i la Tecla en frases",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V001",
+      "criterion": "La pantalla inicial s’assembla a la referència aprovada",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V002",
+      "criterion": "La Punta és recognoscible i no hi ha edificis genèrics",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V003",
+      "criterion": "No hi ha càmera, maleta, avió ni tòpics turístics",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V004",
+      "criterion": "La llibreta no conté el text Sitges",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V005",
+      "criterion": "Els avatars són consistents a totes les pantalles",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V006",
+      "criterion": "En Pau té peça blava",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V007",
+      "criterion": "La Tecla té peça rosa",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V008",
+      "criterion": "El tauler té profunditat i perspectiva a iPad/desktop",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V009",
+      "criterion": "El mòbil utilitza perspectiva més plana",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V010",
+      "criterion": "Les targetes semblen paper i no cards SaaS",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V011",
+      "criterion": "El marcador històric només destaca a inici i final",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V012",
+      "criterion": "Els botons estan integrats a la direcció d’art",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V013",
+      "criterion": "No s’utilitza la imatge composta com un únic fons",
+      "priority": "P0"
+    },
+    {
+      "category": "VISUAL",
+      "id": "V014",
+      "criterion": "La composició manté el centre d’acció net",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R001",
+      "criterion": "390x844 és jugable sense scroll durant un torn normal",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R002",
+      "criterion": "360x800 és jugable sense overflow horitzontal",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R003",
+      "criterion": "430x932 és jugable",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R004",
+      "criterion": "Mòbil horitzontal mostra gira el dispositiu",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R005",
+      "criterion": "768x1024 mostra gira l’iPad",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R006",
+      "criterion": "1024x768 utilitza layout horitzontal 60/40 aproximat",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R007",
+      "criterion": "1366x768 no talla controls",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R008",
+      "criterion": "1440x900 manté amplada màxima",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R009",
+      "criterion": "Safe areas superior i inferior funcionen",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R010",
+      "criterion": "Targets tàctils principals tenen almenys 48 px",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R011",
+      "criterion": "Correcte i Incorrecte estan prou separats",
+      "priority": "P0"
+    },
+    {
+      "category": "RESPONSIVE",
+      "id": "R012",
+      "criterion": "Cap acció crítica depèn de hover",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M001",
+      "criterion": "La targeta entra lliscant sobre la taula",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M002",
+      "criterion": "La resposta es revela amb gir i canvi al punt mig",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M003",
+      "criterion": "Correcte mostra halo, check i partícules",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M004",
+      "criterion": "Incorrecte mou només la targeta, no tota la pantalla",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M005",
+      "criterion": "La peça segueix el recorregut en lloc de teletransportar-se",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M006",
+      "criterion": "Cada aterratge reprodueix un sol toc",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M007",
+      "criterion": "+1 té dos moviments diferenciats",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M008",
+      "criterion": "T&P espera confirmació del servidor abans de declarar guanyador",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M009",
+      "criterion": "Victòria integra peça, càmera, corona, confeti i targeta",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M010",
+      "criterion": "Desconnexió bloqueja accions i manté escena",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M011",
+      "criterion": "Reconnexió no repeteix l’últim efecte",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M012",
+      "criterion": "prefers-reduced-motion conserva informació",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M013",
+      "criterion": "El control de so funciona i persisteix",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M014",
+      "criterion": "No hi ha música contínua",
+      "priority": "P0"
+    },
+    {
+      "category": "MOTION",
+      "id": "M015",
+      "criterion": "No hi ha doble so per esdeveniments duplicats",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G001",
+      "criterion": "Encert avança una casella",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G002",
+      "criterion": "Error no avança, canvia torn i indica beure",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G003",
+      "criterion": "Error a +1 indica beure doble",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G004",
+      "criterion": "Encert a +1 avança una casella addicional",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G005",
+      "criterion": "Un segon +1 no s’encadena",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G006",
+      "criterion": "Personal selecciona pool correcte per jugador",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G007",
+      "criterion": "Creuada selecciona pool correcte per jugador",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G008",
+      "criterion": "T&P només accepta una reclamació",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G009",
+      "criterion": "T&P mou qui respon correctament",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G010",
+      "criterion": "No es repeteix pregunta dins d’una partida",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G011",
+      "criterion": "La durada configura el nombre de caselles",
+      "priority": "P0"
+    },
+    {
+      "category": "RULES",
+      "id": "G012",
+      "criterion": "La primera persona a META guanya",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S001",
+      "criterion": "Anonymous Auth està activat i funciona",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S002",
+      "criterion": "El dispositiu necessita autorització privada",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S003",
+      "criterion": "RLS està activat a totes les taules exposades",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S004",
+      "criterion": "El client no pot modificar games directament",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S005",
+      "criterion": "El client no pot inserir match_results",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S006",
+      "criterion": "El client normal no pot llegir questions directament",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S007",
+      "criterion": "El respondent no rep answerCa al JSON",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S008",
+      "criterion": "La resposta no existeix al DOM del respondent",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S009",
+      "criterion": "Els canals Realtime són private true",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S010",
+      "criterion": "Un no membre no pot unir-se al canal",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S011",
+      "criterion": "Broadcast només notifica i es recupera get_game_view",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S012",
+      "criterion": "state_version antic falla",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S013",
+      "criterion": "idempotency_key repetida no repeteix acció",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S014",
+      "criterion": "match_results game_id únic evita doble marcador",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S015",
+      "criterion": "Partida abandonada no crea resultat",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S016",
+      "criterion": "Recàrrega recupera rol, fase, torn i posicions",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S017",
+      "criterion": "Desconnexió i reconnexió recuperen estat",
+      "priority": "P0"
+    },
+    {
+      "category": "SECURITY",
+      "id": "S018",
+      "criterion": "No hi ha service role ni password al frontend",
+      "priority": "P0"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q001",
+      "criterion": "Build de producció passa",
+      "priority": "P0"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q002",
+      "criterion": "TypeScript passa sense errors",
+      "priority": "P0"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q003",
+      "criterion": "No hi ha errors de consola en flux principal",
+      "priority": "P0"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q004",
+      "criterion": "No hi ha subscripcions Realtime duplicades",
+      "priority": "P0"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q005",
+      "criterion": "Assets grans utilitzen WebP/AVIF quan escau",
+      "priority": "P1"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q006",
+      "criterion": "Animacions principals mantenen fluïdesa",
+      "priority": "P1"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q007",
+      "criterion": "No hi ha layout shift gran en revelar resposta",
+      "priority": "P1"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q008",
+      "criterion": "Els sons es precàrreguen després de primera interacció",
+      "priority": "P1"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q009",
+      "criterion": "Els textos estan centralitzats",
+      "priority": "P1"
+    },
+    {
+      "category": "QUALITY",
+      "id": "Q010",
+      "criterion": "Les regles no estan duplicades en múltiples components",
+      "priority": "P1"
+    }
+  ]
+}

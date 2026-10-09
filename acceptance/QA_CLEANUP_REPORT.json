@@ -1,0 +1,95 @@
+{
+  "status": "COMPLETE",
+  "noSecrets": true,
+  "questions": 130,
+  "projectRef": "lhgyopkwstuyxolwfucq",
+  "scoreboard": {
+    "pauWins": 0,
+    "teclaWins": 0,
+    "completedGames": 0
+  },
+  "completedAt": "2026-10-09T11:13:58.887729+00:00",
+  "deletedGames": 39,
+  "deletedUsers": 24,
+  "requestedGames": 39,
+  "requestedUsers": 24,
+  "couplePreserved": true,
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "questionsPreserved": true,
+  "accessHashPreserved": true,
+  "deletedMatchResults": 6,
+  "preservedOtherGames": 0,
+  "preservedOtherUsers": 0,
+  "unlistedRecordsPreserved": true,
+  "remainingQaAuthorizedDevices": 0,
+  "removedCredentialFiles": [
+    "/tmp/tecla-pau-qa-users.json",
+    "/tmp/tecla-pau-visual-storage.json"
+  ],
+  "privateCodeFilePreserved": true,
+  "privateCodePermissions": "0o600",
+  "localEnvironmentPreserved": true,
+  "qaPublicEnvironmentPreserved": true,
+  "sqlVerification": {
+    "couples": 1,
+    "qaGames": 0,
+    "qaUsers": 0,
+    "qaDevices": 0,
+    "qaResults": 0,
+    "qaSessions": 0,
+    "scoreboard": {
+      "pauWins": 0,
+      "teclaWins": 0,
+      "completedGames": 0
+    },
+    "questionPools": {
+      "TP": 26,
+      "PAU": 26,
+      "TECLA": 26,
+      "PAU_TECLA": 26,
+      "TECLA_PAU": 26
+    },
+    "headlessQaUsers": 0,
+    "approvedQuestions": 130,
+    "privateAccessConfigured": true
+  },
+  "checks": [
+    {
+      "name": "delete-only-explicit-uuids-with-unlisted-game-and-membership-guards",
+      "status": "PASS"
+    },
+    {
+      "name": "no-qa-auth-users-games-devices-sessions-or-results-remain",
+      "status": "PASS"
+    },
+    {
+      "name": "scoreboard-zero-after-fixture-removal",
+      "status": "PASS"
+    },
+    {
+      "name": "couple-and-130-approved-questions-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "private-access-hash-preserved-and-still-configured",
+      "status": "PASS"
+    },
+    {
+      "name": "unlisted-users-and-games-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "temporary-qa-credentials-and-visual-storage-removed",
+      "status": "PASS"
+    },
+    {
+      "name": "private-access-code-and-local-environment-preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "no-secrets-or-codes-in-cleanup-report",
+      "status": "PASS"
+    }
+  ]
+}

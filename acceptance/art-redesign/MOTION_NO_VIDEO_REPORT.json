@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-09T13:39:56.060Z",
+  "completedAt": "2026-10-09T13:40:25.905Z",
+  "command": "npx playwright test tests/e2e/motion.spec.ts --grep 'motion normal: gir al punt mig' --trace off --reporter=json",
+  "arguments": [
+    "playwright",
+    "test",
+    "tests/e2e/motion.spec.ts",
+    "--grep",
+    "motion normal: gir al punt mig",
+    "--trace",
+    "off",
+    "--reporter=json"
+  ],
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 0,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 27973.043999999998,
+  "tests": [
+    {
+      "name": "motion normal: gir al punt mig, recorregut continu i dues arribades +1",
+      "file": "motion.spec.ts",
+      "status": "passed",
+      "durationMs": 25696,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true,
+  "reason": "Measure the final exact route-fraction motion with the existing QA session, without video, screenshots or new Auth, and verify the same two-arrival and badge-order assertions.",
+  "noMetaInThisRecheck": true,
+  "videoRecording": false,
+  "screenshotRecording": false,
+  "existingSessionOnly": true
+}

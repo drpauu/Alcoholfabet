@@ -1,0 +1,11 @@
+{
+  "approvedCount": 130,
+  "byPool": {
+    "PAU": 26,
+    "TECLA": 26,
+    "TECLA_PAU": 26,
+    "PAU_TECLA": 26,
+    "TP": 26
+  },
+  "maxAnswerWords": 3
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" role="img" aria-label="Talismà blau d’en Pau, vela tallada en fusta">
+  <defs>
+    <linearGradient id="body" x1="1" y1=".08" x2=".05" y2="1"><stop stop-color="#889894"/><stop offset=".26" stop-color="#648693"/><stop offset=".65" stop-color="#426c82"/><stop offset="1" stop-color="#304e60"/></linearGradient>
+    <linearGradient id="facet" x1="1" x2="0" y2=".6"><stop stop-color="#b0aa88"/><stop offset=".2" stop-color="#789394"/><stop offset="1" stop-color="#426c82"/></linearGradient>
+    <linearGradient id="foot" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#a68b65"/><stop offset=".48" stop-color="#776951"/><stop offset="1" stop-color="#4b4d43"/></linearGradient>
+    <clipPath id="silhouette"><path d="M62 9C71 29 88 48 92 67 96 90 85 108 76 126L78 140Q61 148 39 140L43 123C27 104 25 85 32 64 38 43 49 23 62 9Z"/></clipPath>
+  </defs>
+  <path d="M35 136Q57 143 84 136L89 143Q78 154 42 153L31 147Z" fill="url(#foot)" stroke="#554936" stroke-width="2.2"/>
+  <path d="M62 9C71 29 88 48 92 67 96 90 85 108 76 126L78 140Q61 148 39 140L43 123C27 104 25 85 32 64 38 43 49 23 62 9Z" fill="url(#body)" stroke="#394d50" stroke-width="2.8" stroke-linejoin="round"/>
+  <path d="M62 13 65 96 77 139Q67 144 60 143L54 99 58 29Z" fill="url(#facet)" opacity=".75"/>
+  <path d="M61 15C71 42 85 57 86 80 86 100 75 120 72 135" fill="none" stroke="#d4bc92" stroke-width="1.6" opacity=".55" stroke-linecap="round"/>
+  <path d="M58 20C45 46 35 63 36 83 37 100 46 112 50 123" fill="none" stroke="#253f4e" stroke-width="1.6" opacity=".5"/>
+  <g clip-path="url(#silhouette)" fill="none" stroke-linecap="round">
+    <path d="M45 39 47 52M40 62c-2 11 1 21 5 29M47 109l6 10M79 62l4 9M70 28l4 7M70 104l-3 9M56 122l2 8" stroke="#a5ae9a" stroke-width="1" opacity=".4"/>
+    <path d="M49 53c-3 13 0 24 2 29M77 85c-1 9-5 17-8 23M55 33l-4 13M38 95l5 10" stroke="#294958" stroke-width="1" opacity=".3"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M49 81c7 2 13 2 20-1M46 88q9-4 18 0t12 0M60 60v17l14-2-14-15Z" stroke="#304d57" stroke-width="2.5" opacity=".7"/>
+    <path d="m60 59 14 15-14 2M47 87q9-4 18 0t11 0" stroke="#d1bf95" stroke-width="1.2"/>
+  </g>
+  <path d="M40 142Q59 148 79 142M37 147q18 4 37 2" fill="none" stroke="#c4ac7d" stroke-width="1" opacity=".5"/>
+</svg>

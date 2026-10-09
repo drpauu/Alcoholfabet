@@ -1,0 +1,811 @@
+{
+  "backend": "real Supabase",
+  "readOnly": true,
+  "gameId": "9d7a4277-06a2-4848-aec2-3e18930ebdd9",
+  "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+  "stateVersion": 2,
+  "errors": [],
+  "metrics": [
+    {
+      "scenario": "vertical-system-smoke",
+      "suffix": null,
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/vertical-system-smoke-390x844.png",
+      "motionSampleMs": null,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "gameId": "9d7a4277-06a2-4848-aec2-3e18930ebdd9",
+        "stateVersion": "2",
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "card": {
+          "x": 17,
+          "y": 411.015625,
+          "width": 356,
+          "height": 417.984375,
+          "top": 411.015625,
+          "right": 373,
+          "bottom": 829,
+          "left": 17
+        },
+        "board": {
+          "x": 16.97595977783203,
+          "y": 207.8528594970703,
+          "width": 356.5775451660156,
+          "height": 185.14939880371094,
+          "top": 207.8528594970703,
+          "right": 373.55350494384766,
+          "bottom": 393.00225830078125,
+          "left": 16.97595977783203
+        },
+        "panel": {
+          "x": 24,
+          "y": 299.75,
+          "width": 342,
+          "height": 244.5,
+          "top": 299.75,
+          "right": 366,
+          "bottom": 544.25,
+          "left": 24
+        },
+        "activeAnimations": 1,
+        "feedback": [
+          {
+            "target": "correctHalo",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "correctCheck",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "errorHalo",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "errorCross",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "drinkGlass",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "plusOneBadge",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "crown",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "confetti",
+            "visible": true,
+            "opacity": 1
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 213,
+            "y": 12,
+            "width": 48,
+            "height": 48,
+            "top": 12,
+            "right": 261,
+            "bottom": 60,
+            "left": 213,
+            "disabled": false
+          },
+          {
+            "label": "So activat",
+            "x": 269,
+            "y": 12,
+            "width": 48,
+            "height": 48,
+            "top": 12,
+            "right": 317,
+            "bottom": 60,
+            "left": 269,
+            "disabled": false
+          },
+          {
+            "label": "Sortir",
+            "x": 325,
+            "y": 12,
+            "width": 48,
+            "height": 48,
+            "top": 12,
+            "right": 373,
+            "bottom": 60,
+            "left": 325,
+            "disabled": false
+          },
+          {
+            "label": "Incorrecte",
+            "x": 42,
+            "y": 753,
+            "width": 147,
+            "height": 55,
+            "top": 753,
+            "right": 189,
+            "bottom": 808,
+            "left": 42,
+            "disabled": false
+          },
+          {
+            "label": "Correcte",
+            "x": 201,
+            "y": 753,
+            "width": 147,
+            "height": 55,
+            "top": 753,
+            "right": 348,
+            "bottom": 808,
+            "left": 201,
+            "disabled": false
+          }
+        ],
+        "judgeControls": [
+          {
+            "label": "Incorrecte",
+            "width": 147,
+            "height": 55,
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "borderWidth": "1px",
+            "padding": "10px 5px",
+            "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+          },
+          {
+            "label": "Correcte",
+            "width": 147,
+            "height": 55,
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "borderWidth": "1px",
+            "padding": "10px 5px",
+            "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+          }
+        ],
+        "textFit": [
+          {
+            "selector": ".question-copy",
+            "clientWidth": 306,
+            "scrollWidth": 306,
+            "clientHeight": 202,
+            "scrollHeight": 202
+          },
+          {
+            "selector": ".answer-panel",
+            "clientWidth": 304,
+            "scrollWidth": 304,
+            "clientHeight": 62,
+            "scrollHeight": 62
+          },
+          {
+            "selector": ".card-category",
+            "clientWidth": 306,
+            "scrollWidth": 306,
+            "clientHeight": 22,
+            "scrollHeight": 22
+          },
+          {
+            "selector": ".art-button__label",
+            "clientWidth": 65,
+            "scrollWidth": 65,
+            "clientHeight": 18,
+            "scrollHeight": 18
+          },
+          {
+            "selector": ".art-button__label",
+            "clientWidth": 55,
+            "scrollWidth": 55,
+            "clientHeight": 18,
+            "scrollHeight": 18
+          }
+        ],
+        "pawns": [
+          {
+            "player": "PAU",
+            "transform": "matrix(1, 0, 0, 1, 77, 515)"
+          },
+          {
+            "player": "TECLA",
+            "transform": "matrix(1, 0, 0, 1, 113, 515)"
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "vertical-system-smoke",
+      "suffix": null,
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/vertical-system-smoke-1024x768.png",
+      "motionSampleMs": null,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "gameId": "9d7a4277-06a2-4848-aec2-3e18930ebdd9",
+        "stateVersion": "2",
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "card": {
+          "x": 632.765625,
+          "y": 302,
+          "width": 369.234375,
+          "height": 420,
+          "top": 302,
+          "right": 1002,
+          "bottom": 722,
+          "left": 632.765625
+        },
+        "board": {
+          "x": 20.166839599609375,
+          "y": 380.5173645019531,
+          "width": 596.04345703125,
+          "height": 303.2959899902344,
+          "top": 380.5173645019531,
+          "right": 616.2102966308594,
+          "bottom": 683.8133544921875,
+          "left": 20.166839599609375
+        },
+        "panel": {
+          "x": 322,
+          "y": 254.75,
+          "width": 380,
+          "height": 258.5,
+          "top": 254.75,
+          "right": 702,
+          "bottom": 513.25,
+          "left": 322
+        },
+        "activeAnimations": 1,
+        "feedback": [
+          {
+            "target": "correctHalo",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "correctCheck",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "errorHalo",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "errorCross",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "drinkGlass",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "plusOneBadge",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "crown",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "confetti",
+            "visible": true,
+            "opacity": 1
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 836,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 884,
+            "bottom": 70,
+            "left": 836,
+            "disabled": false
+          },
+          {
+            "label": "So activat",
+            "x": 895,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 943,
+            "bottom": 70,
+            "left": 895,
+            "disabled": false
+          },
+          {
+            "label": "Sortir",
+            "x": 954,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1002,
+            "bottom": 70,
+            "left": 954,
+            "disabled": false
+          },
+          {
+            "label": "Incorrecte",
+            "x": 656.765625,
+            "y": 642,
+            "width": 154.609375,
+            "height": 56,
+            "top": 642,
+            "right": 811.375,
+            "bottom": 698,
+            "left": 656.765625,
+            "disabled": false
+          },
+          {
+            "label": "Correcte",
+            "x": 823.375,
+            "y": 642,
+            "width": 154.625,
+            "height": 56,
+            "top": 642,
+            "right": 978,
+            "bottom": 698,
+            "left": 823.375,
+            "disabled": false
+          }
+        ],
+        "judgeControls": [
+          {
+            "label": "Incorrecte",
+            "width": 154.609375,
+            "height": 56,
+            "fontSize": "15px",
+            "fontWeight": "700",
+            "borderWidth": "1px",
+            "padding": "12px 9px",
+            "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+          },
+          {
+            "label": "Correcte",
+            "width": 154.625,
+            "height": 56,
+            "fontSize": "15px",
+            "fontWeight": "700",
+            "borderWidth": "1px",
+            "padding": "12px 9px",
+            "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+          }
+        ],
+        "textFit": [
+          {
+            "selector": ".question-copy",
+            "clientWidth": 321,
+            "scrollWidth": 321,
+            "clientHeight": 184,
+            "scrollHeight": 184
+          },
+          {
+            "selector": ".answer-panel",
+            "clientWidth": 319,
+            "scrollWidth": 319,
+            "clientHeight": 73,
+            "scrollHeight": 73
+          },
+          {
+            "selector": ".card-category",
+            "clientWidth": 321,
+            "scrollWidth": 321,
+            "clientHeight": 22,
+            "scrollHeight": 22
+          },
+          {
+            "selector": ".art-button__label",
+            "clientWidth": 69,
+            "scrollWidth": 69,
+            "clientHeight": 19,
+            "scrollHeight": 19
+          },
+          {
+            "selector": ".art-button__label",
+            "clientWidth": 59,
+            "scrollWidth": 59,
+            "clientHeight": 19,
+            "scrollHeight": 19
+          }
+        ],
+        "pawns": [
+          {
+            "player": "PAU",
+            "transform": "matrix(1, 0, 0, 1, 77, 515)"
+          },
+          {
+            "player": "TECLA",
+            "transform": "matrix(1, 0, 0, 1, 113, 515)"
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "vertical-system-smoke",
+      "suffix": null,
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/vertical-system-smoke-1440x900.png",
+      "motionSampleMs": null,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "gameId": "9d7a4277-06a2-4848-aec2-3e18930ebdd9",
+        "stateVersion": "2",
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "card": {
+          "x": 953.078125,
+          "y": 383,
+          "width": 454.921875,
+          "height": 455,
+          "top": 383,
+          "right": 1408,
+          "bottom": 838,
+          "left": 953.078125
+        },
+        "board": {
+          "x": 27.544689178466797,
+          "y": 394.5606384277344,
+          "width": 898.0418701171875,
+          "height": 416.1316223144531,
+          "top": 394.5606384277344,
+          "right": 925.5865592956543,
+          "bottom": 810.6922607421875,
+          "left": 27.544689178466797
+        },
+        "panel": {
+          "x": 530,
+          "y": 320.75,
+          "width": 380,
+          "height": 258.5,
+          "top": 320.75,
+          "right": 910,
+          "bottom": 579.25,
+          "left": 530
+        },
+        "activeAnimations": 1,
+        "feedback": [
+          {
+            "target": "correctHalo",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "correctCheck",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "errorHalo",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "errorCross",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "drinkGlass",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "plusOneBadge",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "crown",
+            "visible": false,
+            "opacity": 0
+          },
+          {
+            "target": "confetti",
+            "visible": true,
+            "opacity": 1
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1242,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1290,
+            "bottom": 70,
+            "left": 1242,
+            "disabled": false
+          },
+          {
+            "label": "So activat",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301,
+            "disabled": false
+          },
+          {
+            "label": "Sortir",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360,
+            "disabled": false
+          },
+          {
+            "label": "Incorrecte",
+            "x": 985.078125,
+            "y": 755,
+            "width": 189.453125,
+            "height": 56,
+            "top": 755,
+            "right": 1174.53125,
+            "bottom": 811,
+            "left": 985.078125,
+            "disabled": false
+          },
+          {
+            "label": "Correcte",
+            "x": 1186.53125,
+            "y": 755,
+            "width": 189.46875,
+            "height": 56,
+            "top": 755,
+            "right": 1376,
+            "bottom": 811,
+            "left": 1186.53125,
+            "disabled": false
+          }
+        ],
+        "judgeControls": [
+          {
+            "label": "Incorrecte",
+            "width": 189.453125,
+            "height": 56,
+            "fontSize": "15px",
+            "fontWeight": "700",
+            "borderWidth": "1px",
+            "padding": "12px 9px",
+            "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+          },
+          {
+            "label": "Correcte",
+            "width": 189.46875,
+            "height": 56,
+            "fontSize": "15px",
+            "fontWeight": "700",
+            "borderWidth": "1px",
+            "padding": "12px 9px",
+            "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+          }
+        ],
+        "textFit": [
+          {
+            "selector": ".question-copy",
+            "clientWidth": 391,
+            "scrollWidth": 391,
+            "clientHeight": 210,
+            "scrollHeight": 210
+          },
+          {
+            "selector": ".answer-panel",
+            "clientWidth": 389,
+            "scrollWidth": 389,
+            "clientHeight": 73,
+            "scrollHeight": 73
+          },
+          {
+            "selector": ".card-category",
+            "clientWidth": 391,
+            "scrollWidth": 391,
+            "clientHeight": 22,
+            "scrollHeight": 22
+          },
+          {
+            "selector": ".art-button__label",
+            "clientWidth": 69,
+            "scrollWidth": 69,
+            "clientHeight": 19,
+            "scrollHeight": 19
+          },
+          {
+            "selector": ".art-button__label",
+            "clientWidth": 59,
+            "scrollWidth": 59,
+            "clientHeight": 19,
+            "scrollHeight": 19
+          }
+        ],
+        "pawns": [
+          {
+            "player": "PAU",
+            "transform": "matrix(1, 0, 0, 1, 77, 515)"
+          },
+          {
+            "player": "TECLA",
+            "transform": "matrix(1, 0, 0, 1, 113, 515)"
+          }
+        ]
+      }
+    }
+  ],
+  "interactionMetrics": [
+    {
+      "width": 390,
+      "height": 844,
+      "records": [
+        {
+          "label": "Llegir les normes",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "So activat",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Sortir",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Incorrecte",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Correcte",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        }
+      ],
+      "allFocusVisible": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "records": [
+        {
+          "label": "Llegir les normes",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "So activat",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Sortir",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Incorrecte",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Correcte",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        }
+      ],
+      "allFocusVisible": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "records": [
+        {
+          "label": "Llegir les normes",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "So activat",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Sortir",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Incorrecte",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        },
+        {
+          "label": "Correcte",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": 2,
+          "outlineColor": "rgb(76, 56, 36)",
+          "shadow": "rgb(118, 80, 50) -1px 3px 0px 0px, rgba(48, 27, 14, 0.24) -2px 5px 7px 0px, rgba(255, 239, 194, 0.58) 0px 1px 0px 0px inset"
+        }
+      ],
+      "allFocusVisible": true
+    }
+  ],
+  "noSecrets": true
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Gira el dispositiu">
+  <g fill="none" stroke="#f6e7d3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="23" y="12" width="24" height="40" rx="5" transform="rotate(18 35 32)"/>
+    <path d="m31 17 5 2M32 47h1M14 40C6 28 13 11 26 7m-7-1 7 1-3 7M51 24c8 12 1 29-12 33m7 1-7-1 3-7"/>
+  </g>
+</svg>

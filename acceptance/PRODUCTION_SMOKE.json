@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:4173",
+  "build": "dist",
+  "anonymousAuth": true,
+  "privateAccess": true,
+  "homeVisible": true,
+  "errors": [],
+  "paint": [
+    {
+      "name": "first-paint",
+      "startTime": 1280
+    },
+    {
+      "name": "first-contentful-paint",
+      "startTime": 1280
+    }
+  ],
+  "protectedSource": true
+}

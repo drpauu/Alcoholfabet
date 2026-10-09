@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "command": "npm run check",
+  "recordedAt": "2026-10-09T13:44:08.024599+00:00",
+  "typecheck": {
+    "status": "PASS",
+    "command": "tsc -b"
+  },
+  "unitTests": {
+    "status": "PASS",
+    "files": 4,
+    "passed": 18,
+    "failed": 0
+  },
+  "productionBuild": {
+    "status": "PASS",
+    "modulesTransformed": 183,
+    "javascriptBytes": 591908,
+    "cssKB": 40.84,
+    "warning": "Vite warns that the main JavaScript chunk exceeds 500 KB; output remains valid.",
+    "assets": [
+      {
+        "path": "dist/assets/index-BNObSpEa.css",
+        "sha256": "deb75c3dbff001e41afe8b11938db78af35079bc6d8e4806acee3952690fa75e",
+        "bytes": 40841
+      },
+      {
+        "path": "dist/assets/index-DKPt5zKC.js",
+        "sha256": "cfd55ff3e0f7def9c6eaa7d00438e576c77cbbface8815008e6e931f4e7a7b12",
+        "bytes": 591908
+      }
+    ]
+  },
+  "sourceChangesSinceCheck": false,
+  "checkedOn": "2026-10-09",
+  "validationScope": "Actual npm run check after the final route-fraction optimization: tsc -b, 18 Vitest cases across four files, and vite build all completed with exit 0. Later edits are documentation and acceptance evidence only."
+}

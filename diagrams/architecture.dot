@@ -1,0 +1,32 @@
+digraph architecture {
+  graph [rankdir=TB, bgcolor="transparent", pad=0.3, nodesep=0.45, ranksep=0.55, fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", fontname="DejaVu Sans", color="#6A3F27", fillcolor="#FFF7EA", fontcolor="#17324D", penwidth=1.6, margin="0.18,0.12"];
+  edge [color="#95603F", penwidth=1.5, arrowsize=0.8, fontname="DejaVu Sans", fontcolor="#17324D"];
+
+  subgraph cluster_clients {
+    label="Clients web"; color="#D5A244"; style="rounded,dashed";
+    pau [label="Dispositiu d'en Pau\nReact + TypeScript"];
+    tecla [label="Dispositiu de la Tecla\nReact + TypeScript"];
+    shared [label="Mode presencial\nUn sol dispositiu"];
+  }
+
+  ui [label="Capa UI\nTauler SVG · targetes · animacions · sons", fillcolor="#F6E7D3"];
+  app [label="Capa d'aplicació\nMàquina d'estats · serveis · reconciliació"];
+  supa [label="Supabase", fillcolor="#E9F3EC"];
+  auth [label="Anonymous Auth"];
+  rpc [label="RPC / Edge Functions\nValidació · idempotència · autorització"];
+  db [label="PostgreSQL\nFont de veritat"];
+  realtime [label="Realtime\nBroadcast + Presence"];
+  storage [label="Storage opcional\nassets no sensibles"];
+
+  pau -> ui; tecla -> ui; shared -> ui;
+  ui -> app [label="intencions"];
+  app -> auth [label="sessió"];
+  app -> rpc [label="accions"];
+  app -> realtime [label="subscripció privada"];
+  auth -> supa; rpc -> supa; realtime -> supa; storage -> supa;
+  supa -> db [dir=both];
+  rpc -> db [label="transaccions"];
+  realtime -> app [label="GAME_UPDATED"];
+  db -> app [label="get_game_view", style=dashed];
+}

@@ -1,0 +1,42 @@
+{
+  "status": "RESOLVED",
+  "scenario": "victory",
+  "size": [
+    390,
+    844
+  ],
+  "gameId": "96b4d98d-da0a-419d-aae4-8379f86ce727",
+  "requiredMinimum": 48,
+  "controls": [
+    {
+      "label": "Llegir les normes",
+      "x": 266.78326416015625,
+      "y": 24.281827926635742,
+      "width": 46.5621337890625,
+      "height": 46.56212615966797,
+      "top": 24.281827926635742,
+      "right": 313.34539794921875,
+      "bottom": 70.84395408630371,
+      "left": 266.78326416015625,
+      "disabled": false,
+      "artButton": true
+    },
+    {
+      "label": "So activat",
+      "x": 321.10577392578125,
+      "y": 24.281827926635742,
+      "width": 46.5621337890625,
+      "height": 46.56212615966797,
+      "top": 24.281827926635742,
+      "right": 367.66790771484375,
+      "bottom": 70.84395408630371,
+      "left": 321.10577392578125,
+      "disabled": false,
+      "artButton": true
+    }
+  ],
+  "noSecrets": true,
+  "resolvedAt": "2026-10-09T13:20:29.452Z",
+  "fix": "Camera motion targets the game layout; header controls retain their 48px size.",
+  "finalEvidence": "screenshots/victory-390x844.png"
+}

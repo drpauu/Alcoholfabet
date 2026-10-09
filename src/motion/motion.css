@@ -1,0 +1,12 @@
+[data-motion="questionCard"] { perspective: 1100px; }
+[data-motion="questionCardInner"] { transform-style: preserve-3d; backface-visibility: hidden; }
+[data-motion^="pawn-"] { transform-box: view-box; transform-origin: 0 0; }
+[data-motion="targetCell"] { transform-box: fill-box; transform-origin: center; }
+.pawn-shadow { transform-box: fill-box; transform-origin: center; }
+.tp-motion-particle, .tp-motion-confetti { position: absolute; pointer-events: none; border-radius: 2px; width: 7px; height: 7px; opacity: 0; }
+.tp-motion-confetti { width: 8px; height: 13px; }
+[data-motion="correctParticles"], [data-motion="confetti"] { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+  .tp-motion-confetti, .tp-motion-particle { display: none; }
+}

@@ -1,0 +1,2 @@
+/* Compatibility entry point; all executed art decisions live here. */
+@import '../art-system/tokens.css';

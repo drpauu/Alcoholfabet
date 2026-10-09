@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-09T13:21:44.690Z",
+  "completedAt": "2026-10-09T13:25:28.591Z",
+  "command": "npx playwright test --trace off --reporter=json",
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 0,
+  "passed": 8,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 222296.989,
+  "tests": [
+    {
+      "name": "accés privat real, absència de contingut abans d’entrar i so persistent",
+      "file": "access.spec.ts",
+      "status": "passed",
+      "durationMs": 5909,
+      "errors": []
+    },
+    {
+      "name": "el servidor de desenvolupament també protegeix les preguntes i les fotos privades",
+      "file": "access.spec.ts",
+      "status": "passed",
+      "durationMs": 23,
+      "errors": []
+    },
+    {
+      "name": "partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 38220,
+      "errors": []
+    },
+    {
+      "name": "online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 52546,
+      "errors": []
+    },
+    {
+      "name": "partida abandonada no suma cap punt",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 6406,
+      "errors": []
+    },
+    {
+      "name": "online: abandonar durant la pregunta recupera tots dos dispositius sense resposta ni punts",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 17287,
+      "errors": []
+    },
+    {
+      "name": "motion normal: gir al punt mig, recorregut continu i dues arribades +1",
+      "file": "motion.spec.ts",
+      "status": "passed",
+      "durationMs": 35704,
+      "errors": []
+    },
+    {
+      "name": "motion normal: META, corona, marcador i accions finals en seqüència",
+      "file": "motion.spec.ts",
+      "status": "passed",
+      "durationMs": 64204,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true,
+  "subsequentVerificationReports": [
+    {
+      "path": "MOTION_RECORDER_RECHECK_REPORT.json",
+      "status": "PASS",
+      "completedAt": "2026-10-09T13:29:53.811Z",
+      "passed": 1,
+      "noMeta": true
+    },
+    {
+      "path": "MOTION_PATH_RECHECK_REPORT.json",
+      "status": "PASS",
+      "completedAt": "2026-10-09T13:33:36.509Z",
+      "passed": 1,
+      "noMeta": true
+    },
+    {
+      "path": "FINAL_PREVIEW_REPORT.json",
+      "status": "PASS",
+      "completedAt": "2026-10-09T13:34:18.128Z",
+      "passed": null,
+      "noMeta": null
+    },
+    {
+      "path": "MOTION_NO_VIDEO_REPORT.json",
+      "status": "PASS",
+      "completedAt": "2026-10-09T13:40:25.905Z",
+      "passed": 1,
+      "noMeta": true,
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "existingSessionOnly": true
+    }
+  ],
+  "followUpScope": "The complete eight-test result is preserved. Targeted motion checks cover isolated rAF measurement and the subsequent exact route-fraction shortcut; final preview verifies the rebuilt assets."
+}

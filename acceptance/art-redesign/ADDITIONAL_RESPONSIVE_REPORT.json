@@ -1,0 +1,20 @@
+{
+  "gameId": "6a844947-e45a-42f6-87bc-a5a3a8eb4932",
+  "questionLength": 32,
+  "source": "real server-selected question via legitimate turns",
+  "sizes": [
+    [
+      360,
+      800
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      1366,
+      768
+    ]
+  ],
+  "noSecrets": true
+}

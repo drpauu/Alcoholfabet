@@ -1,0 +1,16 @@
+
+Running 8 tests using 1 worker
+
+
+
+[1/8] tests/e2e/access.spec.ts:4:1 › accés privat real, absència de contingut abans d’entrar i so persistent
+[2/8] tests/e2e/access.spec.ts:35:1 › el servidor de desenvolupament també protegeix les preguntes i les fotos privades
+[3/8] tests/e2e/game.spec.ts:5:1 › partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic
+[4/8] tests/e2e/game.spec.ts:52:1 › online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria
+[5/8] tests/e2e/game.spec.ts:139:1 › partida abandonada no suma cap punt
+[6/8] tests/e2e/game.spec.ts:150:1 › online: abandonar durant la pregunta recupera tots dos dispositius sense resposta ni punts
+[7/8] tests/e2e/motion.spec.ts:75:1 › motion normal: gir al punt mig, recorregut continu i dues arribades +1
+[8/8] tests/e2e/motion.spec.ts:148:1 › motion normal: META, corona, marcador i accions finals en seqüència
+  8 passed (3.7m)
+(node:44824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

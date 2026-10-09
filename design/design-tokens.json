@@ -1,0 +1,43 @@
+{
+  "colors": {
+    "cream": "#f8edd6",
+    "paper": "#fff5df",
+    "paperDeep": "#d6b784",
+    "woodDark": "#623d27",
+    "woodMedium": "#a76d3e",
+    "woodLight": "#c4925b",
+    "ink": "#343d3b",
+    "inkSoft": "#78654f",
+    "terracotta": "#ad5d49",
+    "sage": "#727958",
+    "amber": "#b68b43",
+    "tp": "#84708c",
+    "correct": "#55735a",
+    "error": "#ad5d49",
+    "pau": "#426c82",
+    "tecla": "#ac6570"
+  },
+  "radii": {
+    "xs": 8,
+    "sm": 12,
+    "md": 18,
+    "lg": 26,
+    "pill": 999
+  },
+  "touchMinimumPx": 48,
+  "contentMaxPx": 1480,
+  "questionCardMaxPx": 520,
+  "easing": {
+    "enter": "cubic-bezier(.22,1,.36,1)",
+    "exit": "cubic-bezier(.4,0,1,1)",
+    "springSoft": "cubic-bezier(.2,.9,.3,1.15)"
+  },
+  "artSystem": {
+    "document": "docs/ART_SYSTEM.md",
+    "executedTokens": "src/art-system/tokens.css",
+    "materials": "src/art-system/materials.css",
+    "light": "Capvespre des de la dreta i rebot càlid frontal; ombres curtes a baix/esquerra",
+    "textures": "assets/production/art/textures",
+    "icons": "assets/production/art/icons"
+  }
+}

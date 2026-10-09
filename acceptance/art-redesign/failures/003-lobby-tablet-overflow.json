@@ -1,0 +1,12 @@
+{
+  "status": "RESOLVED",
+  "capturedAt": "2026-10-09T13:14:45.106Z",
+  "captures": 89,
+  "error": "expect(received).toBeLessThanOrEqual(expected)\n\nExpected: <= 768\nReceived:    831",
+  "noSecrets": true,
+  "cause": "Online lobby parchment extends below the 1024x768 viewport",
+  "evidence": "failures/lobby-tablet-overflow-1024x768.png",
+  "resolvedAt": "2026-10-09T13:20:29.452Z",
+  "fix": "Low-height tablet lobby uses the compact parchment composition.",
+  "finalEvidence": "screenshots/online-lobby-1024x768.png"
+}

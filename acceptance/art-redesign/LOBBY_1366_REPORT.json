@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T13:23:40.969Z",
+  "gameId": "5763c26a-946e-4179-bc38-ad673003465f",
+  "existingE2EFixture": true,
+  "noExtraGameOrAuth": true,
+  "noGameMutationsDuringCapture": true,
+  "width": 1366,
+  "height": 768,
+  "layout": {
+    "bodyWidth": 1366,
+    "bodyHeight": 768,
+    "panel": {
+      "x": 904.15625,
+      "y": 234,
+      "width": 429.84375,
+      "height": 472,
+      "top": 234,
+      "right": 1334,
+      "bottom": 706,
+      "left": 904.15625
+    },
+    "board": {
+      "x": 32,
+      "y": 334,
+      "width": 838.15625,
+      "height": 340,
+      "top": 334,
+      "right": 870.15625,
+      "bottom": 674,
+      "left": 32
+    },
+    "controls": [
+      {
+        "label": "Llegir les normes",
+        "artButton": true,
+        "x": 1168,
+        "y": 22,
+        "width": 48,
+        "height": 48,
+        "top": 22,
+        "right": 1216,
+        "bottom": 70,
+        "left": 1168
+      },
+      {
+        "label": "So activat",
+        "artButton": true,
+        "x": 1227,
+        "y": 22,
+        "width": 48,
+        "height": 48,
+        "top": 22,
+        "right": 1275,
+        "bottom": 70,
+        "left": 1227
+      },
+      {
+        "label": "Sortir",
+        "artButton": true,
+        "x": 1286,
+        "y": 22,
+        "width": 48,
+        "height": 48,
+        "top": 22,
+        "right": 1334,
+        "bottom": 70,
+        "left": 1286
+      },
+      {
+        "label": "Copia",
+        "artButton": true,
+        "x": 929.15625,
+        "y": 482,
+        "width": 183.921875,
+        "height": 54,
+        "top": 482,
+        "right": 1113.078125,
+        "bottom": 536,
+        "left": 929.15625
+      },
+      {
+        "label": "Comparteix",
+        "artButton": true,
+        "x": 1125.078125,
+        "y": 482,
+        "width": 183.921875,
+        "height": 54,
+        "top": 482,
+        "right": 1309,
+        "bottom": 536,
+        "left": 1125.078125
+      },
+      {
+        "label": "Començar la partida",
+        "artButton": true,
+        "x": 929.15625,
+        "y": 626,
+        "width": 379.84375,
+        "height": 54,
+        "top": 626,
+        "right": 1309,
+        "bottom": 680,
+        "left": 929.15625
+      }
+    ]
+  },
+  "noSecrets": true
+}

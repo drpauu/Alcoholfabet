@@ -1,0 +1,275 @@
+{
+  "gameId": "a4b684a8-f33b-48c4-83b8-33fc4e0a4927",
+  "timeline": [
+    {
+      "t": 21,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 107,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 572,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 658,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 746,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 848,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 936,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 1026,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 1246,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 1334,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 1430,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 1642,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 1736,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 2033,
+      "crown": true,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 2376,
+      "crown": true,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 2603,
+      "crown": true,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 2892,
+      "crown": true,
+      "winner": false,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "matrix(0.999925, -0.012217, 0.012217, 0.999925, 0, 6)",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 3097,
+      "crown": true,
+      "winner": true,
+      "score": false,
+      "actions": false,
+      "scoreTransform": "matrix(0.999925, -0.012217, 0.012217, 0.999925, 0, 6)",
+      "scoreOpacity": 0
+    },
+    {
+      "t": 3185,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": false,
+      "scoreTransform": "matrix(1, -0.000771268, 0.000771268, 1, 0, 0.378775)",
+      "scoreOpacity": 0.936871
+    },
+    {
+      "t": 3291,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "matrix(1, -0.000142285, 0.000142285, 1, 0, 0.0698773)",
+      "scoreOpacity": 0.988354
+    },
+    {
+      "t": 3377,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "matrix(1, -4.14454e-06, 4.14454e-06, 1, 0, 0.00203541)",
+      "scoreOpacity": 0.999661
+    },
+    {
+      "t": 3471,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 3634,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 3722,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 3809,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 3896,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 3980,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 4066,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 4151,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    },
+    {
+      "t": 4236,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true,
+      "scoreTransform": "none",
+      "scoreOpacity": 1
+    }
+  ]
+}

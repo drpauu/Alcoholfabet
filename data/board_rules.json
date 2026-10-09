@@ -1,0 +1,16 @@
+{
+  "categoryWeights": {
+    "PERSONAL": 0.35,
+    "CROSSED": 0.35,
+    "TP": 0.3
+  },
+  "plusOneRate": 0.12,
+  "constraints": {
+    "noPlusOneFirstCell": true,
+    "noPlusOneBeforeFinish": true,
+    "noConsecutivePlusOne": true,
+    "maxConsecutiveSameCategory": 2,
+    "ensureTpWhenPossible": true,
+    "plusOneDoesNotChain": true
+  }
+}

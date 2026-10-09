@@ -1,0 +1,33 @@
+-- REFERENCE ONLY: verify against the current Supabase Realtime authorization API
+-- before applying. The implementation agent must adapt this to the target project.
+-- Intended topic format: game:<uuid>
+
+-- alter table realtime.messages enable row level security;
+
+-- create policy "game members can receive realtime messages"
+-- on realtime.messages
+-- for select
+-- to authenticated
+-- using (
+--   split_part(realtime.topic(), ':', 1) = 'game'
+--   and exists (
+--     select 1
+--     from public.game_members gm
+--     where gm.game_id = split_part(realtime.topic(), ':', 2)::uuid
+--       and gm.user_id = auth.uid()
+--   )
+-- );
+
+-- create policy "game members can send realtime messages"
+-- on realtime.messages
+-- for insert
+-- to authenticated
+-- with check (
+--   split_part(realtime.topic(), ':', 1) = 'game'
+--   and exists (
+--     select 1
+--     from public.game_members gm
+--     where gm.game_id = split_part(realtime.topic(), ':', 2)::uuid
+--       and gm.user_id = auth.uid()
+--   )
+-- );

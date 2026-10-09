@@ -1,0 +1,32 @@
+{
+  "authFixture": "real-anonymous-sessions",
+  "checks": [
+    {
+      "name": "two-real-members-join-private-game-channel",
+      "status": "PASS"
+    },
+    {
+      "name": "presence-visible-to-both-members",
+      "status": "PASS"
+    },
+    {
+      "name": "nonmember-rejected-from-private-channel",
+      "status": "PASS"
+    },
+    {
+      "name": "server-broadcast-only-safe-version-notifications",
+      "status": "PASS"
+    },
+    {
+      "name": "broadcast-refetches-safe-role-view",
+      "status": "PASS"
+    },
+    {
+      "name": "reconnect-auth-presence-and-exact-state-recovery",
+      "status": "PASS"
+    }
+  ],
+  "gameId": "2b7510e5-10b3-40a7-9f0f-550ac094430a",
+  "passed": 6,
+  "fixturesCleaned": true
+}

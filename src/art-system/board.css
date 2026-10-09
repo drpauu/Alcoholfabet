@@ -1,0 +1,34 @@
+.board-perspective-shell.art-board {
+  position: relative;
+  transform: perspective(1500px) rotateX(9deg) rotateZ(-.6deg);
+  transform-origin: 50% 72%;
+}
+.art-board .game-board { filter: none; overflow: visible; }
+.art-board .board-grain { pointer-events: none; }
+.art-board .board-engraving { fill: none; stroke: #725337; stroke-width: 1.7; opacity: .49; }
+.art-board .board-engraving text { fill: #795737; stroke: none; font-family: var(--tp-font-display); font-size: 39px; font-weight: 700; }
+.art-board .tile-socket { fill: #695039; opacity: .19; stroke: #765635; stroke-width: 1.1; }
+.art-board .tile-pattern { stroke: #586850; opacity: .55; }
+.art-board .art-tile--personal .tile-pattern { stroke: #4d6b74; }
+.art-board .art-tile--tp .tile-pattern { stroke: #715c77; }
+.art-board .cell-number { fill: #4c4a3c; font-family: var(--tp-font-ui); font-size: 24px; font-weight: 800; }
+.art-board .cell-plus { fill: #57422e; font-family: var(--tp-font-ui); font-size: 18px; font-weight: 900; }
+.art-board .target-cell-ring { stroke: var(--art-ochre, #b68b43); filter: none; stroke-linejoin: round; }
+.art-board [data-motion='targetCell'] { transform-box: fill-box; transform-origin: center; }
+.art-board .board-end-label { fill: #563e29; font-family: var(--tp-font-ui); font-size: 34px; font-weight: 900; letter-spacing: 1px; }
+.art-board .board-end-engraving { fill: none; stroke: #745532; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; opacity: .75; }
+.art-board .board-pawn { transform-box: view-box; transform-origin: 0 0; }
+.art-board .pawn-shadow { fill: #382619; opacity: .32; filter: blur(2px); }
+.art-board [data-pawn-body] { transform-box: fill-box; transform-origin: 50% 100%; }
+.art-board .board-pawn--active [data-pawn-body] { filter: drop-shadow(-1px 1px 1px rgb(234 198 133 / 34%)); }
+.art-board .board-plus-badge { opacity: 0; pointer-events: none; }
+.art-board .board-caption { display: none; }
+@media (max-width: 767px) {
+  .board-perspective-shell.art-board { transform: perspective(1100px) rotateX(2deg) rotateZ(-.3deg); }
+  .art-board .board-engraving { opacity: .36; }
+  .art-board .board-grain { opacity: .95; }
+  .art-board .tile-pattern { stroke-width: 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .board-perspective-shell.art-board { transform: none; }
+}

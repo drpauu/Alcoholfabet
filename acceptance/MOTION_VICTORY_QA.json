@@ -1,0 +1,243 @@
+{
+  "gameId": "ea96af43-7903-463d-9d6f-0d75064f7434",
+  "timeline": [
+    {
+      "t": 11,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 130,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 577,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 676,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 779,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 888,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 1008,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 1187,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 1298,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 1432,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 1536,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 1634,
+      "crown": false,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 1778,
+      "crown": true,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 1946,
+      "crown": true,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 2114,
+      "crown": true,
+      "winner": false,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 2306,
+      "crown": true,
+      "winner": true,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 2431,
+      "crown": true,
+      "winner": true,
+      "score": false,
+      "actions": false
+    },
+    {
+      "t": 2559,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": false
+    },
+    {
+      "t": 2679,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": false
+    },
+    {
+      "t": 2796,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": false
+    },
+    {
+      "t": 2912,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": false
+    },
+    {
+      "t": 3009,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": false
+    },
+    {
+      "t": 3113,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 3217,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 3339,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 3455,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 3566,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 3661,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 3754,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 3847,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 3943,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 4038,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 4134,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    },
+    {
+      "t": 4229,
+      "crown": true,
+      "winner": true,
+      "score": true,
+      "actions": true
+    }
+  ]
+}

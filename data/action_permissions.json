@@ -1,0 +1,37 @@
+{
+  "BEGIN_TURN": {
+    "phases": ["READY", "TURN_INTRO"],
+    "actors": ["PAU", "TECLA", "IN_PERSON_CONTROLLER"],
+    "notes": "En online, només el dispositiu del jugador del torn o una política explícita de qualsevol membre; el servidor determina sempre el torn real."
+  },
+  "REVEAL_ANSWER": {
+    "phases": ["QUESTION", "TP_CLAIMED"],
+    "actors": ["IN_PERSON_CONTROLLER"],
+    "notes": "Només mode presencial."
+  },
+  "CLAIM_TP": {
+    "phases": ["TP_OPEN"],
+    "actors": ["PAU", "TECLA", "IN_PERSON_CONTROLLER"],
+    "notes": "Atòmic. En presencial el controller envia el claimant seleccionat."
+  },
+  "JUDGE_CORRECT": {
+    "phases": ["QUESTION", "TP_CLAIMED", "ANSWER_REVEALED", "JUDGING"],
+    "actors": ["PAU", "TECLA", "IN_PERSON_CONTROLLER"],
+    "notes": "En online només el rol contrari al respondent. En presencial només el controller."
+  },
+  "JUDGE_INCORRECT": {
+    "phases": ["QUESTION", "TP_CLAIMED", "ANSWER_REVEALED", "JUDGING"],
+    "actors": ["PAU", "TECLA", "IN_PERSON_CONTROLLER"],
+    "notes": "Mateixes regles que JUDGE_CORRECT."
+  },
+  "NEXT_TURN": {
+    "phases": ["RESULT", "BETWEEN_TURNS"],
+    "actors": ["PAU", "TECLA", "IN_PERSON_CONTROLLER"],
+    "notes": "Qualsevol membre pot continuar després del resultat, però l'acció és idempotent."
+  },
+  "ABANDON_GAME": {
+    "phases": ["READY", "TURN_INTRO", "QUESTION", "TP_OPEN", "TP_CLAIMED", "ANSWER_REVEALED", "JUDGING", "RESULT", "MOVING", "BETWEEN_TURNS"],
+    "actors": ["PAU", "TECLA", "IN_PERSON_CONTROLLER"],
+    "notes": "Mai crea match_result."
+  }
+}

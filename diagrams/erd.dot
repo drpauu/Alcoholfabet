@@ -1,0 +1,27 @@
+digraph erd {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.25, nodesep=0.45, ranksep=0.5, fontname="DejaVu Sans"];
+  node [shape=record, style="filled", fillcolor="#FFF7EA", color="#6A3F27", fontcolor="#17324D", fontname="DejaVu Sans", fontsize=10];
+  edge [color="#95603F", arrowsize=0.7];
+  couples [label="{couples|id PK|slug UQ|display_name}"];
+  devices [label="{authorized_devices|id PK|couple_id FK|user_id|revoked_at}"];
+  admins [label="{couple_admins|couple_id FK|user_id}"];
+  questions [label="{questions|id PK|pool|question_ca|answer_ca|review_status}"];
+  games [label="{games|id PK|couple_id FK|status|phase|positions|state_version|winner}"];
+  members [label="{game_members|id PK|game_id FK|user_id|access_role}"];
+  cells [label="{game_cells|game_id PK/FK|position PK|type|modifier}"];
+  usage [label="{game_question_usage|id PK|game_id FK|question_id FK|result}"];
+  events [label="{game_events|id PK|game_id FK|state_version|idempotency_key UQ}"];
+  results [label="{match_results|id PK|game_id UQ/FK|couple_id FK|winner}"];
+
+  couples -> devices;
+  couples -> admins;
+  couples -> games;
+  couples -> results;
+  games -> members;
+  games -> cells;
+  games -> usage;
+  games -> events;
+  games -> results;
+  questions -> usage;
+  questions -> games [style=dashed,label="current_question"];
+}

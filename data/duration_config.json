@@ -1,0 +1,26 @@
+{
+  "presets": [
+    {
+      "minutes": 20,
+      "cells": 4
+    },
+    {
+      "minutes": 30,
+      "cells": 5
+    },
+    {
+      "minutes": 45,
+      "cells": 7
+    },
+    {
+      "minutes": 60,
+      "cells": 9
+    }
+  ],
+  "custom": {
+    "minutesPerCell": 6.5,
+    "minCells": 3,
+    "maxCells": 15
+  },
+  "estimatedTurnSeconds": 160
+}

@@ -1,0 +1,22 @@
+Area,Requirement,Priority,Verification
+Producte,Mode presencial complet,P0,E2E un dispositiu
+Producte,Mode online complet,P0,E2E dos contexts
+Seguretat,Resposta absent al respondent,P0,Inspecció de network i DOM
+Seguretat,RLS a totes les taules exposades,P0,Tests SQL/integració
+Seguretat,Cap secret al client,P0,Inspecció bundle
+Joc,T&P atòmic,P0,Test concurrent
+Joc,+1 sense encadenament,P0,Unit + E2E
+Joc,Marcador només en finalitzar,P0,Integració
+Joc,Idempotència de finalització,P0,Repetició de petició
+Realtime,Reconnexió recupera estat,P0,E2E
+Visual,Fidelitat a referència,P1,Comparació visual
+Responsive,Mòbil vertical sense scroll normal,P0,390x844
+Responsive,iPad horitzontal,P0,1024x768
+Responsive,Ordinador horitzontal,P1,1440x900
+Idioma,Català correcte i centralitzat,P0,Revisió copy
+Accessibilitat,Controls mínim 48px,P1,Inspecció
+Accessibilitat,Reduced motion,P1,Media query
+Àudio,Control de so,P1,E2E manual
+Rendiment,Cap subscripció Realtime duplicada,P0,Consola/network
+Qualitat,Build de producció passa,P0,CI/local
+Qualitat,Cap error crític de consola,P0,E2E

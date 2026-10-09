@@ -1,0 +1,25 @@
+{
+  "status": "RESOLVED",
+  "startedAt": "2026-10-09T13:27:37.804Z",
+  "completedAt": "2026-10-09T13:27:40.096Z",
+  "command": "npx playwright test tests/e2e/motion.spec.ts --grep ^motion normal: gir al punt mig --trace off --reporter=json",
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 1,
+  "passed": 0,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 408.53,
+  "tests": [],
+  "errors": [
+    "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+  ],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true,
+  "reason": "Isolate each requestAnimationFrame recorder and use its native frame timestamp; replace measurements affected by callback reuse.",
+  "noMetaInThisRecheck": true,
+  "originalStatus": "FAIL",
+  "resolvedAt": "2026-10-09T13:34:52.091Z",
+  "fix": "Unanchored grep matches Playwright titles including their file prefix",
+  "finalEvidence": "MOTION_RECORDER_RECHECK_REPORT.json"
+}

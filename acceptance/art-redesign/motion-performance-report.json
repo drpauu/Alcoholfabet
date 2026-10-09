@@ -1,0 +1,1670 @@
+{
+  "generatedAt": "2026-10-09T13:42:08.876Z",
+  "evidenceComplete": true,
+  "evidenceChecks": {
+    "sixResponsiveSequences": true,
+    "requiredNormalSequences": true,
+    "victoryTimeline": true,
+    "eightE2ePassed": true,
+    "correctedNormalRecorderPassed": true,
+    "exactRouteRecheckPassed": true,
+    "noVideoFocusedCheckPassed": true,
+    "noVideoNativeSamples": true,
+    "noVideoPlusBadgeAfterLanding": true,
+    "plusBadgeAfterLanding": true,
+    "victoryOrder": true,
+    "scoreHasPhysicalEntry": true,
+    "capturesComplete": true,
+    "noReportedErrors": true
+  },
+  "environment": "Playwright Chromium headless on the QA Linux host; production React components, actual Supabase RPCs and private Realtime.",
+  "method": "requestAnimationFrame samples of computed SVG pawn transforms. Corrected normal E2E series and the separate no-video focused check use native callback timestamps and isolate each recording; responsive series use performance.now after style reads. Recording starts before the client action; RPC latency and scheduling are included. The focused check has no video or screenshots. Median FPS is 1000 divided by the median frame gap. The p95 gap describes slow frames. Counts are sample observations, not device FPS guarantees.",
+  "limits": [
+    "Responsive capture samples include timed screenshots and predate the exact route-fraction shortcut; E2E samples include video encoding.",
+    "Only the E2E series records confirmed phase, answer visibility and card transform.",
+    "Victory visibility E2E timestamps begin after confirmed FINISHED was fetched, not at the exact JSON timeline origin.",
+    "Pawn-body tilt, shadow and particle styling are checked in source and visual captures; these frame samples measure the route wrapper."
+  ],
+  "responsiveCaptureSequences": [
+    {
+      "source": "acceptance/art-redesign/motion-plus-one-1024x768.json",
+      "sequence": "PLUS_ONE",
+      "viewport": [
+        1024,
+        768
+      ],
+      "videoRecording": false,
+      "player": "PAU",
+      "frameCount": 92,
+      "recordingMs": 2624.2,
+      "averageSampleFps": 34.68,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 104.6,
+      "longestFrameGapMs": 395.3,
+      "movingIntervalCount": 48,
+      "medianMovingSampleFps": 59.88,
+      "p95MovingFrameGapMs": 18,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1231.3,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 47,
+      "finalArrivalAtRecordingMs": 2482,
+      "start": {
+        "x": 447.48,
+        "y": 383.6
+      },
+      "end": {
+        "x": 828.95,
+        "y": 320.69
+      },
+      "xRange": [
+        447.48,
+        828.95
+      ],
+      "yRange": [
+        320.69,
+        394.71
+      ],
+      "intermediatePlateaus": [
+        {
+          "startMs": 1580.9,
+          "endMs": 2095.9,
+          "durationMs": 515,
+          "x": 632.42,
+          "y": 342.48,
+          "intermediate": true
+        }
+      ],
+      "plusBadgeAfterFirstIntermediateArrivalMs": -116.5,
+      "plusBadgeFirstVisibleMs": 1464.4,
+      "plusBadgeLastVisibleMs": 2498.7,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": null,
+      "answerFirstVisibleAfterRevealPhaseMs": null,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/motion-plus-one-1440x900.json",
+      "sequence": "PLUS_ONE",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "player": "PAU",
+      "frameCount": 91,
+      "recordingMs": 2734,
+      "averageSampleFps": 32.92,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 116.8,
+      "longestFrameGapMs": 384.2,
+      "movingIntervalCount": 45,
+      "medianMovingSampleFps": 59.88,
+      "p95MovingFrameGapMs": 32.9,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1252.1,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 44,
+      "finalArrivalAtRecordingMs": 2502,
+      "start": {
+        "x": 447.48,
+        "y": 383.6
+      },
+      "end": {
+        "x": 828.95,
+        "y": 320.69
+      },
+      "xRange": [
+        447.48,
+        828.95
+      ],
+      "yRange": [
+        320.69,
+        394.71
+      ],
+      "intermediatePlateaus": [
+        {
+          "startMs": 1634.3,
+          "endMs": 2104.4,
+          "durationMs": 470.1,
+          "x": 632.63,
+          "y": 342.37,
+          "intermediate": true
+        }
+      ],
+      "plusBadgeAfterFirstIntermediateArrivalMs": -148.3,
+      "plusBadgeFirstVisibleMs": 1486,
+      "plusBadgeLastVisibleMs": 2518.7,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": null,
+      "answerFirstVisibleAfterRevealPhaseMs": null,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/motion-plus-one-390x844.json",
+      "sequence": "PLUS_ONE",
+      "viewport": [
+        390,
+        844
+      ],
+      "videoRecording": false,
+      "player": "PAU",
+      "frameCount": 110,
+      "recordingMs": 2882.1,
+      "averageSampleFps": 37.82,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 113.1,
+      "longestFrameGapMs": 357.7,
+      "movingIntervalCount": 49,
+      "medianMovingSampleFps": 59.88,
+      "p95MovingFrameGapMs": 18.6,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1229.8,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 48,
+      "finalArrivalAtRecordingMs": 2479.6,
+      "start": {
+        "x": 447.48,
+        "y": 383.6
+      },
+      "end": {
+        "x": 828.95,
+        "y": 320.69
+      },
+      "xRange": [
+        447.48,
+        828.95
+      ],
+      "yRange": [
+        320.69,
+        394.71
+      ],
+      "intermediatePlateaus": [
+        {
+          "startMs": 1579.6,
+          "endMs": 2084.3,
+          "durationMs": 504.7,
+          "x": 632.42,
+          "y": 342.48,
+          "intermediate": true
+        }
+      ],
+      "plusBadgeAfterFirstIntermediateArrivalMs": -99.9,
+      "plusBadgeFirstVisibleMs": 1479.7,
+      "plusBadgeLastVisibleMs": 2496.3,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": null,
+      "answerFirstVisibleAfterRevealPhaseMs": null,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/motion-victory-1024x768.json",
+      "sequence": "VICTORY",
+      "viewport": [
+        1024,
+        768
+      ],
+      "videoRecording": false,
+      "player": null,
+      "frameCount": 184,
+      "recordingMs": 4814.7,
+      "averageSampleFps": 38.01,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 101.4,
+      "longestFrameGapMs": 373.3,
+      "movingIntervalCount": 25,
+      "medianMovingSampleFps": 60.24,
+      "p95MovingFrameGapMs": 17,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1227.7,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 23,
+      "finalArrivalAtRecordingMs": 1594.6,
+      "start": {
+        "x": 630.72,
+        "y": 124.46
+      },
+      "end": {
+        "x": 430,
+        "y": 90
+      },
+      "xRange": [
+        430,
+        630.72
+      ],
+      "yRange": [
+        90,
+        124.78
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": null,
+      "answerFirstVisibleAfterRevealPhaseMs": null,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/motion-victory-1440x900.json",
+      "sequence": "VICTORY",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "player": null,
+      "frameCount": 201,
+      "recordingMs": 5533.2,
+      "averageSampleFps": 36.15,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 119.4,
+      "longestFrameGapMs": 390.8,
+      "movingIntervalCount": 25,
+      "medianMovingSampleFps": 59.88,
+      "p95MovingFrameGapMs": 17,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1286,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 23,
+      "finalArrivalAtRecordingMs": 1652.9,
+      "start": {
+        "x": 630.72,
+        "y": 124.46
+      },
+      "end": {
+        "x": 430,
+        "y": 90
+      },
+      "xRange": [
+        430,
+        630.72
+      ],
+      "yRange": [
+        90,
+        124.78
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": null,
+      "answerFirstVisibleAfterRevealPhaseMs": null,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/motion-victory-390x844.json",
+      "sequence": "VICTORY",
+      "viewport": [
+        390,
+        844
+      ],
+      "videoRecording": false,
+      "player": null,
+      "frameCount": 202,
+      "recordingMs": 4580.9,
+      "averageSampleFps": 43.88,
+      "medianSampleFps": 60.24,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 49.3,
+      "longestFrameGapMs": 363.5,
+      "movingIntervalCount": 25,
+      "medianMovingSampleFps": 59.88,
+      "p95MovingFrameGapMs": 17,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1222.8,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 23,
+      "finalArrivalAtRecordingMs": 1589.5,
+      "start": {
+        "x": 630.72,
+        "y": 124.46
+      },
+      "end": {
+        "x": 430,
+        "y": 90
+      },
+      "xRange": [
+        430,
+        630.72
+      ],
+      "yRange": [
+        90,
+        124.78
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": null,
+      "answerFirstVisibleAfterRevealPhaseMs": null,
+      "cardAngleAtFirstAnswerDegrees": null
+    }
+  ],
+  "normalVideoSequences": [
+    {
+      "source": "acceptance/art-redesign/MOTION_BROWSER_QA.json",
+      "index": 0,
+      "sequence": "ANSWER_REVEAL",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": true,
+      "frameCount": 26,
+      "recordingMs": 1533.28,
+      "averageSampleFps": 16.3,
+      "medianSampleFps": 20,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 183.4,
+      "longestFrameGapMs": 216.7,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 4,
+      "medianRotatingCardSampleFps": 20,
+      "p95RotatingCardFrameGapMs": 66.6,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 77,
+        "y": 515
+      },
+      "end": {
+        "x": 77,
+        "y": 515
+      },
+      "xRange": [
+        77,
+        77
+      ],
+      "yRange": [
+        515,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 37.92,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 354.5,
+          "phase": "ANSWER_REVEALED"
+        }
+      ],
+      "flipFirst3dMs": 637.9,
+      "cardRotationDegreesRange": [
+        -90,
+        16.58
+      ],
+      "answerFirstVisibleMs": 704.5,
+      "answerFirstVisibleAfterRevealPhaseMs": 350,
+      "cardAngleAtFirstAnswerDegrees": -90
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_BROWSER_QA.json",
+      "index": 1,
+      "sequence": "INCORRECT",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": true,
+      "frameCount": 35,
+      "recordingMs": 1483.3,
+      "averageSampleFps": 22.92,
+      "medianSampleFps": 29.94,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 83.3,
+      "longestFrameGapMs": 250,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 77,
+        "y": 515
+      },
+      "end": {
+        "x": 77,
+        "y": 515
+      },
+      "xRange": [
+        77,
+        77
+      ],
+      "yRange": [
+        515,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": 824.6,
+      "drinkLastVisibleMs": 1058,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": 549.9,
+      "errorFirstVisibleMs": 574.7,
+      "errorLastVisibleMs": 1058,
+      "phaseTransitions": [
+        {
+          "t": 8,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 274.7,
+          "phase": "RESULT"
+        }
+      ],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": 8,
+      "answerFirstVisibleAfterRevealPhaseMs": 0,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_BROWSER_QA.json",
+      "index": 2,
+      "sequence": "ANSWER_REVEAL",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": true,
+      "frameCount": 29,
+      "recordingMs": 1383.2,
+      "averageSampleFps": 20.24,
+      "medianSampleFps": 20.04,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 133.3,
+      "longestFrameGapMs": 166.6,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 5,
+      "medianRotatingCardSampleFps": 20.04,
+      "p95RotatingCardFrameGapMs": 66.7,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 113,
+        "y": 515
+      },
+      "end": {
+        "x": 113,
+        "y": 515
+      },
+      "xRange": [
+        113,
+        113
+      ],
+      "yRange": [
+        515,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 2,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 285.3,
+          "phase": "ANSWER_REVEALED"
+        }
+      ],
+      "flipFirst3dMs": 535.3,
+      "cardRotationDegreesRange": [
+        -90,
+        38.94
+      ],
+      "answerFirstVisibleMs": 602,
+      "answerFirstVisibleAfterRevealPhaseMs": 316.7,
+      "cardAngleAtFirstAnswerDegrees": -90
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_BROWSER_QA.json",
+      "index": 3,
+      "sequence": "CORRECT",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": true,
+      "frameCount": 36,
+      "recordingMs": 1683.2,
+      "averageSampleFps": 20.79,
+      "medianSampleFps": 20,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 100,
+      "longestFrameGapMs": 200,
+      "movingIntervalCount": 10,
+      "medianMovingSampleFps": 20,
+      "p95MovingFrameGapMs": 50,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1124.6,
+      "firstTravelAfterConfirmedPhaseMs": 666.7,
+      "distinctTravelPoints": 10,
+      "finalArrivalAtRecordingMs": 1491.2,
+      "start": {
+        "x": 113,
+        "y": 515
+      },
+      "end": {
+        "x": 321.49,
+        "y": 453.56
+      },
+      "xRange": [
+        113,
+        321.49
+      ],
+      "yRange": [
+        431.57,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 8,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 457.9,
+          "phase": "MOVING"
+        }
+      ],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": 8,
+      "answerFirstVisibleAfterRevealPhaseMs": 0,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_BROWSER_QA.json",
+      "index": 4,
+      "sequence": "ANSWER_REVEAL",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": true,
+      "frameCount": 26,
+      "recordingMs": 1333.19,
+      "averageSampleFps": 18.75,
+      "medianSampleFps": 20,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 116.7,
+      "longestFrameGapMs": 166.7,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 4,
+      "medianRotatingCardSampleFps": 29.94,
+      "p95RotatingCardFrameGapMs": 50.1,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 95,
+        "y": 515
+      },
+      "end": {
+        "x": 95,
+        "y": 515
+      },
+      "xRange": [
+        95,
+        95
+      ],
+      "yRange": [
+        515,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": -6.49,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 360.1,
+          "phase": "ANSWER_REVEALED"
+        }
+      ],
+      "flipFirst3dMs": 676.7,
+      "cardRotationDegreesRange": [
+        -90,
+        52.38
+      ],
+      "answerFirstVisibleMs": 726.8,
+      "answerFirstVisibleAfterRevealPhaseMs": 366.7,
+      "cardAngleAtFirstAnswerDegrees": -90
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_BROWSER_QA.json",
+      "index": 5,
+      "sequence": "CORRECT",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": true,
+      "frameCount": 32,
+      "recordingMs": 1566.7,
+      "averageSampleFps": 19.79,
+      "medianSampleFps": 20.04,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 100.1,
+      "longestFrameGapMs": 266.8,
+      "movingIntervalCount": 10,
+      "medianMovingSampleFps": 29.94,
+      "p95MovingFrameGapMs": 83.4,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1159.7,
+      "firstTravelAfterConfirmedPhaseMs": 833.4,
+      "distinctTravelPoints": 10,
+      "finalArrivalAtRecordingMs": 1559.7,
+      "start": {
+        "x": 95,
+        "y": 515
+      },
+      "end": {
+        "x": 303.49,
+        "y": 453.56
+      },
+      "xRange": [
+        95,
+        303.49
+      ],
+      "yRange": [
+        440.69,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 43,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 326.3,
+          "phase": "MOVING"
+        }
+      ],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": 43,
+      "answerFirstVisibleAfterRevealPhaseMs": 0,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_BROWSER_QA.json",
+      "index": 6,
+      "sequence": "ANSWER_REVEAL",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": true,
+      "frameCount": 29,
+      "recordingMs": 1416.64,
+      "averageSampleFps": 19.77,
+      "medianSampleFps": 20.04,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 133.3,
+      "longestFrameGapMs": 183.3,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 5,
+      "medianRotatingCardSampleFps": 20,
+      "p95RotatingCardFrameGapMs": 50.1,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 339.49,
+        "y": 453.56
+      },
+      "end": {
+        "x": 339.49,
+        "y": 453.56
+      },
+      "xRange": [
+        339.49,
+        339.49
+      ],
+      "yRange": [
+        453.56,
+        453.56
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 9.56,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 326.2,
+          "phase": "ANSWER_REVEALED"
+        }
+      ],
+      "flipFirst3dMs": 592.8,
+      "cardRotationDegreesRange": [
+        -90,
+        39.03
+      ],
+      "answerFirstVisibleMs": 692.8,
+      "answerFirstVisibleAfterRevealPhaseMs": 366.6,
+      "cardAngleAtFirstAnswerDegrees": -90
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_BROWSER_QA.json",
+      "index": 7,
+      "sequence": "PLUS_ONE",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": true,
+      "frameCount": 53,
+      "recordingMs": 2516.53,
+      "averageSampleFps": 20.66,
+      "medianSampleFps": 20,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 83.4,
+      "longestFrameGapMs": 266.6,
+      "movingIntervalCount": 20,
+      "medianMovingSampleFps": 20,
+      "p95MovingFrameGapMs": 50.1,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 1044.5,
+      "firstTravelAfterConfirmedPhaseMs": 799.9,
+      "distinctTravelPoints": 20,
+      "finalArrivalAtRecordingMs": 2294.5,
+      "start": {
+        "x": 339.49,
+        "y": 453.56
+      },
+      "end": {
+        "x": 803.32,
+        "y": 335.12
+      },
+      "xRange": [
+        339.49,
+        803.32
+      ],
+      "yRange": [
+        322.34,
+        453.56
+      ],
+      "intermediatePlateaus": [
+        {
+          "startMs": 1411.2,
+          "endMs": 1827.9,
+          "durationMs": 416.7,
+          "x": 561.45,
+          "y": 394.52,
+          "intermediate": true
+        }
+      ],
+      "plusBadgeAfterFirstIntermediateArrivalMs": 283.3,
+      "plusBadgeFirstVisibleMs": 1694.5,
+      "plusBadgeLastVisibleMs": 2211.1,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": -5.43,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 244.6,
+          "phase": "MOVING"
+        }
+      ],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": -5.43,
+      "answerFirstVisibleAfterRevealPhaseMs": 0,
+      "cardAngleAtFirstAnswerDegrees": null
+    }
+  ],
+  "noVideoSequences": [
+    {
+      "source": "acceptance/art-redesign/MOTION_NO_VIDEO_FRAMES.json",
+      "index": 0,
+      "sequence": "ANSWER_REVEAL",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "nativeRafTimestamps": true,
+      "frameCount": 51,
+      "recordingMs": 1300,
+      "averageSampleFps": 38.46,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 100,
+      "longestFrameGapMs": 183.3,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 10,
+      "medianRotatingCardSampleFps": 59.88,
+      "p95RotatingCardFrameGapMs": 66.6,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 77,
+        "y": 515
+      },
+      "end": {
+        "x": 77,
+        "y": 515
+      },
+      "xRange": [
+        77,
+        77
+      ],
+      "yRange": [
+        515,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 5,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 221.8,
+          "phase": "ANSWER_REVEALED"
+        }
+      ],
+      "flipFirst3dMs": 455.1,
+      "cardRotationDegreesRange": [
+        -90,
+        52.42
+      ],
+      "answerFirstVisibleMs": 555.1,
+      "answerFirstVisibleAfterRevealPhaseMs": 333.3,
+      "cardAngleAtFirstAnswerDegrees": -90
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_NO_VIDEO_FRAMES.json",
+      "index": 1,
+      "sequence": "INCORRECT",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "nativeRafTimestamps": true,
+      "frameCount": 54,
+      "recordingMs": 1350,
+      "averageSampleFps": 39.26,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 83.3,
+      "longestFrameGapMs": 200,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 77,
+        "y": 515
+      },
+      "end": {
+        "x": 77,
+        "y": 515
+      },
+      "xRange": [
+        77,
+        77
+      ],
+      "yRange": [
+        515,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": 675.1,
+      "drinkLastVisibleMs": 975,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": 450.1,
+      "errorFirstVisibleMs": 491.7,
+      "errorLastVisibleMs": 975,
+      "phaseTransitions": [
+        {
+          "t": 8.3,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 225,
+          "phase": "RESULT"
+        }
+      ],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": 8.3,
+      "answerFirstVisibleAfterRevealPhaseMs": 0,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_NO_VIDEO_FRAMES.json",
+      "index": 2,
+      "sequence": "ANSWER_REVEAL",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "nativeRafTimestamps": true,
+      "frameCount": 43,
+      "recordingMs": 1216.6,
+      "averageSampleFps": 34.52,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 100,
+      "longestFrameGapMs": 183.4,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 9,
+      "medianRotatingCardSampleFps": 59.88,
+      "p95RotatingCardFrameGapMs": 83.4,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 113,
+        "y": 515
+      },
+      "end": {
+        "x": 113,
+        "y": 515
+      },
+      "xRange": [
+        113,
+        113
+      ],
+      "yRange": [
+        515,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 9,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 258.9,
+          "phase": "ANSWER_REVEALED"
+        }
+      ],
+      "flipFirst3dMs": 475.6,
+      "cardRotationDegreesRange": [
+        -90,
+        67.12
+      ],
+      "answerFirstVisibleMs": 592.3,
+      "answerFirstVisibleAfterRevealPhaseMs": 333.4,
+      "cardAngleAtFirstAnswerDegrees": -90
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_NO_VIDEO_FRAMES.json",
+      "index": 3,
+      "sequence": "CORRECT",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "nativeRafTimestamps": true,
+      "frameCount": 62,
+      "recordingMs": 1466.6,
+      "averageSampleFps": 41.59,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 83.4,
+      "longestFrameGapMs": 183.3,
+      "movingIntervalCount": 25,
+      "medianMovingSampleFps": 59.88,
+      "p95MovingFrameGapMs": 16.7,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 854.1,
+      "firstTravelAfterConfirmedPhaseMs": 633.3,
+      "distinctTravelPoints": 24,
+      "finalArrivalAtRecordingMs": 1237.4,
+      "start": {
+        "x": 113,
+        "y": 515
+      },
+      "end": {
+        "x": 321.49,
+        "y": 453.56
+      },
+      "xRange": [
+        113,
+        321.49
+      ],
+      "yRange": [
+        425.09,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 4.2,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 220.8,
+          "phase": "MOVING"
+        }
+      ],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": 4.2,
+      "answerFirstVisibleAfterRevealPhaseMs": 0,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_NO_VIDEO_FRAMES.json",
+      "index": 4,
+      "sequence": "ANSWER_REVEAL",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "nativeRafTimestamps": true,
+      "frameCount": 48,
+      "recordingMs": 1316.63,
+      "averageSampleFps": 35.7,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 100,
+      "longestFrameGapMs": 166.6,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 9,
+      "medianRotatingCardSampleFps": 59.88,
+      "p95RotatingCardFrameGapMs": 116.7,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 95,
+        "y": 515
+      },
+      "end": {
+        "x": 95,
+        "y": 515
+      },
+      "xRange": [
+        95,
+        95
+      ],
+      "yRange": [
+        515,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": -0.63,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 349.4,
+          "phase": "ANSWER_REVEALED"
+        }
+      ],
+      "flipFirst3dMs": 549.3,
+      "cardRotationDegreesRange": [
+        -90,
+        83.22
+      ],
+      "answerFirstVisibleMs": 699.3,
+      "answerFirstVisibleAfterRevealPhaseMs": 349.9,
+      "cardAngleAtFirstAnswerDegrees": -90
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_NO_VIDEO_FRAMES.json",
+      "index": 5,
+      "sequence": "CORRECT",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "nativeRafTimestamps": true,
+      "frameCount": 61,
+      "recordingMs": 1433.3,
+      "averageSampleFps": 41.86,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 83.3,
+      "longestFrameGapMs": 199.9,
+      "movingIntervalCount": 25,
+      "medianMovingSampleFps": 59.88,
+      "p95MovingFrameGapMs": 16.8,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 838.6,
+      "firstTravelAfterConfirmedPhaseMs": 616.7,
+      "distinctTravelPoints": 24,
+      "finalArrivalAtRecordingMs": 1221.9,
+      "start": {
+        "x": 95,
+        "y": 515
+      },
+      "end": {
+        "x": 303.49,
+        "y": 453.56
+      },
+      "xRange": [
+        95,
+        303.49
+      ],
+      "yRange": [
+        425.08,
+        515
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 5.2,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 221.9,
+          "phase": "MOVING"
+        }
+      ],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": 5.2,
+      "answerFirstVisibleAfterRevealPhaseMs": 0,
+      "cardAngleAtFirstAnswerDegrees": null
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_NO_VIDEO_FRAMES.json",
+      "index": 6,
+      "sequence": "ANSWER_REVEAL",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "nativeRafTimestamps": true,
+      "frameCount": 43,
+      "recordingMs": 1216.63,
+      "averageSampleFps": 34.52,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 100.1,
+      "longestFrameGapMs": 183.3,
+      "movingIntervalCount": 0,
+      "medianMovingSampleFps": null,
+      "p95MovingFrameGapMs": null,
+      "rotatingCardIntervalCount": 8,
+      "medianRotatingCardSampleFps": 60.24,
+      "p95RotatingCardFrameGapMs": 100.1,
+      "firstTravelAtRecordingMs": null,
+      "firstTravelAfterConfirmedPhaseMs": null,
+      "distinctTravelPoints": 0,
+      "finalArrivalAtRecordingMs": null,
+      "start": {
+        "x": 339.49,
+        "y": 453.56
+      },
+      "end": {
+        "x": 339.49,
+        "y": 453.56
+      },
+      "xRange": [
+        339.49,
+        339.49
+      ],
+      "yRange": [
+        453.56,
+        453.56
+      ],
+      "intermediatePlateaus": [],
+      "plusBadgeAfterFirstIntermediateArrivalMs": null,
+      "plusBadgeFirstVisibleMs": null,
+      "plusBadgeLastVisibleMs": null,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 6.77,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 240.1,
+          "phase": "ANSWER_REVEALED"
+        }
+      ],
+      "flipFirst3dMs": 456.7,
+      "cardRotationDegreesRange": [
+        -90,
+        67.2
+      ],
+      "answerFirstVisibleMs": 573.4,
+      "answerFirstVisibleAfterRevealPhaseMs": 333.3,
+      "cardAngleAtFirstAnswerDegrees": -90
+    },
+    {
+      "source": "acceptance/art-redesign/MOTION_NO_VIDEO_FRAMES.json",
+      "index": 7,
+      "sequence": "PLUS_ONE",
+      "viewport": [
+        1440,
+        900
+      ],
+      "videoRecording": false,
+      "screenshotRecording": false,
+      "nativeRafTimestamps": true,
+      "frameCount": 124,
+      "recordingMs": 2533.2,
+      "averageSampleFps": 48.56,
+      "medianSampleFps": 59.88,
+      "nonIncreasingSampleTimestamps": 0,
+      "p95FrameGapMs": 16.8,
+      "longestFrameGapMs": 216.6,
+      "movingIntervalCount": 50,
+      "medianMovingSampleFps": 59.88,
+      "p95MovingFrameGapMs": 16.8,
+      "rotatingCardIntervalCount": 0,
+      "medianRotatingCardSampleFps": null,
+      "p95RotatingCardFrameGapMs": null,
+      "firstTravelAtRecordingMs": 861.8,
+      "firstTravelAfterConfirmedPhaseMs": 649.9,
+      "distinctTravelPoints": 49,
+      "finalArrivalAtRecordingMs": 2128.5,
+      "start": {
+        "x": 339.49,
+        "y": 453.56
+      },
+      "end": {
+        "x": 803.32,
+        "y": 335.12
+      },
+      "xRange": [
+        339.49,
+        803.32
+      ],
+      "yRange": [
+        321.02,
+        453.56
+      ],
+      "intermediatePlateaus": [
+        {
+          "startMs": 1228.5,
+          "endMs": 1711.9,
+          "durationMs": 483.4,
+          "x": 561.45,
+          "y": 394.52,
+          "intermediate": true
+        }
+      ],
+      "plusBadgeAfterFirstIntermediateArrivalMs": 233.4,
+      "plusBadgeFirstVisibleMs": 1461.9,
+      "plusBadgeLastVisibleMs": 2128.5,
+      "drinkFirstVisibleMs": null,
+      "drinkLastVisibleMs": null,
+      "drinkFirstVisibleAfterConfirmedPhaseMs": null,
+      "errorFirstVisibleMs": null,
+      "errorLastVisibleMs": null,
+      "phaseTransitions": [
+        {
+          "t": 11.9,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 211.9,
+          "phase": "MOVING"
+        }
+      ],
+      "flipFirst3dMs": null,
+      "cardRotationDegreesRange": null,
+      "answerFirstVisibleMs": 11.9,
+      "answerFirstVisibleAfterRevealPhaseMs": 0,
+      "cardAngleAtFirstAnswerDegrees": null
+    }
+  ],
+  "constant60FpsOnPhysicalDevices": {
+    "status": "PARTIAL",
+    "reason": "The measured environment is Chromium headless on the Linux QA host. No physical phone/tablet/desktop performance measurement was made."
+  },
+  "victoryFirstVisibleAfterFinishedFetchMs": {
+    "crown": 2033,
+    "winner": 3097,
+    "score": 3185,
+    "actions": 3291
+  },
+  "scorePhysicalEntry": {
+    "observedMotion": true,
+    "yRange": [
+      0,
+      0.38
+    ],
+    "rotationDegreesRange": [
+      -0.04,
+      0
+    ],
+    "samples": [
+      {
+        "t": 3185,
+        "opacity": 0.94,
+        "y": 0.38,
+        "rotationDegrees": -0.04
+      },
+      {
+        "t": 3291,
+        "opacity": 0.99,
+        "y": 0.07,
+        "rotationDegrees": -0.01
+      },
+      {
+        "t": 3377,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 3471,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 3634,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 3722,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 3809,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 3896,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 3980,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 4066,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 4151,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      },
+      {
+        "t": 4236,
+        "opacity": 1,
+        "y": 0,
+        "rotationDegrees": 0
+      }
+    ]
+  },
+  "e2eStats": {
+    "status": "PASS",
+    "passed": 8,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 0,
+    "durationMs": 222296.989
+  },
+  "normalRecorderRecheck": {
+    "source": "acceptance/art-redesign/MOTION_RECORDER_RECHECK_REPORT.json",
+    "status": "PASS",
+    "passed": 1,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 0,
+    "completedAt": "2026-10-09T13:29:53.811Z"
+  },
+  "exactRouteRecheck": {
+    "source": "acceptance/art-redesign/MOTION_PATH_RECHECK_REPORT.json",
+    "status": "PASS",
+    "passed": 1,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 0,
+    "completedAt": "2026-10-09T13:33:36.509Z"
+  },
+  "noVideoFocusedCheck": {
+    "source": "acceptance/art-redesign/MOTION_NO_VIDEO_REPORT.json",
+    "status": "PASS",
+    "passed": 1,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 0,
+    "completedAt": "2026-10-09T13:40:25.905Z"
+  },
+  "browserPageErrors": []
+}

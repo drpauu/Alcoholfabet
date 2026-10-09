@@ -1,0 +1,2734 @@
+{
+  "gameId": "44419b23-64af-46fc-9e23-872d90182e79",
+  "evidence": [
+    {
+      "type": "ANSWER_REVEAL",
+      "revealedAt": 679.8999999994412,
+      "frames": [
+        {
+          "t": 1.099999999627471,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 17.399999999441206,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 34,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 79.29999999981374,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 81.3999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 84,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 139,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 167.5,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 197.8999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 240.70000000018626,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 283.8999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 284.70000000018626,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 319.59999999962747,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 334,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 350.79999999981374,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 367.3999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 384,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 400.79999999981374,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 419.3999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 487.3999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 489.3999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 527.7999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 564.2000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "matrix3d(0.989966, 0, -0.141304, 0, 0, 1, 0, 0, 0.141304, 0, 0.989966, 0, 0, 0, 0, 1)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 597.8999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "matrix3d(0.891253, 0, -0.453507, 0, 0, 1, 0, 0, 0.453507, 0, 0.891253, 0, 0, 0, 0, 1)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 679.8999999994412,
+          "x": 77,
+          "y": 515,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 684,
+          "x": 77,
+          "y": 515,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 721.7999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 747.7999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "matrix3d(0.921474, 0, 0.38844, 0, 0, 1, 0, 0, -0.38844, 0, 0.921474, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 811.7000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "matrix3d(0.99997, 0, 0.00771929, 0, 0, 1, 0, 0, -0.00771929, 0, 0.99997, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 866.0999999996275,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 918.5,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 951.7000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 983.7999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 984.7999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1000.5999999996275,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1017.2000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1034,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1051.2999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        }
+      ]
+    },
+    {
+      "type": "INCORRECT",
+      "summary": {
+        "count": 30,
+        "travelPoints": 0
+      },
+      "frames": [
+        {
+          "t": 0.6000000005587935,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 16.5,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 33.40000000037253,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 87.1000000005588,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 88.40000000037253,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 123.79999999981374,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 133.1000000005588,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 151.1000000005588,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 167.6000000005588,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 250.1000000005588,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 255.90000000037253,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 298.6000000005588,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 339.40000000037253,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 386.90000000037253,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 443.6000000005588,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 495.70000000018626,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 543.2000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 594.2000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 628.5,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 666.2000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 667.7999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 703.2000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 732.9000000003725,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 765.9000000003725,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 767.1000000005588,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 783.2999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 799.7999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 841.2000000001863,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 845.2999999998137,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        },
+        {
+          "t": 850,
+          "x": 77,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "RESULT"
+        }
+      ]
+    },
+    {
+      "type": "ANSWER_REVEAL",
+      "revealedAt": 446.5,
+      "frames": [
+        {
+          "t": 10.200000000186265,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 26.59999999962747,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 43.39999999944121,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 88.20000000018626,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 89.8999999994412,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 94.29999999981374,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 132.3999999994412,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 159.8999999994412,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 161,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 267.20000000018626,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 310.09999999962747,
+          "x": 113,
+          "y": 515,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 339.20000000018626,
+          "x": 113,
+          "y": 515,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 375,
+          "x": 113,
+          "y": 515,
+          "card": "matrix3d(0.989904, 0, -0.14174, 0, 0, 1, 0, 0, 0.14174, 0, 0.989904, 0, 0, 0, 0, 1)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 446.5,
+          "x": 113,
+          "y": 515,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 461.70000000018626,
+          "x": 113,
+          "y": 515,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 487.8999999994412,
+          "x": 113,
+          "y": 515,
+          "card": "matrix3d(0.920903, 0, 0.389793, 0, 0, 1, 0, 0, -0.389793, 0, 0.920903, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 531.2000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "matrix3d(0.999644, 0, 0.026691, 0, 0, 1, 0, 0, -0.026691, 0, 0.999644, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 575.5,
+          "x": 113,
+          "y": 515,
+          "card": "matrix3d(0.999999, 0, 0.00127399, 0, 0, 1, 0, 0, -0.00127399, 0, 0.999999, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 610.2000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 662.7999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 680.5999999996275,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 714.2999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 727.7000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 743.5999999996275,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 760.2999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 776.8999999994412,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 793.3999999994412,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 810.2000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 826.7999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 843.5,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 860.2999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 876.7999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 894.2000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 910.2000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 927.5,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 943.5999999996275,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 960,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 976.7999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 993.5,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1010.2000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1026.7000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1043.5999999996275,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1060.2999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1077,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1093.7999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1109.8999999994412,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        }
+      ]
+    },
+    {
+      "type": "CORRECT",
+      "summary": {
+        "count": 38,
+        "firstMotionMs": 1118.9000000003725,
+        "travelPoints": 9
+      },
+      "frames": [
+        {
+          "t": 9.700000000186265,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 26.700000000186265,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 43.299999999813735,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 85.70000000018626,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 87.40000000037253,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 138.1000000005588,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 169.1000000005588,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 261.40000000037253,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 311.5,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 341.40000000037253,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 349.90000000037253,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 442.29999999981374,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 493.40000000037253,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 542,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 579.2000000001863,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1032.7999999998137,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1038.9000000003725,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1045.9000000003725,
+          "x": 113,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1118.9000000003725,
+          "x": 117.721,
+          "y": 508.536,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1161.6000000005588,
+          "x": 139.032,
+          "y": 479.514,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1217.6000000005588,
+          "x": 194.988,
+          "y": 426.956,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1279.7000000001863,
+          "x": 267.714,
+          "y": 447.251,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1325.2999999998137,
+          "x": 287.344,
+          "y": 454.488,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1371.5,
+          "x": 305.972,
+          "y": 456.231,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1425.1000000005588,
+          "x": 316.787,
+          "y": 454.465,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1472.7000000001863,
+          "x": 321.144,
+          "y": 453.623,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1527.7999999998137,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1569.7000000001863,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1580.2999999998137,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1623.6000000005588,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1653.2000000001863,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1659.7000000001863,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1676.5,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1700.9000000003725,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1709.7000000001863,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1727.4000000003725,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1743.2000000001863,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1760.5,
+          "x": 321.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        }
+      ]
+    },
+    {
+      "type": "ANSWER_REVEAL",
+      "revealedAt": 429.5,
+      "frames": [
+        {
+          "t": 12.600000000558794,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 27.200000000186265,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 43.90000000037253,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 84.79999999981374,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 86.29999999981374,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 129.70000000018626,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 166.5,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 255.20000000018626,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 261,
+          "x": 95,
+          "y": 515,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 305.70000000018626,
+          "x": 95,
+          "y": 515,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 333.79999999981374,
+          "x": 95,
+          "y": 515,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 367.90000000037253,
+          "x": 95,
+          "y": 515,
+          "card": "matrix3d(0.989867, 0, -0.141995, 0, 0, 1, 0, 0, 0.141995, 0, 0.989867, 0, 0, 0, 0, 1)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 429.5,
+          "x": 95,
+          "y": 515,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 448.40000000037253,
+          "x": 95,
+          "y": 515,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 485.29999999981374,
+          "x": 95,
+          "y": 515,
+          "card": "matrix3d(0.921152, 0, 0.389202, 0, 0, 1, 0, 0, -0.389202, 0, 0.921152, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 526.1000000005588,
+          "x": 95,
+          "y": 515,
+          "card": "matrix3d(0.997336, 0, 0.0729465, 0, 0, 1, 0, 0, -0.0729465, 0, 0.997336, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 566.2999999998137,
+          "x": 95,
+          "y": 515,
+          "card": "matrix3d(0.999999, 0, 0.00128569, 0, 0, 1, 0, 0, -0.00128569, 0, 0.999999, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 603.2000000001863,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 654.4000000003725,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 656.9000000003725,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 693.6000000005588,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 726,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 728.4000000003725,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 743.7000000001863,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 760.5,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 777,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 793.7000000001863,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 810.2999999998137,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 827.1000000005588,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 843.7000000001863,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 860.4000000003725,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 877.1000000005588,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 893.7000000001863,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 910.4000000003725,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 927.1000000005588,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 943.7000000001863,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 960.2000000001863,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 977.1000000005588,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 993.7000000001863,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1010.2999999998137,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1027.1000000005588,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1043.9000000003725,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1060.2999999998137,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        }
+      ]
+    },
+    {
+      "type": "CORRECT",
+      "summary": {
+        "count": 45,
+        "firstMotionMs": 1097,
+        "travelPoints": 11
+      },
+      "frames": [
+        {
+          "t": 5.2000000001862645,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 21.700000000186265,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 38.40000000037253,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 81.20000000018626,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 82.79999999981374,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 129,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 240.29999999981374,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 293,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 318.59999999962747,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 361.59999999962747,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 413.70000000018626,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 472,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 478.90000000037253,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 530.7999999998137,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 583.2999999998137,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1032.4000000003725,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1037.2999999998137,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1038.5999999996275,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1055,
+          "x": 95,
+          "y": 515,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1097,
+          "x": 96.9168,
+          "y": 512.376,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1134.7000000001863,
+          "x": 104.288,
+          "y": 502.288,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1188.9000000003725,
+          "x": 134.652,
+          "y": 461.244,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1193.7000000001863,
+          "x": 152.98,
+          "y": 440.725,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1244.2999999998137,
+          "x": 222.115,
+          "y": 431.063,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1291,
+          "x": 260.344,
+          "y": 451.856,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1331.7999999998137,
+          "x": 276.864,
+          "y": 455.974,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1378.7000000001863,
+          "x": 292.36,
+          "y": 455.708,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1420.2000000001863,
+          "x": 298.792,
+          "y": 454.464,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1462.7000000001863,
+          "x": 303.145,
+          "y": 453.623,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1512.2999999998137,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1573.4000000003725,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1614.7000000001863,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1647.2999999998137,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1675.0999999996275,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1688.2000000001863,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1705.0999999996275,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1721.5999999996275,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1738.4000000003725,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1755,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1771.7000000001863,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1788.2000000001863,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1805,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1821.9000000003725,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1838.2999999998137,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        },
+        {
+          "t": 1854.7999999998137,
+          "x": 303.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "MOVING"
+        }
+      ]
+    },
+    {
+      "type": "ANSWER_REVEAL",
+      "revealedAt": 443.5,
+      "frames": [
+        {
+          "t": 12.599999999627471,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 27.200000000186265,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 44,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 86,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 87.59999999962747,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 96.20000000018626,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 134.29999999981374,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "QUESTION"
+        },
+        {
+          "t": 259.70000000018626,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 311.40000000037253,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 329.29999999981374,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "matrix(1, 0, 0, 1, 0, 0)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 373.20000000018626,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "matrix3d(0.989975, 0, -0.141244, 0, 0, 1, 0, 0, 0.141244, 0, 0.989975, 0, 0, 0, 0, 1)",
+          "answer": false,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 443.5,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 484.20000000018626,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 523.2999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "matrix3d(0.920917, 0, 0.389758, 0, 0, 1, 0, 0, -0.389758, 0, 0.920917, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 563.7999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "matrix3d(0.997326, 0, 0.0730768, 0, 0, 1, 0, 0, -0.0730768, 0, 0.997326, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 606.7999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "matrix3d(0.999999, 0, 0.00127363, 0, 0, 1, 0, 0, -0.00127363, 0, 0.999999, 0, 0, 0, 0, 1)",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 644.2999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 699.4000000003725,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 724.5999999996275,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 765.7000000001863,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 799.5999999996275,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 810.7000000001863,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 827.2000000001863,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 844.2999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 860.5,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 877.2999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 893.9000000003725,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 910.9000000003725,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 927.2999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 944.7000000001863,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 960.7000000001863,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 977.7999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 994.0999999996275,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1010.7999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1027.2999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1043.9000000003725,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1060.5,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1077.2999999998137,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        },
+        {
+          "t": 1093.9000000003725,
+          "x": 339.488,
+          "y": 453.556,
+          "card": "none",
+          "answer": true,
+          "phase": "ANSWER_REVEALED"
+        }
+      ]
+    }
+  ],
+  "current": {
+    "type": "CORRECT",
+    "respondent": "TECLA",
+    "summary": {
+      "count": 54,
+      "firstMotionMs": 1229.300000000745,
+      "travelPoints": 10
+    },
+    "frames": [
+      {
+        "t": 3,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": true,
+        "phase": "ANSWER_REVEALED"
+      },
+      {
+        "t": 19.800000000745058,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": true,
+        "phase": "ANSWER_REVEALED"
+      },
+      {
+        "t": 37,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": true,
+        "phase": "ANSWER_REVEALED"
+      },
+      {
+        "t": 79,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": true,
+        "phase": "ANSWER_REVEALED"
+      },
+      {
+        "t": 80.6000000005588,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": true,
+        "phase": "ANSWER_REVEALED"
+      },
+      {
+        "t": 121,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": true,
+        "phase": "ANSWER_REVEALED"
+      },
+      {
+        "t": 122.1000000005588,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": true,
+        "phase": "ANSWER_REVEALED"
+      },
+      {
+        "t": 156.30000000074506,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": true,
+        "phase": "ANSWER_REVEALED"
+      },
+      {
+        "t": 243.5,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 288.6000000005588,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 301.1000000005588,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 321.80000000074506,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 356.80000000074506,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 393.20000000018626,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 432.5,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 478.40000000037253,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 526.5,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 576.2000000001863,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1113,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1117.5,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1120.5,
+        "x": 339.488,
+        "y": 453.556,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1183.6000000005588,
+        "x": 341.795,
+        "y": 452.214,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1229.300000000745,
+        "x": 360.118,
+        "y": 439.883,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1286.300000000745,
+        "x": 408.864,
+        "y": 392.394,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1288.4000000003725,
+        "x": 434.539,
+        "y": 379.815,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1343,
+        "x": 497.907,
+        "y": 389.688,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1391.6000000005588,
+        "x": 532.487,
+        "y": 398.539,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1428.7000000001863,
+        "x": 546.431,
+        "y": 397.799,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1477.9000000003725,
+        "x": 557.054,
+        "y": 395.708,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1908.800000000745,
+        "x": 561.733,
+        "y": 394.429,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1913.2000000001863,
+        "x": 802.359,
+        "y": 335.362,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1951.2000000001863,
+        "x": 803.318,
+        "y": 335.11,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 1990.5,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2045,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2087.7000000001863,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2123.100000000559,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2137.2000000001863,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2153.4000000003725,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2170.5,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2186.300000000745,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2203.800000000745,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2220,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2236.600000000559,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2253,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2270.100000000559,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2286.4000000003725,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2303.4000000003725,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2319.800000000745,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2336.9000000003725,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2353.4000000003725,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2370.4000000003725,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2386.7000000001863,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2403.4000000003725,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      },
+      {
+        "t": 2422,
+        "x": 803.325,
+        "y": 335.108,
+        "card": "none",
+        "answer": false,
+        "phase": "MOVING"
+      }
+    ]
+  },
+  "errors": []
+}

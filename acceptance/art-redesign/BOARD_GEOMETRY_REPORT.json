@@ -1,0 +1,63 @@
+{
+  "provenance": "Native Chromium SVG geometry in a local component harness; no game state or backend mutation",
+  "viewBox": "0 0 1210 625",
+  "cases": [
+    {
+      "finishPosition": 5,
+      "positionsChecked": 6,
+      "maximumDomError": 0,
+      "maximumExportError": 0,
+      "segmentEndpointError": 0,
+      "maximumPawnOffsetError": 0
+    },
+    {
+      "finishPosition": 6,
+      "positionsChecked": 7,
+      "maximumDomError": 0,
+      "maximumExportError": 0,
+      "segmentEndpointError": 0,
+      "maximumPawnOffsetError": 0
+    },
+    {
+      "finishPosition": 7,
+      "positionsChecked": 8,
+      "maximumDomError": 0,
+      "maximumExportError": 0,
+      "segmentEndpointError": 0,
+      "maximumPawnOffsetError": 0
+    },
+    {
+      "finishPosition": 9,
+      "positionsChecked": 10,
+      "maximumDomError": 0,
+      "maximumExportError": 0,
+      "segmentEndpointError": 0,
+      "maximumPawnOffsetError": 0
+    },
+    {
+      "finishPosition": 12,
+      "positionsChecked": 13,
+      "maximumDomError": 0,
+      "maximumExportError": 0,
+      "segmentEndpointError": 0,
+      "maximumPawnOffsetError": 0
+    },
+    {
+      "finishPosition": 15,
+      "positionsChecked": 16,
+      "maximumDomError": 0,
+      "maximumExportError": 0,
+      "segmentEndpointError": 0,
+      "maximumPawnOffsetError": 0
+    },
+    {
+      "finishPosition": 16,
+      "positionsChecked": 17,
+      "maximumDomError": 0,
+      "maximumExportError": 0,
+      "segmentEndpointError": 0,
+      "maximumPawnOffsetError": 0
+    }
+  ],
+  "passed": true
+}

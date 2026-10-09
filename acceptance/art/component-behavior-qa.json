@@ -1,0 +1,25 @@
+{
+  "strict": {
+    "open": true,
+    "closeRequests": 0,
+    "active": "Tancar"
+  },
+  "escape": 1,
+  "focus": {
+    "closeRequests": 2,
+    "active": "opener"
+  },
+  "loading": {
+    "width": 342,
+    "busy": "true",
+    "disabled": true,
+    "motion": "copyContract"
+  },
+  "disabled": {
+    "disabled": true,
+    "opacity": "1",
+    "color": "rgb(129, 120, 103)"
+  },
+  "loader": "none",
+  "pageErrors": []
+}

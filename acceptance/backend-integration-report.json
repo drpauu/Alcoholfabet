@@ -1,0 +1,67 @@
+{
+  "projectRef": "lhgyopkwstuyxolwfucq",
+  "authFixture": "real-anonymous-sessions",
+  "checks": [
+    {
+      "name": "private-access-edge-and-unauthorized-device",
+      "status": "PASS"
+    },
+    {
+      "name": "create-idempotency-is-bound-to-actor-and-intent",
+      "status": "PASS"
+    },
+    {
+      "name": "duration-persisted-board-and-plus-one-constraints",
+      "status": "PASS"
+    },
+    {
+      "name": "rls-direct-mutation-question-and-internal-helper-denial",
+      "status": "PASS"
+    },
+    {
+      "name": "online-answer-omitted-and-judge-permissions",
+      "status": "PASS"
+    },
+    {
+      "name": "correct-action-idempotency-stale-version-and-reload",
+      "status": "PASS"
+    },
+    {
+      "name": "plus-one-movement-and-double-drink-on-error",
+      "status": "PASS"
+    },
+    {
+      "name": "tp-simultaneous-claim-single-winner-safe-answer-and-original-turn",
+      "status": "PASS"
+    },
+    {
+      "name": "formal-meta-exactly-one-match-result-and-score",
+      "status": "PASS"
+    },
+    {
+      "name": "in-person-reveal-judge-and-abandoned-game-does-not-score",
+      "status": "PASS"
+    },
+    {
+      "name": "tp-bonus-moves-claimant-from-own-position-and-can-finish-at-meta",
+      "status": "PASS"
+    }
+  ],
+  "gameIds": [
+    "56d6c8f1-fe8a-4911-9180-4b70903d3fa2",
+    "bcb6739c-1c79-46e9-a17e-4ddd4eee7e19",
+    "17d0ec4d-60af-465b-a49a-bf1523e7761a",
+    "5a67d68d-86f6-4219-a12c-92ad56601cac",
+    "4e578539-8689-4ea9-b369-01dc4a2686b4",
+    "91397674-7582-468a-a089-ea735245ce42",
+    "b250f4fe-9f7c-49e8-8137-25fa0ce89216",
+    "02fbe376-4187-4e44-95c2-85dc8c1eef77",
+    "7bf57d87-78b0-4439-b3ee-980f85dd6803",
+    "ba826c98-8522-4f85-96d9-42c3b04d3861",
+    "db72f5b1-f3d8-4b61-8b3c-e95ae94667ef",
+    "155db377-f673-42fe-9783-2a619180d643",
+    "246cef03-cd1f-4693-a430-dea87f8379c7"
+  ],
+  "passed": 11,
+  "fixturesCleaned": true
+}

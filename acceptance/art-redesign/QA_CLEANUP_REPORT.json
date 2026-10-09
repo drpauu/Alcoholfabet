@@ -1,0 +1,79 @@
+{
+  "scope": "art-redesign",
+  "status": "COMPLETE",
+  "noSecrets": true,
+  "projectRef": "lhgyopkwstuyxolwfucq",
+  "scoreboard": {
+    "pauWins": 1,
+    "teclaWins": 1,
+    "completedGames": 2
+  },
+  "completedAt": "2026-10-09T13:44:37.699903+00:00",
+  "deletedGames": 22,
+  "deletedUsers": 17,
+  "questionCount": 130,
+  "requestedGames": 22,
+  "requestedUsers": 17,
+  "couplePreserved": true,
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "questionsPreserved": true,
+  "accessHashPreserved": true,
+  "deletedMatchResults": 8,
+  "preservedOtherGames": 10,
+  "preservedOtherUsers": 6,
+  "unlistedRowsUnchanged": true,
+  "preservedOtherMatchResults": 2,
+  "remainingQaAuthorizedDevices": 0,
+  "sqlVerification": {
+    "scoreboard": {
+      "pauWins": 1,
+      "teclaWins": 1,
+      "completedGames": 2
+    },
+    "questionCount": 130,
+    "qaGamesRemaining": 0,
+    "qaUsersRemaining": 0,
+    "qaSessionsRemaining": 0,
+    "qaIdentitiesRemaining": 0,
+    "rowSecurityAllExposed": true,
+    "qaMembershipsRemaining": 0,
+    "qaMatchResultsRemaining": 0,
+    "anonymousGameViewExecute": false,
+    "authenticatedGameViewExecute": true,
+    "qaAuthorizedDevicesRemaining": 0
+  },
+  "manifestScopeOnly": true,
+  "preservedUnlistedNewRecords": true,
+  "historicalScoreboardSnapshot": {
+    "pauWins": 0,
+    "teclaWins": 1,
+    "completedGames": 1
+  },
+  "scoreboardPolicy": "The initial snapshot is historical. Cleanup removes only listed QA results and preserves all legitimate unlisted matches; no scoreboard reset.",
+  "localProtectedQaFiles": {
+    "removed": [
+      "/tmp/tecla-pau-art-baseline-storage.json",
+      "/tmp/tecla-pau-art-final-storage.json",
+      "/tmp/tecla-pau-art-abandon-verified-storage.json"
+    ],
+    "temporaryRawReportsAlreadyAbsent": [
+      "/tmp/tecla-pau-art-e2e-raw.json",
+      "/tmp/tecla-pau-art-motion-recheck-raw.json",
+      "/tmp/tecla-pau-art-motion-path-recheck-raw.json",
+      "/tmp/tecla-pau-art-motion-no-video-raw.json"
+    ],
+    "preservedFiles": [
+      {
+        "path": ".env.local",
+        "mode": "600"
+      },
+      {
+        "path": "/home/pau/.config/tecla-pau/access-code.txt",
+        "mode": "600"
+      }
+    ],
+    "secretValuesNotRead": true
+  },
+  "noNewQaAllowedAfterCleanup": true
+}

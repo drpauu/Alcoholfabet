@@ -1,0 +1,693 @@
+{
+  "scope": "art-redesign",
+  "userIds": [
+    "a0d6714b-e25f-4309-9f65-37606835ca99",
+    "71e8adb1-4784-45f6-b7a4-facc7c4b6fd9",
+    "fd89b2a2-a583-42e5-b65d-9542d96c9e4a",
+    "98b47228-b1c7-4766-837d-e01c18409dbd",
+    "011d5426-155e-4bc4-8b42-86f126405d85",
+    "5079269b-210c-4835-b1bb-036ea4e2b9fb"
+  ],
+  "gameIds": [
+    "9d7a4277-06a2-4848-aec2-3e18930ebdd9",
+    "96b4d98d-da0a-419d-aae4-8379f86ce727",
+    "d8db7fa2-ccb8-417f-9f2d-da74f2ea9cb9",
+    "f579a949-2ed8-451c-a10c-7d4747f8e3df",
+    "5c2b4d78-aa6e-4d53-aab3-8376a43ac0ec",
+    "6240c19b-b161-42c5-b7cd-cfbc667b2b1f",
+    "6a844947-e45a-42f6-87bc-a5a3a8eb4932",
+    "2ad751d4-5421-40fb-b4fe-a54376ebe366",
+    "5830370c-781f-40a1-a60f-adb27c56ddb0",
+    "db5029b7-8913-4b39-886e-7a02da906c4d",
+    "9cdcd317-802b-4d37-84de-909cc66f170c",
+    "8dfff372-38ce-4e3e-a3c8-7f4ffb4ad9fe",
+    "4bfc3f80-5e17-4bc1-9dff-979a3806c494"
+  ],
+  "users": [
+    {
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "explicit-root-baseline"
+    },
+    {
+      "userId": "71e8adb1-4784-45f6-b7a4-facc7c4b6fd9",
+      "source": "anonymous-art-qa"
+    },
+    {
+      "userId": "fd89b2a2-a583-42e5-b65d-9542d96c9e4a",
+      "source": "anonymous-art-qa"
+    },
+    {
+      "userId": "98b47228-b1c7-4766-837d-e01c18409dbd",
+      "source": "anonymous-art-qa"
+    },
+    {
+      "userId": "011d5426-155e-4bc4-8b42-86f126405d85",
+      "source": "anonymous-art-qa"
+    },
+    {
+      "userId": "5079269b-210c-4835-b1bb-036ea4e2b9fb",
+      "source": "anonymous-art-qa"
+    }
+  ],
+  "games": [
+    {
+      "gameId": "9d7a4277-06a2-4848-aec2-3e18930ebdd9",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "explicit-root-baseline",
+      "status": "ACTIVE"
+    },
+    {
+      "gameId": "96b4d98d-da0a-419d-aae4-8379f86ce727",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "FINISHED"
+    },
+    {
+      "gameId": "d8db7fa2-ccb8-417f-9f2d-da74f2ea9cb9",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "FINISHED"
+    },
+    {
+      "gameId": "f579a949-2ed8-451c-a10c-7d4747f8e3df",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "FINISHED"
+    },
+    {
+      "gameId": "5c2b4d78-aa6e-4d53-aab3-8376a43ac0ec",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "FINISHED"
+    },
+    {
+      "gameId": "6240c19b-b161-42c5-b7cd-cfbc667b2b1f",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "FINISHED"
+    },
+    {
+      "gameId": "6a844947-e45a-42f6-87bc-a5a3a8eb4932",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "ABANDONED"
+    },
+    {
+      "gameId": "2ad751d4-5421-40fb-b4fe-a54376ebe366",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "ABANDONED"
+    },
+    {
+      "gameId": "5830370c-781f-40a1-a60f-adb27c56ddb0",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "ABANDONED"
+    },
+    {
+      "gameId": "db5029b7-8913-4b39-886e-7a02da906c4d",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "ABANDONED"
+    },
+    {
+      "gameId": "9cdcd317-802b-4d37-84de-909cc66f170c",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "ABANDONED"
+    },
+    {
+      "gameId": "8dfff372-38ce-4e3e-a3c8-7f4ffb4ad9fe",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "ABANDONED"
+    },
+    {
+      "gameId": "4bfc3f80-5e17-4bc1-9dff-979a3806c494",
+      "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "source": "art-create-rpc",
+      "status": "ABANDONED"
+    }
+  ],
+  "captures": [
+    {
+      "scenario": "vertical-system-smoke",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/vertical-system-smoke-390x844.png"
+    },
+    {
+      "scenario": "vertical-system-smoke",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/vertical-system-smoke-1024x768.png"
+    },
+    {
+      "scenario": "vertical-system-smoke",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/vertical-system-smoke-1440x900.png"
+    },
+    {
+      "scenario": "home",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/home-390x844.png"
+    },
+    {
+      "scenario": "norms",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/norms-390x844.png"
+    },
+    {
+      "scenario": "duration",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/duration-390x844.png"
+    },
+    {
+      "scenario": "duration-custom",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/duration-custom-390x844.png"
+    },
+    {
+      "scenario": "starter",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/starter-390x844.png"
+    },
+    {
+      "scenario": "turn-intro",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/turn-intro-390x844.png"
+    },
+    {
+      "scenario": "abandon-confirmation",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/abandon-confirmation-390x844.png"
+    },
+    {
+      "scenario": "rotation",
+      "width": 844,
+      "height": 390,
+      "path": "acceptance/art-redesign/screenshots/rotation-844x390.png"
+    },
+    {
+      "scenario": "question",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/question-390x844.png"
+    },
+    {
+      "scenario": "answer-revealed",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/answer-revealed-390x844.png"
+    },
+    {
+      "scenario": "incorrect",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/incorrect-390x844.png"
+    },
+    {
+      "scenario": "disconnect",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/disconnect-390x844.png"
+    },
+    {
+      "scenario": "correct",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/correct-390x844.png"
+    },
+    {
+      "scenario": "tp",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/tp-390x844.png"
+    },
+    {
+      "scenario": "plus-one",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/plus-one-390x844.png"
+    },
+    {
+      "scenario": "victory",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/victory-crown-paper-390x844.png"
+    },
+    {
+      "scenario": "incorrect",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/incorrect-settled-390x844.png"
+    },
+    {
+      "scenario": "victory",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/victory-390x844.png"
+    },
+    {
+      "scenario": "home",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/home-1024x768.png"
+    },
+    {
+      "scenario": "norms",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/norms-1024x768.png"
+    },
+    {
+      "scenario": "duration",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/duration-1024x768.png"
+    },
+    {
+      "scenario": "duration-custom",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/duration-custom-1024x768.png"
+    },
+    {
+      "scenario": "starter",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/starter-1024x768.png"
+    },
+    {
+      "scenario": "turn-intro",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/turn-intro-1024x768.png"
+    },
+    {
+      "scenario": "abandon-confirmation",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/abandon-confirmation-1024x768.png"
+    },
+    {
+      "scenario": "rotation",
+      "width": 768,
+      "height": 1024,
+      "path": "acceptance/art-redesign/screenshots/rotation-768x1024.png"
+    },
+    {
+      "scenario": "question",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/question-1024x768.png"
+    },
+    {
+      "scenario": "answer-revealed",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/answer-revealed-1024x768.png"
+    },
+    {
+      "scenario": "incorrect",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/incorrect-1024x768.png"
+    },
+    {
+      "scenario": "incorrect",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/incorrect-settled-1024x768.png"
+    },
+    {
+      "scenario": "disconnect",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/disconnect-1024x768.png"
+    },
+    {
+      "scenario": "correct",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/correct-1024x768.png"
+    },
+    {
+      "scenario": "tp",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/tp-1024x768.png"
+    },
+    {
+      "scenario": "plus-one",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/plus-one-1024x768.png"
+    },
+    {
+      "scenario": "victory",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/victory-crown-paper-1024x768.png"
+    },
+    {
+      "scenario": "victory",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/victory-1024x768.png"
+    },
+    {
+      "scenario": "home",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/home-1440x900.png"
+    },
+    {
+      "scenario": "norms",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/norms-1440x900.png"
+    },
+    {
+      "scenario": "duration",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/duration-1440x900.png"
+    },
+    {
+      "scenario": "duration-custom",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/duration-custom-1440x900.png"
+    },
+    {
+      "scenario": "starter",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/starter-1440x900.png"
+    },
+    {
+      "scenario": "turn-intro",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/turn-intro-1440x900.png"
+    },
+    {
+      "scenario": "abandon-confirmation",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/abandon-confirmation-1440x900.png"
+    },
+    {
+      "scenario": "question",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/question-1440x900.png"
+    },
+    {
+      "scenario": "answer-revealed",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/answer-revealed-1440x900.png"
+    },
+    {
+      "scenario": "incorrect",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/incorrect-1440x900.png"
+    },
+    {
+      "scenario": "incorrect",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/incorrect-settled-1440x900.png"
+    },
+    {
+      "scenario": "disconnect",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/disconnect-1440x900.png"
+    },
+    {
+      "scenario": "correct",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/correct-1440x900.png"
+    },
+    {
+      "scenario": "tp",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/tp-1440x900.png"
+    },
+    {
+      "scenario": "plus-one",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/plus-one-1440x900.png"
+    },
+    {
+      "scenario": "victory",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/victory-crown-paper-1440x900.png"
+    },
+    {
+      "scenario": "victory",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/victory-1440x900.png"
+    },
+    {
+      "scenario": "board-100-minutes",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/board-100-minutes-390x844.png"
+    },
+    {
+      "scenario": "board-100-minutes",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/board-100-minutes-1024x768.png"
+    },
+    {
+      "scenario": "board-100-minutes",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/board-100-minutes-1440x900.png"
+    },
+    {
+      "scenario": "question-extra",
+      "width": 360,
+      "height": 800,
+      "path": "acceptance/art-redesign/screenshots/question-extra-360x800.png"
+    },
+    {
+      "scenario": "question-extra",
+      "width": 430,
+      "height": 932,
+      "path": "acceptance/art-redesign/screenshots/question-extra-430x932.png"
+    },
+    {
+      "scenario": "question-extra",
+      "width": 1366,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/question-extra-1366x768.png"
+    },
+    {
+      "scenario": "answer-revealed-extra",
+      "width": 360,
+      "height": 800,
+      "path": "acceptance/art-redesign/screenshots/answer-revealed-extra-360x800.png"
+    },
+    {
+      "scenario": "answer-revealed-extra",
+      "width": 430,
+      "height": 932,
+      "path": "acceptance/art-redesign/screenshots/answer-revealed-extra-430x932.png"
+    },
+    {
+      "scenario": "answer-revealed-extra",
+      "width": 1366,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/answer-revealed-extra-1366x768.png"
+    },
+    {
+      "scenario": "loading",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/loading-390x844.png"
+    },
+    {
+      "scenario": "private-access",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/private-access-390x844.png"
+    },
+    {
+      "scenario": "private-access",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/private-access-1024x768.png"
+    },
+    {
+      "scenario": "private-access",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/private-access-1440x900.png"
+    },
+    {
+      "scenario": "private-access-error",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/private-access-error-390x844.png"
+    },
+    {
+      "scenario": "private-access-error",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/private-access-error-1024x768.png"
+    },
+    {
+      "scenario": "private-access-error",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/private-access-error-1440x900.png"
+    },
+    {
+      "scenario": "online-choice",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/online-choice-390x844.png"
+    },
+    {
+      "scenario": "role",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/role-390x844.png"
+    },
+    {
+      "scenario": "join",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/join-390x844.png"
+    },
+    {
+      "scenario": "online-lobby",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/online-lobby-390x844.png"
+    },
+    {
+      "scenario": "online-respondent",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/online-respondent-390x844.png"
+    },
+    {
+      "scenario": "online-judge",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/online-judge-390x844.png"
+    },
+    {
+      "scenario": "abandoned",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/art-redesign/screenshots/abandoned-390x844.png"
+    },
+    {
+      "scenario": "online-choice",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/online-choice-1024x768.png"
+    },
+    {
+      "scenario": "role",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/role-1024x768.png"
+    },
+    {
+      "scenario": "join",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/join-1024x768.png"
+    },
+    {
+      "scenario": "online-lobby",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/online-lobby-1024x768.png"
+    },
+    {
+      "scenario": "online-respondent",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/online-respondent-1024x768.png"
+    },
+    {
+      "scenario": "online-judge",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/online-judge-1024x768.png"
+    },
+    {
+      "scenario": "abandoned",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/art-redesign/screenshots/abandoned-1024x768.png"
+    },
+    {
+      "scenario": "online-choice",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/online-choice-1440x900.png"
+    },
+    {
+      "scenario": "role",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/role-1440x900.png"
+    },
+    {
+      "scenario": "join",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/join-1440x900.png"
+    },
+    {
+      "scenario": "online-lobby",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/online-lobby-1440x900.png"
+    },
+    {
+      "scenario": "online-respondent",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/online-respondent-1440x900.png"
+    },
+    {
+      "scenario": "online-judge",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/online-judge-1440x900.png"
+    },
+    {
+      "scenario": "abandoned",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/art-redesign/screenshots/abandoned-1440x900.png"
+    }
+  ],
+  "updatedAt": "2026-10-09T13:19:29.665Z"
+}

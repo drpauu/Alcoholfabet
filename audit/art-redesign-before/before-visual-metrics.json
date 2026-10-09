@@ -1,0 +1,1191 @@
+{
+  "backend": "real Supabase Anonymous Auth + authorized device + in-person RPC",
+  "gameId": "9d7a4277-06a2-4848-aec2-3e18930ebdd9",
+  "userId": "a0d6714b-e25f-4309-9f65-37606835ca99",
+  "errors": [],
+  "metrics": [
+    {
+      "scenario": "access",
+      "width": 390,
+      "height": 844,
+      "layout": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "viewportHeight": 844,
+        "gateVisible": "absent",
+        "paddingTop": "14px",
+        "paddingBottom": "16px",
+        "mainControls": [
+          {
+            "label": "Entrar",
+            "width": 312,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "access",
+      "width": 1024,
+      "height": 768,
+      "layout": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "gateVisible": "absent",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Entrar",
+            "width": 458,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "access",
+      "width": 1440,
+      "height": 900,
+      "layout": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "viewportHeight": 900,
+        "gateVisible": "absent",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Entrar",
+            "width": 450,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "home",
+      "width": 390,
+      "height": 844,
+      "layout": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "viewportHeight": 844,
+        "gateVisible": "absent",
+        "paddingTop": "14px",
+        "paddingBottom": "16px",
+        "mainControls": [
+          {
+            "label": "Jugar en persona",
+            "width": 358,
+            "height": 59
+          },
+          {
+            "label": "Jugar en línia",
+            "width": 358,
+            "height": 59
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "home",
+      "width": 1024,
+      "height": 768,
+      "layout": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "gateVisible": "absent",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Jugar en persona",
+            "width": 311,
+            "height": 65
+          },
+          {
+            "label": "Jugar en línia",
+            "width": 311,
+            "height": 65
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "home",
+      "width": 1440,
+      "height": 900,
+      "layout": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "viewportHeight": 900,
+        "gateVisible": "absent",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Jugar en persona",
+            "width": 311,
+            "height": 65
+          },
+          {
+            "label": "Jugar en línia",
+            "width": 311,
+            "height": 65
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "home",
+      "width": 360,
+      "height": 800,
+      "layout": {
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "viewportHeight": 800,
+        "gateVisible": "absent",
+        "paddingTop": "14px",
+        "paddingBottom": "16px",
+        "mainControls": [
+          {
+            "label": "Jugar en persona",
+            "width": 328,
+            "height": 59
+          },
+          {
+            "label": "Jugar en línia",
+            "width": 328,
+            "height": 59
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "home",
+      "width": 430,
+      "height": 932,
+      "layout": {
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "viewportHeight": 932,
+        "gateVisible": "absent",
+        "paddingTop": "14px",
+        "paddingBottom": "16px",
+        "mainControls": [
+          {
+            "label": "Jugar en persona",
+            "width": 398,
+            "height": 59
+          },
+          {
+            "label": "Jugar en línia",
+            "width": 398,
+            "height": 59
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "home",
+      "width": 1366,
+      "height": 768,
+      "layout": {
+        "bodyWidth": 1366,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "gateVisible": "absent",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Jugar en persona",
+            "width": 311,
+            "height": 65
+          },
+          {
+            "label": "Jugar en línia",
+            "width": 311,
+            "height": 65
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "duration",
+      "width": 390,
+      "height": 844,
+      "layout": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "viewportHeight": 844,
+        "gateVisible": "absent",
+        "paddingTop": "14px",
+        "paddingBottom": "16px",
+        "mainControls": [
+          {
+            "label": "Continuar",
+            "width": 312,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "duration",
+      "width": 1024,
+      "height": 768,
+      "layout": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "gateVisible": "absent",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Continuar",
+            "width": 458,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "duration",
+      "width": 1440,
+      "height": 900,
+      "layout": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "viewportHeight": 900,
+        "gateVisible": "absent",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Continuar",
+            "width": 450,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "duration",
+      "width": 360,
+      "height": 800,
+      "layout": {
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "viewportHeight": 800,
+        "gateVisible": "absent",
+        "paddingTop": "14px",
+        "paddingBottom": "16px",
+        "mainControls": [
+          {
+            "label": "Continuar",
+            "width": 282,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "duration",
+      "width": 430,
+      "height": 932,
+      "layout": {
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "viewportHeight": 932,
+        "gateVisible": "absent",
+        "paddingTop": "14px",
+        "paddingBottom": "16px",
+        "mainControls": [
+          {
+            "label": "Continuar",
+            "width": 352,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "duration",
+      "width": 1366,
+      "height": 768,
+      "layout": {
+        "bodyWidth": 1366,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "gateVisible": "absent",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Continuar",
+            "width": 458,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "turn-intro",
+      "width": 390,
+      "height": 844,
+      "layout": {
+        "phase": "TURN_INTRO",
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "viewportHeight": 844,
+        "card": {
+          "x": 16,
+          "y": 414.703125,
+          "width": 358,
+          "height": 415.296875,
+          "top": 414.703125,
+          "right": 374,
+          "bottom": 830,
+          "left": 16
+        },
+        "board": {
+          "x": 15.649482727050781,
+          "y": 226.26748657226562,
+          "width": 358.7010498046875,
+          "height": 174.5111083984375,
+          "top": 226.26748657226562,
+          "right": 374.3505325317383,
+          "bottom": 400.7785949707031,
+          "left": 15.649482727050781
+        },
+        "gateVisible": "none",
+        "paddingTop": "12px",
+        "paddingBottom": "14px",
+        "mainControls": [
+          {
+            "label": "Començar el torn",
+            "width": 312,
+            "height": 55
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "turn-intro",
+      "width": 1024,
+      "height": 768,
+      "layout": {
+        "phase": "TURN_INTRO",
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "card": {
+          "x": 632,
+          "y": 289,
+          "width": 370,
+          "height": 437,
+          "top": 289,
+          "right": 1002,
+          "bottom": 726,
+          "left": 632
+        },
+        "board": {
+          "x": 18.949947357177734,
+          "y": 391.78851318359375,
+          "width": 599.6254272460938,
+          "height": 302.8702392578125,
+          "top": 391.78851318359375,
+          "right": 618.5753746032715,
+          "bottom": 694.6587524414062,
+          "left": 18.949947357177734
+        },
+        "gateVisible": "none",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Començar el torn",
+            "width": 322,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "turn-intro",
+      "width": 1440,
+      "height": 900,
+      "layout": {
+        "phase": "TURN_INTRO",
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "viewportHeight": 900,
+        "card": {
+          "x": 945.921875,
+          "y": 380,
+          "width": 462.0625,
+          "height": 462,
+          "top": 380,
+          "right": 1407.984375,
+          "bottom": 842,
+          "left": 945.921875
+        },
+        "board": {
+          "x": 24.617040634155273,
+          "y": 384.6131286621094,
+          "width": 894.8137817382812,
+          "height": 446.2909240722656,
+          "top": 384.6131286621094,
+          "right": 919.4308223724365,
+          "bottom": 830.904052734375,
+          "left": 24.617040634155273
+        },
+        "gateVisible": "none",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Començar el torn",
+            "width": 398.0625,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "game",
+      "width": 390,
+      "height": 844,
+      "layout": {
+        "phase": "QUESTION",
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "viewportHeight": 844,
+        "card": {
+          "x": 16,
+          "y": 414.703125,
+          "width": 358,
+          "height": 415.296875,
+          "top": 414.703125,
+          "right": 374,
+          "bottom": 830,
+          "left": 16
+        },
+        "board": {
+          "x": 15.649482727050781,
+          "y": 226.26748657226562,
+          "width": 358.7010498046875,
+          "height": 174.5111083984375,
+          "top": 226.26748657226562,
+          "right": 374.3505325317383,
+          "bottom": 400.7785949707031,
+          "left": 15.649482727050781
+        },
+        "gateVisible": "none",
+        "paddingTop": "12px",
+        "paddingBottom": "14px",
+        "mainControls": [
+          {
+            "label": "Mostra la resposta",
+            "width": 312,
+            "height": 55
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "game",
+      "width": 1024,
+      "height": 768,
+      "layout": {
+        "phase": "QUESTION",
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "card": {
+          "x": 632,
+          "y": 289,
+          "width": 370,
+          "height": 437,
+          "top": 289,
+          "right": 1002,
+          "bottom": 726,
+          "left": 632
+        },
+        "board": {
+          "x": 18.949947357177734,
+          "y": 391.78851318359375,
+          "width": 599.6254272460938,
+          "height": 302.8702392578125,
+          "top": 391.78851318359375,
+          "right": 618.5753746032715,
+          "bottom": 694.6587524414062,
+          "left": 18.949947357177734
+        },
+        "gateVisible": "none",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Mostra la resposta",
+            "width": 322,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "game",
+      "width": 1440,
+      "height": 900,
+      "layout": {
+        "phase": "QUESTION",
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "viewportHeight": 900,
+        "card": {
+          "x": 945.921875,
+          "y": 380,
+          "width": 462.0625,
+          "height": 462,
+          "top": 380,
+          "right": 1407.984375,
+          "bottom": 842,
+          "left": 945.921875
+        },
+        "board": {
+          "x": 24.617040634155273,
+          "y": 384.6131286621094,
+          "width": 894.8137817382812,
+          "height": 446.2909240722656,
+          "top": 384.6131286621094,
+          "right": 919.4308223724365,
+          "bottom": 830.904052734375,
+          "left": 24.617040634155273
+        },
+        "gateVisible": "none",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Mostra la resposta",
+            "width": 398.0625,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "game",
+      "width": 360,
+      "height": 800,
+      "layout": {
+        "phase": "QUESTION",
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "viewportHeight": 800,
+        "card": {
+          "x": 16,
+          "y": 414.75,
+          "width": 328,
+          "height": 371.25,
+          "top": 414.75,
+          "right": 344,
+          "bottom": 786,
+          "left": 16
+        },
+        "board": {
+          "x": 15.689140319824219,
+          "y": 231.87490844726562,
+          "width": 328.6217041015625,
+          "height": 168.94476318359375,
+          "top": 231.87490844726562,
+          "right": 344.3108444213867,
+          "bottom": 400.8196716308594,
+          "left": 15.689140319824219
+        },
+        "gateVisible": "none",
+        "paddingTop": "12px",
+        "paddingBottom": "14px",
+        "mainControls": [
+          {
+            "label": "Mostra la resposta",
+            "width": 282,
+            "height": 55
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "game",
+      "width": 430,
+      "height": 932,
+      "layout": {
+        "phase": "QUESTION",
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "viewportHeight": 932,
+        "card": {
+          "x": 16,
+          "y": 432.75,
+          "width": 398,
+          "height": 485.25,
+          "top": 432.75,
+          "right": 414,
+          "bottom": 918,
+          "left": 16
+        },
+        "board": {
+          "x": 15.610318183898926,
+          "y": 244.31436157226562,
+          "width": 398.77935791015625,
+          "height": 174.5111083984375,
+          "top": 244.31436157226562,
+          "right": 414.3896760940552,
+          "bottom": 418.8254699707031,
+          "left": 15.610318183898926
+        },
+        "gateVisible": "none",
+        "paddingTop": "12px",
+        "paddingBottom": "14px",
+        "mainControls": [
+          {
+            "label": "Mostra la resposta",
+            "width": 352,
+            "height": 55
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "game",
+      "width": 1366,
+      "height": 768,
+      "layout": {
+        "phase": "QUESTION",
+        "bodyWidth": 1366,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "card": {
+          "x": 897.4375,
+          "y": 248,
+          "width": 436.546875,
+          "height": 462,
+          "top": 248,
+          "right": 1333.984375,
+          "bottom": 710,
+          "left": 897.4375
+        },
+        "board": {
+          "x": 26.8116512298584,
+          "y": 360.1689147949219,
+          "width": 841.3377685546875,
+          "height": 337.7132873535156,
+          "top": 360.1689147949219,
+          "right": 868.1494197845459,
+          "bottom": 697.8822021484375,
+          "left": 26.8116512298584
+        },
+        "gateVisible": "none",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Mostra la resposta",
+            "width": 372.546875,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "game",
+      "width": 768,
+      "height": 1024,
+      "layout": {
+        "phase": "QUESTION",
+        "bodyWidth": 768,
+        "bodyHeight": 1024,
+        "viewportHeight": 1024,
+        "card": {
+          "x": 431,
+          "y": 545,
+          "width": 315,
+          "height": 437,
+          "top": 545,
+          "right": 746,
+          "bottom": 982,
+          "left": 431
+        },
+        "board": {
+          "x": 20.871200561523438,
+          "y": 748.502197265625,
+          "width": 394.306640625,
+          "height": 200.9561767578125,
+          "top": 748.502197265625,
+          "right": 415.17784118652344,
+          "bottom": 949.4583740234375,
+          "left": 20.871200561523438
+        },
+        "gateVisible": "grid",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Mostra la resposta",
+            "width": 267,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "game",
+      "width": 844,
+      "height": 390,
+      "layout": {
+        "phase": "QUESTION",
+        "bodyWidth": 844,
+        "bodyHeight": 390,
+        "viewportHeight": 390,
+        "card": {
+          "x": 507,
+          "y": 144.09375,
+          "width": 315,
+          "height": 437,
+          "top": 144.09375,
+          "right": 822,
+          "bottom": 581.09375,
+          "left": 507
+        },
+        "board": {
+          "x": 20.252883911132812,
+          "y": 309.3634338378906,
+          "width": 471.72857666015625,
+          "height": 239.60623168945312,
+          "top": 309.3634338378906,
+          "right": 491.98146057128906,
+          "bottom": 548.9696655273438,
+          "left": 20.252883911132812
+        },
+        "gateVisible": "grid",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Mostra la resposta",
+            "width": 267,
+            "height": 54
+          }
+        ],
+        "judgeGap": null
+      }
+    },
+    {
+      "scenario": "answer",
+      "width": 390,
+      "height": 844,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "viewportHeight": 844,
+        "card": {
+          "x": 16,
+          "y": 414.703125,
+          "width": 358,
+          "height": 415.296875,
+          "top": 414.703125,
+          "right": 374,
+          "bottom": 830,
+          "left": 16
+        },
+        "board": {
+          "x": 15.649482727050781,
+          "y": 226.26748657226562,
+          "width": 358.7010498046875,
+          "height": 174.5111083984375,
+          "top": 226.26748657226562,
+          "right": 374.3505325317383,
+          "bottom": 400.7785949707031,
+          "left": 15.649482727050781
+        },
+        "gateVisible": "none",
+        "paddingTop": "12px",
+        "paddingBottom": "14px",
+        "mainControls": [
+          {
+            "label": "Incorrecte",
+            "width": 151,
+            "height": 55
+          },
+          {
+            "label": "Correcte",
+            "width": 151,
+            "height": 55
+          }
+        ],
+        "judgeGap": "10px"
+      }
+    },
+    {
+      "scenario": "answer",
+      "width": 1024,
+      "height": 768,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "card": {
+          "x": 632,
+          "y": 289,
+          "width": 370,
+          "height": 437,
+          "top": 289,
+          "right": 1002,
+          "bottom": 726,
+          "left": 632
+        },
+        "board": {
+          "x": 18.949947357177734,
+          "y": 391.78851318359375,
+          "width": 599.6254272460938,
+          "height": 302.8702392578125,
+          "top": 391.78851318359375,
+          "right": 618.5753746032715,
+          "bottom": 694.6587524414062,
+          "left": 18.949947357177734
+        },
+        "gateVisible": "none",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Incorrecte",
+            "width": 156,
+            "height": 56
+          },
+          {
+            "label": "Correcte",
+            "width": 156,
+            "height": 56
+          }
+        ],
+        "judgeGap": "10px"
+      }
+    },
+    {
+      "scenario": "answer",
+      "width": 1440,
+      "height": 900,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "viewportHeight": 900,
+        "card": {
+          "x": 945.921875,
+          "y": 380,
+          "width": 462.0625,
+          "height": 462,
+          "top": 380,
+          "right": 1407.984375,
+          "bottom": 842,
+          "left": 945.921875
+        },
+        "board": {
+          "x": 24.617040634155273,
+          "y": 384.6131286621094,
+          "width": 894.8137817382812,
+          "height": 446.2909240722656,
+          "top": 384.6131286621094,
+          "right": 919.4308223724365,
+          "bottom": 830.904052734375,
+          "left": 24.617040634155273
+        },
+        "gateVisible": "none",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Incorrecte",
+            "width": 194.03125,
+            "height": 56
+          },
+          {
+            "label": "Correcte",
+            "width": 194.03125,
+            "height": 56
+          }
+        ],
+        "judgeGap": "10px"
+      }
+    },
+    {
+      "scenario": "answer",
+      "width": 360,
+      "height": 800,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "viewportHeight": 800,
+        "card": {
+          "x": 16,
+          "y": 414.75,
+          "width": 328,
+          "height": 371.25,
+          "top": 414.75,
+          "right": 344,
+          "bottom": 786,
+          "left": 16
+        },
+        "board": {
+          "x": 15.689140319824219,
+          "y": 231.87490844726562,
+          "width": 328.6217041015625,
+          "height": 168.94476318359375,
+          "top": 231.87490844726562,
+          "right": 344.3108444213867,
+          "bottom": 400.8196716308594,
+          "left": 15.689140319824219
+        },
+        "gateVisible": "none",
+        "paddingTop": "12px",
+        "paddingBottom": "14px",
+        "mainControls": [
+          {
+            "label": "Incorrecte",
+            "width": 136,
+            "height": 55
+          },
+          {
+            "label": "Correcte",
+            "width": 136,
+            "height": 55
+          }
+        ],
+        "judgeGap": "10px"
+      }
+    },
+    {
+      "scenario": "answer",
+      "width": 430,
+      "height": 932,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "viewportHeight": 932,
+        "card": {
+          "x": 16,
+          "y": 432.75,
+          "width": 398,
+          "height": 485.25,
+          "top": 432.75,
+          "right": 414,
+          "bottom": 918,
+          "left": 16
+        },
+        "board": {
+          "x": 15.610318183898926,
+          "y": 244.31436157226562,
+          "width": 398.77935791015625,
+          "height": 174.5111083984375,
+          "top": 244.31436157226562,
+          "right": 414.3896760940552,
+          "bottom": 418.8254699707031,
+          "left": 15.610318183898926
+        },
+        "gateVisible": "none",
+        "paddingTop": "12px",
+        "paddingBottom": "14px",
+        "mainControls": [
+          {
+            "label": "Incorrecte",
+            "width": 171,
+            "height": 55
+          },
+          {
+            "label": "Correcte",
+            "width": 171,
+            "height": 55
+          }
+        ],
+        "judgeGap": "10px"
+      }
+    },
+    {
+      "scenario": "answer",
+      "width": 1366,
+      "height": 768,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "bodyWidth": 1366,
+        "bodyHeight": 768,
+        "viewportHeight": 768,
+        "card": {
+          "x": 897.4375,
+          "y": 248,
+          "width": 436.546875,
+          "height": 462,
+          "top": 248,
+          "right": 1333.984375,
+          "bottom": 710,
+          "left": 897.4375
+        },
+        "board": {
+          "x": 26.8116512298584,
+          "y": 360.1689147949219,
+          "width": 841.3377685546875,
+          "height": 337.7132873535156,
+          "top": 360.1689147949219,
+          "right": 868.1494197845459,
+          "bottom": 697.8822021484375,
+          "left": 26.8116512298584
+        },
+        "gateVisible": "none",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Incorrecte",
+            "width": 181.265625,
+            "height": 56
+          },
+          {
+            "label": "Correcte",
+            "width": 181.28125,
+            "height": 56
+          }
+        ],
+        "judgeGap": "10px"
+      }
+    },
+    {
+      "scenario": "answer",
+      "width": 768,
+      "height": 1024,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "bodyWidth": 768,
+        "bodyHeight": 1024,
+        "viewportHeight": 1024,
+        "card": {
+          "x": 431,
+          "y": 545,
+          "width": 315,
+          "height": 437,
+          "top": 545,
+          "right": 746,
+          "bottom": 982,
+          "left": 431
+        },
+        "board": {
+          "x": 20.871200561523438,
+          "y": 748.502197265625,
+          "width": 394.306640625,
+          "height": 200.9561767578125,
+          "top": 748.502197265625,
+          "right": 415.17784118652344,
+          "bottom": 949.4583740234375,
+          "left": 20.871200561523438
+        },
+        "gateVisible": "grid",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Incorrecte",
+            "width": 128.5,
+            "height": 56
+          },
+          {
+            "label": "Correcte",
+            "width": 128.5,
+            "height": 56
+          }
+        ],
+        "judgeGap": "10px"
+      }
+    },
+    {
+      "scenario": "answer",
+      "width": 844,
+      "height": 390,
+      "layout": {
+        "phase": "ANSWER_REVEALED",
+        "bodyWidth": 844,
+        "bodyHeight": 390,
+        "viewportHeight": 390,
+        "card": {
+          "x": 507,
+          "y": 144.09375,
+          "width": 315,
+          "height": 437,
+          "top": 144.09375,
+          "right": 822,
+          "bottom": 581.09375,
+          "left": 507
+        },
+        "board": {
+          "x": 20.252883911132812,
+          "y": 309.3634338378906,
+          "width": 471.72857666015625,
+          "height": 239.60623168945312,
+          "top": 309.3634338378906,
+          "right": 491.98146057128906,
+          "bottom": 548.9696655273438,
+          "left": 20.252883911132812
+        },
+        "gateVisible": "grid",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "mainControls": [
+          {
+            "label": "Incorrecte",
+            "width": 128.5,
+            "height": 56
+          },
+          {
+            "label": "Correcte",
+            "width": 128.5,
+            "height": 56
+          }
+        ],
+        "judgeGap": "10px"
+      }
+    }
+  ]
+}

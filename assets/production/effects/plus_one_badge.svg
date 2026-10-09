@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 112" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="32" y1="18" x2="111" y2="96" gradientUnits="userSpaceOnUse"><stop stop-color="#fff3d1"/><stop offset="1" stop-color="#dfc491"/></linearGradient>
+    <filter id="contact" x="0" y="0" width="160" height="112" filterUnits="userSpaceOnUse"><feDropShadow dx="-2" dy="3" stdDeviation="2" flood-color="#674629" flood-opacity=".26"/></filter>
+  </defs>
+  <g filter="url(#contact)" stroke-linejoin="round" stroke-linecap="round">
+    <path d="m27 19 101 3 7 70-98 8-10-12Z" fill="#af8848" stroke="#785a35" stroke-width="2.1"/>
+    <path d="m25 16 102 3 6 70-98 8-10-12Z" fill="url(#paper)" stroke="#9b7949" stroke-width="2.1"/>
+    <path d="m32 22 88 3 6 58-88 8" stroke="#cfb47c" stroke-width="2.1"/>
+    <path d="m35 97 1-14-11 2" fill="#c4a371" stroke="#9b7949" stroke-width="2.1"/>
+    <path d="M45 54h27M58 41l1 27m24-25 12-8 2 40" stroke="#956d35" stroke-width="9"/>
+    <path d="m85 77 20-1" stroke="#956d35" stroke-width="4"/>
+    <path d="m46 51 24 .3m-14-9 .5 7m29-8 8-5" stroke="#dfc07b" stroke-width="2.1"/>
+    <path d="m42 29 18 .4m52 39 .5 11m-67 6 9-.8" stroke="#f9ebc6" stroke-width="2.1"/>
+    <path d="M112 31c-6 0-9 3-9 7 6 1 9-2 9-7Zm1 3 4 7" fill="#a1a07a" stroke="#79805a" stroke-width="2.1"/>
+    <path d="m70 85 15-1" stroke="#b89d6d" stroke-width="1"/>
+  </g>
+</svg>

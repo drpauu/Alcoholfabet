@@ -1,0 +1,55 @@
+{
+  "games": [
+    {
+      "id": "fb658588-a57b-4f19-983e-a8f334c0c4d8",
+      "status": "ABANDONED",
+      "createdBy": "7da05725-d037-4f49-849e-fbd6ed143ef0",
+      "stateVersion": 1
+    },
+    {
+      "id": "a2059df2-c329-4a86-8172-7d88f120cb59",
+      "status": "FINISHED",
+      "createdBy": "7d42bf6c-875a-4867-97ea-e0d703044e99",
+      "stateVersion": 59
+    },
+    {
+      "id": "78cee756-a65d-4a83-aa31-2fcd79613015",
+      "status": "ABANDONED",
+      "createdBy": "7da05725-d037-4f49-849e-fbd6ed143ef0",
+      "stateVersion": 20
+    },
+    {
+      "id": "a1d2edc7-4bd1-47ce-99ef-6c130264ca07",
+      "status": "ACTIVE",
+      "createdBy": "7d42bf6c-875a-4867-97ea-e0d703044e99",
+      "stateVersion": 0
+    },
+    {
+      "id": "9d7a4277-06a2-4848-aec2-3e18930ebdd9",
+      "status": "ACTIVE",
+      "createdBy": "a0d6714b-e25f-4309-9f65-37606835ca99",
+      "stateVersion": 2
+    },
+    {
+      "id": "67af5d97-6c2b-4525-b2c8-553e6210068b",
+      "status": "ABANDONED",
+      "createdBy": "7da05725-d037-4f49-849e-fbd6ed143ef0",
+      "stateVersion": 9
+    }
+  ],
+  "userIds": [
+    "57e037a4-ef9f-4996-a437-8c2cf9d9dfba",
+    "7da05725-d037-4f49-849e-fbd6ed143ef0",
+    "7d42bf6c-875a-4867-97ea-e0d703044e99",
+    "a0d6714b-e25f-4309-9f65-37606835ca99"
+  ],
+  "scoreboard": {
+    "pauWins": 0,
+    "teclaWins": 1,
+    "completedGames": 1
+  },
+  "capturedAt": "2026-10-09T12:14:12.755Z",
+  "scope": "art-redesign",
+  "protectedExistingData": true,
+  "noSecrets": true
+}

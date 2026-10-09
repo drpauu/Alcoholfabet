@@ -1,0 +1,113 @@
+{
+  "generatedAt": "2026-10-09T11:11:06.804Z",
+  "environment": "Playwright Chromium headless, 1440×900, no-preference, video recording enabled",
+  "method": "requestAnimationFrame samples of computed SVG pawn transforms; browser and RPC scheduling are included. This measures the QA host, not a guarantee for other hardware.",
+  "input": [
+    "acceptance/MOTION_BROWSER_QA.json",
+    "acceptance/MOTION_VICTORY_QA.json"
+  ],
+  "sequences": [
+    {
+      "type": "ANSWER_REVEAL",
+      "frameCount": 38,
+      "recordingMs": 1050.2,
+      "averageSampleFps": 35.23,
+      "medianSampleFps": 38.46,
+      "p95FrameGapMs": 68,
+      "longestFrameGapMs": 82,
+      "firstTravelAfterConfirmationMs": null,
+      "distinctTravelPoints": null,
+      "revealedAtRecordingMs": 679.9
+    },
+    {
+      "type": "INCORRECT",
+      "frameCount": 30,
+      "recordingMs": 849.4,
+      "averageSampleFps": 34.14,
+      "medianSampleFps": 30.3,
+      "p95FrameGapMs": 56.7,
+      "longestFrameGapMs": 82.5,
+      "firstTravelAfterConfirmationMs": null,
+      "distinctTravelPoints": 0,
+      "revealedAtRecordingMs": null
+    },
+    {
+      "type": "ANSWER_REVEAL",
+      "frameCount": 46,
+      "recordingMs": 1099.7,
+      "averageSampleFps": 40.92,
+      "medianSampleFps": 59.52,
+      "p95FrameGapMs": 52.6,
+      "longestFrameGapMs": 106.2,
+      "firstTravelAfterConfirmationMs": null,
+      "distinctTravelPoints": null,
+      "revealedAtRecordingMs": 446.5
+    },
+    {
+      "type": "CORRECT",
+      "frameCount": 38,
+      "recordingMs": 1750.8,
+      "averageSampleFps": 21.13,
+      "medianSampleFps": 23.87,
+      "p95FrameGapMs": 92.4,
+      "longestFrameGapMs": 453.6,
+      "firstTravelAfterConfirmationMs": 857.5,
+      "distinctTravelPoints": 9,
+      "revealedAtRecordingMs": null
+    },
+    {
+      "type": "ANSWER_REVEAL",
+      "frameCount": 43,
+      "recordingMs": 1047.7,
+      "averageSampleFps": 40.09,
+      "medianSampleFps": 59.88,
+      "p95FrameGapMs": 51.2,
+      "longestFrameGapMs": 88.7,
+      "firstTravelAfterConfirmationMs": null,
+      "distinctTravelPoints": null,
+      "revealedAtRecordingMs": 429.5
+    },
+    {
+      "type": "CORRECT",
+      "frameCount": 45,
+      "recordingMs": 1849.6,
+      "averageSampleFps": 23.79,
+      "medianSampleFps": 30.67,
+      "p95FrameGapMs": 61.1,
+      "longestFrameGapMs": 449.1,
+      "firstTravelAfterConfirmationMs": 856.7,
+      "distinctTravelPoints": 11,
+      "revealedAtRecordingMs": null
+    },
+    {
+      "type": "ANSWER_REVEAL",
+      "frameCount": 39,
+      "recordingMs": 1081.3,
+      "averageSampleFps": 35.14,
+      "medianSampleFps": 58.82,
+      "p95FrameGapMs": 70.3,
+      "longestFrameGapMs": 125.4,
+      "firstTravelAfterConfirmationMs": null,
+      "distinctTravelPoints": null,
+      "revealedAtRecordingMs": 443.5
+    },
+    {
+      "type": "PLUS_ONE",
+      "frameCount": 54,
+      "recordingMs": 2419,
+      "averageSampleFps": 21.91,
+      "medianSampleFps": 53.76,
+      "p95FrameGapMs": 87.2,
+      "longestFrameGapMs": 536.8,
+      "firstTravelAfterConfirmationMs": 985.8,
+      "distinctTravelPoints": 10,
+      "revealedAtRecordingMs": null
+    }
+  ],
+  "victoryFirstVisibleMs": {
+    "crown": 1778,
+    "winner": 2306,
+    "score": 2559,
+    "actions": 3113
+  }
+}

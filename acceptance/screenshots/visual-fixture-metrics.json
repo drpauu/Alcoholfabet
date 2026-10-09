@@ -1,0 +1,284 @@
+[
+  {
+    "scenario": "home",
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 390,
+      "bodyHeight": 844,
+      "viewportHeight": 844,
+      "logo": {
+        "x": 79.578125,
+        "y": 103,
+        "width": 230.84375,
+        "height": 64.34375,
+        "top": 103,
+        "right": 310.421875,
+        "bottom": 167.34375,
+        "left": 79.578125
+      }
+    }
+  },
+  {
+    "scenario": "game",
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 390,
+      "bodyHeight": 844,
+      "viewportHeight": 844,
+      "card": {
+        "x": 16,
+        "y": 364.0625,
+        "width": 358,
+        "height": 465.9375,
+        "top": 364.0625,
+        "right": 374,
+        "bottom": 830,
+        "left": 16
+      },
+      "board": {
+        "x": 15.649482727050781,
+        "y": 175.62686157226562,
+        "width": 358.7010498046875,
+        "height": 174.51113891601562,
+        "top": 175.62686157226562,
+        "right": 374.3505325317383,
+        "bottom": 350.13800048828125,
+        "left": 15.649482727050781
+      }
+    }
+  },
+  {
+    "scenario": "duration",
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 390,
+      "bodyHeight": 844,
+      "viewportHeight": 844
+    }
+  },
+  {
+    "scenario": "answer",
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 390,
+      "bodyHeight": 844,
+      "viewportHeight": 844,
+      "card": {
+        "x": 16,
+        "y": 364.0625,
+        "width": 358,
+        "height": 465.9375,
+        "top": 364.0625,
+        "right": 374,
+        "bottom": 830,
+        "left": 16
+      },
+      "board": {
+        "x": 15.649482727050781,
+        "y": 175.62686157226562,
+        "width": 358.7010498046875,
+        "height": 174.51113891601562,
+        "top": 175.62686157226562,
+        "right": 374.3505325317383,
+        "bottom": 350.13800048828125,
+        "left": 15.649482727050781
+      }
+    }
+  },
+  {
+    "scenario": "home",
+    "width": 1024,
+    "height": 768,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 1024,
+      "bodyHeight": 768,
+      "viewportHeight": 768,
+      "logo": {
+        "x": 370.578125,
+        "y": 103,
+        "width": 282.828125,
+        "height": 78.84375,
+        "top": 103,
+        "right": 653.40625,
+        "bottom": 181.84375,
+        "left": 370.578125
+      }
+    }
+  },
+  {
+    "scenario": "game",
+    "width": 1024,
+    "height": 768,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 1024,
+      "bodyHeight": 768,
+      "viewportHeight": 768,
+      "card": {
+        "x": 632,
+        "y": 319,
+        "width": 370,
+        "height": 407,
+        "top": 319,
+        "right": 1002,
+        "bottom": 726,
+        "left": 632
+      },
+      "board": {
+        "x": 18.949947357177734,
+        "y": 391.78851318359375,
+        "width": 599.6254272460938,
+        "height": 302.8702392578125,
+        "top": 391.78851318359375,
+        "right": 618.5753746032715,
+        "bottom": 694.6587524414062,
+        "left": 18.949947357177734
+      }
+    }
+  },
+  {
+    "scenario": "duration",
+    "width": 1024,
+    "height": 768,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 1024,
+      "bodyHeight": 768,
+      "viewportHeight": 768
+    }
+  },
+  {
+    "scenario": "answer",
+    "width": 1024,
+    "height": 768,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 1024,
+      "bodyHeight": 768,
+      "viewportHeight": 768,
+      "card": {
+        "x": 632,
+        "y": 319,
+        "width": 370,
+        "height": 407,
+        "top": 319,
+        "right": 1002,
+        "bottom": 726,
+        "left": 632
+      },
+      "board": {
+        "x": 18.949947357177734,
+        "y": 391.78851318359375,
+        "width": 599.6254272460938,
+        "height": 302.8702392578125,
+        "top": 391.78851318359375,
+        "right": 618.5753746032715,
+        "bottom": 694.6587524414062,
+        "left": 18.949947357177734
+      }
+    }
+  },
+  {
+    "scenario": "home",
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 1440,
+      "bodyHeight": 900,
+      "viewportHeight": 900,
+      "logo": {
+        "x": 521.125,
+        "y": 103,
+        "width": 397.75,
+        "height": 110.875,
+        "top": 103,
+        "right": 918.875,
+        "bottom": 213.875,
+        "left": 521.125
+      }
+    }
+  },
+  {
+    "scenario": "game",
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 1440,
+      "bodyHeight": 900,
+      "viewportHeight": 900,
+      "card": {
+        "x": 945.921875,
+        "y": 380,
+        "width": 462.0625,
+        "height": 462,
+        "top": 380,
+        "right": 1407.984375,
+        "bottom": 842,
+        "left": 945.921875
+      },
+      "board": {
+        "x": 24.617040634155273,
+        "y": 384.6131286621094,
+        "width": 894.8137817382812,
+        "height": 446.2909240722656,
+        "top": 384.6131286621094,
+        "right": 919.4308223724365,
+        "bottom": 830.904052734375,
+        "left": 24.617040634155273
+      }
+    }
+  },
+  {
+    "scenario": "duration",
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 1440,
+      "bodyHeight": 900,
+      "viewportHeight": 900
+    }
+  },
+  {
+    "scenario": "answer",
+    "width": 1440,
+    "height": 900,
+    "errors": [],
+    "layout": {
+      "bodyWidth": 1440,
+      "bodyHeight": 900,
+      "viewportHeight": 900,
+      "card": {
+        "x": 945.921875,
+        "y": 380,
+        "width": 462.0625,
+        "height": 462,
+        "top": 380,
+        "right": 1407.984375,
+        "bottom": 842,
+        "left": 945.921875
+      },
+      "board": {
+        "x": 24.617040634155273,
+        "y": 384.6131286621094,
+        "width": 894.8137817382812,
+        "height": 446.2909240722656,
+        "top": 384.6131286621094,
+        "right": 919.4308223724365,
+        "bottom": 830.904052734375,
+        "left": 24.617040634155273
+      }
+    }
+  }
+]

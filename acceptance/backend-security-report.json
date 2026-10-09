@@ -1,0 +1,53 @@
+{
+  "projectRef": "lhgyopkwstuyxolwfucq",
+  "harness": "Supabase MCP execute_sql with rollback-only fixtures",
+  "checks": [
+    {
+      "name": "revoked-device-denied-safe-view-and-mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "revoked-device-denied-rls-and-private-channel",
+      "status": "PASS"
+    },
+    {
+      "name": "private-channel-receives-broadcast-and-presence",
+      "status": "PASS"
+    },
+    {
+      "name": "client-can-publish-presence-but-cannot-broadcast",
+      "status": "PASS"
+    },
+    {
+      "name": "ten-failed-attempts-then-rate-limit",
+      "status": "PASS"
+    },
+    {
+      "name": "exact-game-topic-parser",
+      "status": "PASS"
+    },
+    {
+      "name": "no-anon-definer-rpcs-or-executable-internal-helpers",
+      "status": "PASS"
+    },
+    {
+      "name": "empty-question-pool-stable-error-without-game-mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "anonymous-auth-project-setting",
+      "status": "PASS",
+      "detail": "Auth settings external.anonymous_users=true and real anonymous signup returns is_anonymous=true with a valid session."
+    },
+    {
+      "name": "global-realtime-public-access-setting",
+      "status": "OPTIONAL",
+      "detail": "Global public-channel disable is optional hardening. App channels and server sends are private; member/nonmember private authorization was verified."
+    }
+  ],
+  "notes": [
+    "RLS on questions and private tables intentionally has no client policies.",
+    "SECURITY DEFINER warnings for authenticated public RPCs are expected; each validates auth and scope. Internal helpers have no API-role execution privileges.",
+    "Password leaked-password protection warning applies to the temporary password fixtures; product uses Anonymous Auth."
+  ]
+}

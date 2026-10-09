@@ -1,0 +1,32 @@
+[
+  {
+    "gameId": "30906114-65fc-423d-a710-25b78d257f4b",
+    "userId": "5e4feeea-3dc4-4337-948f-417e99bd328d",
+    "status": "ACTIVE"
+  },
+  {
+    "gameId": "3963d92f-d0ea-4d06-9dd3-e00b86be3d8f",
+    "userId": "766e8e3b-1b21-49eb-969f-f3e834b430bf",
+    "status": "FINISHED"
+  },
+  {
+    "gameId": "6f15a87d-8c57-4713-962d-6efb68ccf640",
+    "userId": "1a81e92f-e6b2-4941-b187-373f2c3640a6",
+    "status": "ABANDONED"
+  },
+  {
+    "gameId": "d19cd501-ae9a-4dc2-b1f4-cf4b9905aacf",
+    "userId": "a0d0c9f4-f7bb-4585-98d5-72a3dd2e9dfe",
+    "status": "ABANDONED"
+  },
+  {
+    "gameId": "44419b23-64af-46fc-9e23-872d90182e79",
+    "userId": "18daea1e-98fb-4393-86bd-ffadc726c01f",
+    "status": "ABANDONED"
+  },
+  {
+    "gameId": "ea96af43-7903-463d-9d6f-0d75064f7434",
+    "userId": "24618b64-9e05-403e-8b5d-55607a5f2daa",
+    "status": "FINISHED"
+  }
+]

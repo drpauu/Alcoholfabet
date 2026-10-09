@@ -1,0 +1,15 @@
+{
+  "status": "RESOLVED",
+  "observedBadgeBeforeIntermediateArrivalMs": 133.3,
+  "intermediateHoldMs": 466.7,
+  "evidence": "failures/plus-badge-onset-before-route-shortcut.json",
+  "reason": "Corrected isolated rAF sampling confirmed badge onset precedes the first landing",
+  "noSecrets": true,
+  "resolvedAt": "2026-10-09T13:34:52.089Z",
+  "afterFix": {
+    "badgeAfterIntermediateArrivalMs": 283.3,
+    "intermediateHoldMs": 416.7
+  },
+  "finalEvidence": "MOTION_PATH_RECHECK_REPORT.json",
+  "finalFrames": "MOTION_BROWSER_QA.json"
+}

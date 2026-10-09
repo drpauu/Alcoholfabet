@@ -1,0 +1,26 @@
+:root {
+  --color-cream: #f6e7d3;
+  --color-paper: #fff7ea;
+  --color-wood-dark: #6a3f27;
+  --color-wood-medium: #95603f;
+  --color-ink: #17324d;
+  --color-terracotta: #b86549;
+  --color-sage: #738a66;
+  --color-amber: #d5a244;
+  --color-tp: #8b76a8;
+  --color-correct: #2f7d5b;
+  --color-error: #c94f4f;
+  --color-pau: #2f73b8;
+  --color-tecla: #d84f76;
+
+  --radius-card: 1.25rem;
+  --radius-button: 0.9rem;
+  --shadow-card: 0 12px 30px rgb(65 38 22 / 18%);
+  --shadow-pawn: 0 8px 14px rgb(23 50 77 / 24%);
+  --tap-target: 3rem;
+  --content-max: 90rem;
+  --motion-fast: 180ms;
+  --motion-normal: 280ms;
+  --motion-slow: 450ms;
+  --ease-out-game: cubic-bezier(0.22, 1, 0.36, 1);
+}
