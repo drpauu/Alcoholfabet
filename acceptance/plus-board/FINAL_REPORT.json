@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "recordedAt": "2026-10-09T16:39:36.594123+00:00",
+  "rule": "Correct +1 moves to the target plus one extra cell using the same question. Incorrect or unknown stays in place, forfeits the turn and drinks double.",
+  "serverRuleChanged": false,
+  "migrationsApplied": [],
+  "serverCheckGroups": 6,
+  "fixturesRolledBack": true,
+  "existingRowsUnchanged": true,
+  "authSessionsCreated": 0,
+  "visualCases": 12,
+  "rasterImagesInBoardSurface": 0,
+  "visualInspectionCompleted": true,
+  "localChecks": {
+    "status": "PASS",
+    "command": "npm run check",
+    "typeScript": "PASS",
+    "unitTests": 34,
+    "unitFiles": 7,
+    "productionBuild": "PASS",
+    "bundle": "dist/assets/index-D35uGQpt.js",
+    "existingBundleSizeWarning": true
+  },
+  "externalFrontendDeployment": false
+}

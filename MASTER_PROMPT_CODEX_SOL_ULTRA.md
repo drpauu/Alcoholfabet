@@ -91,9 +91,9 @@ Error:
 
 Casella `+1`:
 
-- Si encerta, avança a la casella i una casella addicional.
+- Si encerta, avança a la casella i una casella addicional sense respondre cap altra pregunta.
 - No s'encadena un segon `+1`.
-- Si falla, no avança, perd el torn i beu doble.
+- Si falla o no sap la resposta, no avança, perd el torn i beu doble.
 
 El marcador general només compta partides finalitzades. Una partida incompleta, abandonada o desconnectada no suma res. Una mateixa partida mai no pot sumar dues vegades.
 

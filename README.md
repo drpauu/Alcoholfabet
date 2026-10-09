@@ -64,3 +64,5 @@ El brindis actual apareix gran al centre durant 3,6 segons, amb got vectorial, l
 Les animacions principals s’han alentit un 50%, amb el so sincronitzat. S’ha retirat la frase d’estimació de la pantalla de durada. Proves d’aquesta revisió: `acceptance/animation-tempo/`; el brindis es verifica amb `node scripts/verify-drink-stage.mjs --output-dir=acceptance/animation-tempo/drink`.
 
 La migració `0013_online_player_identity.sql` afegeix dos codis privats que assignen el rol exclusivament en línia, amb validació al servidor. El client recupera les sessions locals invàlides i mostra el motiu de l’error d’entrada amb un botó per tornar-ho a provar. Les proves amb dos dispositius, les captures i la neteja de QA són a [acceptance/online-identity/](acceptance/online-identity/README.md).
+
+La fusta del tauler utilitza vetes vectorials i una ombra separada, amb la vora inferior nítida. La regla del +1 s’ha verificat amb RPCs reals: un encert avança dues caselles amb una sola pregunta; un error o una resposta desconeguda no avança, passa el torn i indica beure doble. Informes: [acceptance/plus-board/](acceptance/plus-board/README.md).

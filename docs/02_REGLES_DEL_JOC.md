@@ -60,7 +60,7 @@ Si s'encerta:
 4. Si la nova casella també té `+1`, no s'encadena.
 5. Si el segon moviment arriba a META, la persona guanya.
 
-Si es falla:
+Si es falla o no se sap la resposta:
 
 - No s'avança.
 - Es perd el torn.

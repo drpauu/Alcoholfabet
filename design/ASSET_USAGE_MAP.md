@@ -32,6 +32,8 @@ No utilitzis les fotos originals com a UI.
 
 El tauler ha de continuar sent interactiu. No utilitzis la imatge de referència com un mapa de clics opac.
 
+La superfície de fusta de `src/components/Board.tsx` es dibuixa amb gradients i vetes SVG vectorials. No s’hi amplia un retall del paisatge. El filtre d’ombra només s’aplica a la silueta inferior; la cara, el bisell i les vetes es renderitzen sense aquell filtre per mantenir les vores nítides. Es conserven la ruta i els punts utilitzats per les peces i les coreografies.
+
 ## Peces i efectes
 
 - Peces: `assets/production/pawns/`
