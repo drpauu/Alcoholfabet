@@ -1,0 +1,91 @@
+{
+  "status": "COMPLETE",
+  "completedAt": "2026-10-09T15:42:32.503485+00:00",
+  "product": "Alcoholfabet",
+  "scope": [
+    "Public entry without private code",
+    "Remove avatars from all UI and public assets",
+    "Give questions and board more space and larger text",
+    "Orchestrated single/double drinking effects",
+    "Remove two requested hints"
+  ],
+  "reports": {
+    "LOCAL_CHECK_REPORT.json": "PASS",
+    "ALCOHOLFABET_E2E_REPORT.json": "PASS",
+    "COMPLETE_GAMES_E2E_REPORT.json": "PASS",
+    "PUBLIC_ACCESS_SERVER_REPORT.json": "PASS",
+    "DURATION_SERVER_REPORT.json": "PASS",
+    "LEGACY_SECURITY_REPORT.json": "PASS",
+    "VISUAL_REPORT.json": "PASS",
+    "DRINK_MOTION_REPORT.json": "PASS",
+    "BUILD_SECURITY_REPORT.json": "PASS",
+    "PREVIEW_REPORT.json": "PASS",
+    "QA_CLEANUP_REPORT.json": "COMPLETE"
+  },
+  "unitTestsPassed": 30,
+  "realBrowserTestsPassed": 7,
+  "completeGamesPassed": 2,
+  "functionalReportCombinesIndependentRuns": true,
+  "componentCapturesPassed": 30,
+  "realAppCapturesPassed": 35,
+  "motionCasesPassed": 4,
+  "viewports": [
+    [
+      360,
+      800
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "migration": {
+    "file": "supabase/migrations/0012_alcoholfabet_public_access.sql",
+    "version": "20261009152522",
+    "appliedWith": "Supabase MCP",
+    "legacyGamesAndResultsPreserved": true
+  },
+  "qaCleanup": {
+    "status": "COMPLETE",
+    "deletedUsers": 9,
+    "deletedGames": 6,
+    "deletedResults": 2,
+    "remainingQaUsers": 0,
+    "remainingQaGames": 0,
+    "preservedOtherGames": 16,
+    "preservedOtherUsers": 6
+  },
+  "acceptanceMatrix": {
+    "rows": 97,
+    "statusCounts": {
+      "PASS": 96,
+      "PARTIAL": 1
+    },
+    "includesHistoricalEvidence": true,
+    "partialCriteria": [
+      "Q006: fluidity on all physical devices remains unverified"
+    ]
+  },
+  "avatarsShipped": 0,
+  "frontendHostingChanged": false,
+  "manualSupabaseStepsRemaining": [],
+  "backup": {
+    "path": "/home/pau/Documents/alcoholfabet-before-20261009.tar.gz",
+    "mode": "0600"
+  },
+  "noSecrets": true,
+  "documentation": "docs/ALCOHOLFABET.md",
+  "audit": "audit/ALCOHOLFABET_FINAL_AUDIT.md"
+}

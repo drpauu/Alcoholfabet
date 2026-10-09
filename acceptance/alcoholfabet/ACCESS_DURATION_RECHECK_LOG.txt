@@ -1,0 +1,35 @@
+
+Running 2 tests using 1 worker
+
+
+
+[1/2] tests/e2e/access-public.spec.ts:35:1 › el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats
+  1) tests/e2e/access-public.spec.ts:35:1 › el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats 
+
+    Error: expect(received).not.toContain(expected) // indexOf
+
+    Matcher error: received value must not be null nor undefined
+
+    Received has value: undefined
+
+      38 |   }
+      39 |   const avatar = await request.get('/assets/production/avatars/pau_character_v2.webp');
+    > 40 |   expect(avatar.headers()['content-type']).not.toContain('image/');
+         |                                                ^
+      41 | });
+      42 |
+        at /home/pau/Documents/tecla-pau-app/tests/e2e/access-public.spec.ts:40:48
+
+    Error Context: test-results/access-public-el-navegador-b3cf8-gracions-o-avatars-retirats/error-context.md
+
+
+
+
+[2/2] tests/e2e/alcoholfabet.spec.ts:105:1 › durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client
+  1 failed
+    tests/e2e/access-public.spec.ts:35:1 › el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats 
+  1 passed (18.6s)
+(node:64876) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:64977) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

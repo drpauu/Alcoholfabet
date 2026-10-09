@@ -1,0 +1,11 @@
+
+Running 3 tests using 1 worker
+
+
+
+[1/3] tests/e2e/gameplay-refinement.spec.ts:30:1 › presencial: got ple, noms i doble, tauler llarg i abandonar torna directament al menú
+[2/3] tests/e2e/gameplay-refinement.spec.ts:97:1 › durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client
+[3/3] tests/e2e/gameplay-refinement.spec.ts:138:1 › online: qui reclama T&P veu el seu avís de beure i abandonar torna tots dos al menú
+  3 passed (2.1m)
+(node:60142) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

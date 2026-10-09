@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T15:35:09.927Z",
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "passed": 5,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Alcoholfabet entra directament sense codi ni avatars i conserva el so i les invitacions",
+      "file": "access-public.spec.ts",
+      "status": "passed",
+      "durationMs": 5351,
+      "errors": []
+    },
+    {
+      "name": "presencial: got ple, noms i doble, tauler llarg i abandonar torna directament al menú",
+      "file": "alcoholfabet.spec.ts",
+      "status": "passed",
+      "durationMs": 60455,
+      "errors": []
+    },
+    {
+      "name": "online: qui reclama T&P veu el seu avís de beure i abandonar torna tots dos al menú",
+      "file": "alcoholfabet.spec.ts",
+      "status": "passed",
+      "durationMs": 32996,
+      "errors": []
+    },
+    {
+      "name": "durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client",
+      "file": "alcoholfabet.spec.ts",
+      "status": "passed",
+      "durationMs": 14825,
+      "errors": []
+    },
+    {
+      "name": "el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats",
+      "file": "access-public.spec.ts",
+      "status": "passed",
+      "durationMs": 74,
+      "errors": []
+    }
+  ],
+  "combinedIndependentRuns": true,
+  "sourceReports": [
+    "INITIAL_ALCOHOLFABET_E2E_REPORT.json",
+    "ACCESS_DURATION_RECHECK_REPORT.json",
+    "ACCESS_ASSETS_RECHECK_REPORT.json"
+  ],
+  "reason": "Three initial functional cases passed. The retired-asset denial was fixed and verified, and responsive picture decoding was made stable without accepting missing images. Only the failed cases were rerun. Initial failures remain preserved.",
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true
+}

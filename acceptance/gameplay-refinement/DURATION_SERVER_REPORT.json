@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T14:41:55.322088+00:00",
+  "migration": "0011_duration_thirty_second_estimate.sql",
+  "appliedWith": "Supabase MCP",
+  "migrationExistingDataGuard": "PASS: exact games/cells/results preserved within migration transaction",
+  "checks": [
+    "all51-supported-minutes-and5-persisted-presets",
+    "balanced-pools-plus-one-and-immutable-board",
+    "new-game10-to60-validation-private-helpers-legacy-constraint",
+    "50-cell-game-to-meta-no-repeat-approved-only-idempotent-result",
+    "pool-exhaustion-is-atomic-no-repeat-and-abandon-no-result",
+    "historical180-minute-idempotency-replay-preserved"
+  ],
+  "completedTurns": 87,
+  "fixtures": {
+    "userId": "b6d254c1-20c6-480c-85d7-a20603ef566e",
+    "gameIds": [
+      "a4ec0ebc-e13a-4532-8d57-412570d68500",
+      "26230be9-174f-43b7-82c1-8c087645e319",
+      "d2eb6b04-6c1c-4222-bca6-c2fa8e8d1240",
+      "b222adf6-6291-4d49-9999-389693104cf5",
+      "fe5ea8b2-476a-40b0-8d6a-651f319a16f9",
+      "d3863b6b-069f-46b4-97b6-3e74e2bbd435"
+    ],
+    "rolledBack": true
+  },
+  "preservedRows": {
+    "cells": {
+      "hash": "3c91f27da6db736026fe22c3208409ad",
+      "count": 90
+    },
+    "games": {
+      "hash": "4d273f0604fdf2cb27e81c2de2a1665a",
+      "count": 13
+    },
+    "users": {
+      "hash": "d36f678d45bc47963626b1251952f43f",
+      "count": 6
+    },
+    "results": {
+      "hash": "cfd6b666fe536126abfc2c3c93995e80",
+      "count": 2
+    }
+  },
+  "remainingQaUsers": 0,
+  "remainingQaGames": 0,
+  "authSessionsCreated": 0,
+  "questionsChanged": 0,
+  "existingMarkerChanged": false,
+  "unitTests": {
+    "status": "PASS",
+    "files": 2,
+    "tests": 7,
+    "executions": [
+      {
+        "command": "npx vitest run tests/unit/game-rules.test.ts tests/unit/duration.test.ts",
+        "tests": 6,
+        "status": "PASS"
+      },
+      {
+        "command": "npx vitest run tests/unit/duration.test.ts",
+        "tests": 3,
+        "status": "PASS",
+        "reason": "Additional board_rules.json parity check after metadata correction"
+      }
+    ]
+  },
+  "noSecrets": true,
+  "migrationVersion": "20261009143942",
+  "model": {
+    "estimatedTurnSeconds": 30,
+    "players": 2,
+    "estimatedCorrectRate": 0.75,
+    "estimatedPlusOneRate": 0.12,
+    "minutesRange": [
+      10,
+      60
+    ],
+    "finishRange": [
+      3,
+      50
+    ],
+    "presets": {
+      "20": 17,
+      "30": 25,
+      "45": 38,
+      "60": 50
+    },
+    "categoryWeights": {
+      "PERSONAL": 0.4,
+      "CROSSED": 0.4,
+      "TP": 0.2
+    },
+    "automaticTurnTimeout": false
+  },
+  "persistedDurationsTested": [
+    10,
+    20,
+    30,
+    45,
+    60
+  ],
+  "liveSourceHashes": {
+    "supabase/migrations/0011_duration_thirty_second_estimate.sql": "5afef8d1e4d634ced2faa4f5ee6f00248e1a3d6a13256387b0145473f0ece687",
+    "tests/backend/duration.sql": "44e7b7d40986dddbb65cc961c356127b69fbeeede5c8769550affd98bc0d83a5"
+  }
+}

@@ -1,6 +1,9 @@
 import { useId, useLayoutEffect, useRef, useState } from 'react';
 import copy from '../../data/copy_ca.json';
 import type { BoardCell, PlayerPositions, PlayerRole } from '../domain/game/game-types';
+import { boardWindow, BOARD_WINDOW_STEP } from '../domain/game/board-window';
+import { boardCopy } from '../content/board';
+import { ArtIconButton } from './art';
 import '../art-system/board.css';
 
 export interface BoardPoint { x: number; y: number }
@@ -65,6 +68,7 @@ interface BoardProps {
   activePlayer: PlayerRole;
   targetPosition?: number | null;
   finishPosition: number;
+  busy?: boolean;
 }
 
 const slabShape = 'M92 31C231 22 399 32 557 28L1093 33C1135 33 1162 49 1174 78C1188 159 1182 411 1172 523C1168 564 1142 588 1096 590L111 591C67 590 38 570 33 536C25 400 29 214 36 91C39 52 58 35 92 31Z';
@@ -80,8 +84,17 @@ function tileShape(width: number, height: number): string {
   return `M${-x + 17} ${-y}Q${-x + 1} ${-y - 1} ${-x} ${-y + 16}L${-x + 1} ${y - 15}Q${-x + 2} ${y + 1} ${-x + 18} ${y}L${x - 16} ${y - 1}Q${x + 2} ${y - 1} ${x} ${y - 17}L${x - 1} ${-y + 15}Q${x - 2} ${-y - 2} ${x - 19} ${-y + 1}Z`;
 }
 
-export function Board({ cells, positions, activePlayer, targetPosition, finishPosition }: BoardProps) {
+export function Board({ cells, positions, activePlayer, targetPosition, finishPosition, busy = false }: BoardProps) {
   const id = useId().replaceAll(':', '');
+  const focus = targetPosition ?? Math.min(finishPosition, positions[activePlayer] + 1);
+  const focusKey = `${targetPosition}:${activePlayer}:${positions.PAU}:${positions.TECLA}`;
+  const [browsing, setBrowsing] = useState<{ key: string; start: number } | null>(null);
+  const window = boardWindow(finishPosition, focus, browsing?.key === focusKey ? browsing.start : undefined);
+  const windowLength = window.end - window.start;
+  const visiblePoint = (position: number) => boardPoint(Math.min(window.end, Math.max(window.start, position)) - window.start, windowLength);
+  const fraction = (position: number) => (Math.min(window.end, Math.max(window.start, position)) - window.start) / windowLength;
+  const visibleCells = cells.filter(cell => cell.position >= window.start && cell.position <= window.end);
+  const outsidePlayers = (['PAU', 'TECLA'] as const).filter(player => positions[player] < window.start || positions[player] > window.end);
   const pathRef = useRef<SVGPathElement>(null);
   const [, measureGeometry] = useState(0);
   useLayoutEffect(() => {
@@ -92,15 +105,16 @@ export function Board({ cells, positions, activePlayer, targetPosition, finishPo
     return () => { if (measuredRoute === path) measuredRoute = null; };
   }, [finishPosition]);
   const samePosition = positions.PAU === positions.TECLA;
-  const badgePoint = boardPoint(targetPosition ?? 1, finishPosition);
-  const shortBoard = finishPosition <= 7;
-  const tileWidth = shortBoard ? 148 : finishPosition <= 9 ? 124 : finishPosition <= 12 ? 108 : 91;
-  const tileHeight = shortBoard ? 124 : finishPosition <= 9 ? 105 : finishPosition <= 12 ? 92 : 79;
+  const badgePoint = visiblePoint(targetPosition ?? 1);
+  const shortBoard = windowLength <= 7;
+  const tileWidth = shortBoard ? 148 : windowLength <= 9 ? 124 : windowLength <= 12 ? 108 : 91;
+  const tileHeight = shortBoard ? 124 : windowLength <= 9 ? 105 : windowLength <= 12 ? 92 : 79;
   const ceramicShape = tileShape(tileWidth, tileHeight);
   const iconSize = Math.min(shortBoard ? 74 : 63, tileWidth * .55);
   const pawnWidth = shortBoard ? 88 : 78;
   const pawnHeight = shortBoard ? 118 : 104;
   return (
+    <div className="board-display" data-board-window-start={window.start} data-board-window-end={window.end}>
     <div className="board-perspective-shell art-board">
       <svg className="game-board" viewBox="0 0 1210 625" role="img" aria-label={`${copy.appTitle} · ${copy.start} — ${copy.finish}`}>
         <defs>
@@ -129,21 +143,21 @@ export function Board({ cells, positions, activePlayer, targetPosition, finishPo
           <g className="board-engraving" transform="translate(295 208)">
             <path d="M-88 25C-49 18-13-3 12-37M-52 11c-13-1-28-15-25-24 14 1 28 9 25 24ZM-26-4c-15-7-17-19-13-25 12 5 16 17 13 25ZM-9-23c2-14 12-26 22-26-1 13-10 23-22 26Z" />
             <path d="M102 24C66 18 35-4 19-39M70 11c12-3 23-17 19-25-13 4-22 14-19 25ZM45-7c12-8 13-21 7-27-10 6-12 19-7 27Z" />
-            <text x="8" y="61" textAnchor="middle">Pau &amp; Tecla</text>
+            <text x="8" y="61" textAnchor="middle">Alcoholfabet</text>
             <path d="M-63 84q21-8 41 0t42 0 42 0" />
           </g>
         </g>
         <path d={routePath} fill="none" stroke="#785434" strokeWidth="8" strokeOpacity=".55" strokeLinecap="round" />
         <path ref={pathRef} data-motion="boardPath" d={routePath} fill="none" stroke="#eed8ae" strokeWidth="2" strokeOpacity=".75" strokeLinecap="round" />
-        {cells.map(cell => {
-          const point = boardPoint(cell.position, finishPosition);
-          const next = boardPoint(cell.position + .03, finishPosition);
+        {visibleCells.map(cell => {
+          const point = visiblePoint(cell.position);
+          const next = visiblePoint(cell.position + .03);
           let angle = Math.atan2(next.y - point.y, next.x - point.x) * 180 / Math.PI;
           if (angle > 90 || angle < -90) angle += 180;
           const rotation = Math.max(-15, Math.min(15, angle * .18));
           const target = targetPosition === cell.position;
           return (
-            <g key={cell.position} className={`board-cell art-tile art-tile--${cell.type.toLowerCase()}${target ? ' board-cell--target' : ''}`} transform={`translate(${point.x} ${point.y})`} data-board-position={cell.position} data-board-fraction={cell.position / finishPosition} data-board-x={point.x} data-board-y={point.y}>
+            <g key={cell.position} className={`board-cell art-tile art-tile--${cell.type.toLowerCase()}${target ? ' board-cell--target' : ''}`} transform={`translate(${point.x} ${point.y})`} data-board-position={cell.position} data-board-fraction={fraction(cell.position)} data-board-x={point.x} data-board-y={point.y}>
               <g transform={`rotate(${rotation})`}>
                 <rect x={-tileWidth / 2 - 5} y={-tileHeight / 2 - 4} width={tileWidth + 10} height={tileHeight + 10} rx="20" className="tile-socket" />
                 <path d={ceramicShape} transform="translate(-2 6)" fill="#81664c" stroke="#785c43" strokeWidth="2" />
@@ -159,14 +173,14 @@ export function Board({ cells, positions, activePlayer, targetPosition, finishPo
             </g>
           );
         })}
-        {[0, finishPosition].map(position => {
-          const point = boardPoint(position, finishPosition);
+        {[0, finishPosition].filter(position => position >= window.start && position <= window.end).map(position => {
+          const point = visiblePoint(position);
           const start = position === 0;
-          const denseBoard = finishPosition > 12;
+          const denseBoard = windowLength > 12;
           const width = denseBoard && !start ? 123 : 165;
           const height = denseBoard && start ? 90 : 112;
           const shape = tileShape(width, height);
-          return <g key={position} className={`board-end board-end--${start ? 'start' : 'finish'}`} data-board-position={position} data-board-fraction={position / finishPosition} data-board-x={point.x} data-board-y={point.y} transform={`translate(${point.x} ${point.y})`}>
+          return <g key={position} className={`board-end board-end--${start ? 'start' : 'finish'}`} data-board-position={position} data-board-fraction={fraction(position)} data-board-x={point.x} data-board-y={point.y} transform={`translate(${point.x} ${point.y})`}>
             <g transform={denseBoard && start ? 'translate(0 30)' : undefined}>
               <path d={shape} transform="translate(-2 7)" fill="#745137" stroke="#63412b" strokeWidth="2" />
               <path d={shape} fill={start ? `url(#${id}-wood)` : `url(#${id}-brass)`} stroke="#866139" strokeWidth="2.5" />
@@ -177,15 +191,29 @@ export function Board({ cells, positions, activePlayer, targetPosition, finishPo
           </g>;
         })}
         {(['PAU', 'TECLA'] as const).map(player => {
-          const point = boardPoint(positions[player], finishPosition);
+          const point = visiblePoint(positions[player]);
+          const outside = positions[player] < window.start || positions[player] > window.end;
           const offset = samePosition ? player === 'PAU' ? -18 : 18 : 0;
           const x = point.x + offset;
           const y = point.y + 10;
-          return <g key={player} className={`board-pawn art-pawn art-pawn--${player.toLowerCase()}${player === activePlayer ? ' board-pawn--active' : ''}`} transform={`translate(${x} ${y})`} data-motion={`pawn-${player}`} data-board-position={positions[player]} data-board-x={x} data-board-y={y} aria-label={player === 'PAU' ? copy.pau : copy.tecla}><ellipse cx="-4" cy="-2" rx={shortBoard ? 33 : 29} ry={shortBoard ? 10 : 9} className="pawn-shadow" /><g data-pawn-body="true"><image href={`/assets/production/pawns/pawn_${player.toLowerCase()}.svg`} x={-pawnWidth / 2} y={4 - pawnHeight} width={pawnWidth} height={pawnHeight} /></g></g>;
+          return <g key={player} className={`board-pawn art-pawn art-pawn--${player.toLowerCase()}${player === activePlayer ? ' board-pawn--active' : ''}${outside ? ' board-pawn--outside' : ''}`} transform={`translate(${x} ${y})`} data-motion={`pawn-${player}`} data-board-position={positions[player]} data-board-fraction={fraction(positions[player])} data-board-x={x} data-board-y={y} aria-label={`${player === 'PAU' ? copy.pau : copy.tecla}: ${positions[player]} / ${finishPosition}`}>
+            {!outside && <>
+              <ellipse cx="-4" cy="-2" rx={shortBoard ? 33 : 29} ry={shortBoard ? 10 : 9} className="pawn-shadow" />
+              <g data-pawn-body="true"><image href={`/assets/production/pawns/pawn_${player.toLowerCase()}.svg`} x={-pawnWidth / 2} y={4 - pawnHeight} width={pawnWidth} height={pawnHeight} /></g>
+            </>}
+          </g>;
         })}
         <image data-motion="plusOneBadge" className="board-plus-badge" href="/assets/production/effects/plus_one_badge.svg" x={badgePoint.x - 80} y={badgePoint.y - 120} width="160" height="112" />
       </svg>
       <div className="board-caption" aria-hidden="true"><span className="board-caption-line" /><span>{copy.appTitle}</span><span className="board-caption-line" /></div>
+    </div>
+    {finishPosition > 15 && <nav className="board-navigation" aria-label={copy.appTitle + ' · ' + copy.start + ' — ' + copy.finish}>
+      <ArtIconButton icon="back" aria-label={boardCopy.previous} disabled={busy || window.start === 0} onClick={() => setBrowsing({ key: focusKey, start: window.start - BOARD_WINDOW_STEP })} />
+      <span className="board-navigation-copy"><span>{boardCopy.range(window.start, window.end, finishPosition)}</span>
+        {outsidePlayers.length > 0 && <small className="board-outside-players">{outsidePlayers.map(player => <span className={`board-outside-label board-outside-label--${player.toLowerCase()}`} key={player}>{positions[player] < window.start ? '← ' : ''}{player === 'PAU' ? copy.pau : copy.tecla}: {positions[player]}{positions[player] > window.end ? ' →' : ''}</span>)}</small>}
+      </span>
+      <ArtIconButton icon="back" className="board-navigation-next" aria-label={boardCopy.next} disabled={busy || window.start === window.lastStart} onClick={() => setBrowsing({ key: focusKey, start: window.start + BOARD_WINDOW_STEP })} />
+    </nav>}
     </div>
   );
 }

@@ -23,11 +23,22 @@
 .art-board .board-pawn--active [data-pawn-body] { filter: drop-shadow(-1px 1px 1px rgb(234 198 133 / 34%)); }
 .art-board .board-plus-badge { opacity: 0; pointer-events: none; }
 .art-board .board-caption { display: none; }
+.board-display { width: 100%; }
+.board-navigation { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 12px; }
+.board-navigation > span { padding: 7px 11px; color: var(--art-ink); background: var(--art-paper) var(--art-texture-paper) center / 340px; border: 1px solid var(--art-border); border-radius: 8px 10px 9px 7px; font-size: 12px; font-weight: 800; text-align: center; box-shadow: var(--art-shadow-contact); }
+.board-navigation .art-button { width: 48px; height: 48px; min-height: 48px; flex: 0 0 48px; }
+.board-navigation-next .art-icon { transform: rotate(180deg); }
+.board-navigation > .board-navigation-copy { display: flex; flex-direction: column; gap: 2px; padding: 5px 9px; line-height: 1.25; }
+.board-outside-players { display: flex; justify-content: center; gap: 9px; font-size: 11px; }
+.board-outside-label--pau { color: var(--art-pau-deep); }
+.board-outside-label--tecla { color: var(--art-tecla-deep); }
 @media (max-width: 767px) {
   .board-perspective-shell.art-board { transform: perspective(1100px) rotateX(2deg) rotateZ(-.3deg); }
   .art-board .board-engraving { opacity: .36; }
   .art-board .board-grain { opacity: .95; }
   .art-board .tile-pattern { stroke-width: 2; }
+  .board-navigation { gap: 9px; margin-top: 7px; }
+  .board-navigation > span { font-size: 11px; padding: 7px 9px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .board-perspective-shell.art-board { transform: none; }

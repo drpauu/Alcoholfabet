@@ -2,18 +2,16 @@ import approved from '../../data/copy_ca.json';
 
 export const ca = {
   ...approved,
-  tagline: 'Una taula. Dos còmplices. Moltes preguntes.',
-  homeEyebrow: 'EL NOSTRE JOC',
-  accessHelp: 'Un racó només per a vosaltres dos.',
+  tagline: 'Preguntes, torns i brindis.',
+  homeEyebrow: 'EL JOC DE TAULA I DE BEURE',
   loading: 'Preparem la taula…',
   sending: 'Un moment…',
   next: 'Continuar',
   back: 'Enrere',
   chooseRole: 'Qui ets?',
   chooseOnline: 'Preparem la trobada',
-  customMinutes: 'Durada en minuts',
-  durationHelp: 'És una estimació: jugueu al vostre ritme.',
-  waitingJudge: 'L’altra persona valida la resposta.',
+  customMinutes: 'Durada en minuts (10–60)',
+  durationHelp: 'Estimació amb torns de 30 segons. Jugueu al vostre ritme.',
   waitingPlayer: 'Escolta la resposta i decideix.',
   waitingStart: 'Espereu que tots dos sigueu aquí.',
   claimPau: 'En Pau respon!',
@@ -32,7 +30,7 @@ export const ca = {
   ruleGoal: 'Guanya qui arriba primer a Meta.',
   ruleTalk: 'Responeu sempre en veu alta. L’altra persona fa de jutge.',
   ruleCorrect: 'Si encertes, avances una casella. Si falles, no avances, perds el torn i beus.',
-  ruleBonus: 'A +1, un encert avança una casella extra; un error vol dir beure doble. No s’encadenen bonificacions.',
+  ruleBonus: 'A +1, un encert avança una casella extra; un error vol dir beure doble.',
   ruleTP: 'A T&P, respon qui reclama primer. En línia ho confirma el servidor.',
   ruleScore: 'Només les partides que arriben a Meta compten al marcador.',
   ruleCategories: 'Personal tracta dels vostres àmbits; Creuada, dels de l’altra persona.',
@@ -46,7 +44,6 @@ export const ca = {
   crossedLabel: 'Creuada',
   noSecondAttempt: 'Aquesta pregunta no té segon intent.',
   versionChanged: 'La partida s’ha actualitzat.',
-  privateNotice: 'El codi es comprova al servidor.',
 } as const;
 
 export const errorMessages: Record<string, string> = {
@@ -54,7 +51,7 @@ export const errorMessages: Record<string, string> = {
   invalid_code: 'El codi no és correcte.',
   RATE_LIMITED: 'Massa intents. Espereu una estona abans de tornar-hi.',
   ACCESS_RATE_LIMITED: 'Massa intents. Espereu una estona abans de tornar-hi.',
-  ACCESS_NOT_CONFIGURED: 'Cal configurar el codi privat al servidor.',
+  PUBLIC_GAME_NOT_CONFIGURED: 'Cal configurar la connexió al joc.',
   ANONYMOUS_DISABLED: 'Cal activar l’accés anònim al servidor del joc.',
   NOT_AUTHENTICATED: 'Cal tornar a entrar al joc.',
   DEVICE_NOT_AUTHORIZED: 'Aquest dispositiu encara no està autoritzat.',

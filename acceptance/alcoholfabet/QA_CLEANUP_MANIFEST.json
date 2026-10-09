@@ -1,0 +1,36 @@
+{
+  "scope": "alcoholfabet",
+  "generatedAt": "2026-10-09T15:40:25.728Z",
+  "sources": [
+    "QA_E2E_MANIFEST.json"
+  ],
+  "sourceHashes": {
+    "QA_E2E_MANIFEST.json": "702684e286ab8a8d6ac43e23354670a84ca434cd93bcde3e165e8855a96f587b"
+  },
+  "cleanupSqlSha256": "0c187132ef778fa6f6bfd1cca9f51f31a78a7883befa09cac01aa50a1b709c3e",
+  "preflightSqlSha256": "9776ca0be94a0c459c3f60eadf98224c5e2cf824781b728d963f039a8c230e21",
+  "userIds": [
+    "03007d3b-6d29-40b7-9f37-4cdf95de8d91",
+    "121dd4b9-a11f-4b80-a757-841eb5a86451",
+    "1c434e41-6ac2-41da-8f4f-2e6b9942ec02",
+    "39cb3e79-13bd-48b2-8c10-3eba316fe1ec",
+    "4babeb0b-8fc8-445f-a99c-f3a394d6c332",
+    "75f32b4e-8d1f-4e3c-95c0-3643985a4787",
+    "a56f1304-37d2-4cde-a362-c1a632748faf",
+    "df980159-e357-47c7-9a14-2edd5d14619a",
+    "e1d0bc13-f5be-4e83-9e98-f563aee9a0a5"
+  ],
+  "gameIds": [
+    "30030245-e95d-4951-9eb4-a85fa450526c",
+    "33186fa7-393a-462d-99a4-637ee05a116a",
+    "5ca76025-0714-46c4-9b63-282977db5bc8",
+    "73e9e0d1-d50b-45e4-83b4-6d8ece5ebe3a",
+    "96ad2f08-2c7b-4e7f-a5e1-6fdb379a4bc5",
+    "f6cad8ae-89ca-41d9-96fa-7507c5e44069"
+  ],
+  "noSecrets": true,
+  "executed": true,
+  "completedAt": "2026-10-09T15:40:54.339792+00:00",
+  "report": "QA_CLEANUP_REPORT.json",
+  "qaCleanupVerified": true
+}

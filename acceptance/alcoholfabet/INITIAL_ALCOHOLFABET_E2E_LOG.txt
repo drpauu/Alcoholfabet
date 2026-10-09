@@ -1,0 +1,63 @@
+
+Running 5 tests using 1 worker
+
+
+
+[1/5] tests/e2e/access-public.spec.ts:4:1 › Alcoholfabet entra directament sense codi ni avatars i conserva el so i les invitacions
+[2/5] tests/e2e/access-public.spec.ts:35:1 › el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats
+  1) tests/e2e/access-public.spec.ts:35:1 › el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats 
+
+    Error: expect(received).not.toContain(expected) // indexOf
+
+    Expected substring: not "image/"
+    Received string:        "image/webp"
+
+      38 |   }
+      39 |   const avatar = await request.get('/assets/production/avatars/pau_character_v2.webp');
+    > 40 |   expect(avatar.headers()['content-type']).not.toContain('image/');
+         |                                                ^
+      41 | });
+      42 |
+        at /home/pau/Documents/tecla-pau-app/tests/e2e/access-public.spec.ts:40:48
+
+    Error Context: test-results/access-public-el-navegador-b3cf8-gracions-o-avatars-retirats/error-context.md
+
+
+
+
+[3/5] tests/e2e/alcoholfabet.spec.ts:30:1 › presencial: got ple, noms i doble, tauler llarg i abandonar torna directament al menú
+[4/5] tests/e2e/alcoholfabet.spec.ts:100:1 › durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client
+  2) tests/e2e/alcoholfabet.spec.ts:100:1 › durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client 
+
+    Error: page.evaluate: EncodingError: The source image cannot be decoded.
+
+      11 |   for (const [width, height] of sizes) {
+      12 |     await page.setViewportSize({ width, height });
+    > 13 |     await page.evaluate(async () => { await document.fonts.ready; await Promise.all(Array.from(document.images).map(image => image.decode())); });
+         |                ^
+      14 |     const layout = await page.evaluate(() => ({
+      15 |       bodyWidth: document.body.scrollWidth, bodyHeight: document.body.scrollHeight,
+      16 |       controls: Array.from(document.querySelectorAll('button')).filter(element => element.checkVisibility()).map(element => ({ label: element.textContent?.trim() || element.getAttribute('aria-label'), ...element.getBoundingClientRect().toJSON() })),
+        at capture (/home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts:13:16)
+        at /home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts:114:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/alcoholfabet-durada-màxim6-31f4e--sense-mutacions-del-client/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/alcoholfabet-durada-màxim6-31f4e--sense-mutacions-del-client/error-context.md
+
+
+
+
+[5/5] tests/e2e/alcoholfabet.spec.ts:141:1 › online: qui reclama T&P veu el seu avís de beure i abandonar torna tots dos al menú
+  2 failed
+    tests/e2e/access-public.spec.ts:35:1 › el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats 
+    tests/e2e/alcoholfabet.spec.ts:100:1 › durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client 
+  3 passed (1.8m)
+(node:63783) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:63925) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:64209) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

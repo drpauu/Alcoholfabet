@@ -14,7 +14,7 @@ export function PlayerBadge({ player, position, finishPosition, active = false }
   const progress = position !== undefined && finishPosition !== undefined;
   return (
     <div className={`player-badge player-badge--${player.toLowerCase()}${active ? ' is-active' : ''}`}>
-      <img className="player-avatar" src={`/assets/production/avatars/${player.toLowerCase()}_avatar.webp`} alt="" />
+      <span className="player-marker" aria-hidden="true" />
       <div className="player-details">
         <strong>{name}</strong>
         {progress ? (

@@ -1,0 +1,452 @@
+{
+  "status": "PASS",
+  "capturedAt": "2026-10-09T15:30:15.495Z",
+  "realApp": true,
+  "layouts": [
+    {
+      "width": 360,
+      "height": 800,
+      "bodyWidth": 360,
+      "bodyHeight": 800,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 187,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 235,
+          "bottom": 60,
+          "left": 187
+        },
+        {
+          "label": "So activat",
+          "x": 241,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 289,
+          "bottom": 60,
+          "left": 241
+        },
+        {
+          "label": "Sortir",
+          "x": 295,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 343,
+          "bottom": 60,
+          "left": 295
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 60.953125,
+          "y": 304.375,
+          "width": 48,
+          "height": 48,
+          "top": 304.375,
+          "right": 108.953125,
+          "bottom": 352.375,
+          "left": 60.953125
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 251.03125,
+          "y": 304.375,
+          "width": 48,
+          "height": 48,
+          "top": 304.375,
+          "right": 299.03125,
+          "bottom": 352.375,
+          "left": 251.03125
+        },
+        {
+          "label": "Següent torn",
+          "x": 37,
+          "y": 713,
+          "width": 286,
+          "height": 55,
+          "top": 713,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        }
+      ],
+      "notice": {
+        "x": 37,
+        "y": 587.8125,
+        "width": 286,
+        "height": 68,
+        "top": 587.8125,
+        "right": 323,
+        "bottom": 655.8125,
+        "left": 37
+      },
+      "boardWindow": {
+        "start": "0",
+        "end": "12"
+      },
+      "backgroundFilter": "saturate(0.58) contrast(0.86) brightness(0.74)"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "bodyWidth": 390,
+      "bodyHeight": 844,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 217,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 265,
+          "bottom": 60,
+          "left": 217
+        },
+        {
+          "label": "So activat",
+          "x": 271,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 319,
+          "bottom": 60,
+          "left": 271
+        },
+        {
+          "label": "Sortir",
+          "x": 325,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 373,
+          "bottom": 60,
+          "left": 325
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 75.953125,
+          "y": 319.875,
+          "width": 48,
+          "height": 48,
+          "top": 319.875,
+          "right": 123.953125,
+          "bottom": 367.875,
+          "left": 75.953125
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 266.03125,
+          "y": 319.875,
+          "width": 48,
+          "height": 48,
+          "top": 319.875,
+          "right": 314.03125,
+          "bottom": 367.875,
+          "left": 266.03125
+        },
+        {
+          "label": "Següent torn",
+          "x": 40,
+          "y": 754,
+          "width": 310,
+          "height": 55,
+          "top": 754,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        }
+      ],
+      "notice": {
+        "x": 40,
+        "y": 618.8125,
+        "width": 310,
+        "height": 76,
+        "top": 618.8125,
+        "right": 350,
+        "bottom": 694.8125,
+        "left": 40
+      },
+      "boardWindow": {
+        "start": "0",
+        "end": "12"
+      },
+      "backgroundFilter": "saturate(0.58) contrast(0.86) brightness(0.74)"
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "bodyWidth": 430,
+      "bodyHeight": 932,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 257,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 305,
+          "bottom": 60,
+          "left": 257
+        },
+        {
+          "label": "So activat",
+          "x": 311,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 359,
+          "bottom": 60,
+          "left": 311
+        },
+        {
+          "label": "Sortir",
+          "x": 365,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 413,
+          "bottom": 60,
+          "left": 365
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 95.953125,
+          "y": 340.53125,
+          "width": 48,
+          "height": 48,
+          "top": 340.53125,
+          "right": 143.953125,
+          "bottom": 388.53125,
+          "left": 95.953125
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 286.03125,
+          "y": 340.53125,
+          "width": 48,
+          "height": 48,
+          "top": 340.53125,
+          "right": 334.03125,
+          "bottom": 388.53125,
+          "left": 286.03125
+        },
+        {
+          "label": "Següent torn",
+          "x": 40,
+          "y": 842,
+          "width": 350,
+          "height": 55,
+          "top": 842,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        }
+      ],
+      "notice": {
+        "x": 40,
+        "y": 706.8125,
+        "width": 350,
+        "height": 76,
+        "top": 706.8125,
+        "right": 390,
+        "bottom": 782.8125,
+        "left": 40
+      },
+      "boardWindow": {
+        "start": "0",
+        "end": "12"
+      },
+      "backgroundFilter": "saturate(0.58) contrast(0.86) brightness(0.74)"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "bodyWidth": 1024,
+      "bodyHeight": 768,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 836,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 884,
+          "bottom": 70,
+          "left": 836
+        },
+        {
+          "label": "So activat",
+          "x": 895,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 943,
+          "bottom": 70,
+          "left": 895
+        },
+        {
+          "label": "Sortir",
+          "x": 954,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1002,
+          "bottom": 70,
+          "left": 954
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 179.296875,
+          "y": 552.734375,
+          "width": 48,
+          "height": 48,
+          "top": 552.734375,
+          "right": 227.296875,
+          "bottom": 600.734375,
+          "left": 179.296875
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 384.84375,
+          "y": 552.734375,
+          "width": 48,
+          "height": 48,
+          "top": 552.734375,
+          "right": 432.84375,
+          "bottom": 600.734375,
+          "left": 384.84375
+        },
+        {
+          "label": "Següent torn",
+          "x": 634.15625,
+          "y": 597.5,
+          "width": 343.84375,
+          "height": 54,
+          "top": 597.5,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        }
+      ],
+      "notice": {
+        "x": 634.15625,
+        "y": 444.3125,
+        "width": 343.84375,
+        "height": 84,
+        "top": 444.3125,
+        "right": 978,
+        "bottom": 528.3125,
+        "left": 634.15625
+      },
+      "boardWindow": {
+        "start": "0",
+        "end": "12"
+      },
+      "backgroundFilter": "saturate(0.58) contrast(0.86) brightness(0.74)"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "bodyHeight": 900,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 1242,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1290,
+          "bottom": 70,
+          "left": 1242
+        },
+        {
+          "label": "So activat",
+          "x": 1301,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1349,
+          "bottom": 70,
+          "left": 1301
+        },
+        {
+          "label": "Sortir",
+          "x": 1360,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1408,
+          "bottom": 70,
+          "left": 1360
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 319.375,
+          "y": 692.90625,
+          "width": 48,
+          "height": 48,
+          "top": 692.90625,
+          "right": 367.375,
+          "bottom": 740.90625,
+          "left": 319.375
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 524.921875,
+          "y": 692.90625,
+          "width": 48,
+          "height": 48,
+          "top": 692.90625,
+          "right": 572.921875,
+          "bottom": 740.90625,
+          "left": 524.921875
+        },
+        {
+          "label": "Següent torn",
+          "x": 922.296875,
+          "y": 690,
+          "width": 453.703125,
+          "height": 54,
+          "top": 690,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        }
+      ],
+      "notice": {
+        "x": 922.296875,
+        "y": 536.8125,
+        "width": 453.703125,
+        "height": 84,
+        "top": 536.8125,
+        "right": 1376,
+        "bottom": 620.8125,
+        "left": 922.296875
+      },
+      "boardWindow": {
+        "start": "0",
+        "end": "12"
+      },
+      "backgroundFilter": "saturate(0.58) contrast(0.86) brightness(0.74)"
+    }
+  ]
+}

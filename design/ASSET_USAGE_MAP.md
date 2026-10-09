@@ -15,11 +15,12 @@ Els SVG i PNG simples del mateix directori són fallback lleuger, no la primera 
 
 ## Avatars
 
-- `pau_avatar.webp`
-- `tecla_avatar.webp`
-- `pau_character.webp`
-- `tecla_character.webp`
-- `pau_tecla_duo.webp`
+- `assets/production/avatars/pau_character_v2.webp`
+- `assets/production/avatars/tecla_character_v2.webp`
+
+Són els dos mestres transparents de la UI actual, refinats a petició de l’usuari. `characterAsset()` els selecciona a l’inici i `PlayerPortrait` retalla exactament la mateixa imatge dins del marc en HUD, sala, selectors i victòria. No generis un retrat independent ni incorporis un cercle o una vora blanca a l’asset. Els PNG corresponents són els mestres de producció i les còpies de `public/` han de ser idèntiques.
+
+Els fitxers anteriors `*_avatar`, `*_character` sense `v2` i `pau_tecla_duo` es conserven com a historial, però no són les fonts de la UI actual. Vegeu `docs/AVATAR_REFINEMENT.md`.
 
 No utilitzis les fotos originals com a UI.
 

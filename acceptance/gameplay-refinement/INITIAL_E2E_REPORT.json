@@ -1,0 +1,42 @@
+{
+  "status": "FAIL",
+  "startedAt": "2026-10-09T14:41:03.144Z",
+  "completedAt": "2026-10-09T14:42:02.872Z",
+  "command": "npx playwright test tests/e2e/gameplay-refinement.spec.ts --trace off --reporter=json",
+  "arguments": [
+    "playwright",
+    "test",
+    "tests/e2e/gameplay-refinement.spec.ts",
+    "--trace",
+    "off",
+    "--reporter=json"
+  ],
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 1,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 57650.261,
+  "tests": [
+    {
+      "name": "presencial: got ple, noms i doble, tauler llarg i abandonar torna directament al menú",
+      "file": "gameplay-refinement.spec.ts",
+      "status": "failed",
+      "durationMs": 11907,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"PAU\"\u001b[39m\n\n  64 |         await expect(notice.locator('img')).toHaveAttribute('src', '/assets/production/effects/drink-filled.svg');\n  65 |         expect(view.lastEvent?.payload.respondingPlayer).toBe(respondent);\n> 66 |         expect(view.game.currentTurn).not.toBe(respondent);\n     |                                           ^\n  67 |         expect(view.scoreboard).toEqual(initial.scoreboard);\n  68 |         if (respondent === 'PAU' && !sawPau) { sawPau = true; await capture(page, 'drink-pau'); }\n  69 |         if (respondent === 'TECLA' && !sawTecla) { sawTecla = true; await capture(page, 'drink-tecla'); }\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/gameplay-refinement.spec.ts:66:43"
+      ]
+    },
+    {
+      "name": "online: qui reclama T&P veu el seu avís de beure i abandonar torna tots dos al menú",
+      "file": "gameplay-refinement.spec.ts",
+      "status": "passed",
+      "durationMs": 41992,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true
+}

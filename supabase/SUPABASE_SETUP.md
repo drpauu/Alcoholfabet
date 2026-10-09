@@ -1,3 +1,7 @@
+# Alcoholfabet — estat vigent
+
+La migració 0012, aplicada el 9 d’octubre de 2026, habilita l’entrada pública sense codi privat amb Anonymous Auth. Les noves partides es creen al context `alcoholfabet`. La pertinença a la partida, RLS, el filtratge de respostes i els canals Realtime privats continuen vigents. Les partides privades històriques conserven les seves dades i permisos; l’Edge Function i la configuració del codi antic només corresponen a aquell context. No cal cap acció manual per entrar al joc actual. La resta d’aquest document conserva l’històric d’implementació.
+
 # Supabase — Tecla&Pau
 
 Projecte verificat: `lhgyopkwstuyxolwfucq`, `https://lhgyopkwstuyxolwfucq.supabase.co`.
@@ -5,6 +9,8 @@ Projecte verificat: `lhgyopkwstuyxolwfucq`, `https://lhgyopkwstuyxolwfucq.supaba
 El 9 d'octubre de 2026 s'han aplicat les migracions `0001`–`0009` mitjançant el MCP de Supabase. L'esquema inicial del projecte era buit. Hi ha 130 preguntes aprovades, 26 per pila. S'ha desplegat `verify-couple-access`, versió 1, en estat ACTIVE.
 
 Durant la verificació del redisseny integral s'ha aplicat també `0010_game_view_boolean_answer_capability.sql` amb el MCP. Quan s'abandona una partida online durant una pregunta, el respondent queda buit i una comparació SQL podia retornar NULL. `canSeeAnswer` ara retorna sempre un booleà (`coalesce(..., false)`), de manera que el client pot recuperar la partida abandonada. La selecció de resposta i els permisos de la funció es conserven.
+
+La migració `0011_duration_thirty_second_estimate.sql`, aplicada amb MCP, calcula les partides noves amb torns compartits de 30 segons estimats, dos jugadors, un 75% d'encerts i un 12% de +1. Els presets de 20/30/45/60 minuts generen 17/25/38/50 caselles. Les creacions noves només accepten 10–60 minuts; les peticions idempotents històriques poden recuperar la partida original. La restricció històrica de `target_minutes` es conserva i el límit de `finish_position` s'amplia a 50. El patró 40% Personal/40% Creuada/20% T&P equilibra les cinc piles de 26 preguntes. No hi ha temporitzador ni canvi automàtic de torn. La migració comprova que les partides, les caselles i els resultats existents són idèntics. Vegeu [DURATION_MODEL.md](../docs/DURATION_MODEL.md).
 
 ## Autenticació i configuració externa
 
@@ -78,6 +84,8 @@ El preparador crea tres sessions anònimes reals i autoritza només els dos juga
 Les suites llegeixen fixtures temporals protegides fora del repositori: `TECLA_PAU_QA_ENV` i `TECLA_PAU_QA_USERS`, amb valors per defecte a `/tmp/tecla-pau-qa-*.json`. La primera execució va utilitzar tres sessions Auth reals amb contrasenyes aleatòries abans d'activar Anonymous Auth; la UI del producte no ofereix aquest accés. La verificació final s'ha repetit amb tres sessions anònimes reals: onze comprovacions REST i sis Realtime, totes superades. No s'han substituït les RPCs ni el RLS.
 
 `tests/backend/security.sql` s'ha executat contra el projecte real; totes les fixtures i els Broadcast es desfan amb ROLLBACK. Comprova revocació, límit d'intents, parser de topic i permisos privats de Broadcast/Presence i l'error estable d'una pila de preguntes esgotada sense modificar la partida.
+
+`tests/backend/duration.sql` també s'ha executat contra el projecte real amb resultat PASS: 51 durades compatibles, cinc recorreguts persistits, una partida de 50 caselles fins a META amb 87 preguntes sense repetir, resultat idempotent, esgotament atòmic, abandonament sense resultat i recuperació d'una petició històrica de 180 minuts. Els sis jocs i l'usuari QA registrats es desfan abans de retornar l'informe; no es creen sessions Auth. Les 13 partides, 90 caselles, sis usuaris i dos resultats existents són exactament idèntics al punt de la transacció. Els recomptes són històrics de la prova i no s'utilitzen per reinicialitzar dades. Vegeu `acceptance/gameplay-refinement/DURATION_SERVER_REPORT.json` i `DURATION_QA_MANIFEST.json`.
 
 Informes de la primera implementació: `acceptance/backend-integration-report.json`, `acceptance/backend-realtime-report.json` i `acceptance/backend-security-report.json`. Les seves fixtures, incloent partides, resultats i usuaris anònims temporals, es van eliminar després de verificar-les. Aquella neteja va eliminar 39 partides QA, 24 usuaris temporals i 6 resultats; el marcador històric resultant era 0–0. Vegeu `acceptance/QA_CLEANUP_REPORT.json`. Aquest valor no representa les partides jugades posteriorment per l’usuari.
 

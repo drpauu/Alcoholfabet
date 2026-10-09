@@ -1,0 +1,21 @@
+{
+  "scope": "duration SQL regression only; distinct from root browser QA",
+  "createdAt": "2026-10-09T14:41:55.322088+00:00",
+  "fixtures": {
+    "userId": "b6d254c1-20c6-480c-85d7-a20603ef566e",
+    "gameIds": [
+      "a4ec0ebc-e13a-4532-8d57-412570d68500",
+      "26230be9-174f-43b7-82c1-8c087645e319",
+      "d2eb6b04-6c1c-4222-bca6-c2fa8e8d1240",
+      "b222adf6-6291-4d49-9999-389693104cf5",
+      "fe5ea8b2-476a-40b0-8d6a-651f319a16f9",
+      "d3863b6b-069f-46b4-97b6-3e74e2bbd435"
+    ],
+    "rolledBack": true
+  },
+  "cleanup": "All fixture writes rolled back before SQL response; no cleanup deletion required",
+  "authSessionsCreated": 0,
+  "remainingQaUsers": 0,
+  "remainingQaGames": 0,
+  "noSecrets": true
+}

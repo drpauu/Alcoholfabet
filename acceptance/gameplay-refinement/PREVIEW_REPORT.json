@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "verifiedAt": "2026-10-09T15:13:47.955247+00:00",
+  "origin": "http://127.0.0.1:4173",
+  "indexMatchesDist": true,
+  "servedAssets": [
+    {
+      "path": "/assets/production/icons/tp.svg",
+      "sha256": "a93a0f43117ea6e8115cc1e0c35ded45d534621698edce9e8dd235594ae20c76",
+      "matchesDist": true
+    },
+    {
+      "path": "/assets/index-ClznDkaZ.js",
+      "sha256": "dab7c5f0468a78caf2d5afdc2a39fbceaec6e6bff422ea38531cb82d874377e5",
+      "matchesDist": true
+    },
+    {
+      "path": "/assets/index-B3d9U5ly.css",
+      "sha256": "47e6e6381e011ce601f380d0bbe45131a45cca14eb2439edd12508ccf9ef4e20",
+      "matchesDist": true
+    }
+  ],
+  "readOnlyHttp": true,
+  "appBooted": false,
+  "authSessionsCreated": 0,
+  "gamesCreated": 0,
+  "noSecrets": true
+}

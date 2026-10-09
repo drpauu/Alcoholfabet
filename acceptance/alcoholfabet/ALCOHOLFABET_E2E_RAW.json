@@ -1,0 +1,363 @@
+{
+  "config": {
+    "argv": [
+      "/home/pau/.nvm/versions/node/v24.16.0/bin/node",
+      "/home/pau/Documents/tecla-pau-app/node_modules/.bin/playwright",
+      "test",
+      "tests/e2e/access-public.spec.ts",
+      "tests/e2e/alcoholfabet.spec.ts",
+      "--trace",
+      "off",
+      "--reporter=json"
+    ],
+    "configFile": "/home/pau/Documents/tecla-pau-app/playwright.config.ts",
+    "rootDir": "/home/pau/Documents/tecla-pau-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/pau/Documents/tecla-pau-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/pau/Documents/tecla-pau-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/pau/Documents/tecla-pau-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/home/pau/Documents/tecla-pau-app/tests/e2e",
+        "snapshotDir": "/home/pau/Documents/tecla-pau-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 180000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5173",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "launchOptions": {
+            "executablePath": "/home/pau/.cache/ms-playwright/chromium-1200/chrome-linux64/chrome"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://127.0.0.1:5173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "access-public.spec.ts",
+      "file": "access-public.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Alcoholfabet entra directament sense codi ni avatars i conserva el so i les invitacions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5351,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T15:29:56.303Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a9f701605cd6149213d9-0e40bc4dd5cc30f64d1c",
+          "file": "access-public.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 36,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"image/\"\u001b[39m\nReceived string:        \u001b[31m\"\u001b[7mimage/\u001b[27mwebp\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"image/\"\u001b[39m\nReceived string:        \u001b[31m\"\u001b[7mimage/\u001b[27mwebp\"\u001b[39m\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/access-public.spec.ts:40:48",
+                    "location": {
+                      "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/access-public.spec.ts",
+                      "column": 48,
+                      "line": 40
+                    },
+                    "snippet": "  38 |   }\n  39 |   const avatar = await request.get('/assets/production/avatars/pau_character_v2.webp');\n> 40 |   expect(avatar.headers()['content-type']).not.toContain('image/');\n     |                                                ^\n  41 | });\n  42 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/access-public.spec.ts",
+                        "column": 48,
+                        "line": 40
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"image/\"\u001b[39m\nReceived string:        \u001b[31m\"\u001b[7mimage/\u001b[27mwebp\"\u001b[39m\n\n  38 |   }\n  39 |   const avatar = await request.get('/assets/production/avatars/pau_character_v2.webp');\n> 40 |   expect(avatar.headers()['content-type']).not.toContain('image/');\n     |                                                ^\n  41 | });\n  42 |\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/access-public.spec.ts:40:48"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T15:30:01.939Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/pau/Documents/tecla-pau-app/test-results/access-public-el-navegador-b3cf8-gracions-o-avatars-retirats/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/access-public.spec.ts",
+                    "column": 48,
+                    "line": 40
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a9f701605cd6149213d9-c4f139c1c192a027bb7a",
+          "file": "access-public.spec.ts",
+          "line": 35,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "alcoholfabet.spec.ts",
+      "file": "alcoholfabet.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "presencial: got ple, noms i doble, tauler llarg i abandonar torna directament al menú",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 60455,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T15:30:03.060Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "035700d81b451a0c3198-d2e224d1f79e525f42ef",
+          "file": "alcoholfabet.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5546,
+                  "error": {
+                    "message": "Error: page.evaluate: EncodingError: The source image cannot be decoded.",
+                    "stack": "Error: page.evaluate: EncodingError: The source image cannot be decoded.\n    at capture (/home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts:13:16)\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts:114:5",
+                    "location": {
+                      "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts",
+                      "column": 16,
+                      "line": 13
+                    },
+                    "snippet": "  11 |   for (const [width, height] of sizes) {\n  12 |     await page.setViewportSize({ width, height });\n> 13 |     await page.evaluate(async () => { await document.fonts.ready; await Promise.all(Array.from(document.images).map(image => image.decode())); });\n     |                ^\n  14 |     const layout = await page.evaluate(() => ({\n  15 |       bodyWidth: document.body.scrollWidth, bodyHeight: document.body.scrollHeight,\n  16 |       controls: Array.from(document.querySelectorAll('button')).filter(element => element.checkVisibility()).map(element => ({ label: element.textContent?.trim() || element.getAttribute('aria-label'), ...element.getBoundingClientRect().toJSON() })),"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts",
+                        "column": 16,
+                        "line": 13
+                      },
+                      "message": "Error: page.evaluate: EncodingError: The source image cannot be decoded.\n\n  11 |   for (const [width, height] of sizes) {\n  12 |     await page.setViewportSize({ width, height });\n> 13 |     await page.evaluate(async () => { await document.fonts.ready; await Promise.all(Array.from(document.images).map(image => image.decode())); });\n     |                ^\n  14 |     const layout = await page.evaluate(() => ({\n  15 |       bodyWidth: document.body.scrollWidth, bodyHeight: document.body.scrollHeight,\n  16 |       controls: Array.from(document.querySelectorAll('button')).filter(element => element.checkVisibility()).map(element => ({ label: element.textContent?.trim() || element.getAttribute('aria-label'), ...element.getBoundingClientRect().toJSON() })),\n    at capture (/home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts:13:16)\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts:114:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T15:31:03.793Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/pau/Documents/tecla-pau-app/test-results/alcoholfabet-durada-màxim6-31f4e--sense-mutacions-del-client/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/pau/Documents/tecla-pau-app/test-results/alcoholfabet-durada-màxim6-31f4e--sense-mutacions-del-client/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts",
+                    "column": 16,
+                    "line": 13
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "035700d81b451a0c3198-4b76a66d6a6449346e16",
+          "file": "alcoholfabet.spec.ts",
+          "line": 100,
+          "column": 1
+        },
+        {
+          "title": "online: qui reclama T&P veu el seu avís de beure i abandonar torna tots dos al menú",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32996,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T15:31:10.473Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "035700d81b451a0c3198-a74b3a73896bb9a68548",
+          "file": "alcoholfabet.spec.ts",
+          "line": 141,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-09T15:29:54.909Z",
+    "duration": 108983.988,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

@@ -1,6 +1,6 @@
-# Pau & Tecla
+# Alcoholfabet
 
-Joc privat de taula per a en Pau i la Tecla, amb React, TypeScript i Supabase. La mateixa base de dades arbitra els modes presencial i en línia: el navegador envia intencions i rep una vista segura segons el seu rol.
+Joc públic de taula i de beure per a en Pau i la Tecla, amb React, TypeScript i Supabase. La mateixa base de dades arbitra els modes presencial i en línia: el navegador envia intencions i rep una vista segura segons el seu rol.
 
 ## Executar
 
@@ -11,7 +11,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Obre http://127.0.0.1:5173. En aquest entorn ja hi ha `.env.local` configurat; no està inclòs al control de versions. El codi privat inicial està en un fitxer local amb permisos 600: `/home/pau/.config/tecla-pau/access-code.txt`. No es copia al frontend ni als informes.
+Obre http://127.0.0.1:5173. En aquest entorn ja hi ha `.env.local` configurat; no està inclòs al control de versions. L’entrada és directa i no demana cap codi privat.
 
 Anonymous Sign-Ins està activat i verificat al projecte remot. Les proves finals de partida han utilitzat dispositius anònims nous i el backend real, sense simular el servidor.
 
@@ -30,7 +30,7 @@ npm run test:e2e
 
 Playwright necessita Chromium. La configuració utilitza el navegador instal·lat en aquest entorn; en un altre equip, instal·la'l amb `npx playwright install chromium` i defineix `PLAYWRIGHT_CHROMIUM_EXECUTABLE` amb el seu camí, o elimina l'override `executablePath` de la configuració.
 
-Les proves E2E fan escriptures reals al projecte Supabase configurat. Necessiten un codi d'accés real via `TECLA_ACCESS_CODE_FILE` i accés anònim activat. Si està desactivat, s'utilitza explícitament el fixture protegit `/tmp/tecla-pau-qa-users.json`; mai forma part del build. Executeu les suites de backend, E2E i motion successivament perquè comparteixen marcador.
+Les proves E2E fan escriptures reals al projecte Supabase configurat. Necessiten accés anònim activat; no requereixen codi privat. Si està desactivat, s'utilitza explícitament el fixture protegit `/tmp/tecla-pau-qa-users.json`; mai forma part del build. Executeu les suites de backend, E2E i motion successivament perquè comparteixen marcador.
 
 ## Fitxers
 
@@ -45,8 +45,16 @@ Les proves E2E fan escriptures reals al projecte Supabase configurat. Necessiten
 
 Les fotografies de referència privades romanen fora de `public/` i `dist/`. Els assets aprovats es conserven a `assets/production/`.
 
-La direcció d’art i els contractes dels components són a [docs/ART_SYSTEM.md](docs/ART_SYSTEM.md). El redisseny conserva els avatars i el paisatge aprovats; tauler, peces, paper, ceràmica, botons i símbols comparteixen el mateix sistema de materials i llum. El tauler continua sent SVG amb ruta, caselles i punts d’animació disponibles al codi.
+La direcció d’art i els contractes dels components són a [docs/ART_SYSTEM.md](docs/ART_SYSTEM.md). El paisatge aprovat es conserva; tauler, peces, paper, ceràmica, botons i símbols comparteixen el mateix sistema de materials i llum. El tauler continua sent SVG amb ruta, caselles i punts d’animació disponibles al codi. El [refinament dels avatars](docs/AVATAR_REFINEMENT.md) corregeix el nas de la Tecla, els contorns blancs i el doble marc: cada perfil reutilitza el mateix mestre transparent que el personatge de l’inici.
 
 L’auditoria del redisseny actual és a [audit/ART_REDESIGN_FINAL_AUDIT.md](audit/ART_REDESIGN_FINAL_AUDIT.md), amb [36 pantalles revisades als tres formats](acceptance/art-redesign/VISUAL_REVIEW.md), 18 proves unitàries, vuit E2E sobre Supabase real i preview del build final verificats. Els rechecks de motion després de l’últim ajust i els límits de rendiment estan documentats per separat. La matriu específica és [FINAL_ART_ACCEPTANCE_MATRIX.csv](acceptance/art-redesign/FINAL_ART_ACCEPTANCE_MATRIX.csv).
 
 L’auditoria de la primera implementació és a [audit/FINAL_AUDIT.md](audit/FINAL_AUDIT.md). L’evidència del redisseny integral es desa separadament a [acceptance/art-redesign/](acceptance/art-redesign/). Les proves escriuen només en partides QA identificades; la neteja conserva les partides i el marcador de l’usuari.
+
+La revisió de llegibilitat i avisos de beure, el retorn directe al menú en abandonar i la durada estimada amb 30 segons per torn estan documentats a [GAMEPLAY_REFINEMENT.md](docs/GAMEPLAY_REFINEMENT.md). Les noves partides admeten 10–60 minuts i el tauler es mostra per trams quan el recorregut és llarg.
+
+## Revisió Alcoholfabet
+
+Entrada pública amb Anonymous Auth, nom Alcoholfabet i cap avatar al paquet públic. Els noms Pau i Tecla i els colors blau i rosa identifiquen les peces. La pregunta i el tauler tenen prioritat visual; els resultats incorrectes mostren un brindis amb got, nom, bombolles i so, o dos gots per beure doble. S’han retirat els dos textos d’ajuda demanats.
+
+La migració `0012_alcoholfabet_public_access.sql` crea el context públic separat; conserva íntegres les partides i el marcador privat històrics. El codi de sala en línia continua servint per unir els dos dispositius. Informes de la revisió: `acceptance/alcoholfabet/`; documentació: `docs/ALCOHOLFABET.md`.

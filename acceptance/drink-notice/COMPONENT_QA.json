@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "scope": "Actual presentation components, temporary external fixture; no App, Auth, Supabase or gameplay mutations.",
+  "measurements": [
+    {
+      "width": 390,
+      "height": 844,
+      "player": "PAU",
+      "double": false,
+      "message": "En Pau ha de beure",
+      "noticeHeight": 62,
+      "cardHeight": 383.953125,
+      "cardTop": 230.015625,
+      "cardBottom": 613.96875,
+      "bodyOverflow": false,
+      "textFits": true,
+      "textOverflowPx": {
+        "x": 0,
+        "y": 1
+      },
+      "glassLoaded": true,
+      "timedTargetCount": 1,
+      "timedTargetOpacity": "0"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "player": "TECLA",
+      "double": true,
+      "message": "×2La Tecla ha de beureBeu doble",
+      "noticeHeight": 62,
+      "cardHeight": 383.953125,
+      "cardTop": 230.015625,
+      "cardBottom": 613.96875,
+      "bodyOverflow": false,
+      "textFits": true,
+      "textOverflowPx": {
+        "x": 0,
+        "y": 0
+      },
+      "glassLoaded": true,
+      "timedTargetCount": 1,
+      "timedTargetOpacity": "0"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "player": "PAU",
+      "double": false,
+      "message": "En Pau ha de beure",
+      "noticeHeight": 75,
+      "cardHeight": 420,
+      "cardTop": 174,
+      "cardBottom": 594,
+      "bodyOverflow": false,
+      "textFits": true,
+      "textOverflowPx": {
+        "x": 0,
+        "y": 0
+      },
+      "glassLoaded": true,
+      "timedTargetCount": 1,
+      "timedTargetOpacity": "0"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "player": "TECLA",
+      "double": true,
+      "message": "×2La Tecla ha de beureBeu doble",
+      "noticeHeight": 75,
+      "cardHeight": 420,
+      "cardTop": 174,
+      "cardBottom": 594,
+      "bodyOverflow": false,
+      "textFits": true,
+      "textOverflowPx": {
+        "x": 0,
+        "y": 1
+      },
+      "glassLoaded": true,
+      "timedTargetCount": 1,
+      "timedTargetOpacity": "0"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "player": "PAU",
+      "double": false,
+      "message": "En Pau ha de beure",
+      "noticeHeight": 75,
+      "cardHeight": 455,
+      "cardTop": 222.5,
+      "cardBottom": 677.5,
+      "bodyOverflow": false,
+      "textFits": true,
+      "textOverflowPx": {
+        "x": 0,
+        "y": 0
+      },
+      "glassLoaded": true,
+      "timedTargetCount": 1,
+      "timedTargetOpacity": "0"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "player": "TECLA",
+      "double": true,
+      "message": "×2La Tecla ha de beureBeu doble",
+      "noticeHeight": 75,
+      "cardHeight": 455,
+      "cardTop": 222.5,
+      "cardBottom": 677.5,
+      "bodyOverflow": false,
+      "textFits": true,
+      "textOverflowPx": {
+        "x": 0,
+        "y": 1
+      },
+      "glassLoaded": true,
+      "timedTargetCount": 1,
+      "timedTargetOpacity": "0"
+    }
+  ],
+  "errors": [],
+  "textMeasurementTolerancePx": 1
+}

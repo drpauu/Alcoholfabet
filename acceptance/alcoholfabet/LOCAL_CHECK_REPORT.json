@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T15:39:43.543189+00:00",
+  "command": "npm run check",
+  "log": "CHECK_FINAL_LOG.txt",
+  "typecheck": "PASS",
+  "unitTests": {
+    "files": 7,
+    "passed": 30,
+    "failed": 0
+  },
+  "build": "PASS",
+  "assets": [
+    {
+      "path": "dist/assets/index-DNOklMfp.js",
+      "bytes": 594687,
+      "sha256": "ba7c849011597c7890c247fb5ac5e4ad748cda99679770cd7c09aacae72c389f"
+    },
+    {
+      "path": "dist/assets/index-eudQqT0_.css",
+      "bytes": 47790,
+      "sha256": "db9410287253434bbc2fd1197eac90a18ec56ad0358c81d0bfc686139edd59ca"
+    }
+  ],
+  "noSecrets": true
+}

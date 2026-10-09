@@ -2,25 +2,33 @@
   "presets": [
     {
       "minutes": 20,
-      "cells": 4
+      "cells": 17
     },
     {
       "minutes": 30,
-      "cells": 5
+      "cells": 25
     },
     {
       "minutes": 45,
-      "cells": 7
+      "cells": 38
     },
     {
       "minutes": 60,
-      "cells": 9
+      "cells": 50
     }
   ],
   "custom": {
-    "minutesPerCell": 6.5,
+    "minMinutes": 10,
+    "maxMinutes": 60,
+    "minutesPerCell": 1.1904761904761905,
     "minCells": 3,
-    "maxCells": 15
+    "maxCells": 50
   },
-  "estimatedTurnSeconds": 160
+  "estimatedTurnSeconds": 30,
+  "players": 2,
+  "estimatedCorrectRate": 0.75,
+  "estimatedPlusOneRate": 0.12,
+  "categoryWeights": { "PERSONAL": 0.4, "CROSSED": 0.4, "TP": 0.2 },
+  "formula": "round(minutes * 60 * 0.75 * 1.12 / (2 * 30))",
+  "automaticTurnTimeout": false
 }

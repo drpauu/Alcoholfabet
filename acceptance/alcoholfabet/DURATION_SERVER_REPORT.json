@@ -1,0 +1,49 @@
+{
+  "checks": [
+    "all51-supported-minutes-and5-persisted-presets",
+    "balanced-pools-plus-one-and-immutable-board",
+    "new-game10-to60-validation-private-helpers-legacy-constraint",
+    "50-cell-game-to-meta-no-repeat-approved-only-idempotent-result",
+    "pool-exhaustion-is-atomic-no-repeat-and-abandon-no-result",
+    "historical180-minute-idempotency-replay-preserved"
+  ],
+  "status": "PASS",
+  "fixtures": {
+    "userId": "4fa33ed3-679f-48ee-a250-b46f4f98ad7e",
+    "gameIds": [
+      "e20355ba-6dbb-4976-a440-5b3d40d186ae",
+      "46038c5e-f954-410a-8cc5-54747dfbf4dd",
+      "3f721d85-d806-4e28-9cce-d4601c3d8848",
+      "28474a2c-3f32-415c-9561-7cbc54390cdd",
+      "c1e23ed2-37c0-4ca1-8236-ee11eca1406c",
+      "b9af3371-5c93-4fc2-bce8-9b8c9e175e16"
+    ],
+    "rolledBack": true
+  },
+  "noSecrets": true,
+  "preservedRows": {
+    "cells": {
+      "hash": "70d67fd900da2cb0ac0c06e9b7c5c565",
+      "count": 174
+    },
+    "games": {
+      "hash": "d7bc904f6185034c44ac602b1ceba066",
+      "count": 17
+    },
+    "users": {
+      "hash": "e229f4895d3478c03108b2af30af324e",
+      "count": 8
+    },
+    "results": {
+      "hash": "cfd6b666fe536126abfc2c3c93995e80",
+      "count": 2
+    }
+  },
+  "completedTurns": 87,
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "authSessionsCreated": 0,
+  "completedAt": "2026-10-09T15:30:46.926Z",
+  "executedWith": "Supabase MCP",
+  "sqlFile": "tests/backend/duration.sql"
+}

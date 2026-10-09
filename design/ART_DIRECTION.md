@@ -124,12 +124,14 @@ La cultura local pot aparèixer en una postal discreta, una gralla, un timbal, u
 Utilitza els assets aprovats. Han de mantenir:
 
 - Línia clara.
-- Colors plans càlids.
+- Pigments càlids, volum pintat i llum coherent amb el paisatge.
 - Adult jove.
 - Semblança amb les fotos.
 - Coherència entre pantalles.
 
 No generis expressions noves amb una cara diferent. Per a feedback, anima l'asset amb translació, rotació, escala, corona o partícules.
+
+El refinament demanat per l’usuari el 9 d’octubre de 2026 utilitza `pau_character_v2` i `tecla_character_v2`. Corregeix el nas de la Tecla i els contorns d’extracció, amb més detall il·lustrat. El perfil deriva del mateix mestre transparent amb `PlayerPortrait`; el marc pertany a la UI. La portada i els perfils sempre comparteixen la mateixa cara. Vegeu `docs/AVATAR_REFINEMENT.md`.
 
 ## 7. Densitat visual
 

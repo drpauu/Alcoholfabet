@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "anonymous-entry-and-create-without-private-code-or-device",
+    "outsider-cannot-resume-read-act-or-subscribe-to-other-or-legacy-game",
+    "public-online-join-private-answer-and-member-only-realtime",
+    "rls-and-server-only-write-privileges-preserved"
+  ],
+  "status": "PASS",
+  "noSecrets": true,
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "fixturesRolledBack": true,
+  "authSessionsCreated": 0,
+  "existingRowsUnchanged": true,
+  "completedAt": "2026-10-09T15:30:46.911Z",
+  "executedWith": "Supabase MCP",
+  "sqlFile": "tests/backend/public-access.sql"
+}

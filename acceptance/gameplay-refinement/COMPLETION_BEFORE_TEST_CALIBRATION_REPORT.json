@@ -1,0 +1,44 @@
+{
+  "status": "FAIL",
+  "startedAt": "2026-10-09T14:52:43.974Z",
+  "completedAt": "2026-10-09T14:56:31.962Z",
+  "command": "npx playwright test tests/e2e/game.spec.ts --grep 'partida presencial:|online: dos contexts' --trace off --reporter=json",
+  "arguments": [
+    "playwright",
+    "test",
+    "tests/e2e/game.spec.ts",
+    "--grep",
+    "partida presencial:|online: dos contexts",
+    "--trace",
+    "off",
+    "--reporter=json"
+  ],
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 1,
+  "passed": 1,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 226072.574,
+  "tests": [
+    {
+      "name": "partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic",
+      "file": "game.spec.ts",
+      "status": "failed",
+      "durationMs": 91364,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  44 |     await clickAction(page,'Següent torn');\n  45 |   }\n> 46 |   expect(bonus).toBe(true);\n     |                 ^\n  47 |   expect(completed).toBe(true);\n  48 |   expect(errors).toEqual([]);\n  49 |   await context.close();\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:46:17"
+      ]
+    },
+    {
+      "name": "online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 131063,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true
+}

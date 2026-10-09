@@ -1,0 +1,33 @@
+{
+  "scope": "avatar-refinement",
+  "tool": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "privatePhotosUsedOnlyAsLikenessReferences": true,
+  "profileUsesSameMasterWithoutAnotherGeneration": true,
+  "formatConversionOnly": "PNG to WebP quality94/alpha100, no pixel drawing, compositing or alpha editing outside image_gen",
+  "prompts": [
+    {
+      "player": "TECLA",
+      "mode": "built-in image_gen edit",
+      "asset": "assets/production/avatars/tecla_character_v2.png",
+      "references": [
+        "assets/production/avatars/tecla_character.png",
+        "assets/reference/people/tecla_original_reference.jpg",
+        "assets/production/backgrounds/sitges_scene_desktop_ai.webp"
+      ],
+      "prompt": "Use case: identity-preserve / style-transfer. Asset type: final transparent character illustration for a private Mediterranean board game web app, used both as a large home-page character and as the SAME source for a tightly cropped profile portrait. Image 1 is the edit target: the existing illustrated Tecla. Image 2 is a PRIVATE facial-likeness reference only; do not reproduce the photograph or its setting. Image 3 is the style and golden sunset light reference only; do not include its landscape. Improve Image 1 into a polished hand-painted semi-realistic young adult illustration that belongs with Image 3. Preserve Tecla's recognizable identity, brunette hair tied in the same loose bun/pony tail, swept hair part, three-quarter gaze towards the left, relaxed friendly closed-mouth smile, dark charcoal hoodie with cream drawstrings over ivory shirt, bust pose and basic silhouette. Match young-adult facial proportions from her reference; give the face real gently painted structure, mature expressive eyes rather than flat black dot eyes, controlled warm brush texture and fine brown linework. CRITICAL: her missing nose must be clearly and anatomically illustrated with a visible bridge, small natural tip, nostril and warm subtle shadow, integrated into her likeness; no white smear in place of a nose. Maintain understated Mediterranean illustrated styling; this is not a photograph, not 3D, not anime, not a children's mascot. Warm light from upper right with amber table rebound, matte natural skin and textile. High-resolution clean fine hair edges with REAL transparent alpha. No sticker outline, no white halo, no black/white background rectangle, no oval, no frame, no circle, no text, no watermark, no props or scenery. Isolated single complete waist-up bust with both shoulders and the hair fully inside the canvas; balanced centered portrait composition and modest transparent margin. Flat lower crop at waist only, no hard side crops through shoulders. Produce only this final production asset."
+    },
+    {
+      "player": "PAU",
+      "mode": "built-in image_gen edit",
+      "asset": "assets/production/avatars/pau_character_v2.png",
+      "references": [
+        "assets/production/avatars/pau_character.png",
+        "assets/reference/people/pau_original_reference.jpg",
+        "assets/production/backgrounds/sitges_scene_desktop_ai.webp",
+        "assets/production/avatars/tecla_character_v2.png"
+      ],
+      "prompt": "Use case: identity-preserve / style-transfer. Asset type: final transparent Pau character illustration for the same Mediterranean board game as the fourth reference, used both as a large home-page character and as the SAME source for a tightly cropped profile portrait. Image 1 is the existing illustrated Pau edit target. Image 2 is a PRIVATE facial-likeness reference only, do not reproduce the photograph or setting. Image 3 is only the game's hand-painted scenery and sunset-light style reference. Image 4 is the JUST FINISHED companion Tecla: match EXACTLY her level of realism, brush texture, fine brown contours, young-adult scale and warm lighting, so the two are clearly from the same illustrator. Improve Image 1 into a polished hand-painted semi-realistic young adult Pau with recognizable likeness to Image 2. Preserve short tousled dark-brown wavy hair and the distinctive hair silhouette, friendly relaxed closed-mouth smile, off-white simple short-sleeve T-shirt, seated waist-up bust pose, body facing slightly right towards Tecla. Natural anatomically defined nose, expressive blue-gray eyes rather than solid dot eyes, subtle eyebrow and jaw anatomy and skin texture. Keep him a young adult; no child proportions or oversized round cartoon eyes. No gesture from the photo, no thumb-up, no props; keep the existing resting bust pose. Warm light from upper right with amber table rebound and matte skin/fabric. Illustrated painterly edges integrated with the artwork, no photorealism, no 3D, no anime, no cheap vector mascot. High-resolution smooth clean fine hair edges with TRUE transparent alpha. CRITICAL no sticker outline, no white halo, no baked frame or circle, no background rectangle or scenery, no text or watermark. One complete centered waist-up bust, all hair and shoulders fit inside modest transparent margins. Waist can end in a clean lower crop, avoid cropping shoulders at sides. Only produce this final isolated production asset."
+    }
+  ]
+}

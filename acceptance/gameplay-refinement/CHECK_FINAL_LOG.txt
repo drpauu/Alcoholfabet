@@ -1,0 +1,48 @@
+> tecla-pau@1.0.0 check
+> npm run typecheck && npm test && npm run build
+
+> tecla-pau@1.0.0 typecheck
+> tsc -b
+
+> tecla-pau@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.3 /home/pau/Documents/tecla-pau-app
+
+
+ Test Files  7 passed (7)
+      Tests  29 passed (29)
+   Start at  17:11:55
+   Duration  1.37s (transform 43%, tests 34%, import 20%, worker 3%)
+
+
+> tecla-pau@1.0.0 build
+> tsc -b && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 190 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                       0.65 kB │ gzip:   0.38 kB
+dist/assets/nunito-latin-700-normal-Dort48En.woff2   16.22 kB
+dist/assets/nunito-latin-400-normal-r8SDr6Up.woff2   16.31 kB
+dist/assets/nunito-latin-800-normal-Dz8SOQK_.woff2   16.52 kB
+dist/assets/nunito-latin-600-normal-Br8yIETf.woff2   16.55 kB
+dist/assets/nunito-latin-700-normal-OcDqTBcA.woff    19.98 kB
+dist/assets/nunito-latin-400-normal-DKg4f3fz.woff    20.33 kB
+dist/assets/nunito-latin-800-normal-D-J0wlBY.woff    20.36 kB
+dist/assets/nunito-latin-600-normal-Cd0eNu1l.woff    20.49 kB
+dist/assets/caveat-latin-700-normal-D8_1Nw6V.woff2   51.02 kB
+dist/assets/caveat-latin-700-normal-cPyBTTZN.woff    62.18 kB
+dist/assets/index-B3d9U5ly.css                       45.58 kB │ gzip:  10.83 kB
+dist/assets/index-ClznDkaZ.js                       595.37 kB │ gzip: 172.03 kB
+
+✓ built in 600ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+

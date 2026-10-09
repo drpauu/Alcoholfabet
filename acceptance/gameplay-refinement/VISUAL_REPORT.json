@@ -1,0 +1,4659 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T14:40:39.099Z",
+  "componentHarness": true,
+  "fullAppTest": false,
+  "appBooted": false,
+  "realComponents": [
+    "Scene",
+    "ArtPanel",
+    "ArtCard",
+    "ArtButton",
+    "PlayerBadge",
+    "PlayerPortrait",
+    "characterAsset"
+  ],
+  "baseline": false,
+  "viewports": [
+    [
+      390,
+      844
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "profileSizes": [
+    [
+      37,
+      40
+    ],
+    [
+      45,
+      48
+    ],
+    [
+      53,
+      56
+    ],
+    [
+      66,
+      70
+    ],
+    [
+      90,
+      95
+    ]
+  ],
+  "captures": [
+    {
+      "scene": "home",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/gameplay-refinement/screenshots/home-390x844.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/home-390x844-sampling.png",
+      "capturedAt": "2026-10-09T14:40:15.977Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel score-strip",
+            "bounds": {
+              "x": 99.921875,
+              "y": 581,
+              "width": 190.15625,
+              "height": 46,
+              "top": 581,
+              "right": 290.078125,
+              "bottom": 627,
+              "left": 99.921875
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 17,
+              "y": 22.5,
+              "width": 114.4375,
+              "height": 29,
+              "top": 22.5,
+              "right": 131.4375,
+              "bottom": 51.5,
+              "left": 17
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "29px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "EL NOSTRE JOC",
+            "bounds": {
+              "x": 124.015625,
+              "y": 79,
+              "width": 141.96875,
+              "height": 19,
+              "top": 79,
+              "right": 265.984375,
+              "bottom": 98,
+              "left": 124.015625
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "11px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(42, 46, 36) 0px 1px 1px",
+            "textStrokeColor": "rgb(244, 231, 203)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-logo",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 71.890625,
+              "y": 102,
+              "width": 246.203125,
+              "height": 66.765625,
+              "top": 102,
+              "right": 318.09375,
+              "bottom": 168.765625,
+              "left": 71.890625
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "62.4px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(66, 69, 53) -1px 2px 0px, rgba(46, 31, 17, 0.45) -2px 4px 4px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "1px"
+          },
+          {
+            "selector": "home-tagline",
+            "text": "Una taula. Dos còmplices. Moltes preguntes.",
+            "bounds": {
+              "x": 36.765625,
+              "y": 174.765625,
+              "width": 316.46875,
+              "height": 25,
+              "top": 174.765625,
+              "right": 353.234375,
+              "bottom": 199.765625,
+              "left": 36.765625
+            },
+            "color": "rgb(57, 59, 49)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(57, 59, 49)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button art-button--quiet text-button",
+            "text": "Normes",
+            "bounds": {
+              "x": 137.125,
+              "y": 780,
+              "width": 115.734375,
+              "height": 48,
+              "top": 780,
+              "right": 252.859375,
+              "bottom": 828,
+              "left": 137.125
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(48, 42, 32) 0px 1px 1px",
+            "textStrokeColor": "rgb(244, 231, 203)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [
+          {
+            "classes": "",
+            "player": "PAU",
+            "frame": {
+              "x": 2.765625,
+              "y": 328.0625,
+              "width": 206.46875,
+              "height": 252.9375,
+              "top": 328.0625,
+              "right": 209.234375,
+              "bottom": 581,
+              "left": 2.765625
+            },
+            "image": {
+              "x": 2.765625,
+              "y": 328.0625,
+              "width": 206.46875,
+              "height": 252.9375,
+              "top": 328.0625,
+              "right": 209.234375,
+              "bottom": 581,
+              "left": 2.765625
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 206.469,
+            "computedImageHeight": 252.938,
+            "estimatedNoseInFrame": {
+              "x": 0.6,
+              "y": 0.36499999999999994,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "player": "TECLA",
+            "frame": {
+              "x": 180.765625,
+              "y": 328.0625,
+              "width": 206.46875,
+              "height": 252.9375,
+              "top": 328.0625,
+              "right": 387.234375,
+              "bottom": 581,
+              "left": 180.765625
+            },
+            "image": {
+              "x": 180.765625,
+              "y": 328.0625,
+              "width": 206.46875,
+              "height": 252.9375,
+              "top": 328.0625,
+              "right": 387.234375,
+              "bottom": 581,
+              "left": 180.765625
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 206.469,
+            "computedImageHeight": 252.938,
+            "estimatedNoseInFrame": {
+              "x": 0.30000000000000004,
+              "y": 0.33000000000000007,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 317,
+            "bottom": 61,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 373,
+            "bottom": 61,
+            "left": 325
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 17,
+            "y": 644,
+            "width": 356,
+            "height": 57,
+            "top": 644,
+            "right": 373,
+            "bottom": 701,
+            "left": 17
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 17,
+            "y": 714,
+            "width": 356,
+            "height": 57,
+            "top": 714,
+            "right": 373,
+            "bottom": 771,
+            "left": 17
+          },
+          {
+            "label": "Normes",
+            "x": 137.125,
+            "y": 780,
+            "width": 115.734375,
+            "height": 48,
+            "top": 780,
+            "right": 252.859375,
+            "bottom": 828,
+            "left": 137.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "home",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/gameplay-refinement/screenshots/home-1024x768.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/home-1024x768-sampling.png",
+      "capturedAt": "2026-10-09T14:40:19.743Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel score-strip",
+            "bounds": {
+              "x": 402.03125,
+              "y": 557,
+              "width": 219.921875,
+              "height": 51,
+              "top": 557,
+              "right": 621.953125,
+              "bottom": 608,
+              "left": 402.03125
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "EL NOSTRE JOC",
+            "bounds": {
+              "x": 441.015625,
+              "y": 79,
+              "width": 141.96875,
+              "height": 19,
+              "top": 79,
+              "right": 582.984375,
+              "bottom": 98,
+              "left": 441.015625
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "11px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(42, 46, 36) 0px 1px 1px",
+            "textStrokeColor": "rgb(244, 231, 203)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-logo",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 370.578125,
+              "y": 102,
+              "width": 282.828125,
+              "height": 76.703125,
+              "top": 102,
+              "right": 653.40625,
+              "bottom": 178.703125,
+              "left": 370.578125
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "71.68px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(66, 69, 53) -1px 2px 0px, rgba(46, 31, 17, 0.45) -2px 4px 4px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "1px"
+          },
+          {
+            "selector": "home-tagline",
+            "text": "Una taula. Dos còmplices. Moltes preguntes.",
+            "bounds": {
+              "x": 333.15625,
+              "y": 184.703125,
+              "width": 357.671875,
+              "height": 28,
+              "top": 184.703125,
+              "right": 690.828125,
+              "bottom": 212.703125,
+              "left": 333.15625
+            },
+            "color": "rgb(57, 59, 49)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(57, 59, 49)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button art-button--quiet text-button",
+            "text": "Normes",
+            "bounds": {
+              "x": 454.125,
+              "y": 698,
+              "width": 115.734375,
+              "height": 48,
+              "top": 698,
+              "right": 569.859375,
+              "bottom": 746,
+              "left": 454.125
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(48, 42, 32) 0px 1px 1px",
+            "textStrokeColor": "rgb(244, 231, 203)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [
+          {
+            "classes": "",
+            "player": "PAU",
+            "frame": {
+              "x": 286.328125,
+              "y": 280.53125,
+              "width": 225.671875,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 512,
+              "bottom": 557,
+              "left": 286.328125
+            },
+            "image": {
+              "x": 286.328125,
+              "y": 280.53125,
+              "width": 225.671875,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 512,
+              "bottom": 557,
+              "left": 286.328125
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 225.672,
+            "computedImageHeight": 276.469,
+            "estimatedNoseInFrame": {
+              "x": 0.6,
+              "y": 0.3649999999999999,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "player": "TECLA",
+            "frame": {
+              "x": 512,
+              "y": 280.53125,
+              "width": 225.671875,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 737.671875,
+              "bottom": 557,
+              "left": 512
+            },
+            "image": {
+              "x": 512,
+              "y": 280.53125,
+              "width": 225.671875,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 737.671875,
+              "bottom": 557,
+              "left": 512
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 225.672,
+            "computedImageHeight": 276.469,
+            "estimatedNoseInFrame": {
+              "x": 0.3000000000000001,
+              "y": 0.33,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 885,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 933,
+            "bottom": 70,
+            "left": 885
+          },
+          {
+            "label": "So activat",
+            "x": 944,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 992,
+            "bottom": 70,
+            "left": 944
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 192,
+            "y": 628,
+            "width": 311,
+            "height": 61,
+            "top": 628,
+            "right": 503,
+            "bottom": 689,
+            "left": 192
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 521,
+            "y": 628,
+            "width": 311,
+            "height": 61,
+            "top": 628,
+            "right": 832,
+            "bottom": 689,
+            "left": 521
+          },
+          {
+            "label": "Normes",
+            "x": 454.125,
+            "y": 698,
+            "width": 115.734375,
+            "height": 48,
+            "top": 698,
+            "right": 569.859375,
+            "bottom": 746,
+            "left": 454.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "home",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/gameplay-refinement/screenshots/home-1440x900.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/home-1440x900-sampling.png",
+      "capturedAt": "2026-10-09T14:40:25.214Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel score-strip",
+            "bounds": {
+              "x": 610.03125,
+              "y": 689,
+              "width": 219.921875,
+              "height": 51,
+              "top": 689,
+              "right": 829.953125,
+              "bottom": 740,
+              "left": 610.03125
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "EL NOSTRE JOC",
+            "bounds": {
+              "x": 649.015625,
+              "y": 79,
+              "width": 141.96875,
+              "height": 19,
+              "top": 79,
+              "right": 790.984375,
+              "bottom": 98,
+              "left": 649.015625
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "11px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(42, 46, 36) 0px 1px 1px",
+            "textStrokeColor": "rgb(244, 231, 203)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-logo",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 521.125,
+              "y": 102,
+              "width": 397.75,
+              "height": 107.84375,
+              "top": 102,
+              "right": 918.875,
+              "bottom": 209.84375,
+              "left": 521.125
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "100.8px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(66, 69, 53) -1px 2px 0px, rgba(46, 31, 17, 0.45) -2px 4px 4px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "1px"
+          },
+          {
+            "selector": "home-tagline",
+            "text": "Una taula. Dos còmplices. Moltes preguntes.",
+            "bounds": {
+              "x": 541.15625,
+              "y": 215.84375,
+              "width": 357.671875,
+              "height": 28,
+              "top": 215.84375,
+              "right": 898.828125,
+              "bottom": 243.84375,
+              "left": 541.15625
+            },
+            "color": "rgb(57, 59, 49)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(57, 59, 49)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button art-button--quiet text-button",
+            "text": "Normes",
+            "bounds": {
+              "x": 662.125,
+              "y": 830,
+              "width": 115.734375,
+              "height": 48,
+              "top": 830,
+              "right": 777.859375,
+              "bottom": 878,
+              "left": 662.125
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(48, 42, 32) 0px 1px 1px",
+            "textStrokeColor": "rgb(244, 231, 203)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [
+          {
+            "classes": "",
+            "player": "PAU",
+            "frame": {
+              "x": 404.109375,
+              "y": 302,
+              "width": 315.890625,
+              "height": 387,
+              "top": 302,
+              "right": 720,
+              "bottom": 689,
+              "left": 404.109375
+            },
+            "image": {
+              "x": 404.109375,
+              "y": 302,
+              "width": 315.890625,
+              "height": 387,
+              "top": 302,
+              "right": 720,
+              "bottom": 689,
+              "left": 404.109375
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 315.891,
+            "computedImageHeight": 387,
+            "estimatedNoseInFrame": {
+              "x": 0.5999999999999999,
+              "y": 0.365,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "player": "TECLA",
+            "frame": {
+              "x": 720,
+              "y": 302,
+              "width": 315.890625,
+              "height": 387,
+              "top": 302,
+              "right": 1035.890625,
+              "bottom": 689,
+              "left": 720
+            },
+            "image": {
+              "x": 720,
+              "y": 302,
+              "width": 315.890625,
+              "height": 387,
+              "top": 302,
+              "right": 1035.890625,
+              "bottom": 689,
+              "left": 720
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 315.891,
+            "computedImageHeight": 387,
+            "estimatedNoseInFrame": {
+              "x": 0.29999999999999993,
+              "y": 0.33000000000000007,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 400,
+            "y": 760,
+            "width": 311,
+            "height": 61,
+            "top": 760,
+            "right": 711,
+            "bottom": 821,
+            "left": 400
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 729,
+            "y": 760,
+            "width": 311,
+            "height": 61,
+            "top": 760,
+            "right": 1040,
+            "bottom": 821,
+            "left": 729
+          },
+          {
+            "label": "Normes",
+            "x": 662.125,
+            "y": 830,
+            "width": 115.734375,
+            "height": 48,
+            "top": 830,
+            "right": 777.859375,
+            "bottom": 878,
+            "left": 662.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "role",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/gameplay-refinement/screenshots/role-390x844.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/role-390x844-sampling.png",
+      "capturedAt": "2026-10-09T14:40:26.670Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel",
+            "bounds": {
+              "x": 17,
+              "y": 298.109375,
+              "width": 356,
+              "height": 292.765625,
+              "top": 298.109375,
+              "right": 373,
+              "bottom": 590.875,
+              "left": 17
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 17,
+              "y": 22.5,
+              "width": 114.4375,
+              "height": 29,
+              "top": 22.5,
+              "right": 131.4375,
+              "bottom": 51.5,
+              "left": 17
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "29px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 81,
+              "y": 327.359375,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 327.359375,
+              "right": 123.484375,
+              "bottom": 344.859375,
+              "left": 81
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Qui ets?",
+            "bounds": {
+              "x": 41,
+              "y": 374.109375,
+              "width": 308,
+              "height": 33.265625,
+              "top": 374.109375,
+              "right": 349,
+              "bottom": 407.375,
+              "left": 41
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "26px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "PauSoc en Pau",
+            "bounds": {
+              "x": 70.078125,
+              "y": 445.375,
+              "width": 89.328125,
+              "height": 79.5,
+              "top": 445.375,
+              "right": 159.40625,
+              "bottom": 524.875,
+              "left": 70.078125
+            },
+            "color": "rgb(47, 82, 103)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(47, 82, 103)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "TeclaSoc la Tecla",
+            "bounds": {
+              "x": 225.5625,
+              "y": 445.375,
+              "width": 99.359375,
+              "height": 79.5,
+              "top": 445.375,
+              "right": 324.921875,
+              "bottom": 524.875,
+              "left": 225.5625
+            },
+            "color": "rgb(127, 68, 79)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(127, 68, 79)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [
+          {
+            "classes": "player-avatar player-portrait player-portrait--pau",
+            "player": "PAU",
+            "frame": {
+              "x": 70.078125,
+              "y": 445.375,
+              "width": 53,
+              "height": 56,
+              "top": 445.375,
+              "right": 123.078125,
+              "bottom": 501.375,
+              "left": 70.078125
+            },
+            "image": {
+              "x": 59.09375,
+              "y": 447.890625,
+              "width": 74.46875,
+              "height": 91.21875,
+              "top": 447.890625,
+              "right": 133.5625,
+              "bottom": 539.109375,
+              "left": 59.09375
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 72.078125,
+                "y": 447.375,
+                "width": 49,
+                "height": 52,
+                "top": 447.375,
+                "right": 121.078125,
+                "bottom": 499.375,
+                "left": 72.078125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 74.4688,
+            "computedImageHeight": 91.2188,
+            "estimatedNoseInFrame": {
+              "x": 0.6357900943396227,
+              "y": 0.6394726562499997,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar player-portrait player-portrait--tecla",
+            "player": "TECLA",
+            "frame": {
+              "x": 225.5625,
+              "y": 445.375,
+              "width": 53,
+              "height": 56,
+              "top": 445.375,
+              "right": 278.5625,
+              "bottom": 501.375,
+              "left": 225.5625
+            },
+            "image": {
+              "x": 224.140625,
+              "y": 447.890625,
+              "width": 73.984375,
+              "height": 90.625,
+              "top": 447.890625,
+              "right": 298.125,
+              "bottom": 538.515625,
+              "left": 224.140625
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 227.5625,
+                "y": 447.375,
+                "width": 49,
+                "height": 52,
+                "top": 447.375,
+                "right": 276.5625,
+                "bottom": 499.375,
+                "left": 227.5625
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 73.9844,
+            "computedImageHeight": 90.625,
+            "estimatedNoseInFrame": {
+              "x": 0.39195165094339623,
+              "y": 0.5789620535714286,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 317,
+            "bottom": 61,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 373,
+            "bottom": 61,
+            "left": 325
+          },
+          {
+            "label": "Enrere",
+            "x": 41,
+            "y": 317.109375,
+            "width": 89.484375,
+            "height": 48,
+            "top": 317.109375,
+            "right": 130.484375,
+            "bottom": 365.109375,
+            "left": 41
+          },
+          {
+            "label": "PauSoc en Pau",
+            "x": 41,
+            "y": 430.375,
+            "width": 147.5,
+            "height": 109.5,
+            "top": 430.375,
+            "right": 188.5,
+            "bottom": 539.875,
+            "left": 41
+          },
+          {
+            "label": "TeclaSoc la Tecla",
+            "x": 201.5,
+            "y": 430.375,
+            "width": 147.5,
+            "height": 109.5,
+            "top": 430.375,
+            "right": 349,
+            "bottom": 539.875,
+            "left": 201.5
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "role",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/gameplay-refinement/screenshots/role-1024x768.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/role-1024x768-sampling.png",
+      "capturedAt": "2026-10-09T14:40:29.077Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel",
+            "bounds": {
+              "x": 247,
+              "y": 267.59375,
+              "width": 530,
+              "height": 292.8125,
+              "top": 267.59375,
+              "right": 777,
+              "bottom": 560.40625,
+              "left": 247
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 318,
+              "y": 294.84375,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 294.84375,
+              "right": 360.484375,
+              "bottom": 312.34375,
+              "left": 318
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Qui ets?",
+            "bounds": {
+              "x": 278,
+              "y": 341.59375,
+              "width": 468,
+              "height": 39.3125,
+              "top": 341.59375,
+              "right": 746,
+              "bottom": 380.90625,
+              "left": 278
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "30.72px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "PauSoc en Pau",
+            "bounds": {
+              "x": 346.828125,
+              "y": 417.90625,
+              "width": 89.328125,
+              "height": 79.5,
+              "top": 417.90625,
+              "right": 436.15625,
+              "bottom": 497.40625,
+              "left": 346.828125
+            },
+            "color": "rgb(47, 82, 103)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(47, 82, 103)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "TeclaSoc la Tecla",
+            "bounds": {
+              "x": 582.8125,
+              "y": 417.90625,
+              "width": 99.359375,
+              "height": 79.5,
+              "top": 417.90625,
+              "right": 682.171875,
+              "bottom": 497.40625,
+              "left": 582.8125
+            },
+            "color": "rgb(127, 68, 79)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(127, 68, 79)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [
+          {
+            "classes": "player-avatar player-portrait player-portrait--pau",
+            "player": "PAU",
+            "frame": {
+              "x": 346.828125,
+              "y": 417.90625,
+              "width": 53,
+              "height": 56,
+              "top": 417.90625,
+              "right": 399.828125,
+              "bottom": 473.90625,
+              "left": 346.828125
+            },
+            "image": {
+              "x": 335.84375,
+              "y": 420.421875,
+              "width": 74.46875,
+              "height": 91.21875,
+              "top": 420.421875,
+              "right": 410.3125,
+              "bottom": 511.640625,
+              "left": 335.84375
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 348.828125,
+                "y": 419.90625,
+                "width": 49,
+                "height": 52,
+                "top": 419.90625,
+                "right": 397.828125,
+                "bottom": 471.90625,
+                "left": 348.828125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 74.4688,
+            "computedImageHeight": 91.2188,
+            "estimatedNoseInFrame": {
+              "x": 0.6357900943396222,
+              "y": 0.6394726562499997,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar player-portrait player-portrait--tecla",
+            "player": "TECLA",
+            "frame": {
+              "x": 582.8125,
+              "y": 417.90625,
+              "width": 53,
+              "height": 56,
+              "top": 417.90625,
+              "right": 635.8125,
+              "bottom": 473.90625,
+              "left": 582.8125
+            },
+            "image": {
+              "x": 581.390625,
+              "y": 420.421875,
+              "width": 73.984375,
+              "height": 90.625,
+              "top": 420.421875,
+              "right": 655.375,
+              "bottom": 511.046875,
+              "left": 581.390625
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 584.8125,
+                "y": 419.90625,
+                "width": 49,
+                "height": 52,
+                "top": 419.90625,
+                "right": 633.8125,
+                "bottom": 471.90625,
+                "left": 584.8125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 73.9844,
+            "computedImageHeight": 90.625,
+            "estimatedNoseInFrame": {
+              "x": 0.39195165094339623,
+              "y": 0.5789620535714286,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 885,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 933,
+            "bottom": 70,
+            "left": 885
+          },
+          {
+            "label": "So activat",
+            "x": 944,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 992,
+            "bottom": 70,
+            "left": 944
+          },
+          {
+            "label": "Enrere",
+            "x": 278,
+            "y": 284.59375,
+            "width": 89.484375,
+            "height": 48,
+            "top": 284.59375,
+            "right": 367.484375,
+            "bottom": 332.59375,
+            "left": 278
+          },
+          {
+            "label": "PauSoc en Pau",
+            "x": 278,
+            "y": 402.90625,
+            "width": 227,
+            "height": 109.5,
+            "top": 402.90625,
+            "right": 505,
+            "bottom": 512.40625,
+            "left": 278
+          },
+          {
+            "label": "TeclaSoc la Tecla",
+            "x": 519,
+            "y": 402.90625,
+            "width": 227,
+            "height": 109.5,
+            "top": 402.90625,
+            "right": 746,
+            "bottom": 512.40625,
+            "left": 519
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "role",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/gameplay-refinement/screenshots/role-1440x900.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/role-1440x900-sampling.png",
+      "capturedAt": "2026-10-09T14:40:32.141Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel",
+            "bounds": {
+              "x": 455,
+              "y": 322.125,
+              "width": 530,
+              "height": 325.734375,
+              "top": 322.125,
+              "right": 985,
+              "bottom": 647.859375,
+              "left": 455
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 530,
+              "y": 358.375,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 358.375,
+              "right": 572.484375,
+              "bottom": 375.875,
+              "left": 530
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Qui ets?",
+            "bounds": {
+              "x": 490,
+              "y": 405.125,
+              "width": 460,
+              "height": 42.234375,
+              "top": 405.125,
+              "right": 950,
+              "bottom": 447.359375,
+              "left": 490
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "33px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "PauSoc en Pau",
+            "bounds": {
+              "x": 556.828125,
+              "y": 490.359375,
+              "width": 89.328125,
+              "height": 79.5,
+              "top": 490.359375,
+              "right": 646.15625,
+              "bottom": 569.859375,
+              "left": 556.828125
+            },
+            "color": "rgb(47, 82, 103)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(47, 82, 103)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "TeclaSoc la Tecla",
+            "bounds": {
+              "x": 788.8125,
+              "y": 490.359375,
+              "width": 99.359375,
+              "height": 79.5,
+              "top": 490.359375,
+              "right": 888.171875,
+              "bottom": 569.859375,
+              "left": 788.8125
+            },
+            "color": "rgb(127, 68, 79)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(127, 68, 79)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [
+          {
+            "classes": "player-avatar player-portrait player-portrait--pau",
+            "player": "PAU",
+            "frame": {
+              "x": 556.828125,
+              "y": 490.359375,
+              "width": 53,
+              "height": 56,
+              "top": 490.359375,
+              "right": 609.828125,
+              "bottom": 546.359375,
+              "left": 556.828125
+            },
+            "image": {
+              "x": 545.84375,
+              "y": 492.875,
+              "width": 74.46875,
+              "height": 91.21875,
+              "top": 492.875,
+              "right": 620.3125,
+              "bottom": 584.09375,
+              "left": 545.84375
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 558.828125,
+                "y": 492.359375,
+                "width": 49,
+                "height": 52,
+                "top": 492.359375,
+                "right": 607.828125,
+                "bottom": 544.359375,
+                "left": 558.828125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 74.4688,
+            "computedImageHeight": 91.2188,
+            "estimatedNoseInFrame": {
+              "x": 0.6357900943396222,
+              "y": 0.6394726562500007,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar player-portrait player-portrait--tecla",
+            "player": "TECLA",
+            "frame": {
+              "x": 788.8125,
+              "y": 490.359375,
+              "width": 53,
+              "height": 56,
+              "top": 490.359375,
+              "right": 841.8125,
+              "bottom": 546.359375,
+              "left": 788.8125
+            },
+            "image": {
+              "x": 787.390625,
+              "y": 492.875,
+              "width": 73.984375,
+              "height": 90.625,
+              "top": 492.875,
+              "right": 861.375,
+              "bottom": 583.5,
+              "left": 787.390625
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 790.8125,
+                "y": 492.359375,
+                "width": 49,
+                "height": 52,
+                "top": 492.359375,
+                "right": 839.8125,
+                "bottom": 544.359375,
+                "left": 790.8125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 73.9844,
+            "computedImageHeight": 90.625,
+            "estimatedNoseInFrame": {
+              "x": 0.39195165094339623,
+              "y": 0.5789620535714286,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          },
+          {
+            "label": "Enrere",
+            "x": 490,
+            "y": 348.125,
+            "width": 89.484375,
+            "height": 48,
+            "top": 348.125,
+            "right": 579.484375,
+            "bottom": 396.125,
+            "left": 490
+          },
+          {
+            "label": "PauSoc en Pau",
+            "x": 490,
+            "y": 475.359375,
+            "width": 223,
+            "height": 109.5,
+            "top": 475.359375,
+            "right": 713,
+            "bottom": 584.859375,
+            "left": 490
+          },
+          {
+            "label": "TeclaSoc la Tecla",
+            "x": 727,
+            "y": 475.359375,
+            "width": 223,
+            "height": 109.5,
+            "top": 475.359375,
+            "right": 950,
+            "bottom": 584.859375,
+            "left": 727
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "duration",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/gameplay-refinement/screenshots/duration-390x844.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/duration-390x844-sampling.png",
+      "capturedAt": "2026-10-09T14:40:33.549Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel",
+            "bounds": {
+              "x": 17,
+              "y": 132.546875,
+              "width": 356,
+              "height": 623.90625,
+              "top": 132.546875,
+              "right": 373,
+              "bottom": 756.453125,
+              "left": 17
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 17,
+              "y": 22.5,
+              "width": 114.4375,
+              "height": 29,
+              "top": 22.5,
+              "right": 131.4375,
+              "bottom": 51.5,
+              "left": 17
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "29px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 81,
+              "y": 161.796875,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 161.796875,
+              "right": 123.484375,
+              "bottom": 179.296875,
+              "left": 81
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "En persona",
+            "bounds": {
+              "x": 41,
+              "y": 208.546875,
+              "width": 308,
+              "height": 15,
+              "top": 208.546875,
+              "right": 349,
+              "bottom": 223.546875,
+              "left": 41
+            },
+            "color": "rgb(96, 83, 68)",
+            "fontSize": "11px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(96, 83, 68)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Quant de temps voleu que duri la partida?",
+            "bounds": {
+              "x": 41,
+              "y": 236.546875,
+              "width": 308,
+              "height": 66.53125,
+              "top": 236.546875,
+              "right": 349,
+              "bottom": 303.078125,
+              "left": 41
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "26px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "20minuts",
+            "bounds": {
+              "x": 92.5625,
+              "y": 341.078125,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 341.078125,
+              "right": 136.921875,
+              "bottom": 399.765625,
+              "left": 92.5625
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "30minuts",
+            "bounds": {
+              "x": 253.0625,
+              "y": 341.078125,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 341.078125,
+              "right": 297.421875,
+              "bottom": 399.765625,
+              "left": 253.0625
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "45minuts",
+            "bounds": {
+              "x": 92.5625,
+              "y": 442.765625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 442.765625,
+              "right": 136.921875,
+              "bottom": 501.453125,
+              "left": 92.5625
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "60minuts",
+            "bounds": {
+              "x": 253.0625,
+              "y": 442.765625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 442.765625,
+              "right": 297.421875,
+              "bottom": 501.453125,
+              "left": 253.0625
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Personalitzada",
+            "bounds": {
+              "x": 146.875,
+              "y": 548.703125,
+              "width": 96.25,
+              "height": 17.5,
+              "top": 548.703125,
+              "right": 243.125,
+              "bottom": 566.203125,
+              "left": 146.875
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "setup-hint",
+            "text": "Estimació amb torns de 30 segons. Jugueu al vostre ritme.",
+            "bounds": {
+              "x": 41,
+              "y": 608.453125,
+              "width": 308,
+              "height": 42,
+              "top": 608.453125,
+              "right": 349,
+              "bottom": 650.453125,
+              "left": 41
+            },
+            "color": "rgb(96, 83, 68)",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(96, 83, 68)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Continuar",
+            "bounds": {
+              "x": 158.5,
+              "y": 691.453125,
+              "width": 72.984375,
+              "height": 20,
+              "top": 691.453125,
+              "right": 231.484375,
+              "bottom": 711.453125,
+              "left": 158.5
+            },
+            "color": "rgb(255, 245, 223)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(99, 61, 39) 0px 1px 1px",
+            "textStrokeColor": "rgb(255, 245, 223)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 317,
+            "bottom": 61,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 373,
+            "bottom": 61,
+            "left": 325
+          },
+          {
+            "label": "Enrere",
+            "x": 41,
+            "y": 151.546875,
+            "width": 89.484375,
+            "height": 48,
+            "top": 151.546875,
+            "right": 130.484375,
+            "bottom": 199.546875,
+            "left": 41
+          },
+          {
+            "label": "20minuts",
+            "x": 41,
+            "y": 326.078125,
+            "width": 147.5,
+            "height": 88.6875,
+            "top": 326.078125,
+            "right": 188.5,
+            "bottom": 414.765625,
+            "left": 41
+          },
+          {
+            "label": "30minuts",
+            "x": 201.5,
+            "y": 326.078125,
+            "width": 147.5,
+            "height": 88.6875,
+            "top": 326.078125,
+            "right": 349,
+            "bottom": 414.765625,
+            "left": 201.5
+          },
+          {
+            "label": "45minuts",
+            "x": 41,
+            "y": 427.765625,
+            "width": 147.5,
+            "height": 88.6875,
+            "top": 427.765625,
+            "right": 188.5,
+            "bottom": 516.453125,
+            "left": 41
+          },
+          {
+            "label": "60minuts",
+            "x": 201.5,
+            "y": 427.765625,
+            "width": 147.5,
+            "height": 88.6875,
+            "top": 427.765625,
+            "right": 349,
+            "bottom": 516.453125,
+            "left": 201.5
+          },
+          {
+            "label": "Personalitzada",
+            "x": 41,
+            "y": 529.453125,
+            "width": 308,
+            "height": 56,
+            "top": 529.453125,
+            "right": 349,
+            "bottom": 585.453125,
+            "left": 41
+          },
+          {
+            "label": "Continuar",
+            "x": 41,
+            "y": 674.453125,
+            "width": 308,
+            "height": 54,
+            "top": 674.453125,
+            "right": 349,
+            "bottom": 728.453125,
+            "left": 41
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "duration",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/gameplay-refinement/screenshots/duration-1024x768.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/duration-1024x768-sampling.png",
+      "capturedAt": "2026-10-09T14:40:35.878Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel",
+            "bounds": {
+              "x": 247,
+              "y": 109.5,
+              "width": 530,
+              "height": 609,
+              "top": 109.5,
+              "right": 777,
+              "bottom": 718.5,
+              "left": 247
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 318,
+              "y": 136.75,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 136.75,
+              "right": 360.484375,
+              "bottom": 154.25,
+              "left": 318
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "En persona",
+            "bounds": {
+              "x": 278,
+              "y": 183.5,
+              "width": 468,
+              "height": 15,
+              "top": 183.5,
+              "right": 746,
+              "bottom": 198.5,
+              "left": 278
+            },
+            "color": "rgb(96, 83, 68)",
+            "fontSize": "11px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(96, 83, 68)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Quant de temps voleu que duri la partida?",
+            "bounds": {
+              "x": 278,
+              "y": 211.5,
+              "width": 468,
+              "height": 78.625,
+              "top": 211.5,
+              "right": 746,
+              "bottom": 290.125,
+              "left": 278
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "30.72px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "20minuts",
+            "bounds": {
+              "x": 369.3125,
+              "y": 327.125,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 327.125,
+              "right": 413.671875,
+              "bottom": 385.8125,
+              "left": 369.3125
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "30minuts",
+            "bounds": {
+              "x": 610.3125,
+              "y": 327.125,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 327.125,
+              "right": 654.671875,
+              "bottom": 385.8125,
+              "left": 610.3125
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "45minuts",
+            "bounds": {
+              "x": 369.3125,
+              "y": 429.8125,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 429.8125,
+              "right": 413.671875,
+              "bottom": 488.5,
+              "left": 369.3125
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "60minuts",
+            "bounds": {
+              "x": 610.3125,
+              "y": 429.8125,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 429.8125,
+              "right": 654.671875,
+              "bottom": 488.5,
+              "left": 610.3125
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Personalitzada",
+            "bounds": {
+              "x": 463.875,
+              "y": 535.75,
+              "width": 96.25,
+              "height": 17.5,
+              "top": 535.75,
+              "right": 560.125,
+              "bottom": 553.25,
+              "left": 463.875
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "setup-hint",
+            "text": "Estimació amb torns de 30 segons. Jugueu al vostre ritme.",
+            "bounds": {
+              "x": 278,
+              "y": 593.5,
+              "width": 468,
+              "height": 21,
+              "top": 593.5,
+              "right": 746,
+              "bottom": 614.5,
+              "left": 278
+            },
+            "color": "rgb(96, 83, 68)",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(96, 83, 68)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Continuar",
+            "bounds": {
+              "x": 475.5,
+              "y": 655.5,
+              "width": 72.984375,
+              "height": 20,
+              "top": 655.5,
+              "right": 548.484375,
+              "bottom": 675.5,
+              "left": 475.5
+            },
+            "color": "rgb(255, 245, 223)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(99, 61, 39) 0px 1px 1px",
+            "textStrokeColor": "rgb(255, 245, 223)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 885,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 933,
+            "bottom": 70,
+            "left": 885
+          },
+          {
+            "label": "So activat",
+            "x": 944,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 992,
+            "bottom": 70,
+            "left": 944
+          },
+          {
+            "label": "Enrere",
+            "x": 278,
+            "y": 126.5,
+            "width": 89.484375,
+            "height": 48,
+            "top": 126.5,
+            "right": 367.484375,
+            "bottom": 174.5,
+            "left": 278
+          },
+          {
+            "label": "20minuts",
+            "x": 278,
+            "y": 312.125,
+            "width": 227,
+            "height": 88.6875,
+            "top": 312.125,
+            "right": 505,
+            "bottom": 400.8125,
+            "left": 278
+          },
+          {
+            "label": "30minuts",
+            "x": 519,
+            "y": 312.125,
+            "width": 227,
+            "height": 88.6875,
+            "top": 312.125,
+            "right": 746,
+            "bottom": 400.8125,
+            "left": 519
+          },
+          {
+            "label": "45minuts",
+            "x": 278,
+            "y": 414.8125,
+            "width": 227,
+            "height": 88.6875,
+            "top": 414.8125,
+            "right": 505,
+            "bottom": 503.5,
+            "left": 278
+          },
+          {
+            "label": "60minuts",
+            "x": 519,
+            "y": 414.8125,
+            "width": 227,
+            "height": 88.6875,
+            "top": 414.8125,
+            "right": 746,
+            "bottom": 503.5,
+            "left": 519
+          },
+          {
+            "label": "Personalitzada",
+            "x": 278,
+            "y": 517.5,
+            "width": 468,
+            "height": 54,
+            "top": 517.5,
+            "right": 746,
+            "bottom": 571.5,
+            "left": 278
+          },
+          {
+            "label": "Continuar",
+            "x": 278,
+            "y": 638.5,
+            "width": 468,
+            "height": 54,
+            "top": 638.5,
+            "right": 746,
+            "bottom": 692.5,
+            "left": 278
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "duration",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/gameplay-refinement/screenshots/duration-1440x900.png",
+      "samplingPath": "acceptance/gameplay-refinement/screenshots/duration-1440x900-sampling.png",
+      "capturedAt": "2026-10-09T14:40:38.956Z",
+      "layout": {
+        "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)",
+        "surfaces": [
+          {
+            "classes": "art-surface art-panel",
+            "bounds": {
+              "x": 455,
+              "y": 155.265625,
+              "width": 530,
+              "height": 659.46875,
+              "top": 155.265625,
+              "right": 985,
+              "bottom": 814.734375,
+              "left": 455
+            },
+            "color": "rgb(46, 55, 51)",
+            "background": "rgb(248, 237, 214)"
+          }
+        ],
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(244, 231, 203)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgba(37, 31, 22, 0.7) -1px 2px 1px",
+            "textStrokeColor": "rgb(53, 64, 57)",
+            "textStrokeWidth": "0.7px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 530,
+              "y": 191.515625,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 191.515625,
+              "right": 572.484375,
+              "bottom": 209.015625,
+              "left": 530
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "En persona",
+            "bounds": {
+              "x": 490,
+              "y": 238.265625,
+              "width": 460,
+              "height": 15,
+              "top": 238.265625,
+              "right": 950,
+              "bottom": 253.265625,
+              "left": 490
+            },
+            "color": "rgb(96, 83, 68)",
+            "fontSize": "11px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(96, 83, 68)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Quant de temps voleu que duri la partida?",
+            "bounds": {
+              "x": 490,
+              "y": 266.265625,
+              "width": 460,
+              "height": 84.46875,
+              "top": 266.265625,
+              "right": 950,
+              "bottom": 350.734375,
+              "left": 490
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "33px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "20minuts",
+            "bounds": {
+              "x": 579.3125,
+              "y": 396.890625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 396.890625,
+              "right": 623.671875,
+              "bottom": 455.578125,
+              "left": 579.3125
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "30minuts",
+            "bounds": {
+              "x": 816.3125,
+              "y": 396.890625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 396.890625,
+              "right": 860.671875,
+              "bottom": 455.578125,
+              "left": 816.3125
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "45minuts",
+            "bounds": {
+              "x": 579.3125,
+              "y": 505.890625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 505.890625,
+              "right": 623.671875,
+              "bottom": 564.578125,
+              "left": 579.3125
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "60minuts",
+            "bounds": {
+              "x": 816.3125,
+              "y": 505.890625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 505.890625,
+              "right": 860.671875,
+              "bottom": 564.578125,
+              "left": 816.3125
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Personalitzada",
+            "bounds": {
+              "x": 671.875,
+              "y": 615.984375,
+              "width": 96.25,
+              "height": 17.5,
+              "top": 615.984375,
+              "right": 768.125,
+              "bottom": 633.484375,
+              "left": 671.875
+            },
+            "color": "rgb(46, 55, 51)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(46, 55, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "setup-hint",
+            "text": "Estimació amb torns de 30 segons. Jugueu al vostre ritme.",
+            "bounds": {
+              "x": 490,
+              "y": 680.734375,
+              "width": 460,
+              "height": 21,
+              "top": 680.734375,
+              "right": 950,
+              "bottom": 701.734375,
+              "left": 490
+            },
+            "color": "rgb(96, 83, 68)",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(96, 83, 68)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Continuar",
+            "bounds": {
+              "x": 683.5,
+              "y": 742.734375,
+              "width": 72.984375,
+              "height": 20,
+              "top": 742.734375,
+              "right": 756.484375,
+              "bottom": 762.734375,
+              "left": 683.5
+            },
+            "color": "rgb(255, 245, 223)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(99, 61, 39) 0px 1px 1px",
+            "textStrokeColor": "rgb(255, 245, 223)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          },
+          {
+            "label": "Enrere",
+            "x": 490,
+            "y": 181.265625,
+            "width": 89.484375,
+            "height": 48,
+            "top": 181.265625,
+            "right": 579.484375,
+            "bottom": 229.265625,
+            "left": 490
+          },
+          {
+            "label": "20minuts",
+            "x": 490,
+            "y": 378.734375,
+            "width": 223,
+            "height": 95,
+            "top": 378.734375,
+            "right": 713,
+            "bottom": 473.734375,
+            "left": 490
+          },
+          {
+            "label": "30minuts",
+            "x": 727,
+            "y": 378.734375,
+            "width": 223,
+            "height": 95,
+            "top": 378.734375,
+            "right": 950,
+            "bottom": 473.734375,
+            "left": 727
+          },
+          {
+            "label": "45minuts",
+            "x": 490,
+            "y": 487.734375,
+            "width": 223,
+            "height": 95,
+            "top": 487.734375,
+            "right": 713,
+            "bottom": 582.734375,
+            "left": 490
+          },
+          {
+            "label": "60minuts",
+            "x": 727,
+            "y": 487.734375,
+            "width": 223,
+            "height": 95,
+            "top": 487.734375,
+            "right": 950,
+            "bottom": 582.734375,
+            "left": 727
+          },
+          {
+            "label": "Personalitzada",
+            "x": 490,
+            "y": 596.734375,
+            "width": 460,
+            "height": 56,
+            "top": 596.734375,
+            "right": 950,
+            "bottom": 652.734375,
+            "left": 490
+          },
+          {
+            "label": "Continuar",
+            "x": 490,
+            "y": 725.734375,
+            "width": 460,
+            "height": 54,
+            "top": 725.734375,
+            "right": 950,
+            "bottom": 779.734375,
+            "left": 490
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/production/avatars/pau_character_v2.webp",
+      "bytes": 397618,
+      "sha256": "f63c9eb054e9660863399b79d3f2b2240dcba91bf07ea909efb80f1414834cd1"
+    },
+    {
+      "path": "/assets/production/avatars/tecla_character_v2.webp",
+      "bytes": 438870,
+      "sha256": "efb11e8c6f209252a5d871c4616ce1705f86bf498ebc6c526ad86347914329cc"
+    }
+  ],
+  "styles": [
+    {
+      "path": "src/styles/base.css",
+      "sha256": "d299e5b3a96c5665858a4dec4aac4eb4f6fe462763b7b7151885b97a71ddf129"
+    },
+    {
+      "path": "src/art-system/tokens.css",
+      "sha256": "07200e4415f5bd98571f413d03e7adca7d940e3a5bef51a1d466edb1984d635f"
+    },
+    {
+      "path": "src/styles/game.css",
+      "sha256": "29ec9e55ce1fb757a18db6fd98e62e44afad2e0d7842f8da69521b2c96873449"
+    }
+  ],
+  "externalRequests": [],
+  "authDbRequests": [],
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0,
+  "emptyBrowserStorage": true,
+  "forbiddenAppModulesRequested": false,
+  "errors": [],
+  "temporaryHarnessRemoved": true,
+  "visualInspectionPending": false,
+  "recapture": null,
+  "noSecrets": true,
+  "backgroundComparison": [
+    {
+      "viewport": "390x844",
+      "beforePath": "acceptance/gameplay-refinement/screenshots/background-before-390x844.png",
+      "afterPath": "acceptance/gameplay-refinement/screenshots/background-after-390x844.png",
+      "method": "Same current Scene raster and atmosphere with content hidden; baseline filter:none replayed from the pre-edit capture metadata. Final filter is the only difference.",
+      "before": {
+        "meanRelativeLuminance": 0.242,
+        "medianRelativeLuminance": 0.2356,
+        "p95RelativeLuminance": 0.4243,
+        "p95MinusP05Luminance": 0.3447,
+        "meanHsvSaturation": 0.5984
+      },
+      "after": {
+        "meanRelativeLuminance": 0.1511,
+        "medianRelativeLuminance": 0.1472,
+        "p95RelativeLuminance": 0.2528,
+        "p95MinusP05Luminance": 0.1925,
+        "meanHsvSaturation": 0.4147
+      },
+      "meanLuminanceChangePercent": -37.6,
+      "meanSaturationChangePercent": -30.7,
+      "luminanceSpreadChangePercent": -44.2
+    },
+    {
+      "viewport": "1024x768",
+      "beforePath": "acceptance/gameplay-refinement/screenshots/background-before-1024x768.png",
+      "afterPath": "acceptance/gameplay-refinement/screenshots/background-after-1024x768.png",
+      "method": "Same current Scene raster and atmosphere with content hidden; baseline filter:none replayed from the pre-edit capture metadata. Final filter is the only difference.",
+      "before": {
+        "meanRelativeLuminance": 0.2216,
+        "medianRelativeLuminance": 0.1858,
+        "p95RelativeLuminance": 0.4832,
+        "p95MinusP05Luminance": 0.4467,
+        "meanHsvSaturation": 0.6353
+      },
+      "after": {
+        "meanRelativeLuminance": 0.1387,
+        "medianRelativeLuminance": 0.1204,
+        "p95RelativeLuminance": 0.282,
+        "p95MinusP05Luminance": 0.2498,
+        "meanHsvSaturation": 0.4376
+      },
+      "meanLuminanceChangePercent": -37.4,
+      "meanSaturationChangePercent": -31.1,
+      "luminanceSpreadChangePercent": -44.1
+    },
+    {
+      "viewport": "1440x900",
+      "beforePath": "acceptance/gameplay-refinement/screenshots/background-before-1440x900.png",
+      "afterPath": "acceptance/gameplay-refinement/screenshots/background-after-1440x900.png",
+      "method": "Same current Scene raster and atmosphere with content hidden; baseline filter:none replayed from the pre-edit capture metadata. Final filter is the only difference.",
+      "before": {
+        "meanRelativeLuminance": 0.2143,
+        "medianRelativeLuminance": 0.1749,
+        "p95RelativeLuminance": 0.4841,
+        "p95MinusP05Luminance": 0.4501,
+        "meanHsvSaturation": 0.6359
+      },
+      "after": {
+        "meanRelativeLuminance": 0.1347,
+        "medianRelativeLuminance": 0.1151,
+        "p95RelativeLuminance": 0.283,
+        "p95MinusP05Luminance": 0.2528,
+        "meanHsvSaturation": 0.4364
+      },
+      "meanLuminanceChangePercent": -37.1,
+      "meanSaturationChangePercent": -31.4,
+      "luminanceSpreadChangePercent": -43.8
+    }
+  ],
+  "textComparison": [
+    {
+      "scene": "home",
+      "viewport": "390x844",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/home-390x844.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/home-390x844.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "29px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 407,
+          "rawContrastP05": 1.17,
+          "rawContrastMedian": 4.03,
+          "rawContrastMinimum": 1.03
+        },
+        {
+          "selector": "eyebrow",
+          "text": "EL NOSTRE JOC",
+          "fontSize": "10px",
+          "fontWeight": "800",
+          "color": "rgb(116, 86, 51)",
+          "glyphPixelsSampled": 137,
+          "rawContrastP05": 1.05,
+          "rawContrastMedian": 1.53,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "home-logo",
+          "text": "Pau & Tecla",
+          "fontSize": "62.4px",
+          "fontWeight": "700",
+          "color": "rgb(52, 62, 58)",
+          "glyphPixelsSampled": 2900,
+          "rawContrastP05": 1.07,
+          "rawContrastMedian": 1.79,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "home-tagline",
+          "text": "Una taula. Dos còmplices. Moltes preguntes.",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "color": "rgb(80, 57, 33)",
+          "glyphPixelsSampled": 310,
+          "rawContrastP05": 1.17,
+          "rawContrastMedian": 2.2,
+          "rawContrastMinimum": 1.01
+        },
+        {
+          "selector": "art-button art-button--quiet text-button",
+          "text": "Normes",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(249, 231, 196)",
+          "glyphPixelsSampled": 112,
+          "rawContrastP05": 3.29,
+          "rawContrastMedian": 4.58,
+          "rawContrastMinimum": 3.11
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "29px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 406,
+          "rawContrastP05": 2.84,
+          "rawContrastMedian": 3.47,
+          "rawContrastMinimum": 2.58,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "eyebrow",
+          "text": "EL NOSTRE JOC",
+          "fontSize": "11px",
+          "fontWeight": "800",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 101,
+          "rawContrastP05": 8.85,
+          "rawContrastMedian": 9.96,
+          "rawContrastMinimum": 8.39
+        },
+        {
+          "selector": "home-logo",
+          "text": "Pau & Tecla",
+          "fontSize": "62.4px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 2854,
+          "rawContrastP05": 2.97,
+          "rawContrastMedian": 6.4,
+          "rawContrastMinimum": 1.95,
+          "outline": {
+            "widthPx": 1.0,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "home-tagline",
+          "text": "Una taula. Dos còmplices. Moltes preguntes.",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(57, 59, 49)",
+          "glyphPixelsSampled": 279,
+          "rawContrastP05": 7.09,
+          "rawContrastMedian": 8.83,
+          "rawContrastMinimum": 4.58
+        },
+        {
+          "selector": "art-button art-button--quiet text-button",
+          "text": "Normes",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 102,
+          "rawContrastP05": 9.83,
+          "rawContrastMedian": 10.61,
+          "rawContrastMinimum": 8.91
+        }
+      ]
+    },
+    {
+      "scene": "home",
+      "viewport": "1024x768",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/home-1024x768.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/home-1024x768.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 714,
+          "rawContrastP05": 1.12,
+          "rawContrastMedian": 2.09,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "eyebrow",
+          "text": "EL NOSTRE JOC",
+          "fontSize": "10px",
+          "fontWeight": "800",
+          "color": "rgb(116, 86, 51)",
+          "glyphPixelsSampled": 117,
+          "rawContrastP05": 1.19,
+          "rawContrastMedian": 2.69,
+          "rawContrastMinimum": 1.04
+        },
+        {
+          "selector": "home-logo",
+          "text": "Pau & Tecla",
+          "fontSize": "71.68px",
+          "fontWeight": "700",
+          "color": "rgb(52, 62, 58)",
+          "glyphPixelsSampled": 3902,
+          "rawContrastP05": 1.33,
+          "rawContrastMedian": 5.08,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "home-tagline",
+          "text": "Una taula. Dos còmplices. Moltes preguntes.",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "color": "rgb(80, 57, 33)",
+          "glyphPixelsSampled": 537,
+          "rawContrastP05": 1.13,
+          "rawContrastMedian": 1.88,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "art-button art-button--quiet text-button",
+          "text": "Normes",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(249, 231, 196)",
+          "glyphPixelsSampled": 109,
+          "rawContrastP05": 3.59,
+          "rawContrastMedian": 5.05,
+          "rawContrastMinimum": 3.31
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 690,
+          "rawContrastP05": 3.11,
+          "rawContrastMedian": 5.33,
+          "rawContrastMinimum": 2.71,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "eyebrow",
+          "text": "EL NOSTRE JOC",
+          "fontSize": "11px",
+          "fontWeight": "800",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 101,
+          "rawContrastP05": 6.81,
+          "rawContrastMedian": 9.0,
+          "rawContrastMinimum": 6.35
+        },
+        {
+          "selector": "home-logo",
+          "text": "Pau & Tecla",
+          "fontSize": "71.68px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 3918,
+          "rawContrastP05": 2.56,
+          "rawContrastMedian": 2.84,
+          "rawContrastMinimum": 1.84,
+          "outline": {
+            "widthPx": 1.0,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "home-tagline",
+          "text": "Una taula. Dos còmplices. Moltes preguntes.",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(57, 59, 49)",
+          "glyphPixelsSampled": 460,
+          "rawContrastP05": 7.18,
+          "rawContrastMedian": 8.82,
+          "rawContrastMinimum": 3.58
+        },
+        {
+          "selector": "art-button art-button--quiet text-button",
+          "text": "Normes",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 102,
+          "rawContrastP05": 10.06,
+          "rawContrastMedian": 10.84,
+          "rawContrastMinimum": 9.02
+        }
+      ]
+    },
+    {
+      "scene": "home",
+      "viewport": "1440x900",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/home-1440x900.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/home-1440x900.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 729,
+          "rawContrastP05": 1.06,
+          "rawContrastMedian": 3.21,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "eyebrow",
+          "text": "EL NOSTRE JOC",
+          "fontSize": "10px",
+          "fontWeight": "800",
+          "color": "rgb(116, 86, 51)",
+          "glyphPixelsSampled": 113,
+          "rawContrastP05": 1.09,
+          "rawContrastMedian": 2.74,
+          "rawContrastMinimum": 1.01
+        },
+        {
+          "selector": "home-logo",
+          "text": "Pau & Tecla",
+          "fontSize": "100.8px",
+          "fontWeight": "700",
+          "color": "rgb(52, 62, 58)",
+          "glyphPixelsSampled": 7882,
+          "rawContrastP05": 1.22,
+          "rawContrastMedian": 4.98,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "home-tagline",
+          "text": "Una taula. Dos còmplices. Moltes preguntes.",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "color": "rgb(80, 57, 33)",
+          "glyphPixelsSampled": 545,
+          "rawContrastP05": 1.13,
+          "rawContrastMedian": 1.87,
+          "rawContrastMinimum": 1.01
+        },
+        {
+          "selector": "art-button art-button--quiet text-button",
+          "text": "Normes",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(249, 231, 196)",
+          "glyphPixelsSampled": 106,
+          "rawContrastP05": 2.68,
+          "rawContrastMedian": 3.71,
+          "rawContrastMinimum": 2.61
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 688,
+          "rawContrastP05": 3.17,
+          "rawContrastMedian": 3.61,
+          "rawContrastMinimum": 2.65,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "eyebrow",
+          "text": "EL NOSTRE JOC",
+          "fontSize": "11px",
+          "fontWeight": "800",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 101,
+          "rawContrastP05": 7.05,
+          "rawContrastMedian": 9.14,
+          "rawContrastMinimum": 6.97
+        },
+        {
+          "selector": "home-logo",
+          "text": "Pau & Tecla",
+          "fontSize": "100.8px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 7917,
+          "rawContrastP05": 2.56,
+          "rawContrastMedian": 2.89,
+          "rawContrastMinimum": 1.96,
+          "outline": {
+            "widthPx": 1.0,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "home-tagline",
+          "text": "Una taula. Dos còmplices. Moltes preguntes.",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(57, 59, 49)",
+          "glyphPixelsSampled": 467,
+          "rawContrastP05": 7.68,
+          "rawContrastMedian": 8.82,
+          "rawContrastMinimum": 4.76
+        },
+        {
+          "selector": "art-button art-button--quiet text-button",
+          "text": "Normes",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 102,
+          "rawContrastP05": 9.51,
+          "rawContrastMedian": 10.24,
+          "rawContrastMinimum": 8.19
+        }
+      ]
+    },
+    {
+      "scene": "role",
+      "viewport": "390x844",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/role-390x844.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/role-390x844.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "29px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 407,
+          "rawContrastP05": 1.17,
+          "rawContrastMedian": 4.03,
+          "rawContrastMinimum": 1.03
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.73,
+          "rawContrastMedian": 7.81,
+          "rawContrastMinimum": 7.73
+        },
+        {
+          "selector": "",
+          "text": "Qui ets?",
+          "fontSize": "26px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 373,
+          "rawContrastP05": 9.39,
+          "rawContrastMedian": 9.46,
+          "rawContrastMinimum": 9.37
+        },
+        {
+          "selector": "art-button__label",
+          "text": "PauSoc en Pau",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(47, 82, 103)",
+          "glyphPixelsSampled": 131,
+          "rawContrastP05": 6.0,
+          "rawContrastMedian": 6.07,
+          "rawContrastMinimum": 5.95
+        },
+        {
+          "selector": "art-button__label",
+          "text": "TeclaSoc la Tecla",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(127, 68, 79)",
+          "glyphPixelsSampled": 172,
+          "rawContrastP05": 5.08,
+          "rawContrastMedian": 5.22,
+          "rawContrastMinimum": 4.99
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "29px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 406,
+          "rawContrastP05": 2.84,
+          "rawContrastMedian": 3.47,
+          "rawContrastMinimum": 2.58,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.73,
+          "rawContrastMedian": 7.81,
+          "rawContrastMinimum": 7.73
+        },
+        {
+          "selector": "",
+          "text": "Qui ets?",
+          "fontSize": "26px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 373,
+          "rawContrastP05": 10.31,
+          "rawContrastMedian": 10.38,
+          "rawContrastMinimum": 10.28
+        },
+        {
+          "selector": "art-button__label",
+          "text": "PauSoc en Pau",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(47, 82, 103)",
+          "glyphPixelsSampled": 131,
+          "rawContrastP05": 6.0,
+          "rawContrastMedian": 6.07,
+          "rawContrastMinimum": 5.95
+        },
+        {
+          "selector": "art-button__label",
+          "text": "TeclaSoc la Tecla",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(127, 68, 79)",
+          "glyphPixelsSampled": 172,
+          "rawContrastP05": 5.08,
+          "rawContrastMedian": 5.22,
+          "rawContrastMinimum": 4.99
+        }
+      ]
+    },
+    {
+      "scene": "role",
+      "viewport": "1024x768",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/role-1024x768.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/role-1024x768.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 714,
+          "rawContrastP05": 1.12,
+          "rawContrastMedian": 2.09,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.71,
+          "rawContrastMedian": 7.78,
+          "rawContrastMinimum": 7.66
+        },
+        {
+          "selector": "",
+          "text": "Qui ets?",
+          "fontSize": "30.72px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 580,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.47,
+          "rawContrastMinimum": 9.31
+        },
+        {
+          "selector": "art-button__label",
+          "text": "PauSoc en Pau",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(47, 82, 103)",
+          "glyphPixelsSampled": 134,
+          "rawContrastP05": 6.01,
+          "rawContrastMedian": 6.12,
+          "rawContrastMinimum": 5.96
+        },
+        {
+          "selector": "art-button__label",
+          "text": "TeclaSoc la Tecla",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(127, 68, 79)",
+          "glyphPixelsSampled": 184,
+          "rawContrastP05": 5.13,
+          "rawContrastMedian": 5.21,
+          "rawContrastMinimum": 5.09
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 690,
+          "rawContrastP05": 3.11,
+          "rawContrastMedian": 5.33,
+          "rawContrastMinimum": 2.71,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.71,
+          "rawContrastMedian": 7.78,
+          "rawContrastMinimum": 7.66
+        },
+        {
+          "selector": "",
+          "text": "Qui ets?",
+          "fontSize": "30.72px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 580,
+          "rawContrastP05": 10.29,
+          "rawContrastMedian": 10.38,
+          "rawContrastMinimum": 10.22
+        },
+        {
+          "selector": "art-button__label",
+          "text": "PauSoc en Pau",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(47, 82, 103)",
+          "glyphPixelsSampled": 134,
+          "rawContrastP05": 6.01,
+          "rawContrastMedian": 6.12,
+          "rawContrastMinimum": 5.96
+        },
+        {
+          "selector": "art-button__label",
+          "text": "TeclaSoc la Tecla",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(127, 68, 79)",
+          "glyphPixelsSampled": 184,
+          "rawContrastP05": 5.13,
+          "rawContrastMedian": 5.21,
+          "rawContrastMinimum": 5.09
+        }
+      ]
+    },
+    {
+      "scene": "role",
+      "viewport": "1440x900",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/role-1440x900.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/role-1440x900.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 729,
+          "rawContrastP05": 1.06,
+          "rawContrastMedian": 3.21,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.73,
+          "rawContrastMedian": 7.79,
+          "rawContrastMinimum": 7.66
+        },
+        {
+          "selector": "",
+          "text": "Qui ets?",
+          "fontSize": "33px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 740,
+          "rawContrastP05": 9.39,
+          "rawContrastMedian": 9.48,
+          "rawContrastMinimum": 9.37
+        },
+        {
+          "selector": "art-button__label",
+          "text": "PauSoc en Pau",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(47, 82, 103)",
+          "glyphPixelsSampled": 134,
+          "rawContrastP05": 6.01,
+          "rawContrastMedian": 6.12,
+          "rawContrastMinimum": 5.96
+        },
+        {
+          "selector": "art-button__label",
+          "text": "TeclaSoc la Tecla",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(127, 68, 79)",
+          "glyphPixelsSampled": 184,
+          "rawContrastP05": 5.09,
+          "rawContrastMedian": 5.21,
+          "rawContrastMinimum": 4.96
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 688,
+          "rawContrastP05": 3.17,
+          "rawContrastMedian": 3.61,
+          "rawContrastMinimum": 2.65,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.73,
+          "rawContrastMedian": 7.79,
+          "rawContrastMinimum": 7.66
+        },
+        {
+          "selector": "",
+          "text": "Qui ets?",
+          "fontSize": "33px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 740,
+          "rawContrastP05": 10.31,
+          "rawContrastMedian": 10.4,
+          "rawContrastMinimum": 10.28
+        },
+        {
+          "selector": "art-button__label",
+          "text": "PauSoc en Pau",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(47, 82, 103)",
+          "glyphPixelsSampled": 134,
+          "rawContrastP05": 6.01,
+          "rawContrastMedian": 6.12,
+          "rawContrastMinimum": 5.96
+        },
+        {
+          "selector": "art-button__label",
+          "text": "TeclaSoc la Tecla",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(127, 68, 79)",
+          "glyphPixelsSampled": 184,
+          "rawContrastP05": 5.09,
+          "rawContrastMedian": 5.21,
+          "rawContrastMinimum": 4.96
+        }
+      ]
+    },
+    {
+      "scene": "duration",
+      "viewport": "390x844",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/duration-390x844.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/duration-390x844.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "29px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 407,
+          "rawContrastP05": 1.17,
+          "rawContrastMedian": 4.03,
+          "rawContrastMinimum": 1.03
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.68,
+          "rawContrastMedian": 7.75,
+          "rawContrastMinimum": 7.66
+        },
+        {
+          "selector": "eyebrow",
+          "text": "En persona",
+          "fontSize": "10px",
+          "fontWeight": "800",
+          "color": "rgb(116, 86, 51)",
+          "glyphPixelsSampled": 66,
+          "rawContrastP05": 5.59,
+          "rawContrastMedian": 5.66,
+          "rawContrastMinimum": 5.59
+        },
+        {
+          "selector": "",
+          "text": "Quant de temps voleu que duri la partida?",
+          "fontSize": "26px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 1809,
+          "rawContrastP05": 9.21,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 8.97
+        },
+        {
+          "selector": "art-button__label",
+          "text": "20minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 288,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 9.3
+        },
+        {
+          "selector": "art-button__label",
+          "text": "30minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 313,
+          "rawContrastP05": 7.83,
+          "rawContrastMedian": 7.89,
+          "rawContrastMinimum": 7.82
+        },
+        {
+          "selector": "art-button__label",
+          "text": "45minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 310,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 9.3
+        },
+        {
+          "selector": "art-button__label",
+          "text": "60minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 316,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 9.22
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Personalitzada",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 106,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 9.21
+        },
+        {
+          "selector": "setup-hint",
+          "text": "És una estimació: jugueu al vostre ritme.",
+          "fontSize": "13px",
+          "fontWeight": "400",
+          "color": "rgb(120, 101, 79)",
+          "glyphPixelsSampled": 93,
+          "rawContrastP05": 4.7,
+          "rawContrastMedian": 4.75,
+          "rawContrastMinimum": 4.67
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Continuar",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 241, 213)",
+          "glyphPixelsSampled": 124,
+          "rawContrastP05": 4.01,
+          "rawContrastMedian": 4.18,
+          "rawContrastMinimum": 3.95
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "29px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 406,
+          "rawContrastP05": 2.84,
+          "rawContrastMedian": 3.47,
+          "rawContrastMinimum": 2.58,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.66,
+          "rawContrastMedian": 7.78,
+          "rawContrastMinimum": 7.59
+        },
+        {
+          "selector": "eyebrow",
+          "text": "En persona",
+          "fontSize": "11px",
+          "fontWeight": "800",
+          "color": "rgb(96, 83, 68)",
+          "glyphPixelsSampled": 102,
+          "rawContrastP05": 6.19,
+          "rawContrastMedian": 6.27,
+          "rawContrastMinimum": 6.14
+        },
+        {
+          "selector": "",
+          "text": "Quant de temps voleu que duri la partida?",
+          "fontSize": "26px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 1808,
+          "rawContrastP05": 10.08,
+          "rawContrastMedian": 10.36,
+          "rawContrastMinimum": 9.82
+        },
+        {
+          "selector": "art-button__label",
+          "text": "20minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 288,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 10.21
+        },
+        {
+          "selector": "art-button__label",
+          "text": "30minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 305,
+          "rawContrastP05": 8.59,
+          "rawContrastMedian": 8.66,
+          "rawContrastMinimum": 8.58
+        },
+        {
+          "selector": "art-button__label",
+          "text": "45minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 310,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 10.21
+        },
+        {
+          "selector": "art-button__label",
+          "text": "60minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 316,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 10.11
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Personalitzada",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 106,
+          "rawContrastP05": 10.31,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 10.28
+        },
+        {
+          "selector": "setup-hint",
+          "text": "Estimació amb torns de 30 segons. Jugueu al vostre ritme.",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "color": "rgb(96, 83, 68)",
+          "glyphPixelsSampled": 128,
+          "rawContrastP05": 6.28,
+          "rawContrastMedian": 6.35,
+          "rawContrastMinimum": 6.26
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Continuar",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 245, 223)",
+          "glyphPixelsSampled": 117,
+          "rawContrastP05": 5.34,
+          "rawContrastMedian": 5.71,
+          "rawContrastMinimum": 5.29
+        }
+      ]
+    },
+    {
+      "scene": "duration",
+      "viewport": "1024x768",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/duration-1024x768.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/duration-1024x768.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 714,
+          "rawContrastP05": 1.12,
+          "rawContrastMedian": 2.09,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.66,
+          "rawContrastMedian": 7.73,
+          "rawContrastMinimum": 7.59
+        },
+        {
+          "selector": "eyebrow",
+          "text": "En persona",
+          "fontSize": "10px",
+          "fontWeight": "800",
+          "color": "rgb(116, 86, 51)",
+          "glyphPixelsSampled": 66,
+          "rawContrastP05": 5.62,
+          "rawContrastMedian": 5.68,
+          "rawContrastMinimum": 5.58
+        },
+        {
+          "selector": "",
+          "text": "Quant de temps voleu que duri la partida?",
+          "fontSize": "30.72px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 2829,
+          "rawContrastP05": 9.13,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 8.97
+        },
+        {
+          "selector": "art-button__label",
+          "text": "20minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 287,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.39,
+          "rawContrastMinimum": 8.98
+        },
+        {
+          "selector": "art-button__label",
+          "text": "30minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 312,
+          "rawContrastP05": 7.83,
+          "rawContrastMedian": 7.89,
+          "rawContrastMinimum": 7.55
+        },
+        {
+          "selector": "art-button__label",
+          "text": "45minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 308,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.39,
+          "rawContrastMinimum": 9.3
+        },
+        {
+          "selector": "art-button__label",
+          "text": "60minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 304,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.42,
+          "rawContrastMinimum": 8.98
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Personalitzada",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 106,
+          "rawContrastP05": 9.39,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 9.37
+        },
+        {
+          "selector": "setup-hint",
+          "text": "És una estimació: jugueu al vostre ritme.",
+          "fontSize": "13px",
+          "fontWeight": "400",
+          "color": "rgb(120, 101, 79)",
+          "glyphPixelsSampled": 93,
+          "rawContrastP05": 4.7,
+          "rawContrastMedian": 4.74,
+          "rawContrastMinimum": 4.67
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Continuar",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 241, 213)",
+          "glyphPixelsSampled": 124,
+          "rawContrastP05": 4.01,
+          "rawContrastMedian": 4.13,
+          "rawContrastMinimum": 3.95
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 690,
+          "rawContrastP05": 3.11,
+          "rawContrastMedian": 5.33,
+          "rawContrastMinimum": 2.71,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.66,
+          "rawContrastMedian": 7.73,
+          "rawContrastMinimum": 7.61
+        },
+        {
+          "selector": "eyebrow",
+          "text": "En persona",
+          "fontSize": "11px",
+          "fontWeight": "800",
+          "color": "rgb(96, 83, 68)",
+          "glyphPixelsSampled": 102,
+          "rawContrastP05": 6.24,
+          "rawContrastMedian": 6.3,
+          "rawContrastMinimum": 6.19
+        },
+        {
+          "selector": "",
+          "text": "Quant de temps voleu que duri la partida?",
+          "fontSize": "30.72px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 2824,
+          "rawContrastP05": 10.02,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 9.84
+        },
+        {
+          "selector": "art-button__label",
+          "text": "20minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 287,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.31,
+          "rawContrastMinimum": 9.85
+        },
+        {
+          "selector": "art-button__label",
+          "text": "30minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 303,
+          "rawContrastP05": 8.59,
+          "rawContrastMedian": 8.66,
+          "rawContrastMinimum": 8.28
+        },
+        {
+          "selector": "art-button__label",
+          "text": "45minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 308,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.31,
+          "rawContrastMinimum": 10.21
+        },
+        {
+          "selector": "art-button__label",
+          "text": "60minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 304,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.34,
+          "rawContrastMinimum": 9.85
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Personalitzada",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 106,
+          "rawContrastP05": 10.31,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 10.28
+        },
+        {
+          "selector": "setup-hint",
+          "text": "Estimació amb torns de 30 segons. Jugueu al vostre ritme.",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "color": "rgb(96, 83, 68)",
+          "glyphPixelsSampled": 132,
+          "rawContrastP05": 6.28,
+          "rawContrastMedian": 6.35,
+          "rawContrastMinimum": 6.24
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Continuar",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 245, 223)",
+          "glyphPixelsSampled": 117,
+          "rawContrastP05": 5.37,
+          "rawContrastMedian": 5.63,
+          "rawContrastMinimum": 5.34
+        }
+      ]
+    },
+    {
+      "scene": "duration",
+      "viewport": "1440x900",
+      "baselinePath": "audit/gameplay-refinement-before/screenshots/duration-1440x900.png",
+      "finalPath": "acceptance/gameplay-refinement/screenshots/duration-1440x900.png",
+      "before": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(53, 61, 54)",
+          "glyphPixelsSampled": 729,
+          "rawContrastP05": 1.06,
+          "rawContrastMedian": 3.21,
+          "rawContrastMinimum": 1.0
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.66,
+          "rawContrastMedian": 7.73,
+          "rawContrastMinimum": 7.59
+        },
+        {
+          "selector": "eyebrow",
+          "text": "En persona",
+          "fontSize": "10px",
+          "fontWeight": "800",
+          "color": "rgb(116, 86, 51)",
+          "glyphPixelsSampled": 66,
+          "rawContrastP05": 5.63,
+          "rawContrastMedian": 5.68,
+          "rawContrastMinimum": 5.58
+        },
+        {
+          "selector": "",
+          "text": "Quant de temps voleu que duri la partida?",
+          "fontSize": "33px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 3522,
+          "rawContrastP05": 9.19,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 8.81
+        },
+        {
+          "selector": "art-button__label",
+          "text": "20minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 287,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.39,
+          "rawContrastMinimum": 9.3
+        },
+        {
+          "selector": "art-button__label",
+          "text": "30minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 312,
+          "rawContrastP05": 7.83,
+          "rawContrastMedian": 7.89,
+          "rawContrastMinimum": 7.81
+        },
+        {
+          "selector": "art-button__label",
+          "text": "45minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 308,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 9.3
+        },
+        {
+          "selector": "art-button__label",
+          "text": "60minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 304,
+          "rawContrastP05": 9.37,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 9.3
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Personalitzada",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(52, 61, 59)",
+          "glyphPixelsSampled": 106,
+          "rawContrastP05": 9.39,
+          "rawContrastMedian": 9.45,
+          "rawContrastMinimum": 9.37
+        },
+        {
+          "selector": "setup-hint",
+          "text": "És una estimació: jugueu al vostre ritme.",
+          "fontSize": "13px",
+          "fontWeight": "400",
+          "color": "rgb(120, 101, 79)",
+          "glyphPixelsSampled": 93,
+          "rawContrastP05": 4.7,
+          "rawContrastMedian": 4.75,
+          "rawContrastMinimum": 4.69
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Continuar",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 241, 213)",
+          "glyphPixelsSampled": 124,
+          "rawContrastP05": 4.01,
+          "rawContrastMedian": 4.14,
+          "rawContrastMinimum": 3.96
+        }
+      ],
+      "after": [
+        {
+          "selector": "brand",
+          "text": "Pau & Tecla",
+          "fontSize": "35px",
+          "fontWeight": "700",
+          "color": "rgb(244, 231, 203)",
+          "glyphPixelsSampled": 688,
+          "rawContrastP05": 3.17,
+          "rawContrastMedian": 3.61,
+          "rawContrastMinimum": 2.65,
+          "outline": {
+            "widthPx": 0.7,
+            "color": "rgb(53, 64, 57)",
+            "letterToOutlineContrast": 8.82,
+            "note": "Local letter/outline contrast is reported separately from raw landscape contrast; this is not a full WCAG certification."
+          }
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Enrere",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(98, 61, 39)",
+          "glyphPixelsSampled": 54,
+          "rawContrastP05": 7.66,
+          "rawContrastMedian": 7.73,
+          "rawContrastMinimum": 7.66
+        },
+        {
+          "selector": "eyebrow",
+          "text": "En persona",
+          "fontSize": "11px",
+          "fontWeight": "800",
+          "color": "rgb(96, 83, 68)",
+          "glyphPixelsSampled": 102,
+          "rawContrastP05": 6.24,
+          "rawContrastMedian": 6.3,
+          "rawContrastMinimum": 6.19
+        },
+        {
+          "selector": "",
+          "text": "Quant de temps voleu que duri la partida?",
+          "fontSize": "33px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 3520,
+          "rawContrastP05": 10.11,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 9.67
+        },
+        {
+          "selector": "art-button__label",
+          "text": "20minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 287,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.31,
+          "rawContrastMinimum": 10.21
+        },
+        {
+          "selector": "art-button__label",
+          "text": "30minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 303,
+          "rawContrastP05": 8.59,
+          "rawContrastMedian": 8.66,
+          "rawContrastMinimum": 8.57
+        },
+        {
+          "selector": "art-button__label",
+          "text": "45minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 308,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 10.21
+        },
+        {
+          "selector": "art-button__label",
+          "text": "60minuts",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 304,
+          "rawContrastP05": 10.28,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 10.21
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Personalitzada",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "color": "rgb(46, 55, 51)",
+          "glyphPixelsSampled": 106,
+          "rawContrastP05": 10.31,
+          "rawContrastMedian": 10.37,
+          "rawContrastMinimum": 10.28
+        },
+        {
+          "selector": "setup-hint",
+          "text": "Estimació amb torns de 30 segons. Jugueu al vostre ritme.",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "color": "rgb(96, 83, 68)",
+          "glyphPixelsSampled": 132,
+          "rawContrastP05": 6.3,
+          "rawContrastMedian": 6.35,
+          "rawContrastMinimum": 6.24
+        },
+        {
+          "selector": "art-button__label",
+          "text": "Continuar",
+          "fontSize": "16px",
+          "fontWeight": "700",
+          "color": "rgb(255, 245, 223)",
+          "glyphPixelsSampled": 117,
+          "rawContrastP05": 5.37,
+          "rawContrastMedian": 5.63,
+          "rawContrastMinimum": 5.34
+        }
+      ]
+    }
+  ],
+  "contrastMethod": "sRGB relative luminance. Glyph interiors identified by foreground color and changed pixels in paired original/hidden-text screenshots; small antialias pixels excluded. Raw landscape contrast and outline contrast are separate. This is component QA, not a full screen-reader, WCAG or gameplay certification.",
+  "baselineReport": "audit/gameplay-refinement-before/BASELINE_REPORT.json",
+  "avatarSourcesUnchanged": true,
+  "productionFilesChangedForVisualTask": [
+    "src/styles/base.css",
+    "src/art-system/tokens.css"
+  ],
+  "manualVisualInspection": {
+    "status": "PASS",
+    "capturesReviewed": 9,
+    "scenes": [
+      "home",
+      "role",
+      "duration"
+    ],
+    "viewports": [
+      "390x844",
+      "1024x768",
+      "1440x900"
+    ],
+    "findings": [
+      "Sitges, la Punta, el Baluard, el mar i la llum lateral del capvespre continuen recognoscibles. La saturació i les altes llums ja no competeixen amb la UI.",
+      "El filtre s’aplica només a .scene-background img; els avatars vigents, el tauler, les peces i el paper queden fora del filtre.",
+      "Logo i marca manuscrits en crema amb contorn marró curt; la resta del text sobre paper continua en tinta fosca. El text de portada petit té suport mat amb vores difuses.",
+      "Les dues cares, inclòs el nas de la Tecla, i els retalls del perfil es conserven. Fonts d’avatar i hashes idèntics a la baseline d’aquest refinament.",
+      "No s’ha observat clipping ni scroll en les nou vistes locals. Les posicions i el marc de les figures de portada es conserven."
+    ],
+    "scope": "QA local de components React reals, sense App, Auth, Realtime o DB. No substitueix les proves funcionals del joc."
+  },
+  "numericContrastSummary": {
+    "smallHomeEyebrowRawP05Minimum": 6.81,
+    "smallHomeTaglineRawP05Minimum": 7.09,
+    "homeRulesRawP05Minimum": 9.51,
+    "setupHintRawP05Minimum": 6.28,
+    "primaryContinueRawMinimum": 5.29,
+    "primaryContinueRawP05Minimum": 5.34,
+    "primaryContinueBeforeAdjustmentRawP05Approximate": 4.01,
+    "largeTitleAndBrandLetterToOutlineContrast": 8.82,
+    "largeTitleRawLandscapeP05Minimum": 2.56,
+    "note": "Les lletres sobre paisatge variable utilitzen un contorn fosc: el contrast del contorn es declara separadament. No es declara certificació WCAG integral."
+  },
+  "layoutVerification": {
+    "status": "PASS",
+    "captures": 9,
+    "bodyOverflow": false,
+    "minimumControlHeight": 48,
+    "minimumControlWidth": 48,
+    "authDbRequests": 0,
+    "externalRequests": 0,
+    "anonymousSessionsCreated": 0,
+    "gamesCreated": 0,
+    "temporaryHarnessRemoved": true
+  },
+  "artifactValidation": {
+    "status": "PASS",
+    "pathsChecked": 25,
+    "missing": []
+  },
+  "sourceFreeze": true,
+  "validationOwnership": "El render i les captures locals s’han executat en aquesta fase. Root executa TypeScript, unit i build un cop els agents funcionals hagin congelat les fonts."
+}

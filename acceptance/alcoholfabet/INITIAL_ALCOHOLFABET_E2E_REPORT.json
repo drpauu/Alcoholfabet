@@ -1,0 +1,66 @@
+{
+  "status": "FAIL",
+  "startedAt": "2026-10-09T15:29:53.094Z",
+  "completedAt": "2026-10-09T15:31:43.947Z",
+  "command": "npx playwright test tests/e2e/access-public.spec.ts tests/e2e/alcoholfabet.spec.ts --trace off --reporter=json",
+  "arguments": [
+    "playwright",
+    "test",
+    "tests/e2e/access-public.spec.ts",
+    "tests/e2e/alcoholfabet.spec.ts",
+    "--trace",
+    "off",
+    "--reporter=json"
+  ],
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 1,
+  "passed": 3,
+  "failed": 2,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 108983.988,
+  "tests": [
+    {
+      "name": "Alcoholfabet entra directament sense codi ni avatars i conserva el so i les invitacions",
+      "file": "access-public.spec.ts",
+      "status": "passed",
+      "durationMs": 5351,
+      "errors": []
+    },
+    {
+      "name": "el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats",
+      "file": "access-public.spec.ts",
+      "status": "failed",
+      "durationMs": 36,
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"image/\"\u001b[39m\nReceived string:        \u001b[31m\"\u001b[7mimage/\u001b[27mwebp\"\u001b[39m\n\n  38 |   }\n  39 |   const avatar = await request.get('/assets/production/avatars/pau_character_v2.webp');\n> 40 |   expect(avatar.headers()['content-type']).not.toContain('image/');\n     |                                                ^\n  41 | });\n  42 |\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/access-public.spec.ts:40:48"
+      ]
+    },
+    {
+      "name": "presencial: got ple, noms i doble, tauler llarg i abandonar torna directament al menú",
+      "file": "alcoholfabet.spec.ts",
+      "status": "passed",
+      "durationMs": 60455,
+      "errors": []
+    },
+    {
+      "name": "durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client",
+      "file": "alcoholfabet.spec.ts",
+      "status": "failed",
+      "durationMs": 5546,
+      "errors": [
+        "Error: page.evaluate: EncodingError: The source image cannot be decoded.\n\n  11 |   for (const [width, height] of sizes) {\n  12 |     await page.setViewportSize({ width, height });\n> 13 |     await page.evaluate(async () => { await document.fonts.ready; await Promise.all(Array.from(document.images).map(image => image.decode())); });\n     |                ^\n  14 |     const layout = await page.evaluate(() => ({\n  15 |       bodyWidth: document.body.scrollWidth, bodyHeight: document.body.scrollHeight,\n  16 |       controls: Array.from(document.querySelectorAll('button')).filter(element => element.checkVisibility()).map(element => ({ label: element.textContent?.trim() || element.getAttribute('aria-label'), ...element.getBoundingClientRect().toJSON() })),\n    at capture (/home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts:13:16)\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/alcoholfabet.spec.ts:114:5"
+      ]
+    },
+    {
+      "name": "online: qui reclama T&P veu el seu avís de beure i abandonar torna tots dos al menú",
+      "file": "alcoholfabet.spec.ts",
+      "status": "passed",
+      "durationMs": 32996,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true
+}

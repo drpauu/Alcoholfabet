@@ -1,8 +1,8 @@
-# MASTER PROMPT — CODEX SOL ULTRA — TECLA&PAU
+# MASTER PROMPT — CODEX SOL ULTRA — ALCOHOLFABET
 
 ## 0. Missió
 
-Acaba o reconstrueix, dins del repositori actual, l'aplicació web **Tecla&Pau**. El resultat ha de ser un joc de taula digital privat, fluid i visualment polidet per a dos jugadors fixos: en Pau i la Tecla.
+Acaba o reconstrueix, dins del repositori actual, l'aplicació web **Alcoholfabet**. El resultat ha de ser un joc de taula digital públic, fluid i visualment polidet per a dos jugadors fixos: en Pau i la Tecla.
 
 No lliuris una maqueta, un pla, una landing page ni una demostració parcial. Implementa, executa, compara, prova i corregeix fins que el producte sigui jugable de principi a fi en mode presencial i en mode en línia.
 
@@ -111,7 +111,7 @@ L'aplicació ha de semblar un joc de taula físic sobre una taula de fusta medit
 - Olives, gots, vegetació i petits objectes de taula.
 - Peça blava d'en Pau.
 - Peça rosa de la Tecla.
-- Avatars aprovats i consistents.
+- Noms i colors de les peces, sense avatars.
 
 No utilitzis:
 
@@ -130,7 +130,6 @@ Construeix capes reals: escena, taula, decoració, tauler SVG, caselles, peces, 
 
 Utilitza els assets de producció inclosos:
 
-- `assets/production/avatars/`
 - `assets/production/backgrounds/`
 - `assets/production/board-v2/`
 - `assets/production/pawns/`
@@ -139,13 +138,13 @@ Utilitza els assets de producció inclosos:
 - `assets/production/textures/`
 - `assets/production/sounds/`
 
-Si cal retocar un asset, conserva el mateix estil. No generis una versió nova d'un avatar per a cada pantalla.
+Si cal retocar un asset, conserva el mateix estil. No utilitzis avatars. Les fonts retirades es conserven fora del paquet públic.
 
 Utilitza design tokens de `design/design-tokens.css` i `design/design-tokens.json`.
 
 Tipografia:
 
-- Logotip: manuscrita, només per a `Pau & Tecla`.
+- Logotip: manuscrita, només per a `Alcoholfabet`.
 - UI: arrodonida, adulta i molt llegible.
 - Màxim dues famílies.
 
@@ -250,8 +249,9 @@ La publishable key es llegeix de variables d'entorn.
 Implementa:
 
 - Anonymous Auth.
-- Codi privat de parella validat al servidor.
-- Dispositius autoritzats.
+- Entrada pública sense codi privat, mitjançant Anonymous Auth.
+- Espai públic `alcoholfabet` separat de les partides privades històriques.
+- Membres de partida validats al servidor.
 - RLS a totes les taules exposades.
 - Accions d'escriptura mitjançant RPC/funcions revisades.
 - `state_version`.
@@ -316,7 +316,7 @@ Importa `data/questions_approved.json`.
 
 ### Fase B — Direcció d'art i layout
 
-- Integra escena, avatars, tauler, targetes i tokens.
+- Integra escena, tauler, targetes i tokens; sense avatars.
 - Implementa responsive real.
 - Compara visualment amb mockups.
 
@@ -366,7 +366,7 @@ Crea dos contexts:
 
 Prova:
 
-1. Accés privat.
+1. Accés públic directe.
 2. Crear partida online.
 3. Unir-se amb l'altre rol.
 4. Pregunta sense resposta al respondent.
@@ -419,3 +419,7 @@ Al final, informa de:
 - Qualsevol limitació real no resolta.
 
 No afirmis res que no hagis verificat.
+
+## Revisió aprovada de producte — 9 d’octubre de 2026
+
+La instrucció posterior de l’usuari substitueix les referències històriques a accés privat, avatars i nom Pau & Tecla: Alcoholfabet té entrada pública, cap avatar i protagonisme del tauler i les preguntes. Beure mostra un got amb el nom, i una coreografia de brindis de 1.080 ms definida al JSON; amb moviment reduït conserva un avís estàtic i el so activat. El codi de la sala en línia només connecta els dos dispositius. Els textos d’ajuda «Respon en veu alta! L’altra persona valida la resposta.» i «No s’encadenen bonificacions.» no es mostren. La regla de no encadenar +1 es conserva al servidor.

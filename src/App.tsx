@@ -4,12 +4,14 @@ import { Scene } from './components/Scene';
 import { Board } from './components/Board';
 import { QuestionCard } from './components/QuestionCard';
 import { PlayerBadge } from './components/PlayerBadge';
+import { HomeTable } from './components/HomeTable';
 import { ArtButtonPrimary, ArtButtonSecondary, ArtButtonQuiet, ArtButtonCorrect, ArtButtonIncorrect, ArtButtonTP, ArtPanel, ArtCard, ArtModal, ArtToast, ArtLoader, ArtIcon, ArtIconButton } from './components/art';
 import { ca } from './content/ca';
 import { useGameSession } from './hooks/useGameSession';
 import { useGameChannel } from './hooks/useGameChannel';
 import { useGameMotion } from './motion/useGameMotion';
 import type { GameAction, GameMode, PlayerRole } from './domain/game/game-types';
+import { DURATION_PRESETS } from './domain/game/duration-config';
 import type { GameView, Scoreboard } from './services/game-contract';
 
 type SetupStep = 'HOME' | 'ONLINE' | 'ROLE' | 'JOIN' | 'DURATION' | 'STARTER';
@@ -41,13 +43,15 @@ export default function App() {
   const [joining, setJoining] = useState(false);
   const [minutes, setMinutes] = useState(30);
   const [custom, setCustom] = useState(false);
-  const [code, setCode] = useState('');
   const [invite, setInvite] = useState(() => new URLSearchParams(location.search).get('partida') ?? '');
   const [invitePending, setInvitePending] = useState(() => new URLSearchParams(location.search).has('partida'));
   const [rules, setRules] = useState(false);
   const [leave, setLeave] = useState(false);
   const [copied, setCopied] = useState(false);
   useEffect(() => { setCopied(false); }, [view?.game.inviteCode]);
+  useEffect(() => {
+    if (!view) setLeave(false);
+  }, [view]);
   const motion = useGameMotion(view);
   const channel = useGameChannel(view?.game.id ?? null, session.userId, view?.viewer.role ?? null, session.refresh, view?.game.stateVersion ?? 0);
   const disconnected = view !== null && channel.connection !== 'connected';
@@ -89,15 +93,6 @@ export default function App() {
       startingPlayer: starter, creatorRole: mode === 'IN_PERSON' ? 'IN_PERSON_CONTROLLER' : role }));
     if (success) setStep('HOME');
   };
-  const enter = async (event: FormEvent) => {
-    event.preventDefault();
-    motion.unlockAudio();
-    const submitted = code;
-    setCode('');
-    if (await session.verify(submitted)) {
-      if (invite) { setMode('ONLINE'); setJoining(true); setStep('ROLE'); }
-    }
-  };
   const join = async (event: FormEvent) => {
     event.preventDefault();
     if (await session.run((repo) => repo.joinGame(invite, role))) {
@@ -107,6 +102,15 @@ export default function App() {
     }
   };
   const goHome = () => { session.goHome(); setStep('HOME'); session.clearError(); };
+  const abandon = async () => {
+    if (!view || locked) return;
+    motion.unlockAudio();
+    const success = await session.run((repo) => repo.action(view, { type: 'ABANDON_GAME' }));
+    if (success) {
+      setStep('HOME');
+      setLeave(false);
+    }
+  };
   const copyInvite = async () => {
     if (!view?.game.inviteCode) return;
     try { await navigator.clipboard.writeText(view.game.inviteCode); setCopied(true); }
@@ -123,14 +127,10 @@ export default function App() {
   if (session.loading) {
     content = <section className="setup-screen"><ArtPanel><ArtLoader /></ArtPanel></section>;
   } else if (!session.access?.authorized) {
-    content = <section className="setup-screen access-screen">
-      <ArtPanel as="form" className="access-panel" onSubmit={enter}>
-        <p className="eyebrow">{ca.homeEyebrow}</p><h1>{ca.enterPrivateGame}</h1><p>{ca.accessHelp}</p>
-        <label className="form-field">{ca.privateCode}<input type="password" autoComplete="current-password" value={code}
-          onChange={(event) => setCode(event.target.value)} minLength={6} maxLength={128} required disabled={session.pending} /></label>
-        <ArtButtonPrimary type="submit" className="primary-button" loading={session.pending} disabled={code.length < 6}>{session.pending ? ca.sending : ca.enter}</ArtButtonPrimary>
-        <small>{ca.privateNotice}</small>
-        {!session.access && <ArtButtonQuiet icon="reconnect" type="button" className="text-button" onClick={() => void session.boot()}>{ca.connectionRetry}</ArtButtonQuiet>}
+    content = <section className="setup-screen">
+      <ArtPanel>
+        <h1>{ca.appTitle}</h1><p>{ca.connectionNeeded}</p>
+        <ArtButtonPrimary icon="reconnect" onClick={() => void session.boot()}>{ca.connectionRetry}</ArtButtonPrimary>
       </ArtPanel>
     </section>;
   } else if (view) {
@@ -144,6 +144,8 @@ export default function App() {
     const resultPhase = ['RESULT', 'BETWEEN_TURNS', 'MOVING'].includes(game.phase) || finished;
     const plus = last?.plusOne === true;
     const drinkDouble = last?.drinkCount === 2;
+    const drinkPlayer = resultPhase && last?.correct === false && (last.drinkCount === 1 || last.drinkCount === 2) &&
+      (last.respondingPlayer === 'PAU' || last.respondingPlayer === 'TECLA') ? last.respondingPlayer : undefined;
     const turnText = game.currentTurn === 'PAU' ? ca.turnPau : ca.turnTecla;
     content = <div className="game-layout" data-motion="gameCamera" data-game-id={game.id} data-state-version={game.stateVersion} data-phase={game.phase}>
       <header className="game-hud">
@@ -153,7 +155,7 @@ export default function App() {
       </header>
       <section className="board-column" aria-label={ca.boardLabel}>
         <Board cells={view.board} positions={{PAU:game.pauPosition,TECLA:game.teclaPosition}} activePlayer={responding}
-          targetPosition={game.currentTargetCell} finishPosition={game.finishPosition} />
+          targetPosition={game.currentTargetCell} finishPosition={game.finishPosition} busy={locked} />
         <div className="board-legend"><span><ArtIcon name="personal" />{ca.personalLabel}</span><span><ArtIcon name="crossed" />{ca.crossedLabel}</span><span><ArtIcon name="tp" />T&amp;P</span></div>
       </section>
       <section className="card-column" aria-live="polite">
@@ -166,7 +168,7 @@ export default function App() {
         </ArtPanel> : finished && motion.victoryVisible ? <div className="victory-wrap">
           <img className="winner-crown" data-motion="crown" data-ready={motion.crownVisible} src="/assets/production/effects/crown.svg" alt="" />
           <ArtCard className="victory-panel" data-motion="winnerCard" data-ready={motion.victoryCardVisible}>
-          <img className="winner-avatar" src={`/assets/production/avatars/${game.winner?.toLowerCase()}_avatar.webp`} alt="" />
+          <span className={`winner-piece winner-piece--${(game.winner ?? 'PAU').toLowerCase()}`} aria-hidden="true"><ArtIcon name="finish" /></span>
           <h2>{game.winner === 'PAU' ? ca.pauWon : ca.teclaWon}</h2><p>{ca.finishedHelp}</p><div data-ready={motion.scoreVisible} className="victory-score"><Score score={view.scoreboard} /></div>
           <div className="final-actions" data-motion="finalActions" hidden={!motion.finalActionsVisible}>
             <ArtButtonPrimary icon="turn" className="primary-button" disabled={locked} onClick={() => { goHome(); setup(game.mode); }}>{ca.playAgain}</ArtButtonPrimary>
@@ -174,7 +176,7 @@ export default function App() {
           </div>
         </ArtCard></div> : abandoned ? <ArtPanel><h2>{ca.abandoned}</h2><p>{ca.noPoint}</p><ArtButtonPrimary icon="home" className="primary-button" onClick={goHome}>{ca.goHome}</ArtButtonPrimary></ArtPanel> :
           <QuestionCard category={categoryFor(view)} pool={view.question?.pool} question={view.question?.questionCa ?? ca.questionReady}
-            answer={view.question?.answerCa} answerVisible={motion.answerVisible} phase={game.phase} busy={locked} drinkDouble={drinkDouble}>
+            answer={view.question?.answerCa} answerVisible={motion.answerVisible} phase={game.phase} busy={locked} drinkDouble={drinkDouble} drinkPlayer={drinkPlayer}>
             {game.phase === 'TP_CLAIMED' && <p className="claim-label" data-motion="claimLabel">{responding === 'PAU' ? ca.pauAnswers : ca.teclaAnswers}</p>}
             {view.capabilities.canBeginTurn && <ArtButtonPrimary className="primary-button" disabled={locked} onClick={() => act({type:'BEGIN_TURN'})}>{ca.startTurn}</ArtButtonPrimary>}
             {game.phase === 'TP_OPEN' && <div className="claim-controls">
@@ -186,10 +188,9 @@ export default function App() {
               <ArtButtonIncorrect className="danger-button" disabled={locked} onClick={() => act({type:'JUDGE_INCORRECT'})}>{ca.incorrect}</ArtButtonIncorrect>
               <ArtButtonCorrect className="primary-button" disabled={locked} onClick={() => act({type:'JUDGE_CORRECT'})}>{ca.correct}</ArtButtonCorrect>
             </div>}
-            {!resultPhase && !view.capabilities.canBeginTurn && !view.capabilities.canJudge && game.phase !== 'TP_OPEN' && <p className="voice-hint">{ca.answerAloud}<small>{ca.waitingJudge}</small></p>}
             {resultPhase && <div className={`result-note ${resultCorrect ? 'is-correct':'is-incorrect'}`}>
               <strong>{resultCorrect ? `${ca.correct}!` : `${ca.incorrect}!`}</strong>
-              <p>{resultCorrect ? plus ? `${ca.plusOneTitle} ${ca.advanceExtra}` : ca.advanceOne : `${ca.doNotAdvance} ${ca.loseTurn} ${drinkDouble ? ca.drinkDouble : ca.drink}`}</p>
+              <p>{resultCorrect ? plus ? `${ca.plusOneTitle} ${ca.advanceExtra}` : ca.advanceOne : `${ca.doNotAdvance} ${ca.loseTurn}`}</p>
             </div>}
             {view.capabilities.canNextTurn && <ArtButtonPrimary className="primary-button" disabled={locked} onClick={() => act({type:'NEXT_TURN'})}>{ca.nextTurn}</ArtButtonPrimary>}
           </QuestionCard>}
@@ -199,7 +200,7 @@ export default function App() {
   } else if (step === 'HOME') {
     content = <section className="home-screen">
       <p className="eyebrow">{ca.homeEyebrow}</p><h1 className="home-logo">{ca.appTitle}</h1><p className="home-tagline">{ca.tagline}</p>
-      <div className="home-characters"><img src="/assets/production/avatars/pau_character.webp" alt={ca.pau} /><img src="/assets/production/avatars/tecla_character.webp" alt={ca.tecla} /></div>
+      <HomeTable />
       <Score score={session.access.scoreboard ?? emptyScore} />
       <div className="home-actions"><ArtButtonSecondary player="PAU" icon="person" onClick={() => setup('IN_PERSON')}>{ca.playInPerson}</ArtButtonSecondary><ArtButtonSecondary player="TECLA" icon="online" onClick={() => setup('ONLINE')}>{ca.playOnline}</ArtButtonSecondary></div>
       {(session.access.activeGameId || localStorage.getItem('tp-active-game')) && <ArtButtonQuiet icon="turn" className="text-button" disabled={session.pending} onClick={() => void session.run((repo) => repo.getGameView(session.access?.activeGameId ?? localStorage.getItem('tp-active-game') ?? ''))}>{ca.resumeGame}</ArtButtonQuiet>}
@@ -211,7 +212,7 @@ export default function App() {
       {step === 'ONLINE' && <><p className="eyebrow">{ca.online}</p><h1>{ca.chooseOnline}</h1><div className="setup-options"><ArtButtonSecondary icon="online" className="option-button" onClick={() => {setJoining(false);setStep('ROLE');}}>{ca.createGame}</ArtButtonSecondary><ArtButtonSecondary icon="person" className="option-button" onClick={() => {setJoining(true);setStep('ROLE');}}>{ca.joinGame}</ArtButtonSecondary></div></>}
       {step === 'ROLE' && <><h1>{ca.chooseRole}</h1><div className="setup-options">{(['PAU','TECLA'] as const).map((player) => <ArtButtonSecondary player={player} className="option-button" key={player} onClick={() => {setRole(player);setStep(joining?'JOIN':'DURATION');}}><PlayerBadge player={player} /><span>{player==='PAU'?ca.iAmPau:ca.iAmTecla}</span></ArtButtonSecondary>)}</div></>}
       {step === 'JOIN' && <form onSubmit={join}><h1>{ca.joinGame}</h1><label className="form-field">{ca.gameCode}<input autoComplete="off" value={invite} onChange={(event) => setInvite(event.target.value.toUpperCase())} minLength={6} maxLength={12} required /></label><ArtButtonPrimary type="submit" className="primary-button" loading={session.pending} disabled={invite.length<6}>{session.pending?ca.sending:ca.joinGame}</ArtButtonPrimary></form>}
-      {step === 'DURATION' && <><p className="eyebrow">{mode==='IN_PERSON'?ca.inPerson:ca.online}</p><h1>{ca.durationQuestion}</h1><div className="setup-options duration-options">{[20,30,45,60].map((duration) => <ArtButtonSecondary className={`option-button ${!custom&&minutes===duration?'is-selected':''}`} aria-pressed={!custom&&minutes===duration} key={duration} onClick={() => {setMinutes(duration);setCustom(false);}}><strong>{duration}</strong><span>{ca.minutes}</span></ArtButtonSecondary>)}<ArtButtonSecondary className={`option-button ${custom?'is-selected':''}`} aria-pressed={custom} onClick={() => setCustom(true)}>{ca.custom}</ArtButtonSecondary></div>{custom&&<label className="form-field">{ca.customMinutes}<input type="number" value={minutes} min={10} max={100} onChange={(event) => setMinutes(Number(event.target.value))} /></label>}<p className="setup-hint">{ca.durationHelp}</p><ArtButtonPrimary className="primary-button" disabled={!Number.isFinite(minutes)||minutes<10||minutes>100} onClick={() => setStep('STARTER')}>{ca.next}</ArtButtonPrimary></>}
+      {step === 'DURATION' && <><p className="eyebrow">{mode==='IN_PERSON'?ca.inPerson:ca.online}</p><h1>{ca.durationQuestion}</h1><div className="setup-options duration-options">{DURATION_PRESETS.map((duration) => <ArtButtonSecondary className={`option-button ${!custom&&minutes===duration?'is-selected':''}`} aria-pressed={!custom&&minutes===duration} key={duration} onClick={() => {setMinutes(duration);setCustom(false);}}><strong>{duration}</strong><span>{ca.minutes}</span></ArtButtonSecondary>)}<ArtButtonSecondary className={`option-button ${custom?'is-selected':''}`} aria-pressed={custom} onClick={() => setCustom(true)}>{ca.custom}</ArtButtonSecondary></div>{custom&&<label className="form-field">{ca.customMinutes}<input type="number" value={minutes} min={10} max={60} step={1} onChange={(event) => setMinutes(Number(event.target.value))} /></label>}<p className="setup-hint">{ca.durationHelp}</p><ArtButtonPrimary className="primary-button" disabled={!Number.isInteger(minutes)||minutes<10||minutes>60} onClick={() => setStep('STARTER')}>{ca.next}</ArtButtonPrimary></>}
       {step === 'STARTER' && <><h1>{ca.whoStarts}</h1><div className="setup-options starter-options">{(['PAU','TECLA'] as const).map((player) => <ArtButtonSecondary player={player} className="option-button" key={player} disabled={session.pending} onClick={() => void create(player)}><PlayerBadge player={player} /><span>{player==='PAU'?ca.pauWithArticle:ca.teclaWithArticle}</span></ArtButtonSecondary>)}<ArtButtonSecondary icon="turn" className="option-button" loading={session.pending} onClick={() => void create('RANDOM')}>{session.pending?ca.sending:ca.random}</ArtButtonSecondary></div></>}
     </ArtPanel></section>;
   }
@@ -225,7 +226,7 @@ export default function App() {
     {content}
     {session.error&&<ArtToast className="error-message" tone="incorrect" onDismiss={session.clearError}>{session.error}</ArtToast>}
     {rules&&<ArtModal open={rules} title={ca.rules} onClose={() => setRules(false)}><div className="rules-copy">{[ca.ruleGoal,ca.ruleTalk,ca.ruleCategories,ca.ruleCorrect,ca.ruleBonus,ca.ruleTP,ca.ruleScore].map((line)=><p key={line}>{line}</p>)}</div><ArtButtonPrimary className="primary-button" onClick={() => setRules(false)}>{ca.close}</ArtButtonPrimary></ArtModal>}
-    {leave&&<ArtModal open={leave} title={ca.leaveQuestion} onClose={() => setLeave(false)}><p>{ca.leaveWarning}</p><div className="panel-actions"><ArtButtonSecondary className="secondary-button" onClick={() => setLeave(false)}>{ca.keepPlaying}</ArtButtonSecondary><ArtButtonIncorrect className="danger-button" disabled={locked} onClick={() => {act({type:'ABANDON_GAME'});setLeave(false);}}>{ca.abandonGame}</ArtButtonIncorrect></div></ArtModal>}
+    {leave&&<ArtModal open={leave} title={ca.leaveQuestion} onClose={() => setLeave(false)}><p>{ca.leaveWarning}</p><div className="panel-actions"><ArtButtonSecondary className="secondary-button" disabled={session.pending} onClick={() => setLeave(false)}>{ca.keepPlaying}</ArtButtonSecondary><ArtButtonIncorrect className="danger-button" loading={session.pending} disabled={locked} onClick={() => void abandon()}>{ca.abandonGame}</ArtButtonIncorrect></div></ArtModal>}
     <div className={`connection-overlay ${disconnected||motion.reconnectVisible?'is-visible':''}`} data-motion="disconnectOverlay" aria-hidden={!disconnected&&!motion.reconnectVisible}>
       <ArtPanel><ArtIcon name={motion.reconnectVisible ? 'reconnect' : 'connection'} /><h2 data-motion="reconnectText">{motion.reconnectVisible?ca.reconnected:ca.connectionLost}</h2><p>{motion.reconnectVisible?ca.gameContinues:ca.reconnecting}</p><ArtLoader className="connection-loader" compact label="" aria-label={ca.reconnecting} /><svg data-motion="reconnectCheck" viewBox="0 0 60 60"><path d="M13 30 25 43 48 17" /></svg></ArtPanel>
     </div>

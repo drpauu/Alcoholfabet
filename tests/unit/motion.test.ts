@@ -59,6 +59,20 @@ describe('confirmed visual effects', () => {
     expect(reduced.steps.some((step) => step.target === 'crown')).toBe(true);
     expect(reduced.steps.some((step) => step.target === 'finalActions')).toBe(true);
   });
+
+  it('orchestrates the drink toast and preserves the right sound with reduced motion', () => {
+    for (const drinkCount of [1, 2] as const) {
+      const sequence = sequenceFor({ ...identity, type: 'INCORRECT_AND_DRINK', drinkCount });
+      expect(sequence.totalMs).toBe(1080);
+      expect(sequence.steps.find(step => step.target === 'drinkGlass')?.action).toBe('raiseGlass');
+      expect(sequence.steps.find(step => step.target === 'drinkBubbles')?.count).toBe(6);
+      expect(sequence.steps.find(step => step.action === 'play' && step.atMs === 220)?.cue).toBe(drinkCount === 2 ? 'DOUBLE_DRINK' : 'DRINK');
+      const reduced = reduceSequence(sequence);
+      expect(reduced.totalMs).toBe(180);
+      expect(reduced.steps.some(step => ['raiseGlass', 'emit', 'pulse', 'keyframes'].includes(step.action))).toBe(false);
+      expect(reduced.steps.some(step => step.cue === (drinkCount === 2 ? 'DOUBLE_DRINK' : 'DRINK'))).toBe(true);
+    }
+  });
 });
 
 describe('event orchestration', () => {

@@ -1,0 +1,402 @@
+{
+  "status": "PASS",
+  "capturedAt": "2026-10-09T15:01:46.409Z",
+  "realApp": true,
+  "layouts": [
+    {
+      "width": 360,
+      "height": 800,
+      "bodyWidth": 360,
+      "bodyHeight": 800,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 183,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 231,
+          "bottom": 60,
+          "left": 183
+        },
+        {
+          "label": "So activat",
+          "x": 239,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 287,
+          "bottom": 60,
+          "left": 239
+        },
+        {
+          "label": "Sortir",
+          "x": 295,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 343,
+          "bottom": 60,
+          "left": 295
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 57.65625,
+          "y": 345.75,
+          "width": 48,
+          "height": 48,
+          "top": 345.75,
+          "right": 105.65625,
+          "bottom": 393.75,
+          "left": 57.65625
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 254.328125,
+          "y": 345.75,
+          "width": 48,
+          "height": 48,
+          "top": 345.75,
+          "right": 302.328125,
+          "bottom": 393.75,
+          "left": 254.328125
+        },
+        {
+          "label": "Començar el torn",
+          "x": 42,
+          "y": 709,
+          "width": 276,
+          "height": 55,
+          "top": 709,
+          "right": 318,
+          "bottom": 764,
+          "left": 42
+        }
+      ],
+      "boardWindow": {
+        "start": "40",
+        "end": "50"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "bodyWidth": 390,
+      "bodyHeight": 844,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 213,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 261,
+          "bottom": 60,
+          "left": 213
+        },
+        {
+          "label": "So activat",
+          "x": 269,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 317,
+          "bottom": 60,
+          "left": 269
+        },
+        {
+          "label": "Sortir",
+          "x": 325,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 373,
+          "bottom": 60,
+          "left": 325
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 72.65625,
+          "y": 345.265625,
+          "width": 48,
+          "height": 48,
+          "top": 345.265625,
+          "right": 120.65625,
+          "bottom": 393.265625,
+          "left": 72.65625
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 269.328125,
+          "y": 345.265625,
+          "width": 48,
+          "height": 48,
+          "top": 345.265625,
+          "right": 317.328125,
+          "bottom": 393.265625,
+          "left": 269.328125
+        },
+        {
+          "label": "Començar el torn",
+          "x": 42,
+          "y": 753,
+          "width": 306,
+          "height": 55,
+          "top": 753,
+          "right": 348,
+          "bottom": 808,
+          "left": 42
+        }
+      ],
+      "boardWindow": {
+        "start": "40",
+        "end": "50"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "bodyWidth": 430,
+      "bodyHeight": 932,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 253,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 301,
+          "bottom": 60,
+          "left": 253
+        },
+        {
+          "label": "So activat",
+          "x": 309,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 357,
+          "bottom": 60,
+          "left": 309
+        },
+        {
+          "label": "Sortir",
+          "x": 365,
+          "y": 12,
+          "width": 48,
+          "height": 48,
+          "top": 12,
+          "right": 413,
+          "bottom": 60,
+          "left": 365
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 92.65625,
+          "y": 361.75,
+          "width": 48,
+          "height": 48,
+          "top": 361.75,
+          "right": 140.65625,
+          "bottom": 409.75,
+          "left": 92.65625
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 289.328125,
+          "y": 361.75,
+          "width": 48,
+          "height": 48,
+          "top": 361.75,
+          "right": 337.328125,
+          "bottom": 409.75,
+          "left": 289.328125
+        },
+        {
+          "label": "Començar el torn",
+          "x": 42,
+          "y": 841,
+          "width": 346,
+          "height": 55,
+          "top": 841,
+          "right": 388,
+          "bottom": 896,
+          "left": 42
+        }
+      ],
+      "boardWindow": {
+        "start": "40",
+        "end": "50"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "bodyWidth": 1024,
+      "bodyHeight": 768,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 836,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 884,
+          "bottom": 70,
+          "left": 836
+        },
+        {
+          "label": "So activat",
+          "x": 895,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 943,
+          "bottom": 70,
+          "left": 895
+        },
+        {
+          "label": "Sortir",
+          "x": 954,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1002,
+          "bottom": 70,
+          "left": 954
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 187.015625,
+          "y": 633,
+          "width": 48,
+          "height": 48,
+          "top": 633,
+          "right": 235.015625,
+          "bottom": 681,
+          "left": 187.015625
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 399.75,
+          "y": 633,
+          "width": 48,
+          "height": 48,
+          "top": 633,
+          "right": 447.75,
+          "bottom": 681,
+          "left": 399.75
+        },
+        {
+          "label": "Començar el torn",
+          "x": 656.765625,
+          "y": 643,
+          "width": 321.234375,
+          "height": 54,
+          "top": 643,
+          "right": 978,
+          "bottom": 697,
+          "left": 656.765625
+        }
+      ],
+      "boardWindow": {
+        "start": "40",
+        "end": "50"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "bodyHeight": 900,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 1242,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1290,
+          "bottom": 70,
+          "left": 1242
+        },
+        {
+          "label": "So activat",
+          "x": 1301,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1349,
+          "bottom": 70,
+          "left": 1301
+        },
+        {
+          "label": "Sortir",
+          "x": 1360,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1408,
+          "bottom": 70,
+          "left": 1360
+        },
+        {
+          "label": "Veure les caselles anteriors",
+          "x": 345.171875,
+          "y": 758,
+          "width": 48,
+          "height": 48,
+          "top": 758,
+          "right": 393.171875,
+          "bottom": 806,
+          "left": 345.171875
+        },
+        {
+          "label": "Veure les caselles següents",
+          "x": 557.90625,
+          "y": 758,
+          "width": 48,
+          "height": 48,
+          "top": 758,
+          "right": 605.90625,
+          "bottom": 806,
+          "left": 557.90625
+        },
+        {
+          "label": "Començar el torn",
+          "x": 985.078125,
+          "y": 756,
+          "width": 390.921875,
+          "height": 54,
+          "top": 756,
+          "right": 1376,
+          "bottom": 810,
+          "left": 985.078125
+        }
+      ],
+      "boardWindow": {
+        "start": "40",
+        "end": "50"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    }
+  ]
+}

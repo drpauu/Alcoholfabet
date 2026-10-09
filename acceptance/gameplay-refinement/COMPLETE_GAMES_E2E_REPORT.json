@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T14:59:39.018Z",
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "passed": 2,
+  "failed": 0,
+  "skipped": 0,
+  "tests": [
+    {
+      "name": "partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 114011,
+      "errors": []
+    },
+    {
+      "name": "online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 131063,
+      "errors": []
+    }
+  ],
+  "combinedIndependentRuns": true,
+  "sourceReports": [
+    "acceptance/gameplay-refinement/IN_PERSON_COMPLETE_RECHECK_REPORT.json",
+    "acceptance/gameplay-refinement/COMPLETION_BEFORE_TEST_CALIBRATION_REPORT.json"
+  ],
+  "reason": "Latest in-person recheck with both TP respondents, plus the prior online PASS on the same final session/navigation code; first failed +1 expectation used repeated Pau-only claims that could bypass the bonus. Only the failed case was rerun.",
+  "covers": [
+    "META in both modes",
+    "single score after reload",
+    "Tornar a jugar duration step",
+    "hidden respondent answers",
+    "simultaneous TP claim",
+    "plus one",
+    "reconnection"
+  ],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true
+}

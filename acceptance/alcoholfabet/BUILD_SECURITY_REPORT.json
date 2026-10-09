@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T15:39:43.543189+00:00",
+  "filesScanned": 133,
+  "questionsScanned": 130,
+  "matches": {
+    "privateCode": 0,
+    "secretApiKey": 0,
+    "originalPrivatePhoto": 0,
+    "originalPrivatePhotoFilename": 0,
+    "approvedRawQuestion": 0,
+    "avatarAssetPath": 0,
+    "removedHint": 0,
+    "serviceRoleJwt": 0
+  },
+  "questionBankUnchanged": true,
+  "avatarsRemovedFromPublicAndDist": true,
+  "originalPrivatePhotosInPublic": false,
+  "protectedModes": {
+    "env": "0o600",
+    "legacyCode": "0o600",
+    "backup": "0o600"
+  },
+  "noSecrets": true
+}

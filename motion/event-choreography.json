@@ -2,101 +2,472 @@
   "QUESTION_ENTER": {
     "totalMs": 240,
     "steps": [
-      {"atMs": 0, "target": "questionCard", "action": "set", "props": {"x": 8, "y": 24, "rotateZ": 1.2, "opacity": 0, "shadow": "low"}},
-      {"atMs": 0, "target": "questionCard", "action": "animate", "to": {"x": 0, "y": 0, "rotateZ": 0, "opacity": 1, "shadow": "card"}, "durationMs": 240, "easing": "enter"},
-      {"atMs": 35, "target": "audio", "action": "play", "cue": "QUESTION_ENTER"}
+      {
+        "atMs": 0,
+        "target": "questionCard",
+        "action": "set",
+        "props": {
+          "x": 8,
+          "y": 24,
+          "rotateZ": 1.2,
+          "opacity": 0,
+          "shadow": "low"
+        }
+      },
+      {
+        "atMs": 0,
+        "target": "questionCard",
+        "action": "animate",
+        "to": {
+          "x": 0,
+          "y": 0,
+          "rotateZ": 0,
+          "opacity": 1,
+          "shadow": "card"
+        },
+        "durationMs": 240,
+        "easing": "enter"
+      },
+      {
+        "atMs": 35,
+        "target": "audio",
+        "action": "play",
+        "cue": "QUESTION_ENTER"
+      }
     ]
   },
   "ANSWER_REVEAL": {
     "totalMs": 280,
     "steps": [
-      {"atMs": 0, "target": "questionCardInner", "action": "animate", "to": {"rotateY": 90}, "durationMs": 140, "easing": "exit"},
-      {"atMs": 140, "target": "questionCard", "action": "swapContent", "value": "answer"},
-      {"atMs": 140, "target": "audio", "action": "play", "cue": "ANSWER_REVEAL"},
-      {"atMs": 140, "target": "questionCardInner", "action": "set", "props": {"rotateY": -90}},
-      {"atMs": 140, "target": "questionCardInner", "action": "animate", "to": {"rotateY": 0}, "durationMs": 140, "easing": "enter"}
+      {
+        "atMs": 0,
+        "target": "questionCardInner",
+        "action": "animate",
+        "to": {
+          "rotateY": 90
+        },
+        "durationMs": 140,
+        "easing": "exit"
+      },
+      {
+        "atMs": 140,
+        "target": "questionCard",
+        "action": "swapContent",
+        "value": "answer"
+      },
+      {
+        "atMs": 140,
+        "target": "audio",
+        "action": "play",
+        "cue": "ANSWER_REVEAL"
+      },
+      {
+        "atMs": 140,
+        "target": "questionCardInner",
+        "action": "set",
+        "props": {
+          "rotateY": -90
+        }
+      },
+      {
+        "atMs": 140,
+        "target": "questionCardInner",
+        "action": "animate",
+        "to": {
+          "rotateY": 0
+        },
+        "durationMs": 140,
+        "easing": "enter"
+      }
     ]
   },
   "CORRECT_AND_MOVE": {
     "totalMsFormula": "360 + pawnSteps * 420",
     "steps": [
-      {"atMs": 0, "target": "judgeButtons", "action": "disable"},
-      {"atMs": 0, "target": "questionCard", "action": "animate", "to": {"y": -4}, "durationMs": 180, "easing": "springSoft"},
-      {"atMs": 0, "target": "correctHalo", "action": "burst", "durationMs": 360},
-      {"atMs": 20, "target": "correctCheck", "action": "draw", "durationMs": 260},
-      {"atMs": 40, "target": "audio", "action": "play", "cue": "CORRECT"},
-      {"atMs": 70, "target": "correctParticles", "action": "emit", "count": 3, "durationMs": 300},
-      {"atMs": 360, "target": "pawn", "action": "moveAlongBoard", "durationPerCellMs": 420, "playStepSound": true}
+      {
+        "atMs": 0,
+        "target": "judgeButtons",
+        "action": "disable"
+      },
+      {
+        "atMs": 0,
+        "target": "questionCard",
+        "action": "animate",
+        "to": {
+          "y": -4
+        },
+        "durationMs": 180,
+        "easing": "springSoft"
+      },
+      {
+        "atMs": 0,
+        "target": "correctHalo",
+        "action": "burst",
+        "durationMs": 360
+      },
+      {
+        "atMs": 20,
+        "target": "correctCheck",
+        "action": "draw",
+        "durationMs": 260
+      },
+      {
+        "atMs": 40,
+        "target": "audio",
+        "action": "play",
+        "cue": "CORRECT"
+      },
+      {
+        "atMs": 70,
+        "target": "correctParticles",
+        "action": "emit",
+        "count": 3,
+        "durationMs": 300
+      },
+      {
+        "atMs": 360,
+        "target": "pawn",
+        "action": "moveAlongBoard",
+        "durationPerCellMs": 420,
+        "playStepSound": true
+      }
     ]
   },
   "INCORRECT_AND_DRINK": {
-    "totalMs": 560,
+    "totalMs": 1080,
     "steps": [
-      {"atMs": 0, "target": "judgeButtons", "action": "disable"},
-      {"atMs": 0, "target": "questionCard", "action": "keyframes", "values": {"x": [0, -4, 4, -2, 2, 0]}, "durationMs": 330},
-      {"atMs": 20, "target": "errorHalo", "action": "burst", "durationMs": 320},
-      {"atMs": 35, "target": "errorCross", "action": "draw", "durationMs": 240},
-      {"atMs": 50, "target": "audio", "action": "play", "cue": "INCORRECT"},
-      {"atMs": 180, "target": "drinkGlass", "action": "enter", "from": {"y": 14, "opacity": 0}, "to": {"y": 0, "opacity": 1}, "durationMs": 200},
-      {"atMs": 220, "target": "audio", "action": "playDynamic", "cueByDrinkCount": {"1": "DRINK", "2": "DOUBLE_DRINK"}}
+      {
+        "atMs": 0,
+        "target": "judgeButtons",
+        "action": "disable"
+      },
+      {
+        "atMs": 0,
+        "target": "questionCard",
+        "action": "keyframes",
+        "values": {
+          "x": [
+            0,
+            -4,
+            4,
+            -2,
+            2,
+            0
+          ]
+        },
+        "durationMs": 330
+      },
+      {
+        "atMs": 20,
+        "target": "errorHalo",
+        "action": "burst",
+        "durationMs": 320
+      },
+      {
+        "atMs": 35,
+        "target": "errorCross",
+        "action": "draw",
+        "durationMs": 240
+      },
+      {
+        "atMs": 50,
+        "target": "audio",
+        "action": "play",
+        "cue": "INCORRECT"
+      },
+      {
+        "atMs": 180,
+        "target": "drinkNotice",
+        "action": "enter",
+        "from": {
+          "y": 12,
+          "scale": 0.94,
+          "opacity": 0
+        },
+        "to": {
+          "y": 0,
+          "scale": 1,
+          "opacity": 1
+        },
+        "durationMs": 300
+      },
+      {
+        "atMs": 210,
+        "target": "drinkGlass",
+        "action": "raiseGlass",
+        "durationMs": 720
+      },
+      {
+        "atMs": 220,
+        "target": "audio",
+        "action": "playDynamic",
+        "cueByDrinkCount": {
+          "1": "DRINK",
+          "2": "DOUBLE_DRINK"
+        }
+      },
+      {
+        "atMs": 260,
+        "target": "haptics",
+        "action": "vibrate",
+        "pattern": [
+          25,
+          45,
+          25
+        ]
+      },
+      {
+        "atMs": 270,
+        "target": "drinkSecondGlass",
+        "action": "raiseGlass",
+        "durationMs": 720
+      },
+      {
+        "atMs": 310,
+        "target": "drinkBubbles",
+        "action": "emit",
+        "count": 6,
+        "durationMs": 600
+      },
+      {
+        "atMs": 480,
+        "target": "drinkNotice",
+        "action": "pulse",
+        "scale": [
+          1,
+          1.035,
+          1
+        ],
+        "durationMs": 360
+      }
     ]
   },
   "PLUS_ONE": {
     "totalMsFormula": "420 + 160 + 340 + 420",
     "steps": [
-      {"atMs": 0, "target": "pawn", "action": "moveOneCell", "durationMs": 420},
-      {"atMs": 420, "target": "sequence", "action": "pause", "durationMs": 160},
-      {"atMs": 580, "target": "targetCell", "action": "pulse", "scale": [1, 1.06, 1], "durationMs": 340},
-      {"atMs": 600, "target": "plusOneBadge", "action": "enter", "durationMs": 260},
-      {"atMs": 610, "target": "audio", "action": "play", "cue": "PLUS_ONE"},
-      {"atMs": 920, "target": "pawn", "action": "moveOneCell", "durationMs": 420}
+      {
+        "atMs": 0,
+        "target": "pawn",
+        "action": "moveOneCell",
+        "durationMs": 420
+      },
+      {
+        "atMs": 420,
+        "target": "sequence",
+        "action": "pause",
+        "durationMs": 160
+      },
+      {
+        "atMs": 580,
+        "target": "targetCell",
+        "action": "pulse",
+        "scale": [
+          1,
+          1.06,
+          1
+        ],
+        "durationMs": 340
+      },
+      {
+        "atMs": 600,
+        "target": "plusOneBadge",
+        "action": "enter",
+        "durationMs": 260
+      },
+      {
+        "atMs": 610,
+        "target": "audio",
+        "action": "play",
+        "cue": "PLUS_ONE"
+      },
+      {
+        "atMs": 920,
+        "target": "pawn",
+        "action": "moveOneCell",
+        "durationMs": 420
+      }
     ]
   },
   "TP_CLAIM": {
     "request": [
-      {"atMs": 0, "target": "claimButton", "action": "animate", "to": {"scale": 0.98}, "durationMs": 90},
-      {"atMs": 0, "target": "haptics", "action": "vibrate", "pattern": [20]},
-      {"atMs": 90, "target": "claimButton", "action": "pending", "label": "Comprovant…"}
+      {
+        "atMs": 0,
+        "target": "claimButton",
+        "action": "animate",
+        "to": {
+          "scale": 0.98
+        },
+        "durationMs": 90
+      },
+      {
+        "atMs": 0,
+        "target": "haptics",
+        "action": "vibrate",
+        "pattern": [
+          20
+        ]
+      },
+      {
+        "atMs": 90,
+        "target": "claimButton",
+        "action": "pending",
+        "label": "Comprovant…"
+      }
     ],
     "won": [
-      {"atMs": 0, "target": "claimantRing", "action": "draw", "durationMs": 300},
-      {"atMs": 0, "target": "claimLabel", "action": "showRespondent"},
-      {"atMs": 0, "target": "otherClaimButton", "action": "desaturate", "durationMs": 220}
+      {
+        "atMs": 0,
+        "target": "claimantRing",
+        "action": "draw",
+        "durationMs": 300
+      },
+      {
+        "atMs": 0,
+        "target": "claimLabel",
+        "action": "showRespondent"
+      },
+      {
+        "atMs": 0,
+        "target": "otherClaimButton",
+        "action": "desaturate",
+        "durationMs": 220
+      }
     ],
     "lost": [
-      {"atMs": 0, "target": "claimButton", "action": "restore", "durationMs": 180},
-      {"atMs": 0, "target": "claimMessage", "action": "show", "text": "Ha respost primer l'altra persona"}
+      {
+        "atMs": 0,
+        "target": "claimButton",
+        "action": "restore",
+        "durationMs": 180
+      },
+      {
+        "atMs": 0,
+        "target": "claimMessage",
+        "action": "show",
+        "text": "Ha respost primer l'altra persona"
+      }
     ]
   },
   "DISCONNECT": {
     "totalMs": 220,
     "steps": [
-      {"atMs": 0, "target": "gameScene", "action": "animate", "to": {"blurPx": 4, "saturation": 0.78}, "durationMs": 220},
-      {"atMs": 0, "target": "disconnectOverlay", "action": "enter", "durationMs": 220},
-      {"atMs": 0, "target": "gameActions", "action": "disable"}
+      {
+        "atMs": 0,
+        "target": "gameScene",
+        "action": "animate",
+        "to": {
+          "blurPx": 4,
+          "saturation": 0.78
+        },
+        "durationMs": 220
+      },
+      {
+        "atMs": 0,
+        "target": "disconnectOverlay",
+        "action": "enter",
+        "durationMs": 220
+      },
+      {
+        "atMs": 0,
+        "target": "gameActions",
+        "action": "disable"
+      }
     ]
   },
   "RECONNECT": {
     "totalMs": 620,
     "steps": [
-      {"atMs": 0, "target": "reconnectCheck", "action": "draw", "durationMs": 240},
-      {"atMs": 0, "target": "reconnectText", "action": "show", "text": "T'has tornat a connectar"},
-      {"atMs": 280, "target": "disconnectOverlay", "action": "exit", "durationMs": 300},
-      {"atMs": 280, "target": "gameScene", "action": "animate", "to": {"blurPx": 0, "saturation": 1}, "durationMs": 300},
-      {"atMs": 600, "target": "gameActions", "action": "enableAfterViewSync"}
+      {
+        "atMs": 0,
+        "target": "reconnectCheck",
+        "action": "draw",
+        "durationMs": 240
+      },
+      {
+        "atMs": 0,
+        "target": "reconnectText",
+        "action": "show",
+        "text": "T'has tornat a connectar"
+      },
+      {
+        "atMs": 280,
+        "target": "disconnectOverlay",
+        "action": "exit",
+        "durationMs": 300
+      },
+      {
+        "atMs": 280,
+        "target": "gameScene",
+        "action": "animate",
+        "to": {
+          "blurPx": 0,
+          "saturation": 1
+        },
+        "durationMs": 300
+      },
+      {
+        "atMs": 600,
+        "target": "gameActions",
+        "action": "enableAfterViewSync"
+      }
     ]
   },
   "VICTORY": {
     "totalMs": 2300,
     "steps": [
-      {"atMs": 0, "target": "winnerPawn", "action": "landAtFinish", "durationMs": 420},
-      {"atMs": 360, "target": "gameCamera", "action": "animate", "to": {"scale": 0.97}, "durationMs": 500, "easing": "enter"},
-      {"atMs": 520, "target": "crown", "action": "dropAndBounce", "durationMs": 520},
-      {"atMs": 600, "target": "confetti", "action": "emit", "count": 16, "durationMs": 1000},
-      {"atMs": 620, "target": "audio", "action": "play", "cue": "VICTORY"},
-      {"atMs": 920, "target": "winnerCard", "action": "enter", "durationMs": 420},
-      {"atMs": 1420, "target": "scoreTransition", "action": "animate", "durationMs": 420},
-      {"atMs": 1900, "target": "finalActions", "action": "enter", "durationMs": 300}
+      {
+        "atMs": 0,
+        "target": "winnerPawn",
+        "action": "landAtFinish",
+        "durationMs": 420
+      },
+      {
+        "atMs": 360,
+        "target": "gameCamera",
+        "action": "animate",
+        "to": {
+          "scale": 0.97
+        },
+        "durationMs": 500,
+        "easing": "enter"
+      },
+      {
+        "atMs": 520,
+        "target": "crown",
+        "action": "dropAndBounce",
+        "durationMs": 520
+      },
+      {
+        "atMs": 600,
+        "target": "confetti",
+        "action": "emit",
+        "count": 16,
+        "durationMs": 1000
+      },
+      {
+        "atMs": 620,
+        "target": "audio",
+        "action": "play",
+        "cue": "VICTORY"
+      },
+      {
+        "atMs": 920,
+        "target": "winnerCard",
+        "action": "enter",
+        "durationMs": 420
+      },
+      {
+        "atMs": 1420,
+        "target": "scoreTransition",
+        "action": "animate",
+        "durationMs": 420
+      },
+      {
+        "atMs": 1900,
+        "target": "finalActions",
+        "action": "enter",
+        "durationMs": 300
+      }
     ]
   }
 }

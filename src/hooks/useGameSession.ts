@@ -29,7 +29,7 @@ function reducer(state: State, change: Change): State {
     case 'READY': return { ...state, access: change.access, userId: change.userId, loading: false, error: null };
     case 'VIEW': {
       if (state.view?.game.id === change.view.game.id && state.view.game.stateVersion > change.view.game.stateVersion) return state;
-      return { ...state, view: change.view, error: null,
+      return { ...state, view: change.view.game.status === 'ABANDONED' ? null : change.view, error: null,
         access: state.access ? { ...state.access, scoreboard: change.view.scoreboard,
           activeGameId: ['ACTIVE', 'LOBBY'].includes(change.view.game.status) ? change.view.game.id : null } : state.access };
     }
@@ -49,26 +49,41 @@ export function useGameSession() {
   viewRef.current = state.view;
   const pendingRef = useRef(false);
   const bootGeneration = useRef(0);
+  const acceptView = useCallback((view: GameView) => {
+    if (viewRef.current?.game.id === view.game.id && viewRef.current.game.stateVersion > view.game.stateVersion) return;
+    if (view.game.status === 'ABANDONED') {
+      viewRef.current = null;
+      localStorage.removeItem('tp-active-game');
+      localStorage.removeItem('tp-current-game');
+    } else {
+      viewRef.current = view;
+      localStorage.setItem('tp-current-game', view.game.id);
+      if (view.game.status === 'ACTIVE' || view.game.status === 'LOBBY') localStorage.setItem('tp-active-game', view.game.id);
+      else localStorage.removeItem('tp-active-game');
+    }
+    dispatch({ type: 'VIEW', view });
+  }, []);
   const boot = useCallback(async () => {
     const ticket = ++bootGeneration.current;
     if (!repository) { dispatch({ type: 'ERROR', error: ca.setupMissing }); return; }
     try {
       const userId = await repository.authenticate();
-      const access = await repository.access();
+      let access = await repository.access();
       if (ticket !== bootGeneration.current) return;
       const gameId = access.activeGameId || localStorage.getItem('tp-current-game');
       if (access.authorized && gameId) {
         try {
           const view = await repository.getGameView(gameId);
           if (ticket !== bootGeneration.current) return;
-          viewRef.current = view;
-          dispatch({ type: 'VIEW', view });
+          acceptView(view);
+          access = { ...access, scoreboard: view.scoreboard,
+            activeGameId: ['ACTIVE', 'LOBBY'].includes(view.game.status) ? view.game.id : null };
         }
         catch { localStorage.removeItem('tp-active-game'); localStorage.removeItem('tp-current-game'); }
       }
       if (ticket === bootGeneration.current) dispatch({ type: 'READY', access, userId });
     } catch (error) { if (ticket === bootGeneration.current) dispatch({ type: 'ERROR', error: errorInCatalan(error) }); }
-  }, []);
+  }, [acceptView]);
 
   useEffect(() => {
     void boot();
@@ -83,15 +98,6 @@ export function useGameSession() {
     });
     return () => { bootGeneration.current += 1; listener?.data.subscription.unsubscribe(); };
   }, [boot]);
-
-  const acceptView = useCallback((view: GameView) => {
-    if (viewRef.current?.game.id === view.game.id && viewRef.current.game.stateVersion > view.game.stateVersion) return;
-    viewRef.current = view;
-    localStorage.setItem('tp-current-game', view.game.id);
-    if (view.game.status === 'ACTIVE' || view.game.status === 'LOBBY') localStorage.setItem('tp-active-game', view.game.id);
-    else localStorage.removeItem('tp-active-game');
-    dispatch({ type: 'VIEW', view });
-  }, []);
 
   const refresh = useCallback(async () => {
     const current = viewRef.current;
@@ -129,14 +135,8 @@ export function useGameSession() {
     }
   }, [acceptView, refresh]);
 
-  const verify = useCallback(async (code: string): Promise<boolean> => run(async (repo) => {
-    const userId = await repo.authenticate();
-    const access = await repo.verify(code);
-    dispatch({ type: 'READY', userId, access });
-  }), [run]);
-
   return {
-    ...state, run, verify, acceptView, refresh, boot,
+    ...state, run, acceptView, refresh, boot,
     goHome: () => { bootGeneration.current += 1; viewRef.current = null; localStorage.removeItem('tp-current-game'); dispatch({ type: 'HOME' }); },
     clearError: () => dispatch({type:'CLEAR_ERROR'}),
   };

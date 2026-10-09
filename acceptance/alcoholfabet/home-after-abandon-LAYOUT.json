@@ -1,0 +1,347 @@
+{
+  "status": "PASS",
+  "capturedAt": "2026-10-09T15:31:02.748Z",
+  "realApp": true,
+  "layouts": [
+    {
+      "width": 360,
+      "height": 800,
+      "bodyWidth": 360,
+      "bodyHeight": 800,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 239,
+          "y": 13,
+          "width": 48,
+          "height": 48,
+          "top": 13,
+          "right": 287,
+          "bottom": 61,
+          "left": 239
+        },
+        {
+          "label": "So activat",
+          "x": 295,
+          "y": 13,
+          "width": 48,
+          "height": 48,
+          "top": 13,
+          "right": 343,
+          "bottom": 61,
+          "left": 295
+        },
+        {
+          "label": "Jugar en persona",
+          "x": 17,
+          "y": 600,
+          "width": 326,
+          "height": 57,
+          "top": 600,
+          "right": 343,
+          "bottom": 657,
+          "left": 17
+        },
+        {
+          "label": "Jugar en línia",
+          "x": 17,
+          "y": 670,
+          "width": 326,
+          "height": 57,
+          "top": 670,
+          "right": 343,
+          "bottom": 727,
+          "left": 17
+        },
+        {
+          "label": "Normes",
+          "x": 122.125,
+          "y": 736,
+          "width": 115.734375,
+          "height": 48,
+          "top": 736,
+          "right": 237.859375,
+          "bottom": 784,
+          "left": 122.125
+        }
+      ],
+      "boardWindow": {
+        "start": "0",
+        "end": "10"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "bodyWidth": 390,
+      "bodyHeight": 844,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 269,
+          "y": 13,
+          "width": 48,
+          "height": 48,
+          "top": 13,
+          "right": 317,
+          "bottom": 61,
+          "left": 269
+        },
+        {
+          "label": "So activat",
+          "x": 325,
+          "y": 13,
+          "width": 48,
+          "height": 48,
+          "top": 13,
+          "right": 373,
+          "bottom": 61,
+          "left": 325
+        },
+        {
+          "label": "Jugar en persona",
+          "x": 17,
+          "y": 644,
+          "width": 356,
+          "height": 57,
+          "top": 644,
+          "right": 373,
+          "bottom": 701,
+          "left": 17
+        },
+        {
+          "label": "Jugar en línia",
+          "x": 17,
+          "y": 714,
+          "width": 356,
+          "height": 57,
+          "top": 714,
+          "right": 373,
+          "bottom": 771,
+          "left": 17
+        },
+        {
+          "label": "Normes",
+          "x": 137.125,
+          "y": 780,
+          "width": 115.734375,
+          "height": 48,
+          "top": 780,
+          "right": 252.859375,
+          "bottom": 828,
+          "left": 137.125
+        }
+      ],
+      "boardWindow": {
+        "start": "0",
+        "end": "10"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "bodyWidth": 430,
+      "bodyHeight": 932,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 309,
+          "y": 13,
+          "width": 48,
+          "height": 48,
+          "top": 13,
+          "right": 357,
+          "bottom": 61,
+          "left": 309
+        },
+        {
+          "label": "So activat",
+          "x": 365,
+          "y": 13,
+          "width": 48,
+          "height": 48,
+          "top": 13,
+          "right": 413,
+          "bottom": 61,
+          "left": 365
+        },
+        {
+          "label": "Jugar en persona",
+          "x": 17,
+          "y": 732,
+          "width": 396,
+          "height": 57,
+          "top": 732,
+          "right": 413,
+          "bottom": 789,
+          "left": 17
+        },
+        {
+          "label": "Jugar en línia",
+          "x": 17,
+          "y": 802,
+          "width": 396,
+          "height": 57,
+          "top": 802,
+          "right": 413,
+          "bottom": 859,
+          "left": 17
+        },
+        {
+          "label": "Normes",
+          "x": 157.125,
+          "y": 868,
+          "width": 115.734375,
+          "height": 48,
+          "top": 868,
+          "right": 272.859375,
+          "bottom": 916,
+          "left": 157.125
+        }
+      ],
+      "boardWindow": {
+        "start": "0",
+        "end": "10"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "bodyWidth": 1024,
+      "bodyHeight": 768,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 885,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 933,
+          "bottom": 70,
+          "left": 885
+        },
+        {
+          "label": "So activat",
+          "x": 944,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 992,
+          "bottom": 70,
+          "left": 944
+        },
+        {
+          "label": "Jugar en persona",
+          "x": 192,
+          "y": 628,
+          "width": 311,
+          "height": 61,
+          "top": 628,
+          "right": 503,
+          "bottom": 689,
+          "left": 192
+        },
+        {
+          "label": "Jugar en línia",
+          "x": 521,
+          "y": 628,
+          "width": 311,
+          "height": 61,
+          "top": 628,
+          "right": 832,
+          "bottom": 689,
+          "left": 521
+        },
+        {
+          "label": "Normes",
+          "x": 454.125,
+          "y": 698,
+          "width": 115.734375,
+          "height": 48,
+          "top": 698,
+          "right": 569.859375,
+          "bottom": 746,
+          "left": 454.125
+        }
+      ],
+      "boardWindow": {
+        "start": "0",
+        "end": "10"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "bodyWidth": 1440,
+      "bodyHeight": 900,
+      "controls": [
+        {
+          "label": "Llegir les normes",
+          "x": 1301,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1349,
+          "bottom": 70,
+          "left": 1301
+        },
+        {
+          "label": "So activat",
+          "x": 1360,
+          "y": 22,
+          "width": 48,
+          "height": 48,
+          "top": 22,
+          "right": 1408,
+          "bottom": 70,
+          "left": 1360
+        },
+        {
+          "label": "Jugar en persona",
+          "x": 400,
+          "y": 760,
+          "width": 311,
+          "height": 61,
+          "top": 760,
+          "right": 711,
+          "bottom": 821,
+          "left": 400
+        },
+        {
+          "label": "Jugar en línia",
+          "x": 729,
+          "y": 760,
+          "width": 311,
+          "height": 61,
+          "top": 760,
+          "right": 1040,
+          "bottom": 821,
+          "left": 729
+        },
+        {
+          "label": "Normes",
+          "x": 662.125,
+          "y": 830,
+          "width": 115.734375,
+          "height": 48,
+          "top": 830,
+          "right": 777.859375,
+          "bottom": 878,
+          "left": 662.125
+        }
+      ],
+      "boardWindow": {
+        "start": "0",
+        "end": "10"
+      },
+      "backgroundFilter": "saturate(0.68) contrast(0.88) brightness(0.83)"
+    }
+  ]
+}

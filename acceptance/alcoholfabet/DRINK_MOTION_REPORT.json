@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T15:32:27.557Z",
+  "scope": "Production choreography, runner and orchestrator in a presentational harness. Audio cues recorded; no live Auth/DB.",
+  "cases": [
+    {
+      "player": "PAU",
+      "double": false,
+      "reduced": false,
+      "status": "PASS",
+      "runs": 1,
+      "cues": [
+        "INCORRECT",
+        "DRINK"
+      ],
+      "frames": 66,
+      "distinctGlassTransforms": 46,
+      "maximumParticles": 6,
+      "residualParticles": 0,
+      "finalGlassTransform": "none"
+    },
+    {
+      "player": "TECLA",
+      "double": true,
+      "reduced": false,
+      "status": "PASS",
+      "runs": 1,
+      "cues": [
+        "INCORRECT",
+        "DOUBLE_DRINK"
+      ],
+      "frames": 66,
+      "distinctGlassTransforms": 46,
+      "maximumParticles": 6,
+      "residualParticles": 0,
+      "finalGlassTransform": "none"
+    },
+    {
+      "player": "PAU",
+      "double": false,
+      "reduced": true,
+      "status": "PASS",
+      "runs": 1,
+      "cues": [
+        "INCORRECT",
+        "DRINK"
+      ],
+      "frames": 12,
+      "distinctGlassTransforms": 1,
+      "maximumParticles": 0,
+      "residualParticles": 0,
+      "finalGlassTransform": "none"
+    },
+    {
+      "player": "TECLA",
+      "double": true,
+      "reduced": true,
+      "status": "PASS",
+      "runs": 1,
+      "cues": [
+        "INCORRECT",
+        "DOUBLE_DRINK"
+      ],
+      "frames": 12,
+      "distinctGlassTransforms": 1,
+      "maximumParticles": 0,
+      "residualParticles": 0,
+      "finalGlassTransform": "none"
+    }
+  ],
+  "errors": [],
+  "blockedApi": [],
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0,
+  "temporaryHarnessRemoved": true
+}

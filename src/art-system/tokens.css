@@ -1,6 +1,12 @@
 :root {
-  --art-ink: #343d3b;
-  --art-ink-muted: #78654f;
+  --art-ink: #2e3733;
+  --art-ink-muted: #605344;
+  --art-scene-brightness: .83;
+  --art-scene-saturation: .68;
+  --art-scene-contrast: .88;
+  --art-scene-letter: #f4e7cb;
+  --art-scene-letter-edge: #354039;
+  --art-scene-caption: #393b31;
   --art-paper: #f8edd6;
   --art-paper-light: #fff5df;
   --art-paper-edge: #d6b784;

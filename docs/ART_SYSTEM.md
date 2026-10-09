@@ -1,6 +1,6 @@
 # Sistema d’art — Tecla&Pau
 
-La referència és el paisatge aprovat `sitges_scene_desktop_ai.webp` i la seva composició vertical. Aquest sistema es deriva dels materials, el traç i la llum d’aquesta obra. No substitueix el paisatge ni regenera els avatars aprovats.
+La referència és el paisatge aprovat `sitges_scene_desktop_ai.webp` i la seva composició vertical. Aquest sistema es deriva dels materials, el traç i la llum d’aquesta obra. El paisatge es conserva. Els avatars tenen una identitat estable entre pantalles; el refinament explícit demanat per l’usuari es documenta a [AVATAR_REFINEMENT.md](AVATAR_REFINEMENT.md).
 
 ## Lectura de l’obra
 
@@ -29,7 +29,7 @@ Llum de capvespre lateral i alta, càlida, amb el sol a la dreta de l’escena; 
 - **Peces:** Pau blau amb silueta angular; Tecla rosa amb silueta arrodonida. Petit símbol gravat propi, sense inicials, peó d’escacs ni emoji. Fusta pintada/ceràmica de la mateixa llum que el tauler.
 - **Caselles:** personals amb retrat gravat; creuades amb dues branques entrellaçades; T&P amb dues figures; +1 amb marca ocre; Sortida amb llavor/entrada; Meta amb llautó/corona. Color, forma de símbol i textura diferencien categories.
 - **Botons:** una base comuna ArtButton; fusta, paper o ceràmica segons funció. Vora, cantell i ombra compartits. Correcte/Incorrecte tenen idèntica geometria, contrast i pes. No hi ha opció suggerida abans de validar.
-- **Badges, marcador i progrés:** petites plaques de paper i ceràmica. Progrés com a solc gravat amb pigment, avatars originals emmarcats amb material càlid. Sense xips empresarials.
+- **Badges, marcador i progrés:** petites plaques de paper i ceràmica. Progrés com a solc gravat amb pigment. Els retrats deriven dels mateixos mestres transparents que els personatges de l’inici; `PlayerPortrait` aplica el retall i el marc càlid sense una vora blanca dibuixada a la imatge. Sense xips empresarials.
 - **Icones:** geometria original SVG, traç coordinat 2,1 px, terminals arrodonits, tinta marró i petits pigments crema/oliva. Llegibles a 24 px i sense logotips de llibreries.
 - **Modals i overlays:** ArtModal de paper sobre vel marró càlid; l’escena segueix visible. Connexió i rotació formen part del mateix ambient. Focus i scrollbars amb ocre i noguera.
 - **Efectes:** pols i retalls de paper amb pigments del sistema. Encert amb check de tinta verda; error amb creu terracota i got. +1 amb segell ocre i moviment separat. Victòria amb corona de llautó i paper discret.

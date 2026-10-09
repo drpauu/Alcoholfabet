@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { expect, test } from '@playwright/test';
 import type { Browser, Page } from '@playwright/test';
-import { accessCode, createGame, currentView, projectUrl, trackQaContext } from './helpers';
+import { createGame, currentView, projectUrl, trackQaContext } from './helpers';
 
 const noVideoMode = process.env.TECLA_MOTION_NO_VIDEO === '1';
 let noVideoSignupAttempts = 0;
@@ -38,11 +38,6 @@ function rememberGame(gameId: string, userId: string, status: string) {
 
 async function enterOrResume(page: Page) {
   await page.goto('/');
-  await expect(page.getByRole('button', { name: 'Entrar', exact: true }).or(page.getByRole('button', { name: 'Jugar en persona', exact: true })).or(page.locator('[data-game-id]'))).toBeVisible();
-  if (await page.getByLabel('Codi privat', { exact: true }).isVisible()) {
-    await page.getByLabel('Codi privat', { exact: true }).fill(accessCode);
-    await page.getByRole('button', { name: 'Entrar', exact: true }).click();
-  }
   await expect(page.getByRole('button', { name: 'Jugar en persona', exact: true }).or(page.locator('[data-game-id]'))).toBeVisible();
 }
 
@@ -125,7 +120,7 @@ test('motion normal: gir al punt mig, recorregut continu i dues arribades +1', a
   const evidence: unknown[] = [];
   let bonus = false;
   let failed = false;
-  for (let turn = 0; turn < 25; turn += 1) {
+  for (let turn = 0; turn < 100; turn += 1) {
     let view = await syncedView(page);
     if (view.game.status === 'FINISHED') throw new Error('MOTION_QA_EXPECTED_ACTIVE_GAME');
     if (view.capabilities.canNextTurn) { await page.getByRole('button', { name: 'Següent torn', exact: true }).click(); await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /READY|TURN_INTRO/); }
@@ -181,7 +176,7 @@ test('motion normal: gir al punt mig, recorregut continu i dues arribades +1', a
   if (noVideoMode) expect(noVideoSignupAttempts).toBe(0);
   await page.getByRole('button', { name: 'Sortir', exact: true }).click();
   await page.getByRole('button', { name: 'Abandonar la partida', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'Heu deixat la partida' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Jugar en persona', exact: true })).toBeVisible();
   const abandoned = await currentView(page);
   expect(abandoned.scoreboard.completedGames).toBe(initial.scoreboard.completedGames);
   rememberGame(abandoned.game.id, abandoned.viewer.userId, abandoned.game.status);
@@ -197,7 +192,7 @@ test('motion normal: META, corona, marcador i accions finals en seqüència', as
   if (!await page.locator('[data-game-id]').count()) await createGame(page, false, 45);
   const initial = await currentView(page);
   rememberGame(initial.game.id, initial.viewer.userId, initial.game.status);
-  for (let turn = 0; turn < 25; turn += 1) {
+  for (let turn = 0; turn < 100; turn += 1) {
     let view = await syncedView(page);
     if (view.game.status === 'FINISHED') break;
     if (view.capabilities.canNextTurn) { await page.getByRole('button', { name: 'Següent torn', exact: true }).click(); await expect(page.locator('[data-phase]')).toHaveAttribute('data-phase', /READY|TURN_INTRO/); }

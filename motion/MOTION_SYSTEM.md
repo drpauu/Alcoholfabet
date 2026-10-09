@@ -175,3 +175,7 @@ Substitueix:
 - Shake per canvi de color i icona.
 
 Mantén sons només si l'usuari els té activats.
+
+## Brindis d’Alcoholfabet
+
+`INCORRECT_AND_DRINK` dura 1.080 ms segons `event-choreography.json`: l’avís entra, el got puja i s’inclina, sis bombolles d’ambre surten i el paper fa un pols curt. En beure doble entra un segon got 60 ms després. El so `DRINK`/`DOUBLE_DRINK` continua a 220 ms. No hi ha animació contínua ni canvis de negoci; una vista recuperada o una versió duplicada no repeteix el brindis. Amb moviment reduït es retiren bombolles i trajectòries, es conserva el nom i es respecta el control de so.

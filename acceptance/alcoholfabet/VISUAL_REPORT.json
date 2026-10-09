@@ -1,0 +1,6144 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T15:36:30.538Z",
+  "scope": "Presentational QA of real React components and approved local question JSON; no App boot or database access.",
+  "realComponents": [
+    "Scene",
+    "Board",
+    "PlayerBadge",
+    "QuestionCard",
+    "DrinkNotice",
+    "ArtButton"
+  ],
+  "questions": {
+    "threeLines": {
+      "id": "ptecla_010",
+      "text": "Com s’anomena un grup de persones que canten juntes?"
+    },
+    "longest": {
+      "id": "pau_003",
+      "text": "Quin llenguatge s’utilitza per consultar bases de dades relacionals?",
+      "length": 68,
+      "method": "Longest active factual-reviewed APPROVED question in data/questions_approved.json; first stable tie."
+    }
+  },
+  "boardFixture": {
+    "finishPosition": 25,
+    "positions": {
+      "PAU": 2,
+      "TECLA": 1
+    },
+    "target": 3,
+    "cells": 24,
+    "notPersisted": true
+  },
+  "sizes": [
+    [
+      360,
+      800
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "cases": [
+    "double-pau-three-lines",
+    "double-tecla-three-lines",
+    "double-pau-longest",
+    "double-tecla-longest",
+    "answer-three-lines",
+    "answer-longest"
+  ],
+  "captures": [
+    {
+      "scenario": "double-pau-three-lines",
+      "width": 360,
+      "height": 800,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-three-lines-360x800.png",
+      "geometry": {
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "h2": {
+          "x": 37,
+          "y": 458.75,
+          "width": 286,
+          "height": 89.671875,
+          "top": 458.75,
+          "right": 323,
+          "bottom": 548.421875,
+          "left": 37
+        },
+        "questionCopy": {
+          "x": 37,
+          "y": 417.375,
+          "width": 286,
+          "height": 170.4375,
+          "top": 417.375,
+          "right": 323,
+          "bottom": 587.8125,
+          "left": 37
+        },
+        "answerSpace": {
+          "x": 37,
+          "y": 587.8125,
+          "width": 286,
+          "height": 68,
+          "top": 587.8125,
+          "right": 323,
+          "bottom": 655.8125,
+          "left": 37
+        },
+        "drinkNotice": {
+          "x": 37,
+          "y": 587.8125,
+          "width": 286,
+          "height": 68,
+          "top": 587.8125,
+          "right": 323,
+          "bottom": 655.8125,
+          "left": 37
+        },
+        "resultNote": {
+          "x": 37,
+          "y": 663.8125,
+          "width": 286,
+          "height": 41.1875,
+          "top": 663.8125,
+          "right": 323,
+          "bottom": 705,
+          "left": 37
+        },
+        "actions": {
+          "x": 37,
+          "y": 663.8125,
+          "width": 286,
+          "height": 104.1875,
+          "top": 663.8125,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "nextButton": {
+          "x": 37,
+          "y": 713,
+          "width": 286,
+          "height": 55,
+          "top": 713,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "card": {
+          "x": 17,
+          "y": 365.375,
+          "width": 326,
+          "height": 419.625,
+          "top": 365.375,
+          "right": 343,
+          "bottom": 785,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 326,
+          "height": 168.375,
+          "top": 129,
+          "right": 343,
+          "bottom": 297.375,
+          "left": 17
+        },
+        "questionToAnswerGap": 39.390625,
+        "noticeToResultGap": 8,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 23,
+          "lineHeight": 29.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 187,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 235,
+              "bottom": 60,
+              "left": 187
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 241,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 289,
+              "bottom": 60,
+              "left": 241
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 295,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 343,
+              "bottom": 60,
+              "left": 295
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 60.953125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 108.953125,
+              "bottom": 352.375,
+              "left": 60.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 251.03125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 299.03125,
+              "bottom": 352.375,
+              "left": 251.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 37,
+              "y": 713,
+              "width": 286,
+              "height": 55,
+              "top": 713,
+              "right": 323,
+              "bottom": 768,
+              "left": 37
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-three-lines",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-three-lines-390x844.png",
+      "geometry": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "h2": {
+          "x": 40,
+          "y": 479.59375,
+          "width": 310,
+          "height": 97.5,
+          "top": 479.59375,
+          "right": 350,
+          "bottom": 577.09375,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 435.875,
+          "width": 310,
+          "height": 182.9375,
+          "top": 435.875,
+          "right": 350,
+          "bottom": 618.8125,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 618.8125,
+          "width": 310,
+          "height": 76,
+          "top": 618.8125,
+          "right": 350,
+          "bottom": 694.8125,
+          "left": 40
+        },
+        "drinkNotice": {
+          "x": 40,
+          "y": 618.8125,
+          "width": 310,
+          "height": 76,
+          "top": 618.8125,
+          "right": 350,
+          "bottom": 694.8125,
+          "left": 40
+        },
+        "resultNote": {
+          "x": 40,
+          "y": 704.8125,
+          "width": 310,
+          "height": 41.1875,
+          "top": 704.8125,
+          "right": 350,
+          "bottom": 746,
+          "left": 40
+        },
+        "actions": {
+          "x": 40,
+          "y": 704.8125,
+          "width": 310,
+          "height": 104.1875,
+          "top": 704.8125,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "nextButton": {
+          "x": 40,
+          "y": 754,
+          "width": 310,
+          "height": 55,
+          "top": 754,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "card": {
+          "x": 17,
+          "y": 380.875,
+          "width": 356,
+          "height": 448.125,
+          "top": 380.875,
+          "right": 373,
+          "bottom": 829,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 356,
+          "height": 183.875,
+          "top": 129,
+          "right": 373,
+          "bottom": 312.875,
+          "left": 17
+        },
+        "questionToAnswerGap": 41.71875,
+        "noticeToResultGap": 10,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 217,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 265,
+              "bottom": 60,
+              "left": 217
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 271,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 319,
+              "bottom": 60,
+              "left": 271
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 325,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 373,
+              "bottom": 60,
+              "left": 325
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 75.953125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 123.953125,
+              "bottom": 367.875,
+              "left": 75.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 266.03125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 314.03125,
+              "bottom": 367.875,
+              "left": 266.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 40,
+              "y": 754,
+              "width": 310,
+              "height": 55,
+              "top": 754,
+              "right": 350,
+              "bottom": 809,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-three-lines",
+      "width": 430,
+      "height": 932,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-three-lines-430x932.png",
+      "geometry": {
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "h2": {
+          "x": 40,
+          "y": 550.171875,
+          "width": 350,
+          "height": 65,
+          "top": 550.171875,
+          "right": 390,
+          "bottom": 615.171875,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 456.53125,
+          "width": 350,
+          "height": 250.28125,
+          "top": 456.53125,
+          "right": 390,
+          "bottom": 706.8125,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 706.8125,
+          "width": 350,
+          "height": 76,
+          "top": 706.8125,
+          "right": 390,
+          "bottom": 782.8125,
+          "left": 40
+        },
+        "drinkNotice": {
+          "x": 40,
+          "y": 706.8125,
+          "width": 350,
+          "height": 76,
+          "top": 706.8125,
+          "right": 390,
+          "bottom": 782.8125,
+          "left": 40
+        },
+        "resultNote": {
+          "x": 40,
+          "y": 792.8125,
+          "width": 350,
+          "height": 41.1875,
+          "top": 792.8125,
+          "right": 390,
+          "bottom": 834,
+          "left": 40
+        },
+        "actions": {
+          "x": 40,
+          "y": 792.8125,
+          "width": 350,
+          "height": 104.1875,
+          "top": 792.8125,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "nextButton": {
+          "x": 40,
+          "y": 842,
+          "width": 350,
+          "height": 55,
+          "top": 842,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "card": {
+          "x": 17,
+          "y": 401.53125,
+          "width": 396,
+          "height": 515.46875,
+          "top": 401.53125,
+          "right": 413,
+          "bottom": 917,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 396,
+          "height": 204.53125,
+          "top": 129,
+          "right": 413,
+          "bottom": 333.53125,
+          "left": 17
+        },
+        "questionToAnswerGap": 91.640625,
+        "noticeToResultGap": 10,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 2
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 257,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 305,
+              "bottom": 60,
+              "left": 257
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 311,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 359,
+              "bottom": 60,
+              "left": 311
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 365,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 413,
+              "bottom": 60,
+              "left": 365
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 95.953125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 143.953125,
+              "bottom": 388.53125,
+              "left": 95.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 286.03125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 334.03125,
+              "bottom": 388.53125,
+              "left": 286.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 40,
+              "y": 842,
+              "width": 350,
+              "height": 55,
+              "top": 842,
+              "right": 390,
+              "bottom": 897,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-three-lines",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-three-lines-1024x768.png",
+      "geometry": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "h2": {
+          "x": 634.15625,
+          "y": 310.265625,
+          "width": 343.84375,
+          "height": 105.28125,
+          "top": 310.265625,
+          "right": 978,
+          "bottom": 415.546875,
+          "left": 634.15625
+        },
+        "questionCopy": {
+          "x": 634.15625,
+          "y": 275.5,
+          "width": 343.84375,
+          "height": 168.8125,
+          "top": 275.5,
+          "right": 978,
+          "bottom": 444.3125,
+          "left": 634.15625
+        },
+        "answerSpace": {
+          "x": 634.15625,
+          "y": 444.3125,
+          "width": 343.84375,
+          "height": 84,
+          "top": 444.3125,
+          "right": 978,
+          "bottom": 528.3125,
+          "left": 634.15625
+        },
+        "drinkNotice": {
+          "x": 634.15625,
+          "y": 444.3125,
+          "width": 343.84375,
+          "height": 84,
+          "top": 444.3125,
+          "right": 978,
+          "bottom": 528.3125,
+          "left": 634.15625
+        },
+        "resultNote": {
+          "x": 634.15625,
+          "y": 544.3125,
+          "width": 343.84375,
+          "height": 41.1875,
+          "top": 544.3125,
+          "right": 978,
+          "bottom": 585.5,
+          "left": 634.15625
+        },
+        "actions": {
+          "x": 634.15625,
+          "y": 544.3125,
+          "width": 343.84375,
+          "height": 107.1875,
+          "top": 544.3125,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "nextButton": {
+          "x": 634.15625,
+          "y": 597.5,
+          "width": 343.84375,
+          "height": 54,
+          "top": 597.5,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "card": {
+          "x": 610.15625,
+          "y": 210.5,
+          "width": 391.84375,
+          "height": 465,
+          "top": 210.5,
+          "right": 1002,
+          "bottom": 675.5,
+          "left": 610.15625
+        },
+        "board": {
+          "x": 22,
+          "y": 247.265625,
+          "width": 568.15625,
+          "height": 293.46875,
+          "top": 247.265625,
+          "right": 590.15625,
+          "bottom": 540.734375,
+          "left": 22
+        },
+        "questionToAnswerGap": 28.765625,
+        "noticeToResultGap": 16,
+        "resultToButtonGap": 12,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 27,
+          "lineHeight": 35.1,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 836,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 884,
+              "bottom": 70,
+              "left": 836
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 895,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 943,
+              "bottom": 70,
+              "left": 895
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 954,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1002,
+              "bottom": 70,
+              "left": 954
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 179.296875,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 227.296875,
+              "bottom": 600.734375,
+              "left": 179.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 384.84375,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 432.84375,
+              "bottom": 600.734375,
+              "left": 384.84375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 634.15625,
+              "y": 597.5,
+              "width": 343.84375,
+              "height": 54,
+              "top": 597.5,
+              "right": 978,
+              "bottom": 651.5,
+              "left": 634.15625
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-three-lines",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-three-lines-1440x900.png",
+      "geometry": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "h2": {
+          "x": 922.296875,
+          "y": 394.515625,
+          "width": 453.703125,
+          "height": 85.78125,
+          "top": 394.515625,
+          "right": 1376,
+          "bottom": 480.296875,
+          "left": 922.296875
+        },
+        "questionCopy": {
+          "x": 922.296875,
+          "y": 332,
+          "width": 453.703125,
+          "height": 204.8125,
+          "top": 332,
+          "right": 1376,
+          "bottom": 536.8125,
+          "left": 922.296875
+        },
+        "answerSpace": {
+          "x": 922.296875,
+          "y": 536.8125,
+          "width": 453.703125,
+          "height": 84,
+          "top": 536.8125,
+          "right": 1376,
+          "bottom": 620.8125,
+          "left": 922.296875
+        },
+        "drinkNotice": {
+          "x": 922.296875,
+          "y": 536.8125,
+          "width": 453.703125,
+          "height": 84,
+          "top": 536.8125,
+          "right": 1376,
+          "bottom": 620.8125,
+          "left": 922.296875
+        },
+        "resultNote": {
+          "x": 922.296875,
+          "y": 636.8125,
+          "width": 453.703125,
+          "height": 41.1875,
+          "top": 636.8125,
+          "right": 1376,
+          "bottom": 678,
+          "left": 922.296875
+        },
+        "actions": {
+          "x": 922.296875,
+          "y": 636.8125,
+          "width": 453.703125,
+          "height": 107.1875,
+          "top": 636.8125,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "nextButton": {
+          "x": 922.296875,
+          "y": 690,
+          "width": 453.703125,
+          "height": 54,
+          "top": 690,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "card": {
+          "x": 890.296875,
+          "y": 261,
+          "width": 517.703125,
+          "height": 510,
+          "top": 261,
+          "right": 1408,
+          "bottom": 771,
+          "left": 890.296875
+        },
+        "board": {
+          "x": 32,
+          "y": 253.078125,
+          "width": 828.296875,
+          "height": 427.828125,
+          "top": 253.078125,
+          "right": 860.296875,
+          "bottom": 680.90625,
+          "left": 32
+        },
+        "questionToAnswerGap": 56.515625,
+        "noticeToResultGap": 16,
+        "resultToButtonGap": 12,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 33,
+          "lineHeight": 42.9,
+          "lines": 2
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 1242,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1290,
+              "bottom": 70,
+              "left": 1242
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 1301,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1349,
+              "bottom": 70,
+              "left": 1301
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 1360,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1408,
+              "bottom": 70,
+              "left": 1360
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 319.375,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 367.375,
+              "bottom": 740.90625,
+              "left": 319.375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 524.921875,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 572.921875,
+              "bottom": 740.90625,
+              "left": 524.921875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 922.296875,
+              "y": 690,
+              "width": 453.703125,
+              "height": 54,
+              "top": 690,
+              "right": 1376,
+              "bottom": 744,
+              "left": 922.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-three-lines",
+      "width": 360,
+      "height": 800,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-three-lines-360x800.png",
+      "geometry": {
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "h2": {
+          "x": 37,
+          "y": 458.75,
+          "width": 286,
+          "height": 89.671875,
+          "top": 458.75,
+          "right": 323,
+          "bottom": 548.421875,
+          "left": 37
+        },
+        "questionCopy": {
+          "x": 37,
+          "y": 417.375,
+          "width": 286,
+          "height": 170.4375,
+          "top": 417.375,
+          "right": 323,
+          "bottom": 587.8125,
+          "left": 37
+        },
+        "answerSpace": {
+          "x": 37,
+          "y": 587.8125,
+          "width": 286,
+          "height": 68,
+          "top": 587.8125,
+          "right": 323,
+          "bottom": 655.8125,
+          "left": 37
+        },
+        "drinkNotice": {
+          "x": 37,
+          "y": 587.8125,
+          "width": 286,
+          "height": 68,
+          "top": 587.8125,
+          "right": 323,
+          "bottom": 655.8125,
+          "left": 37
+        },
+        "resultNote": {
+          "x": 37,
+          "y": 663.8125,
+          "width": 286,
+          "height": 41.1875,
+          "top": 663.8125,
+          "right": 323,
+          "bottom": 705,
+          "left": 37
+        },
+        "actions": {
+          "x": 37,
+          "y": 663.8125,
+          "width": 286,
+          "height": 104.1875,
+          "top": 663.8125,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "nextButton": {
+          "x": 37,
+          "y": 713,
+          "width": 286,
+          "height": 55,
+          "top": 713,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "card": {
+          "x": 17,
+          "y": 365.375,
+          "width": 326,
+          "height": 419.625,
+          "top": 365.375,
+          "right": 343,
+          "bottom": 785,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 326,
+          "height": 168.375,
+          "top": 129,
+          "right": 343,
+          "bottom": 297.375,
+          "left": 17
+        },
+        "questionToAnswerGap": 39.390625,
+        "noticeToResultGap": 8,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 23,
+          "lineHeight": 29.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 187,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 235,
+              "bottom": 60,
+              "left": 187
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 241,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 289,
+              "bottom": 60,
+              "left": 241
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 295,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 343,
+              "bottom": 60,
+              "left": 295
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 60.953125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 108.953125,
+              "bottom": 352.375,
+              "left": 60.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 251.03125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 299.03125,
+              "bottom": 352.375,
+              "left": 251.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 37,
+              "y": 713,
+              "width": 286,
+              "height": 55,
+              "top": 713,
+              "right": 323,
+              "bottom": 768,
+              "left": 37
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-three-lines",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-three-lines-390x844.png",
+      "geometry": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "h2": {
+          "x": 40,
+          "y": 479.59375,
+          "width": 310,
+          "height": 97.5,
+          "top": 479.59375,
+          "right": 350,
+          "bottom": 577.09375,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 435.875,
+          "width": 310,
+          "height": 182.9375,
+          "top": 435.875,
+          "right": 350,
+          "bottom": 618.8125,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 618.8125,
+          "width": 310,
+          "height": 76,
+          "top": 618.8125,
+          "right": 350,
+          "bottom": 694.8125,
+          "left": 40
+        },
+        "drinkNotice": {
+          "x": 40,
+          "y": 618.8125,
+          "width": 310,
+          "height": 76,
+          "top": 618.8125,
+          "right": 350,
+          "bottom": 694.8125,
+          "left": 40
+        },
+        "resultNote": {
+          "x": 40,
+          "y": 704.8125,
+          "width": 310,
+          "height": 41.1875,
+          "top": 704.8125,
+          "right": 350,
+          "bottom": 746,
+          "left": 40
+        },
+        "actions": {
+          "x": 40,
+          "y": 704.8125,
+          "width": 310,
+          "height": 104.1875,
+          "top": 704.8125,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "nextButton": {
+          "x": 40,
+          "y": 754,
+          "width": 310,
+          "height": 55,
+          "top": 754,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "card": {
+          "x": 17,
+          "y": 380.875,
+          "width": 356,
+          "height": 448.125,
+          "top": 380.875,
+          "right": 373,
+          "bottom": 829,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 356,
+          "height": 183.875,
+          "top": 129,
+          "right": 373,
+          "bottom": 312.875,
+          "left": 17
+        },
+        "questionToAnswerGap": 41.71875,
+        "noticeToResultGap": 10,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 217,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 265,
+              "bottom": 60,
+              "left": 217
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 271,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 319,
+              "bottom": 60,
+              "left": 271
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 325,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 373,
+              "bottom": 60,
+              "left": 325
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 75.953125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 123.953125,
+              "bottom": 367.875,
+              "left": 75.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 266.03125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 314.03125,
+              "bottom": 367.875,
+              "left": 266.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 40,
+              "y": 754,
+              "width": 310,
+              "height": 55,
+              "top": 754,
+              "right": 350,
+              "bottom": 809,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-three-lines",
+      "width": 430,
+      "height": 932,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-three-lines-430x932.png",
+      "geometry": {
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "h2": {
+          "x": 40,
+          "y": 550.171875,
+          "width": 350,
+          "height": 65,
+          "top": 550.171875,
+          "right": 390,
+          "bottom": 615.171875,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 456.53125,
+          "width": 350,
+          "height": 250.28125,
+          "top": 456.53125,
+          "right": 390,
+          "bottom": 706.8125,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 706.8125,
+          "width": 350,
+          "height": 76,
+          "top": 706.8125,
+          "right": 390,
+          "bottom": 782.8125,
+          "left": 40
+        },
+        "drinkNotice": {
+          "x": 40,
+          "y": 706.8125,
+          "width": 350,
+          "height": 76,
+          "top": 706.8125,
+          "right": 390,
+          "bottom": 782.8125,
+          "left": 40
+        },
+        "resultNote": {
+          "x": 40,
+          "y": 792.8125,
+          "width": 350,
+          "height": 41.1875,
+          "top": 792.8125,
+          "right": 390,
+          "bottom": 834,
+          "left": 40
+        },
+        "actions": {
+          "x": 40,
+          "y": 792.8125,
+          "width": 350,
+          "height": 104.1875,
+          "top": 792.8125,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "nextButton": {
+          "x": 40,
+          "y": 842,
+          "width": 350,
+          "height": 55,
+          "top": 842,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "card": {
+          "x": 17,
+          "y": 401.53125,
+          "width": 396,
+          "height": 515.46875,
+          "top": 401.53125,
+          "right": 413,
+          "bottom": 917,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 396,
+          "height": 204.53125,
+          "top": 129,
+          "right": 413,
+          "bottom": 333.53125,
+          "left": 17
+        },
+        "questionToAnswerGap": 91.640625,
+        "noticeToResultGap": 10,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 2
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 257,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 305,
+              "bottom": 60,
+              "left": 257
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 311,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 359,
+              "bottom": 60,
+              "left": 311
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 365,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 413,
+              "bottom": 60,
+              "left": 365
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 95.953125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 143.953125,
+              "bottom": 388.53125,
+              "left": 95.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 286.03125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 334.03125,
+              "bottom": 388.53125,
+              "left": 286.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 40,
+              "y": 842,
+              "width": 350,
+              "height": 55,
+              "top": 842,
+              "right": 390,
+              "bottom": 897,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-three-lines",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-three-lines-1024x768.png",
+      "geometry": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "h2": {
+          "x": 634.15625,
+          "y": 310.265625,
+          "width": 343.84375,
+          "height": 105.28125,
+          "top": 310.265625,
+          "right": 978,
+          "bottom": 415.546875,
+          "left": 634.15625
+        },
+        "questionCopy": {
+          "x": 634.15625,
+          "y": 275.5,
+          "width": 343.84375,
+          "height": 168.8125,
+          "top": 275.5,
+          "right": 978,
+          "bottom": 444.3125,
+          "left": 634.15625
+        },
+        "answerSpace": {
+          "x": 634.15625,
+          "y": 444.3125,
+          "width": 343.84375,
+          "height": 84,
+          "top": 444.3125,
+          "right": 978,
+          "bottom": 528.3125,
+          "left": 634.15625
+        },
+        "drinkNotice": {
+          "x": 634.15625,
+          "y": 444.3125,
+          "width": 343.84375,
+          "height": 84,
+          "top": 444.3125,
+          "right": 978,
+          "bottom": 528.3125,
+          "left": 634.15625
+        },
+        "resultNote": {
+          "x": 634.15625,
+          "y": 544.3125,
+          "width": 343.84375,
+          "height": 41.1875,
+          "top": 544.3125,
+          "right": 978,
+          "bottom": 585.5,
+          "left": 634.15625
+        },
+        "actions": {
+          "x": 634.15625,
+          "y": 544.3125,
+          "width": 343.84375,
+          "height": 107.1875,
+          "top": 544.3125,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "nextButton": {
+          "x": 634.15625,
+          "y": 597.5,
+          "width": 343.84375,
+          "height": 54,
+          "top": 597.5,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "card": {
+          "x": 610.15625,
+          "y": 210.5,
+          "width": 391.84375,
+          "height": 465,
+          "top": 210.5,
+          "right": 1002,
+          "bottom": 675.5,
+          "left": 610.15625
+        },
+        "board": {
+          "x": 22,
+          "y": 247.265625,
+          "width": 568.15625,
+          "height": 293.46875,
+          "top": 247.265625,
+          "right": 590.15625,
+          "bottom": 540.734375,
+          "left": 22
+        },
+        "questionToAnswerGap": 28.765625,
+        "noticeToResultGap": 16,
+        "resultToButtonGap": 12,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 27,
+          "lineHeight": 35.1,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 836,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 884,
+              "bottom": 70,
+              "left": 836
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 895,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 943,
+              "bottom": 70,
+              "left": 895
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 954,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1002,
+              "bottom": 70,
+              "left": 954
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 179.296875,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 227.296875,
+              "bottom": 600.734375,
+              "left": 179.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 384.84375,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 432.84375,
+              "bottom": 600.734375,
+              "left": 384.84375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 634.15625,
+              "y": 597.5,
+              "width": 343.84375,
+              "height": 54,
+              "top": 597.5,
+              "right": 978,
+              "bottom": 651.5,
+              "left": 634.15625
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-three-lines",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-three-lines-1440x900.png",
+      "geometry": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "h2": {
+          "x": 922.296875,
+          "y": 394.515625,
+          "width": 453.703125,
+          "height": 85.78125,
+          "top": 394.515625,
+          "right": 1376,
+          "bottom": 480.296875,
+          "left": 922.296875
+        },
+        "questionCopy": {
+          "x": 922.296875,
+          "y": 332,
+          "width": 453.703125,
+          "height": 204.8125,
+          "top": 332,
+          "right": 1376,
+          "bottom": 536.8125,
+          "left": 922.296875
+        },
+        "answerSpace": {
+          "x": 922.296875,
+          "y": 536.8125,
+          "width": 453.703125,
+          "height": 84,
+          "top": 536.8125,
+          "right": 1376,
+          "bottom": 620.8125,
+          "left": 922.296875
+        },
+        "drinkNotice": {
+          "x": 922.296875,
+          "y": 536.8125,
+          "width": 453.703125,
+          "height": 84,
+          "top": 536.8125,
+          "right": 1376,
+          "bottom": 620.8125,
+          "left": 922.296875
+        },
+        "resultNote": {
+          "x": 922.296875,
+          "y": 636.8125,
+          "width": 453.703125,
+          "height": 41.1875,
+          "top": 636.8125,
+          "right": 1376,
+          "bottom": 678,
+          "left": 922.296875
+        },
+        "actions": {
+          "x": 922.296875,
+          "y": 636.8125,
+          "width": 453.703125,
+          "height": 107.1875,
+          "top": 636.8125,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "nextButton": {
+          "x": 922.296875,
+          "y": 690,
+          "width": 453.703125,
+          "height": 54,
+          "top": 690,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "card": {
+          "x": 890.296875,
+          "y": 261,
+          "width": 517.703125,
+          "height": 510,
+          "top": 261,
+          "right": 1408,
+          "bottom": 771,
+          "left": 890.296875
+        },
+        "board": {
+          "x": 32,
+          "y": 253.078125,
+          "width": 828.296875,
+          "height": 427.828125,
+          "top": 253.078125,
+          "right": 860.296875,
+          "bottom": 680.90625,
+          "left": 32
+        },
+        "questionToAnswerGap": 56.515625,
+        "noticeToResultGap": 16,
+        "resultToButtonGap": 12,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 33,
+          "lineHeight": 42.9,
+          "lines": 2
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 1242,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1290,
+              "bottom": 70,
+              "left": 1242
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 1301,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1349,
+              "bottom": 70,
+              "left": 1301
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 1360,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1408,
+              "bottom": 70,
+              "left": 1360
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 319.375,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 367.375,
+              "bottom": 740.90625,
+              "left": 319.375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 524.921875,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 572.921875,
+              "bottom": 740.90625,
+              "left": 524.921875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 922.296875,
+              "y": 690,
+              "width": 453.703125,
+              "height": 54,
+              "top": 690,
+              "right": 1376,
+              "bottom": 744,
+              "left": 922.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-longest",
+      "width": 360,
+      "height": 800,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-longest-360x800.png",
+      "geometry": {
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "h2": {
+          "x": 37,
+          "y": 458.75,
+          "width": 286,
+          "height": 89.671875,
+          "top": 458.75,
+          "right": 323,
+          "bottom": 548.421875,
+          "left": 37
+        },
+        "questionCopy": {
+          "x": 37,
+          "y": 417.375,
+          "width": 286,
+          "height": 170.4375,
+          "top": 417.375,
+          "right": 323,
+          "bottom": 587.8125,
+          "left": 37
+        },
+        "answerSpace": {
+          "x": 37,
+          "y": 587.8125,
+          "width": 286,
+          "height": 68,
+          "top": 587.8125,
+          "right": 323,
+          "bottom": 655.8125,
+          "left": 37
+        },
+        "drinkNotice": {
+          "x": 37,
+          "y": 587.8125,
+          "width": 286,
+          "height": 68,
+          "top": 587.8125,
+          "right": 323,
+          "bottom": 655.8125,
+          "left": 37
+        },
+        "resultNote": {
+          "x": 37,
+          "y": 663.8125,
+          "width": 286,
+          "height": 41.1875,
+          "top": 663.8125,
+          "right": 323,
+          "bottom": 705,
+          "left": 37
+        },
+        "actions": {
+          "x": 37,
+          "y": 663.8125,
+          "width": 286,
+          "height": 104.1875,
+          "top": 663.8125,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "nextButton": {
+          "x": 37,
+          "y": 713,
+          "width": 286,
+          "height": 55,
+          "top": 713,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "card": {
+          "x": 17,
+          "y": 365.375,
+          "width": 326,
+          "height": 419.625,
+          "top": 365.375,
+          "right": 343,
+          "bottom": 785,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 326,
+          "height": 168.375,
+          "top": 129,
+          "right": 343,
+          "bottom": 297.375,
+          "left": 17
+        },
+        "questionToAnswerGap": 39.390625,
+        "noticeToResultGap": 8,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 23,
+          "lineHeight": 29.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 187,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 235,
+              "bottom": 60,
+              "left": 187
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 241,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 289,
+              "bottom": 60,
+              "left": 241
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 295,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 343,
+              "bottom": 60,
+              "left": 295
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 60.953125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 108.953125,
+              "bottom": 352.375,
+              "left": 60.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 251.03125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 299.03125,
+              "bottom": 352.375,
+              "left": 251.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 37,
+              "y": 713,
+              "width": 286,
+              "height": 55,
+              "top": 713,
+              "right": 323,
+              "bottom": 768,
+              "left": 37
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-longest",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-longest-390x844.png",
+      "geometry": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "h2": {
+          "x": 40,
+          "y": 479.59375,
+          "width": 310,
+          "height": 97.5,
+          "top": 479.59375,
+          "right": 350,
+          "bottom": 577.09375,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 435.875,
+          "width": 310,
+          "height": 182.9375,
+          "top": 435.875,
+          "right": 350,
+          "bottom": 618.8125,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 618.8125,
+          "width": 310,
+          "height": 76,
+          "top": 618.8125,
+          "right": 350,
+          "bottom": 694.8125,
+          "left": 40
+        },
+        "drinkNotice": {
+          "x": 40,
+          "y": 618.8125,
+          "width": 310,
+          "height": 76,
+          "top": 618.8125,
+          "right": 350,
+          "bottom": 694.8125,
+          "left": 40
+        },
+        "resultNote": {
+          "x": 40,
+          "y": 704.8125,
+          "width": 310,
+          "height": 41.1875,
+          "top": 704.8125,
+          "right": 350,
+          "bottom": 746,
+          "left": 40
+        },
+        "actions": {
+          "x": 40,
+          "y": 704.8125,
+          "width": 310,
+          "height": 104.1875,
+          "top": 704.8125,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "nextButton": {
+          "x": 40,
+          "y": 754,
+          "width": 310,
+          "height": 55,
+          "top": 754,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "card": {
+          "x": 17,
+          "y": 380.875,
+          "width": 356,
+          "height": 448.125,
+          "top": 380.875,
+          "right": 373,
+          "bottom": 829,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 356,
+          "height": 183.875,
+          "top": 129,
+          "right": 373,
+          "bottom": 312.875,
+          "left": 17
+        },
+        "questionToAnswerGap": 41.71875,
+        "noticeToResultGap": 10,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 217,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 265,
+              "bottom": 60,
+              "left": 217
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 271,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 319,
+              "bottom": 60,
+              "left": 271
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 325,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 373,
+              "bottom": 60,
+              "left": 325
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 75.953125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 123.953125,
+              "bottom": 367.875,
+              "left": 75.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 266.03125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 314.03125,
+              "bottom": 367.875,
+              "left": 266.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 40,
+              "y": 754,
+              "width": 310,
+              "height": 55,
+              "top": 754,
+              "right": 350,
+              "bottom": 809,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-longest",
+      "width": 430,
+      "height": 932,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-longest-430x932.png",
+      "geometry": {
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "h2": {
+          "x": 40,
+          "y": 533.921875,
+          "width": 350,
+          "height": 97.5,
+          "top": 533.921875,
+          "right": 390,
+          "bottom": 631.421875,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 456.53125,
+          "width": 350,
+          "height": 250.28125,
+          "top": 456.53125,
+          "right": 390,
+          "bottom": 706.8125,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 706.8125,
+          "width": 350,
+          "height": 76,
+          "top": 706.8125,
+          "right": 390,
+          "bottom": 782.8125,
+          "left": 40
+        },
+        "drinkNotice": {
+          "x": 40,
+          "y": 706.8125,
+          "width": 350,
+          "height": 76,
+          "top": 706.8125,
+          "right": 390,
+          "bottom": 782.8125,
+          "left": 40
+        },
+        "resultNote": {
+          "x": 40,
+          "y": 792.8125,
+          "width": 350,
+          "height": 41.1875,
+          "top": 792.8125,
+          "right": 390,
+          "bottom": 834,
+          "left": 40
+        },
+        "actions": {
+          "x": 40,
+          "y": 792.8125,
+          "width": 350,
+          "height": 104.1875,
+          "top": 792.8125,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "nextButton": {
+          "x": 40,
+          "y": 842,
+          "width": 350,
+          "height": 55,
+          "top": 842,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "card": {
+          "x": 17,
+          "y": 401.53125,
+          "width": 396,
+          "height": 515.46875,
+          "top": 401.53125,
+          "right": 413,
+          "bottom": 917,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 396,
+          "height": 204.53125,
+          "top": 129,
+          "right": 413,
+          "bottom": 333.53125,
+          "left": 17
+        },
+        "questionToAnswerGap": 75.390625,
+        "noticeToResultGap": 10,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 257,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 305,
+              "bottom": 60,
+              "left": 257
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 311,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 359,
+              "bottom": 60,
+              "left": 311
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 365,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 413,
+              "bottom": 60,
+              "left": 365
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 95.953125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 143.953125,
+              "bottom": 388.53125,
+              "left": 95.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 286.03125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 334.03125,
+              "bottom": 388.53125,
+              "left": 286.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 40,
+              "y": 842,
+              "width": 350,
+              "height": 55,
+              "top": 842,
+              "right": 390,
+              "bottom": 897,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-longest",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-longest-1024x768.png",
+      "geometry": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "h2": {
+          "x": 634.15625,
+          "y": 310.265625,
+          "width": 343.84375,
+          "height": 105.28125,
+          "top": 310.265625,
+          "right": 978,
+          "bottom": 415.546875,
+          "left": 634.15625
+        },
+        "questionCopy": {
+          "x": 634.15625,
+          "y": 275.5,
+          "width": 343.84375,
+          "height": 168.8125,
+          "top": 275.5,
+          "right": 978,
+          "bottom": 444.3125,
+          "left": 634.15625
+        },
+        "answerSpace": {
+          "x": 634.15625,
+          "y": 444.3125,
+          "width": 343.84375,
+          "height": 84,
+          "top": 444.3125,
+          "right": 978,
+          "bottom": 528.3125,
+          "left": 634.15625
+        },
+        "drinkNotice": {
+          "x": 634.15625,
+          "y": 444.3125,
+          "width": 343.84375,
+          "height": 84,
+          "top": 444.3125,
+          "right": 978,
+          "bottom": 528.3125,
+          "left": 634.15625
+        },
+        "resultNote": {
+          "x": 634.15625,
+          "y": 544.3125,
+          "width": 343.84375,
+          "height": 41.1875,
+          "top": 544.3125,
+          "right": 978,
+          "bottom": 585.5,
+          "left": 634.15625
+        },
+        "actions": {
+          "x": 634.15625,
+          "y": 544.3125,
+          "width": 343.84375,
+          "height": 107.1875,
+          "top": 544.3125,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "nextButton": {
+          "x": 634.15625,
+          "y": 597.5,
+          "width": 343.84375,
+          "height": 54,
+          "top": 597.5,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "card": {
+          "x": 610.15625,
+          "y": 210.5,
+          "width": 391.84375,
+          "height": 465,
+          "top": 210.5,
+          "right": 1002,
+          "bottom": 675.5,
+          "left": 610.15625
+        },
+        "board": {
+          "x": 22,
+          "y": 247.265625,
+          "width": 568.15625,
+          "height": 293.46875,
+          "top": 247.265625,
+          "right": 590.15625,
+          "bottom": 540.734375,
+          "left": 22
+        },
+        "questionToAnswerGap": 28.765625,
+        "noticeToResultGap": 16,
+        "resultToButtonGap": 12,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 27,
+          "lineHeight": 35.1,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 836,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 884,
+              "bottom": 70,
+              "left": 836
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 895,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 943,
+              "bottom": 70,
+              "left": 895
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 954,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1002,
+              "bottom": 70,
+              "left": 954
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 179.296875,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 227.296875,
+              "bottom": 600.734375,
+              "left": 179.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 384.84375,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 432.84375,
+              "bottom": 600.734375,
+              "left": 384.84375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 634.15625,
+              "y": 597.5,
+              "width": 343.84375,
+              "height": 54,
+              "top": 597.5,
+              "right": 978,
+              "bottom": 651.5,
+              "left": 634.15625
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-pau-longest",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-pau-longest-1440x900.png",
+      "geometry": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "h2": {
+          "x": 922.296875,
+          "y": 373.0625,
+          "width": 453.703125,
+          "height": 128.671875,
+          "top": 373.0625,
+          "right": 1376,
+          "bottom": 501.734375,
+          "left": 922.296875
+        },
+        "questionCopy": {
+          "x": 922.296875,
+          "y": 332,
+          "width": 453.703125,
+          "height": 204.8125,
+          "top": 332,
+          "right": 1376,
+          "bottom": 536.8125,
+          "left": 922.296875
+        },
+        "answerSpace": {
+          "x": 922.296875,
+          "y": 536.8125,
+          "width": 453.703125,
+          "height": 84,
+          "top": 536.8125,
+          "right": 1376,
+          "bottom": 620.8125,
+          "left": 922.296875
+        },
+        "drinkNotice": {
+          "x": 922.296875,
+          "y": 536.8125,
+          "width": 453.703125,
+          "height": 84,
+          "top": 536.8125,
+          "right": 1376,
+          "bottom": 620.8125,
+          "left": 922.296875
+        },
+        "resultNote": {
+          "x": 922.296875,
+          "y": 636.8125,
+          "width": 453.703125,
+          "height": 41.1875,
+          "top": 636.8125,
+          "right": 1376,
+          "bottom": 678,
+          "left": 922.296875
+        },
+        "actions": {
+          "x": 922.296875,
+          "y": 636.8125,
+          "width": 453.703125,
+          "height": 107.1875,
+          "top": 636.8125,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "nextButton": {
+          "x": 922.296875,
+          "y": 690,
+          "width": 453.703125,
+          "height": 54,
+          "top": 690,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "card": {
+          "x": 890.296875,
+          "y": 261,
+          "width": 517.703125,
+          "height": 510,
+          "top": 261,
+          "right": 1408,
+          "bottom": 771,
+          "left": 890.296875
+        },
+        "board": {
+          "x": 32,
+          "y": 253.078125,
+          "width": 828.296875,
+          "height": 427.828125,
+          "top": 253.078125,
+          "right": 860.296875,
+          "bottom": 680.90625,
+          "left": 32
+        },
+        "questionToAnswerGap": 35.078125,
+        "noticeToResultGap": 16,
+        "resultToButtonGap": 12,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 33,
+          "lineHeight": 42.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 1242,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1290,
+              "bottom": 70,
+              "left": 1242
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 1301,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1349,
+              "bottom": 70,
+              "left": 1301
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 1360,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1408,
+              "bottom": 70,
+              "left": 1360
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 319.375,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 367.375,
+              "bottom": 740.90625,
+              "left": 319.375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 524.921875,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 572.921875,
+              "bottom": 740.90625,
+              "left": 524.921875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 922.296875,
+              "y": 690,
+              "width": 453.703125,
+              "height": 54,
+              "top": 690,
+              "right": 1376,
+              "bottom": 744,
+              "left": 922.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-longest",
+      "width": 360,
+      "height": 800,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-longest-360x800.png",
+      "geometry": {
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "h2": {
+          "x": 37,
+          "y": 458.75,
+          "width": 286,
+          "height": 89.671875,
+          "top": 458.75,
+          "right": 323,
+          "bottom": 548.421875,
+          "left": 37
+        },
+        "questionCopy": {
+          "x": 37,
+          "y": 417.375,
+          "width": 286,
+          "height": 170.4375,
+          "top": 417.375,
+          "right": 323,
+          "bottom": 587.8125,
+          "left": 37
+        },
+        "answerSpace": {
+          "x": 37,
+          "y": 587.8125,
+          "width": 286,
+          "height": 68,
+          "top": 587.8125,
+          "right": 323,
+          "bottom": 655.8125,
+          "left": 37
+        },
+        "drinkNotice": {
+          "x": 37,
+          "y": 587.8125,
+          "width": 286,
+          "height": 68,
+          "top": 587.8125,
+          "right": 323,
+          "bottom": 655.8125,
+          "left": 37
+        },
+        "resultNote": {
+          "x": 37,
+          "y": 663.8125,
+          "width": 286,
+          "height": 41.1875,
+          "top": 663.8125,
+          "right": 323,
+          "bottom": 705,
+          "left": 37
+        },
+        "actions": {
+          "x": 37,
+          "y": 663.8125,
+          "width": 286,
+          "height": 104.1875,
+          "top": 663.8125,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "nextButton": {
+          "x": 37,
+          "y": 713,
+          "width": 286,
+          "height": 55,
+          "top": 713,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "card": {
+          "x": 17,
+          "y": 365.375,
+          "width": 326,
+          "height": 419.625,
+          "top": 365.375,
+          "right": 343,
+          "bottom": 785,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 326,
+          "height": 168.375,
+          "top": 129,
+          "right": 343,
+          "bottom": 297.375,
+          "left": 17
+        },
+        "questionToAnswerGap": 39.390625,
+        "noticeToResultGap": 8,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 23,
+          "lineHeight": 29.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 187,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 235,
+              "bottom": 60,
+              "left": 187
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 241,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 289,
+              "bottom": 60,
+              "left": 241
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 295,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 343,
+              "bottom": 60,
+              "left": 295
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 60.953125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 108.953125,
+              "bottom": 352.375,
+              "left": 60.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 251.03125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 299.03125,
+              "bottom": 352.375,
+              "left": 251.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 37,
+              "y": 713,
+              "width": 286,
+              "height": 55,
+              "top": 713,
+              "right": 323,
+              "bottom": 768,
+              "left": 37
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-longest",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-longest-390x844.png",
+      "geometry": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "h2": {
+          "x": 40,
+          "y": 479.59375,
+          "width": 310,
+          "height": 97.5,
+          "top": 479.59375,
+          "right": 350,
+          "bottom": 577.09375,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 435.875,
+          "width": 310,
+          "height": 182.9375,
+          "top": 435.875,
+          "right": 350,
+          "bottom": 618.8125,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 618.8125,
+          "width": 310,
+          "height": 76,
+          "top": 618.8125,
+          "right": 350,
+          "bottom": 694.8125,
+          "left": 40
+        },
+        "drinkNotice": {
+          "x": 40,
+          "y": 618.8125,
+          "width": 310,
+          "height": 76,
+          "top": 618.8125,
+          "right": 350,
+          "bottom": 694.8125,
+          "left": 40
+        },
+        "resultNote": {
+          "x": 40,
+          "y": 704.8125,
+          "width": 310,
+          "height": 41.1875,
+          "top": 704.8125,
+          "right": 350,
+          "bottom": 746,
+          "left": 40
+        },
+        "actions": {
+          "x": 40,
+          "y": 704.8125,
+          "width": 310,
+          "height": 104.1875,
+          "top": 704.8125,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "nextButton": {
+          "x": 40,
+          "y": 754,
+          "width": 310,
+          "height": 55,
+          "top": 754,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "card": {
+          "x": 17,
+          "y": 380.875,
+          "width": 356,
+          "height": 448.125,
+          "top": 380.875,
+          "right": 373,
+          "bottom": 829,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 356,
+          "height": 183.875,
+          "top": 129,
+          "right": 373,
+          "bottom": 312.875,
+          "left": 17
+        },
+        "questionToAnswerGap": 41.71875,
+        "noticeToResultGap": 10,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 217,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 265,
+              "bottom": 60,
+              "left": 217
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 271,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 319,
+              "bottom": 60,
+              "left": 271
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 325,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 373,
+              "bottom": 60,
+              "left": 325
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 75.953125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 123.953125,
+              "bottom": 367.875,
+              "left": 75.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 266.03125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 314.03125,
+              "bottom": 367.875,
+              "left": 266.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 40,
+              "y": 754,
+              "width": 310,
+              "height": 55,
+              "top": 754,
+              "right": 350,
+              "bottom": 809,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-longest",
+      "width": 430,
+      "height": 932,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-longest-430x932.png",
+      "geometry": {
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "h2": {
+          "x": 40,
+          "y": 533.921875,
+          "width": 350,
+          "height": 97.5,
+          "top": 533.921875,
+          "right": 390,
+          "bottom": 631.421875,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 456.53125,
+          "width": 350,
+          "height": 250.28125,
+          "top": 456.53125,
+          "right": 390,
+          "bottom": 706.8125,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 706.8125,
+          "width": 350,
+          "height": 76,
+          "top": 706.8125,
+          "right": 390,
+          "bottom": 782.8125,
+          "left": 40
+        },
+        "drinkNotice": {
+          "x": 40,
+          "y": 706.8125,
+          "width": 350,
+          "height": 76,
+          "top": 706.8125,
+          "right": 390,
+          "bottom": 782.8125,
+          "left": 40
+        },
+        "resultNote": {
+          "x": 40,
+          "y": 792.8125,
+          "width": 350,
+          "height": 41.1875,
+          "top": 792.8125,
+          "right": 390,
+          "bottom": 834,
+          "left": 40
+        },
+        "actions": {
+          "x": 40,
+          "y": 792.8125,
+          "width": 350,
+          "height": 104.1875,
+          "top": 792.8125,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "nextButton": {
+          "x": 40,
+          "y": 842,
+          "width": 350,
+          "height": 55,
+          "top": 842,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "card": {
+          "x": 17,
+          "y": 401.53125,
+          "width": 396,
+          "height": 515.46875,
+          "top": 401.53125,
+          "right": 413,
+          "bottom": 917,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 396,
+          "height": 204.53125,
+          "top": 129,
+          "right": 413,
+          "bottom": 333.53125,
+          "left": 17
+        },
+        "questionToAnswerGap": 75.390625,
+        "noticeToResultGap": 10,
+        "resultToButtonGap": 8,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 257,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 305,
+              "bottom": 60,
+              "left": 257
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 311,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 359,
+              "bottom": 60,
+              "left": 311
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 365,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 413,
+              "bottom": 60,
+              "left": 365
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 95.953125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 143.953125,
+              "bottom": 388.53125,
+              "left": 95.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 286.03125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 334.03125,
+              "bottom": 388.53125,
+              "left": 286.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 40,
+              "y": 842,
+              "width": 350,
+              "height": 55,
+              "top": 842,
+              "right": 390,
+              "bottom": 897,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-longest",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-longest-1024x768.png",
+      "geometry": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "h2": {
+          "x": 634.15625,
+          "y": 310.265625,
+          "width": 343.84375,
+          "height": 105.28125,
+          "top": 310.265625,
+          "right": 978,
+          "bottom": 415.546875,
+          "left": 634.15625
+        },
+        "questionCopy": {
+          "x": 634.15625,
+          "y": 275.5,
+          "width": 343.84375,
+          "height": 168.8125,
+          "top": 275.5,
+          "right": 978,
+          "bottom": 444.3125,
+          "left": 634.15625
+        },
+        "answerSpace": {
+          "x": 634.15625,
+          "y": 444.3125,
+          "width": 343.84375,
+          "height": 84,
+          "top": 444.3125,
+          "right": 978,
+          "bottom": 528.3125,
+          "left": 634.15625
+        },
+        "drinkNotice": {
+          "x": 634.15625,
+          "y": 444.3125,
+          "width": 343.84375,
+          "height": 84,
+          "top": 444.3125,
+          "right": 978,
+          "bottom": 528.3125,
+          "left": 634.15625
+        },
+        "resultNote": {
+          "x": 634.15625,
+          "y": 544.3125,
+          "width": 343.84375,
+          "height": 41.1875,
+          "top": 544.3125,
+          "right": 978,
+          "bottom": 585.5,
+          "left": 634.15625
+        },
+        "actions": {
+          "x": 634.15625,
+          "y": 544.3125,
+          "width": 343.84375,
+          "height": 107.1875,
+          "top": 544.3125,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "nextButton": {
+          "x": 634.15625,
+          "y": 597.5,
+          "width": 343.84375,
+          "height": 54,
+          "top": 597.5,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "card": {
+          "x": 610.15625,
+          "y": 210.5,
+          "width": 391.84375,
+          "height": 465,
+          "top": 210.5,
+          "right": 1002,
+          "bottom": 675.5,
+          "left": 610.15625
+        },
+        "board": {
+          "x": 22,
+          "y": 247.265625,
+          "width": 568.15625,
+          "height": 293.46875,
+          "top": 247.265625,
+          "right": 590.15625,
+          "bottom": 540.734375,
+          "left": 22
+        },
+        "questionToAnswerGap": 28.765625,
+        "noticeToResultGap": 16,
+        "resultToButtonGap": 12,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 27,
+          "lineHeight": 35.1,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 836,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 884,
+              "bottom": 70,
+              "left": 836
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 895,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 943,
+              "bottom": 70,
+              "left": 895
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 954,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1002,
+              "bottom": 70,
+              "left": 954
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 179.296875,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 227.296875,
+              "bottom": 600.734375,
+              "left": 179.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 384.84375,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 432.84375,
+              "bottom": 600.734375,
+              "left": 384.84375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 634.15625,
+              "y": 597.5,
+              "width": 343.84375,
+              "height": 54,
+              "top": 597.5,
+              "right": 978,
+              "bottom": 651.5,
+              "left": 634.15625
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "double-tecla-longest",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-double-tecla-longest-1440x900.png",
+      "geometry": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "h2": {
+          "x": 922.296875,
+          "y": 373.0625,
+          "width": 453.703125,
+          "height": 128.671875,
+          "top": 373.0625,
+          "right": 1376,
+          "bottom": 501.734375,
+          "left": 922.296875
+        },
+        "questionCopy": {
+          "x": 922.296875,
+          "y": 332,
+          "width": 453.703125,
+          "height": 204.8125,
+          "top": 332,
+          "right": 1376,
+          "bottom": 536.8125,
+          "left": 922.296875
+        },
+        "answerSpace": {
+          "x": 922.296875,
+          "y": 536.8125,
+          "width": 453.703125,
+          "height": 84,
+          "top": 536.8125,
+          "right": 1376,
+          "bottom": 620.8125,
+          "left": 922.296875
+        },
+        "drinkNotice": {
+          "x": 922.296875,
+          "y": 536.8125,
+          "width": 453.703125,
+          "height": 84,
+          "top": 536.8125,
+          "right": 1376,
+          "bottom": 620.8125,
+          "left": 922.296875
+        },
+        "resultNote": {
+          "x": 922.296875,
+          "y": 636.8125,
+          "width": 453.703125,
+          "height": 41.1875,
+          "top": 636.8125,
+          "right": 1376,
+          "bottom": 678,
+          "left": 922.296875
+        },
+        "actions": {
+          "x": 922.296875,
+          "y": 636.8125,
+          "width": 453.703125,
+          "height": 107.1875,
+          "top": 636.8125,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "nextButton": {
+          "x": 922.296875,
+          "y": 690,
+          "width": 453.703125,
+          "height": 54,
+          "top": 690,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "card": {
+          "x": 890.296875,
+          "y": 261,
+          "width": 517.703125,
+          "height": 510,
+          "top": 261,
+          "right": 1408,
+          "bottom": 771,
+          "left": 890.296875
+        },
+        "board": {
+          "x": 32,
+          "y": 253.078125,
+          "width": 828.296875,
+          "height": 427.828125,
+          "top": 253.078125,
+          "right": 860.296875,
+          "bottom": 680.90625,
+          "left": 32
+        },
+        "questionToAnswerGap": 35.078125,
+        "noticeToResultGap": 16,
+        "resultToButtonGap": 12,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 33,
+          "lineHeight": 42.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 1242,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1290,
+              "bottom": 70,
+              "left": 1242
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 1301,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1349,
+              "bottom": 70,
+              "left": 1301
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 1360,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1408,
+              "bottom": 70,
+              "left": 1360
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 319.375,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 367.375,
+              "bottom": 740.90625,
+              "left": 319.375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 524.921875,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 572.921875,
+              "bottom": 740.90625,
+              "left": 524.921875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Següent torn",
+            "bounds": {
+              "x": 922.296875,
+              "y": 690,
+              "width": 453.703125,
+              "height": 54,
+              "top": 690,
+              "right": 1376,
+              "bottom": 744,
+              "left": 922.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-three-lines",
+      "width": 360,
+      "height": 800,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-three-lines-360x800.png",
+      "geometry": {
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "h2": {
+          "x": 37,
+          "y": 483.34375,
+          "width": 286,
+          "height": 89.671875,
+          "top": 483.34375,
+          "right": 323,
+          "bottom": 573.015625,
+          "left": 37
+        },
+        "questionCopy": {
+          "x": 37,
+          "y": 417.375,
+          "width": 286,
+          "height": 219.625,
+          "top": 417.375,
+          "right": 323,
+          "bottom": 637,
+          "left": 37
+        },
+        "answerSpace": {
+          "x": 37,
+          "y": 637,
+          "width": 286,
+          "height": 68,
+          "top": 637,
+          "right": 323,
+          "bottom": 705,
+          "left": 37
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 37,
+          "y": 713,
+          "width": 286,
+          "height": 55,
+          "top": 713,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "nextButton": null,
+        "card": {
+          "x": 17,
+          "y": 365.375,
+          "width": 326,
+          "height": 419.625,
+          "top": 365.375,
+          "right": 343,
+          "bottom": 785,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 326,
+          "height": 168.375,
+          "top": 129,
+          "right": 343,
+          "bottom": 297.375,
+          "left": 17
+        },
+        "questionToAnswerGap": 63.984375,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 23,
+          "lineHeight": 29.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 187,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 235,
+              "bottom": 60,
+              "left": 187
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 241,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 289,
+              "bottom": 60,
+              "left": 241
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 295,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 343,
+              "bottom": 60,
+              "left": 295
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 60.953125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 108.953125,
+              "bottom": 352.375,
+              "left": 60.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 251.03125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 299.03125,
+              "bottom": 352.375,
+              "left": 251.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 37,
+              "y": 713,
+              "width": 137,
+              "height": 55,
+              "top": 713,
+              "right": 174,
+              "bottom": 768,
+              "left": 37
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 186,
+              "y": 713,
+              "width": 137,
+              "height": 55,
+              "top": 713,
+              "right": 323,
+              "bottom": 768,
+              "left": 186
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-three-lines",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-three-lines-390x844.png",
+      "geometry": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "h2": {
+          "x": 40,
+          "y": 504.1875,
+          "width": 310,
+          "height": 97.5,
+          "top": 504.1875,
+          "right": 350,
+          "bottom": 601.6875,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 435.875,
+          "width": 310,
+          "height": 232.125,
+          "top": 435.875,
+          "right": 350,
+          "bottom": 668,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 668,
+          "width": 310,
+          "height": 76,
+          "top": 668,
+          "right": 350,
+          "bottom": 744,
+          "left": 40
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 40,
+          "y": 754,
+          "width": 310,
+          "height": 55,
+          "top": 754,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "nextButton": null,
+        "card": {
+          "x": 17,
+          "y": 380.875,
+          "width": 356,
+          "height": 448.125,
+          "top": 380.875,
+          "right": 373,
+          "bottom": 829,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 356,
+          "height": 183.875,
+          "top": 129,
+          "right": 373,
+          "bottom": 312.875,
+          "left": 17
+        },
+        "questionToAnswerGap": 66.3125,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 217,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 265,
+              "bottom": 60,
+              "left": 217
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 271,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 319,
+              "bottom": 60,
+              "left": 271
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 325,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 373,
+              "bottom": 60,
+              "left": 325
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 75.953125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 123.953125,
+              "bottom": 367.875,
+              "left": 75.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 266.03125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 314.03125,
+              "bottom": 367.875,
+              "left": 266.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 40,
+              "y": 754,
+              "width": 149,
+              "height": 55,
+              "top": 754,
+              "right": 189,
+              "bottom": 809,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 201,
+              "y": 754,
+              "width": 149,
+              "height": 55,
+              "top": 754,
+              "right": 350,
+              "bottom": 809,
+              "left": 201
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-three-lines",
+      "width": 430,
+      "height": 932,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-three-lines-430x932.png",
+      "geometry": {
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "h2": {
+          "x": 40,
+          "y": 574.765625,
+          "width": 350,
+          "height": 65,
+          "top": 574.765625,
+          "right": 390,
+          "bottom": 639.765625,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 456.53125,
+          "width": 350,
+          "height": 299.46875,
+          "top": 456.53125,
+          "right": 390,
+          "bottom": 756,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 756,
+          "width": 350,
+          "height": 76,
+          "top": 756,
+          "right": 390,
+          "bottom": 832,
+          "left": 40
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 40,
+          "y": 842,
+          "width": 350,
+          "height": 55,
+          "top": 842,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "nextButton": null,
+        "card": {
+          "x": 17,
+          "y": 401.53125,
+          "width": 396,
+          "height": 515.46875,
+          "top": 401.53125,
+          "right": 413,
+          "bottom": 917,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 396,
+          "height": 204.53125,
+          "top": 129,
+          "right": 413,
+          "bottom": 333.53125,
+          "left": 17
+        },
+        "questionToAnswerGap": 116.234375,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 2
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 257,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 305,
+              "bottom": 60,
+              "left": 257
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 311,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 359,
+              "bottom": 60,
+              "left": 311
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 365,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 413,
+              "bottom": 60,
+              "left": 365
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 95.953125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 143.953125,
+              "bottom": 388.53125,
+              "left": 95.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 286.03125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 334.03125,
+              "bottom": 388.53125,
+              "left": 286.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 40,
+              "y": 842,
+              "width": 169,
+              "height": 55,
+              "top": 842,
+              "right": 209,
+              "bottom": 897,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 221,
+              "y": 842,
+              "width": 169,
+              "height": 55,
+              "top": 842,
+              "right": 390,
+              "bottom": 897,
+              "left": 221
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-three-lines",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-three-lines-1024x768.png",
+      "geometry": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "h2": {
+          "x": 634.15625,
+          "y": 335.859375,
+          "width": 343.84375,
+          "height": 105.28125,
+          "top": 335.859375,
+          "right": 978,
+          "bottom": 441.140625,
+          "left": 634.15625
+        },
+        "questionCopy": {
+          "x": 634.15625,
+          "y": 275.5,
+          "width": 343.84375,
+          "height": 220,
+          "top": 275.5,
+          "right": 978,
+          "bottom": 495.5,
+          "left": 634.15625
+        },
+        "answerSpace": {
+          "x": 634.15625,
+          "y": 495.5,
+          "width": 343.84375,
+          "height": 84,
+          "top": 495.5,
+          "right": 978,
+          "bottom": 579.5,
+          "left": 634.15625
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 634.15625,
+          "y": 595.5,
+          "width": 343.84375,
+          "height": 56,
+          "top": 595.5,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "nextButton": null,
+        "card": {
+          "x": 610.15625,
+          "y": 210.5,
+          "width": 391.84375,
+          "height": 465,
+          "top": 210.5,
+          "right": 1002,
+          "bottom": 675.5,
+          "left": 610.15625
+        },
+        "board": {
+          "x": 22,
+          "y": 247.265625,
+          "width": 568.15625,
+          "height": 293.46875,
+          "top": 247.265625,
+          "right": 590.15625,
+          "bottom": 540.734375,
+          "left": 22
+        },
+        "questionToAnswerGap": 54.359375,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 27,
+          "lineHeight": 35.1,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 836,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 884,
+              "bottom": 70,
+              "left": 836
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 895,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 943,
+              "bottom": 70,
+              "left": 895
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 954,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1002,
+              "bottom": 70,
+              "left": 954
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 179.296875,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 227.296875,
+              "bottom": 600.734375,
+              "left": 179.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 384.84375,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 432.84375,
+              "bottom": 600.734375,
+              "left": 384.84375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 634.15625,
+              "y": 595.5,
+              "width": 165.921875,
+              "height": 56,
+              "top": 595.5,
+              "right": 800.078125,
+              "bottom": 651.5,
+              "left": 634.15625
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 812.078125,
+              "y": 595.5,
+              "width": 165.921875,
+              "height": 56,
+              "top": 595.5,
+              "right": 978,
+              "bottom": 651.5,
+              "left": 812.078125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-three-lines",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-three-lines-1440x900.png",
+      "geometry": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "h2": {
+          "x": 922.296875,
+          "y": 420.109375,
+          "width": 453.703125,
+          "height": 85.78125,
+          "top": 420.109375,
+          "right": 1376,
+          "bottom": 505.890625,
+          "left": 922.296875
+        },
+        "questionCopy": {
+          "x": 922.296875,
+          "y": 332,
+          "width": 453.703125,
+          "height": 256,
+          "top": 332,
+          "right": 1376,
+          "bottom": 588,
+          "left": 922.296875
+        },
+        "answerSpace": {
+          "x": 922.296875,
+          "y": 588,
+          "width": 453.703125,
+          "height": 84,
+          "top": 588,
+          "right": 1376,
+          "bottom": 672,
+          "left": 922.296875
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 922.296875,
+          "y": 688,
+          "width": 453.703125,
+          "height": 56,
+          "top": 688,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "nextButton": null,
+        "card": {
+          "x": 890.296875,
+          "y": 261,
+          "width": 517.703125,
+          "height": 510,
+          "top": 261,
+          "right": 1408,
+          "bottom": 771,
+          "left": 890.296875
+        },
+        "board": {
+          "x": 32,
+          "y": 253.078125,
+          "width": 828.296875,
+          "height": 427.828125,
+          "top": 253.078125,
+          "right": 860.296875,
+          "bottom": 680.90625,
+          "left": 32
+        },
+        "questionToAnswerGap": 82.109375,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 33,
+          "lineHeight": 42.9,
+          "lines": 2
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 1242,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1290,
+              "bottom": 70,
+              "left": 1242
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 1301,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1349,
+              "bottom": 70,
+              "left": 1301
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 1360,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1408,
+              "bottom": 70,
+              "left": 1360
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 319.375,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 367.375,
+              "bottom": 740.90625,
+              "left": 319.375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 524.921875,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 572.921875,
+              "bottom": 740.90625,
+              "left": 524.921875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 922.296875,
+              "y": 688,
+              "width": 220.84375,
+              "height": 56,
+              "top": 688,
+              "right": 1143.140625,
+              "bottom": 744,
+              "left": 922.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 1155.140625,
+              "y": 688,
+              "width": 220.859375,
+              "height": 56,
+              "top": 688,
+              "right": 1376,
+              "bottom": 744,
+              "left": 1155.140625
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-longest",
+      "width": 360,
+      "height": 800,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-longest-360x800.png",
+      "geometry": {
+        "bodyWidth": 360,
+        "bodyHeight": 800,
+        "h2": {
+          "x": 37,
+          "y": 483.34375,
+          "width": 286,
+          "height": 89.671875,
+          "top": 483.34375,
+          "right": 323,
+          "bottom": 573.015625,
+          "left": 37
+        },
+        "questionCopy": {
+          "x": 37,
+          "y": 417.375,
+          "width": 286,
+          "height": 219.625,
+          "top": 417.375,
+          "right": 323,
+          "bottom": 637,
+          "left": 37
+        },
+        "answerSpace": {
+          "x": 37,
+          "y": 637,
+          "width": 286,
+          "height": 68,
+          "top": 637,
+          "right": 323,
+          "bottom": 705,
+          "left": 37
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 37,
+          "y": 713,
+          "width": 286,
+          "height": 55,
+          "top": 713,
+          "right": 323,
+          "bottom": 768,
+          "left": 37
+        },
+        "nextButton": null,
+        "card": {
+          "x": 17,
+          "y": 365.375,
+          "width": 326,
+          "height": 419.625,
+          "top": 365.375,
+          "right": 343,
+          "bottom": 785,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 326,
+          "height": 168.375,
+          "top": 129,
+          "right": 343,
+          "bottom": 297.375,
+          "left": 17
+        },
+        "questionToAnswerGap": 63.984375,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 23,
+          "lineHeight": 29.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 187,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 235,
+              "bottom": 60,
+              "left": 187
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 241,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 289,
+              "bottom": 60,
+              "left": 241
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 295,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 343,
+              "bottom": 60,
+              "left": 295
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 60.953125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 108.953125,
+              "bottom": 352.375,
+              "left": 60.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 251.03125,
+              "y": 304.375,
+              "width": 48,
+              "height": 48,
+              "top": 304.375,
+              "right": 299.03125,
+              "bottom": 352.375,
+              "left": 251.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 37,
+              "y": 713,
+              "width": 137,
+              "height": 55,
+              "top": 713,
+              "right": 174,
+              "bottom": 768,
+              "left": 37
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 186,
+              "y": 713,
+              "width": 137,
+              "height": 55,
+              "top": 713,
+              "right": 323,
+              "bottom": 768,
+              "left": 186
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-longest",
+      "width": 390,
+      "height": 844,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-longest-390x844.png",
+      "geometry": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "h2": {
+          "x": 40,
+          "y": 504.1875,
+          "width": 310,
+          "height": 97.5,
+          "top": 504.1875,
+          "right": 350,
+          "bottom": 601.6875,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 435.875,
+          "width": 310,
+          "height": 232.125,
+          "top": 435.875,
+          "right": 350,
+          "bottom": 668,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 668,
+          "width": 310,
+          "height": 76,
+          "top": 668,
+          "right": 350,
+          "bottom": 744,
+          "left": 40
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 40,
+          "y": 754,
+          "width": 310,
+          "height": 55,
+          "top": 754,
+          "right": 350,
+          "bottom": 809,
+          "left": 40
+        },
+        "nextButton": null,
+        "card": {
+          "x": 17,
+          "y": 380.875,
+          "width": 356,
+          "height": 448.125,
+          "top": 380.875,
+          "right": 373,
+          "bottom": 829,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 356,
+          "height": 183.875,
+          "top": 129,
+          "right": 373,
+          "bottom": 312.875,
+          "left": 17
+        },
+        "questionToAnswerGap": 66.3125,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 217,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 265,
+              "bottom": 60,
+              "left": 217
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 271,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 319,
+              "bottom": 60,
+              "left": 271
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 325,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 373,
+              "bottom": 60,
+              "left": 325
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 75.953125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 123.953125,
+              "bottom": 367.875,
+              "left": 75.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 266.03125,
+              "y": 319.875,
+              "width": 48,
+              "height": 48,
+              "top": 319.875,
+              "right": 314.03125,
+              "bottom": 367.875,
+              "left": 266.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 40,
+              "y": 754,
+              "width": 149,
+              "height": 55,
+              "top": 754,
+              "right": 189,
+              "bottom": 809,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 201,
+              "y": 754,
+              "width": 149,
+              "height": 55,
+              "top": 754,
+              "right": 350,
+              "bottom": 809,
+              "left": 201
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-longest",
+      "width": 430,
+      "height": 932,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-longest-430x932.png",
+      "geometry": {
+        "bodyWidth": 430,
+        "bodyHeight": 932,
+        "h2": {
+          "x": 40,
+          "y": 558.515625,
+          "width": 350,
+          "height": 97.5,
+          "top": 558.515625,
+          "right": 390,
+          "bottom": 656.015625,
+          "left": 40
+        },
+        "questionCopy": {
+          "x": 40,
+          "y": 456.53125,
+          "width": 350,
+          "height": 299.46875,
+          "top": 456.53125,
+          "right": 390,
+          "bottom": 756,
+          "left": 40
+        },
+        "answerSpace": {
+          "x": 40,
+          "y": 756,
+          "width": 350,
+          "height": 76,
+          "top": 756,
+          "right": 390,
+          "bottom": 832,
+          "left": 40
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 40,
+          "y": 842,
+          "width": 350,
+          "height": 55,
+          "top": 842,
+          "right": 390,
+          "bottom": 897,
+          "left": 40
+        },
+        "nextButton": null,
+        "card": {
+          "x": 17,
+          "y": 401.53125,
+          "width": 396,
+          "height": 515.46875,
+          "top": 401.53125,
+          "right": 413,
+          "bottom": 917,
+          "left": 17
+        },
+        "board": {
+          "x": 17,
+          "y": 129,
+          "width": 396,
+          "height": 204.53125,
+          "top": 129,
+          "right": 413,
+          "bottom": 333.53125,
+          "left": 17
+        },
+        "questionToAnswerGap": 99.984375,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 25,
+          "lineHeight": 32.5,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 257,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 305,
+              "bottom": 60,
+              "left": 257
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 311,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 359,
+              "bottom": 60,
+              "left": 311
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 365,
+              "y": 12,
+              "width": 48,
+              "height": 48,
+              "top": 12,
+              "right": 413,
+              "bottom": 60,
+              "left": 365
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 95.953125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 143.953125,
+              "bottom": 388.53125,
+              "left": 95.953125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 286.03125,
+              "y": 340.53125,
+              "width": 48,
+              "height": 48,
+              "top": 340.53125,
+              "right": 334.03125,
+              "bottom": 388.53125,
+              "left": 286.03125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 40,
+              "y": 842,
+              "width": 169,
+              "height": 55,
+              "top": 842,
+              "right": 209,
+              "bottom": 897,
+              "left": 40
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 221,
+              "y": 842,
+              "width": 169,
+              "height": 55,
+              "top": 842,
+              "right": 390,
+              "bottom": 897,
+              "left": 221
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-longest",
+      "width": 1024,
+      "height": 768,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-longest-1024x768.png",
+      "geometry": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "h2": {
+          "x": 634.15625,
+          "y": 335.859375,
+          "width": 343.84375,
+          "height": 105.28125,
+          "top": 335.859375,
+          "right": 978,
+          "bottom": 441.140625,
+          "left": 634.15625
+        },
+        "questionCopy": {
+          "x": 634.15625,
+          "y": 275.5,
+          "width": 343.84375,
+          "height": 220,
+          "top": 275.5,
+          "right": 978,
+          "bottom": 495.5,
+          "left": 634.15625
+        },
+        "answerSpace": {
+          "x": 634.15625,
+          "y": 495.5,
+          "width": 343.84375,
+          "height": 84,
+          "top": 495.5,
+          "right": 978,
+          "bottom": 579.5,
+          "left": 634.15625
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 634.15625,
+          "y": 595.5,
+          "width": 343.84375,
+          "height": 56,
+          "top": 595.5,
+          "right": 978,
+          "bottom": 651.5,
+          "left": 634.15625
+        },
+        "nextButton": null,
+        "card": {
+          "x": 610.15625,
+          "y": 210.5,
+          "width": 391.84375,
+          "height": 465,
+          "top": 210.5,
+          "right": 1002,
+          "bottom": 675.5,
+          "left": 610.15625
+        },
+        "board": {
+          "x": 22,
+          "y": 247.265625,
+          "width": 568.15625,
+          "height": 293.46875,
+          "top": 247.265625,
+          "right": 590.15625,
+          "bottom": 540.734375,
+          "left": 22
+        },
+        "questionToAnswerGap": 54.359375,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 27,
+          "lineHeight": 35.1,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 836,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 884,
+              "bottom": 70,
+              "left": 836
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 895,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 943,
+              "bottom": 70,
+              "left": 895
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 954,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1002,
+              "bottom": 70,
+              "left": 954
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 179.296875,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 227.296875,
+              "bottom": 600.734375,
+              "left": 179.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 384.84375,
+              "y": 552.734375,
+              "width": 48,
+              "height": 48,
+              "top": 552.734375,
+              "right": 432.84375,
+              "bottom": 600.734375,
+              "left": 384.84375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 634.15625,
+              "y": 595.5,
+              "width": 165.921875,
+              "height": 56,
+              "top": 595.5,
+              "right": 800.078125,
+              "bottom": 651.5,
+              "left": 634.15625
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 812.078125,
+              "y": 595.5,
+              "width": 165.921875,
+              "height": 56,
+              "top": 595.5,
+              "right": 978,
+              "bottom": 651.5,
+              "left": 812.078125
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "scenario": "answer-longest",
+      "width": 1440,
+      "height": 900,
+      "path": "acceptance/alcoholfabet/screenshots/alcoholfabet-answer-longest-1440x900.png",
+      "geometry": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "h2": {
+          "x": 922.296875,
+          "y": 398.65625,
+          "width": 453.703125,
+          "height": 128.671875,
+          "top": 398.65625,
+          "right": 1376,
+          "bottom": 527.328125,
+          "left": 922.296875
+        },
+        "questionCopy": {
+          "x": 922.296875,
+          "y": 332,
+          "width": 453.703125,
+          "height": 256,
+          "top": 332,
+          "right": 1376,
+          "bottom": 588,
+          "left": 922.296875
+        },
+        "answerSpace": {
+          "x": 922.296875,
+          "y": 588,
+          "width": 453.703125,
+          "height": 84,
+          "top": 588,
+          "right": 1376,
+          "bottom": 672,
+          "left": 922.296875
+        },
+        "drinkNotice": null,
+        "resultNote": null,
+        "actions": {
+          "x": 922.296875,
+          "y": 688,
+          "width": 453.703125,
+          "height": 56,
+          "top": 688,
+          "right": 1376,
+          "bottom": 744,
+          "left": 922.296875
+        },
+        "nextButton": null,
+        "card": {
+          "x": 890.296875,
+          "y": 261,
+          "width": 517.703125,
+          "height": 510,
+          "top": 261,
+          "right": 1408,
+          "bottom": 771,
+          "left": 890.296875
+        },
+        "board": {
+          "x": 32,
+          "y": 253.078125,
+          "width": 828.296875,
+          "height": 427.828125,
+          "top": 253.078125,
+          "right": 860.296875,
+          "bottom": 680.90625,
+          "left": 32
+        },
+        "questionToAnswerGap": 60.671875,
+        "noticeToResultGap": null,
+        "resultToButtonGap": null,
+        "questionFont": {
+          "family": "Nunito, \"Avenir Next\", system-ui, sans-serif",
+          "size": 33,
+          "lineHeight": 42.9,
+          "lines": 3
+        },
+        "fontLoaded": true,
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "bounds": {
+              "x": 1242,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1290,
+              "bottom": 70,
+              "left": 1242
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "So activat",
+            "bounds": {
+              "x": 1301,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1349,
+              "bottom": 70,
+              "left": 1301
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Sortir",
+            "bounds": {
+              "x": 1360,
+              "y": 22,
+              "width": 48,
+              "height": 48,
+              "top": 22,
+              "right": 1408,
+              "bottom": 70,
+              "left": 1360
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles anteriors",
+            "bounds": {
+              "x": 319.375,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 367.375,
+              "bottom": 740.90625,
+              "left": 319.375
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Veure les caselles següents",
+            "bounds": {
+              "x": 524.921875,
+              "y": 692.90625,
+              "width": 48,
+              "height": 48,
+              "top": 692.90625,
+              "right": 572.921875,
+              "bottom": 740.90625,
+              "left": 524.921875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Incorrecte",
+            "bounds": {
+              "x": 922.296875,
+              "y": 688,
+              "width": 220.84375,
+              "height": 56,
+              "top": 688,
+              "right": 1143.140625,
+              "bottom": 744,
+              "left": 922.296875
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          },
+          {
+            "label": "Correcte",
+            "bounds": {
+              "x": 1155.140625,
+              "y": 688,
+              "width": 220.859375,
+              "height": 56,
+              "top": 688,
+              "right": 1376,
+              "bottom": 744,
+              "left": 1155.140625
+            },
+            "opacity": "1",
+            "visibility": "visible"
+          }
+        ],
+        "storageKeys": []
+      },
+      "status": "PASS",
+      "failures": []
+    }
+  ],
+  "assertionErrors": [],
+  "blockedApi": [],
+  "external": [],
+  "pageErrors": [],
+  "authDbRequests": 0,
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0,
+  "emptyStorage": true,
+  "forbiddenAppModulesRequested": false,
+  "temporaryHarnessRemoved": true,
+  "styles": [
+    {
+      "path": "src/styles/game.css",
+      "sha256": "1f4020404114e35aa3854d83fe7a3c969d1a7271e96b5063251042becd92249a"
+    },
+    {
+      "path": "src/styles/base.css",
+      "sha256": "181743ac573d59833ca247c50630d85058db0cb0f16cbc8f15cbccd8888559fe"
+    },
+    {
+      "path": "src/art-system/board.css",
+      "sha256": "ef6f595d9ce64d4a3bbec70c8883a75f54226fd8c096a31c5396827c3e3736f5"
+    },
+    {
+      "path": "src/art-system/drink.css",
+      "sha256": "1e394d7be5cc4c46ac51fe0202a7ba540f83db40a612d00dfcfced5ec05bfe50"
+    }
+  ],
+  "visualInspectionPending": false,
+  "manualInspection": {
+    "status": "PASS",
+    "viewports": [
+      "360x800",
+      "390x844",
+      "430x932",
+      "1024x768",
+      "1440x900"
+    ],
+    "findings": [
+      "Pregunta completa de 23 a 33 px, marge amb resposta o avís i controls dins del paper.",
+      "Capçalera compacta sense avatars i tauler d’amplada completa en mòbil.",
+      "Dos gots i nom del respondent llegibles; brindis i bombolles executats al report de motion.",
+      "Portada amb tauler i gots, sense figures o fotografies de perfil."
+    ],
+    "method": "Inspecció de PNG originals de components i captures de l’app real; totes les geometries de les 30 captures passen."
+  },
+  "finalSourceHashesMatch": true
+}

@@ -1,0 +1,147 @@
+{
+  "scope": "gameplay-refinement",
+  "status": "COMPLETE",
+  "noSecrets": true,
+  "projectRef": "lhgyopkwstuyxolwfucq",
+  "scoreboard": {
+    "pauWins": 1,
+    "teclaWins": 1,
+    "completedGames": 2
+  },
+  "completedAt": "2026-10-09T15:04:34.640631+00:00",
+  "deletedGames": 13,
+  "deletedUsers": 18,
+  "questionCount": 130,
+  "requestedGames": 13,
+  "requestedUsers": 18,
+  "couplePreserved": true,
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "questionsPreserved": true,
+  "accessHashPreserved": true,
+  "deletedMatchResults": 5,
+  "preservedOtherGames": 14,
+  "preservedOtherUsers": 6,
+  "unlistedRowsUnchanged": true,
+  "relatedTableVerification": {
+    "auth.sessions": {
+      "status": "PASS",
+      "preservedRows": 6,
+      "remainingQaRows": 0
+    },
+    "auth.identities": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "public.game_cells": {
+      "status": "PASS",
+      "preservedRows": 115,
+      "remainingQaRows": 0
+    },
+    "public.game_events": {
+      "status": "PASS",
+      "preservedRows": 235,
+      "remainingQaRows": 0
+    },
+    "auth.refresh_tokens": {
+      "status": "PASS",
+      "preservedRows": 11,
+      "remainingQaRows": 0
+    },
+    "public.game_members": {
+      "status": "PASS",
+      "preservedRows": 14,
+      "remainingQaRows": 0
+    },
+    "public.couple_admins": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "private.access_attempts": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "public.authorized_devices": {
+      "status": "PASS",
+      "preservedRows": 2,
+      "remainingQaRows": 0
+    },
+    "public.game_question_usage": {
+      "status": "PASS",
+      "preservedRows": 53,
+      "remainingQaRows": 0
+    }
+  },
+  "preservedOtherMatchResults": 2,
+  "remainingQaAuthorizedDevices": 0,
+  "method": "Supabase MCP execute_sql",
+  "preflight": {
+    "scope": "gameplay-refinement",
+    "noSecrets": true,
+    "qaResults": 5,
+    "foundGames": 13,
+    "foundUsers": 18,
+    "questionCount": 130,
+    "requestedGames": 13,
+    "requestedUsers": 18,
+    "preservedOtherGames": 14,
+    "preservedOtherUsers": 6,
+    "preservedOtherResults": 2,
+    "unlistedOwnersOrMembers": 0,
+    "nonAnonymousOrAdminUsers": 0,
+    "unlistedGamesOwnedByQaUser": 0,
+    "unlistedMembershipsForQaUser": 0,
+    "expectedPostCleanupScoreboard": {
+      "pauWins": 1,
+      "teclaWins": 1,
+      "completedGames": 2
+    }
+  },
+  "cleanupScopeSource": "acceptance/gameplay-refinement/QA_E2E_MANIFEST.json",
+  "historicalCountsAreNotResetTargets": true,
+  "temporaryQaFiles": {
+    "knownPaths": [
+      "/tmp/tecla-pau-gameplay_e2e-raw.json",
+      "/tmp/tecla-pau-complete_games_e2e-raw.json",
+      "/tmp/tecla-pau-in_person_complete_recheck-raw.json"
+    ],
+    "removedByThisCleanup": [],
+    "absentAfterCleanup": true,
+    "runnerAlreadyRemovesCompletedRawReports": true
+  },
+  "privateProductionFiles": [
+    {
+      "path": ".env.local",
+      "mode": "0600",
+      "preserved": true,
+      "contentsRead": false
+    },
+    {
+      "path": "/home/pau/.config/tecla-pau/access-code.txt",
+      "mode": "0600",
+      "preserved": true,
+      "contentsRead": false
+    }
+  ],
+  "browserContextsClosedByOwnerBeforeCleanup": true,
+  "postCleanupVerification": {
+    "noSecrets": true,
+    "remainingQaCells": 0,
+    "remainingQaGames": 0,
+    "remainingQaUsers": 0,
+    "remainingQaEvents": 0,
+    "remainingQaDevices": 0,
+    "remainingQaMembers": 0,
+    "remainingQaResults": 0,
+    "remainingQaSessions": 0,
+    "remainingQaIdentities": 0,
+    "remainingQaQuestionUsage": 0,
+    "remainingQaRefreshTokens": 0,
+    "remainingQaAccessAttempts": 0
+  },
+  "postCleanupVerificationAt": "2026-10-09T15:06:41.576Z",
+  "qaCleanupVerified": true
+}

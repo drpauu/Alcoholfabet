@@ -1,0 +1,2823 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T14:32:33.980Z",
+  "componentHarness": true,
+  "fullAppTest": false,
+  "appBooted": false,
+  "realComponents": [
+    "Scene",
+    "ArtPanel",
+    "ArtCard",
+    "ArtButton",
+    "PlayerBadge"
+  ],
+  "baseline": true,
+  "viewports": [
+    [
+      390,
+      844
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "profileSizes": [
+    [
+      37,
+      40
+    ],
+    [
+      45,
+      48
+    ],
+    [
+      53,
+      56
+    ],
+    [
+      66,
+      70
+    ],
+    [
+      90,
+      95
+    ]
+  ],
+  "captures": [
+    {
+      "scene": "home",
+      "width": 390,
+      "height": 844,
+      "path": "audit/gameplay-refinement-before/screenshots/home-390x844.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/home-390x844-sampling.png",
+      "capturedAt": "2026-10-09T14:32:15.538Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 17,
+              "y": 22.5,
+              "width": 114.4375,
+              "height": 29,
+              "top": 22.5,
+              "right": 131.4375,
+              "bottom": 51.5,
+              "left": 17
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "29px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "EL NOSTRE JOC",
+            "bounds": {
+              "x": 142.859375,
+              "y": 79,
+              "width": 104.265625,
+              "height": 14,
+              "top": 79,
+              "right": 247.125,
+              "bottom": 93,
+              "left": 142.859375
+            },
+            "color": "rgb(116, 86, 51)",
+            "fontSize": "10px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 237, 209) 0px 1px 2px",
+            "textStrokeColor": "rgb(116, 86, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-logo",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 71.890625,
+              "y": 97,
+              "width": 246.203125,
+              "height": 66.765625,
+              "top": 97,
+              "right": 318.09375,
+              "bottom": 163.765625,
+              "left": 71.890625
+            },
+            "color": "rgb(52, 62, 58)",
+            "fontSize": "62.4px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(239, 215, 169) 0px 2px 0px, rgba(255, 229, 185, 0.65) 0px 3px 12px",
+            "textStrokeColor": "rgb(52, 62, 58)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-tagline",
+            "text": "Una taula. Dos còmplices. Moltes preguntes.",
+            "bounds": {
+              "x": 53.578125,
+              "y": 169.765625,
+              "width": 282.84375,
+              "height": 19,
+              "top": 169.765625,
+              "right": 336.421875,
+              "bottom": 188.765625,
+              "left": 53.578125
+            },
+            "color": "rgb(80, 57, 33)",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 237, 212) 0px 1px 3px",
+            "textStrokeColor": "rgb(80, 57, 33)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button art-button--quiet text-button",
+            "text": "Normes",
+            "bounds": {
+              "x": 137.125,
+              "y": 780,
+              "width": 115.734375,
+              "height": 48,
+              "top": 780,
+              "right": 252.859375,
+              "bottom": 828,
+              "left": 137.125
+            },
+            "color": "rgb(249, 231, 196)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(77, 43, 27) 0px 1px 2px",
+            "textStrokeColor": "rgb(249, 231, 196)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [
+          {
+            "classes": "",
+            "player": "PAU",
+            "frame": {
+              "x": 2.765625,
+              "y": 328.0625,
+              "width": 206.46875,
+              "height": 252.9375,
+              "top": 328.0625,
+              "right": 209.234375,
+              "bottom": 581,
+              "left": 2.765625
+            },
+            "image": {
+              "x": 2.765625,
+              "y": 328.0625,
+              "width": 206.46875,
+              "height": 252.9375,
+              "top": 328.0625,
+              "right": 209.234375,
+              "bottom": 581,
+              "left": 2.765625
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 206.469,
+            "computedImageHeight": 252.938,
+            "estimatedNoseInFrame": {
+              "x": 0.6,
+              "y": 0.36499999999999994,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "player": "TECLA",
+            "frame": {
+              "x": 180.765625,
+              "y": 328.0625,
+              "width": 206.46875,
+              "height": 252.9375,
+              "top": 328.0625,
+              "right": 387.234375,
+              "bottom": 581,
+              "left": 180.765625
+            },
+            "image": {
+              "x": 180.765625,
+              "y": 328.0625,
+              "width": 206.46875,
+              "height": 252.9375,
+              "top": 328.0625,
+              "right": 387.234375,
+              "bottom": 581,
+              "left": 180.765625
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 206.469,
+            "computedImageHeight": 252.938,
+            "estimatedNoseInFrame": {
+              "x": 0.30000000000000004,
+              "y": 0.33000000000000007,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 317,
+            "bottom": 61,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 373,
+            "bottom": 61,
+            "left": 325
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 17,
+            "y": 644,
+            "width": 356,
+            "height": 57,
+            "top": 644,
+            "right": 373,
+            "bottom": 701,
+            "left": 17
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 17,
+            "y": 714,
+            "width": 356,
+            "height": 57,
+            "top": 714,
+            "right": 373,
+            "bottom": 771,
+            "left": 17
+          },
+          {
+            "label": "Normes",
+            "x": 137.125,
+            "y": 780,
+            "width": 115.734375,
+            "height": 48,
+            "top": 780,
+            "right": 252.859375,
+            "bottom": 828,
+            "left": 137.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "home",
+      "width": 1024,
+      "height": 768,
+      "path": "audit/gameplay-refinement-before/screenshots/home-1024x768.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/home-1024x768-sampling.png",
+      "capturedAt": "2026-10-09T14:32:17.656Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "EL NOSTRE JOC",
+            "bounds": {
+              "x": 459.859375,
+              "y": 79,
+              "width": 104.265625,
+              "height": 14,
+              "top": 79,
+              "right": 564.125,
+              "bottom": 93,
+              "left": 459.859375
+            },
+            "color": "rgb(116, 86, 51)",
+            "fontSize": "10px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 237, 209) 0px 1px 2px",
+            "textStrokeColor": "rgb(116, 86, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-logo",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 370.578125,
+              "y": 97,
+              "width": 282.828125,
+              "height": 76.703125,
+              "top": 97,
+              "right": 653.40625,
+              "bottom": 173.703125,
+              "left": 370.578125
+            },
+            "color": "rgb(52, 62, 58)",
+            "fontSize": "71.68px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(239, 215, 169) 0px 2px 0px, rgba(255, 229, 185, 0.65) 0px 3px 12px",
+            "textStrokeColor": "rgb(52, 62, 58)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-tagline",
+            "text": "Una taula. Dos còmplices. Moltes preguntes.",
+            "bounds": {
+              "x": 350.375,
+              "y": 179.703125,
+              "width": 323.25,
+              "height": 22,
+              "top": 179.703125,
+              "right": 673.625,
+              "bottom": 201.703125,
+              "left": 350.375
+            },
+            "color": "rgb(80, 57, 33)",
+            "fontSize": "16px",
+            "fontWeight": "600",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 237, 212) 0px 1px 3px",
+            "textStrokeColor": "rgb(80, 57, 33)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button art-button--quiet text-button",
+            "text": "Normes",
+            "bounds": {
+              "x": 454.125,
+              "y": 698,
+              "width": 115.734375,
+              "height": 48,
+              "top": 698,
+              "right": 569.859375,
+              "bottom": 746,
+              "left": 454.125
+            },
+            "color": "rgb(249, 231, 196)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(77, 43, 27) 0px 1px 2px",
+            "textStrokeColor": "rgb(249, 231, 196)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [
+          {
+            "classes": "",
+            "player": "PAU",
+            "frame": {
+              "x": 286.328125,
+              "y": 280.53125,
+              "width": 225.671875,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 512,
+              "bottom": 557,
+              "left": 286.328125
+            },
+            "image": {
+              "x": 286.328125,
+              "y": 280.53125,
+              "width": 225.671875,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 512,
+              "bottom": 557,
+              "left": 286.328125
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 225.672,
+            "computedImageHeight": 276.469,
+            "estimatedNoseInFrame": {
+              "x": 0.6,
+              "y": 0.3649999999999999,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "player": "TECLA",
+            "frame": {
+              "x": 512,
+              "y": 280.53125,
+              "width": 225.671875,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 737.671875,
+              "bottom": 557,
+              "left": 512
+            },
+            "image": {
+              "x": 512,
+              "y": 280.53125,
+              "width": 225.671875,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 737.671875,
+              "bottom": 557,
+              "left": 512
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 225.672,
+            "computedImageHeight": 276.469,
+            "estimatedNoseInFrame": {
+              "x": 0.3000000000000001,
+              "y": 0.33,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 885,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 933,
+            "bottom": 70,
+            "left": 885
+          },
+          {
+            "label": "So activat",
+            "x": 944,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 992,
+            "bottom": 70,
+            "left": 944
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 192,
+            "y": 628,
+            "width": 311,
+            "height": 61,
+            "top": 628,
+            "right": 503,
+            "bottom": 689,
+            "left": 192
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 521,
+            "y": 628,
+            "width": 311,
+            "height": 61,
+            "top": 628,
+            "right": 832,
+            "bottom": 689,
+            "left": 521
+          },
+          {
+            "label": "Normes",
+            "x": 454.125,
+            "y": 698,
+            "width": 115.734375,
+            "height": 48,
+            "top": 698,
+            "right": 569.859375,
+            "bottom": 746,
+            "left": 454.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "home",
+      "width": 1440,
+      "height": 900,
+      "path": "audit/gameplay-refinement-before/screenshots/home-1440x900.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/home-1440x900-sampling.png",
+      "capturedAt": "2026-10-09T14:32:20.349Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "EL NOSTRE JOC",
+            "bounds": {
+              "x": 667.859375,
+              "y": 79,
+              "width": 104.265625,
+              "height": 14,
+              "top": 79,
+              "right": 772.125,
+              "bottom": 93,
+              "left": 667.859375
+            },
+            "color": "rgb(116, 86, 51)",
+            "fontSize": "10px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 237, 209) 0px 1px 2px",
+            "textStrokeColor": "rgb(116, 86, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-logo",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 521.125,
+              "y": 97,
+              "width": 397.75,
+              "height": 107.84375,
+              "top": 97,
+              "right": 918.875,
+              "bottom": 204.84375,
+              "left": 521.125
+            },
+            "color": "rgb(52, 62, 58)",
+            "fontSize": "100.8px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(239, 215, 169) 0px 2px 0px, rgba(255, 229, 185, 0.65) 0px 3px 12px",
+            "textStrokeColor": "rgb(52, 62, 58)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "home-tagline",
+            "text": "Una taula. Dos còmplices. Moltes preguntes.",
+            "bounds": {
+              "x": 558.375,
+              "y": 210.84375,
+              "width": 323.25,
+              "height": 22,
+              "top": 210.84375,
+              "right": 881.625,
+              "bottom": 232.84375,
+              "left": 558.375
+            },
+            "color": "rgb(80, 57, 33)",
+            "fontSize": "16px",
+            "fontWeight": "600",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 237, 212) 0px 1px 3px",
+            "textStrokeColor": "rgb(80, 57, 33)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button art-button--quiet text-button",
+            "text": "Normes",
+            "bounds": {
+              "x": 662.125,
+              "y": 830,
+              "width": 115.734375,
+              "height": 48,
+              "top": 830,
+              "right": 777.859375,
+              "bottom": 878,
+              "left": 662.125
+            },
+            "color": "rgb(249, 231, 196)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(77, 43, 27) 0px 1px 2px",
+            "textStrokeColor": "rgb(249, 231, 196)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [
+          {
+            "classes": "",
+            "player": "PAU",
+            "frame": {
+              "x": 404.109375,
+              "y": 302,
+              "width": 315.890625,
+              "height": 387,
+              "top": 302,
+              "right": 720,
+              "bottom": 689,
+              "left": 404.109375
+            },
+            "image": {
+              "x": 404.109375,
+              "y": 302,
+              "width": 315.890625,
+              "height": 387,
+              "top": 302,
+              "right": 720,
+              "bottom": 689,
+              "left": 404.109375
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 315.891,
+            "computedImageHeight": 387,
+            "estimatedNoseInFrame": {
+              "x": 0.5999999999999999,
+              "y": 0.365,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "player": "TECLA",
+            "frame": {
+              "x": 720,
+              "y": 302,
+              "width": 315.890625,
+              "height": 387,
+              "top": 302,
+              "right": 1035.890625,
+              "bottom": 689,
+              "left": 720
+            },
+            "image": {
+              "x": 720,
+              "y": 302,
+              "width": 315.890625,
+              "height": 387,
+              "top": 302,
+              "right": 1035.890625,
+              "bottom": 689,
+              "left": 720
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "clip": null,
+            "objectFit": "contain",
+            "transform": "none",
+            "computedImageWidth": 315.891,
+            "computedImageHeight": 387,
+            "estimatedNoseInFrame": {
+              "x": 0.29999999999999993,
+              "y": 0.33000000000000007,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 400,
+            "y": 760,
+            "width": 311,
+            "height": 61,
+            "top": 760,
+            "right": 711,
+            "bottom": 821,
+            "left": 400
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 729,
+            "y": 760,
+            "width": 311,
+            "height": 61,
+            "top": 760,
+            "right": 1040,
+            "bottom": 821,
+            "left": 729
+          },
+          {
+            "label": "Normes",
+            "x": 662.125,
+            "y": 830,
+            "width": 115.734375,
+            "height": 48,
+            "top": 830,
+            "right": 777.859375,
+            "bottom": 878,
+            "left": 662.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "role",
+      "width": 390,
+      "height": 844,
+      "path": "audit/gameplay-refinement-before/screenshots/role-390x844.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/role-390x844-sampling.png",
+      "capturedAt": "2026-10-09T14:32:21.682Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 17,
+              "y": 22.5,
+              "width": 114.4375,
+              "height": 29,
+              "top": 22.5,
+              "right": 131.4375,
+              "bottom": 51.5,
+              "left": 17
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "29px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 81,
+              "y": 327.359375,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 327.359375,
+              "right": 123.484375,
+              "bottom": 344.859375,
+              "left": 81
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Qui ets?",
+            "bounds": {
+              "x": 41,
+              "y": 374.109375,
+              "width": 308,
+              "height": 33.265625,
+              "top": 374.109375,
+              "right": 349,
+              "bottom": 407.375,
+              "left": 41
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "26px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "PauSoc en Pau",
+            "bounds": {
+              "x": 70.078125,
+              "y": 445.375,
+              "width": 89.328125,
+              "height": 79.5,
+              "top": 445.375,
+              "right": 159.40625,
+              "bottom": 524.875,
+              "left": 70.078125
+            },
+            "color": "rgb(47, 82, 103)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(47, 82, 103)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "TeclaSoc la Tecla",
+            "bounds": {
+              "x": 225.5625,
+              "y": 445.375,
+              "width": 99.359375,
+              "height": 79.5,
+              "top": 445.375,
+              "right": 324.921875,
+              "bottom": 524.875,
+              "left": 225.5625
+            },
+            "color": "rgb(127, 68, 79)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(127, 68, 79)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [
+          {
+            "classes": "player-avatar player-portrait player-portrait--pau",
+            "player": "PAU",
+            "frame": {
+              "x": 70.078125,
+              "y": 445.375,
+              "width": 53,
+              "height": 56,
+              "top": 445.375,
+              "right": 123.078125,
+              "bottom": 501.375,
+              "left": 70.078125
+            },
+            "image": {
+              "x": 59.09375,
+              "y": 447.890625,
+              "width": 74.46875,
+              "height": 91.21875,
+              "top": 447.890625,
+              "right": 133.5625,
+              "bottom": 539.109375,
+              "left": 59.09375
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 72.078125,
+                "y": 447.375,
+                "width": 49,
+                "height": 52,
+                "top": 447.375,
+                "right": 121.078125,
+                "bottom": 499.375,
+                "left": 72.078125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 74.4688,
+            "computedImageHeight": 91.2188,
+            "estimatedNoseInFrame": {
+              "x": 0.6357900943396227,
+              "y": 0.6394726562499997,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar player-portrait player-portrait--tecla",
+            "player": "TECLA",
+            "frame": {
+              "x": 225.5625,
+              "y": 445.375,
+              "width": 53,
+              "height": 56,
+              "top": 445.375,
+              "right": 278.5625,
+              "bottom": 501.375,
+              "left": 225.5625
+            },
+            "image": {
+              "x": 224.140625,
+              "y": 447.890625,
+              "width": 73.984375,
+              "height": 90.625,
+              "top": 447.890625,
+              "right": 298.125,
+              "bottom": 538.515625,
+              "left": 224.140625
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 227.5625,
+                "y": 447.375,
+                "width": 49,
+                "height": 52,
+                "top": 447.375,
+                "right": 276.5625,
+                "bottom": 499.375,
+                "left": 227.5625
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 73.9844,
+            "computedImageHeight": 90.625,
+            "estimatedNoseInFrame": {
+              "x": 0.39195165094339623,
+              "y": 0.5789620535714286,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 317,
+            "bottom": 61,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 373,
+            "bottom": 61,
+            "left": 325
+          },
+          {
+            "label": "Enrere",
+            "x": 41,
+            "y": 317.109375,
+            "width": 89.484375,
+            "height": 48,
+            "top": 317.109375,
+            "right": 130.484375,
+            "bottom": 365.109375,
+            "left": 41
+          },
+          {
+            "label": "PauSoc en Pau",
+            "x": 41,
+            "y": 430.375,
+            "width": 147.5,
+            "height": 109.5,
+            "top": 430.375,
+            "right": 188.5,
+            "bottom": 539.875,
+            "left": 41
+          },
+          {
+            "label": "TeclaSoc la Tecla",
+            "x": 201.5,
+            "y": 430.375,
+            "width": 147.5,
+            "height": 109.5,
+            "top": 430.375,
+            "right": 349,
+            "bottom": 539.875,
+            "left": 201.5
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "role",
+      "width": 1024,
+      "height": 768,
+      "path": "audit/gameplay-refinement-before/screenshots/role-1024x768.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/role-1024x768-sampling.png",
+      "capturedAt": "2026-10-09T14:32:23.767Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 318,
+              "y": 294.84375,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 294.84375,
+              "right": 360.484375,
+              "bottom": 312.34375,
+              "left": 318
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Qui ets?",
+            "bounds": {
+              "x": 278,
+              "y": 341.59375,
+              "width": 468,
+              "height": 39.3125,
+              "top": 341.59375,
+              "right": 746,
+              "bottom": 380.90625,
+              "left": 278
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "30.72px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "PauSoc en Pau",
+            "bounds": {
+              "x": 346.828125,
+              "y": 417.90625,
+              "width": 89.328125,
+              "height": 79.5,
+              "top": 417.90625,
+              "right": 436.15625,
+              "bottom": 497.40625,
+              "left": 346.828125
+            },
+            "color": "rgb(47, 82, 103)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(47, 82, 103)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "TeclaSoc la Tecla",
+            "bounds": {
+              "x": 582.8125,
+              "y": 417.90625,
+              "width": 99.359375,
+              "height": 79.5,
+              "top": 417.90625,
+              "right": 682.171875,
+              "bottom": 497.40625,
+              "left": 582.8125
+            },
+            "color": "rgb(127, 68, 79)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(127, 68, 79)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [
+          {
+            "classes": "player-avatar player-portrait player-portrait--pau",
+            "player": "PAU",
+            "frame": {
+              "x": 346.828125,
+              "y": 417.90625,
+              "width": 53,
+              "height": 56,
+              "top": 417.90625,
+              "right": 399.828125,
+              "bottom": 473.90625,
+              "left": 346.828125
+            },
+            "image": {
+              "x": 335.84375,
+              "y": 420.421875,
+              "width": 74.46875,
+              "height": 91.21875,
+              "top": 420.421875,
+              "right": 410.3125,
+              "bottom": 511.640625,
+              "left": 335.84375
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 348.828125,
+                "y": 419.90625,
+                "width": 49,
+                "height": 52,
+                "top": 419.90625,
+                "right": 397.828125,
+                "bottom": 471.90625,
+                "left": 348.828125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 74.4688,
+            "computedImageHeight": 91.2188,
+            "estimatedNoseInFrame": {
+              "x": 0.6357900943396222,
+              "y": 0.6394726562499997,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar player-portrait player-portrait--tecla",
+            "player": "TECLA",
+            "frame": {
+              "x": 582.8125,
+              "y": 417.90625,
+              "width": 53,
+              "height": 56,
+              "top": 417.90625,
+              "right": 635.8125,
+              "bottom": 473.90625,
+              "left": 582.8125
+            },
+            "image": {
+              "x": 581.390625,
+              "y": 420.421875,
+              "width": 73.984375,
+              "height": 90.625,
+              "top": 420.421875,
+              "right": 655.375,
+              "bottom": 511.046875,
+              "left": 581.390625
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 584.8125,
+                "y": 419.90625,
+                "width": 49,
+                "height": 52,
+                "top": 419.90625,
+                "right": 633.8125,
+                "bottom": 471.90625,
+                "left": 584.8125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 73.9844,
+            "computedImageHeight": 90.625,
+            "estimatedNoseInFrame": {
+              "x": 0.39195165094339623,
+              "y": 0.5789620535714286,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 885,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 933,
+            "bottom": 70,
+            "left": 885
+          },
+          {
+            "label": "So activat",
+            "x": 944,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 992,
+            "bottom": 70,
+            "left": 944
+          },
+          {
+            "label": "Enrere",
+            "x": 278,
+            "y": 284.59375,
+            "width": 89.484375,
+            "height": 48,
+            "top": 284.59375,
+            "right": 367.484375,
+            "bottom": 332.59375,
+            "left": 278
+          },
+          {
+            "label": "PauSoc en Pau",
+            "x": 278,
+            "y": 402.90625,
+            "width": 227,
+            "height": 109.5,
+            "top": 402.90625,
+            "right": 505,
+            "bottom": 512.40625,
+            "left": 278
+          },
+          {
+            "label": "TeclaSoc la Tecla",
+            "x": 519,
+            "y": 402.90625,
+            "width": 227,
+            "height": 109.5,
+            "top": 402.90625,
+            "right": 746,
+            "bottom": 512.40625,
+            "left": 519
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "role",
+      "width": 1440,
+      "height": 900,
+      "path": "audit/gameplay-refinement-before/screenshots/role-1440x900.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/role-1440x900-sampling.png",
+      "capturedAt": "2026-10-09T14:32:27.055Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 530,
+              "y": 358.375,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 358.375,
+              "right": 572.484375,
+              "bottom": 375.875,
+              "left": 530
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Qui ets?",
+            "bounds": {
+              "x": 490,
+              "y": 405.125,
+              "width": 460,
+              "height": 42.234375,
+              "top": 405.125,
+              "right": 950,
+              "bottom": 447.359375,
+              "left": 490
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "33px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "PauSoc en Pau",
+            "bounds": {
+              "x": 556.828125,
+              "y": 490.359375,
+              "width": 89.328125,
+              "height": 79.5,
+              "top": 490.359375,
+              "right": 646.15625,
+              "bottom": 569.859375,
+              "left": 556.828125
+            },
+            "color": "rgb(47, 82, 103)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(47, 82, 103)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "TeclaSoc la Tecla",
+            "bounds": {
+              "x": 788.8125,
+              "y": 490.359375,
+              "width": 99.359375,
+              "height": 79.5,
+              "top": 490.359375,
+              "right": 888.171875,
+              "bottom": 569.859375,
+              "left": 788.8125
+            },
+            "color": "rgb(127, 68, 79)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(127, 68, 79)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [
+          {
+            "classes": "player-avatar player-portrait player-portrait--pau",
+            "player": "PAU",
+            "frame": {
+              "x": 556.828125,
+              "y": 490.359375,
+              "width": 53,
+              "height": 56,
+              "top": 490.359375,
+              "right": 609.828125,
+              "bottom": 546.359375,
+              "left": 556.828125
+            },
+            "image": {
+              "x": 545.84375,
+              "y": 492.875,
+              "width": 74.46875,
+              "height": 91.21875,
+              "top": 492.875,
+              "right": 620.3125,
+              "bottom": 584.09375,
+              "left": 545.84375
+            },
+            "src": "/assets/production/avatars/pau_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 558.828125,
+                "y": 492.359375,
+                "width": 49,
+                "height": 52,
+                "top": 492.359375,
+                "right": 607.828125,
+                "bottom": 544.359375,
+                "left": 558.828125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 74.4688,
+            "computedImageHeight": 91.2188,
+            "estimatedNoseInFrame": {
+              "x": 0.6357900943396222,
+              "y": 0.6394726562500007,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar player-portrait player-portrait--tecla",
+            "player": "TECLA",
+            "frame": {
+              "x": 788.8125,
+              "y": 490.359375,
+              "width": 53,
+              "height": 56,
+              "top": 490.359375,
+              "right": 841.8125,
+              "bottom": 546.359375,
+              "left": 788.8125
+            },
+            "image": {
+              "x": 787.390625,
+              "y": 492.875,
+              "width": 73.984375,
+              "height": 90.625,
+              "top": 492.875,
+              "right": 861.375,
+              "bottom": 583.5,
+              "left": 787.390625
+            },
+            "src": "/assets/production/avatars/tecla_character_v2.webp",
+            "naturalWidth": 1133,
+            "naturalHeight": 1388,
+            "overflowX": "visible",
+            "overflowY": "visible",
+            "borderRadius": "44% 48% 42% 46%",
+            "backgroundColor": "rgb(189, 152, 102)",
+            "clip": {
+              "bounds": {
+                "x": 790.8125,
+                "y": 492.359375,
+                "width": 49,
+                "height": 52,
+                "top": 492.359375,
+                "right": 839.8125,
+                "bottom": 544.359375,
+                "left": 790.8125
+              },
+              "overflowX": "hidden",
+              "overflowY": "hidden",
+              "borderRadius": "44% 48% 42% 46%"
+            },
+            "objectFit": "fill",
+            "transform": "none",
+            "computedImageWidth": 73.9844,
+            "computedImageHeight": 90.625,
+            "estimatedNoseInFrame": {
+              "x": 0.39195165094339623,
+              "y": 0.5789620535714286,
+              "method": "Approximate landmark from the final master; visual inspection confirms the actual nose"
+            },
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          },
+          {
+            "label": "Enrere",
+            "x": 490,
+            "y": 348.125,
+            "width": 89.484375,
+            "height": 48,
+            "top": 348.125,
+            "right": 579.484375,
+            "bottom": 396.125,
+            "left": 490
+          },
+          {
+            "label": "PauSoc en Pau",
+            "x": 490,
+            "y": 475.359375,
+            "width": 223,
+            "height": 109.5,
+            "top": 475.359375,
+            "right": 713,
+            "bottom": 584.859375,
+            "left": 490
+          },
+          {
+            "label": "TeclaSoc la Tecla",
+            "x": 727,
+            "y": 475.359375,
+            "width": 223,
+            "height": 109.5,
+            "top": 475.359375,
+            "right": 950,
+            "bottom": 584.859375,
+            "left": 727
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "duration",
+      "width": 390,
+      "height": 844,
+      "path": "audit/gameplay-refinement-before/screenshots/duration-390x844.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/duration-390x844-sampling.png",
+      "capturedAt": "2026-10-09T14:32:28.504Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 17,
+              "y": 22.5,
+              "width": 114.4375,
+              "height": 29,
+              "top": 22.5,
+              "right": 131.4375,
+              "bottom": 51.5,
+              "left": 17
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "29px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 81,
+              "y": 173.546875,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 173.546875,
+              "right": 123.484375,
+              "bottom": 191.046875,
+              "left": 81
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "En persona",
+            "bounds": {
+              "x": 41,
+              "y": 220.296875,
+              "width": 308,
+              "height": 14,
+              "top": 220.296875,
+              "right": 349,
+              "bottom": 234.296875,
+              "left": 41
+            },
+            "color": "rgb(116, 86, 51)",
+            "fontSize": "10px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(116, 86, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Quant de temps voleu que duri la partida?",
+            "bounds": {
+              "x": 41,
+              "y": 247.296875,
+              "width": 308,
+              "height": 66.53125,
+              "top": 247.296875,
+              "right": 349,
+              "bottom": 313.828125,
+              "left": 41
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "26px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "20minuts",
+            "bounds": {
+              "x": 92.5625,
+              "y": 351.828125,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 351.828125,
+              "right": 136.921875,
+              "bottom": 410.515625,
+              "left": 92.5625
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "30minuts",
+            "bounds": {
+              "x": 253.0625,
+              "y": 351.828125,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 351.828125,
+              "right": 297.421875,
+              "bottom": 410.515625,
+              "left": 253.0625
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "45minuts",
+            "bounds": {
+              "x": 92.5625,
+              "y": 453.515625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 453.515625,
+              "right": 136.921875,
+              "bottom": 512.203125,
+              "left": 92.5625
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "60minuts",
+            "bounds": {
+              "x": 253.0625,
+              "y": 453.515625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 453.515625,
+              "right": 297.421875,
+              "bottom": 512.203125,
+              "left": 253.0625
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Personalitzada",
+            "bounds": {
+              "x": 146.875,
+              "y": 559.453125,
+              "width": 96.25,
+              "height": 17.5,
+              "top": 559.453125,
+              "right": 243.125,
+              "bottom": 576.953125,
+              "left": 146.875
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "setup-hint",
+            "text": "És una estimació: jugueu al vostre ritme.",
+            "bounds": {
+              "x": 41,
+              "y": 619.203125,
+              "width": 308,
+              "height": 19.5,
+              "top": 619.203125,
+              "right": 349,
+              "bottom": 638.703125,
+              "left": 41
+            },
+            "color": "rgb(120, 101, 79)",
+            "fontSize": "13px",
+            "fontWeight": "400",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(120, 101, 79)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Continuar",
+            "bounds": {
+              "x": 158.5,
+              "y": 679.703125,
+              "width": 72.984375,
+              "height": 20,
+              "top": 679.703125,
+              "right": 231.484375,
+              "bottom": 699.703125,
+              "left": 158.5
+            },
+            "color": "rgb(255, 241, 213)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(99, 61, 39) 0px 1px 1px",
+            "textStrokeColor": "rgb(255, 241, 213)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 317,
+            "bottom": 61,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 373,
+            "bottom": 61,
+            "left": 325
+          },
+          {
+            "label": "Enrere",
+            "x": 41,
+            "y": 163.296875,
+            "width": 89.484375,
+            "height": 48,
+            "top": 163.296875,
+            "right": 130.484375,
+            "bottom": 211.296875,
+            "left": 41
+          },
+          {
+            "label": "20minuts",
+            "x": 41,
+            "y": 336.828125,
+            "width": 147.5,
+            "height": 88.6875,
+            "top": 336.828125,
+            "right": 188.5,
+            "bottom": 425.515625,
+            "left": 41
+          },
+          {
+            "label": "30minuts",
+            "x": 201.5,
+            "y": 336.828125,
+            "width": 147.5,
+            "height": 88.6875,
+            "top": 336.828125,
+            "right": 349,
+            "bottom": 425.515625,
+            "left": 201.5
+          },
+          {
+            "label": "45minuts",
+            "x": 41,
+            "y": 438.515625,
+            "width": 147.5,
+            "height": 88.6875,
+            "top": 438.515625,
+            "right": 188.5,
+            "bottom": 527.203125,
+            "left": 41
+          },
+          {
+            "label": "60minuts",
+            "x": 201.5,
+            "y": 438.515625,
+            "width": 147.5,
+            "height": 88.6875,
+            "top": 438.515625,
+            "right": 349,
+            "bottom": 527.203125,
+            "left": 201.5
+          },
+          {
+            "label": "Personalitzada",
+            "x": 41,
+            "y": 540.203125,
+            "width": 308,
+            "height": 56,
+            "top": 540.203125,
+            "right": 349,
+            "bottom": 596.203125,
+            "left": 41
+          },
+          {
+            "label": "Continuar",
+            "x": 41,
+            "y": 662.703125,
+            "width": 308,
+            "height": 54,
+            "top": 662.703125,
+            "right": 349,
+            "bottom": 716.703125,
+            "left": 41
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "duration",
+      "width": 1024,
+      "height": 768,
+      "path": "audit/gameplay-refinement-before/screenshots/duration-1024x768.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/duration-1024x768-sampling.png",
+      "capturedAt": "2026-10-09T14:32:30.910Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 318,
+              "y": 138,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 138,
+              "right": 360.484375,
+              "bottom": 155.5,
+              "left": 318
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "En persona",
+            "bounds": {
+              "x": 278,
+              "y": 184.75,
+              "width": 468,
+              "height": 14,
+              "top": 184.75,
+              "right": 746,
+              "bottom": 198.75,
+              "left": 278
+            },
+            "color": "rgb(116, 86, 51)",
+            "fontSize": "10px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(116, 86, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Quant de temps voleu que duri la partida?",
+            "bounds": {
+              "x": 278,
+              "y": 211.75,
+              "width": 468,
+              "height": 78.625,
+              "top": 211.75,
+              "right": 746,
+              "bottom": 290.375,
+              "left": 278
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "30.72px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "20minuts",
+            "bounds": {
+              "x": 369.3125,
+              "y": 327.375,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 327.375,
+              "right": 413.671875,
+              "bottom": 386.0625,
+              "left": 369.3125
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "30minuts",
+            "bounds": {
+              "x": 610.3125,
+              "y": 327.375,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 327.375,
+              "right": 654.671875,
+              "bottom": 386.0625,
+              "left": 610.3125
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "45minuts",
+            "bounds": {
+              "x": 369.3125,
+              "y": 430.0625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 430.0625,
+              "right": 413.671875,
+              "bottom": 488.75,
+              "left": 369.3125
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "60minuts",
+            "bounds": {
+              "x": 610.3125,
+              "y": 430.0625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 430.0625,
+              "right": 654.671875,
+              "bottom": 488.75,
+              "left": 610.3125
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Personalitzada",
+            "bounds": {
+              "x": 463.875,
+              "y": 536,
+              "width": 96.25,
+              "height": 17.5,
+              "top": 536,
+              "right": 560.125,
+              "bottom": 553.5,
+              "left": 463.875
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "setup-hint",
+            "text": "És una estimació: jugueu al vostre ritme.",
+            "bounds": {
+              "x": 278,
+              "y": 593.75,
+              "width": 468,
+              "height": 19.5,
+              "top": 593.75,
+              "right": 746,
+              "bottom": 613.25,
+              "left": 278
+            },
+            "color": "rgb(120, 101, 79)",
+            "fontSize": "13px",
+            "fontWeight": "400",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(120, 101, 79)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Continuar",
+            "bounds": {
+              "x": 475.5,
+              "y": 654.25,
+              "width": 72.984375,
+              "height": 20,
+              "top": 654.25,
+              "right": 548.484375,
+              "bottom": 674.25,
+              "left": 475.5
+            },
+            "color": "rgb(255, 241, 213)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(99, 61, 39) 0px 1px 1px",
+            "textStrokeColor": "rgb(255, 241, 213)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 885,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 933,
+            "bottom": 70,
+            "left": 885
+          },
+          {
+            "label": "So activat",
+            "x": 944,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 992,
+            "bottom": 70,
+            "left": 944
+          },
+          {
+            "label": "Enrere",
+            "x": 278,
+            "y": 127.75,
+            "width": 89.484375,
+            "height": 48,
+            "top": 127.75,
+            "right": 367.484375,
+            "bottom": 175.75,
+            "left": 278
+          },
+          {
+            "label": "20minuts",
+            "x": 278,
+            "y": 312.375,
+            "width": 227,
+            "height": 88.6875,
+            "top": 312.375,
+            "right": 505,
+            "bottom": 401.0625,
+            "left": 278
+          },
+          {
+            "label": "30minuts",
+            "x": 519,
+            "y": 312.375,
+            "width": 227,
+            "height": 88.6875,
+            "top": 312.375,
+            "right": 746,
+            "bottom": 401.0625,
+            "left": 519
+          },
+          {
+            "label": "45minuts",
+            "x": 278,
+            "y": 415.0625,
+            "width": 227,
+            "height": 88.6875,
+            "top": 415.0625,
+            "right": 505,
+            "bottom": 503.75,
+            "left": 278
+          },
+          {
+            "label": "60minuts",
+            "x": 519,
+            "y": 415.0625,
+            "width": 227,
+            "height": 88.6875,
+            "top": 415.0625,
+            "right": 746,
+            "bottom": 503.75,
+            "left": 519
+          },
+          {
+            "label": "Personalitzada",
+            "x": 278,
+            "y": 517.75,
+            "width": 468,
+            "height": 54,
+            "top": 517.75,
+            "right": 746,
+            "bottom": 571.75,
+            "left": 278
+          },
+          {
+            "label": "Continuar",
+            "x": 278,
+            "y": 637.25,
+            "width": 468,
+            "height": 54,
+            "top": 637.25,
+            "right": 746,
+            "bottom": 691.25,
+            "left": 278
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "duration",
+      "width": 1440,
+      "height": 900,
+      "path": "audit/gameplay-refinement-before/screenshots/duration-1440x900.png",
+      "samplingPath": "audit/gameplay-refinement-before/screenshots/duration-1440x900-sampling.png",
+      "capturedAt": "2026-10-09T14:32:33.860Z",
+      "layout": {
+        "backgroundFilter": "none",
+        "atmosphere": "rgba(0, 0, 0, 0) radial-gradient(at 65% 35%, rgba(0, 0, 0, 0) 45%, rgba(55, 28, 10, 0.14) 100%) repeat scroll 0% 0% / auto padding-box border-box",
+        "textSamples": [
+          {
+            "selector": "brand",
+            "text": "Pau & Tecla",
+            "bounds": {
+              "x": 32,
+              "y": 28.5,
+              "width": 138.125,
+              "height": 35,
+              "top": 28.5,
+              "right": 170.125,
+              "bottom": 63.5,
+              "left": 32
+            },
+            "color": "rgb(53, 61, 54)",
+            "fontSize": "35px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(255, 240, 188) 0px 1px 1px",
+            "textStrokeColor": "rgb(53, 61, 54)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Enrere",
+            "bounds": {
+              "x": 530,
+              "y": 192.765625,
+              "width": 42.484375,
+              "height": 17.5,
+              "top": 192.765625,
+              "right": 572.484375,
+              "bottom": 210.265625,
+              "left": 530
+            },
+            "color": "rgb(98, 61, 39)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(98, 61, 39)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "eyebrow",
+            "text": "En persona",
+            "bounds": {
+              "x": 490,
+              "y": 239.515625,
+              "width": 460,
+              "height": 14,
+              "top": 239.515625,
+              "right": 950,
+              "bottom": 253.515625,
+              "left": 490
+            },
+            "color": "rgb(116, 86, 51)",
+            "fontSize": "10px",
+            "fontWeight": "800",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(116, 86, 51)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "",
+            "text": "Quant de temps voleu que duri la partida?",
+            "bounds": {
+              "x": 490,
+              "y": 266.515625,
+              "width": 460,
+              "height": 84.46875,
+              "top": 266.515625,
+              "right": 950,
+              "bottom": 350.984375,
+              "left": 490
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "33px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "20minuts",
+            "bounds": {
+              "x": 579.3125,
+              "y": 397.140625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 397.140625,
+              "right": 623.671875,
+              "bottom": 455.828125,
+              "left": 579.3125
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "30minuts",
+            "bounds": {
+              "x": 816.3125,
+              "y": 397.140625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 397.140625,
+              "right": 860.671875,
+              "bottom": 455.828125,
+              "left": 816.3125
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "45minuts",
+            "bounds": {
+              "x": 579.3125,
+              "y": 506.140625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 506.140625,
+              "right": 623.671875,
+              "bottom": 564.828125,
+              "left": 579.3125
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "60minuts",
+            "bounds": {
+              "x": 816.3125,
+              "y": 506.140625,
+              "width": 44.359375,
+              "height": 58.6875,
+              "top": 506.140625,
+              "right": 860.671875,
+              "bottom": 564.828125,
+              "left": 816.3125
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Personalitzada",
+            "bounds": {
+              "x": 671.875,
+              "y": 616.234375,
+              "width": 96.25,
+              "height": 17.5,
+              "top": 616.234375,
+              "right": 768.125,
+              "bottom": 633.734375,
+              "left": 671.875
+            },
+            "color": "rgb(52, 61, 59)",
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(52, 61, 59)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "setup-hint",
+            "text": "És una estimació: jugueu al vostre ritme.",
+            "bounds": {
+              "x": 490,
+              "y": 680.984375,
+              "width": 460,
+              "height": 19.5,
+              "top": 680.984375,
+              "right": 950,
+              "bottom": 700.484375,
+              "left": 490
+            },
+            "color": "rgb(120, 101, 79)",
+            "fontSize": "13px",
+            "fontWeight": "400",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "none",
+            "textStrokeColor": "rgb(120, 101, 79)",
+            "textStrokeWidth": "0px"
+          },
+          {
+            "selector": "art-button__label",
+            "text": "Continuar",
+            "bounds": {
+              "x": 683.5,
+              "y": 741.484375,
+              "width": 72.984375,
+              "height": 20,
+              "top": 741.484375,
+              "right": 756.484375,
+              "bottom": 761.484375,
+              "left": 683.5
+            },
+            "color": "rgb(255, 241, 213)",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "background": "rgba(0, 0, 0, 0)",
+            "textShadow": "rgb(99, 61, 39) 0px 1px 1px",
+            "textStrokeColor": "rgb(255, 241, 213)",
+            "textStrokeWidth": "0px"
+          }
+        ],
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          },
+          {
+            "label": "Enrere",
+            "x": 490,
+            "y": 182.515625,
+            "width": 89.484375,
+            "height": 48,
+            "top": 182.515625,
+            "right": 579.484375,
+            "bottom": 230.515625,
+            "left": 490
+          },
+          {
+            "label": "20minuts",
+            "x": 490,
+            "y": 378.984375,
+            "width": 223,
+            "height": 95,
+            "top": 378.984375,
+            "right": 713,
+            "bottom": 473.984375,
+            "left": 490
+          },
+          {
+            "label": "30minuts",
+            "x": 727,
+            "y": 378.984375,
+            "width": 223,
+            "height": 95,
+            "top": 378.984375,
+            "right": 950,
+            "bottom": 473.984375,
+            "left": 727
+          },
+          {
+            "label": "45minuts",
+            "x": 490,
+            "y": 487.984375,
+            "width": 223,
+            "height": 95,
+            "top": 487.984375,
+            "right": 713,
+            "bottom": 582.984375,
+            "left": 490
+          },
+          {
+            "label": "60minuts",
+            "x": 727,
+            "y": 487.984375,
+            "width": 223,
+            "height": 95,
+            "top": 487.984375,
+            "right": 950,
+            "bottom": 582.984375,
+            "left": 727
+          },
+          {
+            "label": "Personalitzada",
+            "x": 490,
+            "y": 596.984375,
+            "width": 460,
+            "height": 56,
+            "top": 596.984375,
+            "right": 950,
+            "bottom": 652.984375,
+            "left": 490
+          },
+          {
+            "label": "Continuar",
+            "x": 490,
+            "y": 724.484375,
+            "width": 460,
+            "height": 54,
+            "top": 724.484375,
+            "right": 950,
+            "bottom": 778.484375,
+            "left": 490
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/production/avatars/pau_character_v2.webp",
+      "bytes": 397618,
+      "sha256": "f63c9eb054e9660863399b79d3f2b2240dcba91bf07ea909efb80f1414834cd1"
+    },
+    {
+      "path": "/assets/production/avatars/tecla_character_v2.webp",
+      "bytes": 438870,
+      "sha256": "efb11e8c6f209252a5d871c4616ce1705f86bf498ebc6c526ad86347914329cc"
+    }
+  ],
+  "styles": [
+    {
+      "path": "src/styles/base.css",
+      "sha256": "b785ef7654ffa6b8b71db049ac23f62bbce468a4257f5cbbe44ee5b5579dd808"
+    },
+    {
+      "path": "src/art-system/tokens.css",
+      "sha256": "12a89ee8b19c2b7b37eab73856a591f129277887f0a65baa34652b2b2773b9c9"
+    },
+    {
+      "path": "src/styles/game.css",
+      "sha256": "29ec9e55ce1fb757a18db6fd98e62e44afad2e0d7842f8da69521b2c96873449"
+    }
+  ],
+  "externalRequests": [],
+  "authDbRequests": [],
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0,
+  "emptyBrowserStorage": true,
+  "forbiddenAppModulesRequested": false,
+  "errors": [],
+  "temporaryHarnessRemoved": true,
+  "visualInspectionPending": false,
+  "recapture": null,
+  "noSecrets": true
+}

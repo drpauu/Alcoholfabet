@@ -154,8 +154,9 @@ export async function runSequence(sequence: MotionSequence, options: RunOptions)
         await animate(path, [{ strokeDashoffset: length }, { strokeDashoffset: 0 }], duration);
       }));
     } else if (step.action === 'emit') {
-      const count = Math.min(step.count ?? 3, step.target === 'confetti' ? 18 : 3);
-      const colors = ['var(--art-pau, #426c82)', 'var(--art-tecla, #ac6570)', 'var(--art-ochre, #b68b43)', 'var(--art-olive, #727958)', 'var(--art-tp, #84708c)'];
+      const drinking = step.target === 'drinkBubbles';
+      const count = Math.min(step.count ?? 3, step.target === 'confetti' ? 18 : drinking ? 6 : 3);
+      const colors = drinking ? ['#b78035', '#dfb55c', '#f2d28d'] : ['var(--art-pau, #426c82)', 'var(--art-tecla, #ac6570)', 'var(--art-ochre, #b68b43)', 'var(--art-olive, #727958)', 'var(--art-tp, #84708c)'];
       await Promise.all(Array.from({ length: count }, async (_, particleIndex) => {
         const particle = document.createElement('span');
         particle.className = step.target === 'confetti' ? 'tp-motion-confetti' : 'tp-motion-particle';
@@ -163,8 +164,8 @@ export async function runSequence(sequence: MotionSequence, options: RunOptions)
         particle.style.left = step.target === 'confetti' ? `${20 + particleIndex * 59 / count}%` : '50%';
         particle.style.top = step.target === 'confetti' ? `${12 + (particleIndex % 4) * 5}%` : '38%';
         element.append(particle); generated.add(particle);
-        const dx = step.target === 'confetti' ? (particleIndex % 2 ? 1 : -1) * (35 + particleIndex * 9) : [-20, 18, 5][particleIndex];
-        const dy = step.target === 'confetti' ? 150 + (particleIndex % 5) * 25 : [-12, -17, -23][particleIndex];
+        const dx = step.target === 'confetti' ? (particleIndex % 2 ? 1 : -1) * (35 + particleIndex * 9) : drinking ? (particleIndex % 2 ? 1 : -1) * (12 + particleIndex * 4) : [-20, 18, 5][particleIndex];
+        const dy = step.target === 'confetti' ? 150 + (particleIndex % 5) * 25 : drinking ? -18 - particleIndex * 4 : [-12, -17, -23][particleIndex];
         await animate(particle, [{ opacity: 0, transform: 'translate(0,0) rotate(0)' }, { opacity: 1, offset: .15 }, { opacity: 0, transform: `translate(${dx}px, ${dy}px) rotate(${step.target === 'confetti' ? 180 + particleIndex * 21 : 90}deg)` }], duration);
       }));
     } else if (step.action === 'moveAlongBoard' || step.action === 'moveOneCell') {
@@ -202,6 +203,14 @@ export async function runSequence(sequence: MotionSequence, options: RunOptions)
       await animate(element, [{ filter: 'drop-shadow(-2px 8px 7px rgb(72 43 24 / .15))' }, { filter: 'drop-shadow(-1px 3px 3px rgb(72 43 24 / .3))' }], duration);
     } else if (step.action === 'pulse') {
       await animate(element, (step.scale ?? [1, 1.06, 1]).map((scale) => ({ transform: `scale(${scale})` })), duration);
+    } else if (step.action === 'raiseGlass') {
+      const second = step.target === 'drinkSecondGlass';
+      await animate(element, [
+        { transform: `translateY(5px) rotate(${second ? 9 : -7}deg) scale(.9)` },
+        { transform: `translateY(-10px) rotate(${second ? -10 : 10}deg) scale(1.07)`, offset: .4 },
+        { transform: `translateY(-5px) rotate(${second ? 6 : -3}deg) scale(1.02)`, offset: .7 },
+        { transform: second ? 'rotate(9deg) translateY(-5px)' : 'translateY(0) rotate(0) scale(1)' },
+      ], duration, 'springSoft');
     } else if (step.action === 'dropAndBounce') {
       await animate(element, [{ opacity: 0, transform: 'translateY(-12px) rotate(-6deg)' }, { opacity: 1, transform: 'translateY(2px) rotate(2deg)', offset: .65 }, { opacity: 1, transform: 'translateY(-3px)', offset: .82 }, { opacity: 1, transform: 'translateY(0)' }], duration);
     } else if (step.action === 'enter') {

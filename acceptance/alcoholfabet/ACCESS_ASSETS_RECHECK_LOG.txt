@@ -1,0 +1,9 @@
+
+Running 1 test using 1 worker
+
+
+
+[1/1] tests/e2e/access-public.spec.ts:35:1 › el navegador no pot llegir el banc cru, secrets, migracions o avatars retirats
+  1 passed (1.4s)
+(node:65345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

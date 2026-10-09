@@ -1,0 +1,73 @@
+
+Running 2 tests using 1 worker
+
+
+
+[1/2] tests/e2e/game.spec.ts:5:1 › partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic
+  1) tests/e2e/game.spec.ts:5:1 › partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'Quant de temps voleu que duri la partida?' })
+    Expected: visible
+    Timeout: 12000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'Quant de temps voleu que duri la partida?' }) with timeout 12000ms
+      - waiting for getByRole('heading', { name: 'Quant de temps voleu que duri la partida?' })
+
+
+      39 |       expect((await currentView(page)).scoreboard.completedGames).toBe(view.scoreboard.completedGames);
+      40 |       await page.getByRole('button', { name: 'Tornar a jugar', exact: true }).click();
+    > 41 |       await expect(page.getByRole('heading', { name: 'Quant de temps voleu que duri la partida?' })).toBeVisible();
+         |                                                                                                      ^
+      42 |       break;
+      43 |     }
+      44 |     await clickAction(page,'Següent torn');
+        at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:41:102
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/game-partida-presencial-ac-2c001-rror-1-Meta-i-marcador-únic/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/game-partida-presencial-ac-2c001-rror-1-Meta-i-marcador-únic/error-context.md
+
+
+
+
+[2/2] tests/e2e/game.spec.ts:52:1 › online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria
+  2) tests/e2e/game.spec.ts:52:1 › online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      133 |     await waitSynced(pau,tecla);
+      134 |   }
+    > 135 |   expect(sawTP).toBe(true); expect(sawBonus).toBe(true); expect(completed).toBe(true); expect(errors).toEqual([]);
+          |                                              ^
+      136 |   await a.close(); await b.close();
+      137 | });
+      138 |
+        at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:135:46
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/game-online-dos-contexts-r-e15da-eload-reconnexió-i-victòria/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/game-online-dos-contexts-r-e15da-eload-reconnexió-i-victòria/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/game-online-dos-contexts-r-e15da-eload-reconnexió-i-victòria/error-context.md
+
+
+  2 failed
+    tests/e2e/game.spec.ts:5:1 › partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic 
+    tests/e2e/game.spec.ts:52:1 › online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria 
+(node:57247) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:57816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

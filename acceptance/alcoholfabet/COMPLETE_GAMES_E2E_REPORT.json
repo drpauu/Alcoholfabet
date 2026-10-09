@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-09T15:35:40.694Z",
+  "completedAt": "2026-10-09T15:39:16.234Z",
+  "command": "npx playwright test tests/e2e/game.spec.ts --grep 'partida presencial:|online: dos contexts' --trace off --reporter=json",
+  "arguments": [
+    "playwright",
+    "test",
+    "tests/e2e/game.spec.ts",
+    "--grep",
+    "partida presencial:|online: dos contexts",
+    "--trace",
+    "off",
+    "--reporter=json"
+  ],
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 0,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 213853.834,
+  "tests": [
+    {
+      "name": "partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 109914,
+      "errors": []
+    },
+    {
+      "name": "online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria",
+      "file": "game.spec.ts",
+      "status": "passed",
+      "durationMs": 102142,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true
+}

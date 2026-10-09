@@ -9,7 +9,6 @@ const env = Object.fromEntries(readFileSync('.env.local', 'utf8').split('\n').fi
 }));
 export const projectUrl = env.VITE_SUPABASE_URL;
 export const publishable = env.VITE_SUPABASE_PUBLISHABLE_KEY;
-export const accessCode = readFileSync(process.env.TECLA_ACCESS_CODE_FILE || '/home/pau/.config/tecla-pau/access-code.txt', 'utf8').trim();
 
 function recordQa(userId: string, gameId?: string) {
   const path=process.env.TECLA_PAU_QA_MANIFEST || 'acceptance/art-redesign/QA_E2E_MANIFEST.json';
@@ -35,8 +34,17 @@ export function trackQaContext(context: BrowserContext): void {
 export async function makeContext(browser: Browser, actor: number, reducedMotion = true): Promise<BrowserContext> {
   const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: reducedMotion ? 'reduce' : 'no-preference' });
   trackQaContext(context);
-  const settings = await context.request.get(`${projectUrl}/auth/v1/settings`, { headers: { apikey: publishable } });
-  const config = await settings.json() as { external?: { anonymous_users?: boolean } };
+  let config: { external?: { anonymous_users?: boolean } } | undefined;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const settings = await context.request.get(`${projectUrl}/auth/v1/settings`, { headers: { apikey: publishable } });
+    if (settings.ok() && settings.headers()['content-type']?.includes('application/json')) {
+      config = await settings.json();
+      break;
+    }
+    if (attempt === 2) throw new Error(`QA_AUTH_SETTINGS_HTTP_${settings.status()}`);
+    await new Promise(resolve => setTimeout(resolve, 500 * (attempt + 1)));
+  }
+  if (!config) throw new Error('QA_AUTH_SETTINGS_INVALID');
   if (!config.external?.anonymous_users) {
     const users = JSON.parse(readFileSync('/tmp/tecla-pau-qa-users.json', 'utf8')) as { email: string; password: string }[];
     const response = await context.request.post(`${projectUrl}/auth/v1/token?grant_type=password`, {
@@ -53,11 +61,6 @@ export async function makeContext(browser: Browser, actor: number, reducedMotion
 
 export async function enter(page: Page) {
   await page.goto('/');
-  await expect(page.getByRole('button',{name:'Entrar',exact:true}).or(page.getByRole('button',{name:'Jugar en persona',exact:true}))).toBeVisible();
-  if (await page.getByLabel('Codi privat',{exact:true}).isVisible()) {
-    await page.getByLabel('Codi privat', { exact: true }).fill(accessCode);
-    await page.getByRole('button', { name: 'Entrar', exact: true }).click();
-  }
   await expect(page.getByRole('button', { name: 'Jugar en persona', exact: true })).toBeVisible();
 }
 
@@ -76,17 +79,21 @@ export async function createGame(page: Page, online: boolean, minutes = 45) {
 
 export async function currentView(page: Page): Promise<GameView> {
   await expect(page.locator('[data-game-id]')).toBeVisible();
-  const view = await page.evaluate(async ({ projectUrl, publishable }) => {
+  const gameId = await page.locator('[data-game-id]').getAttribute('data-game-id');
+  return viewForGame(page, gameId ?? '');
+}
+
+export async function viewForGame(page: Page, gameId: string): Promise<GameView> {
+  const view = await page.evaluate(async ({ projectUrl, publishable, gameId }) => {
     const key = `sb-${new URL(projectUrl).hostname.split('.')[0]}-auth-token`;
     const session = JSON.parse(localStorage.getItem(key) || '{}') as { access_token: string };
-    const gameId = document.querySelector('[data-game-id]')?.getAttribute('data-game-id');
     const response = await fetch(`${projectUrl}/rest/v1/rpc/get_game_view`, {
       method: 'POST', headers: {apikey:publishable,Authorization:`Bearer ${session.access_token}`,'Content-Type':'application/json'},
       body: JSON.stringify({p_game_id:gameId}),
     });
     if (!response.ok) throw new Error(`QA_VIEW_FAILED_HTTP_${response.status}`);
     return response.json() as Promise<GameView>;
-  }, {projectUrl,publishable});
+  }, {projectUrl,publishable,gameId});
   recordQa(view.viewer.userId,view.game.id);
   return view;
 }

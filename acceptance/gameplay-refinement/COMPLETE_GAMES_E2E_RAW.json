@@ -1,0 +1,224 @@
+{
+  "config": {
+    "argv": [
+      "/home/pau/.nvm/versions/node/v24.16.0/bin/node",
+      "/home/pau/Documents/tecla-pau-app/node_modules/.bin/playwright",
+      "test",
+      "tests/e2e/game.spec.ts",
+      "--grep",
+      "partida presencial:|online: dos contexts",
+      "--trace",
+      "off",
+      "--reporter=json"
+    ],
+    "configFile": "/home/pau/Documents/tecla-pau-app/playwright.config.ts",
+    "rootDir": "/home/pau/Documents/tecla-pau-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/pau/Documents/tecla-pau-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/pau/Documents/tecla-pau-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/pau/Documents/tecla-pau-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/home/pau/Documents/tecla-pau-app/tests/e2e",
+        "snapshotDir": "/home/pau/Documents/tecla-pau-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 180000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5173",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "launchOptions": {
+            "executablePath": "/home/pau/.cache/ms-playwright/chromium-1200/chrome-linux64/chrome"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://127.0.0.1:5173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "game.spec.ts",
+      "file": "game.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 91364,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:46:17",
+                    "location": {
+                      "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts",
+                      "column": 17,
+                      "line": 46
+                    },
+                    "snippet": "  44 |     await clickAction(page,'Següent torn');\n  45 |   }\n> 46 |   expect(bonus).toBe(true);\n     |                 ^\n  47 |   expect(completed).toBe(true);\n  48 |   expect(errors).toEqual([]);\n  49 |   await context.close();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts",
+                        "column": 17,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  44 |     await clickAction(page,'Següent torn');\n  45 |   }\n> 46 |   expect(bonus).toBe(true);\n     |                 ^\n  47 |   expect(completed).toBe(true);\n  48 |   expect(errors).toEqual([]);\n  49 |   await context.close();\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:46:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T14:52:47.347Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/pau/Documents/tecla-pau-app/test-results/game-partida-presencial-ac-2c001-rror-1-Meta-i-marcador-únic/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/pau/Documents/tecla-pau-app/test-results/game-partida-presencial-ac-2c001-rror-1-Meta-i-marcador-únic/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts",
+                    "column": 17,
+                    "line": 46
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-ea3c5ca3276d71b0cbf2",
+          "file": "game.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 131063,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T14:54:20.305Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-340f27f84c79678edc27",
+          "file": "game.spec.ts",
+          "line": 52,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-09T14:52:45.828Z",
+    "duration": 226072.574,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

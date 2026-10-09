@@ -1,0 +1,111 @@
+{
+  "scope": "alcoholfabet",
+  "status": "COMPLETE",
+  "noSecrets": true,
+  "projectRef": "lhgyopkwstuyxolwfucq",
+  "completedAt": "2026-10-09T15:40:54.339792+00:00",
+  "deletedGames": 6,
+  "deletedUsers": 9,
+  "questionCount": 130,
+  "requestedGames": 6,
+  "requestedUsers": 9,
+  "couplePreserved": true,
+  "legacyScoreboard": {
+    "pauWins": 1,
+    "teclaWins": 1,
+    "completedGames": 2
+  },
+  "publicScoreboard": {
+    "pauWins": 0,
+    "teclaWins": 0,
+    "completedGames": 0
+  },
+  "remainingQaGames": 0,
+  "remainingQaUsers": 0,
+  "questionsPreserved": true,
+  "accessHashPreserved": true,
+  "deletedMatchResults": 2,
+  "preservedOtherGames": 16,
+  "preservedOtherUsers": 6,
+  "unlistedRowsUnchanged": true,
+  "relatedTableVerification": {
+    "auth.sessions": {
+      "status": "PASS",
+      "preservedRows": 6,
+      "remainingQaRows": 0
+    },
+    "auth.identities": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "public.game_cells": {
+      "status": "PASS",
+      "preservedRows": 157,
+      "remainingQaRows": 0
+    },
+    "public.game_events": {
+      "status": "PASS",
+      "preservedRows": 254,
+      "remainingQaRows": 0
+    },
+    "auth.refresh_tokens": {
+      "status": "PASS",
+      "preservedRows": 12,
+      "remainingQaRows": 0
+    },
+    "public.game_members": {
+      "status": "PASS",
+      "preservedRows": 16,
+      "remainingQaRows": 0
+    },
+    "public.couple_admins": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "private.access_attempts": {
+      "status": "PASS",
+      "preservedRows": 0,
+      "remainingQaRows": 0
+    },
+    "public.authorized_devices": {
+      "status": "PASS",
+      "preservedRows": 2,
+      "remainingQaRows": 0
+    },
+    "public.game_question_usage": {
+      "status": "PASS",
+      "preservedRows": 57,
+      "remainingQaRows": 0
+    }
+  },
+  "preservedOtherMatchResults": 2,
+  "remainingQaAuthorizedDevices": 0,
+  "preflight": {
+    "scope": "alcoholfabet",
+    "noSecrets": true,
+    "qaResults": 2,
+    "foundGames": 6,
+    "foundUsers": 9,
+    "questionCount": 130,
+    "requestedGames": 6,
+    "requestedUsers": 9,
+    "preservedOtherGames": 16,
+    "preservedOtherUsers": 6,
+    "preservedOtherResults": 2,
+    "unlistedOwnersOrMembers": 0,
+    "nonAnonymousOrAdminUsers": 0,
+    "unlistedGamesOwnedByQaUser": 0,
+    "unlistedMembershipsForQaUser": 0,
+    "expectedPostCleanupScoreboard": {
+      "pauWins": 1,
+      "teclaWins": 1,
+      "completedGames": 2
+    }
+  },
+  "browserContextsClosedBeforeCleanup": true,
+  "method": "Supabase MCP",
+  "manifest": "acceptance/alcoholfabet/QA_E2E_MANIFEST.json",
+  "temporaryRawReportsAbsent": true
+}

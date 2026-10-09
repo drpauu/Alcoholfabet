@@ -1,0 +1,9 @@
+
+Running 1 test using 1 worker
+
+
+
+[1/1] tests/e2e/game.spec.ts:5:1 › partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic
+  1 passed (1.9m)
+(node:59771) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

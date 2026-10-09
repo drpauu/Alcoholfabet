@@ -2,7 +2,7 @@
 
 ## Pantalles de producte
 
-1. Accés privat.
+1. Entrada pública directa.
 2. Inici.
 3. Normes.
 4. Selecció de mode.
@@ -33,11 +33,11 @@
 
 ### HUD superior
 
-- Avatar d'en Pau.
+- Nom i indicador blau d'en Pau.
 - Progrés d'en Pau.
 - Torn actual.
 - Progrés de la Tecla.
-- Avatar de la Tecla.
+- Nom i indicador rosa de la Tecla.
 - Menú discret.
 
 No mostra el marcador històric durant la partida.
@@ -126,3 +126,7 @@ Ordre visual:
 - Peça a META.
 - Corona i confeti.
 - Marcador històric actualitzat una sola vegada.
+
+## Revisió Alcoholfabet
+
+Entrada sense codi privat; sense avatars a inici, seleccions, partida ni victòria. La pregunta utilitza 23–33 px i pes 800, el tauler té amplada completa en mòbil i la capçalera es compacta. El got i el nom del respondent dominen el resultat incorrecte. Un +1 incorrecte mostra dos gots i «Beu doble». Les partides en línia continuen requerint la invitació de la sala per unir els dos membres.

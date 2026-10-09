@@ -14,12 +14,14 @@ begin
   perform set_config('request.jwt.claims',jsonb_build_object('sub',v_user,'role','authenticated')::text,true);
   v_view:=public.create_game('IN_PERSON',30,'PAU','IN_PERSON_CONTROLLER',gen_random_uuid());
   v_game:=(v_view->'game'->>'id')::uuid;
+  -- Exercise the retained legacy-private permissions with a private fixture.
+  update public.games set couple_id=v_couple where id=v_game;
   select read_allowed,write_allowed into v_read,v_write from realtime.authorize('authenticated','game:'||v_game::text,
     jsonb_build_object('sub',v_user,'role','authenticated')::text,v_user::text,'{}',array['broadcast','presence'],array['broadcast','presence']);
   if v_read<>array[true,true] or v_write<>array[false,true] then raise exception 'private channel policy failed'; end if;
   update public.authorized_devices set revoked_at=now() where user_id=v_user;
   if public.is_member_of_game(v_game) then raise exception 'revoked device remained a member for RLS'; end if;
-  if public.get_access_context()<>jsonb_build_object('authorized',false) then raise exception 'revoked access context failed'; end if;
+  if not(public.get_access_context()->>'authorized')::boolean then raise exception 'public entry should remain open'; end if;
   begin
     perform public.get_game_view(v_game);
     raise exception 'revoked device read allowed';

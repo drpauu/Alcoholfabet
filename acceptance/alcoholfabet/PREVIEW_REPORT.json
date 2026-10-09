@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T15:39:43.543189+00:00",
+  "origin": "http://127.0.0.1:4173",
+  "indexMatchesDist": true,
+  "servedAssets": [
+    {
+      "path": "/assets/production/effects/drink-filled.svg",
+      "sha256": "fa3b798133e7c6a0be932b76bd0cdeeb9a3f68f79fda47c28850db2016c7a88e",
+      "matchesDist": true
+    },
+    {
+      "path": "/assets/index-DNOklMfp.js",
+      "sha256": "ba7c849011597c7890c247fb5ac5e4ad748cda99679770cd7c09aacae72c389f",
+      "matchesDist": true
+    },
+    {
+      "path": "/assets/index-eudQqT0_.css",
+      "sha256": "db9410287253434bbc2fd1197eac90a18ec56ad0358c81d0bfc686139edd59ca",
+      "matchesDist": true
+    }
+  ],
+  "readOnlyHttp": true,
+  "appBooted": false,
+  "authSessionsCreated": 0,
+  "gamesCreated": 0,
+  "noSecrets": true
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-09T15:00:20.932Z",
+  "completedAt": "2026-10-09T15:02:28.154Z",
+  "command": "npx playwright test tests/e2e/gameplay-refinement.spec.ts --trace off --reporter=json",
+  "arguments": [
+    "playwright",
+    "test",
+    "tests/e2e/gameplay-refinement.spec.ts",
+    "--trace",
+    "off",
+    "--reporter=json"
+  ],
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 0,
+  "passed": 3,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 125365.06,
+  "tests": [
+    {
+      "name": "presencial: got ple, noms i doble, tauler llarg i abandonar torna directament al menú",
+      "file": "gameplay-refinement.spec.ts",
+      "status": "passed",
+      "durationMs": 67932,
+      "errors": []
+    },
+    {
+      "name": "durada: màxim60minuts,50caselles llegibles i ruta sencera sense mutacions del client",
+      "file": "gameplay-refinement.spec.ts",
+      "status": "passed",
+      "durationMs": 16228,
+      "errors": []
+    },
+    {
+      "name": "online: qui reclama T&P veu el seu avís de beure i abandonar torna tots dos al menú",
+      "file": "gameplay-refinement.spec.ts",
+      "status": "passed",
+      "durationMs": 39269,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true
+}

@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "verifiedAt": "2026-10-09T15:13:47.955247+00:00",
+  "filesScanned": 147,
+  "privateReferencesScanned": 2,
+  "questionsScanned": 130,
+  "matches": {
+    "privateCode": 0,
+    "secretApiKey": 0,
+    "serviceRoleJwt": 0,
+    "originalPrivatePhoto": 0,
+    "originalPrivatePhotoFilename": 0,
+    "approvedRawQuestion": 0
+  },
+  "avatars": [
+    {
+      "source": "assets/production/avatars/pau_character_v2.png",
+      "sha256": "1e432ada29bcb496d984701b5936d6324eb21e473a2089f3d970165c63a8c51e",
+      "unchanged": true,
+      "publicIdentical": true
+    },
+    {
+      "source": "assets/production/avatars/pau_character_v2.webp",
+      "sha256": "f63c9eb054e9660863399b79d3f2b2240dcba91bf07ea909efb80f1414834cd1",
+      "unchanged": true,
+      "publicIdentical": true
+    },
+    {
+      "source": "assets/production/avatars/tecla_character_v2.png",
+      "sha256": "5a26a9f7f21c9130a66fc102842b81b231678da55d45da928887aac256aadc02",
+      "unchanged": true,
+      "publicIdentical": true
+    },
+    {
+      "source": "assets/production/avatars/tecla_character_v2.webp",
+      "sha256": "efb11e8c6f209252a5d871c4616ce1705f86bf498ebc6c526ad86347914329cc",
+      "unchanged": true,
+      "publicIdentical": true
+    }
+  ],
+  "questionBankFileUnchanged": true,
+  "originalPhotographsInPublic": [],
+  "noSecrets": true,
+  "protectedModes": {
+    "env": "0o600",
+    "accessCode": "0o600",
+    "backup": "0o600"
+  }
+}

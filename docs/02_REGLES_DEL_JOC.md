@@ -81,22 +81,26 @@ La pregunta és exactament:
 
 Opcions inicials:
 
-- 20 minuts → 4 caselles superables.
-- 30 minuts → 5 caselles.
-- 45 minuts → 7 caselles.
-- 60 minuts → 9 caselles.
-- Personalitzada → aproximadament una casella per cada 6 o 7 minuts, mínim 3 i màxim 15.
+- 20 minuts → 17 caselles superables.
+- 30 minuts → 25 caselles.
+- 45 minuts → 38 caselles.
+- 60 minuts → 50 caselles.
+- Personalitzada → de 10 a 60 minuts enters, amb la mateixa fórmula.
 
-La durada no és un compte enrere. És una estimació de longitud.
+Cada torn compartit s'estima en 30 segons. Amb dos jugadors, un 75% d'encerts estimat i un 12% de caselles +1, la longitud és `round(minuts × 0,84)`, amb un límit de 50 caselles. La durada és una estimació de longitud: no hi ha compte enrere ni canvi automàtic de torn. Els errors, les reclamacions T&P i el ritme real poden escurçar o allargar la partida.
+
+Aquest càlcul només s'aplica a partides noves. Les partides ja creades conserven la durada i el recorregut originals. Vegeu [el model de durada](DURATION_MODEL.md) per a la fórmula i els límits del banc de preguntes.
 
 ## Generació del recorregut
 
 Proporció orientativa:
 
-- 35% Personal.
-- 35% Creuada.
-- 30% T&P.
+- 40% Personal.
+- 40% Creuada.
+- 20% T&P.
 - 10-15% de modificadors +1.
+
+El patró de cinc caselles és Personal, Creuada, T&P, Personal, Creuada. Així cada pila de 26 preguntes té aproximadament el mateix consum amb l'alternança dels dos jugadors. Els modificadors +1 es reparteixen al llarg del recorregut.
 
 Restriccions:
 

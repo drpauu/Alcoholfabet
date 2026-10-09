@@ -1,0 +1,82 @@
+{
+  "status": "COMPLETE",
+  "completedAt": "2026-10-09T15:15:37.468602+00:00",
+  "scope": "User-requested drink notices, direct home after abandon, thirty-second duration estimate and dimmer readable scene",
+  "noSecrets": true,
+  "reports": {
+    "LOCAL_CHECK_REPORT.json": "PASS",
+    "GAMEPLAY_E2E_REPORT.json": "PASS",
+    "COMPLETE_GAMES_E2E_REPORT.json": "PASS",
+    "DURATION_SERVER_REPORT.json": "PASS",
+    "VISUAL_REPORT.json": "PASS",
+    "SMALL_VIEWPORT_REPORT.json": "PASS",
+    "BUILD_SECURITY_REPORT.json": "PASS",
+    "PREVIEW_REPORT.json": "PASS",
+    "QA_CLEANUP_REPORT.json": "COMPLETE"
+  },
+  "unitTestsPassed": 29,
+  "realBrowserTestsPassed": 5,
+  "completeGamesUseCombinedIndependentRuns": true,
+  "finalPresentationCapturesPassed": 30,
+  "finalPresentationSizes": [
+    [
+      360,
+      800
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "baselineVisualCapturesPassed": 9,
+  "realGameplayCapturesBeforeFinalShortViewportCssAdjustment": 35,
+  "noAuthOrDbAccessForFinalPresentationVerification": true,
+  "sourceStyleHashesMatchFinalCaptures": true,
+  "acceptanceMatrix": {
+    "rows": 92,
+    "statuses": {
+      "PASS": 91,
+      "PARTIAL": 1
+    },
+    "includesHistoricalEvidence": true,
+    "partialCriteria": [
+      {
+        "id": "Q006",
+        "criterion": "Animacions principals mantenen fluïdesa"
+      }
+    ]
+  },
+  "migrationApplied": "0011_duration_thirty_second_estimate.sql",
+  "qaCleanupComplete": true,
+  "qaFixturesRemaining": 0,
+  "durationIsEstimate": true,
+  "existingGameLengthsPreserved": true,
+  "avatarsUnchanged": true,
+  "audit": "audit/GAMEPLAY_REFINEMENT_FINAL_AUDIT.md",
+  "documentation": "docs/GAMEPLAY_REFINEMENT.md",
+  "buildAssets": [
+    {
+      "path": "dist/assets/index-B3d9U5ly.css",
+      "bytes": 45583,
+      "sha256": "47e6e6381e011ce601f380d0bbe45131a45cca14eb2439edd12508ccf9ef4e20"
+    },
+    {
+      "path": "dist/assets/index-ClznDkaZ.js",
+      "bytes": 595372,
+      "sha256": "dab7c5f0468a78caf2d5afdc2a39fbceaec6e6bff422ea38531cb82d874377e5"
+    }
+  ],
+  "manualSupabaseStepsRemaining": []
+}

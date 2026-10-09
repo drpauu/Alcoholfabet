@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "scope": "avatar-refinement",
+  "samePortraitAndCharacterSource": true,
+  "mirrorsIdentical": true,
+  "assets": [
+    {
+      "player": "PAU",
+      "files": [
+        {
+          "source": "assets/production/avatars/pau_character_v2.png",
+          "public": "public/assets/production/avatars/pau_character_v2.png",
+          "sha256": "1e432ada29bcb496d984701b5936d6324eb21e473a2089f3d970165c63a8c51e",
+          "bytes": 2027508
+        },
+        {
+          "source": "assets/production/avatars/pau_character_v2.webp",
+          "public": "public/assets/production/avatars/pau_character_v2.webp",
+          "sha256": "f63c9eb054e9660863399b79d3f2b2240dcba91bf07ea909efb80f1414834cd1",
+          "bytes": 397618
+        }
+      ],
+      "size": [
+        1133,
+        1388
+      ],
+      "mode": "RGBA",
+      "alphaBitIdentical": true,
+      "transparentPixelCount": 497267,
+      "partialAlphaPixelCount": 1075216
+    },
+    {
+      "player": "TECLA",
+      "files": [
+        {
+          "source": "assets/production/avatars/tecla_character_v2.png",
+          "public": "public/assets/production/avatars/tecla_character_v2.png",
+          "sha256": "5a26a9f7f21c9130a66fc102842b81b231678da55d45da928887aac256aadc02",
+          "bytes": 2055360
+        },
+        {
+          "source": "assets/production/avatars/tecla_character_v2.webp",
+          "public": "public/assets/production/avatars/tecla_character_v2.webp",
+          "sha256": "efb11e8c6f209252a5d871c4616ce1705f86bf498ebc6c526ad86347914329cc",
+          "bytes": 438870
+        }
+      ],
+      "size": [
+        1133,
+        1388
+      ],
+      "mode": "RGBA",
+      "alphaBitIdentical": true,
+      "transparentPixelCount": 483700,
+      "partialAlphaPixelCount": 1088539
+    }
+  ],
+  "legacyAvatarFilesUnchanged": 10,
+  "originalPhotographsInPublic": false,
+  "privatePhotographsScanned": 2,
+  "backupMode": "600"
+}

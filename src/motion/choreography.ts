@@ -76,7 +76,7 @@ export function reduceSequence(sequence: MotionSequence): MotionSequence {
     if (step.action === 'set' && (step.props?.rotateY !== undefined || step.props?.x !== undefined)) return [];
     if (step.target === 'gameCamera') return [];
     if (['moveAlongBoard', 'moveOneCell', 'landAtFinish'].includes(step.action)) return [{ ...reduced, action: 'reducedMove', durationMs: 100 }];
-    if (['keyframes', 'animate', 'pulse', 'dropAndBounce'].includes(step.action)) {
+    if (['keyframes', 'animate', 'pulse', 'dropAndBounce', 'raiseGlass'].includes(step.action)) {
       return [{ ...reduced, action: 'reducedFeedback', to: { opacity: 1 }, durationMs: 100 }];
     }
     return [reduced];

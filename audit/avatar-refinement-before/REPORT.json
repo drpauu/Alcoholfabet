@@ -1,0 +1,1868 @@
+{
+  "status": "PASS",
+  "completedAt": "2026-10-09T14:04:11.893Z",
+  "componentHarness": true,
+  "fullAppTest": false,
+  "appBooted": false,
+  "realComponents": [
+    "Scene",
+    "ArtPanel",
+    "ArtCard",
+    "ArtButton",
+    "PlayerBadge"
+  ],
+  "baseline": true,
+  "viewports": [
+    [
+      390,
+      844
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "profileSizes": [
+    [
+      37,
+      40
+    ],
+    [
+      45,
+      48
+    ],
+    [
+      53,
+      56
+    ],
+    [
+      66,
+      70
+    ],
+    [
+      90,
+      95
+    ]
+  ],
+  "captures": [
+    {
+      "scene": "home",
+      "width": 390,
+      "height": 844,
+      "path": "audit/avatar-refinement-before/screenshots/home-390x844.png",
+      "layout": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [
+          {
+            "classes": "",
+            "frame": {
+              "x": 24.125,
+              "y": 311.671875,
+              "width": 170.875,
+              "height": 269.328125,
+              "top": 311.671875,
+              "right": 195,
+              "bottom": 581,
+              "left": 24.125
+            },
+            "image": {
+              "x": 24.125,
+              "y": 311.671875,
+              "width": 170.875,
+              "height": 269.328125,
+              "top": 311.671875,
+              "right": 195,
+              "bottom": 581,
+              "left": 24.125
+            },
+            "src": "/assets/production/avatars/pau_character.webp",
+            "naturalWidth": 571,
+            "naturalHeight": 900,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "objectFit": "contain",
+            "transform": "none",
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "frame": {
+              "x": 195,
+              "y": 371.765625,
+              "width": 170.875,
+              "height": 209.234375,
+              "top": 371.765625,
+              "right": 365.875,
+              "bottom": 581,
+              "left": 195
+            },
+            "image": {
+              "x": 195,
+              "y": 371.765625,
+              "width": 170.875,
+              "height": 209.234375,
+              "top": 371.765625,
+              "right": 365.875,
+              "bottom": 581,
+              "left": 195
+            },
+            "src": "/assets/production/avatars/tecla_character.webp",
+            "naturalWidth": 735,
+            "naturalHeight": 900,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "objectFit": "contain",
+            "transform": "none",
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 317,
+            "bottom": 61,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 373,
+            "bottom": 61,
+            "left": 325
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 17,
+            "y": 644,
+            "width": 356,
+            "height": 57,
+            "top": 644,
+            "right": 373,
+            "bottom": 701,
+            "left": 17
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 17,
+            "y": 714,
+            "width": 356,
+            "height": 57,
+            "top": 714,
+            "right": 373,
+            "bottom": 771,
+            "left": 17
+          },
+          {
+            "label": "Normes",
+            "x": 137.125,
+            "y": 780,
+            "width": 115.734375,
+            "height": 48,
+            "top": 780,
+            "right": 252.859375,
+            "bottom": 828,
+            "left": 137.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "home",
+      "width": 1024,
+      "height": 768,
+      "path": "audit/avatar-refinement-before/screenshots/home-1024x768.png",
+      "layout": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [
+          {
+            "classes": "",
+            "frame": {
+              "x": 311.40625,
+              "y": 280.53125,
+              "width": 175.390625,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 486.796875,
+              "bottom": 557,
+              "left": 311.40625
+            },
+            "image": {
+              "x": 311.40625,
+              "y": 280.53125,
+              "width": 175.390625,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 486.796875,
+              "bottom": 557,
+              "left": 311.40625
+            },
+            "src": "/assets/production/avatars/pau_character.webp",
+            "naturalWidth": 571,
+            "naturalHeight": 900,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "objectFit": "contain",
+            "transform": "none",
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "frame": {
+              "x": 486.796875,
+              "y": 280.53125,
+              "width": 225.78125,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 712.578125,
+              "bottom": 557,
+              "left": 486.796875
+            },
+            "image": {
+              "x": 486.796875,
+              "y": 280.53125,
+              "width": 225.78125,
+              "height": 276.46875,
+              "top": 280.53125,
+              "right": 712.578125,
+              "bottom": 557,
+              "left": 486.796875
+            },
+            "src": "/assets/production/avatars/tecla_character.webp",
+            "naturalWidth": 735,
+            "naturalHeight": 900,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "objectFit": "contain",
+            "transform": "none",
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 885,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 933,
+            "bottom": 70,
+            "left": 885
+          },
+          {
+            "label": "So activat",
+            "x": 944,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 992,
+            "bottom": 70,
+            "left": 944
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 192,
+            "y": 628,
+            "width": 311,
+            "height": 61,
+            "top": 628,
+            "right": 503,
+            "bottom": 689,
+            "left": 192
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 521,
+            "y": 628,
+            "width": 311,
+            "height": 61,
+            "top": 628,
+            "right": 832,
+            "bottom": 689,
+            "left": 521
+          },
+          {
+            "label": "Normes",
+            "x": 454.125,
+            "y": 698,
+            "width": 115.734375,
+            "height": 48,
+            "top": 698,
+            "right": 569.859375,
+            "bottom": 746,
+            "left": 454.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "home",
+      "width": 1440,
+      "height": 900,
+      "path": "audit/avatar-refinement-before/screenshots/home-1440x900.png",
+      "layout": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [
+          {
+            "classes": "",
+            "frame": {
+              "x": 439.21875,
+              "y": 302,
+              "width": 245.515625,
+              "height": 387,
+              "top": 302,
+              "right": 684.734375,
+              "bottom": 689,
+              "left": 439.21875
+            },
+            "image": {
+              "x": 439.21875,
+              "y": 302,
+              "width": 245.515625,
+              "height": 387,
+              "top": 302,
+              "right": 684.734375,
+              "bottom": 689,
+              "left": 439.21875
+            },
+            "src": "/assets/production/avatars/pau_character.webp",
+            "naturalWidth": 571,
+            "naturalHeight": 900,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "objectFit": "contain",
+            "transform": "none",
+            "expectedSize": null
+          },
+          {
+            "classes": "",
+            "frame": {
+              "x": 684.734375,
+              "y": 302,
+              "width": 316.046875,
+              "height": 387,
+              "top": 302,
+              "right": 1000.78125,
+              "bottom": 689,
+              "left": 684.734375
+            },
+            "image": {
+              "x": 684.734375,
+              "y": 302,
+              "width": 316.046875,
+              "height": 387,
+              "top": 302,
+              "right": 1000.78125,
+              "bottom": 689,
+              "left": 684.734375
+            },
+            "src": "/assets/production/avatars/tecla_character.webp",
+            "naturalWidth": 735,
+            "naturalHeight": 900,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "0px",
+            "objectFit": "contain",
+            "transform": "none",
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          },
+          {
+            "label": "Jugar en persona",
+            "x": 400,
+            "y": 760,
+            "width": 311,
+            "height": 61,
+            "top": 760,
+            "right": 711,
+            "bottom": 821,
+            "left": 400
+          },
+          {
+            "label": "Jugar en línia",
+            "x": 729,
+            "y": 760,
+            "width": 311,
+            "height": 61,
+            "top": 760,
+            "right": 1040,
+            "bottom": 821,
+            "left": 729
+          },
+          {
+            "label": "Normes",
+            "x": 662.125,
+            "y": 830,
+            "width": 115.734375,
+            "height": 48,
+            "top": 830,
+            "right": 777.859375,
+            "bottom": 878,
+            "left": 662.125
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "hud",
+      "width": 390,
+      "height": 844,
+      "path": "audit/avatar-refinement-before/screenshots/hud-390x844.png",
+      "layout": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 28,
+              "y": 82.25,
+              "width": 37,
+              "height": 40,
+              "top": 82.25,
+              "right": 65,
+              "bottom": 122.25,
+              "left": 28
+            },
+            "image": {
+              "x": 28,
+              "y": 82.25,
+              "width": 37,
+              "height": 40,
+              "top": 82.25,
+              "right": 65,
+              "bottom": 122.25,
+              "left": 28
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 262.75,
+              "y": 82.25,
+              "width": 37,
+              "height": 40,
+              "top": 82.25,
+              "right": 299.75,
+              "bottom": 122.25,
+              "left": 262.75
+            },
+            "image": {
+              "x": 262.75,
+              "y": 82.25,
+              "width": 37,
+              "height": 40,
+              "top": 82.25,
+              "right": 299.75,
+              "bottom": 122.25,
+              "left": 262.75
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 12,
+            "width": 48,
+            "height": 48,
+            "top": 12,
+            "right": 317,
+            "bottom": 60,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 12,
+            "width": 48,
+            "height": 48,
+            "top": 12,
+            "right": 373,
+            "bottom": 60,
+            "left": 325
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "hud",
+      "width": 1024,
+      "height": 768,
+      "path": "audit/avatar-refinement-before/screenshots/hud-1024x768.png",
+      "layout": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 201,
+              "y": 100.625,
+              "width": 45,
+              "height": 48,
+              "top": 100.625,
+              "right": 246,
+              "bottom": 148.625,
+              "left": 201
+            },
+            "image": {
+              "x": 201,
+              "y": 100.625,
+              "width": 45,
+              "height": 48,
+              "top": 100.625,
+              "right": 246,
+              "bottom": 148.625,
+              "left": 201
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 686.6875,
+              "y": 100.625,
+              "width": 45,
+              "height": 48,
+              "top": 100.625,
+              "right": 731.6875,
+              "bottom": 148.625,
+              "left": 686.6875
+            },
+            "image": {
+              "x": 686.6875,
+              "y": 100.625,
+              "width": 45,
+              "height": 48,
+              "top": 100.625,
+              "right": 731.6875,
+              "bottom": 148.625,
+              "left": 686.6875
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 895,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 943,
+            "bottom": 70,
+            "left": 895
+          },
+          {
+            "label": "So activat",
+            "x": 954,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1002,
+            "bottom": 70,
+            "left": 954
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "hud",
+      "width": 1440,
+      "height": 900,
+      "path": "audit/avatar-refinement-before/screenshots/hud-1440x900.png",
+      "layout": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 359,
+              "y": 100,
+              "width": 53,
+              "height": 56,
+              "top": 100,
+              "right": 412,
+              "bottom": 156,
+              "left": 359
+            },
+            "image": {
+              "x": 359,
+              "y": 100,
+              "width": 53,
+              "height": 56,
+              "top": 100,
+              "right": 412,
+              "bottom": 156,
+              "left": 359
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": null
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 916.6875,
+              "y": 100,
+              "width": 53,
+              "height": 56,
+              "top": 100,
+              "right": 969.6875,
+              "bottom": 156,
+              "left": 916.6875
+            },
+            "image": {
+              "x": 916.6875,
+              "y": 100,
+              "width": 53,
+              "height": 56,
+              "top": 100,
+              "right": 969.6875,
+              "bottom": 156,
+              "left": 916.6875
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": null
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "profiles",
+      "width": 390,
+      "height": 844,
+      "path": "audit/avatar-refinement-before/screenshots/profiles-390x844.png",
+      "layout": {
+        "bodyWidth": 390,
+        "bodyHeight": 844,
+        "portraits": [
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 96.25,
+              "y": 169.625,
+              "width": 37,
+              "height": 40,
+              "top": 169.625,
+              "right": 133.25,
+              "bottom": 209.625,
+              "left": 96.25
+            },
+            "image": {
+              "x": 96.25,
+              "y": 169.625,
+              "width": 37,
+              "height": 40,
+              "top": 169.625,
+              "right": 133.25,
+              "bottom": 209.625,
+              "left": 96.25
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "37x40"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 256.75,
+              "y": 169.625,
+              "width": 37,
+              "height": 40,
+              "top": 169.625,
+              "right": 293.75,
+              "bottom": 209.625,
+              "left": 256.75
+            },
+            "image": {
+              "x": 256.75,
+              "y": 169.625,
+              "width": 37,
+              "height": 40,
+              "top": 169.625,
+              "right": 293.75,
+              "bottom": 209.625,
+              "left": 256.75
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "37x40"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 92.25,
+              "y": 271.625,
+              "width": 45,
+              "height": 48,
+              "top": 271.625,
+              "right": 137.25,
+              "bottom": 319.625,
+              "left": 92.25
+            },
+            "image": {
+              "x": 92.25,
+              "y": 271.625,
+              "width": 45,
+              "height": 48,
+              "top": 271.625,
+              "right": 137.25,
+              "bottom": 319.625,
+              "left": 92.25
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "45x48"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 252.75,
+              "y": 271.625,
+              "width": 45,
+              "height": 48,
+              "top": 271.625,
+              "right": 297.75,
+              "bottom": 319.625,
+              "left": 252.75
+            },
+            "image": {
+              "x": 252.75,
+              "y": 271.625,
+              "width": 45,
+              "height": 48,
+              "top": 271.625,
+              "right": 297.75,
+              "bottom": 319.625,
+              "left": 252.75
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "45x48"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 88.25,
+              "y": 381.625,
+              "width": 53,
+              "height": 56,
+              "top": 381.625,
+              "right": 141.25,
+              "bottom": 437.625,
+              "left": 88.25
+            },
+            "image": {
+              "x": 88.25,
+              "y": 381.625,
+              "width": 53,
+              "height": 56,
+              "top": 381.625,
+              "right": 141.25,
+              "bottom": 437.625,
+              "left": 88.25
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "53x56"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 248.75,
+              "y": 381.625,
+              "width": 53,
+              "height": 56,
+              "top": 381.625,
+              "right": 301.75,
+              "bottom": 437.625,
+              "left": 248.75
+            },
+            "image": {
+              "x": 248.75,
+              "y": 381.625,
+              "width": 53,
+              "height": 56,
+              "top": 381.625,
+              "right": 301.75,
+              "bottom": 437.625,
+              "left": 248.75
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "53x56"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 81.75,
+              "y": 499.625,
+              "width": 66,
+              "height": 70,
+              "top": 499.625,
+              "right": 147.75,
+              "bottom": 569.625,
+              "left": 81.75
+            },
+            "image": {
+              "x": 81.75,
+              "y": 499.625,
+              "width": 66,
+              "height": 70,
+              "top": 499.625,
+              "right": 147.75,
+              "bottom": 569.625,
+              "left": 81.75
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "66x70"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 242.25,
+              "y": 499.625,
+              "width": 66,
+              "height": 70,
+              "top": 499.625,
+              "right": 308.25,
+              "bottom": 569.625,
+              "left": 242.25
+            },
+            "image": {
+              "x": 242.25,
+              "y": 499.625,
+              "width": 66,
+              "height": 70,
+              "top": 499.625,
+              "right": 308.25,
+              "bottom": 569.625,
+              "left": 242.25
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "66x70"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 69.75,
+              "y": 631.625,
+              "width": 90,
+              "height": 95,
+              "top": 631.625,
+              "right": 159.75,
+              "bottom": 726.625,
+              "left": 69.75
+            },
+            "image": {
+              "x": 69.75,
+              "y": 631.625,
+              "width": 90,
+              "height": 95,
+              "top": 631.625,
+              "right": 159.75,
+              "bottom": 726.625,
+              "left": 69.75
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "90x95"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 230.25,
+              "y": 631.625,
+              "width": 90,
+              "height": 95,
+              "top": 631.625,
+              "right": 320.25,
+              "bottom": 726.625,
+              "left": 230.25
+            },
+            "image": {
+              "x": 230.25,
+              "y": 631.625,
+              "width": 90,
+              "height": 95,
+              "top": 631.625,
+              "right": 320.25,
+              "bottom": 726.625,
+              "left": 230.25
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "90x95"
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 269,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 317,
+            "bottom": 61,
+            "left": 269
+          },
+          {
+            "label": "So activat",
+            "x": 325,
+            "y": 13,
+            "width": 48,
+            "height": 48,
+            "top": 13,
+            "right": 373,
+            "bottom": 61,
+            "left": 325
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "profiles",
+      "width": 1024,
+      "height": 768,
+      "path": "audit/avatar-refinement-before/screenshots/profiles-1024x768.png",
+      "layout": {
+        "bodyWidth": 1024,
+        "bodyHeight": 768,
+        "portraits": [
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 131.890625,
+              "y": 303.65625,
+              "width": 37,
+              "height": 40,
+              "top": 303.65625,
+              "right": 168.890625,
+              "bottom": 343.65625,
+              "left": 131.890625
+            },
+            "image": {
+              "x": 131.890625,
+              "y": 303.65625,
+              "width": 37,
+              "height": 40,
+              "top": 303.65625,
+              "right": 168.890625,
+              "bottom": 343.65625,
+              "left": 131.890625
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "37x40"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 312.6875,
+              "y": 303.65625,
+              "width": 37,
+              "height": 40,
+              "top": 303.65625,
+              "right": 349.6875,
+              "bottom": 343.65625,
+              "left": 312.6875
+            },
+            "image": {
+              "x": 312.6875,
+              "y": 303.65625,
+              "width": 37,
+              "height": 40,
+              "top": 303.65625,
+              "right": 349.6875,
+              "bottom": 343.65625,
+              "left": 312.6875
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "37x40"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 489.484375,
+              "y": 303.65625,
+              "width": 45,
+              "height": 48,
+              "top": 303.65625,
+              "right": 534.484375,
+              "bottom": 351.65625,
+              "left": 489.484375
+            },
+            "image": {
+              "x": 489.484375,
+              "y": 303.65625,
+              "width": 45,
+              "height": 48,
+              "top": 303.65625,
+              "right": 534.484375,
+              "bottom": 351.65625,
+              "left": 489.484375
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "45x48"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 670.28125,
+              "y": 303.65625,
+              "width": 45,
+              "height": 48,
+              "top": 303.65625,
+              "right": 715.28125,
+              "bottom": 351.65625,
+              "left": 670.28125
+            },
+            "image": {
+              "x": 670.28125,
+              "y": 303.65625,
+              "width": 45,
+              "height": 48,
+              "top": 303.65625,
+              "right": 715.28125,
+              "bottom": 351.65625,
+              "left": 670.28125
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "45x48"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 847.09375,
+              "y": 303.65625,
+              "width": 53,
+              "height": 56,
+              "top": 303.65625,
+              "right": 900.09375,
+              "bottom": 359.65625,
+              "left": 847.09375
+            },
+            "image": {
+              "x": 847.09375,
+              "y": 303.65625,
+              "width": 53,
+              "height": 56,
+              "top": 303.65625,
+              "right": 900.09375,
+              "bottom": 359.65625,
+              "left": 847.09375
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "53x56"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 123.890625,
+              "y": 432.65625,
+              "width": 53,
+              "height": 56,
+              "top": 432.65625,
+              "right": 176.890625,
+              "bottom": 488.65625,
+              "left": 123.890625
+            },
+            "image": {
+              "x": 123.890625,
+              "y": 432.65625,
+              "width": 53,
+              "height": 56,
+              "top": 432.65625,
+              "right": 176.890625,
+              "bottom": 488.65625,
+              "left": 123.890625
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "53x56"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 298.1875,
+              "y": 432.65625,
+              "width": 66,
+              "height": 70,
+              "top": 432.65625,
+              "right": 364.1875,
+              "bottom": 502.65625,
+              "left": 298.1875
+            },
+            "image": {
+              "x": 298.1875,
+              "y": 432.65625,
+              "width": 66,
+              "height": 70,
+              "top": 432.65625,
+              "right": 364.1875,
+              "bottom": 502.65625,
+              "left": 298.1875
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "66x70"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 478.984375,
+              "y": 432.65625,
+              "width": 66,
+              "height": 70,
+              "top": 432.65625,
+              "right": 544.984375,
+              "bottom": 502.65625,
+              "left": 478.984375
+            },
+            "image": {
+              "x": 478.984375,
+              "y": 432.65625,
+              "width": 66,
+              "height": 70,
+              "top": 432.65625,
+              "right": 544.984375,
+              "bottom": 502.65625,
+              "left": 478.984375
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "66x70"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 647.78125,
+              "y": 432.65625,
+              "width": 90,
+              "height": 95,
+              "top": 432.65625,
+              "right": 737.78125,
+              "bottom": 527.65625,
+              "left": 647.78125
+            },
+            "image": {
+              "x": 647.78125,
+              "y": 432.65625,
+              "width": 90,
+              "height": 95,
+              "top": 432.65625,
+              "right": 737.78125,
+              "bottom": 527.65625,
+              "left": 647.78125
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "90x95"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 828.59375,
+              "y": 432.65625,
+              "width": 90,
+              "height": 95,
+              "top": 432.65625,
+              "right": 918.59375,
+              "bottom": 527.65625,
+              "left": 828.59375
+            },
+            "image": {
+              "x": 828.59375,
+              "y": 432.65625,
+              "width": 90,
+              "height": 95,
+              "top": 432.65625,
+              "right": 918.59375,
+              "bottom": 527.65625,
+              "left": 828.59375
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "90x95"
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 885,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 933,
+            "bottom": 70,
+            "left": 885
+          },
+          {
+            "label": "So activat",
+            "x": 944,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 992,
+            "bottom": 70,
+            "left": 944
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    },
+    {
+      "scene": "profiles",
+      "width": 1440,
+      "height": 900,
+      "path": "audit/avatar-refinement-before/screenshots/profiles-1440x900.png",
+      "layout": {
+        "bodyWidth": 1440,
+        "bodyHeight": 900,
+        "portraits": [
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 323.890625,
+              "y": 371.109375,
+              "width": 37,
+              "height": 40,
+              "top": 371.109375,
+              "right": 360.890625,
+              "bottom": 411.109375,
+              "left": 323.890625
+            },
+            "image": {
+              "x": 323.890625,
+              "y": 371.109375,
+              "width": 37,
+              "height": 40,
+              "top": 371.109375,
+              "right": 360.890625,
+              "bottom": 411.109375,
+              "left": 323.890625
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "37x40"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 512.6875,
+              "y": 371.109375,
+              "width": 37,
+              "height": 40,
+              "top": 371.109375,
+              "right": 549.6875,
+              "bottom": 411.109375,
+              "left": 512.6875
+            },
+            "image": {
+              "x": 512.6875,
+              "y": 371.109375,
+              "width": 37,
+              "height": 40,
+              "top": 371.109375,
+              "right": 549.6875,
+              "bottom": 411.109375,
+              "left": 512.6875
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "37x40"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 697.484375,
+              "y": 371.109375,
+              "width": 45,
+              "height": 48,
+              "top": 371.109375,
+              "right": 742.484375,
+              "bottom": 419.109375,
+              "left": 697.484375
+            },
+            "image": {
+              "x": 697.484375,
+              "y": 371.109375,
+              "width": 45,
+              "height": 48,
+              "top": 371.109375,
+              "right": 742.484375,
+              "bottom": 419.109375,
+              "left": 697.484375
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "45x48"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 886.28125,
+              "y": 371.109375,
+              "width": 45,
+              "height": 48,
+              "top": 371.109375,
+              "right": 931.28125,
+              "bottom": 419.109375,
+              "left": 886.28125
+            },
+            "image": {
+              "x": 886.28125,
+              "y": 371.109375,
+              "width": 45,
+              "height": 48,
+              "top": 371.109375,
+              "right": 931.28125,
+              "bottom": 419.109375,
+              "left": 886.28125
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "45x48"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 1071.09375,
+              "y": 371.109375,
+              "width": 53,
+              "height": 56,
+              "top": 371.109375,
+              "right": 1124.09375,
+              "bottom": 427.109375,
+              "left": 1071.09375
+            },
+            "image": {
+              "x": 1071.09375,
+              "y": 371.109375,
+              "width": 53,
+              "height": 56,
+              "top": 371.109375,
+              "right": 1124.09375,
+              "bottom": 427.109375,
+              "left": 1071.09375
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "53x56"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 315.890625,
+              "y": 500.109375,
+              "width": 53,
+              "height": 56,
+              "top": 500.109375,
+              "right": 368.890625,
+              "bottom": 556.109375,
+              "left": 315.890625
+            },
+            "image": {
+              "x": 315.890625,
+              "y": 500.109375,
+              "width": 53,
+              "height": 56,
+              "top": 500.109375,
+              "right": 368.890625,
+              "bottom": 556.109375,
+              "left": 315.890625
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "53x56"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 498.1875,
+              "y": 500.109375,
+              "width": 66,
+              "height": 70,
+              "top": 500.109375,
+              "right": 564.1875,
+              "bottom": 570.109375,
+              "left": 498.1875
+            },
+            "image": {
+              "x": 498.1875,
+              "y": 500.109375,
+              "width": 66,
+              "height": 70,
+              "top": 500.109375,
+              "right": 564.1875,
+              "bottom": 570.109375,
+              "left": 498.1875
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "66x70"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 686.984375,
+              "y": 500.109375,
+              "width": 66,
+              "height": 70,
+              "top": 500.109375,
+              "right": 752.984375,
+              "bottom": 570.109375,
+              "left": 686.984375
+            },
+            "image": {
+              "x": 686.984375,
+              "y": 500.109375,
+              "width": 66,
+              "height": 70,
+              "top": 500.109375,
+              "right": 752.984375,
+              "bottom": 570.109375,
+              "left": 686.984375
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "66x70"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 863.78125,
+              "y": 500.109375,
+              "width": 90,
+              "height": 95,
+              "top": 500.109375,
+              "right": 953.78125,
+              "bottom": 595.109375,
+              "left": 863.78125
+            },
+            "image": {
+              "x": 863.78125,
+              "y": 500.109375,
+              "width": 90,
+              "height": 95,
+              "top": 500.109375,
+              "right": 953.78125,
+              "bottom": 595.109375,
+              "left": 863.78125
+            },
+            "src": "/assets/production/avatars/pau_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "90x95"
+          },
+          {
+            "classes": "player-avatar",
+            "frame": {
+              "x": 1052.59375,
+              "y": 500.109375,
+              "width": 90,
+              "height": 95,
+              "top": 500.109375,
+              "right": 1142.59375,
+              "bottom": 595.109375,
+              "left": 1052.59375
+            },
+            "image": {
+              "x": 1052.59375,
+              "y": 500.109375,
+              "width": 90,
+              "height": 95,
+              "top": 500.109375,
+              "right": 1142.59375,
+              "bottom": 595.109375,
+              "left": 1052.59375
+            },
+            "src": "/assets/production/avatars/tecla_avatar.webp",
+            "naturalWidth": 512,
+            "naturalHeight": 512,
+            "overflowX": "clip",
+            "overflowY": "clip",
+            "borderRadius": "44% 48% 42% 46%",
+            "objectFit": "cover",
+            "transform": "none",
+            "expectedSize": "90x95"
+          }
+        ],
+        "controls": [
+          {
+            "label": "Llegir les normes",
+            "x": 1301,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1349,
+            "bottom": 70,
+            "left": 1301
+          },
+          {
+            "label": "So activat",
+            "x": 1360,
+            "y": 22,
+            "width": 48,
+            "height": 48,
+            "top": 22,
+            "right": 1408,
+            "bottom": 70,
+            "left": 1360
+          }
+        ],
+        "storageKeys": [],
+        "appLoaded": false
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/production/avatars/pau_character.webp",
+      "bytes": 269710,
+      "sha256": "1dfacc706f7d5086d23b40374469d1fb71fa3f6b5a6f1279fd44ba09cfe91b62"
+    },
+    {
+      "path": "/assets/production/avatars/tecla_character.webp",
+      "bytes": 309456,
+      "sha256": "45794aabc621ca57f58f1006670d4c0546e50d7c32f63c8b47f6a30cb748d371"
+    },
+    {
+      "path": "/assets/production/avatars/pau_avatar.webp",
+      "bytes": 135808,
+      "sha256": "e9f3e322b9c9a2bc27c7120a71265954fca94bfc6cbf8f6e90de7aa7c08b3123"
+    },
+    {
+      "path": "/assets/production/avatars/tecla_avatar.webp",
+      "bytes": 135534,
+      "sha256": "c0ddf75fa3b84f3b3bf5f8169d5f977cbc8d3a45bd2d6af4f0bd56574c5eb653"
+    }
+  ],
+  "externalRequests": [],
+  "authDbRequests": [],
+  "anonymousSessionsCreated": 0,
+  "gamesCreated": 0,
+  "emptyBrowserStorage": true,
+  "errors": [],
+  "temporaryHarnessRemoved": true,
+  "noSecrets": true
+}

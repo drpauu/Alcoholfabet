@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 96" fill="none">
+  <defs>
+    <linearGradient id="amber" x1="45" y1="33" x2="27" y2="81" gradientUnits="userSpaceOnUse"><stop stop-color="#e8b450"/><stop offset=".48" stop-color="#d89630"/><stop offset="1" stop-color="#af691f"/></linearGradient>
+    <linearGradient id="rim" x1="52" y1="14" x2="19" y2="83" gradientUnits="userSpaceOnUse"><stop stop-color="#fff0c8" stop-opacity=".62"/><stop offset="1" stop-color="#cda56b" stop-opacity=".2"/></linearGradient>
+    <clipPath id="inside"><path d="M15 19h42l-5.7 58.7c-7.3 4.9-22.5 4.9-30.6 0Z"/></clipPath>
+  </defs>
+  <ellipse cx="32" cy="85" rx="25" ry="5" fill="#714928" opacity=".16"/>
+  <path d="M13 17c10.4-4.1 35.6-4.1 46 0l-6.3 62c-8.2 6.1-24.8 6.1-33.5 0Z" fill="url(#rim)"/>
+  <g clip-path="url(#inside)">
+    <path d="M14 34c12.6-3 30.7-3 44 0v49H14Z" fill="url(#amber)"/>
+    <ellipse cx="36" cy="34" rx="22" ry="4.6" fill="#eabb60"/>
+    <path d="M18 36c9.5 3.7 26.5 3.7 36 0" stroke="#a56725" stroke-width="1.4" opacity=".7"/>
+    <path d="m44 45-1.4 20M47.6 39l-1.1 8" stroke="#f8d58a" stroke-width="2.1" stroke-linecap="round" opacity=".66"/>
+  </g>
+  <g stroke="#62482d" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 17c10.4-4.1 35.6-4.1 46 0l-6.3 62c-8.2 6.1-24.8 6.1-33.5 0Z"/>
+    <path d="M13.8 17.8c11.5 4.6 32.9 4.6 44.4-.1" stroke="#957447" stroke-width="1.5"/>
+    <path d="m49.7 24-4.4 47M20.1 27l4.3 42" stroke="#fff1cc" stroke-width="2.4" opacity=".76"/>
+    <path d="M23.1 77.7c7.4 3.5 17.7 3.5 25.7-.1" stroke="#dcb777" stroke-width="1.4"/>
+  </g>
+</svg>

@@ -65,19 +65,6 @@ export class GameRepository {
     return data as AccessContext;
   }
 
-  async verify(code: string): Promise<AccessContext> {
-    const { data, error } = await this.client.functions.invoke('verify-couple-access', { body: { code } });
-    if (error) {
-      if ('context' in error && error.context instanceof Response) {
-        const response: unknown = await error.context.json().catch(() => null);
-        if (response && typeof response === 'object' && 'error' in response) throw new Error(String(response.error));
-      }
-      throw error;
-    }
-    if (!data?.authorized) throw new Error('INVALID_CODE');
-    return this.access();
-  }
-
   async getGameView(gameId: string): Promise<GameView> {
     const { data, error } = await this.client.rpc('get_game_view', {p_game_id:gameId});
     if (error) throw new Error(error.message);

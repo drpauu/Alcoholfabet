@@ -1,0 +1,9 @@
+{
+  "scope": "Retained legacy-private RPC, device revocation, RLS, private Realtime ACL, pool exhaustion and rate limiting",
+  "status": "PASS",
+  "noSecrets": true,
+  "fixturesRolledBack": true,
+  "completedAt": "2026-10-09T15:37:13.154Z",
+  "sqlFile": "tests/backend/security.sql",
+  "executedWith": "Supabase MCP"
+}

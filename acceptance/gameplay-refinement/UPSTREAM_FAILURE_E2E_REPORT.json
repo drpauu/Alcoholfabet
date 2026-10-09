@@ -1,0 +1,46 @@
+{
+  "status": "FAIL",
+  "startedAt": "2026-10-09T14:50:43.032Z",
+  "completedAt": "2026-10-09T14:50:54.150Z",
+  "command": "npx playwright test tests/e2e/game.spec.ts --grep 'partida presencial:|online: dos contexts' --trace off --reporter=json",
+  "arguments": [
+    "playwright",
+    "test",
+    "tests/e2e/game.spec.ts",
+    "--grep",
+    "partida presencial:|online: dos contexts",
+    "--trace",
+    "off",
+    "--reporter=json"
+  ],
+  "backend": "real Supabase Anonymous Auth, authoritative RPCs and private Realtime",
+  "exitCode": 1,
+  "passed": 0,
+  "failed": 2,
+  "flaky": 0,
+  "skipped": 0,
+  "durationMs": 8895.017,
+  "tests": [
+    {
+      "name": "partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic",
+      "file": "game.spec.ts",
+      "status": "failed",
+      "durationMs": 2919,
+      "errors": [
+        "SyntaxError: Unexpected token 'u', \"upstream c\"... is not valid JSON\n\n   at helpers.ts:39\n\n  37 |   trackQaContext(context);\n  38 |   const settings = await context.request.get(`${projectUrl}/auth/v1/settings`, { headers: { apikey: publishable } });\n> 39 |   const config = await settings.json() as { external?: { anonymous_users?: boolean } };\n     |                  ^\n  40 |   if (!config.external?.anonymous_users) {\n  41 |     const users = JSON.parse(readFileSync('/tmp/tecla-pau-qa-users.json', 'utf8')) as { email: string; password: string }[];\n  42 |     const response = await context.request.post(`${projectUrl}/auth/v1/token?grant_type=password`, {\n    at makeContext (/home/pau/Documents/tecla-pau-app/tests/e2e/helpers.ts:39:18)\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:6:19"
+      ]
+    },
+    {
+      "name": "online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria",
+      "file": "game.spec.ts",
+      "status": "failed",
+      "durationMs": 2230,
+      "errors": [
+        "SyntaxError: Unexpected token 'u', \"upstream c\"... is not valid JSON\n\n   at helpers.ts:39\n\n  37 |   trackQaContext(context);\n  38 |   const settings = await context.request.get(`${projectUrl}/auth/v1/settings`, { headers: { apikey: publishable } });\n> 39 |   const config = await settings.json() as { external?: { anonymous_users?: boolean } };\n     |                  ^\n  40 |   if (!config.external?.anonymous_users) {\n  41 |     const users = JSON.parse(readFileSync('/tmp/tecla-pau-qa-users.json', 'utf8')) as { email: string; password: string }[];\n  42 |     const response = await context.request.post(`${projectUrl}/auth/v1/token?grant_type=password`, {\n    at makeContext (/home/pau/Documents/tecla-pau-app/tests/e2e/helpers.ts:39:18)\n    at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:53:13"
+      ]
+    }
+  ],
+  "errors": [],
+  "traceDisabledToKeepCredentialsOutOfArtifacts": true,
+  "noSecrets": true
+}

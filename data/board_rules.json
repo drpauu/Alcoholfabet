@@ -1,8 +1,8 @@
 {
   "categoryWeights": {
-    "PERSONAL": 0.35,
-    "CROSSED": 0.35,
-    "TP": 0.3
+    "PERSONAL": 0.4,
+    "CROSSED": 0.4,
+    "TP": 0.2
   },
   "plusOneRate": 0.12,
   "constraints": {

@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { clickAction, createGame, currentView, enter, makeContext, waitSynced } from './helpers';
+import { clickAction, createGame, currentView, enter, makeContext, viewForGame, waitSynced } from './helpers';
 
 test('partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic', async ({ browser }) => {
   const context = await makeContext(browser, 0);
@@ -8,7 +8,7 @@ test('partida presencial: accés, resposta oculta, error, +1, Meta i marcador ú
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   await enter(page);
-  await createGame(page, false);
+  await createGame(page, false, 20);
   const initial = await currentView(page);
   let failures = 0;
   let bonus = false;
@@ -17,7 +17,7 @@ test('partida presencial: accés, resposta oculta, error, +1, Meta i marcador ú
     await clickAction(page,'Començar el torn');
     let view = await currentView(page);
     if (view.game.phase === 'TP_OPEN') {
-      await clickAction(page,'En Pau respon!');
+      await clickAction(page,view.game.currentTurn === 'PAU' ? 'En Pau respon!' : 'La Tecla respon!');
       view = await currentView(page);
     }
     expect(view.question).not.toBeNull();
@@ -57,7 +57,7 @@ test('online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió
   const errors: string[] = [];
   for (const page of [pau, tecla]) page.on('pageerror', error => errors.push(error.message));
   await enter(pau); await enter(tecla);
-  await createGame(pau, true);
+  await createGame(pau, true, 20);
   const lobby = await currentView(pau);
   await tecla.getByRole('button', {name:'Jugar en línia',exact:true}).click();
   await tecla.getByRole('button', {name:'Unir-se a una partida',exact:true}).click();
@@ -67,6 +67,7 @@ test('online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió
   await clickAction(pau,'Començar la partida');
   await waitSynced(pau,tecla);
   let sawTP = false;
+  let testedConcurrentClaim = false;
   let failed = false;
   let sawBonus = false;
   let completed = false;
@@ -82,7 +83,10 @@ test('online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió
       expect((await currentView(pau)).question).not.toHaveProperty('answerCa');
       expect((await currentView(tecla)).question).not.toHaveProperty('answerCa');
       const beforeClaim=view.game.stateVersion;
-      await Promise.allSettled([pau.getByRole('button',{name:'Jo responc!',exact:true}).click(),tecla.getByRole('button',{name:'Jo responc!',exact:true}).click()]);
+      if (!testedConcurrentClaim) {
+        await Promise.allSettled([pau.getByRole('button',{name:'Jo responc!',exact:true}).click(),tecla.getByRole('button',{name:'Jo responc!',exact:true}).click()]);
+        testedConcurrentClaim = true;
+      } else await active.getByRole('button',{name:'Jo responc!',exact:true}).click();
       await expect.poll(async()=>Number(await pau.locator('[data-state-version]').getAttribute('data-state-version'))).toBeGreaterThan(beforeClaim);
       await waitSynced(pau,tecla);
       view = await currentView(pau);
@@ -142,8 +146,8 @@ test('partida abandonada no suma cap punt',async({browser})=>{
   const initial=await currentView(page);
   await page.getByRole('button',{name:'Sortir',exact:true}).click();
   await page.getByRole('button',{name:'Abandonar la partida',exact:true}).click();
-  await expect(page.getByRole('heading',{name:'Heu deixat la partida'})).toBeVisible();
-  expect((await currentView(page)).scoreboard.completedGames).toBe(initial.scoreboard.completedGames);
+  await expect(page.getByRole('button',{name:'Jugar en persona',exact:true})).toBeVisible();
+  expect((await viewForGame(page,initial.game.id)).scoreboard.completedGames).toBe(initial.scoreboard.completedGames);
   await context.close();
 });
 
@@ -179,17 +183,17 @@ test('online: abandonar durant la pregunta recupera tots dos dispositius sense r
   expect(before.question).not.toBeNull(); expect(before.question).not.toHaveProperty('answerCa');
   expect((await currentView(tecla)).question?.answerCa).toBeTruthy();
   await pau.getByRole('button', { name: 'Sortir', exact: true }).click();
-  await clickAction(pau, 'Abandonar la partida');
+  await pau.getByRole('button', { name: 'Abandonar la partida', exact: true }).click();
   for (const page of [pau, tecla]) {
-    await expect(page.getByRole('heading', { name: 'Heu deixat la partida', exact: true })).toBeVisible();
-    let view = await currentView(page);
+    await expect(page.getByRole('button', { name: 'Jugar en persona', exact: true })).toBeVisible();
+    let view = await viewForGame(page, before.game.id);
     expect(view.game.status).toBe('ABANDONED'); expect(view.game.stateVersion).toBe(before.game.stateVersion + 1);
     expect(view.question).toBeNull(); expect(view.capabilities.canSeeAnswer).toBe(false); expect(view.capabilities.canJudge).toBe(false);
     expect(Object.values(view.capabilities).every((value) => typeof value === 'boolean')).toBe(true);
     expect(view.scoreboard).toEqual(before.scoreboard); await expect(page.locator('.answer-panel')).toHaveCount(0);
     await page.reload();
-    await expect(page.getByRole('heading', { name: 'Heu deixat la partida', exact: true })).toBeVisible();
-    view = await currentView(page); expect(view.game.status).toBe('ABANDONED'); expect(view.question).toBeNull();
+    await expect(page.getByRole('button', { name: 'Jugar en persona', exact: true })).toBeVisible();
+    view = await viewForGame(page, before.game.id); expect(view.game.status).toBe('ABANDONED'); expect(view.question).toBeNull();
     expect(view.capabilities.canSeeAnswer).toBe(false); expect(view.scoreboard).toEqual(before.scoreboard);
   }
   await a.close(); await b.close();

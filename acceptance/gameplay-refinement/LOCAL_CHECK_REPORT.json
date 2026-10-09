@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "verifiedAt": "2026-10-09T15:13:47.955247+00:00",
+  "command": "npm run check",
+  "exitCode": 0,
+  "log": "CHECK_FINAL_LOG.txt",
+  "typecheck": "PASS",
+  "unitTests": {
+    "files": 7,
+    "passed": 29,
+    "failed": 0
+  },
+  "build": "PASS",
+  "modules": 190,
+  "assets": [
+    {
+      "path": "dist/assets/index-B3d9U5ly.css",
+      "bytes": 45583,
+      "sha256": "47e6e6381e011ce601f380d0bbe45131a45cca14eb2439edd12508ccf9ef4e20"
+    },
+    {
+      "path": "dist/assets/index-ClznDkaZ.js",
+      "bytes": 595372,
+      "sha256": "dab7c5f0468a78caf2d5afdc2a39fbceaec6e6bff422ea38531cb82d874377e5"
+    }
+  ],
+  "nonfatalChunkSizeWarning": true,
+  "noSecrets": true
+}

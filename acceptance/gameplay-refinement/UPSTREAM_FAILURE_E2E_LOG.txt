@@ -1,0 +1,54 @@
+
+Running 2 tests using 1 worker
+
+
+
+[1/2] tests/e2e/game.spec.ts:5:1 › partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic
+  1) tests/e2e/game.spec.ts:5:1 › partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic 
+
+    SyntaxError: Unexpected token 'u', "upstream c"... is not valid JSON
+
+       at helpers.ts:39
+
+      37 |   trackQaContext(context);
+      38 |   const settings = await context.request.get(`${projectUrl}/auth/v1/settings`, { headers: { apikey: publishable } });
+    > 39 |   const config = await settings.json() as { external?: { anonymous_users?: boolean } };
+         |                  ^
+      40 |   if (!config.external?.anonymous_users) {
+      41 |     const users = JSON.parse(readFileSync('/tmp/tecla-pau-qa-users.json', 'utf8')) as { email: string; password: string }[];
+      42 |     const response = await context.request.post(`${projectUrl}/auth/v1/token?grant_type=password`, {
+        at makeContext (/home/pau/Documents/tecla-pau-app/tests/e2e/helpers.ts:39:18)
+        at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:6:19
+
+    Error Context: test-results/game-partida-presencial-ac-2c001-rror-1-Meta-i-marcador-únic/error-context.md
+
+
+
+
+[2/2] tests/e2e/game.spec.ts:52:1 › online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria
+  2) tests/e2e/game.spec.ts:52:1 › online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria 
+
+    SyntaxError: Unexpected token 'u', "upstream c"... is not valid JSON
+
+       at helpers.ts:39
+
+      37 |   trackQaContext(context);
+      38 |   const settings = await context.request.get(`${projectUrl}/auth/v1/settings`, { headers: { apikey: publishable } });
+    > 39 |   const config = await settings.json() as { external?: { anonymous_users?: boolean } };
+         |                  ^
+      40 |   if (!config.external?.anonymous_users) {
+      41 |     const users = JSON.parse(readFileSync('/tmp/tecla-pau-qa-users.json', 'utf8')) as { email: string; password: string }[];
+      42 |     const response = await context.request.post(`${projectUrl}/auth/v1/token?grant_type=password`, {
+        at makeContext (/home/pau/Documents/tecla-pau-app/tests/e2e/helpers.ts:39:18)
+        at /home/pau/Documents/tecla-pau-app/tests/e2e/game.spec.ts:53:13
+
+    Error Context: test-results/game-online-dos-contexts-r-e15da-eload-reconnexió-i-victòria/error-context.md
+
+
+  2 failed
+    tests/e2e/game.spec.ts:5:1 › partida presencial: accés, resposta oculta, error, +1, Meta i marcador únic 
+    tests/e2e/game.spec.ts:52:1 › online: dos contexts, resposta segura, T&P concurrent, reload, reconnexió i victòria 
+(node:58370) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:58490) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
