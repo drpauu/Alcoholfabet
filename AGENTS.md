@@ -58,3 +58,4 @@
 - Importa inactiu, valida totes les files independentment i activa al final. Un banc publicat no pot reescriure preguntes o equivalències.
 - Espera cinc segons continus abans de mostrar avisos de connexió; una interrupció breu tampoc mostra avís de recuperació.
 - El text de pregunta complet i els controls han de ser llegibles al mòbil amb la resposta oberta; no retallis el text per encabir-lo.
+- En validar o passar de torn, ajusta la carta al resultat i a l’avís de beure. Mantén la resposta o penalització i els botons visibles; només la pregunta pot desplaçar-se si la pantalla és excepcionalment petita. No deixis que el text se superposi als altres blocs.

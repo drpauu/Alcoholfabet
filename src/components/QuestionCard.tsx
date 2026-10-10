@@ -19,7 +19,7 @@ interface QuestionCardProps {
 }
 
 export function QuestionCard({ category, pool, question, answer, answerVisible = true, phase, children, busy = false, drinkPlayer, drinkDouble = false }: QuestionCardProps) {
-  const questionCopy = useQuestionFit(question);
+  const questionBody = useQuestionFit(question);
   const categoryKind = pool === 'TP' ? 'tp' : pool?.includes('_') ? 'crossed' : pool === 'TECLA' ? 'tecla' : 'pau';
   const drinkResult = drinkPlayer && (phase === 'RESULT' || phase === 'BETWEEN_TURNS');
   return (
@@ -29,9 +29,11 @@ export function QuestionCard({ category, pool, question, answer, answerVisible =
         <ArtBadge className={`card-category card-category--${categoryKind}`} tone={categoryKind === 'crossed' ? 'neutral' : categoryKind}
           icon={phase === 'TURN_INTRO' ? 'turn' : categoryKind === 'tp' ? 'tp' : categoryKind === 'crossed' ? 'crossed' : 'personal'}>{category}</ArtBadge>
         <div className="card-divider" aria-hidden="true" />
-        <div className="question-copy" ref={questionCopy}><h2>{question}</h2></div>
-        <div className={`answer-space${drinkResult || (answer && answerVisible) ? ' has-content' : ''}`}>
-          {drinkResult ? <DrinkNotice player={drinkPlayer} double={drinkDouble} /> : answer && answerVisible ? <div className="answer-panel"><span>{copy.correctAnswer}</span><strong>{answer}</strong></div> : null}
+        <div className="question-body" ref={questionBody}>
+          <div className="question-copy"><h2>{question}</h2></div>
+          <div className={`answer-space${drinkResult || (answer && answerVisible) ? ' has-content' : ''}`}>
+            {drinkResult ? <DrinkNotice player={drinkPlayer} double={drinkDouble} /> : answer && answerVisible ? <div className="answer-panel"><span>{copy.correctAnswer}</span><strong>{answer}</strong></div> : null}
+          </div>
         </div>
         <div className="question-actions">{children}</div>
       </div>

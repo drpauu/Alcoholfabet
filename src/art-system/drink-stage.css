@@ -39,7 +39,8 @@
   .drink-stage__content { max-width: 350px; }
   .drink-stage__art { height: 290px; }
   .drink-stage__glass { width: 213px; height: 281px; }
-  .drink-stage[data-drink-count='2'] .drink-stage__glass { width: 188px; height: 248px; }
+  /* Reserve room for the sideways rise and rotation in the shared timeline. */
+  .drink-stage[data-drink-count='2'] .drink-stage__glass { width: min(188px, calc((100vw - 55px) / 2)); height: auto; aspect-ratio: 220 / 290; }
   .drink-stage[data-drink-count='2'] .drink-stage__glass + .drink-stage__glass { margin-left: -65px; }
   .drink-stage__player { font-size: 39px; }
   .drink-stage__caption > strong { font-size: 25px; }

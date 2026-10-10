@@ -134,3 +134,7 @@ Entrada sense codi privat; sense avatars a inici, seleccions, partida ni victòr
 ## Brindis central aprovat
 
 Quan l’esdeveniment confirmat indica beure, una composició temporal ocupa el centre exacte del viewport. Got vectorial de 281–319 px d’alçada, nom gran i penalització doble quan correspon. Fons enfosquit de manera temporal perquè el got i el text destaquin. El tauler i la targeta mantenen la seva geometria; en acabar es recupera la vista de la partida. `src/components/DrinkCelebration.tsx` defineix el dibuix per capes i `motion/event-choreography.json` en defineix els temps.
+
+## Ajust de cartes llargues en mòbil
+
+La carta mesura pregunta, resposta o penalització i controls en cada canvi de fase i de viewport. El tauler pot reduir l’amplada proporcionalment per cedir alçada, mantenint la navegació i la seva relació d’aspecte. No s’anima aquesta redistribució de layout. La resposta o el got persistent queden en una fila pròpia; els botons i el resum del resultat queden fora de la zona de text desplaçable. La pregunta no baixa de 20 px i pot desplaçar-se en pantalles molt petites quan calgui. A menys de 700 px d’alçada es compacten marges i resum del resultat. El brindis doble reserva espai lateral per no retallar els gots durant l’entrada.

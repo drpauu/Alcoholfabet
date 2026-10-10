@@ -7,6 +7,7 @@ export const ca = {
   loading: 'Preparem la taula…',
   sending: 'Un moment…',
   next: 'Continuar',
+  advanceExtra: 'Avances dues caselles.',
   back: 'Enrere',
   chooseRole: 'Qui ets?',
   chooseOnline: 'Preparem la trobada',
