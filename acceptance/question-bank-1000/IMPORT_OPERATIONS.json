@@ -1,0 +1,300 @@
+{
+  "projectRef": "lhgyopkwstuyxolwfucq",
+  "completedAt": "2026-10-10T09:09:59.429Z",
+  "operations": [
+    {
+      "phase": "prepare",
+      "report": {
+        "pools": {
+          "TP": 200,
+          "PAU": 200,
+          "TECLA": 200,
+          "PAU_TECLA": 200,
+          "TECLA_PAU": 200
+        },
+        "status": "IMPORTING",
+        "version": "excel-1000-20261010-v1",
+        "expected": 1000
+      }
+    },
+    {
+      "phase": "stage",
+      "batch": 1,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "stage",
+      "batch": 2,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "stage",
+      "batch": 3,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "stage",
+      "batch": 4,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "stage",
+      "batch": 5,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "stageVerified",
+      "report": {
+        "imported": 1000,
+        "active": 0,
+        "draft": 1000,
+        "active_bank": "canonical-5000-20261009-v1",
+        "old_bank_md5": "6ede4b638e7324d0e433f2a3539a4f88"
+      }
+    },
+    {
+      "phase": "review",
+      "batch": 1,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "review",
+      "batch": 2,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "review",
+      "batch": 3,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "review",
+      "batch": 4,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "review",
+      "batch": 5,
+      "report": {
+        "rowsChanged": 200,
+        "rowsReceived": 200
+      }
+    },
+    {
+      "phase": "validate",
+      "batch": 1,
+      "report": {
+        "rowsValidated": 200,
+        "validationsChanged": 200
+      }
+    },
+    {
+      "phase": "validate",
+      "batch": 2,
+      "report": {
+        "rowsValidated": 200,
+        "validationsChanged": 200
+      }
+    },
+    {
+      "phase": "validate",
+      "batch": 3,
+      "report": {
+        "rowsValidated": 200,
+        "validationsChanged": 200
+      }
+    },
+    {
+      "phase": "validate",
+      "batch": 4,
+      "report": {
+        "rowsValidated": 200,
+        "validationsChanged": 200
+      }
+    },
+    {
+      "phase": "validate",
+      "batch": 5,
+      "report": {
+        "rowsValidated": 200,
+        "validationsChanged": 200
+      }
+    },
+    {
+      "phase": "historicalLinks",
+      "report": {
+        "links_changed": 77
+      }
+    },
+    {
+      "phase": "preActivationVerified",
+      "report": {
+        "imported": 1000,
+        "approved": 913,
+        "draft": 87,
+        "validated": 1000,
+        "active_bank": "canonical-5000-20261009-v1",
+        "old_bank_md5": "6ede4b638e7324d0e433f2a3539a4f88"
+      }
+    },
+    {
+      "phase": "activation",
+      "draft": 87,
+      "pools": {
+        "TP": 200,
+        "PAU": 200,
+        "TECLA": 200,
+        "PAU_TECLA": 200,
+        "TECLA_PAU": 200
+      },
+      "version": "excel-1000-20261010-v1",
+      "approved": 913,
+      "imported": 1000,
+      "oldBankMd5": "6ede4b638e7324d0e433f2a3539a4f88",
+      "activatedAt": "2026-10-10T08:44:28.556247+00:00",
+      "snapshotAfter": {
+        "games": "40a40b12479eb1f2e67bee4247f6499e",
+        "usage": "39da6adfe45d0af0841de2de57bdd5fe",
+        "results": "f31244d776d4892053ffc3184aabbe1a"
+      },
+      "snapshotBefore": {
+        "games": "40a40b12479eb1f2e67bee4247f6499e",
+        "usage": "39da6adfe45d0af0841de2de57bdd5fe",
+        "results": "f31244d776d4892053ffc3184aabbe1a"
+      },
+      "gameHistoryUnchanged": true
+    },
+    {
+      "phase": "idempotence-review",
+      "batch": 1,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "phase": "idempotence-review",
+      "batch": 2,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "phase": "idempotence-review",
+      "batch": 3,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "phase": "idempotence-review",
+      "batch": 4,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "phase": "idempotence-review",
+      "batch": 5,
+      "rowsChanged": 0,
+      "rowsReceived": 200
+    },
+    {
+      "phase": "idempotence-validate",
+      "batch": 1,
+      "rowsValidated": 200,
+      "validationsChanged": 0
+    },
+    {
+      "phase": "idempotence-validate",
+      "batch": 2,
+      "rowsValidated": 200,
+      "validationsChanged": 0
+    },
+    {
+      "phase": "idempotence-validate",
+      "batch": 3,
+      "rowsValidated": 200,
+      "validationsChanged": 0
+    },
+    {
+      "phase": "idempotence-validate",
+      "batch": 4,
+      "rowsValidated": 200,
+      "validationsChanged": 0
+    },
+    {
+      "phase": "idempotence-validate",
+      "batch": 5,
+      "rowsValidated": 200,
+      "validationsChanged": 0
+    },
+    {
+      "phase": "idempotence-finalize",
+      "draft": 87,
+      "pools": {
+        "TP": 200,
+        "PAU": 200,
+        "TECLA": 200,
+        "PAU_TECLA": 200,
+        "TECLA_PAU": 200
+      },
+      "version": "excel-1000-20261010-v1",
+      "approved": 913,
+      "imported": 1000
+    },
+    {
+      "phase": "idempotence-concept-links",
+      "linksChanged": 0,
+      "linksReceived": 77
+    }
+  ],
+  "activation": {
+    "draft": 87,
+    "pools": {
+      "TP": 200,
+      "PAU": 200,
+      "TECLA": 200,
+      "PAU_TECLA": 200,
+      "TECLA_PAU": 200
+    },
+    "version": "excel-1000-20261010-v1",
+    "approved": 913,
+    "imported": 1000,
+    "oldBankMd5": "6ede4b638e7324d0e433f2a3539a4f88",
+    "activatedAt": "2026-10-10T08:44:28.556247+00:00",
+    "snapshotAfter": {
+      "games": "40a40b12479eb1f2e67bee4247f6499e",
+      "usage": "39da6adfe45d0af0841de2de57bdd5fe",
+      "results": "f31244d776d4892053ffc3184aabbe1a"
+    },
+    "snapshotBefore": {
+      "games": "40a40b12479eb1f2e67bee4247f6499e",
+      "usage": "39da6adfe45d0af0841de2de57bdd5fe",
+      "results": "f31244d776d4892053ffc3184aabbe1a"
+    },
+    "gameHistoryUnchanged": true
+  }
+}

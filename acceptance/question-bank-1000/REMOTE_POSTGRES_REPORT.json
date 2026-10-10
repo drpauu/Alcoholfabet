@@ -1,0 +1,285 @@
+{
+  "preActivation": {
+    "checks": [
+      "1000 package + preserved 5000 previous + 130 legacy; exact five pools, unique external IDs, answers 1–5 words, difficulty 1–7",
+      "RLS and default-deny bank; administrative import and selector inaccessible to clients",
+      "real server rejects activation when one independent row proof is missing",
+      "new games pin server-selected 1000 version; ongoing games retain old question, version and state",
+      "150 real-bank selections in all five pools: no IDs, facts, inverse capital relation, answer or subtopic repeats",
+      "database rejects another variant even when question_id differs",
+      "last 10 games for personal/TP; last 5 for crossed; facts excluded across pools and abandoned games included",
+      "controlled fallback selects the oldest last occurrence, never current-match facts",
+      "true exhaustion returns QUESTION_POOL_EMPTY, with no repetition fallback",
+      "same-answer exclusion remains hard during exhaustion",
+      "inverse formulations with different fact IDs are rejected by a second unique semantic constraint",
+      "third consecutive identical subtopic is blocked and DRAFT candidates never rescue exhaustion",
+      "mapped legacy concept excluded while the original historical usage snapshot is preserved"
+    ],
+    "status": "PASS",
+    "legacyRows": 130,
+    "packageRows": 1000,
+    "previousRows": 5000,
+    "fixturesRolledBack": true,
+    "selectionLatencyMs": {
+      "max": 6.655,
+      "min": 1.189,
+      "p95": 6.11615,
+      "mean": 3.86030666666667,
+      "calls": 150
+    },
+    "activeVersionAfterRollback": "canonical-5000-20261009-v1"
+  },
+  "question-bank-1000": {
+    "checks": [
+      "1000 package + preserved 5000 previous + 130 legacy; exact five pools, unique external IDs, answers 1–5 words, difficulty 1–7",
+      "RLS and default-deny bank; administrative import and selector inaccessible to clients",
+      "real server rejects activation when one independent row proof is missing",
+      "new games pin server-selected 1000 version; ongoing games retain old question, version and state",
+      "150 real-bank selections in all five pools: no IDs, facts, inverse capital relation, answer or subtopic repeats",
+      "database rejects another variant even when question_id differs",
+      "last 10 games for personal/TP; last 5 for crossed; facts excluded across pools and abandoned games included",
+      "controlled fallback selects the oldest last occurrence, never current-match facts",
+      "true exhaustion returns QUESTION_POOL_EMPTY, with no repetition fallback",
+      "same-answer exclusion remains hard during exhaustion",
+      "inverse formulations with different fact IDs are rejected by a second unique semantic constraint",
+      "third consecutive identical subtopic is blocked and DRAFT candidates never rescue exhaustion",
+      "mapped legacy concept excluded while the original historical usage snapshot is preserved"
+    ],
+    "status": "PASS",
+    "legacyRows": 130,
+    "packageRows": 1000,
+    "previousRows": 5000,
+    "fixturesRolledBack": true,
+    "selectionLatencyMs": {
+      "max": 10.979,
+      "min": 1.124,
+      "p95": 6.325,
+      "mean": 3.88759333333334,
+      "calls": 150
+    },
+    "activeVersionAfterRollback": "excel-1000-20261010-v1"
+  },
+  "plus-one": {
+    "checks": [
+      "IN_PERSON:correct-two-cells-one-question-no-chain-idempotent",
+      "IN_PERSON:incorrect-or-unknown-no-move-double-drink-pass-turn-no-score",
+      "TP:bonus-belongs-to-confirmed-claimant-one-question",
+      "META:bonus-finishes-atomically-result-counted-once",
+      "ONLINE:correct-two-cells-one-question-no-chain-idempotent",
+      "ONLINE:incorrect-or-unknown-no-move-double-drink-pass-turn-no-score"
+    ],
+    "status": "PASS",
+    "remainingQaGames": 0,
+    "remainingQaUsers": 0,
+    "fixturesRolledBack": true,
+    "authSessionsCreated": 0,
+    "existingRowsUnchanged": true
+  },
+  "duration": {
+    "checks": [
+      "all51-supported-minutes-and5-persisted-presets",
+      "balanced-pools-plus-one-and-immutable-board",
+      "new-game10-to60-validation-private-helpers-legacy-constraint",
+      "50-cell-game-to-meta-no-repeat-approved-only-idempotent-result",
+      "pool-exhaustion-is-atomic-no-repeat-and-abandon-no-result",
+      "historical180-minute-idempotency-replay-preserved"
+    ],
+    "status": "PASS",
+    "fixtures": {
+      "userId": "c8169a4a-fdf3-4d28-a091-86922cf17ba3",
+      "gameIds": [
+        "72a217b6-74ac-4217-9dec-818b55270544",
+        "c2eb9aaf-5572-4d08-8519-197e09a4a455",
+        "83f63e69-4ba0-47a9-be18-5de8393e1035",
+        "b5793e0b-7b99-4927-9d19-114aa04dfb6e",
+        "1c4dfdeb-1940-4988-ae56-ce1d254f5050",
+        "39684ec4-ece6-41ef-8b6c-ac4e4287f141"
+      ],
+      "rolledBack": true
+    },
+    "noSecrets": true,
+    "preservedRows": {
+      "cells": {
+        "hash": "ffa3ebb45ead7b6a565dea357ccebccc",
+        "count": 542
+      },
+      "games": {
+        "hash": "40a40b12479eb1f2e67bee4247f6499e",
+        "count": 37
+      },
+      "users": {
+        "hash": "6cef57d59451faa19f10cd40e2f46efa",
+        "count": 34
+      },
+      "results": {
+        "hash": "cfd6b666fe536126abfc2c3c93995e80",
+        "count": 2
+      }
+    },
+    "completedTurns": 87,
+    "remainingQaGames": 0,
+    "remainingQaUsers": 0,
+    "authSessionsCreated": 0
+  },
+  "public-access": {
+    "checks": [
+      "anonymous-entry-and-in-person-create-without-code; online-roles-verified",
+      "outsider-cannot-resume-read-act-or-subscribe-to-other-or-legacy-game",
+      "public-online-join-private-answer-and-member-only-realtime",
+      "rls-and-server-only-write-privileges-preserved"
+    ],
+    "status": "PASS",
+    "noSecrets": true,
+    "remainingQaGames": 0,
+    "remainingQaUsers": 0,
+    "fixturesRolledBack": true,
+    "authSessionsCreated": 0,
+    "existingRowsUnchanged": true
+  },
+  "online-identity": {
+    "checks": [
+      "public-in-person-no-code; verified-pau-role; forged-role-and-active-switch-rejected",
+      "verified-tecla-join; missing-identity-and-forged-role-rejected",
+      "ten-invalid-attempt-limit; no-score-created",
+      "private-codes-identities-attempts; RLS; no-client-bypass-or-anon-RPC"
+    ],
+    "status": "PASS",
+    "fixturesRolledBack": true,
+    "privateCodesRestored": true
+  },
+  "security": {
+    "checks": [
+      "revoked views and authoritative RPCs",
+      "private Realtime Broadcast/Presence ACL",
+      "server-only broadcast",
+      "rate limiting",
+      "exact topic parsing",
+      "semantic exhaustion rolls back game action"
+    ],
+    "status": "PASS",
+    "fixturesRolledBack": true
+  },
+  "finalState": {
+    "pools": [
+      {
+        "pool": "PAU",
+        "draft": 9,
+        "active": 191,
+        "imported": 200,
+        "active_facts": 188
+      },
+      {
+        "pool": "TECLA",
+        "draft": 25,
+        "active": 175,
+        "imported": 200,
+        "active_facts": 169
+      },
+      {
+        "pool": "TECLA_PAU",
+        "draft": 15,
+        "active": 185,
+        "imported": 200,
+        "active_facts": 184
+      },
+      {
+        "pool": "PAU_TECLA",
+        "draft": 22,
+        "active": 178,
+        "imported": 200,
+        "active_facts": 170
+      },
+      {
+        "pool": "TP",
+        "draft": 16,
+        "active": 184,
+        "imported": 200,
+        "active_facts": 180
+      }
+    ],
+    "score": [
+      {
+        "couple": "pau-tecla",
+        "pauWins": 1,
+        "teclaWins": 1,
+        "completedGames": 2
+      },
+      {
+        "couple": "alcoholfabet",
+        "pauWins": 0,
+        "teclaWins": 0,
+        "completedGames": 0
+      }
+    ],
+    "checkedAt": "2026-10-10T08:56:00.75065+00:00",
+    "manifests": [
+      {
+        "draft": 87,
+        "status": "ACTIVE",
+        "version": "excel-1000-20261010-v1",
+        "approved": 913,
+        "imported": 1000,
+        "activatedAt": "2026-10-10T08:44:28.556247+00:00"
+      },
+      {
+        "draft": 404,
+        "status": "SUPERSEDED",
+        "version": "canonical-5000-20261009-v1",
+        "approved": 4596,
+        "imported": 5000,
+        "activatedAt": "2026-10-09T18:51:27.830306+00:00"
+      }
+    ],
+    "rowCounts": {
+      "legacy-130": 130,
+      "excel-1000-20261010-v1": 1000,
+      "canonical-5000-20261009-v1": 5000
+    },
+    "oldBankMd5": "6ede4b638e7324d0e433f2a3539a4f88",
+    "projectRef": "lhgyopkwstuyxolwfucq",
+    "gamesByBank": [
+      {
+        "games": 6,
+        "status": "FINISHED",
+        "question_bank_version": "canonical-5000-20261009-v1"
+      },
+      {
+        "games": 29,
+        "status": "ABANDONED",
+        "question_bank_version": "canonical-5000-20261009-v1"
+      },
+      {
+        "games": 2,
+        "status": "ACTIVE",
+        "question_bank_version": "canonical-5000-20261009-v1"
+      }
+    ],
+    "orphanUsage": 0,
+    "historicalLinks": 77,
+    "orphanQuestions": 0,
+    "privilegedLinksOnly": true,
+    "matchingValidationProofs": 1000
+  },
+  "publicationRollback": {
+    "status": "PASS",
+    "activeBank": "excel-1000-20261010-v1",
+    "rollbackBank": "canonical-5000-20261009-v1",
+    "fixturesRolledBack": true,
+    "manifestRowsUnchanged": true
+  },
+  "admin": {
+    "checks": [
+      "77 historical links reimport with zero changes",
+      "unknown concepts rejected",
+      "published concept links immutable",
+      "published answers immutable",
+      "independent validation rejects altered answers"
+    ],
+    "status": "PASS",
+    "conceptReimport": {
+      "linksChanged": 0,
+      "linksReceived": 77
+    },
+    "questionsUnchanged": true
+  }
+}

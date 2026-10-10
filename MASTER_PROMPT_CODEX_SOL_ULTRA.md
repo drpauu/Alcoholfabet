@@ -442,3 +442,9 @@ Les files dubtoses queden DRAFT i inactives, sense eliminar ni canviar els texto
 ## Inici automàtic del torn — revisió posterior
 
 Per instrucció posterior de l’usuari, s’elimina el pas «La següent casella us espera» i el botó de començar el torn. En crear, reprendre o passar al torn següent, el dispositiu que té la capacitat autoritzada pel servidor envia automàticament BEGIN_TURN. En línia només ho fa el jugador que té el torn. La confirmació del servidor i la coreografia de la pregunta es conserven; la reconnexió, les animacions, les operacions pendents i els diàlegs oberts bloquegen l’enviament fins que es pot continuar.
+
+## Actualització del banc i mòbil — 10 d’octubre de 2026
+
+La instrucció posterior substitueix el banc de les partides noves per les 1.000 preguntes de `questions_1000.xlsx`; el paquet, JSONL i prompt nous no s’han trobat. La conversió conserva els textos. El manifest actiu és `excel-1000-20261010-v1`: 913 aprovades i 87 inactives per incidències. Els bancs antics i l’historial es conserven. Les partides noves fixen la versió al servidor i les anteriors mantenen la disponible abans de la migració. La importació comença inactiva, és idempotent i es valida fila per fila abans d’activar. Els duplicats conceptuals detectats i les equivalències històriques es resolen al servidor. Vegeu `QUESTION_BANK_1000_MIGRATION_REPORT.md`.
+
+Per petició de l’usuari, els avisos de connexió esperen cinc segons continus; no es mostra reconnexió si la interrupció s’ha recuperat abans. Els bloquejos d’accions sense connexió continuen immediats. Les preguntes completes han de cabre a la carta mòbil amb la resposta i els controls; s’ajusta només la tipografia necessària i es permet desplaçament intern de reserva. La resta dels visuals es conserva.

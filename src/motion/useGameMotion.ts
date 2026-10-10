@@ -108,20 +108,22 @@ export function useGameMotion(view: GameView | null, options: GameMotionOptions 
   const unlockAudio = useCallback(() => audio.unlock(), [audio]);
   const toggleSound = useCallback(() => { audio.unlock(); setSoundEnabled(audio.toggle()); }, [audio]);
 
-  const disconnect = useCallback(() => {
+  const disconnect = useCallback((present = true) => {
     disconnected.current = true;
     setReconnectVisible(false);
     setDrinkPresentation(null);
     orchestrator.cancel(); audio.stop(); auxiliary.current.abort(); auxiliary.current = new AbortController();
+    if (!present) return;
     const sequence = connectionSequence(false);
     void runSequence(reducedRef.current ? reduceSequence(sequence) : sequence, { root: root(), audio, reduced: reducedRef.current, signal: auxiliary.current.signal, key: 'disconnect' });
   }, [orchestrator, audio, root]);
 
   /** Call after fetching the safe, current view and restoring the private channel. */
-  const reconnect = useCallback(() => {
+  const reconnect = useCallback((present = true) => {
     disconnected.current = false;
     if (current.current) orchestrator.hydrate(current.current.game.id, current.current.game.stateVersion);
     auxiliary.current.abort(); auxiliary.current = new AbortController();
+    if (!present) { setBusy(false); setReconnectVisible(false); return; }
     const sequence = connectionSequence(true);
     setReconnectVisible(true);
     setBusy(true);

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { chromium, expect } from '@playwright/test';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 
@@ -16,7 +16,7 @@ const capabilities = { canSeeAnswer: false, canJudge: false, canBeginTurn: false
 const cases = [], errors = [], blocked = [];
 const browser = await chromium.launch({ executablePath: join(homedir(), '.cache/ms-playwright/chromium-1200/chrome-linux64/chrome'), headless: true, args: ['--no-sandbox'] });
 
-function server({ online = false, lobby = false, tp = false, failures = 0 } = {}) {
+function server({ online = false, lobby = false, tp = false, failures = 0, bootOffline = false, questionText = 'Quin instrument té tecles blanques i negres?', answerText = 'Piano' } = {}) {
   const model = {
     game: { id: gameId, coupleId, mode: online ? 'ONLINE' : 'IN_PERSON', status: lobby ? 'LOBBY' : 'ACTIVE',
       phase: lobby ? 'LOBBY' : 'TURN_INTRO', inviteCode: online ? 'QATEST' : null, targetMinutes: 20, finishPosition: 17,
@@ -39,7 +39,7 @@ function server({ online = false, lobby = false, tp = false, failures = 0 } = {}
   };
   const notify = () => { for (const page of pages.filter(page => !page.isClosed())) void page.evaluate(stateVersion => window.dispatchEvent(new CustomEvent('qa-refresh', { detail: { stateVersion } })), model.game.stateVersion).catch(() => {}); };
   async function rpc(name, payload, role, overlay) {
-    if (name === 'get_access_context') return { data: { authorized: true, activeGameId: gameId, scoreboard: model.scoreboard }, error: null };
+    if (name === 'get_access_context') return bootOffline ? { data: null, error: { message: 'Failed to fetch' } } : { data: { authorized: true, activeGameId: gameId, scoreboard: model.scoreboard }, error: null };
     if (name === 'get_game_view') return { data: safe(role), error: null };
     const game = model.game, action = name === 'start_game' ? 'START_GAME' : payload.p_action;
     intents.push({ action, role, version: payload.p_expected_state_version, key: payload.p_idempotency_key });
@@ -55,7 +55,7 @@ function server({ online = false, lobby = false, tp = false, failures = 0 } = {}
       assert.equal(game.phase, 'TURN_INTRO');
       if (online) assert.equal(role, game.currentTurn, 'The other player must not begin this turn');
       game.phase = tp ? 'TP_OPEN' : 'QUESTION'; game.respondingPlayer = tp ? null : game.currentTurn; game.currentTargetCell = 1;
-      model.question = { id: `fixture-${game.turnNumber}`, pool: tp ? 'TP' : game.currentTurn, topic: 'Música', questionCa: 'Quin instrument té tecles blanques i negres?', answerCa: 'Piano' };
+      model.question = { id: `fixture-${game.turnNumber}`, pool: tp ? 'TP' : game.currentTurn, topic: 'Música', questionCa: questionText, answerCa: answerText };
     } else if (action === 'CLAIM_TP') { assert.equal(game.phase, 'TP_OPEN'); game.phase = 'TP_CLAIMED'; game.tpClaimant = payload.p_payload.claimant; game.respondingPlayer = payload.p_payload.claimant; }
     else if (action === 'REVEAL_ANSWER') game.phase = 'ANSWER_REVEALED';
     else if (action === 'JUDGE_INCORRECT') { assert.equal(safe(role).capabilities.canJudge, true); game.phase = 'RESULT'; }
@@ -66,11 +66,11 @@ function server({ online = false, lobby = false, tp = false, failures = 0 } = {}
       payload: action === 'JUDGE_INCORRECT' ? { correct: false, respondingPlayer: game.respondingPlayer, from: 0, to: 0, plusOne: true, drinkCount: 2 } : {} };
     const data = safe(role); notify(); return { data, error: null };
   }
-  return { model, pages, intents, rpc, safe };
+  return { model, pages, intents, rpc, safe, restoreAccess: () => { bootOffline = false; } };
 }
 
-async function open(fixture, role = 'IN_PERSON_CONTROLLER', { connection = 'connected' } = {}) {
-  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' });
+async function open(fixture, role = 'IN_PERSON_CONTROLLER', { connection = 'connected', reducedMotion = 'reduce' } = {}) {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion });
   context.setDefaultTimeout(12000);
   const client = `const role=${JSON.stringify(role)},id=${JSON.stringify(userId(role))};let connection=${JSON.stringify(connection)};
 export const supabase={
@@ -159,22 +159,94 @@ try {
   cases.push({ name: 'T&P: automatic question preserves claim', status: 'PASS' }); await disputed.context.close();
 
   const failed = server({ failures: 1 }), retry = await open(failed);
-  await expect(retry.page.locator('.error-message')).toBeVisible(); await retry.page.waitForTimeout(350);
+  await expect(retry.page.locator('[data-phase]')).toHaveAttribute('data-phase', 'TURN_INTRO');
+  await retry.page.waitForTimeout(4000);
+  await expect(retry.page.locator('.error-message')).toHaveCount(0);
+  await expect(retry.page.locator('.error-message')).toBeVisible({ timeout: 10000 }); await retry.page.waitForTimeout(350);
   assert.equal(begins(failed).length, 1, 'Failed intent must not loop');
   await retry.page.locator('.error-message button').click(); await ready(retry.page); assert.equal(begins(failed).length, 2);
   cases.push({ name: 'RPC failure: no loop, dismissing the error retries', status: 'PASS' }); await retry.context.close();
 
+  const inaccessible = server({ bootOffline: true }), initial = await open(inaccessible);
+  await expect(initial.page.locator('.setup-screen')).toBeVisible();
+  await initial.page.waitForTimeout(4000);
+  await expect(initial.page.getByText('Cal connexió per continuar la partida.', { exact: true })).toHaveCount(0);
+  await expect(initial.page.getByText('Cal connexió per continuar la partida.', { exact: true })).toBeVisible({ timeout: 10000 });
+  inaccessible.restoreAccess();
+  await initial.page.getByRole('button', { name: 'Torna-ho a provar', exact: true }).click();
+  await ready(initial.page); assert.equal(begins(inaccessible).length, 1);
+  cases.push({ name: 'initial network failure: five-second grace, persistent error and retry recovery', status: 'PASS' }); await initial.context.close();
+
   const offline = server(), reconnect = await open(offline, 'IN_PERSON_CONTROLLER', { connection: 'reconnecting' });
+  await expect(reconnect.page.locator('[data-phase]')).toBeVisible();
+  await reconnect.page.waitForTimeout(4500);
+  await expect(reconnect.page.locator('.connection-overlay')).not.toHaveClass(/is-visible/);
   await expect(reconnect.page.locator('.connection-overlay')).toHaveClass(/is-visible/); assert.equal(begins(offline).length, 0);
   await reconnect.page.evaluate(() => window.dispatchEvent(new CustomEvent('qa-connection', { detail: 'connected' })));
   await expect(reconnect.page.locator('.connection-overlay')).not.toHaveClass(/is-visible/);
   await ready(reconnect.page); assert.equal(begins(offline).length, 1);
-  cases.push({ name: 'reconnect: begin only after connection is restored', status: 'PASS' }); await reconnect.context.close();
+  cases.push({ name: 'persistent disconnect: no notice before five seconds; begin after recovery', status: 'PASS' }); await reconnect.context.close();
+
+  const brief = server(), recovered = await open(brief, 'IN_PERSON_CONTROLLER', { connection: 'reconnecting' });
+  await expect(recovered.page.locator('[data-phase]')).toBeVisible();
+  await recovered.page.evaluate(() => {
+    window.__qaNotices = [];
+    new MutationObserver(() => {
+      if (document.querySelector('.connection-overlay')?.classList.contains('is-visible')) window.__qaNotices.push(performance.now());
+    }).observe(document.querySelector('.connection-overlay'), { attributes: true });
+  });
+  await recovered.page.waitForTimeout(1700);
+  await expect(recovered.page.locator('.connection-overlay')).not.toHaveClass(/is-visible/);
+  await recovered.page.evaluate(() => window.dispatchEvent(new CustomEvent('qa-connection', { detail: 'connected' })));
+  await ready(recovered.page);
+  assert.equal(begins(brief).length, 1);
+  assert.deepEqual(await recovered.page.evaluate(() => window.__qaNotices), []);
+  cases.push({ name: 'brief disconnect: recovery without connection or reconnected notice', status: 'PASS' }); await recovered.context.close();
+
+  const newRows = (await readFile('data/question-bank-1000/reviewed_1000.jsonl', 'utf8')).trim().split('\n').map(JSON.parse);
+  const oldRows = (await readFile('data/question-bank/reviewed_5000.jsonl', 'utf8')).trim().split('\n').map(JSON.parse);
+  const longest = rows => rows.filter(row => row.active).sort((a, b) => b.question_ca.length - a.question_ca.length)[0];
+  const layouts = [];
+  for (const [source, question] of [['new', longest(newRows)], ['old', longest(oldRows)]]) {
+    for (const [width, height, reducedMotion] of [[360, 800, 'reduce'], [390, 844, 'reduce'], [430, 932, 'reduce'], [390, 844, 'no-preference']]) {
+      const mobile = server({ questionText: question.question_ca, answerText: question.answer_ca }), device = await open(mobile, 'IN_PERSON_CONTROLLER', { reducedMotion });
+      await ready(device.page);
+      await device.page.setViewportSize({ width, height });
+      for (const phase of ['question', 'answer']) {
+        if (phase === 'answer' && mobile.model.game.phase !== 'ANSWER_REVEALED') {
+          await device.page.getByRole('button', { name: 'Mostra la resposta', exact: true }).click();
+          await expect(device.page.getByRole('button', { name: 'Incorrecte', exact: true })).toBeEnabled();
+        }
+        await expect(device.page.locator('[data-phase]')).toHaveAttribute('data-phase', phase === 'question' ? 'QUESTION' : 'ANSWER_REVEALED');
+        await device.page.evaluate(() => document.fonts.ready);
+        await device.page.waitForTimeout(100);
+        const layout = await device.page.evaluate(() => {
+          const box = document.querySelector('.question-copy'), heading = box.querySelector('h2');
+          const rect = box.getBoundingClientRect(), range = document.createRange();
+          range.selectNodeContents(heading);
+          const lines = [...range.getClientRects()];
+          const actions = [...document.querySelectorAll('.question-actions button')].map(button => button.getBoundingClientRect());
+          return { chars: heading.textContent.length, fontSize: parseFloat(getComputedStyle(heading).fontSize), scrollable: box.scrollHeight > box.clientHeight + 1,
+            textFits: lines.every(line => line.top >= rect.top - 2 && line.bottom <= rect.bottom + 2 && line.left >= rect.left - 2 && line.right <= rect.right + 2),
+            actionsVisible: actions.every(button => button.top >= 0 && button.bottom <= innerHeight + 1),
+            documentFits: document.body.scrollWidth <= innerWidth && document.body.scrollHeight <= innerHeight };
+        });
+        assert.ok(layout.documentFits && layout.actionsVisible, JSON.stringify({ source, width, height, phase, ...layout }));
+        assert.ok(layout.fontSize >= 20);
+        assert.ok(layout.textFits || layout.scrollable, 'Every question is fully visible or internally scrollable');
+        if (source === 'new') assert.ok(layout.textFits && !layout.scrollable, 'The new bank fits ordinary mobile turns without scrolling');
+        layouts.push({ source, width, height, phase, reducedMotion, ...layout });
+        await device.page.screenshot({ path: join(directory, 'screenshots', `long-${source}-${phase}-${width}x${height}${reducedMotion === 'no-preference' ? '-motion' : ''}.png`) });
+      }
+      await device.context.close();
+    }
+  }
+  cases.push({ name: 'mobile: longest approved old/new prompts remain readable with answers and reachable controls', status: 'PASS', layouts });
   assert.deepEqual(errors, []); assert.deepEqual(blocked, []);
 } catch (error) { errors.push(error.stack ?? String(error)); }
 finally {
   await browser.close();
-  const status = errors.length || blocked.length || cases.length !== 5 ? 'FAIL' : 'PASS';
+  const status = errors.length || blocked.length || cases.length !== 8 ? 'FAIL' : 'PASS';
   await writeFile(join(directory, 'BROWSER_REPORT.json'), JSON.stringify({ status, completedAt: new Date().toISOString(), scope: 'Real App, useGameSession, useGameChannel, GameRepository, motion; isolated RPC and Realtime transport fixtures', cases, errors, blockedRequests: blocked, authCreated: 0, gamesCreated: 0, scoreChanges: 0 }, null, 2) + '\n');
   console.log(JSON.stringify({ status, cases: cases.length, errors, blockedRequests: blocked }));
   if (status !== 'PASS') process.exitCode = 1;

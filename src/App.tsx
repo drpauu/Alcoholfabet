@@ -11,6 +11,7 @@ import { ca } from './content/ca';
 import { useGameSession } from './hooks/useGameSession';
 import { useGameChannel } from './hooks/useGameChannel';
 import { useGameMotion } from './motion/useGameMotion';
+import { usePersistentProblem } from './hooks/usePersistentProblem';
 import type { GameAction, GameMode, PlayerRole } from './domain/game/game-types';
 import { DURATION_PRESETS } from './domain/game/duration-config';
 import type { GameView, Scoreboard } from './services/game-contract';
@@ -57,14 +58,20 @@ export default function App() {
   const motion = useGameMotion(view);
   const channel = useGameChannel(view?.game.id ?? null, session.userId, view?.viewer.role ?? null, session.refresh, view?.game.stateVersion ?? 0);
   const disconnected = view !== null && channel.connection !== 'connected';
+  const connectionNotice = usePersistentProblem(disconnected ? view.game.id : null);
+  const connectionError = session.error !== null && /connexió|connectar|recuperar la partida/.test(session.error);
+  const persistentError = usePersistentProblem(connectionError ? session.error : null);
+  const visibleError = !connectionError || persistentError ? session.error : null;
   const locked = session.pending || motion.busy || disconnected;
   const wasDisconnected = useRef(false);
+  const connectionNoticeShown = useRef(false);
+  const [reconnectionGeneration, setReconnectionGeneration] = useState(0);
 
   useEffect(() => {
     if (!view || session.loading || !session.access?.authorized || session.error || locked || wasDisconnected.current || leave || rules) return;
     if (view.game.status !== 'ACTIVE' || !['READY', 'TURN_INTRO'].includes(view.game.phase) || !view.capabilities.canBeginTurn) return;
     void session.run((repo) => repo.action(view, { type: 'BEGIN_TURN' }));
-  }, [view, locked, leave, rules, session.loading, session.access?.authorized, session.error, session.run]);
+  }, [view, locked, leave, rules, session.loading, session.access?.authorized, session.error, session.run, reconnectionGeneration]);
 
   useEffect(() => {
     if (invitePending && invite && session.access?.authorized && !view && step === 'HOME') {
@@ -78,12 +85,23 @@ export default function App() {
   useEffect(() => {
     if (disconnected) {
       wasDisconnected.current = true;
-      motion.disconnect();
+      connectionNoticeShown.current = false;
+      motion.disconnect(false);
     } else if (wasDisconnected.current) {
       wasDisconnected.current = false;
-      motion.reconnect();
+      motion.reconnect(connectionNoticeShown.current);
+      connectionNoticeShown.current = false;
+      // A silent recovery still wakes the automatic-turn effect after hydrate.
+      setReconnectionGeneration((generation) => generation + 1);
     }
   }, [disconnected, motion.disconnect, motion.reconnect]);
+
+  useEffect(() => {
+    if (connectionNotice) {
+      connectionNoticeShown.current = true;
+      motion.disconnect();
+    }
+  }, [connectionNotice, motion.disconnect]);
 
   const act = (action: GameAction) => {
     if (!view || locked) return;
@@ -141,12 +159,12 @@ export default function App() {
   };
 
   let content: ReactNode;
-  if (session.loading) {
+  if (session.loading || (!session.access?.authorized && connectionError && !persistentError)) {
     content = <section className="setup-screen"><ArtPanel><ArtLoader /></ArtPanel></section>;
   } else if (!session.access?.authorized) {
     content = <section className="setup-screen">
       <ArtPanel>
-        <h1>{ca.appTitle}</h1><p role="status">{session.error ?? ca.connectionNeeded}</p>
+        <h1>{ca.appTitle}</h1><p role="status">{visibleError ?? ca.connectionNeeded}</p>
         <ArtButtonPrimary icon="reconnect" onClick={() => void session.boot()}>{ca.connectionRetry}</ArtButtonPrimary>
       </ArtPanel>
     </section>;
@@ -241,10 +259,10 @@ export default function App() {
     </div></div>
     {content}
     <DrinkCelebration presentation={motion.drinkPresentation} />
-    {session.error&&session.access?.authorized&&<ArtToast className="error-message" tone="incorrect" onDismiss={session.clearError}>{session.error}</ArtToast>}
+    {visibleError&&session.access?.authorized&&<ArtToast className="error-message" tone="incorrect" onDismiss={session.clearError}>{visibleError}</ArtToast>}
     {rules&&<ArtModal open={rules} title={ca.rules} onClose={() => setRules(false)}><div className="rules-copy">{[ca.ruleGoal,ca.ruleTalk,ca.ruleCategories,ca.ruleCorrect,ca.ruleBonus,ca.ruleTP,ca.ruleScore].map((line)=><p key={line}>{line}</p>)}</div><ArtButtonPrimary className="primary-button" onClick={() => setRules(false)}>{ca.close}</ArtButtonPrimary></ArtModal>}
     {leave&&<ArtModal open={leave} title={ca.leaveQuestion} onClose={() => setLeave(false)}><p>{ca.leaveWarning}</p><div className="panel-actions"><ArtButtonSecondary className="secondary-button" disabled={session.pending} onClick={() => setLeave(false)}>{ca.keepPlaying}</ArtButtonSecondary><ArtButtonIncorrect className="danger-button" loading={session.pending} disabled={locked} onClick={() => void abandon()}>{ca.abandonGame}</ArtButtonIncorrect></div></ArtModal>}
-    <div className={`connection-overlay ${disconnected||motion.reconnectVisible?'is-visible':''}`} data-motion="disconnectOverlay" aria-hidden={!disconnected&&!motion.reconnectVisible}>
+    <div className={`connection-overlay ${connectionNotice||motion.reconnectVisible?'is-visible':''}`} data-motion="disconnectOverlay" aria-hidden={!connectionNotice&&!motion.reconnectVisible}>
       <ArtPanel><ArtIcon name={motion.reconnectVisible ? 'reconnect' : 'connection'} /><h2 data-motion="reconnectText">{motion.reconnectVisible?ca.reconnected:ca.connectionLost}</h2><p>{motion.reconnectVisible?ca.gameContinues:ca.reconnecting}</p><ArtLoader className="connection-loader" compact label="" aria-label={ca.reconnecting} /><svg data-motion="reconnectCheck" viewBox="0 0 60 60"><path d="M13 30 25 43 48 17" /></svg></ArtPanel>
     </div>
     {view&&<div className="orientation-gate"><ArtIcon name="rotate" /><h2 className="mobile-rotation">{ca.rotateDevice}</h2><p className="mobile-rotation">{ca.rotateDeviceHelp}</p><h2 className="tablet-rotation">{ca.rotateIpad}</h2><p className="tablet-rotation">{ca.rotateIpadHelp}</p></div>}

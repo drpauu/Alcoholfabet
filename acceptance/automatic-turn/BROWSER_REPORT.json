@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "completedAt": "2026-10-09T21:54:15.269Z",
+  "completedAt": "2026-10-10T09:13:59.094Z",
   "scope": "Real App, useGameSession, useGameChannel, GameRepository, motion; isolated RPC and Realtime transport fixtures",
   "cases": [
     {
@@ -22,8 +22,230 @@
       "status": "PASS"
     },
     {
-      "name": "reconnect: begin only after connection is restored",
+      "name": "initial network failure: five-second grace, persistent error and retry recovery",
       "status": "PASS"
+    },
+    {
+      "name": "persistent disconnect: no notice before five seconds; begin after recovery",
+      "status": "PASS"
+    },
+    {
+      "name": "brief disconnect: recovery without connection or reconnected notice",
+      "status": "PASS"
+    },
+    {
+      "name": "mobile: longest approved old/new prompts remain readable with answers and reachable controls",
+      "status": "PASS",
+      "layouts": [
+        {
+          "source": "new",
+          "width": 360,
+          "height": 800,
+          "phase": "question",
+          "reducedMotion": "reduce",
+          "chars": 87,
+          "fontSize": 23,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "new",
+          "width": 360,
+          "height": 800,
+          "phase": "answer",
+          "reducedMotion": "reduce",
+          "chars": 87,
+          "fontSize": 23,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "new",
+          "width": 390,
+          "height": 844,
+          "phase": "question",
+          "reducedMotion": "reduce",
+          "chars": 87,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "new",
+          "width": 390,
+          "height": 844,
+          "phase": "answer",
+          "reducedMotion": "reduce",
+          "chars": 87,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "new",
+          "width": 430,
+          "height": 932,
+          "phase": "question",
+          "reducedMotion": "reduce",
+          "chars": 87,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "new",
+          "width": 430,
+          "height": 932,
+          "phase": "answer",
+          "reducedMotion": "reduce",
+          "chars": 87,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "new",
+          "width": 390,
+          "height": 844,
+          "phase": "question",
+          "reducedMotion": "no-preference",
+          "chars": 87,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "new",
+          "width": 390,
+          "height": 844,
+          "phase": "answer",
+          "reducedMotion": "no-preference",
+          "chars": 87,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "old",
+          "width": 360,
+          "height": 800,
+          "phase": "question",
+          "reducedMotion": "reduce",
+          "chars": 119,
+          "fontSize": 23,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "old",
+          "width": 360,
+          "height": 800,
+          "phase": "answer",
+          "reducedMotion": "reduce",
+          "chars": 119,
+          "fontSize": 23,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "old",
+          "width": 390,
+          "height": 844,
+          "phase": "question",
+          "reducedMotion": "reduce",
+          "chars": 119,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "old",
+          "width": 390,
+          "height": 844,
+          "phase": "answer",
+          "reducedMotion": "reduce",
+          "chars": 119,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "old",
+          "width": 430,
+          "height": 932,
+          "phase": "question",
+          "reducedMotion": "reduce",
+          "chars": 119,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "old",
+          "width": 430,
+          "height": 932,
+          "phase": "answer",
+          "reducedMotion": "reduce",
+          "chars": 119,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "old",
+          "width": 390,
+          "height": 844,
+          "phase": "question",
+          "reducedMotion": "no-preference",
+          "chars": 119,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        },
+        {
+          "source": "old",
+          "width": 390,
+          "height": 844,
+          "phase": "answer",
+          "reducedMotion": "no-preference",
+          "chars": 119,
+          "fontSize": 25,
+          "scrollable": false,
+          "textFits": true,
+          "actionsVisible": true,
+          "documentFits": true
+        }
+      ]
     }
   ],
   "errors": [],

@@ -1,0 +1,310 @@
+[
+  {
+    "question_id": "PAU_TECLA-0356",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "PAU_TECLA-0406",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "PAU_TECLA-0456",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "PAU_TECLA-0506",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "PAU_TECLA-0556",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TECLA-0824",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TECLA-0874",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TECLA-0924",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TECLA-0974",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TECLA-1024",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TECLA-1074",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TECLA-1124",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TP-0798",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "TP-0862",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "common_003",
+    "semantic_key": "new26:sea_catalan_coast"
+  },
+  {
+    "question_id": "common_004",
+    "semantic_key": "new26:andorra_catalan"
+  },
+  {
+    "question_id": "common_005",
+    "semantic_key": "new26:new26-tp-123"
+  },
+  {
+    "question_id": "common_006",
+    "semantic_key": "cult_tenora"
+  },
+  {
+    "question_id": "common_009",
+    "semantic_key": "new26:new26-tecla_pau-177"
+  },
+  {
+    "question_id": "common_011",
+    "semantic_key": "new26:bat_flight"
+  },
+  {
+    "question_id": "common_012",
+    "semantic_key": "new26:new26-tp-028"
+  },
+  {
+    "question_id": "common_015",
+    "semantic_key": "new26:new26-tp-187"
+  },
+  {
+    "question_id": "common_018",
+    "semantic_key": "new26:mercury_metal"
+  },
+  {
+    "question_id": "common_022",
+    "semantic_key": "new26:seine_paris"
+  },
+  {
+    "question_id": "common_023",
+    "semantic_key": "new26:everest_himalaya"
+  },
+  {
+    "question_id": "pau_001",
+    "semantic_key": "new26:new26-tecla_pau-067"
+  },
+  {
+    "question_id": "pau_002",
+    "semantic_key": "new26:stack"
+  },
+  {
+    "question_id": "pau_003",
+    "semantic_key": "new26:new26-tecla_pau-018"
+  },
+  {
+    "question_id": "pau_004",
+    "semantic_key": "new26:new26-pau-015"
+  },
+  {
+    "question_id": "pau_005",
+    "semantic_key": "new26:recursion"
+  },
+  {
+    "question_id": "pau_007",
+    "semantic_key": "new26:new26-tecla_pau-044"
+  },
+  {
+    "question_id": "pau_008",
+    "semantic_key": "new26:sql_where"
+  },
+  {
+    "question_id": "pau_010",
+    "semantic_key": "new26:git"
+  },
+  {
+    "question_id": "pau_011",
+    "semantic_key": "new26:new26-tecla_pau-037"
+  },
+  {
+    "question_id": "pau_014",
+    "semantic_key": "new26:https"
+  },
+  {
+    "question_id": "pau_015",
+    "semantic_key": "new26:new26-tecla_pau-068"
+  },
+  {
+    "question_id": "pau_017",
+    "semantic_key": "new26:new26-tp-028"
+  },
+  {
+    "question_id": "pau_018",
+    "semantic_key": "new26:new26-tecla_pau-122"
+  },
+  {
+    "question_id": "pau_019",
+    "semantic_key": "new26:kilimanjaro"
+  },
+  {
+    "question_id": "pau_020",
+    "semantic_key": "new26:gibraltar_strait"
+  },
+  {
+    "question_id": "pau_025",
+    "semantic_key": "new26:new26-tp-112"
+  },
+  {
+    "question_id": "pau_026",
+    "semantic_key": "new26:everest_himalaya"
+  },
+  {
+    "question_id": "ptecla_008",
+    "semantic_key": "new26:new26-pau_tecla-012"
+  },
+  {
+    "question_id": "ptecla_010",
+    "semantic_key": "new26:choir"
+  },
+  {
+    "question_id": "ptecla_011",
+    "semantic_key": "cult_tenora"
+  },
+  {
+    "question_id": "ptecla_014",
+    "semantic_key": "new26:new26-tp-123"
+  },
+  {
+    "question_id": "ptecla_015",
+    "semantic_key": "new26:ball_bastons"
+  },
+  {
+    "question_id": "ptecla_016",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "ptecla_017",
+    "semantic_key": "new26:punta_church"
+  },
+  {
+    "question_id": "ptecla_018",
+    "semantic_key": "new26:sitges_drac"
+  },
+  {
+    "question_id": "ptecla_022",
+    "semantic_key": "new26:x_ray_imaging"
+  },
+  {
+    "question_id": "ptecla_023",
+    "semantic_key": "new26:ecg"
+  },
+  {
+    "question_id": "ptecla_026",
+    "semantic_key": "new26:new26-pau_tecla-112"
+  },
+  {
+    "question_id": "tecla_002",
+    "semantic_key": "new26:left_ventricle"
+  },
+  {
+    "question_id": "tecla_003",
+    "semantic_key": "new26:hemoglobin"
+  },
+  {
+    "question_id": "tecla_004",
+    "semantic_key": "new26:blood_pressure_instrument"
+  },
+  {
+    "question_id": "tecla_005",
+    "semantic_key": "new26:mri"
+  },
+  {
+    "question_id": "tecla_006",
+    "semantic_key": "new26:ecg"
+  },
+  {
+    "question_id": "tecla_008",
+    "semantic_key": "new26:si_frequency"
+  },
+  {
+    "question_id": "tecla_012",
+    "semantic_key": "new26:choir"
+  },
+  {
+    "question_id": "tecla_014",
+    "semantic_key": "cult_tenora"
+  },
+  {
+    "question_id": "tecla_017",
+    "semantic_key": "new26:ball_bastons"
+  },
+  {
+    "question_id": "tecla_018",
+    "semantic_key": "new26:gralla_accompaniment"
+  },
+  {
+    "question_id": "tecla_019",
+    "semantic_key": "new26:punta_church"
+  },
+  {
+    "question_id": "tecla_021",
+    "semantic_key": "new26:sitges_drac"
+  },
+  {
+    "question_id": "tecla_023",
+    "semantic_key": "new26:new26-pau_tecla-014"
+  },
+  {
+    "question_id": "tecla_024",
+    "semantic_key": "new26:mitral"
+  },
+  {
+    "question_id": "tecla_025",
+    "semantic_key": "new26:new26-pau_tecla-088"
+  },
+  {
+    "question_id": "tpau_001",
+    "semantic_key": "new26:new26-tecla_pau-067"
+  },
+  {
+    "question_id": "tpau_003",
+    "semantic_key": "new26:new26-tecla_pau-018"
+  },
+  {
+    "question_id": "tpau_004",
+    "semantic_key": "new26:new26-pau-083"
+  },
+  {
+    "question_id": "tpau_005",
+    "semantic_key": "new26:git"
+  },
+  {
+    "question_id": "tpau_006",
+    "semantic_key": "new26:new26-tecla_pau-080"
+  },
+  {
+    "question_id": "tpau_013",
+    "semantic_key": "new26:africa_east_ocean"
+  },
+  {
+    "question_id": "tpau_015",
+    "semantic_key": "new26:thames_london"
+  },
+  {
+    "question_id": "tpau_017",
+    "semantic_key": "new26:new26-tecla_pau-162"
+  },
+  {
+    "question_id": "tpau_019",
+    "semantic_key": "new26:new26-tecla_pau-176"
+  }
+]

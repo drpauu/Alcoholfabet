@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-10T08:59:25.000Z",
+  "devDenied": [
+    {
+      "path": "/data/question-bank-1000/questions_1000.jsonl",
+      "status": 403
+    },
+    {
+      "path": "/data/question-bank-1000/reviewed_1000.jsonl",
+      "status": 403
+    },
+    {
+      "path": "/questions_1000.xlsx",
+      "status": 403
+    },
+    {
+      "path": "/data/question-bank-1000/historical_concept_links.json",
+      "status": 403
+    },
+    {
+      "path": "/data/question-bank/questions_5000.jsonl",
+      "status": 403
+    }
+  ],
+  "bankIdsOrQuestionTextsInBuild": 0
+}

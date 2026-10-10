@@ -126,7 +126,7 @@ begin
     -- Exhaust a pool in a separate QA game, without replacing/repeating it.
     v_game := v_games[1];
     insert into public.game_question_usage(game_id,question_id,turn_number,responding_player)
-      select v_game,id,0,'PAU' from (select distinct on (semantic_key) id from public.questions where pool='PAU' order by semantic_key,id) facts;
+      select v_game,id,0,'PAU' from (select distinct on (coalesce(a.semantic_key,q.semantic_key)) q.id from public.questions q left join private.question_semantic_aliases a on a.question_id=q.id where q.pool='PAU' order by coalesce(a.semantic_key,q.semantic_key),q.id) facts;
     begin
       perform public.apply_game_action(v_game,'BEGIN_TURN',0,gen_random_uuid(),'{}');
       raise exception 'EXHAUSTED_POOL_REPEATED_A_QUESTION';

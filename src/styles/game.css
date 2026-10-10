@@ -41,6 +41,7 @@
 .answer-panel > span { font-size: 11px; color: #5e664b; font-weight: 600; letter-spacing: .3px; }
 .answer-panel > strong { font-size: 21px; color: #46553f; font-weight: 700; line-height: 1.3; }
 .question-actions { min-height: 55px; display: flex; flex-direction: column; gap: 12px; }
+.card-category, .question-actions { flex-shrink: 0; }
 .question-actions > button { width: 100%; }
 .question-hint { text-align: center; color: var(--art-ink-muted); font-size: 13px; line-height: 1.45; }
 .judge-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
@@ -238,4 +239,13 @@
   .question-copy h2 { font-size: 23px; }
   .question-card-inner { padding: 16px 19px; }
   .answer-space.has-content { min-height: 68px; margin-bottom: 8px; }
+}
+
+/* The prompt can shrink within the card instead of pushing controls offscreen.
+   Internal scrolling is an accessibility fallback for long old-bank text/zoom. */
+.question-copy h2 { min-width: 0; overflow-wrap: anywhere; }
+.question-copy[data-overflow='true'] { align-items: flex-start; }
+@media (max-width: 767px) {
+  .question-copy { flex: 1 1 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .question-copy h2 { flex: 1 0 auto; width: 100%; }
 }

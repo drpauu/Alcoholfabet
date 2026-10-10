@@ -1,0 +1,790 @@
+{
+  "new26:sql_group_by": [
+    "NEW26-PAU-001",
+    "NEW26-TECLA_PAU-012"
+  ],
+  "new26:sql_having": [
+    "NEW26-PAU-002",
+    "NEW26-TECLA_PAU-013"
+  ],
+  "new26:sql_join": [
+    "NEW26-PAU-003",
+    "NEW26-TECLA_PAU-014"
+  ],
+  "new26:sql_order_by": [
+    "NEW26-PAU-004",
+    "NEW26-TECLA_PAU-011"
+  ],
+  "new26:sql_avg": [
+    "NEW26-PAU-007",
+    "NEW26-TECLA_PAU-016"
+  ],
+  "new26:sql_update": [
+    "NEW26-PAU-011",
+    "NEW26-TECLA_PAU-008"
+  ],
+  "new26:sql_insert": [
+    "NEW26-PAU-012",
+    "NEW26-TECLA_PAU-007"
+  ],
+  "new26:sql_sum": [
+    "NEW26-PAU-023",
+    "NEW26-TECLA_PAU-017"
+  ],
+  "new26:sql_where": [
+    "NEW26-PAU-025",
+    "NEW26-TECLA_PAU-010"
+  ],
+  "new26:stack": [
+    "NEW26-PAU-030",
+    "NEW26-TECLA_PAU-001"
+  ],
+  "new26:queue": [
+    "NEW26-PAU-031",
+    "NEW26-TECLA_PAU-002"
+  ],
+  "new26:tree": [
+    "NEW26-PAU-034",
+    "NEW26-TECLA_PAU-005"
+  ],
+  "new26:graph": [
+    "NEW26-PAU-035",
+    "NEW26-TECLA_PAU-004"
+  ],
+  "cs_dijkstra": [
+    "NEW26-PAU-038",
+    "NEW26-TECLA_PAU-055"
+  ],
+  "new26:merge_sort": [
+    "NEW26-PAU-039",
+    "NEW26-PAU-049",
+    "NEW26-TECLA_PAU-056"
+  ],
+  "new26:binary_search": [
+    "NEW26-PAU-042",
+    "NEW26-PAU-047",
+    "NEW26-TECLA_PAU-057"
+  ],
+  "new26:big_o": [
+    "NEW26-PAU-046",
+    "NEW26-TECLA_PAU-059"
+  ],
+  "new26:array": [
+    "NEW26-PAU-056",
+    "NEW26-TECLA_PAU-003"
+  ],
+  "new26:recursion": [
+    "NEW26-PAU-057",
+    "NEW26-TECLA_PAU-058"
+  ],
+  "new26:encapsulation": [
+    "NEW26-PAU-069",
+    "NEW26-TECLA_PAU-082"
+  ],
+  "new26:inheritance": [
+    "NEW26-PAU-070",
+    "NEW26-TECLA_PAU-083"
+  ],
+  "new26:git": [
+    "NEW26-PAU-076",
+    "NEW26-TECLA_PAU-046"
+  ],
+  "new26:dns": [
+    "NEW26-PAU-079",
+    "NEW26-TECLA_PAU-019"
+  ],
+  "new26:https": [
+    "NEW26-PAU-080",
+    "NEW26-TECLA_PAU-020"
+  ],
+  "new26:kernel": [
+    "NEW26-PAU-095",
+    "NEW26-TECLA_PAU-030"
+  ],
+  "new26:ram": [
+    "NEW26-PAU-111",
+    "NEW26-TECLA_PAU-029"
+  ],
+  "new26:byte": [
+    "NEW26-PAU-112",
+    "NEW26-TECLA_PAU-022"
+  ],
+  "new26:hexadecimal": [
+    "NEW26-PAU-113",
+    "NEW26-TECLA_PAU-024"
+  ],
+  "new26:and_gate": [
+    "NEW26-PAU-114",
+    "NEW26-TECLA_PAU-025"
+  ],
+  "new26:not_gate": [
+    "NEW26-PAU-115",
+    "NEW26-TECLA_PAU-027"
+  ],
+  "gpol_suez": [
+    "NEW26-PAU-118",
+    "NEW26-TECLA_PAU-132"
+  ],
+  "gpol_panama": [
+    "NEW26-PAU-119",
+    "NEW26-TECLA_PAU-133"
+  ],
+  "new26:transylvania_romania": [
+    "NEW26-PAU-120",
+    "NEW26-TECLA_PAU-136",
+    "NEW26-TP-018"
+  ],
+  "new26:bavaria_germany": [
+    "NEW26-PAU-121",
+    "NEW26-TECLA_PAU-139"
+  ],
+  "geo_svk_capital": [
+    "NEW26-PAU-122",
+    "NEW26-TECLA_PAU-097"
+  ],
+  "geo_svn_capital": [
+    "NEW26-PAU-123",
+    "NEW26-TECLA_PAU-098"
+  ],
+  "geo_isl_capital": [
+    "NEW26-PAU-124",
+    "NEW26-TP-005"
+  ],
+  "geo_mar_capital": [
+    "NEW26-PAU-128",
+    "NEW26-TP-008"
+  ],
+  "geo_nzl_capital": [
+    "NEW26-PAU-130",
+    "NEW26-TP-003"
+  ],
+  "new26:budapest_danube": [
+    "NEW26-PAU-133",
+    "NEW26-TECLA_PAU-084",
+    "NEW26-TECLA_PAU-091"
+  ],
+  "new26:danube_vienna": [
+    "NEW26-PAU-134",
+    "NEW26-TP-021"
+  ],
+  "new26:seine_paris": [
+    "NEW26-PAU-135",
+    "NEW26-TECLA_PAU-086"
+  ],
+  "new26:tiber_rome": [
+    "NEW26-PAU-136",
+    "NEW26-TECLA_PAU-087"
+  ],
+  "new26:thames_london": [
+    "NEW26-PAU-137",
+    "NEW26-TECLA_PAU-085"
+  ],
+  "new26:pyrenees_border": [
+    "NEW26-PAU-140",
+    "NEW26-TECLA_PAU-119",
+    "NEW26-TP-024"
+  ],
+  "new26:andes_west": [
+    "NEW26-PAU-141",
+    "NEW26-TECLA_PAU-120",
+    "NEW26-TP-023"
+  ],
+  "new26:everest_himalaya": [
+    "NEW26-PAU-144",
+    "NEW26-TECLA_PAU-121"
+  ],
+  "new26:kilimanjaro": [
+    "NEW26-PAU-145",
+    "NEW26-TECLA_PAU-148"
+  ],
+  "new26:sahara": [
+    "NEW26-PAU-146",
+    "NEW26-TECLA_PAU-142",
+    "NEW26-TP-030"
+  ],
+  "new26:gobi": [
+    "NEW26-PAU-147",
+    "NEW26-TECLA_PAU-143"
+  ],
+  "new26:atacama": [
+    "NEW26-PAU-148",
+    "NEW26-TECLA_PAU-144",
+    "NEW26-TP-016"
+  ],
+  "new26:bosporus_seas": [
+    "NEW26-PAU-150",
+    "NEW26-TP-027"
+  ],
+  "new26:gibraltar_strait": [
+    "NEW26-PAU-151",
+    "NEW26-TECLA_PAU-130",
+    "NEW26-TP-033"
+  ],
+  "new26:bering_strait": [
+    "NEW26-PAU-152",
+    "NEW26-TECLA_PAU-131"
+  ],
+  "new26:hispaniola": [
+    "NEW26-PAU-154",
+    "NEW26-TECLA_PAU-135",
+    "NEW26-TP-032"
+  ],
+  "new26:corsica_france": [
+    "NEW26-PAU-155",
+    "NEW26-TECLA_PAU-137"
+  ],
+  "new26:sicily_italy": [
+    "NEW26-PAU-156",
+    "NEW26-TECLA_PAU-138"
+  ],
+  "new26:borneo_shared": [
+    "NEW26-PAU-157",
+    "NEW26-TECLA_PAU-141"
+  ],
+  "gpol_lesotho_enclave": [
+    "NEW26-PAU-158",
+    "NEW26-TECLA_PAU-134"
+  ],
+  "new26:sea_catalan_coast": [
+    "NEW26-PAU-165",
+    "NEW26-TECLA_PAU-127",
+    "NEW26-PAU_TECLA-164"
+  ],
+  "new26:dubrovnik_croatia": [
+    "NEW26-PAU-167",
+    "NEW26-TP-036"
+  ],
+  "new26:berlin_wall": [
+    "NEW26-PAU-175",
+    "NEW26-PAU-176",
+    "NEW26-TECLA_PAU-158",
+    "NEW26-TP-052",
+    "NEW26-TP-077"
+  ],
+  "gpol_maastricht": [
+    "NEW26-PAU-177",
+    "NEW26-TECLA_PAU-157"
+  ],
+  "new26:un_general_assembly": [
+    "NEW26-PAU-178",
+    "NEW26-TECLA_PAU-154"
+  ],
+  "new26:nato": [
+    "NEW26-PAU-179",
+    "NEW26-TECLA_PAU-155",
+    "NEW26-TP-071"
+  ],
+  "new26:brexit": [
+    "NEW26-PAU-180",
+    "NEW26-TECLA_PAU-159"
+  ],
+  "new26:versailles": [
+    "NEW26-PAU-181",
+    "NEW26-TP-050"
+  ],
+  "new26:byzantine_constantinople": [
+    "NEW26-PAU-182",
+    "NEW26-TP-043"
+  ],
+  "new26:persian_satraps": [
+    "NEW26-PAU-183",
+    "NEW26-TP-055"
+  ],
+  "new26:nuremberg_trials": [
+    "NEW26-PAU-185",
+    "NEW26-TP-069"
+  ],
+  "geo_col_capital": [
+    "NEW26-PAU-190",
+    "NEW26-TECLA_PAU-117"
+  ],
+  "new26:mont_blanc_alps": [
+    "NEW26-PAU-193",
+    "NEW26-TP-025"
+  ],
+  "geo_lva_capital": [
+    "NEW26-PAU-194",
+    "NEW26-TECLA_PAU-095"
+  ],
+  "geo_ltu_capital": [
+    "NEW26-PAU-195",
+    "NEW26-TECLA_PAU-096"
+  ],
+  "geo_est_capital": [
+    "NEW26-PAU-196",
+    "NEW26-TECLA_PAU-094"
+  ],
+  "new26:africa_east_ocean": [
+    "NEW26-PAU-200",
+    "NEW26-TECLA_PAU-129"
+  ],
+  "new26:emg": [
+    "NEW26-TECLA-004",
+    "NEW26-PAU_TECLA-089"
+  ],
+  "bio_eeg": [
+    "NEW26-TECLA-005",
+    "NEW26-PAU_TECLA-027"
+  ],
+  "new26:ecg": [
+    "NEW26-TECLA-006",
+    "NEW26-TECLA-073",
+    "NEW26-PAU_TECLA-096"
+  ],
+  "new26:b_cell_antibodies": [
+    "NEW26-TECLA-008",
+    "NEW26-PAU_TECLA-200"
+  ],
+  "new26:mitral": [
+    "NEW26-TECLA-011",
+    "NEW26-PAU_TECLA-056"
+  ],
+  "new26:tricuspid": [
+    "NEW26-TECLA-012",
+    "NEW26-PAU_TECLA-057"
+  ],
+  "new26:pulmonary_artery": [
+    "NEW26-TECLA-014",
+    "NEW26-PAU_TECLA-001"
+  ],
+  "new26:pancreas_insulin": [
+    "NEW26-TECLA-016",
+    "NEW26-TP-089"
+  ],
+  "new26:insulin_glucose": [
+    "NEW26-TECLA-018",
+    "NEW26-PAU_TECLA-003",
+    "NEW26-TP-090"
+  ],
+  "new26:axon": [
+    "NEW26-TECLA-020",
+    "NEW26-PAU_TECLA-025"
+  ],
+  "sci_mito": [
+    "NEW26-TECLA-021",
+    "NEW26-PAU_TECLA-048",
+    "NEW26-TP-084"
+  ],
+  "sci_ribosome": [
+    "NEW26-TECLA-022",
+    "NEW26-PAU_TECLA-051"
+  ],
+  "new26:mitosis": [
+    "NEW26-TECLA-024",
+    "NEW26-PAU_TECLA-049"
+  ],
+  "new26:cartilage": [
+    "NEW26-TECLA-030",
+    "NEW26-PAU_TECLA-008"
+  ],
+  "new26:si_pressure": [
+    "NEW26-TECLA-031",
+    "NEW26-TP-095"
+  ],
+  "new26:si_force": [
+    "NEW26-TECLA-032",
+    "NEW26-TP-096"
+  ],
+  "new26:si_resistance": [
+    "NEW26-TECLA-034",
+    "NEW26-TP-094"
+  ],
+  "new26:si_frequency": [
+    "NEW26-TECLA-035",
+    "NEW26-TP-097"
+  ],
+  "bio_biocompatibility": [
+    "NEW26-TECLA-043",
+    "NEW26-PAU_TECLA-092"
+  ],
+  "new26:titanium_implants": [
+    "NEW26-TECLA-044",
+    "NEW26-PAU_TECLA-091"
+  ],
+  "new26:collagen": [
+    "NEW26-TECLA-047",
+    "NEW26-PAU_TECLA-052"
+  ],
+  "new26:biodegradable": [
+    "NEW26-TECLA-049",
+    "NEW26-PAU_TECLA-094"
+  ],
+  "new26:printing_3d": [
+    "NEW26-TECLA-050",
+    "NEW26-PAU_TECLA-093"
+  ],
+  "new26:mri": [
+    "NEW26-TECLA-052",
+    "NEW26-PAU_TECLA-031"
+  ],
+  "new26:ultrasound_imaging": [
+    "NEW26-TECLA-053",
+    "NEW26-PAU_TECLA-029",
+    "NEW26-PAU_TECLA-039"
+  ],
+  "new26:ct": [
+    "NEW26-TECLA-054",
+    "NEW26-PAU_TECLA-032"
+  ],
+  "new26:pet": [
+    "NEW26-TECLA-055",
+    "NEW26-PAU_TECLA-041"
+  ],
+  "new26:x_ray_imaging": [
+    "NEW26-TECLA-067",
+    "NEW26-PAU_TECLA-030",
+    "NEW26-PAU_TECLA-040"
+  ],
+  "bio_dicom": [
+    "NEW26-TECLA-070",
+    "NEW26-PAU_TECLA-095"
+  ],
+  "new26:pulse_oximeter": [
+    "NEW26-TECLA-072",
+    "NEW26-PAU_TECLA-033"
+  ],
+  "new26:blood_pressure_instrument": [
+    "NEW26-TECLA-075",
+    "NEW26-PAU_TECLA-035"
+  ],
+  "mus_perfect_fifth": [
+    "NEW26-TECLA-102",
+    "NEW26-TECLA-107",
+    "NEW26-PAU_TECLA-126"
+  ],
+  "mus_major_third": [
+    "NEW26-TECLA-103",
+    "NEW26-TECLA-108",
+    "NEW26-PAU_TECLA-125"
+  ],
+  "mus_perfect_fourth": [
+    "NEW26-TECLA-104",
+    "NEW26-PAU_TECLA-133"
+  ],
+  "mus_flat": [
+    "NEW26-TECLA-109",
+    "NEW26-TP-178"
+  ],
+  "mus_natural": [
+    "NEW26-TECLA-111",
+    "NEW26-PAU_TECLA-111"
+  ],
+  "mus_half_note": [
+    "NEW26-TECLA-112",
+    "NEW26-PAU_TECLA-115",
+    "NEW26-PAU_TECLA-118"
+  ],
+  "mus_whole_note": [
+    "NEW26-TECLA-113",
+    "NEW26-PAU_TECLA-114"
+  ],
+  "mus_eighth_note": [
+    "NEW26-TECLA-114",
+    "NEW26-PAU_TECLA-116"
+  ],
+  "mus_sixteenth_note": [
+    "NEW26-TECLA-115",
+    "NEW26-PAU_TECLA-117"
+  ],
+  "mus_dot": [
+    "NEW26-TECLA-118",
+    "NEW26-PAU_TECLA-110"
+  ],
+  "new26:bar_line": [
+    "NEW26-TECLA-119",
+    "NEW26-PAU_TECLA-132"
+  ],
+  "mus_treble_clef": [
+    "NEW26-TECLA-120",
+    "NEW26-PAU_TECLA-100"
+  ],
+  "mus_bass_clef": [
+    "NEW26-TECLA-121",
+    "NEW26-PAU_TECLA-101"
+  ],
+  "mus_soprano": [
+    "NEW26-TECLA-122",
+    "NEW26-TECLA-144",
+    "NEW26-PAU_TECLA-104"
+  ],
+  "mus_contralto": [
+    "NEW26-TECLA-123",
+    "NEW26-PAU_TECLA-105"
+  ],
+  "mus_tenor": [
+    "NEW26-TECLA-124",
+    "NEW26-TECLA-146",
+    "NEW26-PAU_TECLA-106"
+  ],
+  "mus_bass": [
+    "NEW26-TECLA-125",
+    "NEW26-TECLA-147",
+    "NEW26-PAU_TECLA-107"
+  ],
+  "new26:baritone": [
+    "NEW26-TECLA-126",
+    "NEW26-PAU_TECLA-108"
+  ],
+  "mus_choir_director": [
+    "NEW26-TECLA-129",
+    "NEW26-PAU_TECLA-128"
+  ],
+  "mus_unison": [
+    "NEW26-TECLA-130",
+    "NEW26-PAU_TECLA-129"
+  ],
+  "mus_crescendo": [
+    "NEW26-TECLA-132",
+    "NEW26-PAU_TECLA-122"
+  ],
+  "mus_diminuendo": [
+    "NEW26-TECLA-133",
+    "NEW26-PAU_TECLA-123"
+  ],
+  "mus_piano": [
+    "NEW26-TECLA-134",
+    "NEW26-PAU_TECLA-121"
+  ],
+  "mus_forte": [
+    "NEW26-TECLA-135",
+    "NEW26-PAU_TECLA-120"
+  ],
+  "new26:adagio": [
+    "NEW26-TECLA-136",
+    "NEW26-PAU_TECLA-130"
+  ],
+  "new26:allegro": [
+    "NEW26-TECLA-137",
+    "NEW26-PAU_TECLA-131"
+  ],
+  "mus_vibrato": [
+    "NEW26-TECLA-138",
+    "NEW26-PAU_TECLA-135"
+  ],
+  "mus_diaphragm": [
+    "NEW26-TECLA-139",
+    "NEW26-PAU_TECLA-005",
+    "NEW26-PAU_TECLA-134"
+  ],
+  "new26:tempo": [
+    "NEW26-TECLA-141",
+    "NEW26-PAU_TECLA-124"
+  ],
+  "sit_castellers": [
+    "NEW26-TECLA-157",
+    "NEW26-TECLA-199",
+    "NEW26-PAU_TECLA-156"
+  ],
+  "sit_abps": [
+    "NEW26-TECLA-158",
+    "NEW26-PAU_TECLA-179"
+  ],
+  "new26:moixiganga_passion": [
+    "NEW26-TECLA-165",
+    "NEW26-PAU_TECLA-153"
+  ],
+  "new26:ball_bastons": [
+    "NEW26-TECLA-166",
+    "NEW26-PAU_TECLA-149",
+    "NEW26-TP-142"
+  ],
+  "new26:ball_cercolets": [
+    "NEW26-TECLA-167",
+    "NEW26-PAU_TECLA-150"
+  ],
+  "new26:ball_cintes": [
+    "NEW26-TECLA-168",
+    "NEW26-PAU_TECLA-151",
+    "NEW26-PAU_TECLA-152",
+    "NEW26-TP-143"
+  ],
+  "new26:ball_pastorets": [
+    "NEW26-TECLA-169",
+    "NEW26-PAU_TECLA-154"
+  ],
+  "new26:ball_gitanes": [
+    "NEW26-TECLA-171",
+    "NEW26-PAU_TECLA-186"
+  ],
+  "new26:gralla_accompaniment": [
+    "NEW26-TECLA-172",
+    "NEW26-PAU_TECLA-155",
+    "NEW26-PAU_TECLA-178",
+    "NEW26-TP-121"
+  ],
+  "new26:geants_figures": [
+    "NEW26-TECLA-173",
+    "NEW26-PAU_TECLA-180",
+    "NEW26-TP-140"
+  ],
+  "new26:fa_luch": [
+    "NEW26-TECLA-176",
+    "NEW26-PAU_TECLA-145"
+  ],
+  "new26:la_hia": [
+    "NEW26-TECLA-177",
+    "NEW26-PAU_TECLA-146"
+  ],
+  "sit_august_patron": [
+    "NEW26-TECLA-180",
+    "NEW26-PAU_TECLA-140",
+    "NEW26-TP-148"
+  ],
+  "sit_september_patron": [
+    "NEW26-TECLA-181",
+    "NEW26-PAU_TECLA-139",
+    "NEW26-TP-147"
+  ],
+  "new26:punta_church": [
+    "NEW26-TECLA-182",
+    "NEW26-PAU_TECLA-160"
+  ],
+  "new26:cau_ferrat": [
+    "NEW26-TECLA-183",
+    "NEW26-PAU_TECLA-161",
+    "NEW26-PAU_TECLA-183",
+    "NEW26-TP-150"
+  ],
+  "new26:palau_maricel": [
+    "NEW26-TECLA-184",
+    "NEW26-PAU_TECLA-169",
+    "NEW26-PAU_TECLA-171"
+  ],
+  "new26:beach_sant_sebastia": [
+    "NEW26-TECLA-185",
+    "NEW26-PAU_TECLA-167"
+  ],
+  "new26:passeig_maritim": [
+    "NEW26-TECLA-186",
+    "NEW26-PAU_TECLA-181"
+  ],
+  "new26:sitges_corpus": [
+    "NEW26-TECLA-189",
+    "NEW26-PAU_TECLA-158",
+    "NEW26-PAU_TECLA-188",
+    "NEW26-TP-145"
+  ],
+  "new26:sitges_drac": [
+    "NEW26-TECLA-191",
+    "NEW26-PAU_TECLA-147",
+    "NEW26-TP-144"
+  ],
+  "new26:sitges_aliga": [
+    "NEW26-TECLA-192",
+    "NEW26-PAU_TECLA-148"
+  ],
+  "new26:grallers": [
+    "NEW26-TECLA-193",
+    "NEW26-PAU_TECLA-176"
+  ],
+  "new26:cabecuts": [
+    "NEW26-TECLA-197",
+    "NEW26-PAU_TECLA-174",
+    "NEW26-TP-139"
+  ],
+  "new26:baluard_square": [
+    "NEW26-TECLA-198",
+    "NEW26-PAU_TECLA-159"
+  ],
+  "new26:sitges_carnaval": [
+    "NEW26-TECLA-200",
+    "NEW26-PAU_TECLA-157",
+    "NEW26-TP-146"
+  ],
+  "geo_can_capital": [
+    "NEW26-TECLA_PAU-099",
+    "NEW26-TP-001"
+  ],
+  "geo_aus_capital": [
+    "NEW26-TECLA_PAU-100",
+    "NEW26-TP-002"
+  ],
+  "geo_arg_capital": [
+    "NEW26-TECLA_PAU-104",
+    "NEW26-TP-010"
+  ],
+  "new26:capital:japo": [
+    "NEW26-TECLA_PAU-106",
+    "NEW26-TP-007"
+  ],
+  "new26:atlantic_europe_america": [
+    "NEW26-TECLA_PAU-128",
+    "NEW26-TP-029"
+  ],
+  "new26:flandes_belgium": [
+    "NEW26-TECLA_PAU-140",
+    "NEW26-TP-039"
+  ],
+  "new26:africa_country_count": [
+    "NEW26-TECLA_PAU-147",
+    "NEW26-TP-031"
+  ],
+  "new26:petra_jordan": [
+    "NEW26-TECLA_PAU-151",
+    "NEW26-TP-011"
+  ],
+  "new26:cetaceans": [
+    "NEW26-TECLA_PAU-161",
+    "NEW26-TP-115"
+  ],
+  "new26:tundra": [
+    "NEW26-TECLA_PAU-171",
+    "NEW26-TP-116"
+  ],
+  "ast_saturn": [
+    "NEW26-TECLA_PAU-183",
+    "NEW26-TP-098"
+  ],
+  "new26:neuron_sodium": [
+    "NEW26-PAU_TECLA-046",
+    "NEW26-PAU_TECLA-190"
+  ],
+  "new26:dna_genetic": [
+    "NEW26-PAU_TECLA-050",
+    "NEW26-TP-083"
+  ],
+  "new26:femur": [
+    "NEW26-PAU_TECLA-073",
+    "NEW26-TP-087"
+  ],
+  "new26:stapes": [
+    "NEW26-PAU_TECLA-077",
+    "NEW26-TP-088"
+  ],
+  "new26:circulatory_system": [
+    "NEW26-PAU_TECLA-083",
+    "NEW26-TP-086"
+  ],
+  "new26:spirometry": [
+    "NEW26-PAU_TECLA-087",
+    "NEW26-PAU_TECLA-197"
+  ],
+  "new26:terramar": [
+    "NEW26-PAU_TECLA-142",
+    "NEW26-PAU_TECLA-166"
+  ],
+  "new26:sitges_garraf": [
+    "NEW26-PAU_TECLA-163",
+    "NEW26-TP-149"
+  ],
+  "cult_flabiol": [
+    "NEW26-PAU_TECLA-173",
+    "NEW26-TP-158"
+  ],
+  "new26:castells": [
+    "NEW26-PAU_TECLA-175",
+    "NEW26-TP-118"
+  ],
+  "new26:castanyada": [
+    "NEW26-TP-131",
+    "NEW26-TP-132"
+  ],
+  "new26:sant_joan": [
+    "NEW26-TP-133",
+    "NEW26-TP-134"
+  ],
+  "new26:montserrat_monastery": [
+    "NEW26-TP-154",
+    "NEW26-TP-155"
+  ]
+}

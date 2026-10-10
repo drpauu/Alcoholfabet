@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "database": "PostgreSQL 18.3 (PGlite 0.5.8) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+  "scope": "Real PostgreSQL via local PGlite; transport/auth fixtures, no remote writes",
+  "checks": [
+    "additive migration preserves existing state, question reference and pinned bank",
+    "all 1000 staged as inactive drafts; publication rejected before approval",
+    "approval alone cannot activate an unvalidated bank",
+    "independent validation rejects altered answers",
+    "historical concept links are validated, idempotent and immutable",
+    "all rows validated and activated atomically with exact manifest pools",
+    "idempotent reimport changes zero rows; changed published answers/checksums rejected",
+    "ongoing game continues old bank; new game is pinned to new bank",
+    "150 actual new-bank selections across all pools: no repeated fact, consecutive answer or third subtopic",
+    "private aliases prevent old/new conceptual repetition and preserve existing snapshots",
+    "anonymous/authenticated clients cannot invoke administration or read private aliases",
+    "all old question rows remain byte-identical after replacement"
+  ]
+}

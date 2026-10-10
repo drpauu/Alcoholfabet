@@ -49,3 +49,12 @@
 - La pregunta i el tauler dominen la partida; capçalera compacta.
 - Els avisos de beure tenen got, nom, brindis, bombolles i so coordinats.
 - No mostrar «Respon en veu alta! L’altra persona valida la resposta.» ni «No s’encadenen bonificacions.».
+
+## Migració i mòbil aprovats el 10 d’octubre de 2026
+
+- Banc actual de partides noves: `excel-1000-20261010-v1`, amb 913 aprovades i 87 DRAFT. Vegeu `QUESTION_BANK_1000_MIGRATION_REPORT.md`.
+- Exporta les files i metadades abans de substituir bancs; conserva preguntes i snapshots històrics.
+- Fixa al servidor la versió de les partides noves; les anteriors mantenen la seva versió. No reactivis bancs retirats amb un import rutinari.
+- Importa inactiu, valida totes les files independentment i activa al final. Un banc publicat no pot reescriure preguntes o equivalències.
+- Espera cinc segons continus abans de mostrar avisos de connexió; una interrupció breu tampoc mostra avís de recuperació.
+- El text de pregunta complet i els controls han de ser llegibles al mòbil amb la resposta oberta; no retallis el text per encabir-lo.

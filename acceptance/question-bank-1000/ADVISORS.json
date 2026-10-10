@@ -1,0 +1,671 @@
+{
+  "security": {
+    "lints": [
+      {
+        "name": "rls_enabled_no_policy",
+        "title": "RLS Enabled No Policy",
+        "level": "INFO",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects cases where row level security (RLS) has been enabled on a table but no RLS policies have been created.",
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy",
+        "count": 10,
+        "findings": [
+          {
+            "detail": "Table \\`private.access_attempts\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "access_attempts",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`private.couple_access_config\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "couple_access_config",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`private.online_player_attempts\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "online_player_attempts",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`private.online_player_codes\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "online_player_codes",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`private.online_player_identities\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "online_player_identities",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`private.question_bank_imports\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "question_bank_imports",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`private.question_bank_validations\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "question_bank_validations",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`private.question_semantic_aliases\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "question_semantic_aliases",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`public.game_question_usage\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "game_question_usage",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Table \\`public.questions\\` has RLS enabled, but no policies exist",
+            "metadata": {
+              "name": "questions",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "authenticated_security_definer_function_executable",
+        "title": "Signed-In Users Can Execute SECURITY DEFINER Function",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects `SECURITY DEFINER` functions that are callable by signed-in users. Revoke `EXECUTE`, switch the function to `SECURITY INVOKER`, or move it out of your exposed API schema if signed-in users should not call it.",
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0029_authenticated_security_definer_function_executable",
+        "count": 12,
+        "findings": [
+          {
+            "detail": "Function `public.apply_game_action(p_game_id uuid, p_action text, p_expected_state_version bigint, p_idempotency_key uuid, p_payload jsonb)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/apply_game_action`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "apply_game_action",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "p_game_id uuid, p_action text, p_expected_state_version bigint, p_idempotency_key uuid, p_payload jsonb",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.authorize_private_code(p_code text)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/authorize_private_code`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "authorize_private_code",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "p_code text",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.create_game(p_mode public.game_mode, p_target_minutes integer, p_starting_player public.player_role, p_creator_role public.game_member_role, p_idempotency_key uuid)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/create_game`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "create_game",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "p_mode public.game_mode, p_target_minutes integer, p_starting_player public.player_role, p_creator_role public.game_member_role, p_idempotency_key uuid",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.get_access_context()` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/get_access_context`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "get_access_context",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.get_game_view(p_game_id uuid)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/get_game_view`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "get_game_view",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "p_game_id uuid",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.identify_online_player(p_code text)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/identify_online_player`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "identify_online_player",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "p_code text",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.is_admin_for_couple(p_couple_id uuid)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/is_admin_for_couple`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "is_admin_for_couple",
+              "schema": "public",
+              "language": "sql",
+              "arguments": "p_couple_id uuid",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.is_authorized_for_couple(p_couple_id uuid)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/is_authorized_for_couple`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "is_authorized_for_couple",
+              "schema": "public",
+              "language": "sql",
+              "arguments": "p_couple_id uuid",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.is_member_of_game(p_game_id uuid)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/is_member_of_game`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "is_member_of_game",
+              "schema": "public",
+              "language": "sql",
+              "arguments": "p_game_id uuid",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.join_game_by_code(p_invite_code text, p_role public.player_role, p_idempotency_key uuid)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/join_game_by_code`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "join_game_by_code",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "p_invite_code text, p_role public.player_role, p_idempotency_key uuid",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.scoreboard(p_couple_id uuid)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/scoreboard`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "scoreboard",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "p_couple_id uuid",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          },
+          {
+            "detail": "Function `public.start_game(p_game_id uuid, p_expected_state_version bigint, p_idempotency_key uuid)` can be executed by the `authenticated` role as a `SECURITY DEFINER` function via `/rest/v1/rpc/start_game`. Revoke `EXECUTE` or switch it to `SECURITY INVOKER` if that is not intentional.",
+            "metadata": {
+              "name": "start_game",
+              "schema": "public",
+              "language": "plpgsql",
+              "arguments": "p_game_id uuid, p_expected_state_version bigint, p_idempotency_key uuid",
+              "security_definer": true
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `public.authorized_devices` has policies enforced on roles that allow access to anonymous users. Policies include `{devices_select_self}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "authorized_devices",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `public.couple_admins` has policies enforced on roles that allow access to anonymous users. Policies include `{admins_select_self}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "couple_admins",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `public.couples` has policies enforced on roles that allow access to anonymous users. Policies include `{couples_select_authorized}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "couples",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `public.game_cells` has policies enforced on roles that allow access to anonymous users. Policies include `{game_cells_select_members}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "game_cells",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `public.game_events` has policies enforced on roles that allow access to anonymous users. Policies include `{events_select_members}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "game_events",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `public.game_members` has policies enforced on roles that allow access to anonymous users. Policies include `{game_members_select_same_game}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "game_members",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `public.games` has policies enforced on roles that allow access to anonymous users. Policies include `{games_select_members}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "games",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `public.match_results` has policies enforced on roles that allow access to anonymous users. Policies include `{results_select_authorized}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "match_results",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_allow_anonymous_sign_ins",
+        "title": "Anonymous Access Policies",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Detects row level security (RLS) policies that allow access to anonymous users.",
+        "remediation": "Table `realtime.messages` has policies enforced on roles that allow access to anonymous users. Policies include `{tecla_pau_receive_game_realtime}`",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "https://supabase.com/docs/guides/database/database-advisors?queryGroups=lint&lint=0012_auth_allow_anonymous_sign_ins",
+            "metadata": {
+              "name": "messages",
+              "type": "table",
+              "schema": "realtime"
+            },
+            "observed_at": "2026-10-10T08:56:01.942Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_leaked_password_protection",
+        "title": "Leaked Password Protection Disabled",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "SECURITY"
+        ],
+        "description": "Leaked password protection is currently disabled.",
+        "remediation": "https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection",
+        "count": 1,
+        "findings": [
+          {
+            "detail": "Supabase Auth prevents the use of compromised passwords by checking against HaveIBeenPwned.org. Enable this feature to enhance security.",
+            "metadata": {
+              "type": "auth",
+              "entity": "Auth"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "performance": {
+    "lints": [
+      {
+        "name": "unindexed_foreign_keys",
+        "title": "Unindexed foreign keys",
+        "level": "INFO",
+        "facing": "EXTERNAL",
+        "categories": [
+          "PERFORMANCE"
+        ],
+        "description": "Identifies foreign key constraints without a covering index, which can impact database performance.",
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0001_unindexed_foreign_keys",
+        "count": 6,
+        "findings": [
+          {
+            "detail": "Table \\`private.question_bank_validations\\` has a foreign key \\`question_bank_validations_question_id_fkey\\` without a covering index. This can lead to suboptimal query performance.",
+            "metadata": {
+              "name": "question_bank_validations",
+              "type": "table",
+              "schema": "private",
+              "fkey_name": "question_bank_validations_question_id_fkey",
+              "fkey_columns": [
+                2
+              ]
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Table \\`public.couple_admins\\` has a foreign key \\`couple_admins_user_id_fkey\\` without a covering index. This can lead to suboptimal query performance.",
+            "metadata": {
+              "name": "couple_admins",
+              "type": "table",
+              "schema": "public",
+              "fkey_name": "couple_admins_user_id_fkey",
+              "fkey_columns": [
+                2
+              ]
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Table \\`public.game_events\\` has a foreign key \\`game_events_actor_user_id_fkey\\` without a covering index. This can lead to suboptimal query performance.",
+            "metadata": {
+              "name": "game_events",
+              "type": "table",
+              "schema": "public",
+              "fkey_name": "game_events_actor_user_id_fkey",
+              "fkey_columns": [
+                5
+              ]
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Table \\`public.game_question_usage\\` has a foreign key \\`game_question_usage_question_id_fkey\\` without a covering index. This can lead to suboptimal query performance.",
+            "metadata": {
+              "name": "game_question_usage",
+              "type": "table",
+              "schema": "public",
+              "fkey_name": "game_question_usage_question_id_fkey",
+              "fkey_columns": [
+                3
+              ]
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Table \\`public.games\\` has a foreign key \\`games_created_by_fkey\\` without a covering index. This can lead to suboptimal query performance.",
+            "metadata": {
+              "name": "games",
+              "type": "table",
+              "schema": "public",
+              "fkey_name": "games_created_by_fkey",
+              "fkey_columns": [
+                19
+              ]
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Table \\`public.games\\` has a foreign key \\`games_current_question_id_fkey\\` without a covering index. This can lead to suboptimal query performance.",
+            "metadata": {
+              "name": "games",
+              "type": "table",
+              "schema": "public",
+              "fkey_name": "games_current_question_id_fkey",
+              "fkey_columns": [
+                11
+              ]
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          }
+        ]
+      },
+      {
+        "name": "auth_rls_initplan",
+        "title": "Auth RLS Initialization Plan",
+        "level": "WARN",
+        "facing": "EXTERNAL",
+        "categories": [
+          "PERFORMANCE"
+        ],
+        "description": "Detects if calls to \\`current_setting()\\` and \\`auth.<function>()\\` in RLS policies are being unnecessarily re-evaluated for each row",
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0003_auth_rls_initplan",
+        "count": 4,
+        "findings": [
+          {
+            "detail": "Table \\`public.authorized_devices\\` has a row level security policy \\`devices_select_self\\` that re-evaluates current_setting() or auth.<function>() for each row. This produces suboptimal query performance at scale. Resolve the issue by replacing \\`auth.<function>()\\` with \\`(select auth.<function>())\\`. See [docs](https://supabase.com/docs/guides/database/postgres/row-level-security#call-functions-with-select) for more info.",
+            "metadata": {
+              "name": "authorized_devices",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Table \\`public.couple_admins\\` has a row level security policy \\`admins_select_self\\` that re-evaluates current_setting() or auth.<function>() for each row. This produces suboptimal query performance at scale. Resolve the issue by replacing \\`auth.<function>()\\` with \\`(select auth.<function>())\\`. See [docs](https://supabase.com/docs/guides/database/postgres/row-level-security#call-functions-with-select) for more info.",
+            "metadata": {
+              "name": "couple_admins",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Table \\`realtime.messages\\` has a row level security policy \\`tecla_pau_receive_game_realtime\\` that re-evaluates current_setting() or auth.<function>() for each row. This produces suboptimal query performance at scale. Resolve the issue by replacing \\`auth.<function>()\\` with \\`(select auth.<function>())\\`. See [docs](https://supabase.com/docs/guides/database/postgres/row-level-security#call-functions-with-select) for more info.",
+            "metadata": {
+              "name": "messages",
+              "type": "table",
+              "schema": "realtime"
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Table \\`realtime.messages\\` has a row level security policy \\`tecla_pau_send_game_realtime\\` that re-evaluates current_setting() or auth.<function>() for each row. This produces suboptimal query performance at scale. Resolve the issue by replacing \\`auth.<function>()\\` with \\`(select auth.<function>())\\`. See [docs](https://supabase.com/docs/guides/database/postgres/row-level-security#call-functions-with-select) for more info.",
+            "metadata": {
+              "name": "messages",
+              "type": "table",
+              "schema": "realtime"
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          }
+        ]
+      },
+      {
+        "name": "unused_index",
+        "title": "Unused Index",
+        "level": "INFO",
+        "facing": "EXTERNAL",
+        "categories": [
+          "PERFORMANCE"
+        ],
+        "description": "Detects if an index has never been used and may be a candidate for removal.",
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0005_unused_index",
+        "count": 3,
+        "findings": [
+          {
+            "detail": "Index \\`authorized_devices_user_idx\\` on table \\`public.authorized_devices\\` has not been used",
+            "metadata": {
+              "name": "authorized_devices",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Index \\`game_events_game_version_idx\\` on table \\`public.game_events\\` has not been used",
+            "metadata": {
+              "name": "game_events",
+              "type": "table",
+              "schema": "public"
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          },
+          {
+            "detail": "Index \\`question_semantic_alias_key_idx\\` on table \\`private.question_semantic_aliases\\` has not been used",
+            "metadata": {
+              "name": "question_semantic_aliases",
+              "type": "table",
+              "schema": "private"
+            },
+            "observed_at": "2026-10-10T08:56:04.825Z"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+id,pool,fact_id,review_status,reason
+NEW26-PAU-021,PAU,new26:new26-pau-021,DRAFT,AMBIGUITY: B-tree i B+tree són índexs equilibrats; falta concretar el tipus.
+NEW26-PAU-056,PAU,new26:array,DRAFT,"AMBIGUITY: array, vector i altres seqüències admeten accés per índex."
+NEW26-PAU-064,PAU,new26:new26-pau-064,DRAFT,FACTUAL: throw llança una excepció; no la declara.
+NEW26-PAU-077,PAU,new26:new26-pau-077,DRAFT,AMBIGUITY: merge i rebase poden combinar el treball de branques.
+NEW26-PAU-099,PAU,cs_mutex,DRAFT,AMBIGUITY: mutex i semàfor binari poden protegir una secció crítica.
+NEW26-PAU-148,PAU,new26:atacama,DRAFT,FACTUAL_PENDING: l'extensió d'Atacama al Perú depèn de la delimitació del desert.
+NEW26-PAU-155,PAU,new26:corsica_france,DRAFT,"AMBIGUITY: França té diverses illes mediterrànies, no només Còrsega."
+NEW26-PAU-156,PAU,new26:sicily_italy,DRAFT,AMBIGUITY: Sicília i Sardenya són illes mediterrànies i regions italianes.
+NEW26-PAU-181,PAU,new26:versailles,DRAFT,AMBIGUITY: cal distingir el cessament d'hostilitats de 1918 i el tractat de pau de 1919.
+NEW26-TECLA-017,TECLA,new26:new26-tecla-017,DRAFT,"AMBIGUITY: també cortisol, adrenalina i altres hormones augmenten la glucèmia."
+NEW26-TECLA-037,TECLA,new26:new26-tecla-037,DRAFT,AMBIGUITY: força/superfície també defineix la pressió; falta precisió mecànica.
+NEW26-TECLA-039,TECLA,new26:new26-tecla-039,DRAFT,"AMBIGUITY: pressió, tensió i mòduls elàstics es mesuren en pascals."
+NEW26-TECLA-051,TECLA,new26:new26-tecla-051,DRAFT,FACTUAL: autoclau és l'aparell; el procés és esterilització amb vapor.
+NEW26-TECLA-059,TECLA,bio_t1,DRAFT,AMBIGUITY: el greix també pot ser brillant en T2; falta precisar la seqüència.
+NEW26-TECLA-066,TECLA,new26:new26-tecla-066,DRAFT,"LANGUAGE: cal «dues energies», no «dos energies»."
+NEW26-TECLA-074,TECLA,new26:new26-tecla-074,DRAFT,AMBIGUITY: termistor i RTD canvien resistència amb la temperatura.
+NEW26-TECLA-091,TECLA,new26:new26-tecla-091,DRAFT,AMBIGUITY: cal precisar els supòsits de variància per distingir Student i Welch.
+NEW26-TECLA-092,TECLA,new26:new26-tecla-092,DRAFT,AMBIGUITY: falten els supòsits paramètrics; també existeix Kruskal–Wallis.
+NEW26-TECLA-095,TECLA,new26:new26-tecla-095,DRAFT,AMBIGUITY: rang i altres mesures de dispersió també tenen les unitats originals.
+NEW26-TECLA-096,TECLA,new26:new26-tecla-096,DRAFT,"FACTUAL: el coeficient de variació és desviació estàndard/mitjana, no variància/mitjana."
+NEW26-TECLA-124,TECLA,mus_tenor,DRAFT,AMBIGUITY: el contratenor pot ser més agut que el tenor; cal limitar-ho a SATB.
+NEW26-TECLA-136,TECLA,new26:adagio,DRAFT,"AMBIGUITY: adagio, largo i altres indicacions expressen lentitud."
+NEW26-TECLA-137,TECLA,new26:allegro,DRAFT,"AMBIGUITY: allegro, presto i altres indicacions expressen rapidesa."
+NEW26-TECLA-154,TECLA,sit_bastons_groups,DRAFT,"AMBIGUITY: falta especificar Sitges a la pregunta, independent de les anteriors."
+NEW26-TECLA-155,TECLA,sit_devil_groups,DRAFT,"AMBIGUITY: falta especificar Sitges a la pregunta, independent de les anteriors."
+NEW26-TECLA-156,TECLA,sit_gitanes_groups,DRAFT,"AMBIGUITY: falta especificar Sitges a la pregunta, independent de les anteriors."
+NEW26-TECLA-168,TECLA,new26:ball_cintes,DRAFT,AMBIGUITY: Cintes i Gitanes poden fer figures i trenats amb cintes; manca un tret distintiu.
+NEW26-TECLA-171,TECLA,new26:ball_gitanes,DRAFT,AMBIGUITY: Cintes i Gitanes poden fer figures i trenats amb cintes; manca un tret distintiu.
+NEW26-TECLA-173,TECLA,new26:geants_figures,DRAFT,AMBIGUITY: «quins dos elements» no encaixa amb tres parelles de gegants.
+NEW26-TECLA-178,TECLA,new26:new26-tecla-178,DRAFT,"FACTUAL: el protocol distingeix gegants vells i nous, sense nom oficial; noms populars Jordi i Maria Rosa només dels nous."
+NEW26-TECLA-179,TECLA,new26:new26-tecla-179,DRAFT,"FACTUAL: el protocol distingeix gegants vells i nous, sense nom oficial; noms populars Jordi i Maria Rosa només dels nous."
+NEW26-TECLA-183,TECLA,new26:cau_ferrat,DRAFT,AMBIGUITY: diferents museus sitgetans poden conservar obres de Rusiñol.
+NEW26-TECLA-187,TECLA,new26:new26-tecla-187,DRAFT,SOURCE_PENDING: cal confirmar el nom històric del barri sota la Punta.
+NEW26-TECLA-196,TECLA,new26:new26-tecla-196,DRAFT,"AMBIGUITY: també Vilanova i la Geltrú, al Garraf, és coneguda pel carnaval."
+NEW26-TECLA_PAU-003,TECLA_PAU,new26:array,DRAFT,"AMBIGUITY: array, vector i altres seqüències admeten accés per índex."
+NEW26-TECLA_PAU-021,TECLA_PAU,new26:new26-tecla_pau-021,DRAFT,AMBIGUITY: tant IP com MAC poden identificar un dispositiu en una xarxa.
+NEW26-TECLA_PAU-031,TECLA_PAU,new26:new26-tecla_pau-031,DRAFT,"AMBIGUITY: Linux i altres sistemes oberts, com FreeBSD, són habituals en servidors."
+NEW26-TECLA_PAU-038,TECLA_PAU,new26:new26-tecla_pau-038,DRAFT,"AMBIGUITY: NumPy, SciPy i altres biblioteques ofereixen càlcul numèric."
+NEW26-TECLA_PAU-039,TECLA_PAU,new26:new26-tecla_pau-039,DRAFT,"AMBIGUITY: Python, R i altres llenguatges són populars per a dades i scripts."
+NEW26-TECLA_PAU-045,TECLA_PAU,new26:new26-tecla_pau-045,DRAFT,AMBIGUITY: Parquet i ORC són formats columnars populars.
+NEW26-TECLA_PAU-046,TECLA_PAU,new26:git,DRAFT,"TERMINOLOGY: Git és un sistema de control de versions, no un servei."
+NEW26-TECLA_PAU-047,TECLA_PAU,new26:new26-tecla_pau-047,DRAFT,"AMBIGUITY: GitHub, Bitbucket i altres plataformes utilitzen pull requests."
+NEW26-TECLA_PAU-054,TECLA_PAU,new26:new26-tecla_pau-054,DRAFT,"AMBIGUITY: Excel, Google Sheets i altres eines són populars per a fulls de càlcul."
+NEW26-TECLA_PAU-059,TECLA_PAU,new26:big_o,DRAFT,"AMBIGUITY: O, Omega i Theta expressen cotes asimptòtiques; falta «superior»."
+NEW26-TECLA_PAU-071,TECLA_PAU,new26:new26-tecla_pau-071,DRAFT,AMBIGUITY: llista i bytearray són seqüències modificables.
+NEW26-TECLA_PAU-072,TECLA_PAU,new26:new26-tecla_pau-072,DRAFT,"AMBIGUITY: tupla, str, bytes i range són seqüències immutables."
+NEW26-TECLA_PAU-090,TECLA_PAU,new26:new26-tecla_pau-090,DRAFT,EDITORIAL: el nom de la ciutat ja apareix a la pregunta.
+NEW26-TECLA_PAU-124,TECLA_PAU,new26:new26-tecla_pau-124,DRAFT,AMBIGUITY: tant Roine com Saona travessen Lió.
+NEW26-TECLA_PAU-194,TECLA_PAU,ath_laps1500,DRAFT,EDITORIAL: la pregunta ja conté «tres quarts» de la resposta.
+NEW26-PAU_TECLA-042,PAU_TECLA,new26:new26-pau_tecla-042,DRAFT,AMBIGUITY: T3 i T4 són hormones tiroïdals que contenen iode.
+NEW26-PAU_TECLA-049,PAU_TECLA,new26:mitosis,DRAFT,AMBIGUITY: mitosi i fissió binària poden produir dues cèl·lules filles; falta context.
+NEW26-PAU_TECLA-050,PAU_TECLA,new26:dna_genetic,DRAFT,AMBIGUITY: ADN i ARN poden portar informació genètica; falta limitar-ho a cèl·lules.
+NEW26-PAU_TECLA-075,PAU_TECLA,new26:new26-pau_tecla-075,DRAFT,EDITORIAL: la pregunta ja inclou «mandíbula inferior».
+NEW26-PAU_TECLA-091,PAU_TECLA,new26:titanium_implants,DRAFT,"AMBIGUITY: també s'utilitzen aliatges de cobalt-crom, entre altres materials de maluc."
+NEW26-PAU_TECLA-106,PAU_TECLA,mus_tenor,DRAFT,AMBIGUITY: el contratenor pot ser més agut que el tenor; cal limitar-ho a SATB.
+NEW26-PAU_TECLA-109,PAU_TECLA,new26:new26-pau_tecla-109,DRAFT,AMBIGUITY: falta especificar escala diatònica; en una cromàtica hi ha alteracions intermèdies.
+NEW26-PAU_TECLA-112,PAU_TECLA,new26:new26-pau_tecla-112,DRAFT,AMBIGUITY: falta especificar escala diatònica; en una cromàtica hi ha alteracions intermèdies.
+NEW26-PAU_TECLA-113,PAU_TECLA,new26:new26-pau_tecla-113,DRAFT,AMBIGUITY: falta especificar escala diatònica; en una cromàtica hi ha alteracions intermèdies.
+NEW26-PAU_TECLA-130,PAU_TECLA,new26:adagio,DRAFT,"AMBIGUITY: adagio, largo i altres indicacions expressen lentitud."
+NEW26-PAU_TECLA-131,PAU_TECLA,new26:allegro,DRAFT,"AMBIGUITY: allegro, presto i altres indicacions expressen rapidesa."
+NEW26-PAU_TECLA-134,PAU_TECLA,mus_diaphragm,DRAFT,FACTUAL_PENDING: el control de l'expiració cantada no depèn principalment només del diafragma.
+NEW26-PAU_TECLA-147,PAU_TECLA,new26:sitges_drac,DRAFT,AMBIGUITY: tant el Drac com l'Àliga tenen ales i treuen foc.
+NEW26-PAU_TECLA-151,PAU_TECLA,new26:ball_cintes,DRAFT,AMBIGUITY: el Ball de Cintes i el de Gitanes utilitzen i trenen cintes.
+NEW26-PAU_TECLA-152,PAU_TECLA,new26:ball_cintes,DRAFT,AMBIGUITY: el Ball de Cintes i el de Gitanes utilitzen i trenen cintes.
+NEW26-PAU_TECLA-165,PAU_TECLA,new26:new26-pau_tecla-165,DRAFT,AMBIGUITY: més d'una platja es troba prop del port d'Aiguadolç.
+NEW26-PAU_TECLA-168,PAU_TECLA,new26:new26-pau_tecla-168,DRAFT,"AMBIGUITY: la Ribera, la Fragata i altres platges són davant del centre."
+NEW26-PAU_TECLA-169,PAU_TECLA,new26:palau_maricel,DRAFT,SOURCE_PENDING: falta concretar l'edifici i els concerts per evitar alternatives.
+NEW26-PAU_TECLA-170,PAU_TECLA,new26:new26-pau_tecla-170,DRAFT,AMBIGUITY: cal distingir antiguitat de les figures actuals i de la tradició de cada parella.
+NEW26-PAU_TECLA-186,PAU_TECLA,new26:ball_gitanes,DRAFT,AMBIGUITY: Cintes i Gitanes poden fer figures i trenats amb cintes; manca un tret distintiu.
+NEW26-PAU_TECLA-190,PAU_TECLA,new26:neuron_sodium,DRAFT,"AMBIGUITY: sodi, potassi i altres ions són necessaris per a l'impuls nerviós."
+NEW26-PAU_TECLA-191,PAU_TECLA,new26:new26-pau_tecla-191,DRAFT,AMBIGUITY: vestíbul i canals semicirculars participen en l'equilibri.
+NEW26-TP-004,TP,new26:capital:suissa,DRAFT,TERMINOLOGY: Berna és ciutat federal; Suïssa no designa formalment una capital.
+NEW26-TP-016,TP,new26:atacama,DRAFT,AMBIGUITY: falta concretar la delimitació territorial del desert d'Atacama.
+NEW26-TP-021,TP,new26:danube_vienna,DRAFT,AMBIGUITY: el Danubi i el riu Wien travessen Viena.
+NEW26-TP-026,TP,new26:new26-tp-026,DRAFT,AMBIGUITY: l'Adriàtic i el Jònic separen parts d'Itàlia i els Balcans.
+NEW26-TP-046,TP,new26:new26-tp-046,DRAFT,AMBIGUITY: també Herculà i altres ciutats foren destruïdes pel Vesuvi el 79.
+NEW26-TP-068,TP,new26:new26-tp-068,DRAFT,FACTUAL: la Revolució Francesa comença abans de la presa de la Bastilla.
+NEW26-TP-070,TP,new26:new26-tp-070,DRAFT,AMBIGUITY: diverses organitzacions internacionals es van crear el 1945.
+NEW26-TP-083,TP,new26:dna_genetic,DRAFT,AMBIGUITY: ADN i ARN poden portar informació genètica; falta limitar-ho a cèl·lules.
+NEW26-TP-117,TP,new26:new26-tp-117,DRAFT,AMBIGUITY: evaporació i ebullició transformen aigua líquida en vapor.
+NEW26-TP-124,TP,cult_tenora,DRAFT,AMBIGUITY: altres instruments de cobla tenen registres greus/aguts; cal especificar instruments de doble canya.
+NEW26-TP-125,TP,cult_cobla_tible,DRAFT,AMBIGUITY: altres instruments de cobla tenen registres greus/aguts; cal especificar instruments de doble canya.
+NEW26-TP-128,TP,new26:new26-tp-128,DRAFT,EDITORIAL: «havaneres» ja apareix a la pregunta que demana «havanera».
+NEW26-TP-143,TP,new26:ball_cintes,DRAFT,AMBIGUITY: el Ball de Cintes i el de Gitanes utilitzen i trenen cintes.
+NEW26-TP-144,TP,new26:sitges_drac,DRAFT,AMBIGUITY: diverses bèsties festives representen animals que escupen foc.
+NEW26-TP-168,TP,new26:new26-tp-168,DRAFT,SOURCE_PENDING: falta identificar els murals i la Fundació; no s'ha confirmat la premissa.
+NEW26-TP-185,TP,new26:new26-tp-185,DRAFT,FACTUAL: Arthur Conan Doyle era escocès; «escriptor anglès» és incorrecte.

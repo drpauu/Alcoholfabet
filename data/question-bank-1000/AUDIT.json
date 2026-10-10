@@ -1,0 +1,98 @@
+{
+  "version": "excel-1000-20261010-v1",
+  "source": "questions_1000.xlsx",
+  "sourceSha256": "9125ef40fd6ec8e0119d6fa46c6ce7b9a44d3755fbc681fe0e3f0bb3946aad1f",
+  "canonicalSha256": "6737bce803a5a9c38b091e75e859948ffe18aa4eacae53dca789dab418ea5fe8",
+  "reviewedSha256": "f8981735291bd5a792b340e7877819a365202af01598b613a0fe0010cc1cf41f",
+  "read": 1000,
+  "approved": 913,
+  "draft": 87,
+  "exactDuplicateTexts": 0,
+  "selectionFacts": 770,
+  "conceptualDuplicateGroups": 186,
+  "oldCanonicalConceptsLinked": 142,
+  "pools": {
+    "PAU": {
+      "imported": 200,
+      "active": 191,
+      "draft": 9,
+      "activeFacts": 188
+    },
+    "TECLA": {
+      "imported": 200,
+      "active": 175,
+      "draft": 25,
+      "activeFacts": 169
+    },
+    "TECLA_PAU": {
+      "imported": 200,
+      "active": 185,
+      "draft": 15,
+      "activeFacts": 184
+    },
+    "PAU_TECLA": {
+      "imported": 200,
+      "active": 178,
+      "draft": 22,
+      "activeFacts": 170
+    },
+    "TP": {
+      "imported": 200,
+      "active": 184,
+      "draft": 16,
+      "activeFacts": 180
+    }
+  },
+  "topics": {
+    "Bases de dades": 29,
+    "Estructures de dades": 10,
+    "Algorísmia": 17,
+    "Programació": 14,
+    "Enginyeria del programari": 8,
+    "Xarxes": 16,
+    "Sistemes operatius": 12,
+    "Arquitectura": 10,
+    "Paral·lelisme": 1,
+    "Geografia": 177,
+    "Geopolítica": 22,
+    "Bioelectricitat": 6,
+    "Fisiologia": 12,
+    "Biologia cel·lular": 7,
+    "Biologia molecular": 4,
+    "Biomecànica": 10,
+    "Instrumentació": 13,
+    "Biomaterials": 8,
+    "Enginyeria clínica": 1,
+    "Imatge biomèdica": 19,
+    "Senyals biomèdics": 9,
+    "Bioestadística": 12,
+    "Llenguatge musical": 32,
+    "Cant coral": 14,
+    "Cant": 3,
+    "Sitges": 100,
+    "Informàtica": 83,
+    "Natura": 25,
+    "Atletisme": 15,
+    "Biomedicina": 110,
+    "Música": 46,
+    "Història": 38,
+    "Ciència": 40,
+    "Cultura catalana": 46,
+    "Art": 17,
+    "Literatura": 14
+  },
+  "sourcesConsulted": {
+    "sitges_protocol": "https://continguts.radiomaricel.cat/continguts/2023/04/26/PROTOCOL_FESTA_MAJOR_FITXES_BALLS.pdf",
+    "sitges_seguici": "https://www.sitgesfestamajor.cat/sobre-la-festa/el-seguici-popular/",
+    "grallers": "https://escoladegrallersdesitges.cat/escola/",
+    "sql_aggregate": "https://www.postgresql.org/docs/current/functions-aggregate.html",
+    "sql_select": "https://www.postgresql.org/docs/current/sql-select.html",
+    "variation": "https://itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+    "b_cells": "https://www.ncbi.nlm.nih.gov/books/NBK26884/",
+    "sitges_history": "https://www.sitgesfestamajor.cat/sobre-la-festa/el-seguici-popular/recorregut-historic/",
+    "conan_doyle": "https://www.conandoylecollection.com/conan-doyle/arthur-conan-doyle/a-chronology-of-conan-doyles-life",
+    "swiss_capital": "https://www.aboutswitzerland.eda.admin.ch/en/political-system"
+  },
+  "historicalLinks": 77,
+  "historicalLinksSha256": "f0e4bb020752147d75f9cb13be52502096ada8bbf6ecd3a120bfe9a288a24b7d"
+}
